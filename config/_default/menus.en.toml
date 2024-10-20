@@ -11,14 +11,9 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Blog"
-  pageRef = "posts"
-  weight = 10
-
-[[main]]
   name = "2024"
   pageRef = "2024"
-  weight = 20
+  weight = 10
 
 #[[main]]
 #  name = "Parent"
@@ -68,7 +63,7 @@
 #   pageRef = "tags"
 #   weight = 10
 
-# [[footer]]
-#   name = "Categories"
-#   pageRef = "categories"
-#   weight = 20
+[[footer]]
+   name = "Students"
+   pageRef = "authors"
+   weight = 20
