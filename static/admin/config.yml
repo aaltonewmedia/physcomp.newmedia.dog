@@ -3,6 +3,9 @@ backend:
   branch: main
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
+media_library:
+    config:
+    max_file_size: 1000000 # in bytes, only for default media library
 collections:
   - name: "2024-matti-niinimaki" # Used in routes, e.g., /admin/collections/post
     label: "2024 Matti Niinimäki" # Used in the UI
@@ -28,7 +31,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Author", name: "authors", widget: "list", default: ["Nick Newmedia"] }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Nick Newmedia"] }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Background Image", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
