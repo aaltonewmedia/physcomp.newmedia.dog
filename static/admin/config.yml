@@ -3,14 +3,14 @@ backend:
   branch: main
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
-media_library:
-    config:
-      max_file_size: 1000000 # in bytes, only for default media library
 collections:
   - name: "2024-matti-niinimaki" # Used in routes, e.g., /admin/collections/post
     label: "2024 Matti Niinimäki" # Used in the UI
     folder: "content/2024/matti-niinimaki" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
+    media_library:
+      config:
+        max_file_size: 1000000 # in bytes, only for default media library
     media_folder: "" # Save images in the post's own folder instead of the static folder
     public_folder: ""
     create: true # Allow users to create new documents in this collection
@@ -25,6 +25,9 @@ collections:
     label: "2024-nick-newmedia" # Used in the UI
     folder: "content/2024/nick-newmedia" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
+    media_library:
+      config:
+        max_file_size: 1000000 # in bytes, only for default media library
     media_folder: "" # Save images in the post's own folder instead of the static folder
     public_folder: ""
     create: true # Allow users to create new documents in this collection
