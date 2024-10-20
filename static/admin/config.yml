@@ -4,9 +4,9 @@ backend:
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
 collections:
-  - name: "2024-matti" # Used in routes, e.g., /admin/collections/post
-    label: "2024-matti" # Used in the UI
-    folder: "content/2024/matti" # The path to the folder where the documents are stored
+  - name: "2024-matti-niinimaki" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Matti Niinimäki" # Used in the UI
+    folder: "content/2024/matti-niinimaki" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
     media_folder: "" # Save images in the post's own folder instead of the static folder
     public_folder: ""
@@ -15,6 +15,20 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Author", name: "authors", widget: "list", default: ["Matti Niinimäki"] }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Background Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "2024-nick-newmedia" # Used in routes, e.g., /admin/collections/post
+    label: "2024-nick-newmedia" # Used in the UI
+    folder: "content/2024/nick-newmedia" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "authors", widget: "list", default: ["Nick Newmedia"] }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Background Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
