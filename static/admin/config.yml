@@ -16,7 +16,7 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Author", name: "authors", widget: "list", default: ["Matti Niinimäki"] }
       - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Background Image", name: "image", widget: "image" }
+      - { label: "Background Image", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "2024-nick-newmedia" # Used in routes, e.g., /admin/collections/post
     label: "2024-nick-newmedia" # Used in the UI
@@ -30,5 +30,5 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Author", name: "authors", widget: "list", default: ["Nick Newmedia"] }
       - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Background Image", name: "image", widget: "image" }
+      - { label: "Background Image", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
