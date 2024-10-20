@@ -22,7 +22,7 @@ collections:
       - { label: "Background Image", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "2024-nick-newmedia" # Used in routes, e.g., /admin/collections/post
-    label: "2024-nick-newmedia" # Used in the UI
+    label: "2024 Nick Newmedia" # Used in the UI
     folder: "content/2024/nick-newmedia" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
     media_library:
