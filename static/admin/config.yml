@@ -18,8 +18,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Author", name: "authors", widget: "list", default: ["Matti Niinimäki"] }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Background Image", name: "bgimage", widget: "image" }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "2024-nick-newmedia" # Used in routes, e.g., /admin/collections/post
     label: "2024 Nick Newmedia" # Used in the UI
@@ -35,8 +35,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Authors", name: "authors", widget: "list", default: ["Nick Newmedia"] }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Background Image", name: "bgimage", widget: "image" }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "2024-ellen-sofie-engen" # Used in routes, e.g., /admin/collections/post
     label: "2024 Ellen Sofie Engen" # Used in the UI
@@ -52,8 +52,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Authors", name: "authors", widget: "list", default: ["Ellen Sofie Engen"] }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Background Image", name: "bgimage", widget: "image" }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "2024-fiona-keil" # Used in routes, e.g., /admin/collections/post
     label: "2024 Fiona Keil" # Used in the UI
@@ -69,8 +69,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Authors", name: "authors", widget: "list", default: ["Fiona Keil"] }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Background Image", name: "bgimage", widget: "image" }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "2024-heya-kwon" # Used in routes, e.g., /admin/collections/post
     label: "2024 Heya Kwon" # Used in the UI
@@ -86,8 +86,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Authors", name: "authors", widget: "list", default: ["Heya Kwon"] }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Background Image", name: "bgimage", widget: "image" }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "2024-jue-ning" # Used in routes, e.g., /admin/collections/post
     label: "2024 Jue Ning" # Used in the UI
@@ -103,8 +103,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Authors", name: "authors", widget: "list", default: ["Jue Ning"] }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Background Image", name: "bgimage", widget: "image" }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "2024-maija-jarviniemi" # Used in routes, e.g., /admin/collections/post
     label: "2024 Maija Järviniemi" # Used in the UI
@@ -120,8 +120,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Authors", name: "authors", widget: "list", default: ["Maija Järviniemi"] }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Background Image", name: "bgimage", widget: "image" }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "2024-markku-laskujarvi" # Used in routes, e.g., /admin/collections/post
     label: "2024 Markku Laskujärvi" # Used in the UI
@@ -137,6 +137,6 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Authors", name: "authors", widget: "list", default: ["Markku Laskujärvi"] }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Background Image", name: "bgimage", widget: "image" }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
