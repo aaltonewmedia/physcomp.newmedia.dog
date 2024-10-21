@@ -1,5 +1,5 @@
 ---
-title: Week 01 | Arduino
+title: Week 01 | Arduino Basics
 date: 2024-10-21T01:13:00.000Z
 authors:
   - Matti Niinimäki
@@ -10,6 +10,13 @@ This is what I made during the first week!
 
 ![My week one project](featured.jpg)
 
-Another image here. Testing the upload limit.
 
-![](test.png)
+```c
+void setup(){
+
+}
+
+void loop(){
+
+}
+```
