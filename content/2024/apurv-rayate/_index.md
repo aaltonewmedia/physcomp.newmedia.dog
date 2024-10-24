@@ -1,7 +1,7 @@
 ---
-title: Jue Ning
+title: Apurv Rayate
 date: 2024-10-20T23:08:00.000Z
-authors: [Jue Ning]
+authors: [Apurv Rayate]
 ---
 
 This is my course documentation site!
