@@ -4,9 +4,9 @@ backend:
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
 collections:
-  - name: "2024-matti-niinimaki" # Used in routes, e.g., /admin/collections/post
-    label: "2024 Matti Niinimäki" # Used in the UI
-    folder: "content/2024/matti-niinimaki" # The path to the folder where the documents are stored
+  - name: "2024-apurv-rayate" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Apurv Rayate" # Used in the UI
+    folder: "content/2024/apurv-rayate" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
     media_library:
       config:
@@ -17,7 +17,24 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Author", name: "authors", widget: "list", default: ["Matti Niinimäki"] }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Apurv Rayate"] }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "2024-connor-z" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Connor Z" # Used in the UI
+    folder: "content/2024/connor-z" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_library:
+      config:
+        max_file_size: 1000000 # in bytes, only for default media library
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Connor Z"] }
       - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
       - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -72,9 +89,9 @@ collections:
       - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
       - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "2024-jue-ning" # Used in routes, e.g., /admin/collections/post
-    label: "2024 Jue Ning" # Used in the UI
-    folder: "content/2024/jue-ning" # The path to the folder where the documents are stored
+  - name: "2024-ilona-pakarinen" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Ilona Pakarinen" # Used in the UI
+    folder: "content/2024/ilona-pakarinen" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
     media_library:
       config:
@@ -85,61 +102,10 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Authors", name: "authors", widget: "list", default: ["Jue Ning"] }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Ilona Pakarinen"] }
       - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
       - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "2024-maija-jarviniemi" # Used in routes, e.g., /admin/collections/post
-    label: "2024 Maija Järviniemi" # Used in the UI
-    folder: "content/2024/maija-jarviniemi" # The path to the folder where the documents are stored
-    path: "{{slug}}/index"
-    media_library:
-      config:
-        max_file_size: 1000000 # in bytes, only for default media library
-    media_folder: "" # Save images in the post's own folder instead of the static folder
-    public_folder: ""
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Authors", name: "authors", widget: "list", default: ["Maija Järviniemi"] }
-      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
-      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "2024-markku-laskujarvi" # Used in routes, e.g., /admin/collections/post
-    label: "2024 Markku Laskujärvi" # Used in the UI
-    folder: "content/2024/markku-laskujarvi" # The path to the folder where the documents are stored
-    path: "{{slug}}/index"
-    media_library:
-      config:
-        max_file_size: 1000000 # in bytes, only for default media library
-    media_folder: "" # Save images in the post's own folder instead of the static folder
-    public_folder: ""
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Authors", name: "authors", widget: "list", default: ["Markku Laskujärvi"] }
-      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
-      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "2024-xuedan-gao" # Used in routes, e.g., /admin/collections/post
-    label: "2024 Xuedan Gao" # Used in the UI
-    folder: "content/2024/xuedan-gao" # The path to the folder where the documents are stored
-    path: "{{slug}}/index"
-    media_library:
-      config:
-        max_file_size: 1000000 # in bytes, only for default media library
-    media_folder: "" # Save images in the post's own folder instead of the static folder
-    public_folder: ""
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Authors", name: "authors", widget: "list", default: ["Xuedan Gao"] }
-      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
-      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" } 
   - name: "2024-iris-han" # Used in routes, e.g., /admin/collections/post
     label: "2024 Iris Han" # Used in the UI
     folder: "content/2024/iris-han" # The path to the folder where the documents are stored
@@ -174,9 +140,9 @@ collections:
       - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
       - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "2024-xinchen-l" # Used in routes, e.g., /admin/collections/post
-    label: "2024 xinchen.l" # Used in the UI
-    folder: "content/2024/xinchen-l" # The path to the folder where the documents are stored
+  - name: "2024-jue-ning" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Jue Ning" # Used in the UI
+    folder: "content/2024/jue-ning" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
     media_library:
       config:
@@ -187,13 +153,13 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Authors", name: "authors", widget: "list", default: ["xinchen.l"] }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Jue Ning"] }
       - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
       - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "2024-ilona-pakarinen" # Used in routes, e.g., /admin/collections/post
-    label: "2024 Ilona Pakarinen" # Used in the UI
-    folder: "content/2024/ilona-pakarinen" # The path to the folder where the documents are stored
+      - { label: "Body", name: "body", widget: "markdown" } 
+  - name: "2024-maija-jarviniemi" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Maija Järviniemi" # Used in the UI
+    folder: "content/2024/maija-jarviniemi" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
     media_library:
       config:
@@ -204,10 +170,44 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Authors", name: "authors", widget: "list", default: ["Ilona Pakarinen"] }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Maija Järviniemi"] }
       - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
       - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "2024-markku-laskujarvi" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Markku Laskujärvi" # Used in the UI
+    folder: "content/2024/markku-laskujarvi" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_library:
+      config:
+        max_file_size: 1000000 # in bytes, only for default media library
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Markku Laskujärvi"] }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }  
+  - name: "2024-matti-niinimaki" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Matti Niinimäki" # Used in the UI
+    folder: "content/2024/matti-niinimaki" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_library:
+      config:
+        max_file_size: 1000000 # in bytes, only for default media library
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "authors", widget: "list", default: ["Matti Niinimäki"] }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" } 
   - name: "2024-sasha-tikachev" # Used in routes, e.g., /admin/collections/post
     label: "2024 Sasha Tikachev" # Used in the UI
     folder: "content/2024/sasha-tikachev" # The path to the folder where the documents are stored
@@ -225,9 +225,9 @@ collections:
       - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
       - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "2024-connor-z" # Used in routes, e.g., /admin/collections/post
-    label: "2024 Connor Z" # Used in the UI
-    folder: "content/2024/connor-z" # The path to the folder where the documents are stored
+  - name: "2024-xinchen-l" # Used in routes, e.g., /admin/collections/post
+    label: "2024 xinchen.l" # Used in the UI
+    folder: "content/2024/xinchen-l" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
     media_library:
       config:
@@ -238,13 +238,13 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Authors", name: "authors", widget: "list", default: ["Connor Z"] }
+      - { label: "Authors", name: "authors", widget: "list", default: ["xinchen.l"] }
       - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
       - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "2024-apurv-rayate" # Used in routes, e.g., /admin/collections/post
-    label: "2024 Apurv Rayate" # Used in the UI
-    folder: "content/2024/apurv-rayate" # The path to the folder where the documents are stored
+      - { label: "Body", name: "body", widget: "markdown" } 
+  - name: "2024-xuedan-gao" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Xuedan Gao" # Used in the UI
+    folder: "content/2024/xuedan-gao" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
     media_library:
       config:
@@ -255,7 +255,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Authors", name: "authors", widget: "list", default: ["Apurv Rayate"] }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Xuedan Gao"] }
       - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
       - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
