@@ -140,3 +140,71 @@ collections:
       - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
       - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "2024-xuedan-gao" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Xuedan Gao" # Used in the UI
+    folder: "content/2024/xuedan-gao" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_library:
+      config:
+        max_file_size: 1000000 # in bytes, only for default media library
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Xuedan Gao"] }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "2024-iris-han" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Iris Han" # Used in the UI
+    folder: "content/2024/iris-han" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_library:
+      config:
+        max_file_size: 1000000 # in bytes, only for default media library
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Iris Han"] }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "2024-jiali-huang" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Jiali Huang" # Used in the UI
+    folder: "content/2024/jiali-huang" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_library:
+      config:
+        max_file_size: 1000000 # in bytes, only for default media library
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Jiali Huang"] }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "2024-xinchen-l" # Used in routes, e.g., /admin/collections/post
+    label: "2024 xinchen.l" # Used in the UI
+    folder: "content/2024/xinchen-l" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_library:
+      config:
+        max_file_size: 1000000 # in bytes, only for default media library
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Authors", name: "authors", widget: "list", default: ["xinchen.l"] }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
