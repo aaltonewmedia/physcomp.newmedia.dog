@@ -6,4 +6,4 @@ authors:
 image: feature.jpg.jpg
 bgimage: background.jpg.jpg
 ---
-Hello from the other side ~ 
+I'm pissed by this website :p
