@@ -6,5 +6,4 @@ authors:
 image: featured.jpg
 bgimage: background.jpg
 ---
-
-This is my course documentation site!
+This is my course documentation site! AWESOMEEEE 🔥
