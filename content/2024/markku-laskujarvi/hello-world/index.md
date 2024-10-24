@@ -8,4 +8,4 @@ bgimage: background.jpg
 ---
 Hi!
 
-![cup of joe](bidencoffee.jpg "joebiden")
+![cup of joe]( "joebiden")
