@@ -205,9 +205,9 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Author", name: "authors", widget: "list", default: ["Matti Niinimäki"] }
-      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Featured Image", hint: "Name the image featured.jpg", name: "image", widget: "image" }
       - { label: "Background Image", hint: "Name the image background.jpg", name: "bgimage", widget: "image", required: false  }
-      - { label: "Show Background", name: "draft", widget: "boolean", default: false}
+      - { label: "Show Background", name: "showBgImage", widget: "boolean", default: false}
       - { label: "Body", name: "body", widget: "markdown" } 
   - name: "2024-sasha-tikachev" # Used in routes, e.g., /admin/collections/post
     label: "2024 Sasha Tikachev" # Used in the UI
