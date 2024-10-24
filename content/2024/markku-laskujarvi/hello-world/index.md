@@ -7,3 +7,5 @@ image: featured.jpg
 bgimage: background.jpg
 ---
 Hi!
+
+![cup of joe](bidencoffee.jpg "joebiden")
