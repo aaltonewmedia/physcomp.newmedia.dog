@@ -242,3 +242,20 @@ collections:
       - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
       - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "2024-apurv-rayate" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Apurv Rayate" # Used in the UI
+    folder: "content/2024/apurv-rayate" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_library:
+      config:
+        max_file_size: 1000000 # in bytes, only for default media library
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Apurv Rayate"] }
+      - { label: "Featured Image (name it featured.jpg)", name: "image", widget: "image" }
+      - { label: "Background Image (name it background.jpg)", name: "bgimage", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
