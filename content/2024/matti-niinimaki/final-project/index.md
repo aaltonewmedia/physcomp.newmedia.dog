@@ -5,6 +5,7 @@ authors:
   - Matti Niinimäki
 image: featured.jpg
 bgimage: background.jpg
+showBgImage: false
 ---
 Your Final Project page should have the following:
 
