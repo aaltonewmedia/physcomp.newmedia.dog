@@ -3,8 +3,9 @@ title: Final Project
 date: 2024-10-20T23:44:00.000Z
 authors:
   - Matti Niinimäki
+heroStyle: background
 image: featured.jpg
-bgimage: background.jpg
+bgimage: ""
 showBgImage: false
 ---
 Your Final Project page should have the following:
