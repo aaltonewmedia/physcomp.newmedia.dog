@@ -6,24 +6,36 @@ authors:
 image: 20241026_204630.jpg
 showBgImage: false
 ---
-![]()
+
 
 ## Instructions
+
 Circuit
-- Connect two LEDs to your Arduino using a breadboard
-- Connect one switch to your Arduino using a breadboard
+
+* Connect two LEDs to your Arduino using a breadboard
+* Connect one switch to your Arduino using a breadboard
 
 Code 
-- Read a momentary switch being pressed
-- When the program starts, both LEDs are off
-- When the switch is pressed once, the first LED turns on
-- When the switch is pressed the second time, the second LED turns on (the first one should also still be on)
-- When the switch is pressed the third time, both LEDs turn off
-- Repeat this same cycle of LEDs turning on and off in sequence (off, one LED, two LEDs, off…)
 
+* Read a momentary switch being pressed
+* When the program starts, both LEDs are off
+* When the switch is pressed once, the first LED turns on
+* When the switch is pressed the second time, the second LED turns on (the first one should also still be on)
+* When the switch is pressed the third time, both LEDs turn off
+* Repeat this same cycle of LEDs turning on and off in sequence (off, one LED, two LEDs, off…)
 
+___
 
-## Attempt 1
+## Circuit
+
+![Circuit Solution](20241026_204630.jpg)
+
+This works!
+
+___
+
+## Code Attempt 1
+
 
 ```
 int ledPin1 = 9;
