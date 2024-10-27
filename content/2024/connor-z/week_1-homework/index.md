@@ -39,3 +39,39 @@ And it works.
 I tested it out by activating both LED when I pressed the button. All are connected. 
 
 (Except the first time I put the wrong port on code and confused about why it isn't work)
+
+
+
+**CODE PART**
+
+**First Attempt**
+
+The logic to control the LEDs turn on and off looks like this 
+
+```
+if(btnVal == 1){
+
+    //turn on first LED 
+    digitalWrite(4, HIGH); 
+    LED_4 = true; 
+    
+  }
+  else if(btnVal == 1 && LED_4 == true){
+    //turn on the sesond LEd
+    digitalWrite(8, HIGH); 
+    LED_8 = true; 
+
+  }
+  else if (btnVal == 1 && LED_4 == true && LED_8 == true){
+    digitalWrite(4, LOW); 
+    digitalWrite(8, LOW); 
+    LED_4 = false; 
+    LED_8 = false; 
+  }
+```
+
+It doesn't work. 
+
+Only the LED_4 will light up and then nothing will change after this. 
+
+And then, I figured that under this condition, only the code under the first if statement will run. Once the condition is fulltilled, the rest of the code will be ignored.
