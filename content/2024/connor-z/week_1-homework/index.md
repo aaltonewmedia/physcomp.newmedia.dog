@@ -38,7 +38,7 @@ And it works.
 
 I tested it out by activating both LED when I pressed the button. All are connected. 
 
-(Except the first time I put the wrong port on code and confused about why it isn't work)
+(Except the first time I put the wrong port on code and confused about why it doesn't work)
 
 
 
@@ -49,6 +49,11 @@ I tested it out by activating both LED when I pressed the button. All are connec
 The logic to control the LEDs turn on and off looks like this 
 
 ```
+int btnPin = 2;
+int btnVal = 0; 
+bool LED_4, LED_8; //set bool
+int btnPreVal = false; 
+
 if(btnVal == 1){
 
     //turn on first LED 
@@ -74,4 +79,41 @@ It doesn't work.
 
 Only the LED_4 will light up and then nothing will change after this. 
 
-And then, I figured that under this condition, only the code under the first if statement will run. Once the condition is fulltilled, the rest of the code will be ignored.
+And then, I figured that under this condition, only the code under the first if statement will run. Once the condition is fulltilled, the rest of the code will be ignored. 
+
+
+
+Second Attempt
+
+I tried to fix the logic. 
+
+```
+if(btnVal == 1 && btnPreVal == false){
+
+    if(!LED_4 && !LED_8){
+
+    //turn on first LED 
+    digitalWrite(4, HIGH); 
+    LED_4 = true; 
+    //digitalWrite(8, LOW); 
+    }
+    else if(LED_4 && ! LED_8){
+    //turn on the sesond LEd
+    digitalWrite(8, HIGH); 
+    LED_8 = true; 
+
+    }
+    else if (LED_4 && LED_8){
+    digitalWrite(4, LOW); 
+    digitalWrite(8, LOW); 
+    LED_4 = false; 
+    LED_8 = false; 
+
+    }
+
+  }
+
+
+  delay(10); 
+  btnPreVal = btnVal;
+```
