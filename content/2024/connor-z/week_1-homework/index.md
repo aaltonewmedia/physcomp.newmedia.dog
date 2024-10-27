@@ -161,3 +161,15 @@ Press the button, both LEDs are turned off
 Thank  you :)
 
 (I know you like my feature pictures and my bg pictures, I will put my favourite characters for all the homework posts. )
+
+
+
+
+
+
+
+Week 1
+
+Soryu Asuka Langley and her EVA 02 
+
+Evagelion
