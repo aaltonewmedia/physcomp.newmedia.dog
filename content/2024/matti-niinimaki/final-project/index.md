@@ -12,23 +12,17 @@ Your Final Project page should have the following:
 
 ## Featured Image
 
-- One featured image (.jpg) that should be named `featured.jpg`
-- Resolution: **maximum 1920 pixels for the longer side**
-- Filesize: **maximum 2MB**
-- This will become the thumbnail for your project, you can also include it as a normal image in your page using the text editor.
-
-## Background Image
-
-- One background image (.jpg) that should be named `background.jpg`
-- Resolution: **maximum 1920 pixels for the longer side**
-- Filesize: **maximum 2MB**
-- This will become the background for your project, you can also include it as a normal image in your page using the text editor.
+* One featured image (.jpg) that should be named `featured.jpg`
+* Resolution: **maximum 1920 pixels for the longer side**
+* Filesize: **maximum 2MB**
+* This will become the thumbnail for your project, you can also include it as a normal image in your page using the text editor.
 
 ## Video
 
 Format:
-- Resolution: 1920x1080 (**No vertical videos please**)
-- Send the video to Matti and he will upload it to our Vimeo channel
+
+* Resolution: 1920x1080 (**No vertical videos please**)
+* Send the video to Matti and he will upload it to our Vimeo channel
 
 You can include the video with the following command:
 
@@ -37,3 +31,11 @@ You can include the video with the following command:
 ```
 
 Where id is the video id in the URL of the vimeo page for your video.
+
+## Project Description
+
+Write a short project description about your project.
+
+## Process Description
+
+Additionally, you can write a process description that goes more into the details of how and why you created the project.
