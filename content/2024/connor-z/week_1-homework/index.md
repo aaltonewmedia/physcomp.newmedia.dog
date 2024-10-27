@@ -117,3 +117,47 @@ if(btnVal == 1 && btnPreVal == false){
   delay(10); 
   btnPreVal = btnVal;
 ```
+
+I write the condition under an if statement to make sure the button presse can be read. 
+
+After it enters the if statement, my code will say: "okay, let's check which condition we fullfilled! ". 
+
+1. if both LED are not on, turn on the first LED
+
+2. if the first one is on but second one it not, turn on the second LED
+
+3. if both LED are on, turn of both. 
+
+And everytime we get out from the loop, make sure that the btnPreVal is set equals to btnVal (which should be 0/false).
+
+AND IT WORKS. 
+
+ 
+
+Both LEDs are OFF
+
+![](1.jpg)
+
+
+
+Press the button and the first LED is turn on
+
+![](2.jpg)
+
+
+
+Press the button again. The first LED remains on, and the second LED is turned on
+
+![](3.jpg)
+
+
+
+Press the button, both LEDs are turned off
+
+![](4.jpg)
+
+
+
+Thank  you :)
+
+(I know you like my feature pictures and my bg pictures, I will put my favourite characters for all the homework posts. )
