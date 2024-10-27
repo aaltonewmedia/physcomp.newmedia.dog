@@ -148,6 +148,24 @@ collections:
       - { label: "Background Image", hint: "Name the image background.jpg", name: "bgimage", widget: "image", required: false  }
       - { label: "Show Background", name: "showBgImage", widget: "boolean", default: false}
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "2024-joonas-juutilainen" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Joonas Juutilainen" # Used in the UI
+    folder: "content/2024/joonas-juutilainen" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_library:
+      config:
+        max_file_size: 1000000 # in bytes, only for default media library
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Joonas Juutilainen"] }
+      - { label: "Featured Image", hint: "Name the image featured.jpg", name: "image", widget: "image" }
+      - { label: "Background Image", hint: "Name the image background.jpg", name: "bgimage", widget: "image", required: false  }
+      - { label: "Show Background", name: "showBgImage", widget: "boolean", default: false}
+      - { label: "Body", name: "body", widget: "markdown" } 
   - name: "2024-jue-ning" # Used in routes, e.g., /admin/collections/post
     label: "2024 Jue Ning" # Used in the UI
     folder: "content/2024/jue-ning" # The path to the folder where the documents are stored
@@ -235,6 +253,24 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Authors", name: "authors", widget: "list", default: ["Sasha Tikachev"] }
+      - { label: "Featured Image", hint: "Name the image featured.jpg", name: "image", widget: "image" }
+      - { label: "Background Image", hint: "Name the image background.jpg", name: "bgimage", widget: "image", required: false  }
+      - { label: "Show Background", name: "showBgImage", widget: "boolean", default: false}
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "2024-toranosuke-sano" # Used in routes, e.g., /admin/collections/post
+    label: "2024 Toranosuke Sano" # Used in the UI
+    folder: "content/2024/toranosuke-sano" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_library:
+      config:
+        max_file_size: 1000000 # in bytes, only for default media library
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Toranosuke Sano"] }
       - { label: "Featured Image", hint: "Name the image featured.jpg", name: "image", widget: "image" }
       - { label: "Background Image", hint: "Name the image background.jpg", name: "bgimage", widget: "image", required: false  }
       - { label: "Show Background", name: "showBgImage", widget: "boolean", default: false}
