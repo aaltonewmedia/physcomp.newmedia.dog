@@ -3,7 +3,7 @@ title: Week_1 Homework
 date: 2024-10-28T00:02:00.000Z
 authors:
   - Connor Z
-image: asuka.jpg
+image: feature.jpg.jpg
 bgimage: background.jpg
 showBgImage: true
 ---
