@@ -45,7 +45,7 @@ Repeat this same cycle of LEDs turning on and off in sequence (off, one LED, two
 
 #### Reflection
 
-The three cases listed in the assignment are demonstrated above. I followed a similar process to how we read LED input in class. For the circuit, I added another LED on pin 11 to the my circuit from class. For the code, I added a state variable that determines which of the three required states the circuit should be in. Finally I added a delay to smoothen the transition between two different states so that there were no jitters in reading the button input.
+The three cases listed in the assignment are demonstrated above. I followed a similar process to how we read LED input in class. For the circuit, I added another LED on pin 11 to my circuit from class. For the code, I added a state variable that determines which of the three required states the circuit should be in. Finally I added a delay to smoothen the transition between two different states so that there were no jitters in reading the button input.
 
 ---
 
