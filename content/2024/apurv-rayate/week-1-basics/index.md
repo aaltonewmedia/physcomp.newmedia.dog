@@ -25,19 +25,19 @@ Repeat this same cycle of LEDs turning on and off in sequence (off, one LED, two
 
 ---
 
-![Both LEDs OFF](/assets/images/both_off.jpg)
+![Both LEDs OFF](both_off.jpg)
 
 **Both** LEDs are **OFF**.
 
 ---
 
-![One LED ON](/assets/images/one_on.jpg)
+![One LED ON](one_on.jpg)
 
 **One** LED is **ON**.
 
 ---
 
-![Both LEDs ON](/assets/images/both_on.jpg)
+![Both LEDs ON](both_on.jpg)
 
 **Both** LEDs are **ON**.
 
