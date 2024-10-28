@@ -7,3 +7,5 @@ image: featured.jpg
 showBgImage: true
 ---
 Hi I am Apurv. I like games, code and nature.
+
+featured img: Poison Dart Frog
