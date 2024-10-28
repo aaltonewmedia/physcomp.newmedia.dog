@@ -30,3 +30,19 @@ Wiring Diagram:
 Wiring:
 
 ![Wiring](wiring.jpg)
+
+
+
+Attempt 1: 
+
+Failure. After uploading the code, both small lights lit up. 
+
+This code cannot correctly track the number of button presses and switch between three states. The for loop inside it executes continuously in each iteration of the loop() function, rather than based on the number of button presses.
+
+![01](01.png)
+
+![01_](01_.jpg)
+
+
+
+![]()
