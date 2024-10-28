@@ -62,100 +62,58 @@ I was stuck but found some tips here: <https://learn.newmedia.dog/tutorials/ardu
 
 ![](homework1_final.png)
 
-int ledPin1 = 9; // *THE LED 1*
 
-int ledPin2 = 11; // *THE LED 2*
 
-int buttonPin = 2; / / *BUTTON, refers to the pin2 in arduino*
-
+```c
+int ledPin1 = 9; // THE LED 1
+int ledPin2 = 11; // THE LED 2
+int buttonPin = 2; / / BUTTON, refers to the pin2 in arduino
 int buttonVal = 0;
-
-int prevButtonVal = 0; // *prev button value*
-
+int prevButtonVal = 0; // prev button value
 int counter = 0;
-
 void setup() {
-
-  *// put your setup code here, to run once*:
-
+  // put your setup code here, to run once:
   pinMode(ledPin1,OUTPUT); // pin 9
-
   pinMode(ledPin2,OUTPUT); // pin 11
-
   pinMode(buttonPin,INPUT);
-
   Serial.begin(9600); 
-
 }
-
 void loop() {
-
-  *// put your main code here, to run repeatedly:*
-
+  // put your main code here, to run repeatedly:
   buttonVal = digitalRead(buttonPin);
-
-*// if button value is different to the previous button value:*
-
+// if button value is different to the previous button value:
 if(buttonVal != prevButtonVal){ 
+// print the changed state*
 
- *   // print the changed state*
-
-\    Serial.println(buttonVal);
-
-\    if(buttonVal == HIGH){ //when button is pressed
-
-\    *// increase the counter*
-
-\    counter++; *// counter = counter + 1;*
-
-\    Serial.print("Count: ");
-
-\    Serial.println(counter);
-
-\    }
-
-\    if(buttonVal == HIGH && counter==1){
-
-\    digitalWrite(ledPin1, HIGH);
-
-\    }
-
-\    if(buttonVal == HIGH && counter==2){
-
-\    digitalWrite(ledPin1, HIGH);
-
-\    digitalWrite(ledPin2, HIGH);
-
-\    }
-
-\    if(counter == 3){
-
-\    digitalWrite(ledPin1, LOW);
-
-\    digitalWrite(ledPin2, LOW);   
-
-\    }
-
+    Serial.println(buttonVal);
+    if(buttonVal == HIGH){ //when button is pressed
+    // increase the counter
+    counter++; // counter = counter + 1;
+    Serial.print("Count: ");
+    Serial.println(counter);
+    }
+    if(buttonVal == HIGH && counter==1){
+    digitalWrite(ledPin1, HIGH);
+    }
+    if(buttonVal == HIGH && counter==2){
+    digitalWrite(ledPin1, HIGH);
+    digitalWrite(ledPin2, HIGH);
+    }
+    if(counter == 3){
+    digitalWrite(ledPin1, LOW);
+    digitalWrite(ledPin2, LOW);   
+    }
   }
-
-  *// reset the counter and button values when pressed 3 times*
-
+  // reset the counter and button values when pressed 3 times
   if(counter > 3){
-
-\    prevButtonVal = 0;
-
-\    buttonVal = 0;
-
-\    counter = 0;
-
-  *// save the previous button state for the next loop* 
-
+   prevButtonVal = 0;
+     buttonVal = 0;
+    counter = 0;
+  // save the previous button state for the next loop 
   }else{ 
-
   prevButtonVal = buttonVal;
-
   }
-
   delay(10);
-
 }
+
+```
