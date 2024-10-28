@@ -82,7 +82,7 @@ Here is my code attached:
         digitalWrite(ledPin2,LOW);
       }else if(state==1){
         digitalWrite(ledPin1, HIGH);
-        digitalWrite(ledPin2,LOW);
+        //digitalWrite(ledPin2,LOW);
       }else{
         //digitalWrite(ledPin1, HIGH);
         digitalWrite(ledPin2,HIGH);
