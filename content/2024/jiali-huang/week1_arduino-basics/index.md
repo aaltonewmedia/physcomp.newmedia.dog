@@ -42,7 +42,3 @@ This code cannot correctly track the number of button presses and switch between
 ![01](01.png)
 
 ![01_](01_.jpg)
-
-
-
-![]()
