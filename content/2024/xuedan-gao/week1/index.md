@@ -7,6 +7,8 @@ image: featured.jpg
 bgimage: ""
 showBgImage: false
 ---
+![](img_1513.jpg)
+
 ### First Attempt
 
 In my first attempt, [watch here](https://youtube.com/shorts/2UfICF9XRc4?feature=share), I failed because I didn’t store the button state. This caused the counter to increment too quickly.
@@ -18,7 +20,7 @@ if (btnState == HIGH)
 }
 ```
 
----
+- - -
 
 ### Second Attempt (Success)
 
@@ -34,8 +36,10 @@ if(prevbtnState != btnState)
   }
   prevbtnState = btnState;
 ```
----
-### The code: 
+
+- - -
+
+### The code:
 
 ```cpp
 int counter = 0; 
