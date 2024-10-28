@@ -24,7 +24,7 @@ if (btnState == HIGH)
 
 ### Second Attempt (Success)
 
-After storing the button state, I successfully solved the issue. You can [watch my successful attempt here](https://youtube.com/shorts/ijCMIy3h8yU?feature=share).
+After storing the button state, I successfully solved the issue. You can watch it [here](https://youtube.com/shorts/ijCMIy3h8yU?feature=share).
 
 ```cpp
 if(prevbtnState != btnState)
