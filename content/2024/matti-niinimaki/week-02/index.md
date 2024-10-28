@@ -7,6 +7,40 @@ image: featured.jpg
 bgimage: background.jpg
 ---
 
+## Interesting ALT+CTRL Game
+
+Line Wobbler by Robin Baumgarten
+
+{{<youtube UZ_5ol_kyL4>}}
+
+> ...game that is played on a one-dimensional LED strip with a new controller using the spring and knob from a shoe-tree. The first game for this setup is a dungeon crawler - you control the green dot and have to overcome obstacles such as lava pits, conveyor belts and enemies. You can attack using a unique 'wobble' attack.
+
+This is such a simple but great idea! The game works really well and the controller is very responsive. The animations are smooth and there are some impressive visual effects for just a strip of LEDs. I love the sound design as well
+
+### How to add video to this site?
+
+Change the editing mode to **Markdown**
+
+Add the following line for Vimeo:
+
+```go
+{{</*vimeo id*/>}}
+```
+
+Or for YouTube:
+
+```go
+{{</*youtube id*/>}}
+```
+
+id is the ID of the video in the URL. For example, for [this video](https://www.youtube.com/watch?v=UZ_5ol_kyL4) the id is UZ_5ol_kyL4 so I would type:
+
+```go
+{{</*youtube UZ_5ol_kyL4*/>}}
+```
+
+---
+
 ## Sensor: VL53L1X Distance Sensor
 
 ![VL53L1X](VL53L1X.jpg)
@@ -67,6 +101,8 @@ The Sparkfun library seemed to have some issues freezing so I tested some of the
 
 ---
 
+## Game Idea
+
 ### What kind of interactions are possible with the data?
 
 - You can know how far away a person (or any object) is from a static place
@@ -78,7 +114,7 @@ The Sparkfun library seemed to have some issues freezing so I tested some of the
 - Put it in the ceiling pointing down and you can detect if someone is underneath it (or even measure how tall they are)
 - Using the ROI feature, you could do simple gesture detection (is the object moving to left or right)
 
-## Game Idea
+### How to use this as a game?
 
 My idea is...
 
