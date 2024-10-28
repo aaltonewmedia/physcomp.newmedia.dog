@@ -8,10 +8,13 @@ showBgImage: false
 ---
 * P1:Here's a version that failed, feels like a connection problem（true）
 * P2:Figured it out: the button press signal goes into the 3 interface（helped by Connor）
+* P3:I've done it in reality as well (there was a glitch in the process, I neglected to connect the negative to GND)
 
 ![](wechatimg384.jpg)
 
 ![](wechatimg385.jpg)
+
+![](wechatimg7.jpg)
 
 int led1 = 8;          
 
