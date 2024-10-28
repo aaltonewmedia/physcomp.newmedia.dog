@@ -6,5 +6,4 @@ authors:
 image: featured.jpg
 showBgImage: true
 ---
-
-This is my course documentation site!
+Hi I am Apurv. I like games, code and nature.
