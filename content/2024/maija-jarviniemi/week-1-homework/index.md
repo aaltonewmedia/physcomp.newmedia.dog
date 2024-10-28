@@ -8,25 +8,25 @@ showBgImage: false
 ---
 ## **The task:**
 
-Create a circuit and Arduino code that does the following
+*Create a circuit and Arduino code that does the following*
 
-**Circuit**
+***Circuit***
 
-1. Connect two LEDs to your Arduino using a breadboard
-2. Connect one switch to your Arduino using a breadboard
+1. *Connect two LEDs to your Arduino using a breadboard*
+2. *Connect one switch to your Arduino using a breadboard*
 
-**Code** 
+***Code*** 
 
-* Read a momentary switch being pressed
-* When the program starts, both LEDs are off
-* When the switch is pressed once, the first LED turns on
-* When the switch is pressed the second time, the second LED turns on (the first one should also still be on)
-* When the switch is pressed the third time, both LEDs turn off
-* Repeat this same cycle of LEDs turning on and off in sequence (off, one LED, two LEDs, off…)
+* *Read a momentary switch being pressed*
+* *When the program starts, both LEDs are off*
+* *When the switch is pressed once, the first LED turns on*
+* *When the switch is pressed the second time, the second LED turns on (the first one should also still be on)*
+* *When the switch is pressed the third time, both LEDs turn off*
+* *Repeat this same cycle of LEDs turning on and off in sequence (off, one LED, two LEDs, off…)*
 
 ## Let's start!
 
-I am continuing on the led+switch done on class with one led.
+I am continuing on the arduino sketch we did at class with 1 led+switch.
 
 **What do I need to have:**
 
@@ -52,8 +52,110 @@ What do I need to add to make the second led work?
 * Add a variable for the second pin
 * Add the digitalWrite command high+low
 
-**I ran the code but only the led 1 in pin 9 works...**
-
 **Here's the code:**
 
-![](homework1_firsttryout_doesntwork.png)
+![](homework1_phase1_ledswork.png)
+
+I was stuck but found some tips here: <https://learn.newmedia.dog/tutorials/arduino-and-electronics/arduino/digital-io-rising-or-falling-edge/>
+
+**And here's the final code that actually worked after some experimenting:**
+
+![](homework1_final.png)
+
+int ledPin1 = 9; // *THE LED 1*
+
+int ledPin2 = 11; // *THE LED 2*
+
+int buttonPin = 2; / / *BUTTON, refers to the pin2 in arduino*
+
+int buttonVal = 0;
+
+int prevButtonVal = 0; // *prev button value*
+
+int counter = 0;
+
+void setup() {
+
+  *// put your setup code here, to run once*:
+
+  pinMode(ledPin1,OUTPUT); // pin 9
+
+  pinMode(ledPin2,OUTPUT); // pin 11
+
+  pinMode(buttonPin,INPUT);
+
+  Serial.begin(9600); 
+
+}
+
+void loop() {
+
+  *// put your main code here, to run repeatedly:*
+
+  buttonVal = digitalRead(buttonPin);
+
+*// if button value is different to the previous button value:*
+
+if(buttonVal != prevButtonVal){ 
+
+ *   // print the changed state*
+
+\    Serial.println(buttonVal);
+
+\    if(buttonVal == HIGH){ //when button is pressed
+
+\    *// increase the counter*
+
+\    counter++; *// counter = counter + 1;*
+
+\    Serial.print("Count: ");
+
+\    Serial.println(counter);
+
+\    }
+
+\    if(buttonVal == HIGH && counter==1){
+
+\    digitalWrite(ledPin1, HIGH);
+
+\    }
+
+\    if(buttonVal == HIGH && counter==2){
+
+\    digitalWrite(ledPin1, HIGH);
+
+\    digitalWrite(ledPin2, HIGH);
+
+\    }
+
+\    if(counter == 3){
+
+\    digitalWrite(ledPin1, LOW);
+
+\    digitalWrite(ledPin2, LOW);   
+
+\    }
+
+  }
+
+  *// reset the counter and button values when pressed 3 times*
+
+  if(counter > 3){
+
+\    prevButtonVal = 0;
+
+\    buttonVal = 0;
+
+\    counter = 0;
+
+  *// save the previous button state for the next loop* 
+
+  }else{ 
+
+  prevButtonVal = buttonVal;
+
+  }
+
+  delay(10);
+
+}
