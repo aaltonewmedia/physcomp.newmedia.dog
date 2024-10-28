@@ -1,6 +1,6 @@
 ---
 title: week1_Arduino Basics
-date: 2024-10-28T22:17:00.000Z
+date: 2024-10-28T22:38:00.000Z
 authors:
   - Jiali Huang
 image: feature.jpg
@@ -42,3 +42,11 @@ This code cannot correctly track the number of button presses and switch between
 ![01](01.png)
 
 ![01_](01_.jpg)
+
+Attempt 2: 
+
+Failure. The two small lights automatically alternate flashing, and the button does not function.
+
+![02](02.png)
+
+![02_](02_.jpg)
