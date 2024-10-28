@@ -3,7 +3,7 @@ title: Sasha Tikachev
 date: 2024-10-20T23:08:00.000Z
 authors:
   - Sasha Tikachev
-image: canvas6-copy.png
+image: canvas6-copy-min.png
 bgimage: ""
 showBgImage: false
 ---
