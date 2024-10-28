@@ -4,7 +4,7 @@ date: 2024-10-28T13:38:00.000Z
 authors:
   - Apurv Rayate
 image: featured.jpg
-showBgImage: false
+showBgImage: true
 ---
 ## Physical Computing Exercise
 
