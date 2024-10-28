@@ -30,28 +30,27 @@ I am continuing on the led+switch done on class with one led.
 
 **What do I need to have:**
 
-* 1 led
-* One resistor with the yellow line first (470 ohm) 
-* A red cable (orange one)
-* A black cable to connect to the blue line (negative).. to the grounding
-* I have to select a second pin for the second led
+* 1 led + a resistor with the yellow line first (470 ohm) 
+* A red cable (orange one)+  black cable to connect to the blue line (negative).. to the grounding
+* I have to select a second pin for the second led -> pin 11
 
 **What I did for the circuit:**
 
-1. Moved red+yellow cables first end (start) with three to the right
-2. Moved the button with three to the right
-3. Moved the resistor with three to the right + the black cable connected to it
-4. added a second led+resistor after the first led+resistor (in the same pattern) PICTURE 
-5. added a black cable to the second led’s resistor and that to the blue (negative) row
-6. added an orange cable to the second led and to the pin 11 (with the wavy line) PICTURE
+1. Moved the button and red+yellow cables first end (start) with three to the right
+2. Moved the button's resistor with three to the right + the black cable connected to it
+3. Added a second led+resistor after the first led+resistor (in the same pattern)
+4. Added a black cable to the second led’s resistor and that to the blue (negative) row
+5. Added an orange cable to the second led and to the pin 11 (with the wavy line)
+
+## **ADD PICTURE**
 
 **The code:**
 
-What do I need to do to make the second led work?
+What do I need to add to make the second led work?
 
-* I need to activate the pin 12 (second led) in the code ✅
-* I added as a variable
-* I added the digitalWrite command high+low
+* Activate the pin 11 (second led) in the code
+* Add a variable for the second pin
+* Add the digitalWrite command high+low
 
 **I ran the code but only the led 1 in pin 9 works...**
 
