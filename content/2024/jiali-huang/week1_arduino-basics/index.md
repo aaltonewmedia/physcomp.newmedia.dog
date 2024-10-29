@@ -21,8 +21,6 @@ When the switch is pressed the third time, both LEDs turn off
 
 Repeat this same cycle of LEDs turning on and off in sequence (off, one LED, two LEDs, off…)
 
-
-
 Wiring Diagram:
 
 ![wiring diagram](wiring-diagram.png)
@@ -30,8 +28,6 @@ Wiring Diagram:
 Wiring:
 
 ![Wiring](wiring.jpg)
-
-
 
 Attempt 1: 
 
@@ -50,3 +46,17 @@ Failure. The two small lights automatically alternate flashing, and the button d
 ![02](02.png)
 
 ![02_](02_.jpg)
+
+Attempt 3: 
+
+Success. Store the button state, treating pressing and releasing the button as a complete button press.
+
+![03](03.png)
+
+![03_](03_.jpg)
+
+![03__](03__.jpg)
+
+![03___](03___.jpg)
+
+![03____](03____.jpg)
