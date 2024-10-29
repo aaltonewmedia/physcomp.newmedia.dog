@@ -60,6 +60,8 @@ I was stuck with figuring out the sequencing but found some tips here: <https://
 
 **And here's the final code that actually worked after some experimenting:**
 
+{{<vimeo 1024265505>}}
+
 ![](homework1_final.png)
 
 ```c
@@ -114,5 +116,3 @@ if(buttonVal != prevButtonVal){
   delay(10);
 }
 ```
-
-{{<vimeo 1024265505>}}
