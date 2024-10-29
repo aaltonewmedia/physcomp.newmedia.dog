@@ -22,9 +22,13 @@ I also really enjoyed Matti's tactile sound piece. Again, I like the simplicity 
 
 ## 2. Come up with a concept for your own Alt+Ctrl Interface
 
-One sensor I'm interested in is the wind sensor (anemometer). I would like to use it to detect the wind or the air user is blowing into the sensor. I believe the data from the sensor would be continuous.
+Sensors I'm interested in:
 
-I am also interested in NFC tags, even though I'm not sure if it's called a sensor. I believe the tags would cause binary output. 
+1. wind sensor (anemometer) - I would like to use it to detect the wind or the air user is blowing into the sensor. I believe the data from the sensor would be continuous.
+
+2. NFC (Near Field Communication) tags - It would be interesting to use NFC tags to trigger sounds. I believe the tags would cause binary output. 
+
+3. Temperature sensor - I enjoy the idea of sensing warmth (and life) using temperature sensor. I believe the temperature sensor data would be continuous.
 
 ## 3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops
 
