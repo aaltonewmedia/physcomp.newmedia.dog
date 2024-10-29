@@ -6,9 +6,6 @@ authors:
 image: featured.jpg
 showBgImage: false
 ---
-{{<vimeo 1024265505>}}
-*Tadaa!*
-
 ## **The task:**
 
 *Create a circuit and Arduino code that does the following*
@@ -62,6 +59,8 @@ What do I need to add to make the second led work?
 I was stuck with figuring out the sequencing but found some tips here: <https://learn.newmedia.dog/tutorials/arduino-and-electronics/arduino/digital-io-rising-or-falling-edge/>
 
 **And here's the final code that actually worked after some experimenting:**
+
+{{<vimeo 1024265505>}}
 
 ![](homework1_final.png)
 
