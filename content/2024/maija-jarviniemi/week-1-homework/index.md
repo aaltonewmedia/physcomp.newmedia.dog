@@ -36,15 +36,15 @@ I am continuing on the arduino sketch we did at class with 1 led+switch.
 
 **What I did for the circuit:**
 
-1. Moved the button and red+yellow cables first end (start) with three to the right
-2. Moved the button's resistor with three to the right + the black cable connected to it
-3. Added a second led+resistor after the first led+resistor (in the same pattern)
-4. Added a black cable to the second led’s resistor and that to the blue (negative) row
-5. Added an orange cable to the second led and to the pin 11 (with the wavy line)
+1. Added a second led+resistor after the first led+resistor (in the same pattern)
+2. Added a black cable to the second led’s resistor and that to the blue (negative) row
+3. Added an orange cable to the second led and to the pin 11 (with the wavy line)
 
-## **ADD PICTURE**
+![](homework1_breadboard.jpg)
 
-**The code:**
+*Side note: Here the second led is connected to the pin 12 which I changed later to pin number 11.*
+
+### **The code:**
 
 What do I need to add to make the second led work?
 
@@ -56,18 +56,16 @@ What do I need to add to make the second led work?
 
 ![](homework1_phase1_ledswork.png)
 
-I was stuck but found some tips here: <https://learn.newmedia.dog/tutorials/arduino-and-electronics/arduino/digital-io-rising-or-falling-edge/>
+I was stuck with figuring out the sequencing but found some tips here: <https://learn.newmedia.dog/tutorials/arduino-and-electronics/arduino/digital-io-rising-or-falling-edge/>
 
 **And here's the final code that actually worked after some experimenting:**
 
 ![](homework1_final.png)
 
-
-
 ```c
 int ledPin1 = 9; // THE LED 1
 int ledPin2 = 11; // THE LED 2
-int buttonPin = 2; / / BUTTON, refers to the pin2 in arduino
+int buttonPin = 2; // BUTTON, refers to the pin2 in arduino
 int buttonVal = 0;
 int prevButtonVal = 0; // prev button value
 int counter = 0;
@@ -115,5 +113,4 @@ if(buttonVal != prevButtonVal){
   }
   delay(10);
 }
-
 ```
