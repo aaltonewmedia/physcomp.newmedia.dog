@@ -5,7 +5,7 @@ authors:
   - Jue Ning
 image: feature.jpg
 bgimage: background.jpg
-showBgImage: false
+showBgImage: true
 ---
 #### Task Description⬇️
 
