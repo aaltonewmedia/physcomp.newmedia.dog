@@ -19,7 +19,11 @@ I didn’t just pick it just because it is insect-themed though, that is a bonus
 /\
 /
 
-# **2. Come up with a concept for your own Alt-Ctrl Interface: Waggle Waggle Revolution!**
+# **2. Come up with a concept for your own Alt-Ctrl Interface:** 
+
+# **Waggle Waggle Revolution!**
+
+## /
 
 ## Intro
 
@@ -45,16 +49,20 @@ In addition to pheromone signals, bees communicate through waggling their abdome
 
 See the below image to understand their dance:
 
+![](manuka-honey-bees-use-dance-communicate-1-.jpg "Waggle-Dance of the Bee")
+
 /
 
 ### Exact concept:
 
 1. Two or more players put on a set of color-coded bee wings & abdomen costumes each after being instructed.
-2. They stand in the game area which is marked with circles to guide the dancing.
+2. They stand in the game area, which is marked with circles to guide the dancing.
 3. They watch the instructional video on the game screen.
-4. Round 1 begins on a 3,2,1 count, and the miniature meadow model lights up with colors showing the location of different food sources. This model includes a little hive model in the middle, which is the player's physical location, and an LED matrix underneath the model, which conveys the location of the food source each round.
-5. Players have five seconds to interpret the model to figure out what path to waggle to their food source.
+4. The game begins on a 3,2,1 count, and the game screen shows a top-down map of the location of different colored food sources that they need to communicate. This visualisation includes a little hive in the middle, which is the player's physical location and goal.
+5. Players have five seconds to interpret the visualisation to figure out what path to waggle to their food source.
 6. Players try to dance their pattern as fast and as correctly as they can according to their interpretation of the given information.
+
+   ![](photo_2024-10-30_21-40-47.jpg "Visualisation of Player 1 waggling around their game circle.")
 7. The judgment is based on how correct the information is, specifically the angle at which the participant waggled and how far they waggled to convey the distance. If there is a draw the faster waggler wins.
 8. When they are done waggling, the screen shows the bees in the beehive turning to the best waggler and repeating their dance pattern, who is then shown as the winner! 
 
