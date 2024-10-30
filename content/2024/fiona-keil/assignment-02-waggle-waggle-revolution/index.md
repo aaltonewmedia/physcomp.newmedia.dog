@@ -19,7 +19,7 @@ I didn’t just pick it just because it is insect-themed though, that is a bonus
 /\
 /
 
-# **2. Come up with a concept for your own Alt-Ctrl Interface:** 
+# **2. Come up with a concept for your own Alt-Ctrl Interface:**
 
 # **Waggle Waggle Revolution!**
 
@@ -56,18 +56,24 @@ See the below image to understand their dance:
 ### Exact concept:
 
 1. Two or more players put on a set of color-coded bee wings & abdomen costumes each after being instructed.
-2. They stand in the game area, which is marked with circles to guide the dancing.
-3. They watch the instructional video on the game screen.
-4. The game begins on a 3,2,1 count, and the game screen shows a top-down map of the location of different colored food sources that they need to communicate. This visualisation includes a little hive in the middle, which is the player's physical location and goal.
-5. Players have five seconds to interpret the visualisation to figure out what path to waggle to their food source.
-6. Players try to dance their pattern as fast and as correctly as they can according to their interpretation of the given information.
+
+![Player wearing the 'Waggle Waggle' alt+ctrl costume west which hides the required sensor in the abdomen part of the costume.](photo_2024-10-30_21-40-40.jpg)
+
+1. They stand in the game area, which is marked with circles to guide the dancing.
+
+![](photo_2024-10-30_21-40-44.jpg "Players standing in their Waggle Waggle Revolution play areas, observing the game screen which is giving direction on where the respective food sources are that they should waggle. Note the cameras above the play areas which record movement speed and angles.")
+
+1. They watch the instructional video on the game screen.
+2. The game begins on a 3,2,1 count, and the game screen shows a top-down map of the location of different colored food sources that they need to communicate. This visualisation includes a little hive in the middle, which is the player's physical location and goal.
+3. Players have five seconds to interpret the visualisation to figure out what path to waggle to their food source.
+4. Players try to dance their pattern as fast and as correctly as they can according to their interpretation of the given information.
 
 ![](photo_2024-10-30_21-40-47.jpg "Player 1 performing a potential waggle pattern by wiggling their behind, trying to walk in the correct angle.")
 
-
-
 1. The judgment is based on how correct the information is, specifically the angle at which the participant waggled and how far they waggled to convey the distance. If there is a draw the faster waggler wins.
 2. When they are done waggling, the screen shows the bees in the beehive turning to the best waggler and repeating their dance pattern, who is then shown as the winner! 
+
+   /
 
 ### Implementation:
 
