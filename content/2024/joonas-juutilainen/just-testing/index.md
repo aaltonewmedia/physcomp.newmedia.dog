@@ -20,7 +20,7 @@ Code:
 
 \- If var=1, then led 1 output high.
 
-\- if var=2, then leds 1 output and 2 high.
+\- if var=2, then leds 1 and 2 output high.
 
 \- if var=3, then leds output low and var back to 0.
 
@@ -67,5 +67,4 @@ if(stage==1){
   // put your main code here, to run repeatedly:
 
 }
-
 ```
