@@ -57,8 +57,57 @@ The first light successfully turns on on the first press, but the second one doe
 
 \\
 \
-Breadboard:\
+Breadboard:
+
+![  ](featured.jpg "Breadboard showing my final attempt to solve the assignment.")
+
+\
 Code:
+
+```
+int ledPin1 = 10;
+int ledPin2 = 6;
+int btnPin = 2;
+int btnVal = 0;
+int press = 0;
+bool lastBtnState = LOW;
+
+void setup() {
+  pinMode(ledPin1, OUTPUT);
+  pinMode(ledPin2, OUTPUT);
+  pinMode(btnPin, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int currentBtnState = digitalRead(btnPin);
+  
+  // Check if button is pressed (and was previously not pressed)
+  if (currentBtnState == HIGH && lastBtnState == LOW) {
+    press++;
+    if (press > 2) {
+      press = 0; // Reset the button on third time pressing
+    }
+  }
+  lastBtnState = currentBtnState; // Update state of button
+
+  // Control LEDs based on presses
+  if (press == 0) {
+    digitalWrite(ledPin1, LOW); // Off
+    digitalWrite(ledPin2, LOW);
+  } else if (press == 1) {
+    digitalWrite(ledPin1, HIGH); // LED 1 on
+    digitalWrite(ledPin2, LOW);
+  } else if (press == 2) {
+    digitalWrite(ledPin1, HIGH); // Both LEDs on
+    digitalWrite(ledPin2, HIGH);
+  }
+
+  delay(10); // Matti says to always put delay so output runs smoothly
+  }
+```
+
+
 
 **Attempted fixes:\**
 
