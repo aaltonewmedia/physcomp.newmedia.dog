@@ -62,9 +62,12 @@ See the below image to understand their dance:
 5. Players have five seconds to interpret the visualisation to figure out what path to waggle to their food source.
 6. Players try to dance their pattern as fast and as correctly as they can according to their interpretation of the given information.
 
-   ![](photo_2024-10-30_21-40-47.jpg "Visualisation of Player 1 waggling around their game circle.")
-7. The judgment is based on how correct the information is, specifically the angle at which the participant waggled and how far they waggled to convey the distance. If there is a draw the faster waggler wins.
-8. When they are done waggling, the screen shows the bees in the beehive turning to the best waggler and repeating their dance pattern, who is then shown as the winner! 
+![](photo_2024-10-30_21-40-47.jpg "Player 1 performing a potential waggle pattern by wiggling their behind, trying to walk in the correct angle.")
+
+
+
+1. The judgment is based on how correct the information is, specifically the angle at which the participant waggled and how far they waggled to convey the distance. If there is a draw the faster waggler wins.
+2. When they are done waggling, the screen shows the bees in the beehive turning to the best waggler and repeating their dance pattern, who is then shown as the winner! 
 
 ### Implementation:
 
