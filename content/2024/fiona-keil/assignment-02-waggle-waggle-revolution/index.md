@@ -11,7 +11,7 @@ showBgImage: true
 
 I selected the game Roflpillar by the team Lucky Frame, which was submitted to GDC in 2014! 
 
-`<iframe width="560" height="315" src="https://www.youtube.com/embed/EvbzH6_IWMA?si=EEMddzhvfJALzA1F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+<https://www.youtube.com/watch?v=EvbzH6_IWMA>
 
 The name caught my attention because it was a pun on ‘caterpillar’. It immediately made me picture the animal and how it moves, which I found inspiring. I wanted to create a funny insect-themed concept for this submission that makes participants do an unexpected/weird thing that is entertaining for themselves and observers, which is exactly what this project does, so it seemed like the perfect project to inspect more closely!
 
