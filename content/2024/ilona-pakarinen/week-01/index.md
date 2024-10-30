@@ -14,8 +14,6 @@ int buttonState = 0;
 
 int lastButtonState = 0;
 
-
-
 void setup() {
 
   // put your setup code here, to run once:
@@ -29,8 +27,6 @@ void setup() {
   Serial.begin(9600);
 
 }
-
-
 
 void loop() {
 
@@ -64,11 +60,7 @@ void loop() {
 
   }
 
-
-
   lastButtonState = buttonState;
-
-
 
   if(counter == 0){
 
@@ -87,8 +79,6 @@ void loop() {
   }
 
 }
-
-
 
 Reflections:
 
@@ -111,3 +101,7 @@ This is all followed by another if statement, which checks the counter and turns
 So first the code checks the button state and adds to the counter depending on the value. Then it saves the previous button state and check the counter for turning on an LED.
 
 I think that's how it works.
+
+![](final-circuit.png)
+
+![]()
