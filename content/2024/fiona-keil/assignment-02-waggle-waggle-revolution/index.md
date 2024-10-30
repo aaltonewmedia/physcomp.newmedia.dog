@@ -57,7 +57,7 @@ See the below image to understand their dance:
 
 1. Two or more players put on a set of color-coded bee wings & abdomen costumes each after being instructed.
 
-![Player wearing the 'Waggle Waggle' alt+ctrl costume west which hides the required sensor in the abdomen part of the costume.](photo_2024-10-30_21-40-40.jpg)
+![Player wearing the 'Waggle Waggle' alt+ctrl costume west which hides the required sensor in the abdomen part of the costume.](photo_2024-10-30_21-40-40.jpg "Player wearing the 'Waggle Waggle' alt+ctrl costume west which hides the required sensor, arduino and bluetooth module in the abdomen part of the costume.")
 
 2. They stand in the game area, which is marked with circles to guide the dancing.
 
