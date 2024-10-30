@@ -11,6 +11,8 @@ showBgImage: true
 
 I selected the game Roflpillar by the team Lucky Frame, which was submitted to GDC in 2014! 
 
+`<iframe width="560" height="315" src="https://www.youtube.com/embed/EvbzH6_IWMA?si=EEMddzhvfJALzA1F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+
 The name caught my attention because it was a pun on ‘caterpillar’. It immediately made me picture the animal and how it moves, which I found inspiring. I wanted to create a funny insect-themed concept for this submission that makes participants do an unexpected/weird thing that is entertaining for themselves and observers, which is exactly what this project does, so it seemed like the perfect project to inspect more closely!
 
 I didn’t just pick it just because it is insect-themed though, that is a bonus. I chose it more because I find the way of playing is very similar to how I want people to play my game at demo day so I feel like looking at this more closely can inspire me for my final project.
@@ -64,17 +66,13 @@ See the below image to understand their dance:
 ![](photo_2024-10-30_21-40-44.jpg "Players standing in their Waggle Waggle Revolution play areas, observing the game screen which is giving direction on where the respective food sources are that they should waggle. Note the cameras above the play areas which record movement speed and angles.")
 
 3. They watch the instructional video on the game screen.
-
 4. The game begins on a 3,2,1 count, and the game screen shows a top-down map of the location of different colored food sources that they need to communicate. This visualisation includes a little hive in the middle, which is the player's physical location and goal.
-
 5. Players have five seconds to interpret the visualisation to figure out what path to waggle to their food source.
-
 6. Players try to dance their pattern as fast and as correctly as they can according to their interpretation of the given information.
 
 ![](photo_2024-10-30_21-40-47.jpg "Player 1 performing a potential waggle pattern by wiggling their behind, trying to walk in the correct angle.")
 
 7. The judgment is based on how correct the information is, specifically the angle at which the participant waggled and how far they waggled to convey the distance. If there is a draw the faster waggler wins.
-
 8. When they are done waggling, the screen shows the bees in the beehive turning to the best waggler and repeating their dance pattern, who is then shown as the winner! 
 
 /
