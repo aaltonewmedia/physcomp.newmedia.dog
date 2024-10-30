@@ -3,7 +3,7 @@ title: Week 01
 date: 2024-10-28T12:56:00.000Z
 authors:
   - Joonas Juutilainen
-image: circuit.jpg
+image: featured.jpg
 showBgImage: false
 ---
 Leds on and off.
