@@ -1,6 +1,6 @@
 ---
 title: "Assignment 02: Waggle Waggle Revolution"
-date: 2024-10-30T18:03:00.000Z
+date: 2024-10-30T22:09:00.000Z
 authors:
   - Fiona Keil
 image: featured.jpg
