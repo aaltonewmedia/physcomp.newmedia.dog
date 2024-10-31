@@ -46,12 +46,14 @@ int btnPIN=2;
 int count=0;
 int btnVal=0;
 int pre_btnVal=0;
+
 void setup() {
   pinMode(led1PIN,OUTPUT);
   pinMode(led2PIN,OUTPUT);
   pinMode(btnPIN,INPUT);
   Serial.begin(9600);
 }
+
 void loop() {
   // put your main code here:
  btnVal = digitalRead(btnPIN);
@@ -90,7 +92,6 @@ void loop() {
 \    delay(50);
   }
 }
-
 ```
 
 **\- Thoughts/Reflections ------------------------------------------------------------------**
