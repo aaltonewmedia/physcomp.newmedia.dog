@@ -27,5 +27,3 @@ I chose this project because I love the concept of boiling an egg and the compar
 
 ### 2. Come up with a concept for your own Alt+Ctrl Interface
 
-
-
