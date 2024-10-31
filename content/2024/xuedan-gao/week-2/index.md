@@ -23,6 +23,9 @@ Video:
 
 I chose this project because I love the concept of boiling an egg and the comparison between a hen hatching her egg and humans cooking one. It attempts to view things from the animal’s point of view. Additionally, I love the remote-control feature for its simplicity and aesthetic appeal. A wired, more complex setup often takes extra time and effort to figure out how to hide the cables.
 
+---
+
 ### 2. Come up with a concept for your own Alt+Ctrl Interface
+
 
 
