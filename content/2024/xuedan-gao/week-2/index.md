@@ -14,8 +14,8 @@ Hen is a remote-controlled egg boiler designed for a patient cooking experience.
 
 - 3D printed boiler and remote\
 - MKR WiFi 1010 board\
-– temperature sensor\
-– heat pad
+- temperature sensor\
+- heat pad
 
 Video: 
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/824921582?h=5324be062f" width="640" height="360" frameborder="0" allowfullscreen></iframe>
