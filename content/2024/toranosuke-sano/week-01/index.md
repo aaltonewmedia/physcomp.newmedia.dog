@@ -39,105 +39,59 @@ Connect one switch to your Arduino using a breadboard
 
 ![](スクリーンショット-2024-10-30-23.30.10.png)
 
+```
 int led1PIN=9;
-
 int led2PIN=6;
-
 int btnPIN=2;
-
 int count=0;
-
 int btnVal=0;
-
 int pre_btnVal=0;
-
 void setup() {
-
   pinMode(led1PIN,OUTPUT);
-
   pinMode(led2PIN,OUTPUT);
-
   pinMode(btnPIN,INPUT);
-
   Serial.begin(9600);
-
 }
-
 void loop() {
-
   // put your main code here:
-
  btnVal = digitalRead(btnPIN);
-
   if(btnVal != pre_btnVal){ 
-
   // when the btn is clicked
-
 \    if (btnVal == HIGH){
-
 \    count++; //count=count+1
-
 \    Serial.print("Count:");
-
 \    Serial.println(count);
-
 \    delay(50);
-
 \    //if push the btn, LED1 is on
-
 \    if (btnVal == HIGH && count==1){
-
 \    digitalWrite(led1PIN, HIGH);
-
 \    digitalWrite(led2PIN, LOW);
-
 \    delay(50);
-
 \    //if you push the btn, LED2 is on (LED1 is still on)
-
 \    } else if (btnVal == HIGH && count==2) {
-
 \    digitalWrite(led1PIN, HIGH);
-
 \    digitalWrite(led2PIN, HIGH);
-
 \    delay(50);
-
 \    //if you push the btn, both LEDs turn off
-
 \    } else if (btnVal == HIGH && count==3) {
-
 \    digitalWrite(led1PIN, LOW);
-
 \    digitalWrite(led2PIN, LOW);
-
 \    delay(50);
-
 \    } 
-
    }
-
    if(count > 3){
-
 \    pre_btnVal = 0;
-
 \    btnVal = 0;
-
 \    count = 0;
-
   // save the previous button state for the next loop 
-
 \    }else{ 
-
 \    pre_btnVal = btnVal;
-
 \    }
-
 \    delay(50);
-
   }
-
 }
+
+```
 
 **\- Thoughts/Reflections ------------------------------------------------------------------**
 
