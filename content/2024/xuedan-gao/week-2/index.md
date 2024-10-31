@@ -6,7 +6,7 @@ authors:
 image: featured.png
 showBgImage: false
 ---
-### Find an interesting existing Alt+Ctrl Interface
+### 1. Find an interesting existing Alt+Ctrl Interface
 
 ![](featured.png)
 
@@ -21,3 +21,7 @@ Video:
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/824921582?h=5324be062f" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
 I choose this game because 
+
+### 2. Come up with a concept for your own Alt+Ctrl Interface
+
+
