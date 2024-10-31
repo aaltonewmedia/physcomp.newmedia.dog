@@ -27,7 +27,7 @@ int ledCount = 0;
 
 /* unsigned for handling large numbers, since using milliseconds */
 
-unsigned long lastTimer = 0;  // the last time the output pin was toggled
+unsigned long lastTimer = 0;  // the last time the button was pressed/released
 unsigned long debounceDelay = 50;    // the debounce time; 
 
 void setup() {
