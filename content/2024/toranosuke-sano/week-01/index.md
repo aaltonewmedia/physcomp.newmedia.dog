@@ -9,7 +9,7 @@ showBgImage: false
 ---
 **The Assignment** 
 
-**\- INSTRUCTIONS ------------------------------------------------------------------------**
+**\- Instructions ------------------------------------------------------------------------**
 
 **Circuit** 
 
@@ -35,15 +35,13 @@ Connect one switch to your Arduino using a breadboard
 
 ![](img_7521.jpg)
 
-**\- Code**
+**\- Code -----------------------------------------------------------------------------------**
 
 ![](スクリーンショット-2024-10-30-23.30.10.png)
 
 int led1PIN=9;
 
 int led2PIN=6;
-
-
 
 int btnPIN=2;
 
@@ -52,8 +50,6 @@ int count=0;
 int btnVal=0;
 
 int pre_btnVal=0;
-
-
 
 void setup() {
 
@@ -66,8 +62,6 @@ void setup() {
   Serial.begin(9600);
 
 }
-
-
 
 void loop() {
 
