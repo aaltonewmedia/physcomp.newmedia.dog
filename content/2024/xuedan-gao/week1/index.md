@@ -13,7 +13,7 @@ showBgImage: false
 
 In my first attempt, [watch here](https://youtube.com/shorts/2UfICF9XRc4?feature=share), I failed because I didn’t store the button state. This caused the counter to increment too quickly.
 
-```cpp
+```c
 if (btnState == HIGH) 
 {
   counter++;
@@ -26,7 +26,7 @@ if (btnState == HIGH)
 
 After storing the button state, I successfully solved the issue. You can watch it [here](https://youtube.com/shorts/ijCMIy3h8yU?feature=share).
 
-```cpp
+```c
 if(prevbtnState != btnState)
   {
     if (btnState == HIGH) 
@@ -41,7 +41,7 @@ if(prevbtnState != btnState)
 
 ### The code:
 
-```cpp
+```c
 int counter = 0; 
 int prevbtnState = LOW;
 
