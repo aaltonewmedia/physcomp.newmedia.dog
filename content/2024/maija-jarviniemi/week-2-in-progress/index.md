@@ -3,7 +3,7 @@ title: Week 2 IN PROGRESS
 date: 2024-11-01T20:20:00.000Z
 authors:
   - Maija Järviniemi
-image: noimageyet.png
+image: featured.png
 showBgImage: false
 ---
 ## 1 Alt+CTRL interface
