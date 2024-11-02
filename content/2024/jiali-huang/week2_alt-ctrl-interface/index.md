@@ -25,11 +25,11 @@ The Sword
 
 1. Explore one sensor
 
-Arduino Weighing Scale with Load Cell and HX711
-
-* <https://makersportal.com/blog/2019/5/12/arduino-weighing-scale-with-load-cell-and-hx711>[](https://makersportal.com/blog/2019/5/12/arduino-weighing-scale-with-load-cell-and-hx711)
+Arduino Weighing Scale with Load Cell and HX711[](https://makersportal.com/blog/2019/5/12/arduino-weighing-scale-with-load-cell-and-hx711)[](https://makersportal.com/blog/2019/5/12/arduino-weighing-scale-with-load-cell-and-hx711)
 
 ![2](2.png)
+
+* <https://makersportal.com/blog/2019/5/12/arduino-weighing-scale-with-load-cell-and-hx711>[](https://makersportal.com/blog/2019/5/12/arduino-weighing-scale-with-load-cell-and-hx711)
 
 
 
