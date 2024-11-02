@@ -7,4 +7,4 @@ image: mr.game6watch.webp
 bgimage: ""
 showBgImage: false
 ---
-Path
+Hi, I'm Tora(nosuke).
