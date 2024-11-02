@@ -3,7 +3,7 @@ title: Week2_Alt+Ctrl Interface
 date: 2024-11-02T17:27:00.000Z
 authors:
   - Jiali Huang
-image: featured.jpg
+image: featured-1-.jpg
 bgimage: background.jpg
 showBgImage: false
 ---
