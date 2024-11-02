@@ -43,7 +43,7 @@ This sensor can be connected to a small basin for weighing.
 
 3. Come up with a new game
 
-Two key points of the AI companionship system: 
+Two key points of the AI Companionship Robot: 
 
 * Sharing common life experiences with the user
 * Being able to actively interact with the user
@@ -52,7 +52,13 @@ Design: A robot positioned by the window or on the dining table that can use its
 
 
 
-4.
+4. Sketches
+
+![]()
+
+
+
+
 
 III. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops (DONE)
 
