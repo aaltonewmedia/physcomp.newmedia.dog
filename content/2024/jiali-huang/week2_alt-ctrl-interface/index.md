@@ -4,7 +4,7 @@ date: 2024-11-02T17:27:00.000Z
 authors:
   - Jiali Huang
 image: featured-1-.jpg
-bgimage: background-1-.jpg
+bgimage: background.png
 showBgImage: false
 ---
 I. Find an interesting existing Alt+Ctrl Interface
