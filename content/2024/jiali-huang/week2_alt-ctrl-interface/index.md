@@ -4,12 +4,14 @@ date: 2024-11-02T17:27:00.000Z
 authors:
   - Jiali Huang
 image: featured-1-.jpg
-bgimage: background.jpg
+bgimage: background-1-.jpg
 showBgImage: false
 ---
 1. Find an interesting existing Alt+Ctrl Interface
 
    ![01](01.png)
+
+   ![02](02.png)
 2. Come up with a concept for my own Alt+Ctrl Interface
 3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops (DONE)
 
