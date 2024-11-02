@@ -15,7 +15,7 @@ The Sword
 
 ![02](02.png)
 
-[LINK: https://www.youtube.com/watch?v=Kwi6uEYIEXU](https://www.youtube.com/watch?v=Kwi6uEYIEXU)
+* <https://www.youtube.com/watch?v=Kwi6uEYIEXU>
 
 "The sword was born about 100 years ago. And long time, anyone could not pull out the sword. But, if make a Holy Grail that weighs the same as the artifact, can pull out the sword."
 
