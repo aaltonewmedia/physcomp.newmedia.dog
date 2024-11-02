@@ -1,11 +1,13 @@
 ---
-title: Week 2
+title: Week2
 date: 2024-10-31T10:56:00.000Z
 authors:
   - Xuedan Gao
 image: featured.png
 showBgImage: false
 ---
+![]()
+
 ### 1. Find an interesting existing Alt+Ctrl Interface
 
 ![](featured.png)
@@ -28,3 +30,9 @@ I chose this project because I love the concept of boiling an egg and the compar
 - - -
 
 ### 2. Come up with a concept for your own Alt+Ctrl Interface
+
+- - -
+
+### 3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops
+
+![](screenshot-2024-11-02-at-10.37.48-pm.png)
