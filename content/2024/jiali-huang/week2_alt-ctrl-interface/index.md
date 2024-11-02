@@ -52,9 +52,7 @@ Design: A robot positioned by the window or on the dining table that can use its
 
 4. Sketches
 
-![3](3.png)
-
-![4](4.png)
+![5](5.png)
 
 \-
 
