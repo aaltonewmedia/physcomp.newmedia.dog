@@ -8,6 +8,8 @@ bgimage: background.jpg
 showBgImage: false
 ---
 1. Find an interesting existing Alt+Ctrl Interface
+
+   ![](89be2950f16d81674a12494e0152d4c.png)
 2. Come up with a concept for my own Alt+Ctrl Interface
 3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops (DONE)
 
