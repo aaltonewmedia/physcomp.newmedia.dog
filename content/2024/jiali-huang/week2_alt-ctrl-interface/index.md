@@ -7,6 +7,12 @@ image: featured-1-.jpg
 bgimage: background.jpg
 showBgImage: false
 ---
+1. Find an interesting existing Alt+Ctrl Interface
+
+
+
+
+
 3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops (DONE)
 
 * <https://mycourses.aalto.fi/course/view.php?id=23273>
