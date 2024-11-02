@@ -17,11 +17,13 @@ The Sword
 
 [LINK: https://www.youtube.com/watch?v=Kwi6uEYIEXU](https://www.youtube.com/watch?v=Kwi6uEYIEXU)
 
-"The sword was born about 100 years ago. And long time, anyone could not pull out the sword."
+"The sword was born about 100 years ago. And long time, anyone could not pull out the sword. But, if make a Holy Grail that weighs the same as the artifact, can pull out the sword."
 
 [](https://www.youtube.com/watch?v=Kwi6uEYIEXU)
 
 [](https://www.youtube.com/watch?v=Kwi6uEYIEXU)II. Come up with a concept for my own Alt+Ctrl Interface
+
+
 
 III. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops (DONE)
 
