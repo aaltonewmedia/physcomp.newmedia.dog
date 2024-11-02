@@ -1,5 +1,5 @@
 ---
-title: week1_Arduino Basics
+title: Week1_Arduino Basics
 date: 2024-10-28T22:38:00.000Z
 authors:
   - Jiali Huang
