@@ -8,77 +8,44 @@ showBgImage: false
 ---
 Final Code:
 
+```c
 int counter = 0;
-
 int buttonState = 0;
-
 int lastButtonState = 0;
-
 void setup() {
-
   // put your setup code here, to run once:
-
   pinMode(9,OUTPUT); //light 01
-
   pinMode(10,OUTPUT); //light 02
-
   pinMode(2,INPUT); //button
-
   Serial.begin(9600);
-
 }
-
 void loop() {
-
   // put your main code here, to run repeatedly:
-
   buttonState = digitalRead(2);
-
   if(buttonState != lastButtonState){
-
-\    if(buttonState == HIGH){
-
-\    if(counter<2){
-
-\    counter ++;
-
-\    }else{
-
-\    counter = 0;
-
-\    }
-
-\    Serial.println(counter);
-
-\    } else{
-
-\    Serial.println("off");
-
-\    }
-
-\    delay(30);
-
+    if(buttonState == HIGH){
+    if(counter<2){
+    counter ++;
+    }else{
+    counter = 0;
+    }
+    Serial.println(counter);
+    } else{
+    Serial.println("off");
+    }
+    delay(30);
   }
-
   lastButtonState = buttonState;
-
   if(counter == 0){
-
-\    digitalWrite(9,HIGH);
-
-\    digitalWrite(10,HIGH);
-
+    digitalWrite(9,HIGH);
+    digitalWrite(10,HIGH);
   }else if(counter == 1){
-
-\    digitalWrite(9,LOW);
-
+    digitalWrite(9,LOW);
   }else{
-
-\    digitalWrite(10,LOW);
-
+    digitalWrite(10,LOW);
   }
-
 }
+```
 
 Reflections:
 
