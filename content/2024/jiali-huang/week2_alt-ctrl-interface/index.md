@@ -11,9 +11,7 @@ I. Find an interesting existing Alt+Ctrl Interface
 
 The Sword
 
-![01](01.png)
-
-![02](02.png)
+![1](1.png)
 
 * <https://www.youtube.com/watch?v=Kwi6uEYIEXU>
 
