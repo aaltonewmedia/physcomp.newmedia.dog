@@ -48,6 +48,8 @@ Two key points of the AI Companionship Robot:
 
 Design: A robot positioned by the window or on the dining table that can use its camera to capture and recognize the user's home and window views. When it detects the user at the dining table, it proactively engages in conversations based on real-life data. Users can place objects in the small dish on the robot to express their psychological energy needs. The AI adjusts its personality traits based on the weight of the objects to provide appropriate companionship to the user.
 
+(Placing objects into a box is also a collecting behavior that can have a soothing effect on one's mood. Psychologist Werner Muensterberg wrote in his book *Collecting: An Unruly Passion* that after experiencing a “separation, loss, or pain,” a person's desire to collect often becomes especially fervent. Each time a collector acquires a new item, they can fall into an illusion of being "all-powerful.")
+
 \-
 
 4. Sketches
@@ -55,8 +57,6 @@ Design: A robot positioned by the window or on the dining table that can use its
 ![5](5.png)
 
 ![4](4.png)
-
-
 
 \-
 
