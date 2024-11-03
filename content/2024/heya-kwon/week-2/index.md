@@ -12,37 +12,37 @@ showBgImage: false
 
 https://shakethatbutton.com/tic-tac-toe-thing/
 
+This is "Tic Tac Toe Thing" where players can play a tactile Tic Tac Toe game. The game has one additional rule to normal Tic Tac Toe: users can undo the other player's move. 
+
 I like the simplicity and tactility of this piece. It uses a familiar and simple game into a tactile box.
 
 ![Sound Museum](featured.jpg)
 
 https://mansteri.com/works/aanimuseo-v/
 
-I also really enjoyed Matti's tactile sound piece. Again, I like the simplicity of interface. I also really enjoyed that the interface is wooden and that it involves a collection of interesting sounds.
+Bonus: I don't think this is a game interface, but I also really enjoyed Matti's tactile sound player where you can insert different wooden pieces onto a board to play sounds. Again, I like the simplicity of interface. I also really enjoyed that the interface is wooden and that it involves a collection of interesting sounds.
 
 ## 2. Come up with a concept for your own Alt+Ctrl Interface
 
 Sensors I'm interested in:
 
-1. wind sensor (anemometer) - I would like to use it to detect the wind or the air user is blowing into the sensor. I believe the data from the sensor would be continuous.
+1. wind sensor (anemometer) - I believe the data from the sensor would be continuous.
 
-* Idea: attach windsensor to an arduino and place outside. Use arduino to communicate to a computer somewhere indoors. Use imageries like dandelions or grass to depict the level of wind.
+* Idea: attach windsensor to an arduino and place outside. Use arduino to communicate to a computer somewhere indoors. The user can rotate a rotating controller to work with the wind to fly a virtual kite.
 
 2. NFC (Near Field Communication) tags - It would be interesting to use NFC tags to trigger sounds. I believe the tags would cause binary output. 
 
-* Idea: Make a house that plays certain sounds when certain objects (with NFC tags) are placed inside. It's a house party of small objects and their sounds.
+* Idea: Make a house that plays certain sounds when certain objects (with NFC tags) are placed inside. It's a house party of small objects and their sounds. For example, I could laser cut little pieces of Hawtu deck (https://en.wikipedia.org/wiki/Go-Stop) where each piece triggers a different sound.
 
 3. Temperature sensor - I enjoy the idea of sensing warmth (and life) using temperature sensor. I believe the temperature sensor data would be continuous.
 
 * Idea: Create a wooden coaster that plays a certain sound when a warm mug is placed on it. There should be a temperature sensor inside the coaster.
 
+Example sketch of idea #2:
 
-* Idea: Reusable birthday cake: Create a small wooden birthday cake with plastic candles with LED lights on them. Have temperature sensors on the candles that detect warm breath of air. Turn off the LED lights when the warm breath is detected.
+![](kite-sketch.png)
 
 ## 3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops
 
-
-
-\* laser cutter workshop: done.
-
-\* 3d printing workshop: in progress.
+* laser cutter workshop: done.
+* 3d printing workshop: done.
