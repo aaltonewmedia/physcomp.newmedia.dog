@@ -38,7 +38,7 @@ Sensors I'm interested in:
 
 * Idea: Create a wooden coaster that plays a certain sound when a warm mug is placed on it. There should be a temperature sensor inside the coaster.
 
-Example sketch of idea #2:
+Example sketch of idea #1:
 
 ![](kite-sketch.png)
 
