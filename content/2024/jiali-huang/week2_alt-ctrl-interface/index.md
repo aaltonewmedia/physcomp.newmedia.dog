@@ -72,6 +72,8 @@ The Load Cell sensor inputs values to adjust GPT's personality.
 
 \-
 
+\-
+
 III. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops (DONE)
 
 * <https://mycourses.aalto.fi/course/view.php?id=23273>
