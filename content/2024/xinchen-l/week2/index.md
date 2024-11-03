@@ -19,3 +19,9 @@ showBgImage: false
 **The reason**
 
 The first reason is that the design is very simple and cute, with clear functionality that offers variety and playability. The accompanying 3D visuals are also aesthetically pleasing. The second reason is my interest in the motion-sensing capabilities that allow for shaking interactions. This combination of appealing design and engaging interactivity creates an inviting experience for players.
+
+***2*** 
+
+***3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops*** 
+
+![](img_4718.jpeg)
