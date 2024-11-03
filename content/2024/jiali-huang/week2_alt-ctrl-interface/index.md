@@ -58,7 +58,17 @@ Design: A robot positioned by the window or on the dining table that can use its
 
 ![4](4.png)
 
-\-
+Use TouchDesigner/Arduino/ChatGPT.
+
+Use the MediaPipe component to recognize camera content and output prompts.
+
+TouchDesigner accesses ChatGPT's API interface, sets up an input prompt window, and defines the robot's personality and dialogue scenario.
+
+Arduino's infrared sensor/pressure sensor (triggered by sitting or stepping actions) detects a person.
+
+The trigger value is inputted into TD, initiating the input of prompts to GPT to start the dialogue.
+
+The Load Cell sensor inputs values to adjust GPT's personality.
 
 \-
 
