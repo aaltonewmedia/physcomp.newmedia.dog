@@ -28,7 +28,7 @@ Sensors I'm interested in:
 
 1. wind sensor (anemometer) - I believe the data from the sensor would be continuous.
 
-* Idea: attach windsensor to an arduino and place outside. Use arduino to communicate to a computer somewhere indoors. The user can rotate a rotating controller to work with the wind to fly a virtual kite.
+* Idea: attach windsensor to an arduino and place outside. Use arduino to communicate to a computer somewhere indoors. The user can rotate a rotating controller to work with the wind to fly a virtual kite. The virtual kite would be projected onto the ceiling in a dark room.
 
 2. NFC (Near Field Communication) tags - It would be interesting to use NFC tags to trigger sounds. I believe the tags would cause binary output. 
 
