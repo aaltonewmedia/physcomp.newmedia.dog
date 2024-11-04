@@ -1,6 +1,6 @@
 ---
 title: Toranosuke Sano
-date: 2024-10-20T23:08:00.000Z
+date: 2024-11-04T10:54:00.000Z
 authors:
   - Toranosuke Sano
 image: mr.game6watch.webp
