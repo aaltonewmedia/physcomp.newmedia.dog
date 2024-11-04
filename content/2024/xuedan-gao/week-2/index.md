@@ -38,11 +38,10 @@ I chose this project because I love the concept of boiling an egg and the compar
 **What kind of data can I get out of it?**
 
 * **Temperature Data**
-
   * Range: -40 to 85 °C
   * Accuracy: ±0.3 °C typical accuracy at 20-60 °C; ±1 °C typical accuracy over the entire range
-* **Humidity Data**
 
+* **Humidity Data**
   * Range: 0% to 100% Relative Humidity (RH)
   * Accuracy: ±2% RH at 20-80% RH; ±3% typical accuracy over the full range
 
