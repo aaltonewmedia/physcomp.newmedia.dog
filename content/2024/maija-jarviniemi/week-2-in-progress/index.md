@@ -16,22 +16,34 @@ While browsing the projects, the pink color and cute aesthetics made me open the
 
 Link to the project: <https://shakethatbutton.com/ghostboi-in-the-land-of-the-dead/>
 
-
-
 # TO DO:
 
-## 2. Come up with a concept for your own Alt+Ctrl Interface #
+## 2. Come up with a concept for your own Alt+Ctrl Interface
 
-* *Explore at least one sensor in more detail. You can do this with the actual sensor or just do some research on what is available in general.*
-* *If you have access to the sensor, figure out how to read the values from it with your Arduino. Print out the data from the sensor to the Serial Monitor or Serial Plotter.*
-* *If you are not able to actually use it, find out what type of data you can get out of it. Is it on/off signal, continuous number, some more complex data?*
+* *Explore at least one sensor in more detail + figure out how to read the values from it with your Arduino. Print out the data from the sensor to the Serial Monitor or Serial Plotter.*
+* *Find out what type of data you can get out of it. Is it on/off signal, continuous number, some more complex data?*
 * *Think of different interactions and/or gestures that could be detected with the sensor you picked. What kind of objects could the sensor be attached to?*
 * *Choose an existing video game that could be controlled using the interaction/interface enabled by this sensor OR come up with a completely new game or game mechanic.*
-* *You don’t need to make it work yet. Just come up with the idea/concept for your alternative controller.*
-* *Write about your idea on your site.*
-* *You can draw sketches or other ways to illustrate your idea.*
-* *You can also make a prototype if you are able to, but I am not requiring it. It’s enough to just describe the concept.*
+* *Come up with the idea/concept for your alternative controller. + Write about your idea on your site. You can draw sketches or other ways to illustrate your idea.*
 * *These can be silly, experimental, ridiculous, absurd…*
+
+## Let's start!
+
+**What I chose to work with:**
+
+\- video game: Crash Bandicoot 1, level "Hog Wild"
+
+\- sensor ???
+
+\- tool/object for interaction - a yo-yo for the jumps and movement to left or right corners
+
+To do:
+
+Write a description/instruction how to use it
+
+How the sensor captures the movement and translates it to a jump (x on playstation controller)
+
+Illustrate the movement -> drawn? photos?
 
 {{<youtube X2yDxSFadHM>}}
 
