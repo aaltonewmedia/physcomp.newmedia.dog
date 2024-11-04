@@ -1,5 +1,5 @@
 ---
-title: Week 2
+title: Week 02
 date: 2024-11-04T15:20:00.000Z
 authors:
   - Joonas Juutilainen
