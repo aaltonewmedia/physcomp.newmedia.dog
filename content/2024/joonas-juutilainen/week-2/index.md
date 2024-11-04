@@ -12,7 +12,7 @@ I chose Makey Makey: mostly because I was just thinking to use the capacitive se
 
 **1.	The challenge**: This exhibit – actually on my work list atm - has a round screen as a curiosity, and the UI should have a large wheel around the screen. The visitors will use the wheel to operate the exhibit, but also need buttons for language selection and for confirming the choices made with the wheel. Buttons take space I don’t have.
 
-Touch screen would solve the problem, but a) we don’t need a touch screen for anything else b) a touch screen version of this novelty round screen costs bananas.
+A touchscreen would solve the problem, but a) we don’t need a touchscreen for anything else b) a touchscreen version of this novelty round screen costs bananas.
 
 **2.	The solution:** I’ll place thin capacitive buttons on the screen; this way I can control the UI and also change the button labels when needed.
 
