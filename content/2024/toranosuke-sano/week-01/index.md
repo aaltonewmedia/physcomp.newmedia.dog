@@ -3,8 +3,8 @@ title: Week 01
 date: 2024-10-28T19:56:00.000Z
 authors:
   - Toranosuke Sano
-image: 土１.webp
-bgimage: 土１.webp
+image: safe.jpg
+bgimage: ""
 showBgImage: false
 ---
 **The Assignment** 
