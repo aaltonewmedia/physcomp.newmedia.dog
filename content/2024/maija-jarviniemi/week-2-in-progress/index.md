@@ -32,3 +32,7 @@ Link to the project: <https://shakethatbutton.com/ghostboi-in-the-land-of-the-de
 * *You can draw sketches or other ways to illustrate your idea.*
 * *You can also make a prototype if you are able to, but I am not requiring it. It’s enough to just describe the concept.*
 * *These can be silly, experimental, ridiculous, absurd…*
+
+{{<youtube X2yDxSFadHM>}}
+
+https://www.youtube.com/watch?v=X2yDxSFadHM
