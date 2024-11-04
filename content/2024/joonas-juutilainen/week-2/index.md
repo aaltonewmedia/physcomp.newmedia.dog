@@ -141,7 +141,7 @@ function keyPressed() {
 
 
 
-**5.	Reflection:** Language selection seems to work, as a mock-up anyway. Nice.
+**5.	Reflection:** Language selection seems to work, as a mock-up anyway. Nice. Quick and dirty, ready for iteration.
 
 ![](screenshot-2024-11-04-at-14.53.31.png)
 
