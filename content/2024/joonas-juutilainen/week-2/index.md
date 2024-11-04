@@ -10,15 +10,15 @@ I chose Makey Makey: mostly because I was just thinking to use the capacitive se
 
 **Here’s my 5 penny user interface mock-up:**
 
-**1.	The challenge**: This exhibit – actually on my work list atm - has a round screen as a curiosity, and the UI should have a large wheel around the screen. The visitors will use the wheel to operate the exhibit, but also need buttons for language selection and for confirming the choices made with the wheel. Buttons take space I don’t have.
+**1.	The challenge**: This exhibit – actually on my work list atm - has a round screen as a curiosity, and the UI should have a large wheel around the screen. The visitors will use the wheel to operate the exhibit, but also needs buttons for language selection and for confirming the choices made with the wheel. Buttons take space I don’t have.
 
 A touchscreen would solve the problem, but a) we don’t need a touchscreen for anything else b) a touchscreen version of this novelty round screen costs bananas.
 
-**2.	The solution:** I’ll place thin capacitive buttons on the screen; this way I can control the UI and also change the button labels when needed.
+**2.	The mock-up:** I’ll place thin capacitive buttons on the screen; this way I can control the UI and also change the button labels when needed! Whee.
 
-**3.	The practice:** I had three 5 cent coins in my pocket and three identical alligator wires: off with the wrong-end clips, a little filing and soldering, and my "5 cent capacitive buttons" are ready. Sounds stupid, so I call them “5 penny buttons”. Piece of clear film on the screen, buttons glued to the film, alligator clips to MPR121 and we’re good to code.
+**3.	The practice:** Clear conductive film would be nice, but I want this done quick. I have three 5 cent coins in my pocket and three identical alligator wires: off with the wrong-end clips, a little filing and soldering, and my "5 cent capacitive buttons" are ready. The name sounds stupid, so I call them “5 penny buttons”. Piece of clear film on the screen, coins with VHB tape to the film, alligator clips to MPR121 and we’re good to code.
 
-**4.	The code:** Arduino to read the sensor, emulate a keyboard, and output touches as keystrokes. Serial filtered data shows that with the coin+wire+alligator combination, the idle is around 200 and active around 80, compared to 400/80 of an empty slot. Adjustment accordingly. Simple p5.js and the browser in kiosk mode to change images in the mock-up.``
+**4.	The code:** Arduino to read the sensor, emulate a keyboard, and to output touches as keystrokes. Adjustment needed: serial filtered data shows that with the coin+wire+alligator combination, the idle is around 200 and active around 80, compared to 400/80 of an empty slot. Simple p5.js and the browser in kiosk mode to change still images as a mock-up UI.
 
 Arduino code:
 ```
@@ -141,7 +141,7 @@ function keyPressed() {
 
 
 
-**5.	Reflection:** Seems to work nicely, as a mock-up anyway.
+**5.	Reflection:** Language selection seems to work, as a mock-up anyway. Nice.
 
 ![](screenshot-2024-11-04-at-14.53.31.png)
 
