@@ -1,6 +1,6 @@
 ---
 title: Week2
-date: 2024-10-28T10:18:00.000Z
+date: 2024-11-04T10:52:00.000Z
 authors:
   - Toranosuke Sano
 image: crochetbox.webp
