@@ -33,26 +33,30 @@ Arduino Weighing Scale with Load Cell and HX711[](https://makersportal.com/blog/
 
 \-
 
-2. Things that could be detected with the sensor and objects that could the sensor be attached to
+\    2. Things that could be detected with the sensor and objects that could the sensor be attached to
 
 This sensor can be connected to a small basin for weighing.
 
 \-
 
-3. Come up with a new game
+\    3. Come up with a new game
 
 Two key points of the AI Companionship Robot: 
 
 * Sharing common life experiences with the user
 * Being able to actively interact with the user
 
-Design: A robot positioned by the window or on the dining table that can use its camera to capture and recognize the user's home and window views. When it detects the user at the dining table, it proactively engages in conversations based on real-life data. Users can place objects in the small dish on the robot to express their psychological energy needs. The AI adjusts its personality traits based on the weight of the objects to provide appropriate companionship to the user.
+Design: 
+
+A robot positioned by the window or on the dining table that can use its camera to capture and recognize the user's home and window views. When it detects the user at the dining table, it proactively engages in conversations based on real-life data. Users can place objects in the small dish on the robot to express their psychological energy needs. The AI adjusts its personality traits based on the weight of the objects to provide appropriate companionship to the user.
 
 (Placing objects into a box is also a collecting behavior that can have a soothing effect on one's mood. Psychologist Werner Muensterberg wrote in his book *Collecting: An Unruly Passion* that after experiencing a “separation, loss, or pain,” a person's desire to collect often becomes especially fervent. Each time a collector acquires a new item, they can fall into an illusion of being "all-powerful.")
 
+To detect the distance between the AI robot and the user, when the distance is very close (for example, around two meters), the AI robot will use its camera to search for the user. Once it recognizes the user's face, the robot will move toward the user.
+
 \-
 
-4. Sketches
+\    4. Sketches
 
 ![5](5.png)
 
