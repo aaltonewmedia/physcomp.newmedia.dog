@@ -12,7 +12,7 @@ showBgImage: false
 
 ![](egg3.jpg "Hen")
 
-**Intro** : Hen is a remote controlled device created by Xiao Tan and Shuang Cai. Like a hen patiently warms her own eggs, this simple device is used to make boiled eggs by warming an egg-shaped controller device with two hands.
+**Intro** : Hen is a remote controlled device created by Xiao Tan and Shuang Cai, inspired by [珍道具(ChinDougu)](https://chindogu.com/ics/?page_id=336). Like a hen patiently warms her own eggs, this simple device is used to make boiled eggs by warming an egg-shaped controller device with two hands. 
 
 **Instruction** : To start cooking, you should gently put an egg into the boiler before adding a reasonable amount of water that submerges the egg. Then pick up the controller, hold it with two hands.
 
