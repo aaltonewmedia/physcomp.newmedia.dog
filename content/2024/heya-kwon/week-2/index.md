@@ -32,7 +32,7 @@ Sensors I'm interested in:
 
 2. NFC (Near Field Communication) tags - It would be interesting to use NFC tags to trigger sounds. I believe the tags would cause binary output. 
 
-* Idea: Make a house that plays certain sounds when certain objects (with NFC tags) are placed inside. It's a house party of small objects and their sounds. For example, I could laser cut little pieces of Hawtu deck (https://en.wikipedia.org/wiki/Go-Stop) where each piece triggers a different sound.
+* Idea: Make a platform that plays certain sounds when certain objects (with NFC tags) are placed inside. For example, I could laser cut little pieces of Hawtu deck (https://en.wikipedia.org/wiki/Go-Stop) where each piece triggers a different sound. The combination of certain pieces also play a different sound. Hwatu means "fight with flowers", so it will be interesting to think of what sound to use since flowers are silent (to us).
 
 3. Temperature sensor - I enjoy the idea of sensing warmth (and life) using temperature sensor. I believe the temperature sensor data would be continuous.
 
@@ -41,6 +41,10 @@ Sensors I'm interested in:
 Example sketch of idea #1:
 
 ![](kite-sketch.png)
+
+Example prototype of idea #2:
+
+![Hwatu prototype](signal-2024-11-04-083839.jpeg)
 
 ## 3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops
 
