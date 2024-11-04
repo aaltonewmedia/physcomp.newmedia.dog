@@ -35,6 +35,10 @@ Link to the project: <https://shakethatbutton.com/ghostboi-in-the-land-of-the-de
 2. **Sensor** ??? something with velocity + direction ? 
 3. **Tool/object for interaction** - a yo-yo for the jumps and movement to left or right corners
 
+![](yo-yo-patent-1500px.png)
+
+*James L. Haven; Charles Hettrick - US patent application 59745, James L. Haven; Charles Hettrick, "Whirligig", published 1866-11-20. Public domain.*
+
 To do:
 
 Write a description/instruction how to use it
