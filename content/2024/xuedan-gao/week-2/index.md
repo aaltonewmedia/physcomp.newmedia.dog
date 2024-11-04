@@ -92,6 +92,16 @@ void loop() {
 
 - - -
 
+**Alt+Ctrl Interface**
+
+My idea is to create a "Virtual Plant Growing Simulator" where the player's goal is to cultivate virtual plants. Using real-time temperature and humidity data from an AHT20 sensor, the game can simulate the plant's growing environment. Players need to adjust greenhouse conditions according to sensor feedback to meet the requirements for each stage of the plant's growth. Each type of plant has unique temperature and humidity requirements, and players must adapt the environment flexibly to ensure healthy growth.
+
+Once the sensor is connected to an Arduino, the data will be displayed in real-time on the game interface. The plant's growth is divided into different stages. For example, in the seed stage, the plant requires lower temperature and humidity; in the germination stage, it needs medium humidity and a warm environment; and in the flowering stage, higher temperature and moderate humidity are necessary. Players need to adjust the temperature and humidity range monitored by the sensor to maintain a suitable environment for the plant. If the temperature or humidity doesn't meet the requirements, the plant will gradually wither until the player readjusts the environment. Players must keep the temperature and humidity within the ideal range for a specified time to promote the plant's healthy growth and eventual flowering. After successfully growing each type of plant, players can unlock more plants.
+
+I want to create a wireless controller that allows players to adjust the temperature and humidity by holding it with both hands. For example, gripping the controller tightly will increase the temperature, while relaxing it will decrease the temperature. Additionally, this controller will provide haptic feedback to the player, such as vibrations. 
+
+- - -
+
 ### 3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops
 
 ![](screenshot-2024-11-02-at-10.37.48-pm.png)
