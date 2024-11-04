@@ -31,6 +31,21 @@ I chose this project because I love the concept of boiling an egg and the compar
 
 ### 2. Come up with a concept for your own Alt+Ctrl Interface
 
+ **Sensor: AHT20 temperature and humidity sensor**
+
+![](screenshot-2024-11-04-at-11.47.58-pm.png)
+
+**What kind of data can I get out of it?**
+
+* **Temperature Data**
+
+  * Range: -40 to 85 °C
+  * Accuracy: ±0.3 °C typical accuracy at 20-60 °C; ±1 °C typical accuracy over the entire range
+* **Humidity Data**
+
+  * Range: 0% to 100% Relative Humidity (RH)
+  * Accuracy: ±2% RH at 20-80% RH; ±3% typical accuracy over the full range
+
 - - -
 
 ### 3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops
