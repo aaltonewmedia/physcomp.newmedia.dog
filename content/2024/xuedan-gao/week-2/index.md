@@ -44,15 +44,56 @@ To achieve optimal performance, it is recommended to design the I2C bus connecti
 **What kind of data can I get out of it?**
 
 * **Temperature Data**
+
   * Range: -40 to 85 °C
   * Accuracy: ±0.3 °C typical accuracy at 20-60 °C; ±1 °C typical accuracy over the entire range
-
 * **Humidity Data**
+
   * Range: 0% to 100% Relative Humidity (RH)
   * Accuracy: ±2% RH at 20-80% RH; ±3% typical accuracy over the full range
+
+**Wiring**
+
+![](screenshot-2024-11-05-at-12.34.45-am.png)
+
+**Example Code**
+
+Open up File -> Examples -> Adafruit AHTx0 -> adafruit_aht_test and upload to your Arduino wired up to the sensor.
+
+```c
+#include <Adafruit_AHTX0.h>
+
+Adafruit_AHTX0 aht;
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println("Adafruit AHT10/AHT20 demo!");
+
+  if (! aht.begin()) {
+    Serial.println("Could not find AHT? Check wiring");
+    while (1) delay(10);
+  }
+  Serial.println("AHT10 or AHT20 found");
+}
+
+void loop() {
+  sensors_event_t humidity, temp;
+  aht.getEvent(&humidity, &temp);// populate temp and humidity objects with fresh data
+  Serial.print("Temperature: "); Serial.print(temp.temperature); Serial.println(" degrees C");
+  Serial.print("Humidity: "); Serial.print(humidity.relative_humidity); Serial.println("% rH");
+
+  delay(500);
+}
+```
+
+**What can I get from the serial monitor?**
+
+![](screenshot-2024-11-05-at-12.39.04-am.png)
 
 - - -
 
 ### 3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops
 
 ![](screenshot-2024-11-02-at-10.37.48-pm.png)
+
+![]()
