@@ -31,11 +31,9 @@ Link to the project: <https://shakethatbutton.com/ghostboi-in-the-land-of-the-de
 
 **What I chose to work with:**
 
-\- video game: Crash Bandicoot 1, level "Hog Wild"
-
-\- sensor ???
-
-\- tool/object for interaction - a yo-yo for the jumps and movement to left or right corners
+1. **Video game**: Crash Bandicoot 1, level "Hog Wild"
+2. **Sensor** ??? something with velocity + direction ? 
+3. **Tool/object for interaction** - a yo-yo for the jumps and movement to left or right corners
 
 To do:
 
