@@ -3,7 +3,7 @@ title: Week 2 IN PROGRESS
 date: 2024-11-01T20:20:00.000Z
 authors:
   - Maija Järviniemi
-image: featured.png
+image: featured.jpg
 showBgImage: false
 ---
 ## 1 Alt+CTRL interface
@@ -32,8 +32,8 @@ Link to the project: <https://shakethatbutton.com/ghostboi-in-the-land-of-the-de
 **What I chose to work with:**
 
 1. **Video game**: Crash Bandicoot 1, level 8: Hog Wild
-2. **Sensor** ??? something with velocity + direction ? 
-3. **Tool/object for interaction** - a yo-yo for the jumps and movement to left or right corners, x,y,z-directions
+2. **Sensor:** MSA301 triple-axis accelerometer
+3. **Tool/object for interaction** - a yo-yo, controls the hog's jump and movement to left + right, x,y,z-directions
 
 ![](yoyo-interaction.jpg)
 
@@ -44,8 +44,6 @@ To do:
 Write a description/instruction how to use it
 
 How the sensor captures the movement and translates it to a jump (x on playstation controller)
-
-Illustrate the movement -> drawn? photos?
 
 {{<youtube X2yDxSFadHM>}}
 
