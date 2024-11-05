@@ -6,6 +6,8 @@ authors:
 image: featured.jpg
 showBgImage: false
 ---
+![]()
+
 ## 1 Alt+CTRL interface
 
 I chose *Ghostboi* as an interesting Alt+ctrl interface. It is a game, where you control a ghost character with a bendy pink controller. The controller molded from translucent silicone in the shape of a cartoon ghost works with touch sensors and vibration motors giving haptic feedback for the player. The storyline deals with emotions and memories of mortal life that the ghostboi character faces during his journey to afterlife.
@@ -37,10 +39,12 @@ Link to the project: <https://shakethatbutton.com/ghostboi-in-the-land-of-the-de
 
 *Source for the edited illustration of a yo-yo: James L. Haven; Charles Hettrick - US patent application 59745, James L. Haven; Charles Hettrick, "Whirligig", published 1866-11-20. Public domain.*
 
-To do:
 
-Write a description/instruction how to use it
 
-How the sensor captures the movement and translates it to a jump (x on playstation controller)
+In Arduino, the sensor gives 3 numeral values with decimals, both - and + , but I'm not sure about the range. First value is x, second y, and third z.
+
+![](accelerometer_monitor.png)
+
+![](accelerometer_plotter.png)
 
 {{<youtube X2yDxSFadHM>}}
