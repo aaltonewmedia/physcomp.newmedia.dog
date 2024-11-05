@@ -33,7 +33,7 @@ Link to the project: <https://shakethatbutton.com/ghostboi-in-the-land-of-the-de
 
 1. **Video game**: Crash Bandicoot 1, level 8: Hog Wild
 2. **Sensor:** MSA301 triple-axis accelerometer
-3. **Tool/object for interaction** - a yo-yo, controls the hog's jump and movement to left + right, x,y,z-directions
+3. **Tool/object for interaction** - a yo-yo, controls the hog's jump (y-axis) and movement to left + right (x- and z-axis)
 
 ![](yoyo-interaction.jpg)
 
