@@ -54,8 +54,8 @@ In Arduino, the sensor gives 3 numeral values with decimals, both - and + , but 
 
 ![](accelerometer_monitor.png)
 
-Serial monitor values where the first value print the movement of the x, second y, and third z. Below are the same values in a visual plotter.
+Serial monitor values where the first value indicates the movement of the x-axis, the second y-axis, and the third z-axis. Below are the same values in a visual plotter.
 
 ![](accelerometer_plotter.png)
 
-*Original source for the edited yo-yo illustration: James L. Haven; Charles Hettrick - US patent application 59745, James L. Haven; Charles Hettrick, "Whirligig", published 1866-11-20. Public domain. [https://commons.wikimedia.org/wiki/File:US59745A\_Whirligig\_(1866_published)_by_James_L._Haven;_Charles\_Hettrick\_-_Yo-yo,_Fig._1,_2,_3.png](https://commons.wikimedia.org/wiki/File:US59745A_Whirligig_(1866_published)_by_James_L._Haven;_Charles_Hettrick_-_Yo-yo,_Fig._1,_2,_3.png)*
+*Original source for the edited yo-yo illustration: James L. Haven; Charles Hettrick - US patent application 59745, James L. Haven; Charles Hettrick, "Whirligig", published 1866-11-20. Public domain. [https://commons.wikimedia.org/wiki/File:US59745A_Whirligig_(1866_published)_by_James_L._Haven;_Charles_Hettrick_-_Yo-yo,_Fig._1,_2,_3.png](https://commons.wikimedia.org/wiki/File:US59745A_Whirligig_(1866_published)_by_James_L._Haven;_Charles_Hettrick_-_Yo-yo,_Fig._1,_2,_3.png)*
