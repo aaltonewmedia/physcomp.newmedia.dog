@@ -44,14 +44,18 @@ Link to the project: <https://shakethatbutton.com/ghostboi-in-the-land-of-the-de
 
 The player uses yo-yo to control the hog's movement and jumps:
 
-The jump is controlled by throwing the yo-yo down (y-axis) and movement of the hog between left or right to dodge obstacles is controlled simply by moving one's hand (x-axis).
+The jump is controlled by throwing the yo-yo down (y-axis) and movement of the hog between left or right (to dodge obstacles) is controlled by simply moving one's hand in the same direction (x-axis).
 
 These gestures can be combined: the hog can jump either left or right when the yo-yo is thrown to the corresponding direction (x and z-axis to enable the throw both forward and diagonal).
 
 The sensor is attached to the disk(s) of the yoyo.
 
-In Arduino, the sensor gives 3 numeral values with decimals, both - and + , but I'm not sure about the full range of the data. First value is x, second y, and third z.
+In Arduino, the sensor gives 3 numeral values with decimals, both - and + , but I'm not sure about the full range of the data. Nevertheless, I think this sensor would provide me with the data to detect the movement needed for this yo-yo controller.
 
 ![](accelerometer_monitor.png)
 
-*Og source for the edited yo-yo illustration: James L. Haven; Charles Hettrick - US patent application 59745, James L. Haven; Charles Hettrick, "Whirligig", published 1866-11-20. Public domain. [https://commons.wikimedia.org/wiki/File:US59745A\_Whirligig\_(1866_published)_by_James_L._Haven;_Charles\_Hettrick\_-_Yo-yo,_Fig._1,_2,_3.png](https://commons.wikimedia.org/wiki/File:US59745A_Whirligig_(1866_published)_by_James_L._Haven;_Charles_Hettrick_-_Yo-yo,_Fig._1,_2,_3.png)*
+Serial monitor values where the first value print the movement of the x, second y, and third z. Below are the same values in a visual plotter.
+
+![](accelerometer_plotter.png)
+
+*Original source for the edited yo-yo illustration: James L. Haven; Charles Hettrick - US patent application 59745, James L. Haven; Charles Hettrick, "Whirligig", published 1866-11-20. Public domain. [https://commons.wikimedia.org/wiki/File:US59745A\_Whirligig\_(1866_published)_by_James_L._Haven;_Charles\_Hettrick\_-_Yo-yo,_Fig._1,_2,_3.png](https://commons.wikimedia.org/wiki/File:US59745A_Whirligig_(1866_published)_by_James_L._Haven;_Charles_Hettrick_-_Yo-yo,_Fig._1,_2,_3.png)*
