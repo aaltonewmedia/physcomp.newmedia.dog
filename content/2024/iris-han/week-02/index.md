@@ -4,7 +4,7 @@ date: 2024-11-05T23:30:00.000Z
 authors:
   - Iris Han
 image: featured.jpg
-bgimage: 微信图片_20241106001534.jpg
+bgimage: background.jpg
 showBgImage: true
 ---
 Feature: Duck from Matti and my baby mango :)
