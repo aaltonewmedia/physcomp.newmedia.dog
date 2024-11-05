@@ -37,7 +37,7 @@ Link to the project: <https://shakethatbutton.com/ghostboi-in-the-land-of-the-de
 
 ![](yoyo-interaction.jpg)
 
-*James L. Haven; Charles Hettrick - US patent application 59745, James L. Haven; Charles Hettrick, "Whirligig", published 1866-11-20. Public domain.*
+*Source for the edited illustration of a yo-yo: James L. Haven; Charles Hettrick - US patent application 59745, James L. Haven; Charles Hettrick, "Whirligig", published 1866-11-20. Public domain.*
 
 To do:
 
