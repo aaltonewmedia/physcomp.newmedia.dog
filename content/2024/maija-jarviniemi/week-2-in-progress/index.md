@@ -50,6 +50,12 @@ These gestures can be combined: the hog can jump either left or right when the y
 
 The sensor is attached to the disk(s) of the yo-yo.
 
+**A comment:**
+
+There is a limitation for this concept and this is TIME. The gameplay is quite fast so throwing a yo-yo and waiting it to return to the player's hand is not the fastest gesture. But of course there are different kinds of yo-yos and we can assume that this one is extremely lightweight and fast to throw.
+
+**Arduino:**
+
 In Arduino, the sensor gives 3 numeral values with decimals, both - and + , but I'm not sure about the full range of the data. Nevertheless, I think this sensor would provide me with the data to detect the movement needed for this yo-yo controller.
 
 ![](accelerometer_monitor.png)
@@ -58,4 +64,4 @@ Serial monitor values where the first value indicates the movement of the x-axis
 
 ![](accelerometer_plotter.png)
 
-*Original source for the edited yo-yo illustration: James L. Haven; Charles Hettrick - US patent application 59745, James L. Haven; Charles Hettrick, "Whirligig", published 1866-11-20. Public domain. [https://commons.wikimedia.org/wiki/File:US59745A_Whirligig_(1866_published)_by_James_L._Haven;_Charles_Hettrick_-_Yo-yo,_Fig._1,_2,_3.png](https://commons.wikimedia.org/wiki/File:US59745A_Whirligig_(1866_published)_by_James_L._Haven;_Charles_Hettrick_-_Yo-yo,_Fig._1,_2,_3.png)*
+*Original source for the edited yo-yo illustration: James L. Haven; Charles Hettrick - US patent application 59745, James L. Haven; Charles Hettrick, "Whirligig", published 1866-11-20. Public domain. [https://commons.wikimedia.org/wiki/File:US59745AWhirligig(1866published)_by_James_L._Haven;_Charles_Hettrick-_Yo-yo,_Fig._1,_2,_3.png](https://commons.wikimedia.org/wiki/File:US59745A_Whirligig_(1866_published)_by_James_L._Haven;_Charles_Hettrick_-_Yo-yo,_Fig._1,_2,_3.png)*
