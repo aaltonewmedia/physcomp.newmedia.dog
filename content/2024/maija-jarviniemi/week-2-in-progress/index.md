@@ -52,7 +52,7 @@ The sensor is attached to the disk(s) of the yo-yo.
 
 **A comment:**
 
-There is a limitation for this concept and this is TIME. The gameplay is quite fast so throwing a yo-yo and waiting it to return to the player's hand is not the fastest gesture. But of course there are different kinds of yo-yos and we can assume that this one is extremely lightweight and fast to throw.
+There is a limitation for this concept and that is TIME. The gameplay is quite fast so throwing a yo-yo and waiting it to return to the player's hand is not the fastest gesture. But of course there are different kinds of yo-yos and we can assume that this one is extremely lightweight and fast to throw.
 
 **Arduino:**
 
