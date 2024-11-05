@@ -48,7 +48,7 @@ The jump is controlled by throwing the yo-yo down (y-axis) and movement of the h
 
 These gestures can be combined: the hog can jump either left or right when the yo-yo is thrown to the corresponding direction (x and z-axis to enable the throw both forward and diagonal).
 
-The sensor is attached to the disk(s) of the yoyo.
+The sensor is attached to the disk(s) of the yo-yo.
 
 In Arduino, the sensor gives 3 numeral values with decimals, both - and + , but I'm not sure about the full range of the data. Nevertheless, I think this sensor would provide me with the data to detect the movement needed for this yo-yo controller.
 
