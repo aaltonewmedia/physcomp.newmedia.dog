@@ -1,5 +1,5 @@
 ---
-title: Week 2 IN PROGRESS
+title: 'Week 2: Homework "ALT+CTRL interface"'
 date: 2024-11-01T20:20:00.000Z
 authors:
   - Maija Järviniemi
