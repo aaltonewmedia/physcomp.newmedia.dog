@@ -1,6 +1,6 @@
 ---
 title: 'Week 2: Homework "ALT+CTRL interface"'
-date: 2024-11-01T20:20:00.000Z
+date: 2024-11-05T14:48:00.000Z
 authors:
   - Maija Järviniemi
 image: featured.jpg
