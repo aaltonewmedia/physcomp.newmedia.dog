@@ -36,14 +36,22 @@ Link to the project: <https://shakethatbutton.com/ghostboi-in-the-land-of-the-de
 
 ![](yoyo-interaction.jpg)
 
-*Source for the edited illustration of a yo-yo: James L. Haven; Charles Hettrick - US patent application 59745, James L. Haven; Charles Hettrick, "Whirligig", published 1866-11-20. Public domain.*
+*Illustration of the concept.*
 
+{{<youtube X2yDxSFadHM>}}
 
+**How to:**
 
-In Arduino, the sensor gives 3 numeral values with decimals, both - and + , but I'm not sure about the range. First value is x, second y, and third z.
+The player uses yo-yo to control the hog's movement and jumps:
+
+The jump is controlled by throwing the yo-yo down (y-axis) and movement of the hog between left or right to dodge obstacles is controlled simply by moving one's hand (x-axis).
+
+These gestures can be combined: the hog can jump either left or right when the yo-yo is thrown to the corresponding direction (x and z-axis to enable the throw both forward and diagonal).
+
+The sensor is attached to the disk(s) of the yoyo.
+
+In Arduino, the sensor gives 3 numeral values with decimals, both - and + , but I'm not sure about the full range of the data. First value is x, second y, and third z.
 
 ![](accelerometer_monitor.png)
 
-![](accelerometer_plotter.png)
-
-{{<youtube X2yDxSFadHM>}}
+*Og source for the edited yo-yo illustration: James L. Haven; Charles Hettrick - US patent application 59745, James L. Haven; Charles Hettrick, "Whirligig", published 1866-11-20. Public domain. [https://commons.wikimedia.org/wiki/File:US59745A\_Whirligig\_(1866_published)_by_James_L._Haven;_Charles\_Hettrick\_-_Yo-yo,_Fig._1,_2,_3.png](https://commons.wikimedia.org/wiki/File:US59745A_Whirligig_(1866_published)_by_James_L._Haven;_Charles_Hettrick_-_Yo-yo,_Fig._1,_2,_3.png)*
