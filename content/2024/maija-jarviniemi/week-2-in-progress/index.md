@@ -16,8 +16,6 @@ While browsing the projects, the pink color and cute aesthetics made me open the
 
 Link to the project: <https://shakethatbutton.com/ghostboi-in-the-land-of-the-dead/>
 
-# TO DO:
-
 ## 2. Come up with a concept for your own Alt+Ctrl Interface
 
 * *Explore at least one sensor in more detail + figure out how to read the values from it with your Arduino. Print out the data from the sensor to the Serial Monitor or Serial Plotter.*
@@ -46,5 +44,3 @@ Write a description/instruction how to use it
 How the sensor captures the movement and translates it to a jump (x on playstation controller)
 
 {{<youtube X2yDxSFadHM>}}
-
-https://www.youtube.com/watch?v=X2yDxSFadHM
