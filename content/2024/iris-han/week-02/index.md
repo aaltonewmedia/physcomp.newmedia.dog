@@ -35,19 +35,21 @@ https://www.youtube.com/watch?v=jaNljzYFQGY&t=20s
 
 **如果您可以访问传感器，请弄清楚如何使用 Arduino 读取传感器的值。将传感器的数据打印到串行监视器或串行绘图仪。**
 
-**想想你选择的传感器可以检测到哪些不同的交互和/或手势。传感器可以连接到哪种物体上？**
+![](屏幕截图-2024-11-06-163617.png)
 
-**透气性强，因为我发现这个传感器必须非常靠近才能检测到温度和湿度的变化。**
+**What kind of objects could the sensor be attached to?**
 
-**但同时我认为将传感器直接暴露在外有点不合时宜，所以材料的选择非常重要**
+\-Materials with high air permeability, because I found that this sensor must be very close to detect changes in temperature and humidity. For example, breathable fabrics and paper
 
+\-Materials that can directly conduct heat, such as metals, but the speed of heat conduction of metal materials varies, and further exploration is needed
 
+\-If we want to monitor temperature and humidity at the same time, this may require two sensors, and use packaging of different materials to detect changes in the two values ​​as accurately and quickly as possible
 
-
+**\------------------------------------------------------------------**
 
 **Warm Moomin**
 
-**Description:** 作品由一个包裹着传感器的毛绒小球/毛绒小moomin和屏幕组成，人们通过握住/朝小球哈气，可以提升温度和湿度来影响屏幕中火堆的强弱，以让屏幕中取火的姆明更加暖和。如果温度逐渐降低，moomin会感到寒冷最终冻成冰块。让大家来温暖moomin吧！
+**Description:** The work consists of a plush ball/moomin wrapped with a sensor and a screen. By holding/breathing on the ball, people can increase the temperature and humidity to affect the strength of the fire on the screen, so that the Moomin on the screen can get warmer. If the temperature gradually drops, the Moomin will feel cold and eventually freeze into ice. Let's warm up the Moomin!
 
 Moomin is sooooo cute, nobody wants to let him frozen, right?
 
