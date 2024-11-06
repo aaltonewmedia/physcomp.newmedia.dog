@@ -33,11 +33,27 @@ https://www.youtube.com/watch?v=jaNljzYFQGY&t=20s
 
 ![](https://learn.newmedia.dog/tutorials/arduino-and-electronics/sensors/temperature-and-humidity-aht20/images/aht-20.jpg)
 
+**如果您可以访问传感器，请弄清楚如何使用 Arduino 读取传感器的值。将传感器的数据打印到串行监视器或串行绘图仪。**
+
+**想想你选择的传感器可以检测到哪些不同的交互和/或手势。传感器可以连接到哪种物体上？**
+
+**透气性强，因为我发现这个传感器必须非常靠近才能检测到温度和湿度的变化。**
+
+**但同时我认为将传感器直接暴露在外有点不合时宜，所以材料的选择非常重要**
+
+
+
+
+
 **Warm Moomin**
 
-**Description:** Moomin is sooooo cute, nobody wants to let him frozen, right?
+**Description:** 作品由一个包裹着传感器的毛绒小球/毛绒小moomin和屏幕组成，人们通过握住/朝小球哈气，可以提升温度和湿度来影响屏幕中火堆的强弱，以让屏幕中取火的姆明更加暖和。如果温度逐渐降低，moomin会感到寒冷最终冻成冰块。让大家来温暖moomin吧！
+
+Moomin is sooooo cute, nobody wants to let him frozen, right?
 
 Of course I will change the character if I decide to make this game complete, because I don't want to be sued by company. 
+
+Short-distance interaction(0-40cm)
 
 **Sketch:** 
 
