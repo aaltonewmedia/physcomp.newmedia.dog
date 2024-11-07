@@ -16,8 +16,8 @@ I chose a different game by Playfool, the same collective that made "How (not) t
 
 Here are some links to the game:
 
-[outdraw.ai](https://outdraw.ai/)  
-[Steam Page](https://store.steampowered.com/app/3104020/outdrawAI/)  
+<u>[outdraw.ai](https://outdraw.ai/)</u> 
+<u>[Steam Page](https://store.steampowered.com/app/3104020/outdrawAI/)</u>
 
 ---
 
