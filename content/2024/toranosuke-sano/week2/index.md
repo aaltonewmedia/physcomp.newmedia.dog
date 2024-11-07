@@ -36,7 +36,7 @@ It can detect simple gestures (left to right, right to left, up to down, down to
 
 ![](img_e24424d40e28-1.jpeg)
 
-By moving your hand in a certain direction over the sensor, a color is output. The color displayed on the screen is recognized, and you respond by outputting the same color using a gesture.
+By moving your hand in a direction over the sensor, a color is output. The color displayed on the screen is recognized, and you respond by outputting the same color using a gesture.
 
 **3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops**
 
