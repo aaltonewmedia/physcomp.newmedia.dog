@@ -12,6 +12,8 @@ I chose Makey Makey: mostly because I was just thinking to use the capacitive se
 
 https://makeymakey.com
 
+![](makey_makey_6_1_1_3.jpg)
+
 **Here’s my 5 penny user interface mock-up:**
 
 **1.	The challenge**: This exhibit – actually on my work list atm - has a round screen as a curiosity, and the UI should have a large wheel around the screen. The visitors will use the wheel to operate the exhibit, but also needs buttons for language selection and for confirming the choices made with the wheel. Buttons take space I don’t have.
