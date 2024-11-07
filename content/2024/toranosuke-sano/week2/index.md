@@ -34,7 +34,7 @@ showBgImage: false
 
 It can detect simple gestures (left to right, right to left, up to down, down to up)
 
-**Game :** 
+**Game :** A game for the (elderly) people in nursing home
 
 ![](img_e24424d40e28-1.jpeg)
 
