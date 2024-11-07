@@ -18,8 +18,6 @@ showBgImage: false
 
 ![](2v3a8796.jpg)
 
-
-
 [](https://shakethatbutton.com/i-will-wait-for-you-downstairs/)“I Will Wait for You Downstairs” is a thesis project by a student at NYU’s ITP. It’s an exploration game designed to rekindle the joy of make-believe and investigate the creative potential of blending tangible objects with virtual content.At the start of the game, players receive four controllers, each featuring ambiguous, toy-like shapes. Their functions are intentionally left unexplained, encouraging players to experiment and discover. The game is projected on a screen, with the controllers influencing various in-game variables like time, weather, and camera angles.
 
 **The sensor I interested** 
@@ -36,9 +34,13 @@ The first reason is that the design is very simple and cute, with clear function
 
 ***2. "Next Song is Yours!" - An Interactive Innovation in Karaoke***
 
-*An interactive karaoke game that uses BNO055 orientation sensors to track participants’ movements and a group-operated instrument that requires synchronized shaking to produce sound.*
-
 ***Game Concept:***
+
+*An interactive karaoke game that uses BNO055 orientation sensors to track participants’ movements and a group-operated instrument that requires coordinated shaking to produce sound.*
+
+
+
+![](wechatimg186.jpg)
 
 Shake to Start: Players gather around a platform with sensors, shaking in sync to begin the musical accompaniment.
 
@@ -47,8 +49,6 @@ Rhythm Challenge: Players follow screen cues to shake in specific directions, en
 Rhythm Relay: Players pass the rhythm to one another, creating a collaborative karaoke relay.
 
 Multi-person Instrument: A “team drum” only sounds when shaken in unison, adding dynamics and rhythm.
-
-
 
 ***3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops*** 
 
