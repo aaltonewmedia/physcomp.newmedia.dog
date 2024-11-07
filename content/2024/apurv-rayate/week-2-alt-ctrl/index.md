@@ -16,7 +16,7 @@ I chose a different game by Playfool, the same collective that made "How (not) t
 
 Here are some links to the game:
 
-<u>[outdraw.ai](https://outdraw.ai/)</u> 
+<u>[outdraw.ai](https://outdraw.ai/)</u>  
 <u>[Steam Page](https://store.steampowered.com/app/3104020/outdrawAI/)</u>
 
 ---
@@ -27,11 +27,11 @@ I wanted to explore how to make a camera and also how to make a wireless printer
 
 #### 1. Camera
 ![camera](1679435342_max.jpg)  
-[Link to sensor](https://www.fruugo.fi/uusi-ammattimainen-ov2640-kameramoduuli-stm32f4-ohjaimella-jpeg-pakkaus/p-260153128-568295112?language=fi&ac=croud&asc=pmax&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnzTrxaVkEYbFcmW0l0V2Ea5hlNr35Z8nVQql2ydl91D_270_XJLkngaAoypEALw_wcB)
+<u>[Link to sensor](https://www.fruugo.fi/uusi-ammattimainen-ov2640-kameramoduuli-stm32f4-ohjaimella-jpeg-pakkaus/p-260153128-568295112?language=fi&ac=croud&asc=pmax&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnzTrxaVkEYbFcmW0l0V2Ea5hlNr35Z8nVQql2ydl91D_270_XJLkngaAoypEALw_wcB)</u>
 
 #### 2. Thermal Printer
 ![printer](1588513186_max.jpg)
-[Link to sensor](https://www.fruugo.fi/embedded-thermal-receipt-printer-58mm-mini-printing-module-with-usbrs232ttl/p-309155093-692063927?language=en&ac=croud&asc=pmax&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnyFKf7Zlb8jpu7FiAp58fMqoViC0jzRuaT_h1KCtwK9iV-d9VgwlLcaAmVoEALw_wcB)  
+<u>[Link to sensor](https://www.fruugo.fi/embedded-thermal-receipt-printer-58mm-mini-printing-module-with-usbrs232ttl/p-309155093-692063927?language=en&ac=croud&asc=pmax&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnyFKf7Zlb8jpu7FiAp58fMqoViC0jzRuaT_h1KCtwK9iV-d9VgwlLcaAmVoEALw_wcB)</u>  
 
 My game is about collecting photographs of endangered fish. I want to create a physical camera that can be installed with the game so that people can take pictures and get them developed live. I plan to make this for my final project so I will be developing the concept further in the proposal for next week.
 
