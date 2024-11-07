@@ -21,3 +21,17 @@ showBgImage: false
 **My thoughts** : It is interesting that you have to keep heating the eggs patiently to make them delicious as if you were a hen. The idea of using sensors and human body temperature to boil water is so exciting, and I also felt that it was an idea that could be applied to other works.
 
 **2. Come up with a concept for your own Alt+Ctrl Interface**
+
+* Explore at least one sensor in more detail. If you are not able to actually use it, find out what type of data you can get out of it. Is it on/off signal, continuous number, some more complex data?
+* Think of different interactions and/or gestures that could be detected with the sensor you picked. What kind of objects could the sensor be attached to?
+* Choose an existing video game that could be controlled using the interaction/interface enabled by this sensor OR come up with a completely new game or game mechanic.
+* You don’t need to make it work yet. Just come up with the idea/concept for your alternative controller. Write about your idea on your site.
+* You can draw sketches or other ways to illustrate your idea.
+
+**\- Sensor**
+
+
+
+**3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops**
+
+![](スクリーンショット-2024-11-07-7.51.33.png)
