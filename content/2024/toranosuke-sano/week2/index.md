@@ -28,9 +28,15 @@ showBgImage: false
 * You don’t need to make it work yet. Just come up with the idea/concept for your alternative controller. Write about your idea on your site.
 * You can draw sketches or other ways to illustrate your idea.
 
-**Sensor :**
+**Sensor :** Gesture Sensor APDS9960
 
+It can detect simple gestures (left to right, right to left, up to down, down to up)
 
+**Game :** 
+
+![](img_e24424d40e28-1.jpeg)
+
+By moving your hand in a certain direction over the sensor, a color is output. The color displayed on the screen is recognized, and you respond by outputting the same color using a gesture.
 
 **3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops**
 
