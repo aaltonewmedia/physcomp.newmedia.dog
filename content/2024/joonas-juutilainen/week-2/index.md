@@ -6,6 +6,8 @@ authors:
 image: featured.jpg
 showBgImage: false
 ---
+**Alt+Ctrl Interface**
+
 I chose Makey Makey: mostly because I was just thinking to use the capacitive sensor for something similar, but also because it was a) tongue-in-cheek funny, b) out-of-the-box and c) despite all of that, MIT.
 
 https://makeymakey.com
