@@ -4,7 +4,7 @@ date: 2024-10-28T19:56:00.000Z
 authors:
   - Toranosuke Sano
 image: safe.jpg
-bgimage: ""
+bgimage: safe.jpg
 showBgImage: false
 ---
 **The Assignment** 
