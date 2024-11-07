@@ -26,6 +26,8 @@ A touchscreen would solve the problem, but a) we don’t need a touchscreen for 
 
 **4.	The code:** Arduino to read the sensor, emulate a keyboard, and to output touches as keystrokes. Adjustment needed: serial filtered data shows that with the coin+wire+alligator combination, the idle is around 200 and active around 80, compared to 400/80 of an empty slot. Simple p5.js and the browser in kiosk mode to change still images as a mock-up UI.
 
+![](featured.jpg)
+
 [Video Here](https://www.dropbox.com/scl/fi/jpfboz65mei359i51a59b/IMG_2577-2.MOV?rlkey=1sa1mki67u6ppxpmm82xriajf&dl=0)
 
 Arduino code:
