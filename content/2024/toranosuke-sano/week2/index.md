@@ -10,6 +10,8 @@ showBgImage: false
 
 **1. Find an interesting existing Alt+Ctrl Interface**
 
+![](egg2.jpg)
+
 ![](egg3.jpg "Hen")
 
 **Intro** : Hen is a remote controlled device created by Xiao Tan and Shuang Cai, inspired by [珍道具(ChinDougu)](https://chindogu.com/ics/?page_id=336). Like a hen patiently warms her own eggs, this simple device is used to make boiled eggs by warming an egg-shaped controller device with two hands. 
