@@ -22,7 +22,10 @@ A touchscreen would solve the problem, but a) we don’t need a touchscreen for 
 
 **4.	The code:** Arduino to read the sensor, emulate a keyboard, and to output touches as keystrokes. Adjustment needed: serial filtered data shows that with the coin+wire+alligator combination, the idle is around 200 and active around 80, compared to 400/80 of an empty slot. Simple p5.js and the browser in kiosk mode to change still images as a mock-up UI.
 
+[Video Here](https://www.dropbox.com/scl/fi/jpfboz65mei359i51a59b/IMG_2577-2.MOV?rlkey=1sa1mki67u6ppxpmm82xriajf&dl=0)
+
 Arduino code:
+
 ```
 #include "Wire.h"
 #include "Adafruit_MPR121.h"
@@ -106,10 +109,10 @@ void loop() {
 
   delay(100);
 }
-
 ```
 
 p5.js code:
+
 ```
 let img1, img2, img3;
 let currentImage;
@@ -140,8 +143,6 @@ function keyPressed() {
   }
 }
 ```
-
-
 
 **5.	Reflection:** Language selection seems to work, as a mock-up anyway. Nice. Quick and dirty, ready for iteration.
 
