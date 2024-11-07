@@ -20,6 +20,8 @@ https://makeymakey.com
 
 A touchscreen would solve the problem, but a) we don’t need a touchscreen for anything else b) a touchscreen version of this novelty round screen costs bananas.
 
+![](screenshot-2024-11-04-at-14.52.41.png)
+
 **2.	The mock-up:** I’ll place thin capacitive buttons on the screen; this way I can control the UI and also change the button labels when needed! Whee.
 
 **3.	The practice:** Clear conductive film would be nice, but I want this done quick. I have three 5 cent coins in my pocket and three identical alligator wires: off with the wrong-end clips, a little filing and soldering, and my "5 cent capacitive buttons" are ready. The name sounds stupid, so I call them “5 penny buttons”. Piece of clear film on the screen, coins with VHB tape to the film, alligator clips to MPR121 and we’re good to code.
@@ -155,7 +157,5 @@ function keyPressed() {
 ![](screenshot-2024-11-04-at-14.53.31.png)
 
 ![](screenshot-2024-11-04-at-14.52.59.png)
-
-![](screenshot-2024-11-04-at-14.52.41.png)
 
 ``
