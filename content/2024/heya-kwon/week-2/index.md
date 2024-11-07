@@ -30,17 +30,17 @@ Sensors I'm interested in:
 
 * Idea: attach windsensor to an arduino and place outside. Use arduino to communicate to a computer somewhere indoors. The user can rotate a rotating controller to work with the wind to fly a virtual kite. The virtual kite would be projected onto the ceiling in a dark room.
 
-2. NFC (Near Field Communication) tags - It would be interesting to use NFC tags to trigger sounds. I believe the tags would cause binary output. 
+Image of a traditional Korean kite:
 
-* Idea: Make a platform that plays certain sounds when certain objects (with NFC tags) are placed inside. For example, I could laser cut little pieces of Hawtu deck (https://en.wikipedia.org/wiki/Go-Stop) where each piece triggers a different sound. The combination of certain pieces also play a different sound. Hwatu means "fight with flowers", so it will be interesting to think of what sound to use since flowers are silent (to us). Another example is to create a small model of a house (using laser-cutted plywood) and make each chair in the house create a different sound.
-
-3. Temperature sensor - I enjoy the idea of sensing warmth (and life) using temperature sensor. I believe the temperature sensor data would be continuous.
-
-* Idea: Create a wooden coaster that plays a certain sound when a warm mug is placed on it. There should be a temperature sensor inside the coaster.
+![](traditional-kite-a6anec.jpg)
 
 Example sketch of idea #1:
 
 ![](kite-sketch.png)
+
+2. NFC (Near Field Communication) tags - It would be interesting to use NFC tags to trigger sounds. I believe the tags would cause binary output. 
+
+* Idea: Make a platform that plays certain sounds when certain objects (with NFC tags) are placed inside. For example, I could laser cut little pieces of Hawtu deck (https://en.wikipedia.org/wiki/Go-Stop) where each piece triggers a different sound. The combination of certain pieces also play a different sound. Hwatu means "fight with flowers", so it will be interesting to think of what sound to use since flowers are silent (to us). Another example is to create a small model of a house (using laser-cutted plywood) and make each chair in the house create a different sound.
 
 Example prototype of idea #2 A:
 
@@ -49,6 +49,10 @@ Example prototype of idea #2 A:
 Example sketch of idea #2 B:
 
 ![House Chair  prototype](signal-2024-11-07-132042.jpeg)
+
+3. Temperature sensor - I enjoy the idea of sensing warmth (and life) using temperature sensor. I believe the temperature sensor data would be continuous.
+
+* Idea: Create a wooden coaster that plays a certain sound when a warm mug is placed on it. There should be a temperature sensor inside the coaster.
 
 ## 3. Complete the MyCourses introductions for the 3D Printing and Laser Cutter workshops
 
