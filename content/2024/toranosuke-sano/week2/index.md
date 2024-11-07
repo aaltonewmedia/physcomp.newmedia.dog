@@ -28,7 +28,7 @@ showBgImage: false
 * You don’t need to make it work yet. Just come up with the idea/concept for your alternative controller. Write about your idea on your site.
 * You can draw sketches or other ways to illustrate your idea.
 
-**\- Sensor**
+**Sensor :**
 
 
 
