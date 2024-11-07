@@ -26,7 +26,7 @@ Here are some links to the game:
 I wanted to explore how to make a camera and also how to make a wireless printer and then use those as an interface for a game that I am currently making. 
 
 #### 1. Camera
-![camera](1679435342_max.jpg)  
+![camera](1679435342_max.jpg)
 <u>[Link to sensor](https://www.fruugo.fi/uusi-ammattimainen-ov2640-kameramoduuli-stm32f4-ohjaimella-jpeg-pakkaus/p-260153128-568295112?language=fi&ac=croud&asc=pmax&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnzTrxaVkEYbFcmW0l0V2Ea5hlNr35Z8nVQql2ydl91D_270_XJLkngaAoypEALw_wcB)</u>
 
 #### 2. Thermal Printer
