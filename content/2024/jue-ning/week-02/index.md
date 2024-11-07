@@ -24,4 +24,12 @@ Watch Video Here:  <https://www.milab.design/project-06>
 
 [](https://www.milab.design/project-06)
 
+My concept:\
+\
+Sensor: Accelerometer+Gyroscope+Gravity？
+
+I want to design a simple boxing game that uses a wearable device on the wrist to detect the hand’s movement direction and speed for scoring. The game tracks the player’s movements in real time based on sensor data, including movement direction and speed, and provides instant feedback in different modes. This design enhances interactivity and allows players to enjoy the fun and sense of achievement that come with improving their speed and accuracy through continuous practice.
+
+[](https://www.milab.design/project-06)
+
 [](https://www.milab.design/project-06)
