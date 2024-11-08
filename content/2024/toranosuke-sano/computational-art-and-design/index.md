@@ -48,6 +48,6 @@ Is there anything I should be careful about when downloading and using downloade
 ![](スクリーンショット-2024-11-08-8.26.23.png "Sound Visualization")
 
 * Bosques de mi Mentre - Ahora son solo fantasmas, parte 2, Karl Kleim : \[<iframe title="vimeo-player" src="https://player.vimeo.com/video/43974919?h=5bd7dfb2a1" width="640" height="360" frameborder="0"    allowfullscreen></iframe>](<<iframe title="vimeo-player" src="https://player.vimeo.com/video/43974919?h=5bd7dfb2a1" width="640" height="360" frameborder="0"    allowfullscreen></iframe>>)
-* MARS, Yoriko Takabatake, 2020 <https://shugoarts.com/en/news-en/23526/>[](https://shugoarts.com/en/news-en/23526/)
+* MARS, Yoriko Takabatake, 2020 : <https://shugoarts.com/en/news-en/23526/>[](https://shugoarts.com/en/news-en/23526/)
 
   ![](スクリーンショット-2024-11-08-8.23.35.png "MARS 11, Yuriko Takabatake, 2020")
