@@ -26,19 +26,19 @@ It should include the following:
 
 **Idea**
 
-**説明**
+I am thinking about the idea of visualizing the voices of the Ainu people. They are a minority group that lived in Japan and Russia, and tens of thousands of them still survive today. The language they speak is a fully spoken language without a written language. As their population declines, fewer people are speaking the language, and it has been pointed out to be in danger of extinction.
 
-アイヌ民族の音声を用いて、彼らの声を視覚化するアイデアを模索している。アイヌ民族とは、日本とロシアに住んでいた少数民族のことで、今も数万人が生存している。彼らの話すアイヌ語は、文字を持たない完全話語である。アイヌ民族の人口減少に伴って、アイヌ語を話す人が減っており、言語は絶滅しようとしている。
+Although I do not understand the language and may not be able to stop its extinction, I think it is meaningful to visualize it through this project.
 
-私はその言語を理解できないし絶滅の一途は止められないかもしれないが、今回のプロジェクトを通して視覚化することができると考えた。
+![](ainu_fes.jpg "Ainu brown bear sacrificial ceremony")
 
 **How to do**
 
-10月の授業で触れたサウンドライブラリを参考にしながら進める。音源をダウンロードしてp5jsを用いて生成する。まだ考え中；どのように視覚化をするか（音をどうやって何にtransformするか。どのようにアウトプットするか）。
+I will continue by referring to the page about sound libraries mentioned in September 27, 2024 class, and then download sound sources and generate them using p5js. I am still thinking about how to visualize them (how to transform the sound into a visual, and how to output it).
 
 **疑問**
 
-音源をダウンロードして使用する場合、注意することはありますか。音源所有者の許諾などは必要ですか。
+Is there anything I should be careful about when downloading and using downloaded music? Do I need to get permission from the rights holder?
 
 **Examples of works that other people have done that are similar/ I'm interest in.**
 
