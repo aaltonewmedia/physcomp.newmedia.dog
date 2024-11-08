@@ -38,7 +38,7 @@ this is one of "Ainu music" **:** [https://youtu.be/_8bZ__Wd9Kw?si=1BsMu1rNWg6Ke
 
 I will continue by referring to the page about sound libraries mentioned in September 27, 2024 class, and then download sound sources and generate them using p5js. I am still thinking about how to visualize them (how to transform the sound into a visual, and how to output it).
 
-**疑問**
+**Questions**
 
 Is there anything I should be careful about when downloading and using downloaded music? Do I need to get permission from the rights holder?
 
