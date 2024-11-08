@@ -5,7 +5,7 @@ authors:
   - Toranosuke Sano
 image: flag_of_ainu.png
 bgimage: ainu_men.jpg
-showBgImage: false
+showBgImage: true
 ---
 **Guidelines**
 
