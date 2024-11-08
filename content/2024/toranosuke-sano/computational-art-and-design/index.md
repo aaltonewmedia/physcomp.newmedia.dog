@@ -40,4 +40,10 @@ It should include the following:
 
 音源をダウンロードして使用する場合、注意することはありますか。音源所有者の許諾などは必要ですか。
 
-1-3 examples of works that other people have done that are similar/ I'm interest in.
+**Examples of works that other people have done that are similar/ I'm interest in.**
+
+*  barbe_generative_diary : <https://barbegenerativediary.com/en/sounds/how-to-get-started-with-field-recording/>
+
+  * Instagram(@barbe_generative_diary) : <https://www.instagram.com/barbe_generative_diary?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==>
+* Bosques de mi Mentre - Ahora son solo fantasmas, parte 2, Karl Kleim : [<iframe title="vimeo-player" src="https://player.vimeo.com/video/43974919?h=5bd7dfb2a1" width="640" height="360" frameborder="0"    allowfullscreen></iframe>](<<iframe title="vimeo-player" src="https://player.vimeo.com/video/43974919?h=5bd7dfb2a1" width="640" height="360" frameborder="0"    allowfullscreen></iframe>>)
+* MARS, Yoriko Takabatake, 2020 <https://shugoarts.com/en/news-en/23526/>
