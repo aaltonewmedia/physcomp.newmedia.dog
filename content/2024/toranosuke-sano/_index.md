@@ -5,6 +5,6 @@ authors:
   - Toranosuke Sano
 image: mr-gameandwatch-r.png
 bgimage: background.jpg
-showBgImage: false
+showBgImage: true
 ---
 Hi, I'm Tora(nosuke).
