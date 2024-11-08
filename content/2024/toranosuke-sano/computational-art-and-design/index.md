@@ -32,6 +32,8 @@ Although I do not understand the language and may not be able to stop its extinc
 
 ![](ainu_fes.jpg "Ainu brown bear sacrificial ceremony")
 
+this is one of "Ainu music" **:** [https://youtu.be/_8bZ__Wd9Kw?si=1BsMu1rNWg6Ker5t&t=405](https://youtu.be/_8bZ__Wd9Kw?si=1BsMu1rNWg6Ker5t&t=405)
+
 **How to do**
 
 I will continue by referring to the page about sound libraries mentioned in September 27, 2024 class, and then download sound sources and generate them using p5js. I am still thinking about how to visualize them (how to transform the sound into a visual, and how to output it).
