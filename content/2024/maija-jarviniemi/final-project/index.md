@@ -33,8 +33,8 @@ showBgImage: false
 OPTION 1: 
 
 * A physical control, possibly a potentiometer functioning as a slider --> A nicely rotating knob that fits nicely to one's hand (my hand ofc), a beautiful to look and use
-* Perhaps two knobs for different properties?
-* The patterns are drawn to a screen/a projected surface
+* Perhaps two knobs for different properties? Or the second one could be a nice button or a switch?
+* The patterns are drawn to a display/a projected surface
 * Similar knob size I have in mind but it controls the mouse: https://www.instructables.com/Desktop-Scroll-Wheel-and-Volume-Control/
 
 ![](https://content.instructables.com/F10/2GP3/FJXP7W7G/F102GP3FJXP7W7G.jpg?auto=webp&frame=1&fit=bounds&md=MjAxMy0xMi0xMCAwNzo1NToxOS4w)
@@ -52,7 +52,7 @@ A comment: *This is a playful option with the whole body interaction. However th
 OPTION 3:
 
 * A sensor in something wearable detecting the movement of the feet for example or hands
-* A projector OR a screen that translates the sensor data to draw the images with my algorithm
+* A projector OR a display that translates the sensor data to draw the images with my algorithm
 * Similar project:
   {{<youtube mNd5eXS-0k8>}}
 
@@ -60,14 +60,14 @@ A comment: *This is the hardest option but also quite interesting.  I might get 
 
 **Parts and components needed:**
 
-For OPTION 1: 
+OPTION 1: 
 
 * Arduino
-* Potentiometer(s)
-* Perhaps a button
+* Potentiometer(s) and a button? Or a big switch?
+* Some knobs, I am hoping to thrift some fun parts that I could alter or then 3d print something
 
-For OPTION 2: 
+OPTION 2 + 3: 
 
 * Arduino
 * A sensor for detecting movement --> LOOK INTO THIS
-* A projector
+* A projector for option 2 OR a display for option 3
