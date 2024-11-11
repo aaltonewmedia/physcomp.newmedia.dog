@@ -26,8 +26,6 @@ showBgImage: false
 
 ![](figureskating1_skateguardblog.jpg)
 
-![](http://www.skatingaheadofthecurve.com/HistoryRudolfSungren.jpg)
-
 ![](https://www.actingarchives.it/media/showtime/storage/2020/01/08/6/main/fig-4-schema-del-minuetto-in-kellom-tomlinson-the-art-of-dancing-explained-london-1735.jpg?1579507307)
 
 **What kind of interaction and UI?**
