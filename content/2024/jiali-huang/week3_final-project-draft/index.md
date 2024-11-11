@@ -8,3 +8,5 @@ bgimage: background.jpg
 showBgImage: false
 ---
 \-
+
+![](aa73e9c522d2a4f7e5c9e531e5246a4.png)
