@@ -3,7 +3,7 @@ title: w03
 date: 2024-11-11T16:32:00.000Z
 authors:
   - Ellen Sofie Engen
-image: featured.jpeg
+image: featured.jpg
 showBgImage: false
 ---
 ### Project thoughts so far
