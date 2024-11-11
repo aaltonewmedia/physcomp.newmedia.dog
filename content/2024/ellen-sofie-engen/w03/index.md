@@ -18,3 +18,5 @@ Building on notions of self defense and aggression, themes I've also been intere
 \- this can be achieved with distance sensors and motors. I imagine that if a treshhold is reached, a motor will control a string that is attatched to the plant, "yanking" it away.
 
 Another way to go with this could be more active, giving the plant thorns that will emerge when the treshhold is reached.
+
+![sketch of plant exoskeleton robot](featured.jpeg "exoplant")
