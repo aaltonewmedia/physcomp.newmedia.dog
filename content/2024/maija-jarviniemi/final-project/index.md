@@ -53,8 +53,8 @@ OPTION 3:
 
 * A sensor in something wearable detecting movement of the feet for example or hands
 * A projector OR a screen that translates the sensor data to draw the images with my algorithm
-* Similar project: <https://www.youtube.com/watch?v=mNd5eXS-0k8>
-*
+* Similar project:
+{{<youtube mNd5eXS-0k8>}}
 
 A comment: *This is the hardest option but also quite interesting.  I might (read: I will) get into trouble with time since I am still a beginner in coding + tinkering with sensors and wearables is an unknown terrain for me. It would most likely develop into a too complex project for now.*
 
