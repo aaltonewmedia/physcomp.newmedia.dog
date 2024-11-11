@@ -35,7 +35,7 @@ OPTION 1:
 * A physical control, possibly a potentiometer functioning as a slider --> A nicely rotating knob that fits nicely to one's hand (my hand ofc), a beautiful to look and use
 * Perhaps two knobs for different properties? Or the second one could be a nice button or a switch?
 * The patterns are drawn to a display/a projected surface
-* Similar knob size I have in mind but it controls the mouse: https://www.instructables.com/Desktop-Scroll-Wheel-and-Volume-Control/
+* Similar knob size I have in mind, this controls the computer volume: https://www.instructables.com/Desktop-Scroll-Wheel-and-Volume-Control/
 
 ![](https://content.instructables.com/F10/2GP3/FJXP7W7G/F102GP3FJXP7W7G.jpg?auto=webp&frame=1&fit=bounds&md=MjAxMy0xMi0xMCAwNzo1NToxOS4w)
 
