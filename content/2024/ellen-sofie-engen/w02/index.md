@@ -17,8 +17,6 @@ I initially had a lot of ideas and inspirations after the first lecture, before 
 
 I haven't explored further how this could actually be done, in terms of sensors and arduino-limitations.
 
-
-
 ## Project ideas
 
 I wanted to explore the act of self-defence, in combination with guilt.
@@ -28,3 +26,5 @@ One idea, that i have kind of moved away from, is an inviting artefact, like a t
 Maybe integrated, or entirely separate, is that I really want to work with live plants somehow. I am really interested in making a "exoskeleton" for plants. I don't know if something similar has been done before, but I have seen a student project that made an automatic shade controller for a plant, I guess it would be in the same street. I would like to help the plant in some way, either in equipping it with self defence-mechanisms, like thorns, or having it move towards light.
 
 For aggression, I imagine using a motor to push the object backwards so a range of spikes are revealed, or something like a sword is pushed up. This would be pretty bleak and sad as an interaction, and wouldn't be very integrated in something like a plant, so something more realistic and interesting could be to have the exoskeleton help different parts of the plant move, in response to human touch (or a manipulated interaction, if this proves difficult)  detected by a distance sensor.
+
+![sketch of the exoplant, a moving plant](featured.png "sketch of moving plant")
