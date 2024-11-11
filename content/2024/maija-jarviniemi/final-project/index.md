@@ -34,29 +34,24 @@ showBgImage: false
 
 OPTION 1: 
 
-\- fyysinen säädin, potikka -> pyörittävä liike jolla säädellään kuviota
-
-\- kuvat piirtyy näytölle? tms, mitä muuta?
+* fyysinen säädin, potikka -> pyörittävä liike jolla säädellään kuviota
+* kuvat piirtyy näytölle? tms, mitä muuta?
 
 A comment: *This option is the most straigth-forward one with physical knobs and buttons. I would be fun to tinker with different design options for the knobs (how it feels when touched, color, materials, the overall user experience).*
 
 OPTION 2:
 
-\- projektori seinällä/katossa
-
-\- arduino+sensori tunnistaa liikkeet/askeleet 
-
-\- kuviot piirtyy lattiaan/seinälle liikkeen/askeleiden mukaisesti
+* projektori seinällä/katossa
+* arduino+sensori tunnistaa liikkeet/askeleet 
+* kuviot piirtyy lattiaan/seinälle liikkeen/askeleiden mukaisesti
 
 A comment: *This is a playful option with the whole body interaction. However this approach adds a new level of complexity for detecting movement and for me to come up with a goooood and algorithm for the p5.js part. I am a quite worried of time.*
 
 OPTION 3:
 
-\- a sensor in something wearable detecting movement of the feet for example or hands
-
-\- a projector OR a screen that translates the sensor data to draw the images with my algorithm
-
-\- A similar project: <https://www.youtube.com/watch?v=mNd5eXS-0k8>
+* A sensor in something wearable detecting movement of the feet for example or hands
+* A projector OR a screen that translates the sensor data to draw the images with my algorithm
+* Similar project: <https://www.youtube.com/watch?v=mNd5eXS-0k8>
 
 A comment: *This is the hardest option but also quite interesting.  I might (read: I will) get into trouble with time since I am still a beginner in coding + tinkering with sensors and wearables is an unknown terrain for me. It would most likely develop into a too complex project for now.*
 
