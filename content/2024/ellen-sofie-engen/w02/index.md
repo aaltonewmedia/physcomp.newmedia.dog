@@ -5,7 +5,7 @@ authors:
   - Ellen Sofie Engen
 image: featured.png
 bgimage: background.jpg
-showBgImage: false
+showBgImage: true
 ---
 # Alt+Ctrl games
 
