@@ -39,7 +39,7 @@ OPTION 1:
 
 ![](https://content.instructables.com/F10/2GP3/FJXP7W7G/F102GP3FJXP7W7G.jpg?auto=webp&frame=1&fit=bounds&md=MjAxMy0xMi0xMCAwNzo1NToxOS4w)
 
-A comment: *This option is the most straigth-forward one with physical knobs and buttons. I would be fun to tinker with different design options for the knobs (how it feels when touched, color, materials, the overall user experience).*
+A comment: *This option is the most straigth-forward one with physical knobs and buttons. It would be fun to tinker with different design options for the knobs (how it feels when touched, color, materials, the overall user experience).*
 
 OPTION 2:
 
@@ -54,9 +54,9 @@ OPTION 3:
 * A sensor in something wearable detecting movement of the feet for example or hands
 * A projector OR a screen that translates the sensor data to draw the images with my algorithm
 * Similar project:
-{{<youtube mNd5eXS-0k8>}}
+  {{<youtube mNd5eXS-0k8>}}
 
-A comment: *This is the hardest option but also quite interesting.  I might (read: I will) get into trouble with time since I am still a beginner in coding + tinkering with sensors and wearables is an unknown terrain for me. It would most likely develop into a too complex project for now.*
+A comment: *This is the hardest option but also quite interesting.  I might get into trouble with time since I am still a beginner in coding + tinkering with sensors and wearables is an unknown terrain for me. It would most likely develop into a too complex project for now.*
 
 **Parts and components needed:**
 
