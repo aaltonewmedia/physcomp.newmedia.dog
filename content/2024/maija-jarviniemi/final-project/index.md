@@ -51,7 +51,7 @@ A comment: *This is a playful option with the whole body interaction. However th
 
 OPTION 3:
 
-* A sensor in something wearable detecting movement of the feet for example or hands
+* A sensor in something wearable detecting the movement of the feet for example or hands
 * A projector OR a screen that translates the sensor data to draw the images with my algorithm
 * Similar project:
   {{<youtube mNd5eXS-0k8>}}
