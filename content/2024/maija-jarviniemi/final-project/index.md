@@ -69,6 +69,7 @@ OPTION 1:
 * Arduino
 * Potentiometer(s) and a button? Or a big switch?
 * Some knobs, I am hoping to thrift some fun parts that I could alter or then 3d print something
+* A container for the controls
 
 OPTION 2 + 3: 
 
