@@ -39,6 +39,10 @@ OPTION 1:
 
 ![](https://content.instructables.com/F10/2GP3/FJXP7W7G/F102GP3FJXP7W7G.jpg?auto=webp&frame=1&fit=bounds&md=MjAxMy0xMi0xMCAwNzo1NToxOS4w)
 
+Some simple controllers, I would like to do something even more tangible and fun: https://www.instructables.com/Control-Box/
+
+![](https://content.instructables.com/FGC/E8M6/GQZJNPCV/FGCE8M6GQZJNPCV.png?auto=webp&frame=1&width=800&fit=bounds&md=MjAxNC0wNi0xMyAxNTo0NToyMS4w)
+
 A comment: *This option is the most straigth-forward one with physical knobs and buttons. It would be fun to tinker with different design options for the knobs (how it feels when touched, color, materials, the overall user experience).*
 
 OPTION 2:
