@@ -34,6 +34,8 @@ You are my gossip friend who accompanies me. The new images sent to you are my e
 
 ![](f5f2c84be7136a1170ab07870818c00.png)
 
+\-
+
 TRAIL 02: Calling ChatGPT API in Python
 
 ![](b8994242a9a3c077e10c215d03ba149.png)
