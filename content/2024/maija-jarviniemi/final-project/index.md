@@ -69,7 +69,7 @@ OPTION 2 + 3:
 
 ### Some comments:
 
-In my p5.js class there was a suggestion to look at the *Guidonian hand*, a pedagogical system used prior to invention of notation. In short, it was a system where each finger and knuckles (?) represented a different note, a full step (koko sävelaskel in Finnish): 
+In my p5.js class there was a suggestion to look at the *Guidonian hand*, a pedagogical system used prior to the invention of musical notation. In short, it was a system where each finger and knuckles (?) represented a different note, a full step (koko sävelaskel in Finnish): 
 
 *It was the most basic pedagogical tool for learning new music in the European Middle Ages, and was often referenced in contemporary musical theory. In each hexachord, all adjacent pitches are a whole tone apart, except for the middle two, which are separated by a semitone.*
 
