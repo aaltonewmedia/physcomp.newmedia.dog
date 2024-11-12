@@ -64,8 +64,9 @@ I would get a series of times, speeds, and directions from wind meter into my Ad
 * Waterproof box (to protect arduino from the wind)  
 * Battery pack (to power the arduino outdoors)  
 * Clamp (to clamp the wind meter on a ramp outdoors)  
-* Computer (for p5.js)  
-* Projector or Screen
+* Computer (for p5.js)
+* Printer (for printing results)
+* (Optional for real-time option) Projector or Screen
 
 # Considerations
 
