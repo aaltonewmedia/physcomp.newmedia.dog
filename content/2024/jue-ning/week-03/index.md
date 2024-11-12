@@ -3,7 +3,7 @@ title: Week 03
 date: 2024-11-12T10:00:00.000Z
 authors:
   - Jue Ning
-image: feature-image.webp
+image: paiting1.jpg
 bgimage: background-image.jpg
 showBgImage: false
 ---
