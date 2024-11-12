@@ -22,7 +22,7 @@ Initial list of parts and components you think you will need
 
 **Concept + Brainstorm #1**
 
-![](concept-brainstorm.png)
+![](cb.png)
 
 **Inspiration**
 
@@ -32,21 +32,13 @@ Initial list of parts and components you think you will need
 
 ![](how-things-work.png)
 
-
-
-
-
 **Concept + Brainstorm #2**
 
 ![](concept-brainstorm.png)
 
-
-
 **Inspiration**
 
 ![](inspiration-1-.png)
-
-
 
 **How things work**
 
