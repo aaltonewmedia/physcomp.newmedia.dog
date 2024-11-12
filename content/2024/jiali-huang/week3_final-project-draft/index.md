@@ -53,3 +53,13 @@ Website construction
 Emotion recognition 
 
 Emotion input as prompt
+
+
+
+PLAN B:
+
+If the automatic upload of photos from the mobile album is unsuccessful, switch to uploading images via QR code.
+
+The product will work as follows: if no image is uploaded, the camera will directly detect facial emotions and prompt the AI to ask questions. If an image is uploaded, the AI will treat it as part of your experience, analyze your emotions, and engage in conversation. Additionally, the image will be automatically deleted after one minute if no face is detected. 
+
+This setup allows the product to be deployed in public settings.
