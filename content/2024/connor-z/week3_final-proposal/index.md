@@ -16,15 +16,27 @@ Some references (artworks/projects that are similar to what you would like to do
 
 Initial list of parts and components you think you will need
 
-
-
-**Proposal**
+**Proposal** 
 
 ![](proposal.png)
 
+**Concept + Brainstorm #1**
+
+![](concept-brainstorm.png)
+
+**Inspiration**
+
+![](inspiration.png)
+
+**How Things Work**
+
+![](how-things-work.png)
 
 
-**Concept + Brainstorm**
+
+
+
+**Concept + Brainstorm #2**
 
 ![](concept-brainstorm.png)
 
@@ -32,10 +44,10 @@ Initial list of parts and components you think you will need
 
 **Inspiration**
 
-![](inspiration.png)
+![](inspiration-1-.png)
 
 
 
-**How Things Work**
+**How things work**
 
-![](how-things-work.png)
+![](inspiration-2-.png)
