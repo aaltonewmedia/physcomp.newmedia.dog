@@ -20,7 +20,7 @@ showBgImage: false
 
 \- I am expanding my project I presented in  Computation A&D course on Fri 8th of Nov, link to [the Miro board](https://miro.com/app/board/uXjVLIm3lwU=/).
 
-\- In **p5.js** I am planning to do **drawing exercises on spirals and other circular paths** inspired by old *special figure skating* figures as well as beautifully illustrated instruction patterns of old ballroom dances
+\- In **p5.js** I am planning to do **drawing exercises on spirals and other circular paths** inspired by old s[pecial figure skating figures](http://www.skatingaheadofthecurve.com/SpecialFigures.html) as well as beautifully illustrated [instruction patterns of old ballroom dances](https://publicdomainreview.org/collection/dances-in-beauchamp-feuillet-notation/)
 
 \- **In Physical Computing** I aim to focus on creating **a user interface** that enables interaction with the drawing exercises
 
@@ -78,3 +78,15 @@ OPTION 2 + 3:
 * A sensor for detecting movement --> LOOK INTO THIS
 * For option 3 something wearable for the sensor to go in
 * A projector for option 2 OR a display for option 3
+
+### Some comments:
+
+In my p5.js class there was a suggestion to look at the *Guidonian hand*, a pedagogical system used prior to invention of notation. In short, it was a system where each finger and knuckles (?) represented a different note, a full step (koko sävelaskel in Finnish): 
+
+*It was the most basic pedagogical tool for learning new music in the European Middle Ages, and was often referenced in contemporary musical theory. In each hexachord, all adjacent pitches are a whole tone apart, except for the middle two, which are separated by a semitone.*
+
+Source: <https://en.wikipedia.org/wiki/Guidonian_hand>
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Guidonian_hand.jpg/1920px-Guidonian_hand.jpg)
+
+*Guidonian hand* and refiguring the functionality of it to this project (for controlling the patterns) would be an ideal BUT I think for this timeframe I have do something more simple. However, I will definitely keep this sidetrack in mind for the future!
