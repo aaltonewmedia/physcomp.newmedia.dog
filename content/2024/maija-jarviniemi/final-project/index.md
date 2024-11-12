@@ -76,4 +76,5 @@ OPTION 2 + 3:
 
 * Arduino
 * A sensor for detecting movement --> LOOK INTO THIS
+* For option 3 something wearable for the sensor to go in
 * A projector for option 2 OR a display for option 3
