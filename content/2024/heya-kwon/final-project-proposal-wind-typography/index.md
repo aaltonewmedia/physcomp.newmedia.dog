@@ -20,7 +20,7 @@ Winds around us are constantly moving and changing. Even though they are invisib
 
 Successfully connected the wind meter to my arduino!
 
-removed image2
+
 The wind is too weak today! (Thanks Sasha for helping)
 
 After testing the wind meter outside, I realized I cannot assume the wind data to be very versatile and dynamic at all times. For example, the wind direction and wind speed would remain the same over 10 minutes or more on a non-windy day. Because of this, it might be useful to collect wind on a balcony (usually higher places have more wind) over multiple hours or days. Lastly, I also realized that I should put the arduino in a waterproof case as it was raining that day.
