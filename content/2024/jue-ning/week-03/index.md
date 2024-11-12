@@ -21,7 +21,7 @@ These interactions aim to transform traditional viewing into an engaging, multi-
 
 \
 \
-The idea needs to be polished.
+The idea needs to be refined.
 
 ![](paiting-2.gif)
 
