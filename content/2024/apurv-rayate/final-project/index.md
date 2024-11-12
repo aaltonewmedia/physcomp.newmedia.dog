@@ -32,7 +32,7 @@ I will model the pcomp project based on a polaroid camera. I might 3d print the 
 ![blob](nkjl.jpg)  
 <u>[blob opera](https://artsandculture.google.com/experiment/blob-opera/AAHWrq360NcGbw?hl=en)</u>  
 A website of interactive blobs that sing you a song
-![inpieces](nlkn.jpg)  
+![inpieces](nlkn.png)  
 <u>[species-in-pieces](http://species-in-pieces.com/)</u>  
 A website that uses CSS animations to show 30 endangered species
 
