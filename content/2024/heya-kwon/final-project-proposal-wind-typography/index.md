@@ -6,15 +6,13 @@ authors:
 image: featured.png
 showBgImage: false
 ---
+
 # Introduction
 
-![](traditional-visualization-of-wind-direction-and-speed-image-provided-by-cigefi.jpeg "Traditional visualization of wind direction and speed. Image provided by CIGEFI")
-
-*Traditional visualization of wind direction and speed. Image provided by CIGEFI*
-
-<br/>
 
 Winds around us are constantly moving and changing. Even though they are invisible, they are often felt by us or visualized by objects shaken by them. I want to capture the wind speed and direction data over a course of a few days or weeks in a very local destination: Aalto University art building (either Marsio or Varë). Using the collected wind data, I will make a series of shapes that mimic typography. 
+
+
 
 **Recording option:** I would clamp a wind meter, connected to an arduino and a battery pack, somewhere on the balcony of the Marsio building. Over several days, the arduino will record and store the wind data via [Adafruit IO](https://io.adafruit.com/) API. Afterwards, I will clean up and organize the resulting data and visualize them into a series of typographic shapes. The shapes will then be converted into a printed matter or an animated illustration on a screen.
 
@@ -54,6 +52,14 @@ After testing the wind meter outside, I realized I cannot assume the wind data t
 # References
 
 Here are some things that inspired me for this project. 
+
+![](traditional-visualization-of-wind-direction-and-speed-image-provided-by-cigefi.jpeg "Traditional visualization of wind direction and speed. Image provided by CIGEFI")
+
+<br/>
+
+*Traditional visualization of wind direction and speed. Image provided by CIGEFI*
+
+<br/>
 
 ![](screen-shot-2024-11-12-at-1.06.04-pm.png)
 
