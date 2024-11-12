@@ -9,6 +9,9 @@ showBgImage: true
 ---
 AI Companion Website
 
+* Sharing common life experiences with the user
+* Being able to actively interact with the user
+
 \-
 
 AI Positioning: 
