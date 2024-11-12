@@ -11,11 +11,15 @@ AI Companion Website
 
 \-
 
-AI Positioning: A friend who shares real-life gossip with you  
+AI Positioning: 
+
+Friends who share real-life gossip with you over video chat  
 
 \-
 
-Interaction: Open website → Automatically upload latest photo album images → AI initiates conversation topics → Open camera → Real-time recognition of user emotions → Upload as prompt → Engage in conversation with user
+Interaction:
+
+ Open website → Automatically upload latest photo album images → AI initiates conversation topics → Open camera → Real-time recognition of user emotions → Upload as prompt → Engage in conversation with user
 
 \-
 
