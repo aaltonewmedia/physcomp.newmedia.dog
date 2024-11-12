@@ -130,3 +130,4 @@ Adafruit IO\
 # Questions
 * How many days of data can I collect? For example, 7 days? 30 days?
 * Can I / Should I have two parts - one using recorded data and another one using real-time data?
+* How would I visualize the data? Would the data be lines using 1 speed and 1 direction points? Would they all be straight or will there be curves? Would I combine multiple data points to create a curve or a shape? I think this would depend on what the actual data looks like once I retreive it (For example, how often the direction changes).
