@@ -13,7 +13,7 @@ The idea is to connect with traditional Chinese painting through an interactive 
 
 ### Script:
 
-![](screen-shot-2024-11-12-at-13.28.44.png)
+![](screen-shot-2024-11-12-at-14.17.39.png)
 
 The interactive methods are diverse. For instance, pulling a rope causes parts of the painting to shift, inviting viewers to explore different sections. Blowing air makes the hair of figures in the painting flutter, creating a sense of immersion. Turning a hand-crank switches scenes, allowing viewers to experience different moments within the story. Or using flashlight to detect the intensity of light and reproduce the color of the painting.
 
