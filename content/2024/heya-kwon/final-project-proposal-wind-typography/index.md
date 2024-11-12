@@ -3,7 +3,7 @@ title: Final Project
 date: 2024-11-12T12:08:00.000Z
 authors:
   - Heya Kwon
-image: screen-shot-2024-11-12-at-10.43.07-am.png
+image: featured.png
 showBgImage: false
 ---
 
@@ -17,10 +17,10 @@ Winds around us are constantly moving and changing. Even though they are invisib
 
 # Testing & Challenges
 
-**![][image1]**  
+removed image1
 Successfully connected the wind meter to my arduino\!
 
-**![][image2]**  
+removed image2
 The wind is too weak today\! (Thanks Sasha for helping)
 
 After testing the wind meter outside, I realized I cannot assume the wind data to be very versatile and dynamic at all times. For example, the wind direction and wind speed would remain the same over 10 minutes or more on a non-windy day. Because of this, it might be useful to collect wind on a balcony (usually higher places have more wind) over multiple hours or days. Lastly, I also realized that I should put the arduino in a waterproof case as it was raining that day.
@@ -44,23 +44,24 @@ After testing the wind meter outside, I realized I cannot assume the wind data t
 
 Here are some things that inspired me for this project. 
 
-# ![][image3]
+removed image3
 
 A traditional Chinese calligraphy
 
-![][image4]![][image5]  
+removed image4
+removed image5
 Example of Japanese and Korean writing
 
-![][image6]
+removed image6
 
 Iterations of spaceship formation in response to users’ presses  
 [https://hindgalsaad.com/Iteration](https://hindgalsaad.com/Iteration)
 
-![][image7]
+removed image7
 
 *February 2012*, 2013\. Set of 29 digital prints, 3 x  4 in. each. Edition of 30\. 29 illustrations related to weather data for each day in February. [https://spweatherstation.net/](https://spweatherstation.net/)
 
-![][image8]
+removed image8
 
 *Dance Weather,* 2009\. 14 x 10.5 in., inkjet print. Translation of wind speed/direction data into dance steps. [https://www.janemarsching.com/](https://www.janemarsching.com/) 
 
@@ -75,4 +76,4 @@ p5.js reference: map
 Adafruit IO  
 [https://io.adafruit.com/](https://io.adafruit.com/) 
 
-[image1]()
+removed image1
