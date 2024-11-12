@@ -32,9 +32,9 @@ showBgImage: false
 
 OPTION 1: 
 
-* A physical control, possibly a potentiometer functioning as a slider --> A nicely rotating knob that fits nicely to one's hand (my hand ofc), a beautiful to look and use
-* Perhaps two knobs for different properties? Or the second one could be a nice button or a switch?
-* The patterns are drawn to a display/a projected surface
+* **A physical control,** possibly a potentiometer functioning as a slider, which **alters the patterns in some way** 
+* **A nicely rotating knob** that fits nicely to one's hand (my hand ofc), a beautiful to look and use. Perhaps two knobs for different properties? Or the second one could be a nice button or a switch?
+* The **patterns are drawn to a display**/a projected surface
 * Similar knob size I have in mind, this controls the computer volume: https://www.instructables.com/Desktop-Scroll-Wheel-and-Volume-Control/
 
 ![](https://content.instructables.com/F10/2GP3/FJXP7W7G/F102GP3FJXP7W7G.jpg?auto=webp&frame=1&fit=bounds&md=MjAxMy0xMi0xMCAwNzo1NToxOS4w)
@@ -47,15 +47,16 @@ A comment: *This option is the most straigth-forward one with physical knobs and
 
 OPTION 2:
 
-* A sensor detects the movement/steps of a user (is there a better word for this...?)
-* A projector projecting to the floor where the user is located, translates the sensor data to draw patterns based on my p5.js algorithm
-* Perhaps it creates patterns, that the user needs to follow to perform a dance...
+* **A sensor detects the movement/steps of a participant**
+* A projector projecting to the floor where the participant is located, translates the sensor data to draw patterns based on my p5.js algorithm
+* Perhaps it creates patterns, that the participant needs to follow to perform a dance... or to **just make the projection alive**
+* Perhaps the participant could even lie on the floor? 
 
 A comment: *This is a playful option with the whole body interaction. However this approach adds a new level of complexity for detecting movement and for me to come up with a goooood and algorithm for the p5.js part. I am a quite worried of time.*
 
 OPTION 3:
 
-* A sensor in something wearable detecting the movement of the feet for example or hands
+* **A sensor in something wearable** detecting the movement of the feet for example or hands
 * A projector OR a display that translates the sensor data to draw the images with my algorithm
 * Similar project:
   {{<youtube mNd5eXS-0k8>}}
