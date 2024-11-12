@@ -20,6 +20,8 @@ Winds around us are constantly moving and changing. Even though they are invisib
 
 Successfully connected the wind meter to my arduino!
 
+![](screen-shot-2024-11-12-at-1.05.54-pm.png)
+
 
 The wind is too weak today! (Thanks Sasha for helping)
 
@@ -44,24 +46,25 @@ After testing the wind meter outside, I realized I cannot assume the wind data t
 
 Here are some things that inspired me for this project. 
 
-removed image3
+![](screen-shot-2024-11-12-at-1.06.04-pm.png)
 
 A traditional Chinese calligraphy
 
-removed image4
-removed image5
+![](screen-shot-2024-11-12-at-1.06.11-pm.png)
+
+
 Example of Japanese and Korean writing
 
-removed image6
+![](screen-shot-2024-11-12-at-1.06.17-pm.png)
 
 Iterations of spaceship formation in response to users’ presses\
 <https://hindgalsaad.com/Iteration>
 
-removed image7
+![](screen-shot-2024-11-12-at-1.06.24-pm.png)
 
 *February 2012*, 2013. Set of 29 digital prints, 3 x  4 in. each. Edition of 30. 29 illustrations related to weather data for each day in February. <https://spweatherstation.net/>
 
-removed image8
+![](screen-shot-2024-11-12-at-1.06.32-pm.png)
 
 *Dance Weather,* 2009. 14 x 10.5 in., inkjet print. Translation of wind speed/direction data into dance steps. <https://www.janemarsching.com/> 
 
@@ -74,6 +77,4 @@ p5.js reference: map\
 <https://p5js.org/reference/p5/map/>
 
 Adafruit IO\
-<https://io.adafruit.com/> 
-
-removed image1
+<https://io.adafruit.com/>
