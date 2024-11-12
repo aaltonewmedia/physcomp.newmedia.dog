@@ -41,8 +41,9 @@ A website that uses CSS animations to show 30 endangered species
 #### Initial List of parts  
 1. Thermal printer + Arduino
 2. Game prototype
-3. Camera 3d model?
-4. tbd
+3. Camera 3d model/old camera(camera rescue Tampere)
+4. Gyroscope - move the camera - capture part of screen. (Screen only visible to some people?)
+5. tbd
 
 ---
 
