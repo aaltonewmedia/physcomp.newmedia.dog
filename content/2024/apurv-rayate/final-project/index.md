@@ -6,17 +6,17 @@ authors:
 image: featured.jpg
 showBgImage: true
 ---
-##Final Project
+## Final Project
 
-##Proposal
+## Proposal
 
-####What are you making?
+#### What are you making?
 
 I am making a fish photography game called PhotoCrit for my Computational Art and Design project. You take pictures of critically endangered fish as part of a conservation effort. You learn more about these species and what is leading to their extinction. For physical computing, I will be making a polaroid camera that links to the game. The player can take pictures of the fish in the game and get real-time prints of the pictures they took.
 
 ---
 
-####Images/Inspiration
+#### Images/Inspiration  
 **1. What the game might look like**
 ![fotoquest](foto.jpg)
 Fotoquest fishing is an old java game from 2006 that was also a fish photography game.  
@@ -38,7 +38,7 @@ A website that uses CSS animations to show 30 endangered species
 
 ---
 
-####Initial List of parts
+#### Initial List of parts  
 1. Thermal printer + Arduino
 2. Game prototype
 3. Camera 3d model?
