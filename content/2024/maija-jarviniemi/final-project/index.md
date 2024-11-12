@@ -9,7 +9,7 @@ showBgImage: false
 ### **Starting point:**
 
 * I am expanding my project I presented in  Computation A&D course on Fri 8th of Nov, link to [the Miro board](https://miro.com/app/board/uXjVLIm3lwU=/).
-* In **p5.js** I am planning to do **drawing exercises on spirals and other circular paths** inspired by old s[pecial figure skating figures](http://www.skatingaheadofthecurve.com/SpecialFigures.html) as well as beautifully illustrated [instruction patterns of old ballroom dances ](https://publicdomainreview.org/collection/dances-in-beauchamp-feuillet-notation/)called *Beauchamp-Feuillet notation, a chorographical notation*
+* In **p5.js** I am planning to do **drawing exercises on spirals and other circular paths** inspired by old s[pecial figure skating figures](http://www.skatingaheadofthecurve.com/SpecialFigures.html) as well as beautifully illustrated [choreographical manuals for old ballroom dances](https://publicdomainreview.org/collection/dances-in-beauchamp-feuillet-notation/) [](https://publicdomainreview.org/collection/dances-in-beauchamp-feuillet-notation/)called *Beauchamp-Feuillet notation*
 
 **In Physical Computing** I aim to focus on creating **a user interface** that enables interaction with the drawing exercises
 
