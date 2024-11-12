@@ -8,17 +8,15 @@ showBgImage: false
 ---
 ### **Starting point:**
 
-### \- I am expanding my project I presented in  Computation A&D course on Fri 8th of Nov, link to [the Miro board](https://miro.com/app/board/uXjVLIm3lwU=/).
-
-### \- In **p5.js** I am planning to do **drawing exercises on spirals and other circular paths** inspired by old s[pecial figure skating figures](http://www.skatingaheadofthecurve.com/SpecialFigures.html) as well as beautifully illustrated [instruction patterns of old ballroom dances](https://publicdomainreview.org/collection/dances-in-beauchamp-feuillet-notation/)
-
-### \- **In Physical Computing** I aim to focus on creating **a user interface** that enables interaction with the drawing exercises
+* I am expanding my project I presented in  Computation A&D course on Fri 8th of Nov, link to [the Miro board](https://miro.com/app/board/uXjVLIm3lwU=/).
+* In **p5.js** I am planning to do **drawing exercises on spirals and other circular paths** inspired by old s[pecial figure skating figures](http://www.skatingaheadofthecurve.com/SpecialFigures.html) as well as beautifully illustrated [instruction patterns of old ballroom dances](https://publicdomainreview.org/collection/dances-in-beauchamp-feuillet-notation/)
+* **In Physical Computing** I aim to focus on creating **a user interface** that enables interaction with the drawing exercises
 
 ![](figureskating1_skateguardblog.jpg)
 
 ![](https://www.actingarchives.it/media/showtime/storage/2020/01/08/6/main/fig-4-schema-del-minuetto-in-kellom-tomlinson-the-art-of-dancing-explained-london-1735.jpg?1579507307)
 
-**What kind of interaction and UI?**
+### **What kind of interaction and UI?**
 
 OPTION 1: 
 
@@ -53,7 +51,7 @@ OPTION 3:
 
 A comment: *This is the hardest option but also quite interesting.  I might get into trouble with time since I am still a beginner in coding + tinkering with sensors and wearables is an unknown terrain for me. It would most likely develop into a too complex project for now.*
 
-**Parts and components needed:**
+### **Parts and components needed:**
 
 OPTION 1: 
 
