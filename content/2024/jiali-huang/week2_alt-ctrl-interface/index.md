@@ -5,7 +5,7 @@ authors:
   - Jiali Huang
 image: featured-1-.jpg
 bgimage: background.png
-showBgImage: false
+showBgImage: true
 ---
 I. Find an interesting existing Alt+Ctrl Interface
 
