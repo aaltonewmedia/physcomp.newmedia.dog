@@ -3,7 +3,7 @@ title: Week 1
 date: 2024-10-26T21:32:00.000Z
 authors:
   - Heya Kwon
-image: 20241026_204630.jpg
+image: featured.jpg
 showBgImage: false
 ---
 
