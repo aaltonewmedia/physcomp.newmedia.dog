@@ -6,7 +6,6 @@ authors:
 image: featured.png
 showBgImage: false
 ---
-
 # Introduction
 
 Winds around us are constantly moving and changing. Even though they are invisible, they are often felt by us or visualized by objects shaken by them. I want to capture the wind speed and direction data over a course of a few days or weeks in a very local destination: Aalto University art building (either Marsio or Varë). Using the collected wind data, I will make a series of shapes that mimic typography. 
@@ -17,15 +16,16 @@ Winds around us are constantly moving and changing. Even though they are invisib
 
 # Testing & Challenges
 
-removed image1
-Successfully connected the wind meter to my arduino\!
+![](screen-shot-2024-11-12-at-1.05.48-pm.png)
+
+Successfully connected the wind meter to my arduino!
 
 removed image2
-The wind is too weak today\! (Thanks Sasha for helping)
+The wind is too weak today! (Thanks Sasha for helping)
 
 After testing the wind meter outside, I realized I cannot assume the wind data to be very versatile and dynamic at all times. For example, the wind direction and wind speed would remain the same over 10 minutes or more on a non-windy day. Because of this, it might be useful to collect wind on a balcony (usually higher places have more wind) over multiple hours or days. Lastly, I also realized that I should put the arduino in a waterproof case as it was raining that day.
 
-# List of parts and components 
+# List of parts and components
 
 * Wind meter (speed and direction detector)  
 * Arduino, Breadboard, Wires  
@@ -38,7 +38,7 @@ After testing the wind meter outside, I realized I cannot assume the wind data t
 # Considerations
 
 * Need to install a wind meter that can stay on a balcony of Aalto arts building over several days. Matti is helping with this.  
-* Who knows, maybe the collected wind data will look completely different from what I expected. But the advantage to storing the data over days is that I can then decide how to visualize, sonify, or perform the data. So how my artistic interpretation of the data will look is open to change\! 
+* Who knows, maybe the collected wind data will look completely different from what I expected. But the advantage to storing the data over days is that I can then decide how to visualize, sonify, or perform the data. So how my artistic interpretation of the data will look is open to change! 
 
 # References
 
@@ -54,26 +54,26 @@ Example of Japanese and Korean writing
 
 removed image6
 
-Iterations of spaceship formation in response to users’ presses  
-[https://hindgalsaad.com/Iteration](https://hindgalsaad.com/Iteration)
+Iterations of spaceship formation in response to users’ presses\
+<https://hindgalsaad.com/Iteration>
 
 removed image7
 
-*February 2012*, 2013\. Set of 29 digital prints, 3 x  4 in. each. Edition of 30\. 29 illustrations related to weather data for each day in February. [https://spweatherstation.net/](https://spweatherstation.net/)
+*February 2012*, 2013. Set of 29 digital prints, 3 x  4 in. each. Edition of 30. 29 illustrations related to weather data for each day in February. <https://spweatherstation.net/>
 
 removed image8
 
-*Dance Weather,* 2009\. 14 x 10.5 in., inkjet print. Translation of wind speed/direction data into dance steps. [https://www.janemarsching.com/](https://www.janemarsching.com/) 
+*Dance Weather,* 2009. 14 x 10.5 in., inkjet print. Translation of wind speed/direction data into dance steps. <https://www.janemarsching.com/> 
 
 # Other helpful links
 
-p5.js and Arduino serial communication \- Send a digital sensor to a p5.js sketch  
-[https://www.youtube.com/watch?v=feL\_-clJQMs\&t=1073s](https://www.youtube.com/watch?v=feL_-clJQMs&t=1073s) 
+p5.js and Arduino serial communication - Send a digital sensor to a p5.js sketch\
+[https://www.youtube.com/watch?v=feL_-clJQMs&t=1073s](https://www.youtube.com/watch?v=feL_-clJQMs&t=1073s) 
 
-p5.js reference: map  
-[https://p5js.org/reference/p5/map/](https://p5js.org/reference/p5/map/)
+p5.js reference: map\
+<https://p5js.org/reference/p5/map/>
 
-Adafruit IO  
-[https://io.adafruit.com/](https://io.adafruit.com/) 
+Adafruit IO\
+<https://io.adafruit.com/> 
 
 removed image1
