@@ -126,3 +126,7 @@ p5.js reference: map\
 
 Adafruit IO\
 <https://io.adafruit.com/>
+
+# Questions
+* How many days of data can I collect? For example, 7 days? 30 days?
+* Can I / Should I have two parts - one using recorded data and another one using real-time data?
