@@ -1,6 +1,6 @@
 ---
 title: Final Project
-date: 2024-11-12T12:08:00.000Z
+date: 2024-11-12T13:23:00.000Z
 authors:
   - Heya Kwon
 image: featured.png
