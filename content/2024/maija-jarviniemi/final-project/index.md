@@ -18,7 +18,7 @@ showBgImage: false
 
 ### **What kind of interaction and UI?**
 
-OPTION 1: 
+**OPTION 1:** 
 
 * **A physical control,** possibly a potentiometer functioning as a slider, which **alters the patterns in some way** 
 * **A nicely rotating knob** that fits nicely to one's hand (my hand ofc), a beautiful to look and use. Perhaps two knobs for different properties? Or the second one could be a nice button or a switch?
@@ -33,7 +33,7 @@ Some simple controllers, I would like to do something even more tangible and fun
 
 A comment: *This option is the most straigth-forward one with physical knobs and buttons. It would be fun to tinker with different design options for the knobs (how it feels when touched, color, materials, the overall user experience).*
 
-OPTION 2:
+**OPTION 2:**
 
 * **A sensor detects the movement/steps of a participant**
 * A projector projecting to the floor where the participant is located, translates the sensor data to draw patterns based on my p5.js algorithm
@@ -42,7 +42,7 @@ OPTION 2:
 
 A comment: *This is a playful option with the whole body interaction. However this approach adds a new level of complexity for detecting movement and for me to come up with a goooood and algorithm for the p5.js part. I am a quite worried of time.*
 
-OPTION 3:
+**OPTION 3:**
 
 * **A sensor in something wearable** detecting the movement of the feet for example or hands
 * A projector OR a display that translates the sensor data to draw the images with my algorithm
@@ -53,14 +53,14 @@ A comment: *This is the hardest option but also quite interesting.  I might get 
 
 ### **Parts and components needed:**
 
-OPTION 1: 
+**OPTION 1:** 
 
 * Arduino
 * Potentiometer(s) and a button? Or a big switch?
 * Some knobs, I am hoping to thrift some fun parts that I could alter or then 3d print something
 * A container for the controls
 
-OPTION 2 + 3: 
+**OPTION 2 + 3:** 
 
 * Arduino
 * A sensor for detecting movement --> LOOK INTO THIS
