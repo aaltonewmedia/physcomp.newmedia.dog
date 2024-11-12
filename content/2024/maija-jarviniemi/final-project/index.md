@@ -6,17 +6,9 @@ authors:
 image: featured.jpg
 showBgImage: false
 ---
-## **Project proposal guidelines:**
+# **Here we go!**
 
-*Create a project proposal for your final project. Think of this as a constantly evolving document where you take notes on your final project ideas.* 
-
-* *Some short thoughts on what you would like to explore and work with conceptually and technically. What is it that you want to make? How does it look like? What does it do?*
-* *Some references (artworks/projects that are similar to what you would like to do)*
-* *Initial list of parts and components you think you will need*
-
-## **Here we go!**
-
-**Starting point:**
+### **Starting point:**
 
 \- I am expanding my project I presented in  Computation A&D course on Fri 8th of Nov, link to [the Miro board](https://miro.com/app/board/uXjVLIm3lwU=/).
 
