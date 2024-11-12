@@ -6,6 +6,7 @@ authors:
 image: feature.jpg
 bgimage: background.jpg
 showBgImage: true
+showComments: true
 ---
 Create a project proposal for your final project. Think of this as a constantly evolving document where you take notes on your final project ideas. This deadline is for the first version of this.
 

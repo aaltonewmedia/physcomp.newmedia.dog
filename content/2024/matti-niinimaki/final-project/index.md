@@ -7,6 +7,7 @@ heroStyle: background
 image: featured.jpg
 bgimage: ""
 showBgImage: false
+showComments: true
 ---
 Your Final Project page should have the following:
 
