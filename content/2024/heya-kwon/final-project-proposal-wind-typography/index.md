@@ -1,6 +1,6 @@
 ---
 title: "Final Project Proposal: Wind Typography"
-date: 2024-11-12T11:33:00.000Z
+date: 2024-11-12T12:04:00.000Z
 authors:
   - Heya Kwon
 image: screen-shot-2024-11-12-at-10.43.07-am.png
