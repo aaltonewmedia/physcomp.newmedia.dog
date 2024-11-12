@@ -37,3 +37,19 @@ You are my gossip friend who accompanies me. The new images sent to you are my e
 TRAIL 02: Calling ChatGPT API in Python
 
 ![](b8994242a9a3c077e10c215d03ba149.png)
+
+\-
+
+NEXT:
+
+Define the AI role and input the photo In python
+
+Try to use QR code to upload the photo
+
+Upload the phone photo automatically 
+
+Webdesign 
+
+Emotion recognition 
+
+Emotion input as prompt
