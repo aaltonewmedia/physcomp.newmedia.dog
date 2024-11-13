@@ -1,5 +1,5 @@
 ---
-title: Week2
+title: Week 02
 date: 2024-11-04T10:52:00.000Z
 authors:
   - Toranosuke Sano
