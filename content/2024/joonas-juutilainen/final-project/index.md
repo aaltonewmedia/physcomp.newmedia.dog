@@ -18,9 +18,9 @@ I’m thinking of a square table, perhaps 600x600 mm and about 900 mm high (good
 
 ![](screenshot-2024-11-13-at-22.05.47.png)
 
-The CNC projects and DIY 3D printers I found online are all too complicated; there must be a simpler setup around this size – and there is: I can snatch the openly available plans of the old air-hockey robot we tested at work a few years back: It was built with simple 3D printer parts, basically was just a few tubes, motors and other easy-to-find things – and 3D printing. The project is from 2017 and it's website seems to be already down, but the 3D print files are still on Instructables (https://www.instructables.com/Air-Hockey-Robot-EVO/). Some adjustments and customization to the STL files, and I'm sure I'll get this skeleton to move my magnet. I have some stepper motors and metal tubes available and already started to print the parts, so I’ll just need to find the motor control circuit and any CNC shield; shouldn’t be too hard get hands on these.
+The CNC projects and DIY 3D printers I found online are all too complicated; there must be a simpler setup around this size – and there is: I can snatch the openly available plans of the old air-hockey robot we tested at work a few years back: It was built with simple 3D printer parts, basically was just a few tubes, motors and other easy-to-find things – and 3D printing. The project is from 2017 and it's website seems to be already down, but the 3D print files are still on Instructables (https://www.instructables.com/Air-Hockey-Robot-EVO/). Some adjustments and customization to the STL files, and I'm sure I'll get this groovy old skeleton to move my magnet. I have some stepper motors and metal tubes available and already started to print the parts, so I’ll just need to find the motor control circuit and any CNC shield; shouldn’t be too hard get my hands on these.
 
-For the show case floor I’m thinking to start with laser-cutting a ø450 mm circle out of some brightly coloured acrylic that has great light-scattering qualities and lighting it by integrating LEDs into the fasteners: the metal ball will dance on this lit-up dance floor.  I think still have some Black 3.0 or Musau Black somewhere, if I find it the rest of the box will be light-sucking dark: to compensate, I should probably get some ultra-bright LEDs - if there are none in the workshop, I’ll just salvage a few from somewhere. Making the LED-controlling unit should be a breeze.
+For the floor in the show case I’m thinking to start with laser-cutting a ø450 mm circle out of some brightly coloured acrylic that has great light-scattering qualities and lighting it by integrating LEDs into the fasteners: the metal ball will dance on this lit-up dance floor.  I think still have some Black 3.0 or Musau Black somewhere, if I find it the rest of the inner box will be light-sucking dark: to compensate, I should probably get some ultra-bright LEDs - if there are none in the workshop, I’ll just salvage a few from somewhere. Making the LED-controlling unit should be a breeze.
 
 From here on, the idea gets more foggy – what will make the ball move? I’m thinking of creating some kind of sensor setup to get the ball dancing, but don’t yet have no idea of what that might be. Proximity? Capacitive? Checking the color of the clothes the visitors are wearing? I’ll leave this and the more creative part to emerge while work under the hood.
 
@@ -30,6 +30,6 @@ Next steps:
 2. Code it to obey
 3. Build the box
 4. Build the acrylic floor with LEDs
-5. Use the great idea that emerges to move the ball
+5. Use the great idea that emerged to move the ball
 
 To be continued.
