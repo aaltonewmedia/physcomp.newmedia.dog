@@ -18,11 +18,11 @@ I’m thinking of a square table, perhaps 600x600 mm and about 900 mm high (good
 
 ![](screenshot-2024-11-13-at-22.05.47.png)
 
-The CNC projects are all too complicated; there must be a simpler setup around this size – and there is: I’ll snatch the plans from an air-hockey robot we tested at work a few year back: just a few tubes, easy-to-find parts, and 3D printing. The project is old and the authors website is down, but the 3D print files are still on Instructables. Some adjustments to the STL files, and this setup will move my magnet. I’ll just need to find the motor controls and any CNC shield; shouldn’t be too hard.\
+The CNC projects are all too complicated; there must be a simpler setup around this size – and there is: I can snatch the openly available plans from an air-hockey robot we tested at work a few years back: just a few tubes, easy-to-find parts, and 3D printing. The project is old and the authors website is down, but the 3D print files are still on Instructables. Some adjustments to the STL files, and this setup will move my magnet. I already have the stepper motors and metal tubes, I’ll just need to find the motor control circuit and any CNC shield; shouldn’t be too hard.\
 \
 https://www.instructables.com/Air-Hockey-Robot-EVO/
 
-For the I’m thinking of laser-cutting a ø450 mm circle out of some brightly coloured acrylic that has great light-scattering qualities and lighting it by integrating LEDs into the fasteners: the metal ball will dance on this lit-up dance floor. I should probably get some ultra-bright LEDs. If there are none in the workshop, I’ll just salvage a few from somewhere. Making the LED-controlling unit should be a breeze.
+For the show case floor I’m thinking of laser-cutting a ø450 mm circle out of some brightly coloured acrylic that has great light-scattering qualities and lighting it by integrating LEDs into the fasteners: the metal ball will dance on this lit-up dance floor. I should probably get some ultra-bright LEDs - if there are none in the workshop, I’ll just salvage a few from somewhere. Making the LED-controlling unit should be a breeze. I should still have some Black 3.0 or Musau Black somewhere, so rest of the inside of the box should be light-sucking dark.
 
 From here on, the idea gets more foggy – what will make the ball move? I’m thinking of creating some kind of sensor setup to get the ball dancing, but don’t yet have no idea of what that might be. Proximity? Capacitive? Checking the color of the clothes the visitors are wearing? I’ll leave this and the more creative part to emerge while work under the hood.
 
