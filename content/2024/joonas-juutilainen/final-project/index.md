@@ -1,12 +1,12 @@
 ---
-title: Final Project
+title: Final Project Outline
 date: 2024-11-13T22:14:00.000Z
 authors:
   - Joonas Juutilainen
 image: featured.jpg
 showBgImage: false
 ---
-**Final Project Sketch** 
+**Final Project Outline** 
 
 I’ve really enjoyed some of the works I’ve seen on the course – the self-wrapping space cloth was great, and I also found the Chinese piece with magnetic liquid metal quite beautiful. When I combined this with my long love for kinetic sculptures and long-overdue, unsatisfied need to build a sand drawer, I decided I wanted to do some kind of curious piece of furniture – a surprising table of sorts, enjoyable to watch, doing curious things.
 
