@@ -22,7 +22,7 @@ The CNC projects and DIY 3D printers I found online are all too complicated; the
 
 For the floor in the show case I’m thinking to start with laser-cutting a ø450 mm circle out of some brightly coloured acrylic that has great light-scattering qualities and lighting it by integrating LEDs into the fasteners: the metal ball will dance on this lit-up dance floor.  I think still have some Black 3.0 or Musau Black somewhere, if I find it the rest of the inner box will be light-sucking dark: to compensate, I should probably get some ultra-bright LEDs - if there are none in the workshop, I’ll just salvage a few from somewhere. Making the LED-controlling unit should be a breeze.
 
-From here on, the idea gets more foggy – what will make the ball move? I’m thinking of creating some kind of sensor setup to get the ball dancing, but don’t yet have no idea of what that might be. Proximity? Capacitive? Checking the color of the clothes the visitors are wearing? I’ll leave this and the more creative part to emerge while work under the hood.
+From here on, the idea gets more foggy – what will trigger the ball to move? And how should it move? I’m thinking of creating some kind of sensor setup to affect the ball, but don’t yet have no idea of what that might be. Proximity? Capacitive? Checking the color of the clothes the visitors are wearing? I’ll leave this and the more creative part to emerge while work under the hood.
 
 Next steps:
 
