@@ -34,4 +34,10 @@ I wanted to work with fabric or knitting and move it organically, like leaves on
 
 ![](b7d1bf1947b2adc549982b0ed02c1099.jpg)
 
-<https://youtu.be/CVx0x7-0FzQ?si=zF2Ov7LPdftkcZb3>[](http://www.youtube.com/watch?v=CVx0x7-0FzQ)[](http://www.youtube.com/watch?v=CVx0x7-0FzQ)[](https://newtextiles.media.mit.edu/?p=3574)[](https://newtextiles.media.mit.edu/?p=3574)[](https://wakita.sfc.keio.ac.jp/inner/livingtextile.html)[](https://youtu.be/e-YdJTvesL4?si=2eW2neXMkdEO7EzF)
+<https://youtu.be/CVx0x7-0FzQ?si=zF2Ov7LPdftkcZb3>
+
+[](https://youtu.be/CVx0x7-0FzQ?si=zF2Ov7LPdftkcZb3)・The Embroidered Computer, Irene Posch
+
+![](ezgif.com-video-to-gif-1.gif)
+
+[](http://www.youtube.com/watch?v=CVx0x7-0FzQ)[](http://www.youtube.com/watch?v=CVx0x7-0FzQ)[](https://newtextiles.media.mit.edu/?p=3574)[](https://newtextiles.media.mit.edu/?p=3574)[](https://wakita.sfc.keio.ac.jp/inner/livingtextile.html)[](https://youtu.be/e-YdJTvesL4?si=2eW2neXMkdEO7EzF)
