@@ -12,11 +12,11 @@ I’ve really enjoyed some of the works I’ve seen on the course – the self-w
 
 ![](screenshot-2024-11-13-at-21.53.09.png)
 
-There are plenty of projects with sand drawers online, so that will not obviously do, fun to make but boring and unoriginal. A place to start, anyway: It’s a simple thing, a sand drawer – a 2-axis CNC / 3D printer hack setup on the bottom, magnet to move a metal ball on a plate, and sand where the ball leaves a mark. Good structure to build on, so I need a 2-axis setup.
+There are plenty of projects with sand drawers online, so that will not obviously do, fun to make but boring and unoriginal. A place to start, anyway: It’s a simple thing, a sand drawer – a 2-axis CNC / 3D printer hack setup on the bottom, magnet to move a metal ball on a plate, and sand where the ball leaves a mark. Good structure to build on, so I need an easy to build 2-axis setup:
 
 ![](images.png)
 
-I’m thinking of a square table, perhaps 600x600 mm and about 900 mm high (good working height). An plywood box on legs sounds solid. I’m not going to use too much energy on that, and when done right, it will have a finished look anyway + the work should be under a thin glass, easy to find. The box should incorporate the CNC setup and the work itself, so maybe 300 mm of height: 100 mm for the engine room and 200 for the show room? Plus 600 mm IKEA legs, and we’re at 900 mm. Solid.
+Size is factor, and I’m thinking of a square table, perhaps 600x600 mm and about 900 mm high (good working height). An plywood box on legs sounds solid. I’m not going to use too much energy on that, and when done right, it will have a finished look anyway + the work should be under a thin glass, easy to find. The box should incorporate the CNC setup and the work itself, so maybe 300 mm of height: 100 mm for the engine room and 200 for the show room? Plus 600 mm IKEA legs, and we’re at 900 mm. Solid.
 
 ![](screenshot-2024-11-13-at-22.05.47.png)
 
