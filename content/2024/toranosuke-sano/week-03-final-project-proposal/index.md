@@ -14,7 +14,7 @@ I wanted to work with fabric or knitting and move it organically, like leaves on
 
 ![](img_7990-2.jpg "Wavy knitted fabric")
 
-![](img_7990-5.jpg)
+![](img_7990-5.jpg "Some sensors that might be used")
 
 **Some references** 
 
