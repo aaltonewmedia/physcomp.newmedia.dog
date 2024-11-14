@@ -14,6 +14,8 @@ I wanted to work with fabric or knitting and move it organically, like leaves on
 
 ![](img_7990-2.jpg "Wavy knitted fabric")
 
+![](img_7990-5.jpg)
+
 **Some references** 
 
 ・Wakita Lab, Keio SFC
@@ -40,4 +42,6 @@ I wanted to work with fabric or knitting and move it organically, like leaves on
 
 ![](ezgif.com-video-to-gif-1.gif)
 
-[](http://www.youtube.com/watch?v=CVx0x7-0FzQ)[](http://www.youtube.com/watch?v=CVx0x7-0FzQ)[](https://newtextiles.media.mit.edu/?p=3574)[](https://newtextiles.media.mit.edu/?p=3574)[](https://wakita.sfc.keio.ac.jp/inner/livingtextile.html)[](https://youtu.be/e-YdJTvesL4?si=2eW2neXMkdEO7EzF)
+<http://ireneposch.net/the-embroidered-computer/>
+
+[](http://ireneposch.net/the-embroidered-computer/)[](http://www.youtube.com/watch?v=CVx0x7-0FzQ)[](http://www.youtube.com/watch?v=CVx0x7-0FzQ)[](https://newtextiles.media.mit.edu/?p=3574)[](https://newtextiles.media.mit.edu/?p=3574)[](https://wakita.sfc.keio.ac.jp/inner/livingtextile.html)[](https://youtu.be/e-YdJTvesL4?si=2eW2neXMkdEO7EzF)
