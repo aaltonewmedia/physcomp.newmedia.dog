@@ -6,4 +6,4 @@ authors:
 image: featured.jpg
 showBgImage: false
 ---
-![](sketch.jpg)
+![](featured.jpg)
