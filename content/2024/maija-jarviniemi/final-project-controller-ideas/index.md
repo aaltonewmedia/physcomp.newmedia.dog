@@ -27,5 +27,5 @@ Here's a sensor that might work with this kind of spiral slider: [https://learn.
   * How much margin/saumavara for the wires if they are soldered on the sides of the spiral
   * In how many sections should the spiral be cut? 30 was the number in one the Bela sensors
   * How to fit the spiral perfectly with the 3d printed top part? 
-* For now I think the controller will be just connected to the computer with usb-c cable where it will also get power from -> in the future version it would need batteries
+* For now I think the controller will be connected to the computer with usb-c cable where it will also get power from -> in the future version it would need batteries
 * Figure out how to connect the data from the sensor with p5.js
