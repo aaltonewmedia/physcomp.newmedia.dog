@@ -46,8 +46,12 @@ The working palette with sensor, resistors etc.
 
 **THE ARDUINO VALUES**
 
-0-3600 clockwise, value 2 in the monitor
+0-3500(+100) clockwise, value 2 in the monitor
 
 ![](monitordatatrillring-web.png)
 
+
+
 ![](plotterdatatrillring-web.png)
+
+### How to transfer this data to p5.js???
