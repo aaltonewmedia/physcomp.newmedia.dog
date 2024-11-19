@@ -3,7 +3,7 @@ title: w02
 date: 2024-11-11T18:35:00.000Z
 authors:
   - Ellen Sofie Engen
-image: featured.png
+image: featured.jpg
 bgimage: background.jpg
 showBgImage: true
 ---
@@ -27,4 +27,4 @@ Maybe integrated, or entirely separate, is that I really want to work with live 
 
 For aggression, I imagine using a motor to push the object backwards so a range of spikes are revealed, or something like a sword is pushed up. This would be pretty bleak and sad as an interaction, and wouldn't be very integrated in something like a plant, so something more realistic and interesting could be to have the exoskeleton help different parts of the plant move, in response to human touch (or a manipulated interaction, if this proves difficult)  detected by a distance sensor.
 
-![sketch of the exoplant, a moving plant](featured.png "sketch of moving plant")
+![sketch of the exoplant, a moving plant](sketch.png "sketch of moving plant")
