@@ -6,6 +6,8 @@ authors:
 image: featured.jpg
 showBgImage: false
 ---
+![]()
+
 [Link to the Miro board](https://miro.com/welcomeonboard/aUtCL1RzQVVNRldUdWFEV2Z3RDZsdndEZWc5Q2p4RDBsYVE4UHowMnJZZHVJUFZlM2UrYjBpa2hJaHgyR21JVU9pd1poK2JBWHdlVGJqdU43YTZ4aUZqeFQycnYvVUFIM3RHRVd6ZTUwSnNEVUVOTGxKUi84V1BzVDFEZDUzc3chZQ==?share_link_id=566865071552)
 
 ![](featured.jpg)
@@ -42,6 +44,10 @@ The working palette with sensor, resistors etc.
 
 ![](trill-ring.jpg)
 
-THE ARDUINO VALUES
+**THE ARDUINO VALUES**
 
 0-3600 clockwise, value 2 in the monitor
+
+![](monitordatatrillring-web.png)
+
+![](plotterdatatrillring-web.png)
