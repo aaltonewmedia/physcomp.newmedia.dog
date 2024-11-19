@@ -1,5 +1,5 @@
 ---
-title: Final project
+title: "Final project: Ideas"
 date: 2024-11-11T14:11:00.000Z
 authors:
   - Maija Järviniemi
