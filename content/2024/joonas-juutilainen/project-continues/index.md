@@ -3,7 +3,7 @@ title: Project continues
 date: 2024-11-19T15:12:00.000Z
 authors:
   - Joonas Juutilainen
-image: screenshot-2024-11-19-at-15.02.56.png
+image: featured.jpg
 showBgImage: false
 ---
 Brief Steps:
