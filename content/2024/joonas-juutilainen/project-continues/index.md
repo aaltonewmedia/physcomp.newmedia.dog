@@ -1,6 +1,6 @@
 ---
 title: Project continues
-date: 2024-11-19T15:12:00.000Z
+date: 2024-11-19T15:15:00.000Z
 authors:
   - Joonas Juutilainen
 image: featured.jpg
