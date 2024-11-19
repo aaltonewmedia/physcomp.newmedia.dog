@@ -6,7 +6,7 @@ authors:
 image: featured.jpg
 showBgImage: false
 ---
-https://miro.com/welcomeonboard/aUtCL1RzQVVNRldUdWFEV2Z3RDZsdndEZWc5Q2p4RDBsYVE4UHowMnJZZHVJUFZlM2UrYjBpa2hJaHgyR21JVU9pd1poK2JBWHdlVGJqdU43YTZ4aUZqeFQycnYvVUFIM3RHRVd6ZTUwSnNEVUVOTGxKUi84V1BzVDFEZDUzc3chZQ==?share_link_id=566865071552
+[Link to the Miro board](https://miro.com/welcomeonboard/aUtCL1RzQVVNRldUdWFEV2Z3RDZsdndEZWc5Q2p4RDBsYVE4UHowMnJZZHVJUFZlM2UrYjBpa2hJaHgyR21JVU9pd1poK2JBWHdlVGJqdU43YTZ4aUZqeFQycnYvVUFIM3RHRVd6ZTUwSnNEVUVOTGxKUi84V1BzVDFEZDUzc3chZQ==?share_link_id=566865071552)
 
 ![](featured.jpg)
 
