@@ -19,4 +19,4 @@ Building on notions of self defense and aggression, themes I've also been intere
 
 Another way to go with this could be more active, giving the plant thorns that will emerge when the treshhold is reached.
 
-![sketch of plant exoskeleton robot](featured.jpeg "exoplant")
+![sketch of plant exoskeleton robot](sketch.jpeg "exoplant")
