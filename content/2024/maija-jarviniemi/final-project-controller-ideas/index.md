@@ -46,7 +46,7 @@ The working palette with sensor, resistors etc.
 
 **THE ARDUINO AND SENSOR VALUES**
 
-The sensor detects multiple touches, the location and the size of the touch. The values for the location are between 0-3500(+100) while sliding the ring clockwise.
+The sensor detects multiple touches, the location and the size of the touch. The two values below are ***location*** and ***size.*** The values for the location are between 0 and 3500(+100) while sliding the ring clockwise. 
 
 ![](monitordatatrillring-web.png)
 
