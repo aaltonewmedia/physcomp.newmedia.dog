@@ -10,12 +10,12 @@ showBgImage: false
 
 ![](featured.jpg)
 
-### 19.11.2024 Things to consider 
+### 19.11.2024 Things to consider
 
 Here's a sensor that might work with this kind of spiral slider: [https://learn.bela.io/products/trill/about-trill/](<>)
 
-* Matti told that the spiral could be cut from copper sticker in Fablab -> they have a suitable material for the vinyl cutter
-* 3d model for the top part but also for the wiring etc beneath:
+* Matti told that the spiral could be cut from **copper sticker in Fablab** -> they have a suitable material for the vinyl cutter
+* **3d model** for the top part but also for the wiring etc beneath:
 
   * Rounded edge for the spiral for soft touch
   * What's the size of the controller? 
@@ -25,7 +25,21 @@ Here's a sensor that might work with this kind of spiral slider: [https://learn.
 * For the spiral:
 
   * How much margin/saumavara for the wires if they are soldered on the sides of the spiral
-  * In how many sections should the spiral be cut? 30 was the number in one the Bela sensors
+  * **In how many sections should the spiral be cut?** 30 was the number in one the Bela sensors
   * How to fit the spiral perfectly with the 3d printed top part? 
 * For now I think the controller will be connected to the computer with usb-c cable where it will also get power from -> in the future version it would need batteries
-* Figure out how to connect the data from the sensor with p5.js
+* Figure out how to **connect the data** from the sensor with **p5.js**
+
+### The Trill Ring sensor
+
+For the sensor to work, it needed two pull-up resistors between SCL + 5 v and SDA + 5v. Prior the custom spiral sensor, I am going to use a Trill ring sensor with the same slider capacities.
+
+[Here's the instructions from Matti](https://learn.adafruit.com/working-with-i2c-devices/pull-up-resistors)
+
+[](https://learn.adafruit.com/working-with-i2c-devices/pull-up-resistors)
+
+![](trill-ring.jpg)
+
+![](trill-ring-resistors.jpg)
+
+The working palette with sensor, resistors etc.
