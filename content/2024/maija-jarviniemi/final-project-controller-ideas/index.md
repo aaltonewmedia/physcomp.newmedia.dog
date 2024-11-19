@@ -50,8 +50,55 @@ The working palette with sensor, resistors etc.
 
 ![](monitordatatrillring-web.png)
 
-
-
 ![](plotterdatatrillring-web.png)
 
-### How to transfer this data to p5.js --> <https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/>
+
+
+*How to transfer the data to p5.js --> [https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/](<>)*
+
+ `index.html` file and add the following inside the `head` tags to include the library:[](https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/)
+
+[](https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/)Here's a code from p5.js to connect the arduino data to draw a circle. Remember to add the following line to the index.html:
+
+<script src="https://unpkg.com/@gohai/p5.webserial@^1/libraries/p5.webserial.js"></script>
+
+```
+//Example from course website
+//https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/
+
+
+let port;
+let c;
+let s=10;
+let touch;
+
+function setup() {
+  createCanvas(600, 600);
+  port = createSerial(); //connect to arduino
+  c = color(255);
+}
+
+function draw() {
+  background(255, 250, 207);
+  
+  if(port.available()>0){
+  touch = port.readUntil("\n");
+    port.clear();
+    c = map(touch,0,3550,0,255,true); //0-3590 values from arduino
+    s = map(touch,0,3550,10,400);
+  }
+  fill(255,0,0);
+  text("touch: " + touch,20,40);
+
+  fill(c);
+  circle(width/2, height/2, s);
+}
+
+function mousePressed(){
+  if (!port.opened()) {
+    port.open(115200);
+  }
+}
+```
+
+[](https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/)
