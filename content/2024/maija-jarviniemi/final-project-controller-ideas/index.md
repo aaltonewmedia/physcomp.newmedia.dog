@@ -34,7 +34,7 @@ Here's a sensor that might work with this kind of spiral slider: [https://learn.
 
 For the sensor to work, it needed two pull-up resistors between SCL + 5 v and SDA + 5v. Prior the custom spiral sensor, I am going to use a Trill ring sensor with the same slider capacities.
 
-[Here's the instructions from Matti](https://learn.adafruit.com/working-with-i2c-devices/pull-up-resistors)
+[Here's a link to the instructions from Matti](https://learn.adafruit.com/working-with-i2c-devices/pull-up-resistors)
 
 ![](trill-ring-resistors.jpg)
 
