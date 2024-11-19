@@ -44,15 +44,13 @@ The working palette with sensor, resistors etc.
 
 ![](trill-ring.jpg)
 
-**THE ARDUINO VALUES**
+**THE ARDUINO AND SENSOR VALUES**
 
-0-3500(+100) clockwise, value 2 in the monitor
+The sensor detects multiple touches, the location and the size of the touch. The values for the location are between 0-3500(+100) while sliding the ring clockwise.
 
 ![](monitordatatrillring-web.png)
 
 ![](plotterdatatrillring-web.png)
-
-
 
 *How to transfer the data to p5.js --> [https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/](<>)*
 
@@ -102,3 +100,5 @@ function mousePressed(){
 ```
 
 [](https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/)
+
+{{<1031182690>}}
