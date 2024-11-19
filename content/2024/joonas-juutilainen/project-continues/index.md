@@ -20,7 +20,7 @@ Found some used A4988 from work, and tried them on the breadboard:
 
 ![](screenshot-2024-11-19-at-15.02.43.png)
 
-Great success, jos needed to change the setps to 200 from Matti's test code.
+Great success, jos needed to change the steps to 200 from Matti's test code.
 
 ![](img_2713.png)
 
