@@ -56,11 +56,11 @@ The working palette with sensor, resistors etc.
 
 *How to transfer the data to p5.js --> [https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/](<>)*
 
- `index.html` file and add the following inside the `head` tags to include the library:[](https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/)
+[](https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/)Here's a code from p5.js to connect the arduino data to draw a circle. Remember to add the following line inside the  `head` tags in the `index.html` :
 
-[](https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/)Here's a code from p5.js to connect the arduino data to draw a circle. Remember to add the following line to the index.html:
-
+```
 <script src="https://unpkg.com/@gohai/p5.webserial@^1/libraries/p5.webserial.js"></script>
+```
 
 ```
 //Example from course website
