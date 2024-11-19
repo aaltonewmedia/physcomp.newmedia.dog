@@ -1,5 +1,5 @@
 ---
-title: Final project
+title: w03_Final project
 date: 2024-11-18T16:18:00.000Z
 authors:
   - Ellen Sofie Engen
@@ -33,6 +33,8 @@ these issues lead to self destructive behaviours, which in a way are also a test
   * alternative self defences: the plant could hiss or make noise instead of move, to show its displeasure.
   * self-soothing music: the plant could play itself music (Plantasia, made to be soothing for plants) when it has been inactive for a while. So it drives itself to a sunny, calm spot; rests and plays some music.
 * Moving a pedestal, instead of moving the plant. I thought of an idea where the pedestal the plant sits on, would lower down and cover the plant if a hand came too near. Someone else suggested having a series of small plants on smaller pedestals, that again would move out of the way if touch is nearing. Although a good and interesting idea, I feel it would get too complicated for me
+
+![drawing of a hand reaching for a plant seemingly running away, towards the sun](drawing.jpg "plant runs away from touch, towards the light")
 
 ### Plant considerations
 
