@@ -36,10 +36,12 @@ For the sensor to work, it needed two pull-up resistors between SCL + 5 v and SD
 
 [Here's the instructions from Matti](https://learn.adafruit.com/working-with-i2c-devices/pull-up-resistors)
 
-[](https://learn.adafruit.com/working-with-i2c-devices/pull-up-resistors)
+![](trill-ring-resistors.jpg)
+
+The working palette with sensor, resistors etc. 
 
 ![](trill-ring.jpg)
 
-![](trill-ring-resistors.jpg)
+THE ARDUINO VALUES
 
-The working palette with sensor, resistors etc.
+0-3600 clockwise, value 2 in the monitor
