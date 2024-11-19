@@ -54,4 +54,4 @@ The working palette with sensor, resistors etc.
 
 ![](plotterdatatrillring-web.png)
 
-### How to transfer this data to p5.js???
+### How to transfer this data to p5.js --> <https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/>
