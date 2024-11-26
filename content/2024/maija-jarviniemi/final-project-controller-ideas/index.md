@@ -109,4 +109,10 @@ function mousePressed(){
 
 \- Size of the spiral
 
+\- Best furrow measurements were 2mm (depth), 120mm (full width), 60mm (open area/hole)
+
+![](img_2019web.jpg)
+
+
+
 ![](img_2017web.jpg)
