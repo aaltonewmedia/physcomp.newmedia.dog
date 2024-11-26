@@ -102,3 +102,11 @@ function mousePressed(){
 [](https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/)
 
 {{<1031182690>}}
+
+### 24.11.2024 3d print samples
+
+\- Sampling with the width and depth of the furrow
+
+\- Size of the spiral
+
+![](img_2017web.jpg)
