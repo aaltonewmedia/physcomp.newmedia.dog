@@ -1,5 +1,5 @@
 ---
-title: w03_Final project
+title: w03_Final project_proposal
 date: 2024-11-18T16:18:00.000Z
 authors:
   - Ellen Sofie Engen
