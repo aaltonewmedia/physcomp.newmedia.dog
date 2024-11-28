@@ -1,5 +1,5 @@
 ---
-title: w03_Final project_proposal
+title: Final_project_proposal
 date: 2024-11-18T16:18:00.000Z
 authors:
   - Ellen Sofie Engen
@@ -52,7 +52,7 @@ I was worried some of the 3D printing materials wouldn't be safe for a plant, bu
 
 I need to make some decisions about what to actually go for, but i kjent stil, I will leave as many decisions as I can till the last minute so as to not close any doors for myself. I will make the choices impose themselves on me. What I do know, is that I want to fit a plant to system of sorts with wheels, similar to Bjørghild the robot.
 
-* design a “cart”. Dubbing it plant cart from now on. This can be basically the robot-frame we already made
+* design a “cart”. This can be basically the robot-frame we already made
 * 3D print a seat for the pot to fit snugly in in the cart, and make sure it can be skrewed onto the robot
 * design a sensor holder. the distance sensor should be a tall stick on top of the plant, the light sensor too (it should ideally be where the main portion of the plant is)
 * deciding on the actual behaviour of the plant
