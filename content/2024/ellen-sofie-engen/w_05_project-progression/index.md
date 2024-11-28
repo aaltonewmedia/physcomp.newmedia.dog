@@ -1,5 +1,5 @@
 ---
-title: w_05_project progression
+title: w05 Project progression
 date: 2024-11-28T12:53:00.000Z
 authors:
   - Ellen Sofie Engen
