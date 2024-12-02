@@ -105,12 +105,27 @@ function mousePressed(){
 
 ### 24.11.2024 3d print samples
 
-\- Sampling with the width and depth of the furrow
-
-\- Size of the spiral
-
-\- Best furrow measurements were 2mm (depth), 120mm (full width), 60mm (open area/hole)
+* Sampling with the width and depth of the furrow
+* Size of the spiral
+* Best furrow measurements were 2mm (depth), 120mm (full width), 60mm (open area/hole)
 
 ![](img_2019web.jpg)
 
 ![](img_2017web.jpg)
+
+Sun 1.12.2024
+
+*  Along the week drawing and fixing vector files for the copper tape + the laser cut pieces from acrylic -> a support structure for the spiral and buttons 
+* Finished the spiral and the copper tape pieces --> done by hand with a 3d printed "stencil" -> took quite many tries to get it right :D
+* A prototype printed for the cover -> Miro helped
+
+Mon 2.12.2024
+
+* Soldering of the spiral sensors and buttons to a bunch of wires (22 pieces) --> looks like a shrimp!
+* Figuring out the trill sensor position on the case --> adding a piece of felt/Eva foam by sewing and attaching that with 2-sided tape on to laser cutted layer
+
+Tue 3.12.2014
+
+* Final 3d print for the case cover (the bottom part not ready yet)
+* Soldering the trill craft sensor to the copper pieces + breadboard... 
+*
