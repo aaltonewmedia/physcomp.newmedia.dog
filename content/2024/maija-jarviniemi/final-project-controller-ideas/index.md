@@ -1,6 +1,6 @@
 ---
 title: "Final project: The controller"
-date: 2024-11-15T10:48:00.000Z
+date: 2024-12-04T20:05:00.000Z
 authors:
   - Maija Järviniemi
 image: featured.jpg
