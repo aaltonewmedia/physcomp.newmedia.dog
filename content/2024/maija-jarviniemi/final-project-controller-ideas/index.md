@@ -6,11 +6,11 @@ authors:
 image: featured.jpg
 showBgImage: false
 ---
-![]()
-
-[Link to the Miro board](https://miro.com/welcomeonboard/aUtCL1RzQVVNRldUdWFEV2Z3RDZsdndEZWc5Q2p4RDBsYVE4UHowMnJZZHVJUFZlM2UrYjBpa2hJaHgyR21JVU9pd1poK2JBWHdlVGJqdU43YTZ4aUZqeFQycnYvVUFIM3RHRVd6ZTUwSnNEVUVOTGxKUi84V1BzVDFEZDUzc3chZQ==?share_link_id=566865071552)
+[Link to the Miro board](<>)
 
 ![](featured.jpg)
+
+
 
 ### 19.11.2024 Things to consider
 
@@ -119,10 +119,16 @@ Mon 25.11 - Sun 1.12.2024
 * Finished the spiral and the copper tape pieces --> done by hand with a 3d printed "stencil" -> took quite many tries to get it right :D
 * A prototype printed for the cover -> Miro helped with the model, figuring out the support structure and 3d printing
 
+  ![](physcomp_process-web_041224.jpg)
+
+![](physcomp_process-web_041224-2.jpg)
+
 Mon 2.12.2024
 
 * Soldering of the spiral sensors and buttons to a bunch of wires (22 pieces) --> looks like a shrimp!
 * Figuring out the trill sensor position on the case --> adding a piece of felt/Eva foam by sewing and attaching that with 2-sided tape on to laser cutted layer
+
+![](physcomp_process-web_041224-3.jpg)
 
 Tue 3.12.2024
 
@@ -130,10 +136,14 @@ Tue 3.12.2024
 * Soldering the trill craft sensor to the copper pieces + breadboard...  -> this took many hours of figuring out the placing of wires so that they don't touch each other -> this prevents the capacitive sensors taking some unwanted signals when close to each other
 * I used the pins 0-18, 19 sensors in total for the spiral slider
 
+![](physcomp_process-web_041224-4.jpg)
+
 Wed 4.12.2024
 
 * Final soldering of the button wires, pin 25 for the left button sensor and pin 29 for the right button sensor
 * Attached the Trill Craft to a piece of Eva foam and that to the acrylic layer with 2-sided tape
 * Attached the SCL, SDA, power (5V), grounding via breadboard and 2 resistors to Arduino board
 * Tested with Matti and it works! Also succeeded in connecting the slider to my p5.j sketches -> still needs some adjusting with lerping and the visuals to get the calm and smooth animation I want
-* 3d printed a bottom piece for the controller to protect the wiring -> not the best solution but works for now. Arduino and breadboard are still separate from the controller. Miro made the 3d model for the bottom cover with my instructions.
+* 3d printed a bottom piece for the controller to protect the wiring -> not the best solution but works for now. Arduino and breadboard are still separate from the controller. Miro made the 3d model for the bottom cover with my instructions
+
+![](physcomp_process-web_041224-5.jpg)
