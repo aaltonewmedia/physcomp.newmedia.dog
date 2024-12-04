@@ -119,7 +119,7 @@ Mon 25.11 - Sun 1.12.2024
 * Finished the spiral and the copper tape pieces --> done by hand with a 3d printed "stencil" -> took quite many tries to get it right :D
 * A prototype printed for the cover -> Miro helped with the model, figuring out the support structure and 3d printing
 
-  ![](physcomp_process-web_041224.jpg)
+![](physcomp_process-web_041224.jpg)
 
 ![](physcomp_process-web_041224-2.jpg)
 
