@@ -10,7 +10,9 @@ showBgImage: false
 
 ![](featured.jpg)
 
+## Basic concept: 
 
+My initial inspiration was the sensation of drawing with finger on sand. Hence, I wanted to focus on the touch and how it feels on one's finger to draw slowly a spiral. The optimal controller would have a soft furrow that does not have any sharp edges. One important factor for me is also the beauty of the controller so that it would invite you to touch it.
 
 ### 19.11.2024 Things to consider
 
@@ -108,6 +110,7 @@ function mousePressed(){
 * Sampling with the width and depth of the furrow with the help of Miro
 * Size of the spiral
 * Best furrow measurements were 2mm (depth), 120mm (full width), 60mm (open area/hole)
+* I coded the spiral with p5.js :)
 
 ![](img_2019web.jpg)
 
