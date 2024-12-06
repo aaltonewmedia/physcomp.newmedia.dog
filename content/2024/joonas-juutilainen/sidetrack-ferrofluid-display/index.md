@@ -25,7 +25,7 @@ Here's the procedure (probably):
 3. Soaking in vinegar. I used 10% vinegar in the tank for 48 hours.
 4. Saturated sodium-chloride solution (kosher salt + distilled water; I used Maldon, which does not have anticoagulants)
 5. Leaving the saltwater in the tank for a week (I'm here now)
-6. Boiling down the ferrofluid - now it floats- must eliminate excess petroleum. 100°C, they say, not yet done.
+6. Boiling down the ferrofluid - now it floats - must eliminate the excess petroleum. 100°C, they say, not yet done.
 7. Injecting the boiled-down ferrofluid into the tank. Not yet. 
 8. Water- and airproof sealing of the tank: final step, will use silicone.
 
