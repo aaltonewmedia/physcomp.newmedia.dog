@@ -6,7 +6,9 @@ authors:
 image: featured.jpg
 showBgImage: false
 ---
-Now that the CNC works physically, I needed to make it obey. Here were the steps:
+Now that I got the stepper motors and belts working physically, I needed to make the setup obey as a CNC machine - and to figure out how it would fulfil its role as a Physical Computing project.
+
+Here were the steps:
 
 * Added limit switches to donw-left corner
 * Bought a CNC Shied 3.0 just to realise it does not work with UNO R4 (wrong processor)
