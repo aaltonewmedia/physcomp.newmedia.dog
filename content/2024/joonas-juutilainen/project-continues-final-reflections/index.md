@@ -1,5 +1,5 @@
 ---
-title: "Project ends: Final reflections"
+title: "End of Project: Final reflections"
 date: 2024-12-06T19:09:00.000Z
 authors:
   - Joonas Juutilainen
