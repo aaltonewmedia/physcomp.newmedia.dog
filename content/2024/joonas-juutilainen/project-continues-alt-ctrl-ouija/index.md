@@ -351,3 +351,33 @@ G0 X0.00 Y0.00 ; return to zero.
 After each line the R4 asks "?" and waits for R3 to report - if it says "RUN", delay and try again, until it says "IDLE": only after this the next line is send.
 
 That's it! Some pictures with explanations:
+
+First working physical setup:
+
+![](img_2827-2-large.jpeg)
+
+Burning the design:
+
+![](img_2841-large.jpeg)
+
+Adding the coin:
+
+![](img_2845-2-large.jpeg)
+
+![](img_2846-2-large.jpeg)
+
+Extra: Student travel with public transportation (special thanks to Aalto parking policy)
+
+![](img_2849-2-large.jpeg)
+
+![](img_2851-2-large.jpeg)
+
+Adding the Fortunes from the class and replacing some crappy serial wires:
+
+![](img_2862-large.jpeg)
+
+Final setup inside the box:
+
+![](img_2856-large.jpeg)
+
+![](img_2863-large.jpeg)
