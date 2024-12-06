@@ -315,7 +315,7 @@ void waitUntilIdle() {
 }
 ```
 
-There are still some parts not needed (like the debug button and code for G-code delays and parsting small letters, but I did not dare to touch it any more after it stasrted working.
+There are still some parts not needed (like the debug button and code for G-code delays and parsing small letters to big ones), but I did not dare to touch it any more after I got it working.
 
 The G-code looks like this:
 
@@ -348,11 +348,11 @@ G0 X0.00 Y0.00 ; return to zero.
 ; END: MISTAKES WILL COST
 ```
 
-After each line the R4 asks "?" and waits for R3 to report - if it says "RUN", delay and try again, until it says "IDLE": only after this the next line is send.
+After each line the R4 asks "?" and waits for R3 to report - if it reports "RUN", waits and tries again, until it says "IDLE": after this the next line is send, and so on.
 
 That's it! Some pictures with explanations:
 
-Close to ready, still with de:
+Close to ready, still with debug button:
 
 ![](img_2844-2-large.jpeg)
 
