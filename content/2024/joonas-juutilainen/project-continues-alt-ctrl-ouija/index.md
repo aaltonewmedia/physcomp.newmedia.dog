@@ -25,7 +25,7 @@ Here were the steps:
 * When the H-BOT/GRBL -setup was ok, learned how to make an R4 and the R3 talk to each other via the RX and TX pins over software serial: now all I needed to do was to make an Arduino code that sends G-code. Easy, right?
 * Finally got the GREAT IDEA of making an ouija-board (also the first tangible idea; time was running out)
 * Setbacks with the ferrofluid tank (see Sidetrack), so desided to go with plan B: plywood and metal ball.
-* Designed the ouija layout with letters from A to Z, built a 660x660 box from ply wood and burned my design to the cover (cheap plywood, cound not use Aalto laser, had to use an industrial type instead)
+* Designed the ouija layout with letters from A to Z, built a 660x660 box from plywood and burned my design to the cover (cheap plywood, cound not use Aalto laser, had to use an industrial type instead)
 * Soldered a screw to a coin for a capacitive button, just like in one of my tests before.
 * Box ready, some generic fortunes created, all electronics in place, used UGS to point out the coordinates, now code. Wait, I do not know how to do all of that?
 * Crazy times, I used ChatGPT a lot. With a looong discussions with LLM, the “automatic generation” of the code took approximately eight hours of chatting and tweaking.
@@ -353,9 +353,9 @@ G0 X0.00 Y0.00 ; return to zero.
 ; END: MISTAKES WILL COST
 ```
 
-After each line the R4 asks "?" and waits for R3-GRBL to report - if it reports "RUN", waits and tries again, until it says "IDLE": after this the next line is send, and so on.
+After each line the R4 asks "?" and waits for R3-GRBL to report - if it reports "RUN" or anything else, R4 waits and tries again, until R3 says the magic word "IDLE": only after this the next line is send, and so on.
 
-That's it! Some pictures with explanations:
+That's it! Hard to believe it actally works - but it does. Some pictures with explanations:
 
 Close to ready, still with debug button:
 
