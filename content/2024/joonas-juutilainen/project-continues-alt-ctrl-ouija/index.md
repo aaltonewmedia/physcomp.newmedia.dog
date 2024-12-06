@@ -25,7 +25,7 @@ Now that the CNC works physically, I needed to make it obey. Here were the steps
 * Soldered a screw to a coin for a capacitive button, just like in one of my tests before.
 * Box ready, some generic fortunes created, all electronics in place, used UGS to point out the coordinates, now code. Wait, I do not know how to do all of that?
 * Crazy times, I used ChatGPT a lot. With a looong discussions with LLM, the “automatic generation” of the code took approximately eight hours of chatting and tweaking.
-* The working method was pretty good for a dad burning midnight oil after the kids went to sleep: even if the code did not work as expected, it usually technically worked and kept frustration at a minimum.
+* The working method was pretty good for a dad burning midnight oil after the kids went to sleep: even if the code did not work as expected, it usually technically worked when uploading to the Arduino and kept frustration at a minimum.
 * Here’s how the code flows (after all tweaks)
 
   * Includes SoftwareSerial.h for the TX/RX communication, stdlib.h for  random functions and Adafruit_MPR121.h and wire.h for the capasitive sensor
@@ -38,12 +38,12 @@ Now that the CNC works physically, I needed to make it obey. Here were the steps
   * Function to ignore any G-Code over 370x350 space (had enough of flying machine parts)
   * Function to select a random sentence
   * Function to point a coordinate to each letter and space
-  * Function to generate G-Code out of the coordinates, to add a delay after each letter and to make a slight detour if there are two same letters in a row
+  * Function to generate G-Code out of the sentence's coordinates and to make a slight detour if there are two same letters in a row
   * Function to send the G-Code over software serial
   * Function to wait for an “Idle” status after each g-code line before sending the next line (a bit slow but now it does not skip letters)
   * loop to run all this in order
 
-Summa summarum: I did not write the code per se, but I did design it. And it works! Pretty proud! Here it is:
+Summa summarum: I did not write the code per se, but I did design it. And got it working! Pretty proud! Here it is:
 
 ```
 #include <SoftwareSerial.h>
@@ -314,6 +314,8 @@ void waitUntilIdle() {
   }
 }
 ```
+
+There are still some parts not needed (like the debug button and code for G-code delays and parsting small letters, but I did not dare to touch it any more after it stasrted working.
 
 The G-code looks like this:
 
