@@ -352,7 +352,7 @@ After each line the R4 asks "?" and waits for R3 to report - if it says "RUN", d
 
 That's it! Some pictures with explanations:
 
-Final thing:
+Close to ready, still with debugging button:
 
 ![](img_2844-2-large.jpeg)
 
