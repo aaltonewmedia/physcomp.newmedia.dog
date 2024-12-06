@@ -55,7 +55,7 @@ It leaked in 48 hours. Salt everywhere.
 
 ![](img_2784-2-large.jpeg)
 
-Washed up, added some alumium profiles and more silicone. Now added first vinegar for 48 hours and the saltwater again. Has not lekaed for four days, promising. Also added some pressure to the center of the glass - the bulging added a need of at least 500 ml.
+Washed up, added some alumium profiles and more silicone. Now added first vinegar for 48 hours, washed well with distilled water and added the saltwater again. Has not leaked for four days, promising. Also added some pressure to the center of the glass - the bulging added at least 500 ml to the volume.
 
 ![](img_2834-3-large.jpeg)
 
