@@ -6,6 +6,8 @@ authors:
 image: featured.jpg
 showBgImage: false
 ---
+![](img_2661-2-large.jpg)
+
 Now that I got the stepper motors and belts working physically, I needed to make the setup obey as a CNC machine - and to figure out how it would fulfil its role as a Physical Computing project.
 
 Here were the steps:
