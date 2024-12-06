@@ -1,5 +1,5 @@
 ---
-title: "Sidetrack: Ferrofluid Display"
+title: "Sidetrack: A Ferrofluid Display"
 date: 2024-12-06T14:58:00.000Z
 authors:
   - Joonas Juutilainen
