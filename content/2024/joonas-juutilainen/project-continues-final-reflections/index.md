@@ -6,7 +6,7 @@ authors:
 image: featured.jpg
 showBgImage: false
 ---
-![](featured-copy.jpg)
+![](featured.jpg)
 
 My Physical Computing Project was to make a H-BOT type CNC / plotter setup and use it for something unexpected. In the end, the project turned out to be a CtrlALT Ouija board, that gives questionable fortunes by moving a metal ball on an ouija board to anyone who touches the coin placed on top of the machine box.
 
