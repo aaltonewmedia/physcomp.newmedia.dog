@@ -37,7 +37,7 @@ To make the tank, which is about 500x500 mm, I used 4mm hardened glass straight 
 
 ![](img_2737-2-large.jpeg)
 
-Sealed the edges with window silicone - good and water tight! + added pressure fro 24h
+Sealed the edges with window silicone - good and waterproof! + added pressure for 24h
 
 ![](img_2741-2-large.jpeg)
 
