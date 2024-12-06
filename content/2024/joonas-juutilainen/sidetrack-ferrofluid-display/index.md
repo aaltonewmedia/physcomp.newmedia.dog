@@ -55,7 +55,7 @@ Added water + salt (filtered for impurities) and went for a work trip...
 
 ![](img_2784-2-large.jpeg)
 
-Washed up, added some alumium profiles and more silicone. Now added first vinegar for 48 hours, washed well with distilled water and added the saltwater again. Has not leaked for four days, promising. Also added some pressure to the center of the glass - the bulging added at least 500 ml to the volume.
+Washed up, added some alumium profiles and more silicone. Now added first vinegar for 48 hours, washed well with distilled water and added the saltwater again. Has not leaked for four days, promising. Also added some pressure to the center of the glass - the bulging added at least 500 ml to the volume. Will boil down the ferrofluid and make the final steps in a week. Victory or bust!
 
 ![](img_2834-3-large.jpeg)
 
