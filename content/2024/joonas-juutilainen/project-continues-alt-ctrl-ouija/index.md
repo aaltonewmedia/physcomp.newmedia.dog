@@ -333,7 +333,7 @@ And a fortune:
 G21 ; Set units to millimeters
 G90 ; Absolute positioning
 G17 ; Select XY plane
-G0 X0.00 Y0.00 ; start fromm zero, just in case
+G0 X0.00 Y0.00 ; start from zero, just in case
 
 ; BEGIN: MISTAKES WILL COST
 G0 X180.00 Y75.00 ; step 1
@@ -342,13 +342,14 @@ G0 X310.00 Y265.00 ; first letter - here "M"
 G0 X215.00 Y310.00 ; second letter - here "I"
 G0 X115.00 Y245.00 ; third letter - here "S"
 
-; and so on, until at the the end:
+; and so on, until at the end:
 
+G0 X145.00 Y255.00 ; third letter - here "T"
 G0 X0.00 Y0.00 ; return to zero.
 ; END: MISTAKES WILL COST
 ```
 
-After each line the R4 asks "?" and waits for R3 to report - if it reports "RUN", waits and tries again, until it says "IDLE": after this the next line is send, and so on.
+After each line the R4 asks "?" and waits for R3-GRBL to report - if it reports "RUN", waits and tries again, until it says "IDLE": after this the next line is send, and so on.
 
 That's it! Some pictures with explanations:
 
