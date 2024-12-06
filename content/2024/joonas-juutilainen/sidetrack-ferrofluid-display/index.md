@@ -61,6 +61,6 @@ The tank has not leaked for four days, promising. Also added some pressure to th
 
 ![](img_2834-3-large.jpeg)
 
-Byt the way, if someone wants to try this after me and does not have factor made thing hardened glass, figured this when cleaning my refrigerator. Good glasses might be found from Kierrätyskeskus?
+Byt the way, if someone wants to try this after me and does not have access to fresh hardened glass straight from factory, figured this when cleaning my refrigerator: good suitable glass in various sizes might be found from Kierrätyskeskus or Sortti?
 
 ![](img_2753-2-large.jpeg)
