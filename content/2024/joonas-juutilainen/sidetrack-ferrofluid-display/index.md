@@ -43,7 +43,7 @@ Sealed the edges with window silicone - good and water tight! + added pressure f
 
 ![](img_2743-2-large.jpeg)
 
-Added water + salt (filtered for impurities) and went for a works trip.
+Added water + salt (filtered for impurities) and went for a work trip...
 
 ![](img_2739-2-large.jpeg)
 
@@ -51,7 +51,7 @@ Added water + salt (filtered for impurities) and went for a works trip.
 
 ![](img_2749-large.jpeg)
 
-It leaked in 48 hours. Salt everywhere.
+..it leaked in 48 hours. Salt everywhere. The VHB did not stay waterproof, but still held the tank together (and privided the 5mm needed for volume). My silicone was holding, but there was a leak. More silicone needed!
 
 ![](img_2784-2-large.jpeg)
 
