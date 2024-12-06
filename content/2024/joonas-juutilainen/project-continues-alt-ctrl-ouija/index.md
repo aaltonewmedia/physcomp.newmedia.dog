@@ -371,7 +371,7 @@ Adding the coin:
 
 ![](img_2846-2-large.jpeg)
 
-Extra: Student travel with public transportation (special thanks to Aalto parking policy)
+Extra: Students travel with public transportation, right? (special thanks to Aalto parking policy)
 
 ![](img_2849-2-large.jpeg)
 
