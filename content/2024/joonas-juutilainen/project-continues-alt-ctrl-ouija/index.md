@@ -43,7 +43,7 @@ Now that the CNC works physically, I needed to make it obey. Here were the steps
   * Function to wait for an “Idle” status after each g-code line before sending the next line (a bit slow but now it does not skip letters)
   * loop to run all this in order
 
-Summa summarum: I did not write the code per se, but I did design it. And got it working! Pretty proud! Here it is:
+Summa summarum: Would not have finished this without an LLM, in time anyway, but the code design is all mine and I know what each line does and why it's there. And got it working! Pretty proud! Here it is:
 
 ```
 #include <SoftwareSerial.h>
@@ -352,7 +352,7 @@ After each line the R4 asks "?" and waits for R3 to report - if it says "RUN", d
 
 That's it! Some pictures with explanations:
 
-Close to ready, still with debugging button:
+Close to ready, still with de:
 
 ![](img_2844-2-large.jpeg)
 
