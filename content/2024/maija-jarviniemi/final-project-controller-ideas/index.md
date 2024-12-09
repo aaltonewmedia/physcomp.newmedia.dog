@@ -117,7 +117,7 @@ function mousePressed(){
 
 
 
-### Mon 25.11 - Sun 1.12.2024
+### Mon 25.11. - Sun 1.12.2024
 
 * Along the week drawing and fixing vector files for the copper tape + the laser cut pieces from acrylic -> a support structure for the spiral and buttons
 * I found some inspiration for the triangle/arrow shapes for the slider stickers from here: [https://www.kobakant.at/DIY/?p=6607](<>)
@@ -130,28 +130,26 @@ function mousePressed(){
 
 ![](physcomp_process-web_041224-2.jpg)
 
-### Mon 2.12.2024
+### Mon 2. - Tue 3.12.2024
 
 * Soldering of the spiral sensors (19x) and buttons (2x) to a bunch of wires  --> looks like a shrimp!
-* Figuring out the trill sensor position on the case --> adding a piece of felt/Eva foam by sewing and attaching that with 2-sided tape on to laser cutted layer
-
-![](physcomp_process-web_041224-3.jpg)
-
-### Tue 3.12.2024
-
 * 3d print for the case cover (the bottom part not ready yet) in the Aalto 3d print workshop --> turned out to be quite bad quality so I decided to go with the earlier white version 
 * Soldering the trill craft sensor to the copper pieces + breadboard...  -> this took many hours of figuring out the placing of wires so that they don't touch each other -> this prevents the capacitive sensors taking some unwanted signals when close to each other
 * I used the pins 0-18, 19 sensors in total for the spiral slider
 
-![](physcomp_process-web_041224-4.jpg)
+![](physcomp_process-web_041224-3.jpg)
 
 ### Wed 4.12.2024
 
-* Final soldering of the button wires, pin 25 for the left button sensor and pin 29 for the right button sensor
-* Attached the Trill Craft to a piece of Eva foam and that to the acrylic layer with 2-sided tape
+* Final soldering of the button wires, pin 25 for the left button sensor and pin 29 for the right button sensor -> soldering to the other edge of the Trill Craft while the first 15 wires were attached was quite tricky due to very limited space!
+* To prevent glue on the Trill Craft, I attached it to a piece of EVA foam with few stitches and that to the acrylic with 2-sided tape
 * Attached the SCL, SDA, power (5V), grounding via breadboard and 2 resistors to Arduino board
 * Tested with Matti and it works! Also succeeded in connecting the slider to my p5.j sketches -> still needs some adjusting with lerping and the visuals to get the calm and smooth animation I want
 * 3d printed a bottom piece for the controller to protect the wiring -> not the best solution but works for now. Arduino and breadboard are still separate from the controller. Miro made the 3d model for the bottom cover with my instructions
+
+![](physcomp_process-web_041224-4.jpg)
+
+
 
 ![](physcomp_process-web_041224-5.jpg)
 
