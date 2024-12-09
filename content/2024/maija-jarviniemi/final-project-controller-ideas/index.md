@@ -107,10 +107,9 @@ function mousePressed(){
 
 ### 24.11.2024 3d print samples
 
-* Sampling with the width and depth of the furrow with the help of Miro
-* Size of the spiral
+* Sampling with 3d printer the width and depth of the furrow, with the help of Miro
+* Size of the spiral - I coded the spiral with p5.js :)
 * Best furrow measurements were 2mm (depth), 120mm (full width), 60mm (open area/hole)
-* I coded the spiral with p5.js :)
 
 ![](img_2019web.jpg)
 
@@ -135,7 +134,7 @@ function mousePressed(){
 
 ### Tue 3.12.2024
 
-* 3d print for the case cover (the bottom part not ready yet) --> turned out to be quite bad quality from Aalto 3d print workshop so I decided to go with the earlier version printed at home with Prusa printer
+* 3d print for the case cover (the bottom part not ready yet) --> turned out to be quite bad quality from Aalto 3d print workshop so I decided to go with the earlier version 
 * Soldering the trill craft sensor to the copper pieces + breadboard...  -> this took many hours of figuring out the placing of wires so that they don't touch each other -> this prevents the capacitive sensors taking some unwanted signals when close to each other
 * I used the pins 0-18, 19 sensors in total for the spiral slider
 
@@ -150,3 +149,17 @@ function mousePressed(){
 * 3d printed a bottom piece for the controller to protect the wiring -> not the best solution but works for now. Arduino and breadboard are still separate from the controller. Miro made the 3d model for the bottom cover with my instructions
 
 ![](physcomp_process-web_041224-5.jpg)
+
+### The final piece (shown in 5.12.2024)
+
+**Possible improvements for the controller:**
+
+* Covering the copper with a fully 3d printed cover?
+* Smaller copper tape piece for the buttons -> I made them too big so now they also react to touch when touching the cover next to them
+* Smaller arduino/raspberry pi and somehow making the resistor wiring more tight perhaps without the breadboard?
+* Rethinking the aesthetics of the cover and the shape -> more organic texture and material. Could the shape be circular? To me the shape and material feeling is too "clinical" and fine
+
+**Comments about the p5.js and code:**
+
+* Instead of altering the angle of the spirals controlling the number of  "points" so that the spiral builds itself while following the spiral path with finger -> would possibly provide more satisfying experience for the user :D
+* More advanced spirals paths etc -> will continue with this to figure out the logic and math!
