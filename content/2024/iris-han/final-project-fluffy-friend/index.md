@@ -16,15 +16,21 @@ Firstly, I tried to write very simple code to prototype the functions of robot.
 
 ![](屏幕截图-2024-11-29-101302.png)
 
-
+Then starting to build it on Arduino board.
 
 ![](微信图片_20241209214946.jpg)
 
+Because I want to make a very soft robot, so the sensors shouldn't be too hard. I made this soft pressure sensor by using the conductive fabric.
+
 ![](微信图片_20241209214958.jpg)
 
+At the beginning, I planned to use a LED display to show the robot's face and express different emotions. Due to the material and budget, I finally chose this Neo pixel ring as plush on the cheek. 
+
+![](微信图片_20241209223005.jpg)
 
 
 
+![](微信图片_20241209223048.jpg "This is the first attemptation of combining pressure sensor and robot's arm")
 
 
 
