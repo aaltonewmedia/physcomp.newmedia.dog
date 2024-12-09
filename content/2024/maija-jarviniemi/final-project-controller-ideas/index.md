@@ -157,9 +157,21 @@ function mousePressed(){
 * Covering the copper with a fully 3d printed cover?
 * Smaller copper tape piece for the buttons -> I made them too big so now they also react to touch when touching the cover next to them
 * Smaller arduino/raspberry pi and somehow making the resistor wiring more tight perhaps without the breadboard?
-* Rethinking the aesthetics of the cover and the shape -> more organic texture and material. Could the shape be circular? To me the shape and material feeling is too "clinical" and fine
+* Rethinking the aesthetics of the cover and the shape -> more organic texture and material. Could the shape be circular? To me the shape and material feeling is too "clinical"
 
 **Comments about the p5.js and code:**
 
 * Instead of altering the angle of the spirals controlling the number of  "points" so that the spiral builds itself while following the spiral path with finger -> would possibly provide more satisfying experience for the user :D
 * More advanced spirals paths etc -> will continue with this to figure out the logic and math!
+
+**Other:**
+
+I enjoyed most of the craftwork and material experience related to this project:
+
+* Making the spiral slider and attaching the copper tape pieces to it. Piece by piece it reminded me of an ancient jewelry due to the copper and the scratch marks.
+* Soldering was fun and at some point the ancient jewelry slider turned into a glimmering shrimp! 
+* Figuring out the wiring from the slider to the Trill craft sensor and then soldering. Though it felt almost impossible task to keep the wires deattached from each other, I was extremely happy I managed to pull it of :) 
+
+First I had hard time of coming up with a physical computing concept that would work with my p5.js project. So once the idea came, I started working with it straight away. This project was my very first take on working with electronics so it really put me on my toes. For the last minute I was expecting something to fail. Hence the surprise of it working without any major errors really drew a big smile on my face! 
+
+\- something about other ideas and future
