@@ -132,14 +132,14 @@ function mousePressed(){
 
 ### Mon 2.12.2024
 
-* Soldering of the spiral sensors and buttons to a bunch of wires (22 pieces) --> looks like a shrimp!
+* Soldering of the spiral sensors (19x) and buttons (2x) to a bunch of wires  --> looks like a shrimp!
 * Figuring out the trill sensor position on the case --> adding a piece of felt/Eva foam by sewing and attaching that with 2-sided tape on to laser cutted layer
 
 ![](physcomp_process-web_041224-3.jpg)
 
 ### Tue 3.12.2024
 
-* 3d print for the case cover (the bottom part not ready yet) --> turned out to be quite bad quality from Aalto 3d print workshop so I decided to go with the earlier version 
+* 3d print for the case cover (the bottom part not ready yet) in the Aalto 3d print workshop --> turned out to be quite bad quality so I decided to go with the earlier white version 
 * Soldering the trill craft sensor to the copper pieces + breadboard...  -> this took many hours of figuring out the placing of wires so that they don't touch each other -> this prevents the capacitive sensors taking some unwanted signals when close to each other
 * I used the pins 0-18, 19 sensors in total for the spiral slider
 
