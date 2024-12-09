@@ -62,6 +62,8 @@ The sensor detects multiple touches, the location and the size of the touch. The
 <script src="https://unpkg.com/@gohai/p5.webserial@^1/libraries/p5.webserial.js"></script>
 ```
 
+
+
 ```javascript
 //Example from course website
 //https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/
@@ -118,8 +120,11 @@ function mousePressed(){
 ### Mon 25.11 - Sun 1.12.2024
 
 * Along the week drawing and fixing vector files for the copper tape + the laser cut pieces from acrylic -> a support structure for the spiral and buttons
-* Finished the spiral and the copper tape pieces --> done by hand with a 3d printed "stencil" -> took quite many tries to get it right :D
-* A prototype printed for the cover -> Miro helped with the model, figuring out the support structure and 3d printing
+* I found some inspiration for the triangle/arrow shapes for the slider stickers from here: [https://www.kobakant.at/DIY/?p=6607](<>)
+* The basic idea with the arrows is that the capacitive sensors are able to read the finger's position either from one or two sensors at the same time providing more detailed data
+* Finished cutting and placing the copper tape pieces to the laser cut spiral, 19 stickers in total --> done by hand with a 3d printed "stencil" -> took quite many tries to get it right :D 
+* I am using the Trill Craft sensor to which the 19 + 2 extra button sensors will be soldered: <https://learn.bela.io/tutorials/trill-sensors/working-with-trill-craft/>
+* A prototype was printed for the cover -> Miro helped with the model, figuring out the support structure and 3d printing
 
 ![](physcomp_process-web_041224.jpg)
 
