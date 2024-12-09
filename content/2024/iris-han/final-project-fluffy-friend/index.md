@@ -37,28 +37,28 @@ Firstly, I tried to write very simple code to prototype the functions of robot.
 #include <Adafruit_NeoPixel.h>
 #include <AltSoftSerial.h>    // Arduino build environment requires this
 #include <wavTrigger.h>
-#include <VL53L1X.h> // 距离传感器库
+#include <VL53L1X.h> 
 
 VL53L1X sensor;
 wavTrigger wTrig; 
 
-// 定义 NeoPixel Ring 的引脚和灯珠数量
-#define PIXEL_PIN 12      // 数据引脚
-#define NUM_PIXELS 48    // 灯珠数量
+// define NeoPixel Ring's pin and number of pixels
+#define PIXEL_PIN 12  
+#define NUM_PIXELS 48  
 
 Adafruit_NeoPixel strip(NUM_PIXELS, PIXEL_PIN, NEO_GRBW + NEO_KHZ800);
 
-// 定义压感电阻引脚
+// Pressure sensor
 #define FSR_PIN1 A0
 #define FSR_PIN2 A1
 #define FSR_PIN3 A3
 
-// 粉红色的 RGB 值
+// PINK
 const int R = 200;
 const int G = 20;
 const int B = 60;
 
-int currentBrightness = 0;       // 初始化亮度
+int currentBrightness = 0;
 int targetBrightness = 0;  
 
 int sensor1Min = 0;
@@ -68,28 +68,26 @@ int sensor2Max = 0;
 int sensor3Min = 0;
 int sensor3Max = 0;
 
- // 读取压感电阻值 (0 到 1023)
+ // read pressure sensor (0 to 1023)
 int fsrValue1 = analogRead(FSR_PIN1);
 int fsrValue2 = analogRead(FSR_PIN2);
 int fsrValue3 = analogRead(FSR_PIN3);
 
-// 距离感知范围
+// distance
 int distance = 0;               
 unsigned long lastPlayback = 0; 
 const unsigned long playbackInterval = 60000; 
 
-unsigned long lastShortDistancePlayback = 0; // 记录上次触发的时间
-const unsigned long shortDistanceDelay = 3000; // 3秒的播放间隔
+unsigned long lastShortDistancePlayback = 0; 
+const unsigned long shortDistanceDelay = 3000; 
 
-// 防止重复触发的时间间隔
 unsigned long lastFSRActivation = 0;
-const unsigned long fsrDebounceInterval = 2000; // 2 秒
+const unsigned long fsrDebounceInterval = 2000; 
 
 void neoRing1(){
   fsrValue1 = analogRead(FSR_PIN1);
   fsrValue2 = analogRead(FSR_PIN2);
   fsrValue3 = analogRead(FSR_PIN3);
-  //int fsrValue3new = map(fsrValue3, 1000, 1023, 950,1023);
 
   if (fsrValue1 > fsrValue2 && fsrValue1 > fsrValue3){
     targetBrightness = map(fsrValue1, sensor1Min+20, sensor1Max, 0, 255);
@@ -101,22 +99,20 @@ void neoRing1(){
     targetBrightness = map(fsrValue3, sensor3Min+20, sensor3Max, 0, 255);
   }
 
-  // 限制亮度范围
   targetBrightness = constrain(targetBrightness, 0, 255);
 
- // 缓慢调整 currentBrightness 接近 targetBrightness
+ //  currentBrightness % targetBrightness
   if (currentBrightness < targetBrightness) {
-    currentBrightness += 3; // 缓慢增加
+    currentBrightness += 3; // increase
     //delay(10);
   } else if (currentBrightness > targetBrightness) {
-    currentBrightness -= 3; // 缓慢减少
+    currentBrightness -= 3; // decrease
     //delay(10);
   }
 
   strip.setBrightness(currentBrightness);
-  // 更新灯珠颜色
   setRingColor(R, G, B);
-  // 输出调试信息
+  
   Serial.print("FSR Value1: ");
   Serial.print(fsrValue1);
   Serial.print("  FSR Value2: ");
@@ -132,9 +128,9 @@ void neoRing1(){
 
 
 void setup() {
-  Serial.begin(115200);      // 初始化串口
+  Serial.begin(115200);   
   Wire.begin();
-  Wire.setClock(400000);    // 使用 400 kHz I2C
+  Wire.setClock(400000);
   if (!sensor.init())
   {
     Serial.println("Failed to detect and initialize sensor!");
@@ -145,10 +141,10 @@ void setup() {
   sensor.setMeasurementTimingBudget(50000);
   sensor.startContinuous(50);
 
-  // 初始化 NeoPixel
+  // Initialize NeoPixel
   strip.begin();
-  strip.show(); // 初始化所有灯为关闭状态
-  strip.setBrightness(20); // 初始化亮度为 0
+  strip.show(); 
+  strip.setBrightness(20); 
 
   sensor1Min = analogRead(FSR_PIN1);
   sensor1Max = sensor1Min + 100;
@@ -157,18 +153,16 @@ void setup() {
   sensor3Min = analogRead(FSR_PIN3);
   sensor3Max = sensor3Min + 100;
 
-  // 初始化 WAV Trigger
+  // Initialize WAV Trigger
   wTrig.start();
   delay(10);
   wTrig.stopAllTracks();
-  wTrig.masterGain(10); // 最大音量
+  wTrig.masterGain(10); // volume
   Serial.println("Setup complete");
 }
 
 void speaker(){
-  //Serial.println("speaker start");
-  distance = sensor.read() / 10; // 将距离从毫米转换为厘米
-  //Serial.println("sensor read");
+  distance = sensor.read() / 10; // mm --> cm
   if (sensor.timeoutOccurred()) {
     Serial.println("Distance sensor timeout!");
     return;
@@ -177,22 +171,19 @@ void speaker(){
   Serial.print("  Distance: ");
   Serial.print(distance);
   Serial.println(" cm");
-
- 
-  // 判断距离范围并触发对应音频
+  // Play different sound files
   if(distance <20){
     wTrig.trackPlaySolo(3); 
     delay(500);
     
   }
   if (distance <= 100 && distance >=20) {
-    wTrig.trackPlaySolo(2); // 播放第四个音频
+    wTrig.trackPlaySolo(2); 
     //delay(2000);
   } else if (distance > 100) {
-    // 检查是否到达一分钟间隔
     if (millis() - lastPlayback >= playbackInterval) {
       wTrig.trackPlaySolo(4);
-      lastPlayback = millis(); // 更新播放时间戳
+      lastPlayback = millis();
     }
   }
 
@@ -205,8 +196,8 @@ void speaker(){
   if ((fsrValue1 > sensor1Min + 30 || fsrValue2 > sensor2Min + 5 || fsrValue3 > sensor3Min + 30) &&
       millis() - lastFSRActivation > fsrDebounceInterval) {
     Serial.println("All FSR sensors activated. Playing track 5.");
-    wTrig.trackPlaySolo(5); // 播放第 5 个音频
-    lastFSRActivation = millis(); // 更新触发时间
+    wTrig.trackPlaySolo(5); 
+    lastFSRActivation = millis(); 
   }
 }
 
@@ -217,15 +208,14 @@ void loop() {
 
 void setRingColor(int red, int green, int blue) {
   for (int i = 0; i < NUM_PIXELS; i++) {
-    strip.setPixelColor(i, strip.Color(red, green, blue)); // 设置每个像素颜色
+    strip.setPixelColor(i, strip.Color(red, green, blue));
   }
-  strip.show(); // 刷新灯珠显示
+  strip.show(); // refresh
 }
 
 void playFile(int trackNumber) {
-  // 确保 WAV Trigger 正确播放文件
   wTrig.stopAllTracks(); 
-  delay(10); // 停止后稍作延迟
+  delay(10); 
   wTrig.trackPlaySolo(trackNumber); 
   Serial.print("Playing track: ");
   Serial.println(trackNumber);
