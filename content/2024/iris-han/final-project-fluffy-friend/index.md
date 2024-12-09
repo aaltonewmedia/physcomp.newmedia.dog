@@ -6,4 +6,8 @@ authors:
 image: featured.jpg
 showBgImage: false
 ---
-![]()
+I used Auduino to create some work in the past time, but only in some simple ways. I'm so happy to learn physical computing, because this is an opportunity to learn this skill systematically. At the beginning of this project, I just want to try more Arduino components and use the wonderful resources from this course. Additionally, I am so addicted with plush toy and fluffy stuff. So the concept of this project was quickly come up with in my head. Let me make some soft fluffy robot! 
+
+![Here is the sketch](sketch2.jpg "Draft")
+
+![](iris-han-s-final-project-frame-2.jpg)
