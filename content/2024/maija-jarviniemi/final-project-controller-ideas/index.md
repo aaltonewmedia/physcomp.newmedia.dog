@@ -154,6 +154,10 @@ function mousePressed(){
 
 ### The final piece (shown in 5.12.2024)
 
+
+
+### Some reflections on the work and future improvements
+
 **Possible improvements for the controller:**
 
 * Covering the copper with a fully 3d printed cover?
