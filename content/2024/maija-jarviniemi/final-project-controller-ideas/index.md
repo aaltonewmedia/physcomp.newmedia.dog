@@ -150,6 +150,8 @@ function mousePressed(){
 
 ![](physcomp_process-web_041224-5.jpg)
 
+### ATTACH IMAGES + FINAL CODE VIA ARDUINO? 
+
 ### The final piece (shown in 5.12.2024)
 
 **Possible improvements for the controller:**
