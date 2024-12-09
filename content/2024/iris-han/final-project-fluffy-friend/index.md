@@ -10,4 +10,14 @@ I used Auduino to create some work in the past time, but only in some simple way
 
 ![Here is the sketch](sketch2.jpg "Draft")
 
-![](iris-han-s-final-project-frame-2.jpg)
+
+Firstly, I tried to write very simple code to prototype the functions of robot. 
+
+
+![](屏幕截图-2024-11-29-101302.png)
+
+
+
+![](微信图片_20241209214946.jpg)
+
+![](微信图片_20241209214958.jpg)
