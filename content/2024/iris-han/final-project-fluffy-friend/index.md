@@ -228,3 +228,96 @@ void playFile(int trackNumber) {
 }
 
 ```
+
+```c
+#include <Wire.h>
+#include <Servo.h>  
+#include <VL53L1X.h>  
+
+// 定义引脚
+const int servoPin1 = 9;  
+const int servoPin2 = 10; //（head）
+const int servoPin3 = 11;
+const int servoPin4 = 12;     
+Servo myServo1;               // SG92R
+Servo myServo2;      //MG995R（head） 
+Servo myServo3;// SG92R
+Servo myServo4;
+VL53L1X sensor;
+
+int currentAngle = 90;   
+int targetAngle = 90;   
+
+void servo(){
+
+  int distance = measureDistance();
+  if (distance < 0 || distance > 100) { 
+    distance = 100; 
+  }
+
+  targetAngle = map(distance, 0, 100, 0, 180);
+  targetAngle = constrain(targetAngle, 0, 180);
+
+  if (currentAngle < targetAngle) {
+    currentAngle += 3; 
+  } else if (currentAngle > targetAngle) {
+    currentAngle -= 3;
+  }
+
+  myServo1.write(currentAngle); //  1
+  myServo2.write(currentAngle); //head
+  myServo3.write(currentAngle); // 3
+  myServo4.write(180 - currentAngle); // 2
+
+  Serial.print("Distance: ");
+  Serial.print(distance);
+  Serial.print(" cm, Current Angle: ");
+  Serial.print(currentAngle);
+  Serial.print(", Target Angle: ");
+  Serial.println(targetAngle);
+}
+
+int measureDistance() {
+  int distance = sensor.read() / 10; // mm --> cm
+  if (sensor.timeoutOccurred()) {
+    Serial.println("Sensor timeout!");
+    return -1; 
+  }
+  return distance;
+}
+
+
+void setup() {
+  Serial.begin(115200);   
+  Wire1.begin();
+  Wire1.setClock(400000); 
+
+  sensor.setBus(&Wire1);
+  sensor.setTimeout(500);
+  if (!sensor.init()) {
+    Serial.println("Failed to initialize sensor!");
+    while (1);
+  }
+  sensor.setDistanceMode(VL53L1X::Long);
+  sensor.setMeasurementTimingBudget(50000);
+  sensor.startContinuous(50);
+
+  myServo1.attach(servoPin1, 600, 2000);
+  myServo1.write(currentAngle);
+  myServo2.attach(servoPin2, 600, 2000);
+  myServo2.write(currentAngle); 
+  myServo3.attach(servoPin3, 600, 2000);
+  myServo3.write(currentAngle); 
+  myServo4.attach(servoPin4, 600, 2000);
+  myServo4.write(currentAngle); 
+
+}
+
+void loop() {
+  servo();
+
+  delay(100);
+}
+
+
+```
