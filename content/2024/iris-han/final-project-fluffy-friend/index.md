@@ -9,6 +9,8 @@ showBgImage: false
 >
 > The inspiration comes from "socializing" which we do every day. After socializing with people for so many years, I suddenly feel that socializing with a furry unknown creature might be also a good choice. 
 >
+> <https://miro.com/welcomeonboard/bTZTRlBURkRvTHRGLzFsa3NvaFU1ZmIwMDZ6MGF0KzV3WWxoWk1LdVg1WWhEWDFHUTNCVXIycmttQTdCZzNDNi9oVDVFQzcvNnlFU3Zwd3BaL1phTGtIaWRuYU5xcG5rZUJIM25iQSs1QXY3TXJiRC94Qy9hLzUwR0gwMlRPS0chZQ==?share_link_id=534445760282>
+>
 
 I used Arduino to create some work in the past time, but only in some simple ways. I'm so happy to learn physical computing because this is an opportunity to learn this skill systematically. At the beginning of this project, I want to try more Arduino components and use the wonderful resources from this course. Additionally, I am so addicted to plush toy and fluffy stuff. So the concept of this project quickly came up in my head. Let me make some soft fluffy robot! 
 
