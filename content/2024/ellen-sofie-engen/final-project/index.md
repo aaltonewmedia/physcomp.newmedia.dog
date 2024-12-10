@@ -1,5 +1,5 @@
 ---
-title: Final project proposal
+title: w04 Final project proposal
 date: 2024-11-18T16:18:00.000Z
 authors:
   - Ellen Sofie Engen
