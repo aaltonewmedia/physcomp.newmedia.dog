@@ -6,7 +6,11 @@ authors:
 image: featured.jpg
 showBgImage: false
 ---
-I used Auduino to create some work in the past time, but only in some simple ways. I'm so happy to learn physical computing, because this is an opportunity to learn this skill systematically. At the beginning of this project, I just want to try more Arduino components and use the wonderful resources from this course. Additionally, I am so addicted with plush toy and fluffy stuff. So the concept of this project was quickly come up with in my head. Let me make some soft fluffy robot! 
+>
+> The inspiration comes from "socializing" which we do every day. After socializing with people for so many years, I suddenly feel that socializing with a furry unknown creature might be also a good choice. 
+>
+
+I used Arduino to create some work in the past time, but only in some simple ways. I'm so happy to learn physical computing because this is an opportunity to learn this skill systematically. At the beginning of this project, I want to try more Arduino components and use the wonderful resources from this course. Additionally, I am so addicted to plush toy and fluffy stuff. So the concept of this project quickly came up in my head. Let me make some soft fluffy robot! 
 
 ![Here is the sketch](sketch2.jpg "Draft")
 
@@ -14,32 +18,60 @@ I used Auduino to create some work in the past time, but only in some simple way
 
 ![](屏幕截图-2024-12-09-213154.png)
 
-Firstly, I tried to write very simple code to prototype the functions of robot. 
+Firstly, I tried to write very simple code to prototype the functions of a robot. 
 
 ![](屏幕截图-2024-11-29-101302.png)
 
-Then starting to build it on Arduino board.
+Then starting to build it on an Arduino board.
 
 ![](微信图片_20241209214946.jpg)
 
-Because I want to make a very soft robot, so the sensors shouldn't be too hard. I made this soft pressure sensor by using the conductive fabric.
+Because I want to make a very soft robot, the sensors shouldn't be too hard. I made this soft pressure sensor by using the conductive fabric.
 
 ![](微信图片_20241209214958.jpg)
 
-At the beginning, I planned to use a LED display to show the robot's face and express different emotions. Due to the material and budget, I finally chose this Neo pixel ring as plush on the cheek. 
+In the beginning, I planned to use an LED display to show the robot's face and express different emotions. Due to the material and budget, I finally chose this Neo pixel ring as plush on the cheek. 
 
 ![](微信图片_20241209223005.jpg)
 
-![](微信图片_20241209223048.jpg "This is the first attemptation of combining pressure sensor and robot's arm")
+![](微信图片_20241209223048.jpg "This is the first attempt of combining pressure sensor and robot's arm. ")
 
 After testing all parts of the robot, I realized that I used so many components. There are 4 servo motors, 2 neo pixels rings, 3 pressure sensors, 2 distance sensors and 1 speaker, which these were very challenging and unfamiliar for me. Also because I was not very clear with all stuff's names in English. Everything seemed terribly difficult for me. 
 
-However, after a week of exploration and learning, I gradually understood the connection and structure between my work and Arduino. Then everything became clearer, even the progress was quite tortuous
+However, after a week of exploration and learning, I gradually understood the connection and structure between my work and Arduino. Then everything became clearer, even the progress was quite tortuous. 
+
+Unfortunately, neo pixels' and sorvo motors' libraries are conflicted with each other. I decided to separate functions and components in two Arduino boards(Arduino Uno Wifi 4 and Arduino Uno). 
 
 
 ![](微信图片_20241209223014.jpg)
 
+Phisical building stage:
 
+I used laser cut to make the bottom base and head base. 
+
+Using metal mesh and iron wire to make the structure(skeleton).
+
+![](微信图片_20241209215009.jpg)
+
+![](微信图片_20241209223040.jpg)
+
+
+
+![](微信图片_20241209223111.jpg)
+
+Soldering
+
+![](微信图片_20241209223130.jpg)
+
+![](微信图片_20241209223120.jpg)
+
+组装
+
+![](微信图片_20241209223147.jpg)
+
+![](微信图片_20241209223104.jpg)
+
+![](微信图片_20241209223155.jpg)
 
 
 
