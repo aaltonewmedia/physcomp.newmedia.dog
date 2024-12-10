@@ -10,9 +10,11 @@ I used Auduino to create some work in the past time, but only in some simple way
 
 ![Here is the sketch](sketch2.jpg "Draft")
 
+![](屏幕截图-2024-12-09-213204.png)
+
+![](屏幕截图-2024-12-09-213154.png)
 
 Firstly, I tried to write very simple code to prototype the functions of robot. 
-
 
 ![](屏幕截图-2024-11-29-101302.png)
 
@@ -28,9 +30,16 @@ At the beginning, I planned to use a LED display to show the robot's face and ex
 
 ![](微信图片_20241209223005.jpg)
 
-
-
 ![](微信图片_20241209223048.jpg "This is the first attemptation of combining pressure sensor and robot's arm")
+
+After testing all parts of the robot, I realized that I used so many components. There are 4 servo motors, 2 neo pixels rings, 3 pressure sensors, 2 distance sensors and 1 speaker, which these were very challenging and unfamiliar for me. Also because I was not very clear with all stuff's names in English. Everything seemed terribly difficult for me. 
+
+However, after a week of exploration and learning, I gradually understood the connection and structure between my work and Arduino. Then everything became clearer, even the progress was quite tortuous
+
+
+![](微信图片_20241209223014.jpg)
+
+
 
 
 
@@ -226,7 +235,6 @@ void playFile(int trackNumber) {
   Serial.print("Playing track: ");
   Serial.println(trackNumber);
 }
-
 ```
 
 ```c
@@ -318,6 +326,4 @@ void loop() {
 
   delay(100);
 }
-
-
 ```
