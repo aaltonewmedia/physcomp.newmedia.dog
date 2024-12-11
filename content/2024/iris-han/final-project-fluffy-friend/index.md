@@ -6,13 +6,11 @@ authors:
 image: featured.jpg
 showBgImage: false
 ---
->
 > The inspiration comes from "socializing" which we do every day. After socializing with people for so many years, I suddenly feel that socializing with a furry unknown creature might be also a good choice. 
 >
 > <https://miro.com/welcomeonboard/bTZTRlBURkRvTHRGLzFsa3NvaFU1ZmIwMDZ6MGF0KzV3WWxoWk1LdVg1WWhEWDFHUTNCVXIycmttQTdCZzNDNi9oVDVFQzcvNnlFU3Zwd3BaL1phTGtIaWRuYU5xcG5rZUJIM25iQSs1QXY3TXJiRC94Qy9hLzUwR0gwMlRPS0chZQ==?share_link_id=534445760282>
->
 
-I used Arduino to create some work in the past time, but only in some simple ways. I'm so happy to learn physical computing because this is an opportunity to learn this skill systematically. At the beginning of this project, I want to try more Arduino components and use the wonderful resources from this course. Additionally, I am so addicted to plush toy and fluffy stuff. So the concept of this project quickly came up in my head. Let me make some soft fluffy robot! 
+I used Arduino to create some work in the past time, but only in some simple ways. I'm so happy to learn physical computing because this is an opportunity to learn this skill systematically. At the beginning of this project, I want to try more Arduino components and use the wonderful resources from this course. Additionally, I am so addicted to plush toys and fluffy stuff. So the concept of this project quickly came up in my head. Let me make some soft fluffy robot! 
 
 ![Here is the sketch](sketch2.jpg "Draft")
 
@@ -34,20 +32,21 @@ Because I want to make a very soft robot, the sensors shouldn't be too hard. I m
 
 In the beginning, I planned to use an LED display to show the robot's face and express different emotions. Due to the material and budget, I finally chose this Neo pixel ring as plush on the cheek. 
 
+When people touch or squeeze the arms(pressure sensors), neo-pixel rings will turn on.
+
 ![](微信图片_20241209223005.jpg)
 
-![](微信图片_20241209223048.jpg "This is the first attempt of combining pressure sensor and robot's arm. ")
+![](微信图片_20241209223048.jpg "This is the first attempt at combining the pressure sensor and the robot's arm. ")
 
-After testing all parts of the robot, I realized that I used so many components. There are 4 servo motors, 2 neo pixels rings, 3 pressure sensors, 2 distance sensors and 1 speaker, which these were very challenging and unfamiliar for me. Also because I was not very clear with all stuff's names in English. Everything seemed terribly difficult for me. 
+After testing all parts of the robot, I realized that I used so many components. There are 4 servo motors, 2 neo pixels rings, 3 pressure sensors, 2 distance sensors and 1 speaker, which were very challenging and unfamiliar for me. Also, I was not very clear with all stuff's names in English. Everything seemed difficult for me. 
 
 However, after a week of exploration and learning, I gradually understood the connection and structure between my work and Arduino. Then everything became clearer, even the progress was quite tortuous. 
 
-Unfortunately, neo pixels' and sorvo motors' libraries are conflicted with each other. I decided to separate functions and components in two Arduino boards(Arduino Uno Wifi 4 and Arduino Uno). 
-
+Unfortunately, neo pixels' and servo motors' libraries are conflicted with each other. I decided to separate functions and components into two Arduino boards(Arduino Uno Wifi 4 and Arduino Uno). 
 
 ![](微信图片_20241209223014.jpg)
 
-Phisical building stage:
+Physical building stage:
 
 I used laser cut to make the bottom base and head base. 
 
@@ -55,9 +54,30 @@ Using metal mesh and iron wire to make the structure(skeleton).
 
 ![](微信图片_20241209215009.jpg)
 
+Put all the electronic parts on the structure. 
+
+At this stage, everything went well until I found that the value of pressure sensors wasn't stable when I sewed it with fabric and filler. It caused neo-pixel rings to blink. Finally, Matti suggested me to change the fixed value to the readable value. 
+
+```c
+int sensor1Min = 0;
+int sensor1Max = 0;
+int sensor2Min = 0;
+int sensor2Max = 0;
+int sensor3Min = 0;
+int sensor3Max = 0;
+
+ if (fsrValue1 > fsrValue2 && fsrValue1 > fsrValue3){
+    targetBrightness = map(fsrValue1, sensor1Min+20, sensor1Max, 0, 255);
+  }
+  if (fsrValue2 > fsrValue1 && fsrValue2 > fsrValue3){
+    targetBrightness = map(fsrValue2,sensor2Min+7, sensor2Max, 0, 255);
+  }
+  if (fsrValue3 > fsrValue1 && fsrValue3 > fsrValue2){
+    targetBrightness = map(fsrValue3, sensor3Min+20, sensor3Max, 0, 255);
+  }
+```
+
 ![](微信图片_20241209223040.jpg)
-
-
 
 ![](微信图片_20241209223111.jpg)
 
@@ -74,10 +94,6 @@ Soldering
 ![](微信图片_20241209223104.jpg)
 
 ![](微信图片_20241209223155.jpg)
-
-
-
-
 
 ```c
 //LED speaker
