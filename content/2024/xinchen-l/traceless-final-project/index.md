@@ -15,9 +15,13 @@ Historically, ice has embodied contrasting qualities—during the Anthropocene, 
 
 By observing and amplifying the visual and auditory changes as ice melts, we draw attention to the interaction between two contrasting temporal scales: the slow, expansive time of Earth’s geological history and the accelerated, urgent pace of glacial melt due to human activity. We aim to depict a de-anthropocentric future, shifting our perspective to understand how human intervention has expedited natural processes and altered environmental rhythms.
 
-**More detailed：**
+**More detailed process：**
 
 <https://miro.com/app/board/uXjVLGnPCcA=/?share_link_id=430108964304>
+
+**[](https://miro.com/app/board/uXjVLGnPCcA=/?share_link_id=430108964304)videolink：**
+
+<https://youtu.be/lR1OMePhHwM?si=zCiQKR3UoqigsCEr>
 
 ![](草图_画板-1.png "sketch")
 
