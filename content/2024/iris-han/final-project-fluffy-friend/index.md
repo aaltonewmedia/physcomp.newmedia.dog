@@ -27,7 +27,7 @@ Thinking about the stucture and materials was a big challenge at the first stage
 
 In the early stage of the design, I tried my best to make the robot more humane and act like a pet or a companion, so the voice, body language, movements, and expressions were all factors I needed to consider.
 
-![](屏幕截图-2024-12-09-213154.png)
+![](屏幕截图-2024-12-11-234527.png)
 
 Firstly, I tried to write very simple code to prototype the functions of a robot. 
 
@@ -41,7 +41,7 @@ Because I want to make a very soft robot, the sensors shouldn't be too hard. I m
 
 ![](微信图片_20241209214958.jpg)
 
-In the beginning, I planned to use an LED display to show the robot's face and express different emotions. Due to the material and budget, I finally chose this Neo pixel ring as plush on the cheek. 
+In the beginning, I planned to use an LED display to show the robot's face and express different emotions. Due to the material and budget, I finally chose this Neo pixel ring as blush on the cheek. 
 
 When people touch or squeeze the arms(pressure sensors), neo-pixel rings will turn on.
 
@@ -113,12 +113,6 @@ I like soldering, because it saved me from my messy wires and bread board. Every
 Finally, this robot got a fancy name----Fat Baby! Indeed, it is fatter than I imagined. 
 
 ![](featured.jpg "I made a poster!")
-
-
-
-
-
-
 
 ```c
 //LED speaker
