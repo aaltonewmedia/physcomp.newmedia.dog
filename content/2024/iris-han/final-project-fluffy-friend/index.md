@@ -7,7 +7,7 @@ image: featured.jpg
 bgimage: background.jpg
 showBgImage: true
 ---
-> The inspiration comes from "socializing" which we do every day. After socializing with people for so many years, I suddenly feel that socializing with a furry unknown creature might be also a good choice. 
+> The inspiration comes from "socializing" which we do every day. After socializing with people for so many years, I suddenly feel that socializing with a fluffy unknown creature might be also a good choice. 
 >
 > <https://miro.com/welcomeonboard/bTZTRlBURkRvTHRGLzFsa3NvaFU1ZmIwMDZ6MGF0KzV3WWxoWk1LdVg1WWhEWDFHUTNCVXIycmttQTdCZzNDNi9oVDVFQzcvNnlFU3Zwd3BaL1phTGtIaWRuYU5xcG5rZUJIM25iQSs1QXY3TXJiRC94Qy9hLzUwR0gwMlRPS0chZQ==?share_link_id=534445760282>
 
@@ -57,7 +57,7 @@ Using metal mesh and iron wire to make the structure(skeleton).
 
 Put all the electronic parts on the structure. 
 
-At this stage, everything went well until I found that the value of pressure sensors wasn't stable when I sewed it with fabric and filler. It caused neo-pixel rings to blink. Finally, Matti suggested me to change the fixed value to the readable value. 
+At this stage, everything went well until I found that the value of the pressure sensors wasn't stable when I sewed it with fabric and filler. It caused neo-pixel rings to blink. Finally, Matti suggested to change the fixed value to the readable value. 
 
 ```c
 int sensor1Min = 0;
