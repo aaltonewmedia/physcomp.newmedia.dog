@@ -4,7 +4,8 @@ date: 2024-12-09T14:24:00.000Z
 authors:
   - Iris Han
 image: featured.jpg
-showBgImage: false
+bgimage: background.jpg
+showBgImage: true
 ---
 > The inspiration comes from "socializing" which we do every day. After socializing with people for so many years, I suddenly feel that socializing with a furry unknown creature might be also a good choice. 
 >
@@ -81,7 +82,9 @@ int sensor3Max = 0;
 
 ![](微信图片_20241209223111.jpg)
 
-Soldering
+Soldering stage!
+
+I like soldering, because it saved me from my messy wires and bread board. Everything bacame so clear!!!
 
 ![](微信图片_20241209223130.jpg)
 
@@ -91,9 +94,13 @@ Soldering
 
 ![](微信图片_20241209223147.jpg)
 
-![](微信图片_20241209223104.jpg)
+![](微信图片_20241209223104.jpg "Process")
 
-![](微信图片_20241209223155.jpg)
+
+
+![](微信图片_20241209223155.jpg "Head~")
+
+
 
 ```c
 //LED speaker
