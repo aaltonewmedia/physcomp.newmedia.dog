@@ -13,6 +13,13 @@ Ice has historically embodied dualities: during the Anthropocene, it symbolized 
 
 ![](background.jpg)
 
-
+### Installation
 
 ![](sketch.png)
+
+### Interaction Design
+
+* The behavior of humans does not control the process of ice;  
+* The sounds people make can merge with the sounds of ice to form an echo.
+* Humans cannot intervene, and any change will be embraced within the echo of the natural system.
+
