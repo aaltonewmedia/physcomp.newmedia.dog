@@ -19,6 +19,12 @@ Ice has historically embodied dualities: during the Anthropocene, it symbolized 
 
 ![](installation.jpg)
 
+### System Overview
+
+![](system-overview.png)
+
+
+
 ### Interaction Design
 
 * The behavior of humans does not control the process of ice;  
