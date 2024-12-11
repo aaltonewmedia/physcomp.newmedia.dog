@@ -11,11 +11,21 @@ showBgImage: true
 >
 > <https://miro.com/welcomeonboard/bTZTRlBURkRvTHRGLzFsa3NvaFU1ZmIwMDZ6MGF0KzV3WWxoWk1LdVg1WWhEWDFHUTNCVXIycmttQTdCZzNDNi9oVDVFQzcvNnlFU3Zwd3BaL1phTGtIaWRuYU5xcG5rZUJIM25iQSs1QXY3TXJiRC94Qy9hLzUwR0gwMlRPS0chZQ==?share_link_id=534445760282>
 
-I used Arduino to create some work in the past time, but only in some simple ways. I'm so happy to learn physical computing because this is an opportunity to learn this skill systematically. At the beginning of this project, I want to try more Arduino components and use the wonderful resources from this course. Additionally, I am so addicted to plush toys and fluffy stuff. So the concept of this project quickly came up in my head. Let me make some soft fluffy robot! 
+I used Arduino to create some work in the past time, but only in some simple ways. I'm so happy to learn physical computing because this is an opportunity to learn this skill formally and systematically. At the beginning of this project, I want to try more Arduino components and use the wonderful resources from this course. Additionally, I am so addicted to plush toys and fluffy stuff. So the concept of this project quickly came up in my head. Let me make some soft fluffy robot! 
 
 ![Here is the sketch](sketch2.jpg "Draft")
 
+In the process of designing this robot, I referred to some simple robot toys.
+
+![](image.png "https://miro.com/app/board/uXjVLI1K7Ds=/?moveToWidget=3458764606176414540&cot=14")
+
+![](image-1-.png "https://miro.com/app/board/uXjVLI1K7Ds=/?moveToWidget=3458764606177258504&cot=14")
+
+Thinking about the stucture and materials was a big challenge at the first stage. I realized I totally didn't know how and where I can buy all the materials. With my stickability in this project, I finally solved this problem after searching everywhere. More important thing is I got so many help from my classmates and Matti! I finally got nice fabric, metal mesh, needle!
+
 ![](屏幕截图-2024-12-09-213204.png)
+
+In the early stage of the design, I tried my best to make the robot more humane and act like a pet or a companion, so the voice, body language, movements, and expressions were all factors I needed to consider.
 
 ![](屏幕截图-2024-12-09-213154.png)
 
@@ -96,9 +106,17 @@ I like soldering, because it saved me from my messy wires and bread board. Every
 
 ![](微信图片_20241209223104.jpg "Process")
 
-
-
 ![](微信图片_20241209223155.jpg "Head~")
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
+
+Finally, this robot got a fancy name----Fat Baby! Indeed, it is fatter than I imagined. 
+
+![](featured.jpg "I made a poster!")
+
+
+
+
 
 
 
