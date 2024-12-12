@@ -21,7 +21,7 @@ In the process of designing this robot, I referred to some simple robot toys.
 
 ![](image-1-.png "https://miro.com/app/board/uXjVLI1K7Ds=/?moveToWidget=3458764606177258504&cot=14")
 
-Thinking about the stucture and materials was a big challenge at the first stage. I realized I totally didn't know how and where I can buy all the materials. With my stickability in this project, I finally solved this problem after searching everywhere. More important thing is I got so many help from my classmates and Matti! I finally got nice fabric, metal mesh, needle!
+Thinking about the structure and materials was a big challenge in the first stage. I realized I didn't know how and where I could buy all the materials. I had just arrived in Finland and was completely clueless about how to source materials. My previous experience was not applicable here. So I felt a little desperate at first because I didn’t even know where to buy cotton for filling. However, I finally solved this problem! I got so much help from my classmates and Matti! I finally got nice fabric, metal mesh, needle!
 
 ![](屏幕截图-2024-12-09-213204.png)
 
@@ -57,17 +57,26 @@ Unfortunately, neo pixels' and servo motors' libraries are conflicted with each 
 
 ![](微信图片_20241209223014.jpg)
 
+
+
+
+
+
+
+![](微信图片_20241209215009.jpg)
+
+
+
+
 Physical building stage:
 
 I used laser cut to make the bottom base and head base. 
 
-Using metal mesh and iron wire to make the structure(skeleton).
+Using metal mesh and iron wire to make the structure(skeleton). 
 
-![](微信图片_20241209215009.jpg)
+I also encountered some difficulties when assembling all the parts, such as it was difficult to fix the servo firmly to the frame, or the soft pressure sensor's value became unstable due to the cotton filling in the arm. It caused neo-pixel rings to blink. To solve the problem of flickering neon lights, Matti suggested to change the fixed value to the readable value. 
 
-Put all the electronic parts on the structure. 
 
-At this stage, everything went well until I found that the value of the pressure sensors wasn't stable when I sewed it with fabric and filler. It caused neo-pixel rings to blink. Finally, Matti suggested to change the fixed value to the readable value. 
 
 ```c
 int sensor1Min = 0;
@@ -107,6 +116,12 @@ I like soldering, because it saved me from my messy wires and bread board. Every
 ![](微信图片_20241209223104.jpg "Process")
 
 ![](微信图片_20241209223155.jpg "Head~")
+
+The last part I completed was the speaker. I wanted the robot to make different sounds based on the interaction between people and robots. But the trigger used by the speaker always had various problems.
+
+Doing this also made me realize that it is important to explore different libraries and hardware, and search for open source and helpful codes on the website for in-depth learning. I think the main reason why I felt that doing this project was difficult in the early stage was that I was not flexible enough in using Arduino. After a week of doing it, I obviously felt that I could understand both the circuit and the code more easily.
+
+This class helped me a lot. I know that this course is relatively hardcore, but what I learned from it cannot be compared with the pressure in the process.
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
 
