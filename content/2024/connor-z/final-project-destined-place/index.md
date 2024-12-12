@@ -15,8 +15,6 @@ This is an **Interactive Installation** designed for my friend's Capstone Projec
 
 Within the store, there is an experiential interactive installation. According to my friend's original design, its primary function is to provide customers with detailed chocolate-related information, such as origin, flavor profiles, and farm details. Additionally, it offers travel tips and recommendations related to the corresponding countries associated with the chocolates. Moreover, if customers have a specific flavor in mind, the installation can also guide them to the exact location of the desired chocolate within the store.
 
-
-
 **Thinking Process**
 
 When I first encountered this interactive installation, my initial reaction was that its potential should extend beyond mere navigation from an **experience design perspective**. Considering the overall atmosphere and design keywords of the Poloris chocolate store, customers are likely seeking more than functional or rational design—they’re looking for surprises and moments of delight that can’t be found in other stores.
@@ -27,5 +25,20 @@ The store features elements such as the **Aurora Borealis**, a **flat map of the
 
 (This is a rendered picture of the store)
 
-
 I also applied a bit of reverse thinking here: typically, customers visit a city first and then purchase souvenirs from that city (in this case, chocolate). However, I believe a more romantic approach would be to inspire customers to develop an interest in a city *because* of a piece of chocolate—planting the idea of “I want to travel there” in their minds.
+
+
+
+**Final Idea Polish**
+
+Based on the brainstorm I had above, I want to make an installation that connects customer, countries, and chocolate behind it, spiritually, to guide or help the customers to the destined place. 
+
+
+
+**Physical Controller**
+
+The interaction shouldn't be very complicated. I want to focus more on the visual programming part this time, because the simple action can increase the "mysterious" kind of feeling (I think). Also, I was sick during final weeks, so I need to simplify the physical controller part :(
+
+The idea comes from fortune-telling. I personally like tarot cards, as well as the traditional chinese fortune-teling called Ba Zi (the eight letters). 
+
+The concept I envisioned is that humans possess their own magnetic field or energy, which could be used in a fortune-telling style to determine the countries that best suit them—or the ones they might be drawn to. To achieve this, my initial idea was to use a touch sensor connected to an Arduino. When the touch sensor detects human contact, it returns a value that varies based on each person's unique electrical resistance. I aimed to use these variations to correspond with different countries.
