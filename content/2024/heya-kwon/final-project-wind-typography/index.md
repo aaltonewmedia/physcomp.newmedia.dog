@@ -6,6 +6,8 @@ authors:
 image: featured.png
 showBgImage: false
 ---
+![](featured.png)
+
 # Description
 
 If wind could write, what would its words look like? 
