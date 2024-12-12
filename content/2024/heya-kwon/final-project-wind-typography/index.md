@@ -49,6 +49,8 @@ Overall, I had a lot of fun working on Wind Typography. It was neat to combine m
 
 ![]()
 
+![](kakaotalk_photo_2024-12-05-13-03-33-002.jpeg)
+
 Studied the wind meter and connecting it to arduino via breadboard setup.
 
 ![](kakaotalk_photo_2024-12-05-13-02-03.jpeg)
