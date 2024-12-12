@@ -9,6 +9,8 @@ showBgImage: true
 ---
 **Destined Place**
 
+
+
 **Overview**
 
 This is an **Interactive Installation** designed for my friend's Capstone Project - **Poloris Conceptual Chocolate Store**. Poloris is a unique chocolate brand created by my friend, characterized by its innovative combination of travel and chocolate. The brand not only offers emotional value to customers but also encourages them to explore and visit new destinations while collecting chocolates from various cities.
