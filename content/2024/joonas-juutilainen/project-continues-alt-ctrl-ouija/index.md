@@ -392,7 +392,7 @@ Final setup inside the box:
 ![](img_2863-large.jpeg)
 
 \
-So, the code had a Demo Day Effect, ie. homing did not do too well if started from close to X 0.0. This should fix it, ie. moves first 20 from the current position and home after that (the Y homes first, then X).
+So, the machine suffered from a Demo Day Effect, ie. homing did not do too well if started from close to X 0.0. This should fix it, ie. moves first 20 from the current position and home after that (the Y homes first, then X).
 
 ```
 // Code with "Demo Day Effect" fix, NOT ACTUALLY TRIED YET ON THE MACHINE
