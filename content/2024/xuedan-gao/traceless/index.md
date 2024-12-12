@@ -77,6 +77,17 @@ In terms of visual design, we used snowflakes to represent the process of glacie
 
 #### Glacier
 
+** Deforum **
+Generate AI Glacier Video Using Stable Diffusion
+** Touch Designer **
+- Visual Effects Processing - Blob Tracking etc.
+- Audio-responsive Changes
+- Visualizing Data
+** Dataset **
+- Greenland Surface Melt Extent from NSIDC (National Snow and Ice Data Center)
+** Data Processing **
+- Converting Data to CSV format
+- Extract the Monthly Mean Melting Area of Greenland Surface from April to October 1979-2024 
 
 
 ![](screenshot-2024-12-12-at-5.08.03-pm.png)
