@@ -13,16 +13,16 @@ Ice has historically embodied dualities: during the Anthropocene, it symbolized 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lR1OMePhHwM?si=I5HTA8Ut6HAwjqsF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### Background
+## Background
 
-#### Glacial Ice Formation
+### Glacial Ice Formation
 
 * Snow gradually compresses into ice as layers build up annually 
 * Over time, it recrystallizes into firn, an intermediate state, and eventually becomes dense glacier ice. This process, which can take over a century, forms large ice crystals with minimal air pockets
 
   ![](screenshot-2024-12-12-at-2.52.03-am.png)
 
-#### Glacier Melting
+### Glacier Melting
 
 Glacier melting rapidly in the past two centuries is driven by:
 
@@ -33,7 +33,7 @@ Glacier melting rapidly in the past two centuries is driven by:
 
   ![](screenshot-2024-12-12-at-2.56.57-am.png)
 
-### Installation
+## Installation
 
 Our installation consists of a main body and 7 stone-shaped controllers. The main body is made of 0.5mm steel rods, with a block of ice on top. The ice melts into a 3D-printed funnel, and water drips onto a metal plate at the bottom. The controller is 3D printed using PLA with fiber material.
 
@@ -41,17 +41,17 @@ Our installation consists of a main body and 7 stone-shaped controllers. The mai
 
 ![](p1016811-copy-2.jpg)
 
-#### Refining Ideas Through Iterative Processes
+### Refining Ideas Through Iterative Processes
 
 ![](screenshot-2024-12-12-at-12.03.35-pm.png)
 
-### Interaction Design
+## Interaction Design
 
 * The behavior of humans does not control the process of ice;  
 * The sounds people make can merge with the sounds of ice to form an echo;
 * Humans cannot intervene, and any change will be embraced within the echo of the natural system.
 
-#### Content of Interaction
+### Content of Interaction
 
 * The main body is natural ice melting and dripping to create an overall ambient sound;
 * A human holds the controller distributed around the main body and gets visual (led) and audio (musical note) feedback;
@@ -60,11 +60,11 @@ Our installation consists of a main body and 7 stone-shaped controllers. The mai
 
   ![](controller.png)
 
-### Visual Design
+## Visual Design
 
 In terms of visual design, we used snowflakes to represent the process of glacier formation and a dataset of glacier monthly melting areas in Greenland in recent decades to represent the impact of human activities on natural rhythms.
 
-#### Snowflake
+### Snowflake
 
  **p5.js** 
 
@@ -80,7 +80,7 @@ Implement audio-visual interaction
 
 ![](screenshot-2024-12-12-at-5.07.25-pm.png)
 
-#### Glacier
+### Glacier
 
 **Deforum** 
 
@@ -106,21 +106,21 @@ Extract the Monthly Mean Melting Area of Greenland Surface from April to October
 
 ![](screenshot-2024-12-12-at-5.08.03-pm.png)
 
-### Sound Design
+## Sound Design
 
-### System Overview
+## System Overview
 
 This installation system combines hardware and software modules to achieve artistic expression through multi-level interaction. The sculpture contains a water pump, four LED lights and two contact microphones, which are used to control water flow, light and sound capture respectively, and are centrally managed by Arduino. We used a potentiometer to control the flow rate of the water pump and a button to control the switch of the LEDs. The controller module includes a capacitive touch sensor, 7 LED lights and 7 microphones for touch sensing and sound recording. Arduino, as the core control unit, receives sensor data from the sculpture and controller modules, transmits information to Max/MSP through serial communication, and controls the physical output of the device. The audio interface collects the microphone signal and passes it to Max/MSP, which further processes the data from the hardware and performs audio processing, and transmits the results to TouchDesigner through the OSC protocol. TouchDesigner generates real-time visual effects based on the input and presents them through projection.
 
 ![](screenshot-2024-12-11-at-4.06.39-pm.png)
 
-### Reflection
+## Reflection
 
-### Acknowledgments
+## Acknowledgments
 
 Special thanks to Matti for all the help throughout the process, Xiaoqi Wang for help with video shooting and exhibition setup, and Ron from the metal workshop for the support during the installation construction.
 
-### References
+## References
 
 1. <https://nsidc.org/learn/parts-cryosphere/glaciers#:~:text=Glaciers%20begin%20to%20form%20when,and%20shape%20of%20sugar%20grains>.
 2. <https://nsidc.org/data/g00472/versions/1> 
