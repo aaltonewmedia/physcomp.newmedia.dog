@@ -130,6 +130,14 @@ Due to the complexity of the visual programming part, I finally just used the ca
 
 It will return a "1" when detected touching, and it will return a "0" when there is nothing. 
 
+![](kkk.jpg)
+
+
+I went to the 3D printing lab to print the chocolate bite using the conductive material. I connected this to the touch sensor. 
+
+In the future, I want to print a whole chocolate box, and put the condictive chocolate bite in the center as the physical controller. 
+
+![](star.jpg)
 
 
 
@@ -187,6 +195,8 @@ Since the Poloris Chocolate Store has the aurora light strip, I docided to use t
 
 
 ***Intractive Star Wheel***
+
+
 When the capacitive touch sensor detects a touch input, the user needs visual feedback to know that the program has been activated. I utilized Polaris's logo and deconstructed it into different circular layers, each with unique effects and set to rotate in specific directions. Upon detecting input, the outermost two layers disappear, the entire Star Wheel expands, rotates, and moves to the right side of the screen. The ring representing lunar phases pauses at a specific phase depending on the detected country, displaying the corresponding color of that country. When the input is no longer detected, everything gracefully rotates back to its original position.
 
 ![](10.png)
@@ -274,3 +284,17 @@ def onSubrangeStart(timerOp):
 I integrated TouchDesigner with Stable Diffusion to generate unique landscape illustrations for different countries. Once you are assigned a country, the corresponding prompt is sent to the Computerender TD plugin, which starts generating the image. To ensure variety, even for the same country, I used noise to control the seed values, making each generated image distinct and non-repetitive.
 
 ![](13.png)
+
+And then, I add some effects to the ai picture to make it fits the theme. 
+
+![](14.png)
+
+
+
+
+
+**Finally, I added some details and composite them together**
+
+The final result looks like this: 
+
+![](15.png)
