@@ -17,6 +17,8 @@ Ice has historically embodied dualities: during the Anthropocene, it symbolized 
 
 ![](sketch.png)
 
+![](p1016811-copy-2.jpg)
+
 ### System Overview
 
 ![](screenshot-2024-12-11-at-4.06.39-pm.png)
