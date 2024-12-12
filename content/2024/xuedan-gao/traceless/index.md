@@ -17,8 +17,8 @@ Ice has historically embodied dualities: during the Anthropocene, it symbolized 
 
 #### Glacial Ice Formation
 
-* Snow gradually compresses into ice as layers build up annually. 
-* Over time, it recrystallizes into firn, an intermediate state, and eventually becomes dense glacier ice. This process, which can take over a century, forms large ice crystals with minimal air pockets.
+* Snow gradually compresses into ice as layers build up annually 
+* Over time, it recrystallizes into firn, an intermediate state, and eventually becomes dense glacier ice. This process, which can take over a century, forms large ice crystals with minimal air pockets
 
   ![](screenshot-2024-12-12-at-2.52.03-am.png)
 
@@ -61,6 +61,10 @@ Our installation consists of a main body and 7 stone-shaped controllers. The mai
   ![](controller.png)
 
 ### Visual Design
+
+![](screenshot-2024-12-12-at-5.07.25-pm.png)
+
+![](screenshot-2024-12-12-at-5.08.03-pm.png)
 
 ### Sound Design
 
