@@ -181,3 +181,88 @@ Since the Poloris Chocolate Store has the aurora light strip, I docided to use t
 6. Composite star tracks with the northern light background
 
 ![](9.png)
+
+
+
+
+
+***Intractive Star Wheel***
+When the capacitive touch sensor detects a touch input, the user needs visual feedback to know that the program has been activated. I utilized Polaris's logo and deconstructed it into different circular layers, each with unique effects and set to rotate in specific directions. Upon detecting input, the outermost two layers disappear, the entire Star Wheel expands, rotates, and moves to the right side of the screen. The ring representing lunar phases pauses at a specific phase depending on the detected country, displaying the corresponding color of that country. When the input is no longer detected, everything gracefully rotates back to its original position.
+
+![](10.png)
+
+![](11.png)
+
+
+To ensure smoother animations, I utilized SOP elements for various calculations. As the Star Wheel rotates to enhance the dynamic effect of the animation, I also applied subtle distortions to the lunar phase ring, allowing it to twist and gradually settle accurately into its designated position.
+
+
+![](12.png)
+
+**SOP Element Used:** 
+
+* Timer
+* Math
+* Filter
+* noise
+* etc
+
+I also write some codes on chopexec
+
+**Example code**
+
+```
+def onInitialize(timerOp, callCount):
+	return 0
+
+def onReady(timerOp):
+	return
+	
+def onStart(timerOp):
+	op('transform7').par.rotate = 0
+
+	return
+	
+def onTimerPulse(timerOp, segment):
+	return
+
+def whileTimerActive(timerOp, segment, cycle, fraction):
+	angle_value = op('return_val')[0]
+	op('transform7').par.rotate = angle_value
+	return
+
+def onSegmentEnter(timerOp, segment, interrupt):
+	return
+	
+def onSegmentExit(timerOp, segment, interrupt):
+	return
+
+def onCycleStart(timerOp, segment, cycle):
+	return
+
+def onCycleEndAlert(timerOp, segment, cycle, alertSegment, alertDone, interrupt):
+	return
+	
+def onCycle(timerOp, segment, cycle):
+	return
+
+def onDone(timerOp, segment, interrupt):
+	#const1_value = op('constant1')[0]
+
+	#op('transform7').par.rotate = const1_value
+	
+	
+	angle_value = op('return_val')[0]
+	
+	op('r_val_storage').par.const0value = angle_value
+	
+	
+	op('timer3').par.start.pulse()
+	
+	
+	
+	return
+
+def onSubrangeStart(timerOp):
+	return
+```
