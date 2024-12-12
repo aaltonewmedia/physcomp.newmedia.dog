@@ -41,6 +41,10 @@ Our installation consists of a main body and 7 stone-shaped controllers. The mai
 
 ![](p1016811-copy-2.jpg)
 
+#### Refining Ideas Through Iterative Processes
+
+![](screenshot-2024-12-12-at-12.03.35-pm.png)
+
 ### Interaction Design
 
 * The behavior of humans does not control the process of ice;  
