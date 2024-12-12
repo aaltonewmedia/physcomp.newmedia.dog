@@ -266,3 +266,11 @@ def onDone(timerOp, segment, interrupt):
 def onSubrangeStart(timerOp):
 	return
 ```
+
+
+
+
+**AI Generated Image**
+I integrated TouchDesigner with Stable Diffusion to generate unique landscape illustrations for different countries. Once you are assigned a country, the corresponding prompt is sent to the Computerender TD plugin, which starts generating the image. To ensure variety, even for the same country, I used noise to control the seed values, making each generated image distinct and non-repetitive.
+
+![](13.png)
