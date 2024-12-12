@@ -47,9 +47,13 @@ Overall, I had a lot of fun working on Wind Typography. It was neat to combine m
 
 # Journey
 
+![]()
+
 Studied the wind meter and connecting it to arduino via breadboard setup.
 
 ![](kakaotalk_photo_2024-12-05-13-02-03.jpeg)
+
+![](20241121_125135.jpg)
 
 Transferred the breadboard setup to a more robust shield setup.
 (Soldering was really fun)
