@@ -58,16 +58,32 @@ Studied the wind meter and connecting it to arduino via breadboard setup.
 Transferred the breadboard setup to a more robust shield setup.
 (Soldering was really fun)
 
+![](screen-shot-2024-12-12-at-2.52.27-pm.png)
+
 Installed the wind meter on the Marsio balcony. The battery ran out. And once the snow came the internet barely worked. Time for a new location.
+
+![](kakaotalk_photo_2024-12-05-12-55-19-001.jpeg)
 
 Installed the wind meter on the Varë balcony. Hands frozen but the meter works.
 
+![](wind-speed.png)
+
+![](wind-direction.png)
+
 Sent the data via Arduino to Adafruit IO where I could view and export the data as CSVs. 
+
+![](p5js-1202-mix.png)
 
 Converted the exported data into shapes on p5.js.
 
+![](p5_final3.png)
+
 Polished the rules on p5.js.
 
+
+
 Deployed my p5.js project and adjusting it to fit the dimensions of the exhibition monitor.
+
+
 
 Exhibited during Aalto Demo Day.
