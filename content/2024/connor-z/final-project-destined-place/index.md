@@ -163,3 +163,21 @@ Since the Poloris Chocolate Store has the aurora light strip, I docided to use t
 
 
 ***Background - Star Tracks Effect***
+
+1. noise TOP - modify the noise values to create a black and white image
+
+2. function - to filter stars based on their brightness level
+
+3. Threshold - leave only the brightest points as stars
+
+![](7.png)
+
+4. Feedback - to rotate the star and modify the opacity to create star tracks
+
+![](8.png)
+
+5. add effects to the star tracks - bloom, level etc. 
+
+6. Composite star tracks with the northern light background
+
+![](9.png)
