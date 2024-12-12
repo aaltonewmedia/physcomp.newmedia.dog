@@ -45,6 +45,8 @@ The concept I envisioned is that humans possess their own magnetic field or ener
 
 ![](2.jpg)
 
+
+
 Labraries Used
 [Adafruit MPR121 Library](https://adafruit.github.io/Adafruit_MPR121/html/index.html)
 
@@ -126,4 +128,28 @@ void loop() {
 
 Due to the complexity of the visual programming part, I finally just used the capacitive touch sensor to detect input, so there will only be one input detected, which in "0". 
 
-It will return a "1" when detected touching, and it will return a "0" when there is nothing.
+It will return a "1" when detected touching, and it will return a "0" when there is nothing. 
+
+
+
+
+**Visual Programming - Touch Designer**
+
+***Background - Constantly Changing Northern Light***
+
+Since the Poloris Chocolate Store has the aurora light strip, I docided to use this element as the background of the installation. 
+
+![](3.png)
+
+**Process of making**
+
+1. **noise** - turn off the monochrome to give noise a changing color, modify the value of period, harmonics, and amplitude to make it larger and more smooth. Use absTime.seconds to make it move by changing the translate and rotate. 
+2. resolution - 1920 x 1080
+3. fit - fit to the screen size
+4. level TOP - slightly change the color effect
+5.  Circle TOP - to make a circle and use noise SOPs to control the x, y movement, and scale. 
+
+
+
+   ![](4.png)
+6. Composite the moving circle with colorful bg, modify the effect as needed.
