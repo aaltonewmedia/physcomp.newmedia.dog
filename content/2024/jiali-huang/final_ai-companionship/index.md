@@ -35,3 +35,5 @@ At first I did this.
 ![](6914e00efa73771c56cb77fefd88308.png)
 
 ![](48030cda105ab168e81ef8dd61660bd.png)
+
+I want to develop this product into a commercialized offering.
