@@ -70,6 +70,10 @@ Our installation consists of a main body and 7 stone-shaped controllers. The mai
 
 ### Reflection
 
+### Acknowledgments
+
+Special thanks to Matti for all the help throughout the process and to Ron from the metal workshop for the support during the installation construction.
+
 ### References
 
 1. <https://nsidc.org/learn/parts-cryosphere/glaciers#:~:text=Glaciers%20begin%20to%20form%20when,and%20shape%20of%20sugar%20grains>.
