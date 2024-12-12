@@ -152,4 +152,14 @@ Since the Poloris Chocolate Store has the aurora light strip, I docided to use t
 
 
    ![](4.png)
-6. Composite the moving circle with colorful bg, modify the effect as needed.
+6. Composite the moving circle with colorful bg, modify the effect as needed. 
+7. Feedback - give it a more dynamic effect
+
+   ![](5.png)
+8. FeedbackEdge - pre-existing tool to add effect
+
+   ![](6.png)
+
+
+
+***Background - Star Tracks Effect***
