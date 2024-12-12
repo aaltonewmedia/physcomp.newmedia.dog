@@ -13,6 +13,8 @@ Ice has historically embodied dualities: during the Anthropocene, it symbolized 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lR1OMePhHwM?si=I5HTA8Ut6HAwjqsF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+### Background
+
 ### Installation
 
 Our installation consists of a main body and 7 stone-shaped controllers. The main body is made of 0.5mm steel rods, with a block of ice on top. The ice melts into a 3D-printed funnel, and water drips onto a metal plate at the bottom. The controller is 3D printed using PLA with fiber material.
@@ -21,10 +23,6 @@ Our installation consists of a main body and 7 stone-shaped controllers. The mai
 
 ![](p1016811-copy-2.jpg)
 
-### System Overview
-
-![](screenshot-2024-12-11-at-4.06.39-pm.png)
-
 ### Interaction Design
 
 * The behavior of humans does not control the process of ice;  
@@ -32,3 +30,11 @@ Our installation consists of a main body and 7 stone-shaped controllers. The mai
 * Humans cannot intervene, and any change will be embraced within the echo of the natural system.
 
   ![](controller.png)
+
+### Visual Design
+
+### Sound Design
+
+### System Overview
+
+![](screenshot-2024-12-11-at-4.06.39-pm.png)
