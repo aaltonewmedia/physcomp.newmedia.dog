@@ -390,3 +390,285 @@ Final setup inside the box:
 ![](img_2856-large.jpeg)
 
 ![](img_2863-large.jpeg)
+
+
+
+Code with "Demo Day Effect" fix, NOT ACTUALLY TRIED YET ON THE MACHINE
+
+```
+#include <SoftwareSerial.h>
+#include <stdlib.h>
+#include "Wire.h"
+#include "Adafruit_MPR121.h"
+
+const int TX_PIN = 1;
+const int RX_PIN = 0;
+const int BUTTON_PIN = 2;
+SoftwareSerial grblSerial(RX_PIN, TX_PIN);
+
+Adafruit_MPR121 cap = Adafruit_MPR121();
+
+const int touchPad = 0;
+bool touchEnabled = true;
+unsigned long lastTouchTime = 0;
+const int debounceDelay = 50;
+
+int touchThreshold = 10;
+int releaseThreshold = 6;
+
+struct LetterCoord {
+  char letter;
+  float x;
+  float y;
+};
+
+void sendCommand(const char *command, bool waitForOk = true);
+void sendGCode(const char *command, float x, float y, bool includeDelay = true);
+void generateGCode(const char *sentence);
+bool isTouchDetected();
+const char *selectRandomSentence();
+LetterCoord findLetterCoord(char letter);
+bool isWithinBounds(float x, float y);
+void waitUntilIdle();
+
+LetterCoord alphabet[] = {
+  {'A', 0.00, 220.00}, {'B', 25.00, 245.00}, {'C', 45.00, 265.00},
+  {'D', 70.00, 280.00}, {'E', 95.00, 295.00}, {'F', 125.00, 305.00},
+  {'G', 150.00, 310.00}, {'H', 185.00, 310.00}, {'I', 215.00, 310.00},
+  {'J', 230.00, 305.00}, {'K', 260.00, 295.00}, {'L', 285.00, 280.00},
+  {'M', 310.00, 265.00}, {'N', 335.00, 245.00}, {'O', 355.00, 220.00},
+  {'P', 45.00, 195.00}, {'Q', 65.00, 215.00}, {'R', 95.00, 235.00},
+  {'S', 115.00, 245.00}, {'T', 145.00, 255.00}, {'U', 175.00, 260.00},
+  {'V', 205.00, 255.00}, {'W', 240.00, 245.00}, {'X', 270.00, 235.00},
+  {'Y', 295.00, 215.00}, {'Z', 315.00, 195.00}, {' ', 180.00, 205.00}
+};
+
+LetterCoord step1 = {'1', 180.0, 75.0};
+LetterCoord step2 = {'2', 180.0, 145.0};
+
+const char *sentenceList[] = {
+  "LUCK IS NEAR", "TROUBLE LIES AHEAD", "WEALTH IS COMING",
+  "LOSS MAY HURT", "LOVE WILL GROW", "A FRIEND BETRAYS",
+  "DREAMS COME TRUE", "MISTAKES WILL COST", "HELP IS NEAR",
+  "HEALTH MAY WORSEN", "SUCCESS IS YOURS", "LIES WILL SPREAD",
+  "A GIFT AWAITS", "TRUST MAY BREAK", "JOY SURROUNDS YOU",
+  "ANGER WILL RISE", "HAPPINESS IS NEAR", "FEAR WILL TEST",
+  "TRAVEL BRINGS JOY", "DANGER APPROACHES", "PEACE FILLS YOU",
+  "REGRET WILL LINGER", "FORTUNE FAVORS YOU", "A SECRET HURTS",
+  "HOPE GUIDES YOU", "LOSS WILL PASS", "FRIENDS WILL HELP",
+  "FATE WILL INTERVENE", "LIGHT SHINES AHEAD", "DARKNESS MAY RETURN",
+  "DANGER IN MARSIO", "BEWARE OF PLANTS", "AVOID FOOTBALLS",
+  "YOU LOOK GOOD IN SKIRTS", "GOSSIP LESS", "GOSSIP MORE",
+  "YOU WILL SEE RED", "GO TO THE SEA", "BLACK CAT WILL APPEAR",
+  "ENJOY WHILE IT LASTS", "VIVA LA VIDA", "COMMIT TAX FRAUD",
+  "I KNOW WHAT YOU DID", "EVERYONE LOVES RATS", "EAT BANANAS",
+  "TODAY IS YOUR DAY", "SLEEP WELL", "LOOK BACK", "I LOVE YOU",
+  "NEVER GIVE UP", "MATRIX HAUNTS YOU", "SEED YOUR FUTURE",
+  "SHEEP WILL RISE", "IT WILL BE OVER SOON", "BEWARE OF SUCCESS",
+  "HANG IN THERE", "BOTTOMS UP", "BEER NEVER ENDS", "DONT PANIC",
+  "BIG CHICKEN COMING", "HELP IM IN THE BOX", "CATS WILL TAKE OVER",
+  "ENEMY IN AGRID", "ASK FOR PARANOID", "ART WILL OVERCOME", "YOU MAY TRIP",
+  "TRUST STRANGERS", "ALWAYS GO LEFT", "DONT BE AFRAID", "DEMO EFFECT DAY",
+  "NEXT ONE WILL WORK", "NEVER GROW UP", "I AM BEHIND YOU"
+};
+const int sentenceCount = sizeof(sentenceList) / sizeof(sentenceList[0]);
+
+void setup() {
+  Serial.begin(115200);
+  grblSerial.begin(115200);
+  Wire1.begin();
+
+  if (!cap.begin(0x5A, &Wire1)) {
+    Serial.println("MPR121 not found, check wiring?");
+    while (1);
+  }
+  Serial.println("MPR121 found!");
+
+  cap.setThresholds(touchThreshold, releaseThreshold);
+
+  Serial.println("Waiting for plotter to initialize...");
+  delay(3000);
+
+  Serial.println("Initializing GRBL...");
+
+  sendCommand("$X");
+  delay(500);
+  
+// This is the Demo Day Effect Fix: move 20mm before homing
+sendCommand("G21"); // use mm
+sendCommand("G91"); // use incremental positioning
+sendCommand("G17"); // XY plane, just in case
+sendCommand("G1 X20 F1000"); // move 20 mm
+sendCommand("G90"); // back to absolute pos
+delay(500);
+
+  sendCommand("$H");
+  delay(500);
+
+  sendCommand("G92 X0 Y0");
+  Serial.println("Set (0,0) after homing");
+
+  Serial.println("Initialization Complete. Ready for Commands.");
+}
+
+void loop() {
+  if (touchEnabled && isTouchDetected()) {
+    touchEnabled = false;
+    Serial.println("Touch detected. Starting plot...");
+
+    const char *randomSentence = selectRandomSentence();
+
+    generateGCode(randomSentence);
+
+    Serial.println("Plot complete. Touch re-enabled.");
+    touchEnabled = true;
+  }
+}
+
+const char *selectRandomSentence() {
+  int randomIndex = random(0, sentenceCount);
+  return sentenceList[randomIndex];
+}
+
+LetterCoord findLetterCoord(char letter) {
+  letter = toupper(letter);
+  for (int i = 0; i < sizeof(alphabet) / sizeof(alphabet[0]); i++) {
+    if (alphabet[i].letter == letter) {
+      return alphabet[i];
+    }
+  }
+  return {'?', 0.0, 0.0};
+}
+
+void generateGCode(const char *sentence) {
+  Serial.println("; Program Start");
+  sendCommand("G21 ; Set units to millimeters");
+  sendCommand("G90 ; Absolute positioning");
+  sendCommand("G17 ; Select XY plane");
+
+  sendGCode("G0", 0.0, 0.0, false);
+
+  Serial.print("; BEGIN: ");
+  Serial.println(sentence);
+
+  sendGCode("G0", step1.x, step1.y);
+  sendGCode("G0", step2.x, step2.y);
+
+  for (int i = 0; sentence[i] != '\0'; i++) {
+    char letter = sentence[i];
+    LetterCoord currentCoord = findLetterCoord(letter);
+
+    if (currentCoord.letter == '?') continue;
+
+    if (i > 0) {
+      char previousLetter = sentence[i - 1];
+      LetterCoord previousCoord = findLetterCoord(previousLetter);
+
+      if (toupper(letter) == toupper(previousLetter)) {
+        sendCommand("G4 P1");
+
+        float detourY = previousCoord.y - 30.0;
+        if (detourY < 0) detourY = 0;
+
+        sendGCode("G0", previousCoord.x, detourY, false);
+        sendGCode("G0", previousCoord.x, previousCoord.y, false);
+
+        sendCommand("G4 P1");
+      }
+    }
+
+    sendGCode("G0", currentCoord.x, currentCoord.y);
+    waitUntilIdle();
+  }
+
+  sendGCode("G0", 0.0, 0.0, true);
+  waitUntilIdle();
+
+  Serial.println("; Program End");
+  Serial.print("; END: ");
+  Serial.println(sentence);
+}
+
+void sendGCode(const char *command, float x, float y, bool includeDelay) {
+  if (!isWithinBounds(x, y)) {
+    Serial.println("Warning: Coordinate out of bounds. Command skipped.");
+    return;
+  }
+
+  char xStr[10], yStr[10];
+  dtostrf(x, 1, 2, xStr);
+  dtostrf(y, 1, 2, yStr);
+
+  String gcode = String(command) + " X" + xStr + " Y" + yStr;
+  sendCommand(gcode.c_str());
+
+  if (includeDelay) {
+    sendCommand("G4 P1");
+    waitUntilIdle();
+  }
+}
+
+void sendCommand(const char *command, bool waitForOk) {
+  grblSerial.println(command);
+  Serial.print("Sent: ");
+  Serial.println(command);
+
+  if (waitForOk) {
+    unsigned long startTime = millis();
+    while (true) {
+      if (grblSerial.available() > 0) {
+        String response = grblSerial.readStringUntil('\n');
+        response.trim();
+        Serial.println("Response: " + response);
+        if (response.equals("ok")) break;
+        if (response.startsWith("error")) {
+          Serial.println("GRBL Error: " + response);
+          break;
+        }
+      }
+      if (millis() - startTime > 5000) {
+        Serial.println("Warning: Timeout while waiting for OK.");
+        break;
+      }
+    }
+  }
+}
+
+bool isTouchDetected() {
+  uint16_t touchState = cap.touched();
+  if (touchState & (1 << touchPad)) {
+    unsigned long currentTime = millis();
+    if ((currentTime - lastTouchTime) > debounceDelay) {
+      lastTouchTime = currentTime;
+      return true;
+    }
+  }
+  return false;
+}
+
+bool isWithinBounds(float x, float y) {
+  return (x >= 0 && x <= 370 && y >= 0 && y <= 350);
+}
+
+void waitUntilIdle() {
+  unsigned long startTime = millis();
+  while (true) {
+    grblSerial.println("?");
+    delay(500);
+
+    if (grblSerial.available() > 0) {
+      String status = grblSerial.readStringUntil('\n');
+      Serial.println("Status: " + status);
+
+      if (status.startsWith("<Idle")) {
+        break;
+      }
+    }
+
+    if (millis() - startTime > 10000) {
+      Serial.println("Warning: Timeout while waiting for idle state.");
+      break;
+    }
+  }
+}
+```
