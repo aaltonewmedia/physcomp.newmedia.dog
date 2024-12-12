@@ -7,7 +7,7 @@ image: featured-image.jpeg
 bgimage: background.jpg
 showBgImage: false
 ---
-Traceless is an interactive sound sculpture with visual projections. It invites audiences to engage with its narrative through handheld controllers. The project centers on ice as both a medium and a collaborator, exploring its transformative qualities during the melting process to highlight the active ﻿role of nonhuman entities in shaping our environment.
+Traceless is an interactive sound sculpture with visual projections. It invites audiences to engage with its narrative through handheld controllers. The project centers on ice as both a medium and a collaborator, exploring its transformative qualities during the melting process to show the active ﻿role of nonhuman entities in shaping our environment.
 
 Ice has historically embodied dualities: during the Anthropocene, it symbolized fragility and retreat, yet in the age of glaciers, it wielded immense power, dwarfing human existence. By amplifying the visual and auditory shifts as the ice melts, the project contrasts two temporal scales: the slow, expansive timeline of glacial formation and the rapid, human-accelerated pace of their current retreat. Traceless envisions a de-anthropocentric future, inviting audiences to reconsider how human intervention has reshaped natural processes.
 
@@ -17,16 +17,14 @@ Ice has historically embodied dualities: during the Anthropocene, it symbolized 
 
 ![](sketch.png)
 
-![](installation.jpg)
-
 ### System Overview
 
 ![](screenshot-2024-12-11-at-4.06.39-pm.png)
-
-
 
 ### Interaction Design
 
 * The behavior of humans does not control the process of ice;  
 * The sounds people make can merge with the sounds of ice to form an echo.
 * Humans cannot intervene, and any change will be embraced within the echo of the natural system.
+
+  ![](controller.png)
