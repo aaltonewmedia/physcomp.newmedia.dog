@@ -17,8 +17,8 @@ Ice has historically embodied dualities: during the Anthropocene, it symbolized 
 
 #### Glacial Ice Formation
 
-* Snow gradually compresses into ice as layers build up annually. 
-* Over time, it recrystallizes into firn, an intermediate state, and eventually becomes dense glacier ice. This process, which can take over a century, forms large ice crystals with minimal air pockets.
+- Snow gradually compresses into ice as layers build up annually. 
+- Over time, it recrystallizes into firn, an intermediate state, and eventually becomes dense glacier ice. This process, which can take over a century, forms large ice crystals with minimal air pockets.
 
   ![](screenshot-2024-12-12-at-2.52.03-am.png)
 
@@ -26,10 +26,10 @@ Ice has historically embodied dualities: during the Anthropocene, it symbolized 
 
 Glacier melting rapidly in the past two centuries is driven by:
 
-* Fossil fuel combustion: CO2 and methane emissions causing global warming
-* Deforestation: Reduced carbon absorption capacity
-* Urbanization & agriculture
-* Industrialization
+- Fossil fuel combustion: CO2 and methane emissions causing global warming
+- Deforestation: Reduced carbon absorption capacity
+- Urbanization & agriculture
+- Industrialization
 
   ![](screenshot-2024-12-12-at-2.56.57-am.png)
 
