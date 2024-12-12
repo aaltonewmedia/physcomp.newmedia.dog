@@ -44,14 +44,14 @@ Our installation consists of a main body and 7 stone-shaped controllers. The mai
 ### Interaction Design
 
 * The behavior of humans does not control the process of ice;  
-* The sounds people make can merge with the sounds of ice to form an echo.
+* The sounds people make can merge with the sounds of ice to form an echo;
 * Humans cannot intervene, and any change will be embraced within the echo of the natural system.
 
 #### Content of Interaction
 
-* The main body is natural ice melting and dripping to create an overall ambient sound
-* A human holds the controller distributed around the main body and gets visual (led) and audio (musical note) feedback
-* The human creates sound against the sensor (small microphone), and the sound blends and reverberates with the sound of falling water drops.
+* The main body is natural ice melting and dripping to create an overall ambient sound;
+* A human holds the controller distributed around the main body and gets visual (led) and audio (musical note) feedback;
+* The human creates sound against the sensor (small microphone), and the sound blends and reverberates with the sound of falling water drops;
 * When each sensor receives touch from a human, the visual projected behind it goes from snowflake to glacier.
 
   ![](controller.png)
