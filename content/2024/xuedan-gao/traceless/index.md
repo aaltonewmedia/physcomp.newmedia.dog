@@ -7,9 +7,9 @@ image: featured-image.jpeg
 bgimage: background.jpg
 showBgImage: false
 ---
-1. Traceless is an interactive sound sculpture with visual projections. It invites audiences to engage with its narrative through handheld controllers. The project centers on ice as both a medium and a collaborator, exploring its transformative qualities during the melting process to show the active ﻿role of nonhuman entities in shaping our environment.
+*Traceless* is an interactive sound sculpture with visual projections. It invites audiences to engage with its narrative through handheld controllers. The project centers on ice as both a medium and a collaborator, exploring its transformative qualities during the melting process to show the active ﻿role of nonhuman entities in shaping our environment.
 
-Ice has historically embodied dualities: during the Anthropocene, it symbolized fragility and retreat, yet in the age of glaciers, it wielded immense power, dwarfing human existence. By amplifying the visual and auditory shifts as the ice melts, the project contrasts two temporal scales: the slow, expansive timeline of glacial formation and the rapid, human-accelerated pace of their current retreat. Traceless envisions a de-anthropocentric future, inviting audiences to reconsider how human intervention has reshaped natural processes.
+Ice has historically embodied dualities: during the Anthropocene, it symbolized fragility and retreat, yet in the age of glaciers, it wielded immense power, dwarfing human existence. By amplifying the visual and auditory shifts as the ice melts, the project contrasts two temporal scales: the slow, expansive timeline of glacial formation and the rapid, human-accelerated pace of their current retreat. *Traceless* envisions a de-anthropocentric future, inviting audiences to reconsider how human intervention has reshaped natural processes.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lR1OMePhHwM?si=I5HTA8Ut6HAwjqsF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -17,8 +17,8 @@ Ice has historically embodied dualities: during the Anthropocene, it symbolized 
 
 #### Glacial Ice Formation
 
-- Snow gradually compresses into ice as layers build up annually. 
-- Over time, it recrystallizes into firn, an intermediate state, and eventually becomes dense glacier ice. This process, which can take over a century, forms large ice crystals with minimal air pockets.
+* Snow gradually compresses into ice as layers build up annually. 
+* Over time, it recrystallizes into firn, an intermediate state, and eventually becomes dense glacier ice. This process, which can take over a century, forms large ice crystals with minimal air pockets.
 
   ![](screenshot-2024-12-12-at-2.52.03-am.png)
 
@@ -26,10 +26,10 @@ Ice has historically embodied dualities: during the Anthropocene, it symbolized 
 
 Glacier melting rapidly in the past two centuries is driven by:
 
-- Fossil fuel combustion: CO2 and methane emissions causing global warming
-- Deforestation: Reduced carbon absorption capacity
-- Urbanization & agriculture
-- Industrialization
+* Fossil fuel combustion: CO2 and methane emissions causing global warming
+* Deforestation: Reduced carbon absorption capacity
+* Urbanization & agriculture
+* Industrialization
 
   ![](screenshot-2024-12-12-at-2.56.57-am.png)
 
