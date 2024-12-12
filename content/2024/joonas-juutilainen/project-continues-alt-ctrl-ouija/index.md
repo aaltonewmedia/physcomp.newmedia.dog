@@ -392,7 +392,7 @@ Final setup inside the box:
 ![](img_2863-large.jpeg)
 
 \
-So, the machine suffered from a Demo Day Effects, one being that the homing did not do too well if started from close to X 0.0. This should fix it, ie. the fix moves the magnet 20mm from the current position before homing (the Y homes first, then X).
+So, the machine suffered from some Demo Day Effects, one being that the homing did not do too well if started from close to X 0.0. This should fix it, ie. the fix moves the magnet 20mm from the current position before homing (the Y homes first, then X).
 
 ```
 // Code with "Demo Day Effect" fix, NOT ACTUALLY TRIED YET ON THE MACHINE
