@@ -298,3 +298,9 @@ And then, I add some effects to the ai picture to make it fits the theme.
 The final result looks like this: 
 
 ![](15.png)
+
+There are 7 contries total. 
+
+
+
+**Reflection**
