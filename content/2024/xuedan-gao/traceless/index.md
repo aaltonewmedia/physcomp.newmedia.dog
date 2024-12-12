@@ -72,7 +72,7 @@ Our installation consists of a main body and 7 stone-shaped controllers. The mai
 
 ### Acknowledgments
 
-Special thanks to Matti for all the help throughout the process and to Ron from the metal workshop for the support during the installation construction.
+Special thanks to Matti for all the help throughout the process, Xiaoqi Wang for help with video shooting and exhibition setup, and Ron from the metal workshop for the support during the installation construction.
 
 ### References
 
