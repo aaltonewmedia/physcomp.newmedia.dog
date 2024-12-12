@@ -41,7 +41,7 @@ Because I want to make a very soft robot, the sensors shouldn't be too hard. I m
 
 ![](微信图片_20241209214958.jpg)
 
-In the beginning, I planned to use an LED display to show the robot's face and express different emotions. Due to the material and budget, I finally chose this Neo pixel ring as blush on the cheek. 
+In the beginning, I planned to use an LED display to show the robot's face and express different emotions. Due to the material and budget, I finally chose this Neo pixel ring as the blush on the cheek. 
 
 When people touch or squeeze the arms(pressure sensors), neo-pixel rings will turn on.
 
@@ -49,7 +49,7 @@ When people touch or squeeze the arms(pressure sensors), neo-pixel rings will tu
 
 ![](微信图片_20241209223048.jpg "This is the first attempt at combining the pressure sensor and the robot's arm. ")
 
-After testing all parts of the robot, I realized that I used so many components. There are 4 servo motors, 2 neo pixels rings, 3 pressure sensors, 2 distance sensors and 1 speaker, which were very challenging and unfamiliar for me. Also, I was not very clear with all stuff's names in English. Everything seemed difficult for me. 
+After testing all parts of the robot, I realized that I used so many components. There are 4 servo motors, 2 neo pixels rings, 3 pressure sensors, 2 distance sensors and 1 speaker, which were very challenging and unfamiliar for me. Also, I was not very clear with all the names in English. Everything seemed difficult for me. 
 
 However, after a week of exploration and learning, I gradually understood the connection and structure between my work and Arduino. Then everything became clearer, even the progress was quite tortuous. 
 
@@ -67,14 +67,13 @@ Unfortunately, neo pixels' and servo motors' libraries are conflicted with each 
 
 
 
-
 Physical building stage:
 
 I used laser cut to make the bottom base and head base. 
 
 Using metal mesh and iron wire to make the structure(skeleton). 
 
-I also encountered some difficulties when assembling all the parts, such as it was difficult to fix the servo firmly to the frame, or the soft pressure sensor's value became unstable due to the cotton filling in the arm. It caused neo-pixel rings to blink. To solve the problem of flickering neon lights, Matti suggested to change the fixed value to the readable value. 
+I also encountered some difficulties when assembling all the parts, such as it was difficult to fix the servo firmly to the frame, or the soft pressure sensor's value became unstable due to the cotton filling in the arm. It caused neo-pixel rings to blink. To solve the problem of flickering neon lights, Matti suggested changing the fixed value to the readable value. 
 
 
 
@@ -103,11 +102,11 @@ int sensor3Max = 0;
 
 Soldering stage!
 
-I like soldering, because it saved me from my messy wires and bread board. Everything bacame so clear!!!
+I like soldering because it saved me from my messy wires and breadboard. Everything became so clear!!!
 
 ![](微信图片_20241209223130.jpg)
 
-![](微信图片_20241209223120.jpg)
+![]()
 
 组装
 
@@ -117,9 +116,9 @@ I like soldering, because it saved me from my messy wires and bread board. Every
 
 ![](微信图片_20241209223155.jpg "Head~")
 
-The last part I completed was the speaker. I wanted the robot to make different sounds based on the interaction between people and robots. But the trigger used by the speaker always had various problems.
+The last part I completed was the speaker. I wanted the robot to make different sounds based on the interaction between people and robots. However the trigger used by the speaker always had various problems.
 
-Doing this also made me realize that it is important to explore different libraries and hardware, and search for open source and helpful codes on the website for in-depth learning. I think the main reason why I felt that doing this project was difficult in the early stage was that I was not flexible enough in using Arduino. After a week of doing it, I obviously felt that I could understand both the circuit and the code more easily.
+Doing this also made me realize that it is important to explore different libraries and hardware, and search for open source and helpful codes on the website for in-depth learning. I think the main reason why I felt that doing this project was difficult in the early stage was that I was not flexible enough in using Arduino. After a week of doing it, I felt that I could understand both the circuit and the code more easily.
 
 This class helped me a lot. I know that this course is relatively hardcore, but what I learned from it cannot be compared with the pressure in the process.
 
@@ -411,3 +410,7 @@ void loop() {
   delay(100);
 }
 ```
+
+More possibilities for improvement:
+
+I hope to make a series of furry robots in the future, including robots of different sizes and shapes. With this experience, I will improve the form of interaction in the future. In addition, I will control the size and shape of the pressure sensor more accurately, and use more I2C sensors, such as capacitive touch sensor. At the same time, I will also pay attention to some operating techniques, I will better avoid short circuits, and debug faster.
