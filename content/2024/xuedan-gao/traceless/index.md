@@ -15,6 +15,8 @@ Ice has historically embodied dualities: during the Anthropocene, it symbolized 
 
 ### Installation
 
+Our installation consists of a main body and 7 stone-shaped controllers. The main body is made of 0.5mm steel rods, with a block of ice on top. The ice melts into a 3D-printed funnel, and water drips onto a metal plate at the bottom. The controller is 3D printed using PLA with fiber material.
+
 ![](sketch.png)
 
 ![](p1016811-copy-2.jpg)
