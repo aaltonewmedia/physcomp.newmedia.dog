@@ -106,9 +106,7 @@ I like soldering because it saved me from my messy wires and breadboard. Everyth
 
 ![](微信图片_20241209223130.jpg)
 
-![]()
 
-组装
 
 ![](微信图片_20241209223147.jpg)
 
@@ -413,4 +411,4 @@ void loop() {
 
 More possibilities for improvement:
 
-I hope to make a series of furry robots in the future, including robots of different sizes and shapes. With this experience, I will improve the form of interaction in the future. In addition, I will control the size and shape of the pressure sensor more accurately, and use more I2C sensors, such as capacitive touch sensor. At the same time, I will also pay attention to some operating techniques, I will better avoid short circuits, and debug faster.
+I hope to make a series of fluffy robots in the future, including robots of different sizes and shapes. With this experience, I will improve the form of interaction in the future. In addition, I will control the size and shape of the pressure sensor more accurately, and use more I2C sensors, such as capacitive touch sensor. At the same time, I will also pay attention to some operating techniques, I will better avoid short circuits, and debug faster.
