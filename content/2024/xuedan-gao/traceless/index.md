@@ -43,6 +43,8 @@ Our installation consists of a main body and 7 stone-shaped controllers. The mai
 
 ![](screenshot-2024-12-11-at-4.06.39-pm.png)
 
+### Reflection
+
 ### References
 
 1. <https://nsidc.org/learn/parts-cryosphere/glaciers#:~:text=Glaciers%20begin%20to%20form%20when,and%20shape%20of%20sugar%20grains>.
