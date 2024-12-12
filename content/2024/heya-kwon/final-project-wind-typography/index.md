@@ -72,9 +72,11 @@ Installed the wind meter on the Varë balcony. Hands frozen but the meter works.
 
 ![](wind-direction.png)
 
+
+
 ![](kakaotalk_photo_2024-12-05-12-55-19-002.jpeg)
 
-Sent the data via Arduino to Adafruit IO where I could view and export the data as CSVs (feat. frozen hands in Alepa gloves)
+Sent the data via Arduino to Adafruit IO where I could view and export the data as CSVs (feat. Alepa gloves)
 
 ![](p5js-1202-mix.png)
 
