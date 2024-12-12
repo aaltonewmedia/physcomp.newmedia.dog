@@ -84,12 +84,14 @@ Converted the exported data into shapes on p5.js.
 
 ![](p5_final3.png)
 
-Polished the rules on p5.js.
+Polished the codes/rules on p5.js.
 
  
+
+![](download.png)
 
 ![](20241211_144833.jpg)
 
 ![](20241211_165557.jpg)
 
-Deployed my p5.js project and adjusting it to fit the dimensions of the exhibition monitor. Exhibited during Aalto Demo Day.
+Deployed my p5.js project and adjusted it to fit the dimensions of the exhibition monitor. Exhibited during Aalto Demo Day.
