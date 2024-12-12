@@ -3,7 +3,7 @@ title: FINAL_AI COMPANIONSHIP
 date: 2024-12-12T22:12:00.000Z
 authors:
   - Jiali Huang
-image: 48030cda105ab168e81ef8dd61660bd.png
+image: featured.png
 showBgImage: true
 ---
 **Process**
