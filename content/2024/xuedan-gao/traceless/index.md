@@ -24,6 +24,15 @@ Ice has historically embodied dualities: during the Anthropocene, it symbolized 
 
 #### Glacier Melting
 
+Glacier melting rapidly in the past two centuries is driven by:
+
+* Fossil fuel combustion: CO2 and methane emissions causing global warming
+* Deforestation: Reduced carbon absorption capacity
+* Urbanization & agriculture
+* Industrialization
+
+  ![](screenshot-2024-12-12-at-2.56.57-am.png)
+
 ### Installation
 
 Our installation consists of a main body and 7 stone-shaped controllers. The main body is made of 0.5mm steel rods, with a block of ice on top. The ice melts into a 3D-printed funnel, and water drips onto a metal plate at the bottom. The controller is 3D printed using PLA with fiber material.
