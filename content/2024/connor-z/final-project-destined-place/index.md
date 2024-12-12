@@ -301,6 +301,8 @@ The final result looks like this:
 
 There are 7 contries total. 
 
+![](photo.jpg)
+
 
 
 **Reflection**
@@ -311,3 +313,6 @@ Ultimately, I chose to use TouchDesigner for this installation because, compared
 
 
 This attempt also gave me a foundational understanding of working with 2D in TouchDesigner. I explored many concepts and implemented features that I couldn’t find tutorials for, such as controlling the animation of the Star Wheel. This process pushed me to experiment and problem-solve independently, which was both challenging and rewarding.
+
+
+In this project, I also experimented with various sensors and motors. Although the initial directions weren’t fully realized, I gained valuable experience. When integrating sensors with TouchDesigner, the primary difference lies in the type of data being transmitted, regardless of the physical controller's form. For instance, I experimented with using a distance sensor to influence the rotation of the Star Wheel by sending its data to TouchDesigner. While I successfully implemented this interaction, I ultimately decided not to use it in the final project.
