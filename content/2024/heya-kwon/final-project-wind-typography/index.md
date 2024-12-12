@@ -22,14 +22,9 @@ Wind Typography is a visualization of wind data based on imagined typographic ru
 * For all other winds, draw a stroke that starts from the previous ending point (if it is the first stroke of its unit, start from the center of the grid). The stroke’s length reflects the wind speed while the angle reflects the wind direction.
 * Combine 5 different winds to create one unit. This is similar to how Hangul works, where 5 separate letters (represented by lines, circles, squares, etc.) combine into a single syllabic unit. Those syllabic units are then combined into words.
 
-
-
 # Reflection
 
-
 Before working on this project, I had no experience with physical computing and very little experience using p5.js. After the project, I feel like I have learned a lot in both realms. 
-
-### 
 
 <b>On creative coding using p5.js:</b> My experience with p5.js was very shallow before this semester. I had worked on a couple small p5.js projects, but for those I refrained from drawing anything on p5.js to save time; instead, I depended heavily on image files (PNG) to create my results. This time, I decided to challenge myself and create every shape (and even some text) as vectors using p5.js code. It was confusing to learn at first but definitely worth it as this approach gave me more control over the shapes. I also learned many of the p5.js built-in functions (draw(), mouseClicked(), mouseWheel(), dist(), map(), lerp(), and more). Also, I’m proud of myself for re-learning middle school math / trigonometry to create some of the shapes.
 
@@ -50,9 +45,9 @@ Overall, I had a lot of fun working on Wind Typography. It was neat to combine m
 
 # Journey
 
-
-
 Studied the wind meter and connecting it to arduino via breadboard setup.
+
+![](kakaotalk_photo_2024-12-05-13-02-03.jpeg)
 
 Transferred the breadboard setup to a more robust shield setup.
 (Soldering was really fun)
