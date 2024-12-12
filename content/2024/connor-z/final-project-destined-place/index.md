@@ -308,3 +308,6 @@ There are 7 contries total.
 When I initially decided to use TouchDesigner for this project, I encountered numerous challenges. My experience with TouchDesigner was quite limited—this was essentially only my second project using the software. I tried following various tutorials to create fancy effects and interactions, but I realized that with my current understanding of TD, it was difficult to adapt or innovate beyond what the tutorials provided. The challenge wasn’t so much about "not knowing how to do something," but rather "not knowing what to do" or "not knowing what TD was capable of."
 
 Ultimately, I chose to use TouchDesigner for this installation because, compared to the artistic projects featured in tutorials, this interactive installation felt more practical and grounded. I already had a clear vision for the direction of the project in my mind—I just needed to figure out how to bring it to life.
+
+
+This attempt also gave me a foundational understanding of working with 2D in TouchDesigner. I explored many concepts and implemented features that I couldn’t find tutorials for, such as controlling the animation of the Star Wheel. This process pushed me to experiment and problem-solve independently, which was both challenging and rewarding.
