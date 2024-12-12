@@ -10,7 +10,7 @@ showBgImage: false
 
 ![](featured.jpg)
 
-## Basic concept: 
+## Basic concept:
 
 My initial inspiration was the sensation of drawing with finger on sand. Hence, I wanted to focus on the touch and how it feels on one's finger to draw slowly a spiral. The optimal controller would have a soft furrow that does not have any sharp edges. One important factor for me is also the beauty of the controller so that it would invite you to touch it.
 
@@ -61,8 +61,6 @@ The sensor detects multiple touches, the location and the size of the touch. The
 ```html
 <script src="https://unpkg.com/@gohai/p5.webserial@^1/libraries/p5.webserial.js"></script>
 ```
-
-
 
 ```javascript
 //Example from course website
@@ -115,8 +113,6 @@ function mousePressed(){
 
 ![](img_2019web.jpg)
 
-
-
 ### Mon 25.11. - Sun 1.12.2024
 
 * Along the week drawing and fixing vector files for the copper tape + the laser cut pieces from acrylic -> a support structure for the spiral and buttons
@@ -149,15 +145,13 @@ function mousePressed(){
 
 ![](physcomp_process-web_041224-4.jpg)
 
-
-
 ![](physcomp_process-web_041224-5.jpg)
 
-### ATTACH IMAGES + FINAL CODE VIA ARDUINO? 
+### ATTACH IMAGES + FINAL CODE VIA ARDUINO?
+
+{{<vimeo 1038666082>}}
 
 ### The final piece (shown in 5.12.2024)
-
-
 
 ### Some reflections on the work and future improvements
 
@@ -170,7 +164,6 @@ function mousePressed(){
 
 **Comments about the p5.js and code:**
 
-* Instead of altering the angle of the spirals controlling the number of  "points" so that the spiral builds itself while following the spiral path with finger -> would possibly provide more satisfying experience for the user :D
 * More advanced spirals paths etc -> will continue with this to figure out the logic and math!
 
 **Other:**
