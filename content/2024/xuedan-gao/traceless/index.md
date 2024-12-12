@@ -64,31 +64,45 @@ Our installation consists of a main body and 7 stone-shaped controllers. The mai
 
 In terms of visual design, we used snowflakes to represent the process of glacier formation and a dataset of glacier monthly melting areas in Greenland in recent decades to represent the impact of human activities on natural rhythms.
 
-#### Snowflake 
+#### Snowflake
 
-** p5.js **
-- Create a basic linear model to draw the changing structure of a snowflake crystal
-** Touch Designer **
-- Add a particle effect background
-- Overlay particle effects onto the snowflake's transformation
-- Implement audio-visual interaction
+ **p5.js** 
+
+Create a basic linear model to draw the changing structure of a snowflake crystal
+
+**Touch Designer** 
+
+Add a particle effect background
+
+Overlay particle effects onto the snowflake's transformation
+
+Implement audio-visual interaction
 
 ![](screenshot-2024-12-12-at-5.07.25-pm.png)
 
 #### Glacier
 
-** Deforum **
-Generate AI Glacier Video Using Stable Diffusion
-** Touch Designer **
-- Visual Effects Processing - Blob Tracking etc.
-- Audio-responsive Changes
-- Visualizing Data
-** Dataset **
-- Greenland Surface Melt Extent from NSIDC (National Snow and Ice Data Center)
-** Data Processing **
-- Converting Data to CSV format
-- Extract the Monthly Mean Melting Area of Greenland Surface from April to October 1979-2024 
+**Deforum** 
 
+Generate AI Glacier Video Using Stable Diffusion
+
+**Touch Designer** 
+
+Visual Effects Processing - Blob Tracking etc.
+
+Audio-responsive Changes
+
+Visualizing Data
+
+**Dataset** 
+
+Greenland Surface Melt Extent from NSIDC (National Snow and Ice Data Center)
+
+**Data Processing** 
+
+Converting Data to CSV format
+
+Extract the Monthly Mean Melting Area of Greenland Surface from April to October 1979-2024 
 
 ![](screenshot-2024-12-12-at-5.08.03-pm.png)
 
