@@ -1,5 +1,5 @@
 ---
-title: "Final project: Plantbot"
+title: "Final project: Plantbot Bjørghild"
 date: 2024-12-10T20:55:00.000Z
 authors:
   - Ellen Sofie Engen
@@ -7,13 +7,15 @@ image: featured.png
 bgimage: background.jpg
 showBgImage: true
 ---
-The Plantbot aims to challenge our understanding of agency and care. Designed to seek light, water itself, and navigate its surroundings; it takes charge of its own well-being, free from human intervention. In doing so, it subverts the expectation that plants exist solely for observation or decoration—passive objects to be discarded when they no longer meet our standards of health or beauty. This project is not merely about function; it’s a statement about autonomy, self-defense, and consent. It asks us to rethink our relationship with the living beings we nurture and the boundaries we impose upon them. At its heart, the Plantbot also serves as a metaphor for how we treat each other—how we touch, care for, and tether one another without always considering autonomy or agency. At its core, the PlantBot reimagines the balance between care and control, encouraging reflection on how we value and respect autonomy in all living things.
+Plantbot Bjørghild aims to challenge our understanding of agency and care. Designed to seek light, water itself, and navigate its surroundings; it takes charge of its own well-being, free from human intervention. In doing so, it subverts the expectation that plants exist solely for observation or decoration—passive objects to be discarded when they no longer meet our standards of health or beauty. The name Bjørghild combines the Norwegian words *Bjørg* (help or protection) and *Hild* (battle or war), fitting for an object commited to self preser verance. Giving the Plantbot a name acknowledges its emergence as an independent being, moving beyond a mere object or tool. 
 
-![the Plantbot driving](ferdig.jpg "The Plantbot driving")
+This project is not merely about function; it’s a statement about autonomy, self-defense, and consent. It asks us to rethink our relationship with the living beings we nurture and the boundaries we impose upon them. At its heart, the Plantbot also serves as a metaphor for how we treat each other—how we touch, care for, and tether one another without always considering autonomy or agency. At its core, the PlantBot reimagines the balance between care and control, encouraging reflection on how we value and respect autonomy in all living things.
+
+![the Plantbot meeting a person](oss.jpg "The Plantbot driving past a person")
 
 ## Build
 
-The robot is built on a **Purple Aluminum Chassis** from Adafruit ([Product Link](https://www.adafruit.com/product/3796)). It uses two **TT motors** paired with wheels for propulsion and a **caster wheel** at the back for smoother turning.
+The robot is built on a Purple Aluminum Chassis from Adafruit ([Product Link](https://www.adafruit.com/product/3796)). It uses two TT motors paired with wheels for propulsion and a caster wheel at the back for smoother turning.
 
 ![pictures of the different components before construction](build.jpg "The different components before construction")
 
@@ -37,9 +39,11 @@ The robot is carefully put together in a way that lets you aces the different pa
 
 ## How it works
 
-When the light that hits the lightsensor above the plant measures below a value of 400 , the robot will drive until the light is above 400 again, sufficient for the plant. To avoid collisions while moving, the robot uses a distance sensor mounted on the front. If something is within 30 cm, it will turn away, specifically to the left, until it finds a clear path forward again. Effectively, the robot will move if it is too dark, and at the same time turn if there are obstacles in front of it, thus searching for a nice spot to stay
+When the light that hits the light sensor above the plant measures below a value of 400 , the robot will drive until the light is above 400 again, sufficient for the plant. To avoid collisions while moving, the robot uses a distance sensor mounted on the front. If something is within 30 cm, it will turn away, specifically to the left, until it finds a clear path forward again. Effectively, the robot will move if it is too dark, and at the same time turn if there are obstacles in front of it, thus searching for a nice spot to stay. Additionally, if something blocks the light for the sensor, which one is bound to do if they reach out towards the plant, Bjørghild will effectively protect itself by moving away - a sort of defence.
 
-The robot also monitors the soil moisture level to decide when to water the plant. A moisture sensor is embedded in the soil, and if the value falls below a threshold (e.g., 200), the robot starts the watering process. The onboard water reservoir and pump deliver small amounts of water through a tube that leads directly to the soil. The robot pauses briefly between each watering, allowing the soil to absorb the moisture and the sensor to update its readings. This ensures the plant gets enough water without overwatering.
+![](defense.jpg)
+
+The Plantbot also monitors the soil moisture level to decide when to water the plant. A moisture sensor is embedded in the soil, and if the value falls below a threshold (e.g., 200), the robot starts the watering process. The onboard water reservoir and pump deliver small amounts of water through a tube that leads directly to the soil. The robot pauses briefly between each watering, allowing the soil to absorb the moisture and the sensor to update its readings. This ensures the plant gets enough water without overwatering.
 
 ### Calibrating the sensors
 
@@ -51,13 +55,15 @@ ie dipping the sensor in a cup of water gives readings of 800, and taking the mo
 
 The same goes for the light sensor. My light threshold is adjusted to the workshop’s conditions (the ceiling light gives a value of about 520. With my treshold set to 400, the hallway gives too dark readings, so the robot keeps driving there. This was helpful when test-driving). In a home or exhibition, the light threshold should be adjusted to suit the conditions there. For a plant, the optimal light level is one that allows it to perform effective photosynthesis - and should thus be what guides the light treshhold.
 
+![](profile.jpg)
+
 ## The code
 
 The code builds on the base we developed in class, where motor functions were already tied to the distance sensor for obstacle detection. I adapted this existing functionality by reversing the logic to search for light instead of darkness, which better suits the needs of a plant seeking an optimal environment for photosynthesis - this is after all a key need for an independent plant. Then I integrated the soil moisture and water pump system with the robot's movement logic.
 
 The soil moisture and water pump functionality begins by using the SparkFun moisture sensor to measure the soil's moisture level. This value is read as an analog input and compared against a preset threshold that determines when the soil is considered “dry.” I found a good threshold to be 200. If the moisture value falls below this threshold, the code activates the water pump by setting its control pin to HIGH.
 
-To prevent overwatering, I introduced a delay after each watering session, giving the soil time to absorb the water before the sensor takes another reading. The water pump only delivers short bursts of water during each activation. This is handled in the pump control function, which ensures the pump is switched OFF immediately after the burst is delivered, avoiding waste or oversaturation.
+To prevent overwatering, I introduced a delay after each watering session, giving the soil time to absorb the water before the sensor takes another reading. The water pump only delivers short bursts of water during each activation. This is handled in the pump control function, which ensures the pump is switched OFF immediately after the burst is delivered, avoiding waste or over-saturation.
 
 The soil moisture system is fully integrated into the main loop. It runs alongside the robot’s movement logic, meaning the robot can continuously monitor light and obstacles while checking and adjusting the soil moisture as needed. By structuring the moisture-checking and watering routines in a non-blocking manner, the robot can perform multiple tasks simultaneously without interruption.
 
@@ -75,10 +81,12 @@ issues with one motor moving in the wrong direction and the robot turning harshl
 
 Writing the moisture sensor and pump control code presented a significant learning curve for me, as there was some new material and considerations to account for. Ensuring it worked without interfering with existing functionality (like movement and light tracking) required careful adjustments. It took some experimentation to find the right balance for soil moisture thresholds, watering delays, and pump timing. This process of trial and error, combined with coding refinements, was critical but challenging.
 
+![](featured.png)
+
 ### Future work and improvements
 
 In the future, I’d like to focus on a few key improvements to refine both the functionality and personality of the robot. First, better turning and manoeuvring would make its movements smoother and more precise. A lot of this can be refined in the code, and I would like to tidy it up and make it more advanced. But I also believe a lot can be done with the physical build to make the movement better. Reducing the weight would allow me to adjust the speed more freely, tailoring it to different conditions.
 
 I’m imagining an “idle-state” feature, where the robot could play music for itself when it’s been stationary for a while, signalling contentment as it basks in the sunlight. Adding a sound output could be helpful for a lot of different “communication” for the robot, both when it’s content and not. This would have to be a careful consideration for me, since I’m mindful about how anthropomorphic I want this creature to be. Adding LEDs to signal when it’s dry or in a “do-not-approach” mode could enhance its communication abilities without sound. Finally, I’d love to explore a way to toggle the robot on and off via a Mac, rather than relying on disconnecting the battery. While I wouldn’t want extensive remote control (it would take away from the robot’s autonomy), simple on-off functionality would make managing the robot more practical without compromising its independence.
 
-The most important feature to improve for me would be a self-defence mechanism. This is because my goal and focus of this project initially was to explore consent, justified aggression and self preservation. A way to “scare off” perceived threats would aid this vision well, and it could be done in several different manners. I have gotten a lot of interesting suggestions and ideas through the project runtime, and it is still up in the air how I would do it. With an extra distance sensor mounted next to the light sensor, the bot could sense when someone came near  the top of the plant. This information could trigger an counter-action, for example a weapons-yield. With an additional motor, the plant could swing a sword, or more fitting maybe use a motor-driven pulley system to press the trigger of a water gun, fed by the same reservoir as the soil. This would require another water pump, and again make the whole contraption heavier. Some simpler methods could be sound output, like a scream or hiss, or simply running away; putting the wheels in reverse when someone approaches the second distance sensor. The options are many, and there’s still many possibilities I’d like to explore for my plant robot.
+The most important feature to improve for me would be a more deliberate self-defence mechanism. This is because my goal and focus of this project initially was to explore consent, justified aggression and self preservation - and I'd like to make it more obvious. A way to “scare off” perceived threats would aid this vision well, and it could be done in several different manners. I have gotten a lot of interesting suggestions and ideas through the project's runtime, and it is still up in the air how I would do it. With an extra distance sensor near the actual plant, Bjørghild could sense when someone came near more accurately than the light sensor does, and without interfering with the "normal" movement. This information could trigger an counter-action, for example a weapons-yield. With an additional motor, the plant could swing a sword, or more fitting maybe use a motor-driven pulley system to press the trigger of a water gun, fed by the same reservoir as the soil. This would require another water pump, and would again make the whole contraption heavier. Some simpler methods could be sound output, like a scream or hiss. The options are many, and there’s still many possibilities I’d like to explore for my plant robot.
