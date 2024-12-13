@@ -86,6 +86,8 @@ We generated an AI-driven glacier video using the Deforum extension of Stable Di
 
 ## Sound Design
 
+![](screenshot-2024-12-14-at-1.14.23-am.png)
+
 ![](screenshot-2024-12-14-at-12.23.01-am.png)
 
 ![](screenshot-2024-12-14-at-12.23.14-am.png)
@@ -95,6 +97,112 @@ We generated an AI-driven glacier video using the Deforum extension of Stable Di
 This installation system combines hardware and software modules to achieve artistic expression through multi-level interaction. The sculpture contains a water pump, four LED lights and two contact microphones, which are used to control water flow, light and sound capture respectively, and are centrally managed by Arduino. We used a potentiometer to control the flow rate of the water pump and a button to control the switch of the LEDs. The controller module includes a capacitive touch sensor, 7 LED lights and 7 microphones for touch sensing and sound recording. Arduino, as the core control unit, receives sensor data from the sculpture and controller modules, transmits information to Max/MSP through serial communication, and controls the physical output of the device. The audio interface collects the microphone signal and passes it to Max/MSP, which further processes the data from the hardware and performs audio processing, and transmits the results to TouchDesigner through the OSC protocol. TouchDesigner generates real-time visual effects based on the input and presents them through projection.
 
 ![](screenshot-2024-12-11-at-4.06.39-pm.png)
+
+```c
+#include "Wire.h"
+#include "Adafruit_MPR121.h"
+
+Adafruit_MPR121 cap = Adafruit_MPR121();
+
+const int pump_pin = 10; 
+const int pot_pin = A0; 
+const int button_pin = 9; 
+const int led_pin = 12; 
+int pot;
+int speed;
+
+bool ledState = false;    
+bool buttonState = false; 
+bool lastButtonState = false;
+
+int counter = 0; 
+int ports[] = {1, 2, 3, 8, 9, 10, 11}; 
+int ledPins[] = {2, 3, 4, 5, 6, 7, 8}; 
+bool lastTouched[7] = {false, false, false, false, false, false, false}; 
+
+
+void setup() {
+  pinMode(pump_pin, OUTPUT);
+  pinMode(pot_pin, INPUT);
+  pinMode(button_pin, INPUT_PULLUP);
+  pinMode(led_pin, OUTPUT);
+  digitalWrite(led_pin, LOW);
+
+  Serial.begin(9600);
+
+  Serial.println("Adafruit MPR121 Capacitive Touch sensor test");
+
+  while (!cap.begin(0x5A, &Wire)) {
+   Serial.println("MPR121 not found, check wiring?");
+   delay(500);
+  }
+  Serial.println("MPR121 found!");
+
+  for (int i = 0; i < 6; i++) {
+    pinMode(ledPins[i], OUTPUT);
+    digitalWrite(ledPins[i], LOW);
+  }
+}
+
+void loop() {
+
+  for (int i = 0; i < 7; i++) {
+    int port = ports[i];
+    int ledPin = ledPins[i];
+    int value = cap.filteredData(port); 
+    bool isCurrentlyTouched = value < 60; 
+
+    Serial.print("P");
+    Serial.print(port);
+    Serial.print(" ");
+    Serial.println(isCurrentlyTouched ? "-6" : "-100");
+
+    if (isCurrentlyTouched && !lastTouched[i]) {
+      counter++;
+    } else if (!isCurrentlyTouched && lastTouched[i]) {
+      counter--; 
+    }
+
+    if (isCurrentlyTouched) {
+      digitalWrite(ledPin, HIGH); 
+    } else {
+      digitalWrite(ledPin, LOW); 
+    }
+
+    lastTouched[i] = isCurrentlyTouched;
+  }
+
+  //Serial.println();
+
+  buttonState = digitalRead(button_pin);
+
+  if (lastButtonState == HIGH && buttonState == LOW) {
+    ledState = !ledState;
+    digitalWrite(led_pin, ledState ? HIGH : LOW);
+    //digitalWrite(13, ledState ? HIGH : LOW);
+  }
+  
+  lastButtonState = buttonState;
+
+  digitalWrite(led_pin, HIGH);
+
+  pot = analogRead(pot_pin); 
+  speed = map(pot, 0, 1023, 0, 255); 
+  analogWrite(pump_pin, speed); 
+
+  //Serial.print("Speed");
+  //Serial.println(speed);
+
+  Serial.print("Pot");
+  Serial.println(pot);
+
+  Serial.print("Counter ");
+  Serial.println(counter);
+
+  delay(100); 
+  
+}
+```
 
 ## Reflection
 
