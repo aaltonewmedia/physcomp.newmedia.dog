@@ -164,6 +164,83 @@ What happened:
 
 ![](physcomp_process-web_041224-5.jpg)
 
+### Here's the code working in Arduino:
+
+```cpp
+#include <Trill.h>
+
+Trill trillSensor;
+
+const unsigned int NUM_TOTAL_PADS = 30;
+CustomSlider::WORD rawData[NUM_TOTAL_PADS];
+
+const uint8_t slider0NumPads = 19;
+const uint8_t slider1NumPads = 1;
+const uint8_t slider2NumPads = 1;
+
+// Order of the pads used by each slider
+uint8_t slider0Pads[slider0NumPads] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18};
+uint8_t slider1Pads[slider1NumPads] = {25};
+uint8_t slider2Pads[slider2NumPads] = {29};
+
+const unsigned int maxNumCentroids = 3;
+const unsigned int numSliders = 3;
+CustomSlider sliders[numSliders];
+
+void setup() {
+  sliders[0].setup(slider0Pads, slider0NumPads);
+  sliders[1].setup(slider1Pads, slider1NumPads);
+  sliders[2].setup(slider2Pads, slider2NumPads);
+  // Initialise serial and touch sensor
+  Serial.begin(115200);
+  int ret;
+  while(trillSensor.setup(Trill::TRILL_CRAFT)) {
+    Serial.println("failed to initialise trillSensor");
+    Serial.println("Retrying...");
+    delay(100);
+  }
+  Serial.println("Success initialising trillSensor");
+ // trillSensor.setMode(Trill::DIFF); //OG SET MODE IS DIFF
+  trillSensor.setMode(Trill::CENTROID);
+  // We recommend a prescaler value of 4
+  trillSensor.setPrescaler(4);
+  // Experiment with this value to avoid corss talk between sliders if they are position close together
+  //trillSensor.setNoiseThreshold(200);
+  trillSensor.setNoiseThreshold(200);
+}
+
+void loop() {
+  // Read 20 times per second
+  delay(50);
+  if(!trillSensor.requestRawData()) {
+    Serial.println("Failed reading from device. Is it disconnected?");
+    return setup();
+  }
+  unsigned n = 0;
+  // read all the data from the device into a local buffer
+  while(trillSensor.rawDataAvailable() > 0 && n < NUM_TOTAL_PADS) {
+    rawData[n++] = trillSensor.rawDataRead();
+  }
+  for(uint8_t n = 0; n < numSliders; ++n) {
+    // have each custom slider process the raw data into touches
+    sliders[n].process(rawData);
+     Serial.print(n);
+     Serial.print(",");
+     Serial.print(sliders[n].getNumTouches());
+     Serial.print(",");
+    if(sliders[n].getNumTouches() > 0) {
+      for(int i = 0; i < sliders[n].getNumTouches(); i++) {
+          Serial.print(sliders[n].touchLocation(i));
+          Serial.print(",");
+      }
+    }
+    Serial.println("");
+    delay(10);
+  } 
+}
+
+```
+
 ## The finished work:
 
 I took some nicer product photos :) Below you will find the project documentation video to see the actual interaction and artwork.
