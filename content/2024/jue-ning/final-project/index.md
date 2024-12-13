@@ -61,3 +61,8 @@ life, echoing melodies that transcend a thousand years.
 ![](exhibition1.png)
 
 ![](exhibituion2.png)
+
+**Reflection**\
+   I've been thinking a lot lately about whether I should focus more on technology or content, and after thinking about it, I still think that the content or the idea you want to convey is more important. Therefore, I did not make this project technical, and I was very restrained in the selection of electronic components. Even without the use of complex technology, it is difficult to achieve every detail well, especially if you lack relevant experience. And the workload of content production is also heavy, in short, it caused a lot of anxiety.
+
+   But I'm still happy with the end result, I learned a lot about physical interaction in this course and applied it to my own projects, which is a great feeling! If I want to do some projects like this in the future, I would have a clear idea of how to do.
