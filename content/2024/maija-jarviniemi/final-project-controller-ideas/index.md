@@ -112,7 +112,7 @@ function mousePressed(){
 
 {{<vimeo 1031182690>}}
 
-### 24.11.2024 3d print samples
+### 24.11.2024: 3d printed samples
 
 Okay! So after testing how the sliders work I continued with figuring out the actual design of the controller. As the experience of touch was the main character of the interaction, I wanted to pay attention on figuring out the right kind of shape, its size and other measurements. 
 
@@ -122,7 +122,7 @@ Okay! So after testing how the sliders work I continued with figuring out the ac
 
 ![](img_2019web.jpg)
 
-### Mon 25.11. - Sun 1.12.2024
+### Mon 25.11. - Sun 1.12.2024: The design challenge
 
 As the size and measurements were decided, it was time to start figuring out final design and how the controlled was built. I had decided to use 20 individual capacitive sensors on the slider + 2 extra for the buttons. These were to be soldered to the Trill Craft sensor: [https://learn.bela.io/tutorials/trill-sensors/working-with-trill-craft/](<>)
 
@@ -139,12 +139,14 @@ I found some inspiration for the individual sensors for the slider stickers from
 
 Here are all the pieces for the controller (minus wiring) ready to be attached!
 
-### Mon 2. - Tue 3.12.2024
+### Mon 2. - Tue 3.12.2024: Building and soldering
 
-* Soldering of the spiral sensors (19x) and buttons (2x) to a bunch of wires  --> looks like a shrimp!
-* 3d print for the case cover (the bottom part not ready yet) in the Aalto 3d print workshop --> turned out to be quite bad quality so I decided to go with the earlier white version 
-* Soldering the trill craft sensor to the copper pieces + breadboard...  -> this took many hours of figuring out the placing of wires so that they don't touch each other -> this prevents the capacitive sensors taking some unwanted signals when close to each other
-* I used the pins 0-18, 19 sensors in total for the spiral slider
+Now that all the bits and pieces were ready, it was time to learn how to solder properly and start building the actual piece, here’s what happened:
+
+* I soldered the spiral sensors (19x) and buttons (2x) to a bunch of red and bendy silicone wires --> looks like a shrimp! I got good tips from Matti and I think I made a quite good job of clean and pretty soldering though my hands were shaking.
+* I went to get a final 3d print for the top cover from a nice brown PLA from the Aalto 3d print workshop. However the print turned out to be quite badly made so I decided to go with the earlier white version made at home.
+* Soldered the other end of the wires to the trill craft sensor... I spent hours on figuring out the placing of the wires to the acrylic board so that they do not touch each other. This prevents the capacitive sensors from taking unwanted signals from each other. A lot of tape was used!
+* I used the pins 0-18 in the Trill Craft, 19 sensors in total. When moving on to the other long edge of pins on the Trill sensor, soldering became quite tricky due to tight space! But I managed!
 
 ![](physcomp_process-web_041224-3.jpg)
 
