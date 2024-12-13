@@ -56,7 +56,7 @@ The VL53L1X measures the distance and converts the measurement into a range of 0
 
  When a hand is placed above the sensor, the current flows according to the distance between two points, causing the flowers to either move or remain still. The distance is read as a value between 0 and 255. When the distance is short, more current flows, and the flowers start to move. Since the movement is very slow, you can observe the flowers moving over a period of 10 seconds or more. Once the hand is removed and left for over 10 seconds, the flowers return to their original state.
 
-![](img_1619c86050ef-1.jpeg)
+![](img_990de0a2c965-1.jpeg)
 
 **Reflection** 
 
