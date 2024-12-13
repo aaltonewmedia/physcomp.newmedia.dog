@@ -164,7 +164,7 @@ What happened:
 
 ![](physcomp_process-web_041224-5.jpg)
 
-### The finished work
+## The finished work:
 
 ![](pirouetteplotter-web_small_131224-13.jpg)
 
