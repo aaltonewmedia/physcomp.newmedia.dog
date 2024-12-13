@@ -117,9 +117,12 @@ function mousePressed(){
 
 ### 24.11.2024 3d print samples
 
-* Sampling with 3d printer the width and depth of the furrow, with the help of Miro
-* Size of the spiral - I coded the spiral with p5.js :)
-* Best furrow measurements were 2mm (depth), 120mm (full width), 60mm (open area/hole)
+Okay! So after testing how the sliders work I continued with figuring out the actual design of the controller. As the experience of touch was the main character of the interaction, I wanted to pay attention on figuring out the right kind of shape, its size and other measurements. 
+
+* I sampled with 3d printer to figure out the width and depth of the furrow, best furrow measurements were 2mm (depth), 120mm (full width), 60mm (open area/hole)
+* To get the right kind of spiral, I coded it with p5.js and turned into SVG vector. Before this I had drawn by hand a spiral shape on a millimeter paper to figure out what is the most pleasing length and size for the spiral.
+* Last part was to print an actual size spiral and see how it feels when touched. All this was done with the help of Miro and his 3d printer!
+
 
 ![](img_2019web.jpg)
 
