@@ -86,6 +86,8 @@ We generated an AI-driven glacier video using the Deforum extension of Stable Di
 
 ## Sound Design
 
+In terms of sound design, we tried to blend human voices into the echo of dripping water from melting ice. And when the audience interacts, every touch generates corresponding auditory feedback.
+
 ![](screenshot-2024-12-14-at-1.14.23-am.png)
 
 ![](screenshot-2024-12-14-at-12.23.01-am.png)
