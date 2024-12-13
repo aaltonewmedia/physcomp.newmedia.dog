@@ -128,16 +128,20 @@ Okay! So after testing how the sliders work I continued with figuring out the ac
 
 ### Mon 25.11. - Sun 1.12.2024
 
-* Along the week drawing and fixing vector files for the copper tape + the laser cut pieces from acrylic -> a support structure for the spiral and buttons
-* I found some inspiration for the triangle/arrow shapes for the slider stickers from here: [https://www.kobakant.at/DIY/?p=6607](<>)
-* The basic idea with the arrows is that the capacitive sensors are able to read the finger's position either from one or two sensors at the same time providing more detailed data
-* Finished cutting and placing the copper tape pieces to the laser cut spiral, 19 stickers in total --> done by hand with a 3d printed "stencil" -> took quite many tries to get it right :D 
-* I am using the Trill Craft sensor to which the 19 + 2 extra button sensors will be soldered: <https://learn.bela.io/tutorials/trill-sensors/working-with-trill-craft/>
-* A prototype was printed for the cover -> Miro helped with the model, figuring out the support structure and 3d printing
+As the size and measurements were decided, it was time to start figuring out final design and how the controlled was built. I had decided to use 20 individual capacitive sensors on the slider + 2 extra for the buttons. These were to be soldered to the Trill Craft sensor: [https://learn.bela.io/tutorials/trill-sensors/working-with-trill-craft/](<>)
+
+I found some inspiration for the individual sensors for the slider stickers from here: [https://www.kobakant.at/DIY/?p=6607](<>) . I was pondering between arrow and arch sticker but decided to start with the arrows. The basic idea with that shape is that the capacitive sensors are able to read the finger's position either from one or two sensors at the same time providing more detailed data. Along the week I was:
+
+* Drawing and fixing vector files for the copper tape. Somehow the 20 sensors on the spiral turned into 19 pieces.
+* Made the laser cut files for the inner structure, which were cut from acrylic. The structure is sort of a sandwich, where the spiral slider and buttons are embedded in-between the cover and a bottom layer! No need for glue!
+* Finished cutting the copper tape pieces from a copper tape by hand (!!) and placing them to the laser cut spiral (I couldn’t use the vinyl cutter at Fablab). I used a 3d printed "stencil” to trace the lines with a scalpel. It took quite many tries and two days to get it right :D
+* Finally a prototype for the top cover was 3d printed with the help of Miro, who also helped with figuring out the inner support structure.
 
 ![](physcomp_process-web_041224.jpg)
 
 ![](physcomp_process-web_041224-2.jpg)
+
+### Here are all the pieces for the controller (minus wiring)!
 
 ### Mon 2. - Tue 3.12.2024
 
