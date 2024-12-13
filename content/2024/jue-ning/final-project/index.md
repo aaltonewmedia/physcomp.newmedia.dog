@@ -21,9 +21,8 @@ life, echoing melodies that transcend a thousand years.
 
 1. Why I choose this topic?
    Like many other young people, I used to keep my eyes on trends and keep track of the latest tech hotspots. But in the last few years, I've become interested in traditional things, so this time I wanted to make a attempt to use the physical interaction skills I learned in class to see how I can better combine tradition and digitalization to revitalize things that have been forgotten in history.
-
-2.Why I choose this image?
-  At first I tried to find an ancient painting as my original image, but it was a difficult problem to choose among the many paintings, so I decided to choose a familiar one. I have already cited the image of "Color-Painted Relief Scene of Musicians Playing" in my previous research paper, so I don't need to spend more time on various details and historical research, and I can spend more time on the production of the project, which I think is efficient.
+2. Why I choose this image?
+    At first I tried to find an ancient painting as my original image, but it was a difficult problem to choose among the many paintings, so I decided to choose a familiar one. I have already cited the image of "Color-Painted Relief Scene of Musicians Playing" in my previous research paper, so I don't need to spend more time on various details and historical research, and I can spend more time on the production of the project, which I think is efficient.
 
 **Process:**
 
@@ -34,8 +33,8 @@ life, echoing melodies that transcend a thousand years.
 
 
 
-2.Animate the characters
-      I animated each of them by using AE to show the complete image of each musician and the introduction of the instrument.
+2. Animate the characters
+    I animated each of them by using AE to show the complete image of each musician and the introduction of the instrument.
 	
 
 ![](animation.png)
@@ -128,14 +127,14 @@ void loop() {
 
 
 
-5.Integration :Laser cutting + 3D Printing
-     I use 3D printing printed the handle and made a wooden box using laser cutting to facilitate wiring.
+5. Integration :Laser cutting + 3D Printing
+    I use 3D printing printed the handle and made a wooden box using laser cutting to facilitate wiring.
 
 ![](box.png)
 
 
 
-6.Final Exhibition
+6. Final Exhibition
 
 ![](exhibition1.png)
 
