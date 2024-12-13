@@ -88,6 +88,10 @@ We generated an AI-driven glacier video using the Deforum extension of Stable Di
 
 In terms of sound design, we tried to blend human voices into the echo of dripping water from melting ice. And when the audience interacts, every touch generates corresponding auditory feedback.
 
+This project can be divided into an audio-based system and a MIDI-based system. For the audio-based system, we need to handle inputs from a total of 9 microphones. We used two AKG C411 contact condenser microphones placed under metal plates to capture the sound of melting ice droplets, along with 7 small microphones embedded in each controller. The signals from the contact microphones are fed into a raindrops effect processor and also into a multiband delay and reverb processor. The signals collected by the small microphones in each controller are sent to a harmonizer, which then feeds into the multiband delay and reverb processors.
+
+
+
 ![](screenshot-2024-12-14-at-1.14.23-am.png)
 
 ![](screenshot-2024-12-14-at-12.23.01-am.png)
