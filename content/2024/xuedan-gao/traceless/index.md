@@ -76,27 +76,7 @@ In p5.js, we create a basic linear model to visualize the evolving structure of 
 
 ### Glacier
 
-**Deforum** 
-
-Generate AI Glacier Video Using Stable Diffusion
-
-**Touch Designer** 
-
-Visual Effects Processing - Blob Tracking etc.
-
-Audio-responsive Changes
-
-Visualizing Data
-
-**Dataset** 
-
-Greenland Surface Melt Extent from NSIDC (National Snow and Ice Data Center)
-
-**Data Processing** 
-
-Converting Data to CSV format
-
-Extract the Monthly Mean Melting Area of Greenland Surface from April to October 1979-2024 
+We generated an AI-driven glacier video using the Deforum extension of Stable Diffusion, showcasing an animated representation of glacier dynamics. To enhance the visualization, we utilized TouchDesigner for advanced visual effects processing, using techniques such as blob tracking. We also implemented audio-responsive changes, allowing the visual elements to react dynamically to sound, and developed data-driven visualizations to integrate scientific information into the artistic narrative. For the dataset, we used the Greenland Surface Melt Extent from the NSIDC (National Snow and Ice Data Center), a reliable source of historical records. During the data processing stage, we converted the dataset into CSV format to facilitate analysis, focusing on extracting the monthly mean melting area of Greenland's surface from April to October over the period 1979 to 2024. This processed data was then integrated into the visuals, creating a data-informed depiction of environmental change.
 
 ![](screenshot-2024-12-12-at-5.08.03-pm.png)
 
