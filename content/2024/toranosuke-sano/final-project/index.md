@@ -6,9 +6,7 @@ authors:
 image: img_0937.jpg
 showBgImage: false
 ---
-6/12/2024
-
-Project Documentation
+![](img_0937.jpg)
 
 **Introduction**
 
@@ -39,8 +37,6 @@ fields. This led me to the concept of expressing the subtle motion of flowers sw
 ![](img_8116.jpg)
 
 ![](img_9477.jpg "Muscle Wire Prototype with fabric #1")
-
-
 
 ![](img_9481.jpg "Muscle Wire Prototype with fabric #2")
 
