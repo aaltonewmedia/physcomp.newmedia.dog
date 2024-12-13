@@ -3,7 +3,7 @@ title: Final Project
 date: 2024-12-13T23:59:00.000Z
 authors:
   - Toranosuke Sano
-image: img_0937.jpg
+image: img_990de0a2c965-1.jpeg
 showBgImage: false
 ---
 ![](img_0937.jpg)
