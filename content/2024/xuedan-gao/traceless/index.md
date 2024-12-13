@@ -5,7 +5,7 @@ authors:
   - Xuedan Gao
 image: featured-image.jpeg
 bgimage: background.jpg
-showBgImage: false
+showBgImage: true
 ---
 *Traceless* is an interactive sound sculpture with visual projections. It invites audiences to engage with its narrative through handheld controllers. The project centers on ice as both a medium and a collaborator, exploring its transformative qualities during the melting process to show the active ﻿role of nonhuman entities in shaping our environment.
 
