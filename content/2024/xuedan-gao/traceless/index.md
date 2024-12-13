@@ -184,7 +184,7 @@ void loop() {
   
   lastButtonState = buttonState;
 
-  digitalWrite(led_pin, HIGH);
+  //digitalWrite(led_pin, HIGH);
 
   pot = analogRead(pot_pin); 
   speed = map(pot, 0, 1023, 0, 255); 
