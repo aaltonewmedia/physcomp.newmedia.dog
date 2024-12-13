@@ -264,25 +264,22 @@ This course flew by extremely fast. I have no previous experience on working wit
 
 But as always, when you least except it, the ideas start pouring in. For me this happened during a singing bowl relaxation (äänimalja-rentoutus in Finnish), During the relaxation I saw vibrating spirals and my finger following them :-D So without further thinking, I started working with the idea straight away. 
 
-**Possible improvements for the controller:**
+**Here are some improvements I would do for the controller:**
 
-* Covering the copper with a fully 3d printed cover?
-* Smaller copper tape piece for the buttons -> I made them too big so now they also react to touch when touching the cover next to them
-* Smaller arduino/raspberry pi and somehow making the resistor wiring more tight perhaps without the breadboard?
-* Rethinking the aesthetics of the cover and the shape -> more organic texture and material. Could the shape be circular? To me the shape and material feeling is too "clinical"
+* I would like to try how the signal changes if the copper would be covered with a fully closed cover. The copper is extremely beautiful and it would be a shame to hide it, but the edges of the copper tape pieces are quite fragile and should be covered somehow. This could be done also with some transparent plastic. Other and more fancy option would be to mill/cut the pieces from actual copper sheet and let them create a green patina. Nice!
+* So yes, I learned that the capacitive sensors detect touch also through the cover. Due to this I should make the copper pieces for the buttons a lot smaller. Now they react when touching the cover near them and even when just hovering my fingers on top of them. This creates accidental button presses.
+* I would like to rethink the aesthetics of the controller and its shape. To me the rectangular shape and sleek white PLA feels too clean and I would like to aim for something more organic and raw in texture. What about the shape, could it be circular? What about the electronics inside, could it be done with a raspberry pi and somehow making the resistor wiring more tight without the breadboard?
 
-**Comments about the p5.js and code:**
+**Other comments:**
 
-* More advanced spirals paths etc -> will continue with this to figure out the logic and math!
-
-**Other:**
-
-I enjoyed most of the craftwork and material experience related to this project:
+I enjoyed most of the craftwork related to this project:
 
 * Making the spiral slider and attaching the copper tape pieces to it. Piece by piece it reminded me of an ancient jewelry due to the copper and the scratch marks.
-* Soldering was fun and at some point the ancient jewelry slider turned into a glimmering shrimp! 
-* Figuring out the wiring from the slider to the Trill craft sensor and then soldering. Though it felt almost impossible task to keep the wires deattached from each other, I was extremely happy I managed to pull it of :) 
+* Soldering was fun and at some point the ancient jewelry slider turned into a glimmering shrimp! I spent a lot of time just staring at the beauty of the materials.
+* Figuring out the wiring from the slider to the Trill craft sensor and then soldering. Though it felt almost impossible task to keep the wires de-attached from each other, I was extremely happy (and relieved) I managed to do it.
 
-First I had hard time of coming up with a physical computing concept that would work with my p5.js project. So once the idea came, I started working with it straight away. This project was my very first take on working with electronics so it really put me on my toes. For the last minute I was expecting something to fail. Hence the surprise of it working without any major errors really drew a big smile on my face! 
+I have to admit that for the very last minute I was expecting something to fail. Hence the surprise of it working without any major errors really drew a big smile on my face! 
 
-\- something about other ideas and future
+There is still a lot develop when it comes to the marriage of my p5.js artwork and the controller. I didn’t have a lot of time to work on my artwork and as the interaction worked quite nicely with tracing the spiral, what happened on the screen was not that interesting. After the presentation I did some improvements on the p5.js code and to me it feels now more poetic and responsive giving the ”user” a bit more control over the drawing. I have more reflection on that process on my *Computational Art and Design* documentation.
+
+Just to finish off, I want to say I started slowly warming up for physical computing: I kept getting ideas for wacky art projects along the way of creating this controller. If I’d have a chance to do this course again, I would create a more independent and experimental project on its own. But perhaps there is a chance for me in the future now that working with electronics frightens me less than 1,5 months ago!
