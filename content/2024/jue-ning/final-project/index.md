@@ -6,4 +6,58 @@ authors:
 image: feature-image.jpg
 showBgImage: true
 ---
-Project Introduction:
+**Millennia at Play**
+
+Project Introduction:					
+
+Millennia at Play is an interactive project inspired by the Color-Painted Relief Scene
+of Musicians Playing. Drawing from this historical masterpiece, I reimagined and
+redrew the twelve lady musicians, infusing their ancient forms with renewed
+vitality. Through digital animation and sound, their instruments are brought back to
+life, echoing melodies that transcend a thousand years.
+
+
+
+**Q&A:**
+1. Why I choose this topic?
+    Like many other young people, I used to keep my eyes on trends and keep track of the latest tech hotspots. But in the last few years, I've become interested in traditional things, so this time I wanted to make a attempt to use the physical interaction skills I learned in class to see how I can better combine tradition and digitalization to revitalize things that have been forgotten in history.
+
+2.Why I choose this image?
+  At first I tried to find an ancient painting as my original image, but it was a difficult problem to choose among the many paintings, so I decided to choose a familiar one. I have already cited the image of "Color-Painted Relief Scene of Musicians Playing" in my previous research paper, so I don't need to spend more time on various details and historical research, and I can spend more time on the production of the project, which I think is efficient.
+
+
+**Process:**
+1. Redrew the image
+  Since the relief was unearthed in the Five Dynasties period, the details of the figure's clothing, modeling, and patterns refer to various murals from the late Tang Dynasty to the Five Dynasties, so as to avoid historical mistakes. In terms of color matching, I used a gradient color scheme, referring to a little Tang Sancai's color scheme, the purpose is to make the characters more comic, more in line with the aesthetics of the younger generation, not so much like a direct copy of the original image. I also completed the incomplete part of the image in the back row of the relief so that it could be used in a separate introduction.
+
+![](redrew.png)
+
+
+
+
+2. Animate the characters
+  I animated each of them by using AE to show the complete image of each musician and the introduction of the instrument.
+	
+
+![](animation.png)
+
+3. Sensor testing
+  I chose the capacitive touch sensor and the rotary encoder sensor to complete the physical part. Each musician can be showed by touching the capacitive touch sensor, by the mean time, use the rotary encoder sensor to manipulate the crank handle to transform the background scenes.
+
+![](sensor.png)
+
+4. Combined with Touchdesigner
+   Use TD to convert the data obtained from Arduino into an index to control the change of the scenes.
+
+![](touchdesigner.png)
+
+5. Integration :Laser cutting + 3D Printing
+    I use 3D printing printed the handle and made a wooden box using laser cutting to facilitate wiring.
+
+![](box.png)
+
+6. Final Exhibition
+
+![](exhibition1.png)
+
+![](exhibituion2.png)
