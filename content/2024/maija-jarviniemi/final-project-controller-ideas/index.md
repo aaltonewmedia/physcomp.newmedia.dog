@@ -255,7 +255,7 @@ The project was combined with Physical Computing course, where I built a physica
 
 ## Reflection
 
-This course flew by extremely fast. I have no previous experience on working with electronics so all the new knowledge felt almost paralyzing. When the time came to come up with an idea for the final project, all I heard was crickets.
+This course flew by extremely fast. I had no previous experience on working with electronics so all the new knowledge felt almost paralyzing. When the time came to come up with an idea for the final project, all I heard was crickets.
 
 But as always, when you least except it, the ideas start pouring in. For me this happened during a singing bowl relaxation (äänimalja-rentoutus in Finnish), During the relaxation I saw vibrating spirals and my finger following them :-D So without further thinking, I started working with the idea straight away. 
 
