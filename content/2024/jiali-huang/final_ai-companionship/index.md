@@ -8,7 +8,7 @@ showBgImage: true
 ---
 **Introduction**
 
-\-
+
 This is an AI companion plush pet designed for young, high-end consumers.
 
 **Product Features**
