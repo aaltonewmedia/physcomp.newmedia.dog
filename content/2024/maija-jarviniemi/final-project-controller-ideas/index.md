@@ -12,7 +12,15 @@ showBgImage: false
 
 ## Basic concept:
 
-My initial inspiration was the sensation of drawing with finger on sand. Hence, I wanted to focus on the touch and how it feels on one's finger to draw slowly a spiral. The optimal controller would have a soft furrow that does not have any sharp edges. One important factor for me is also the beauty of the controller so that it would invite you to touch it.
+A little recap on the project and the basic concept:
+
+I am expanding my project I am working with in the Computational Art & Design course: I am planning to do drawing exercises on spirals and other circular paths with p5.js They are inspired by old s[pecial figure skating figures](https://www.skateguardblog.com/2022/08/the-art-of-special-figures.html?m=0) as well as beautifully illustrated [choreographical manuals for old ballroom dances](https://publicdomainreview.org/collection/dances-in-beauchamp-feuillet-notation/) called Beauchamp-Feuillet notation
+
+In Physical Computing I aim to focus on creating a user interface that enables interaction with the drawing exercises
+
+My initial inspiration was the sensation of drawing with finger on sand. Hence, I wanted to focus on the touch and how it feels on one's finger to trace slowly a spiral. The optimal controller would have a soft to touch ”furrow” without any sharp edges. An important factor for me is also the aesthetics and materials: I’d like it to be beautiful so that it would invite one to use it. 
+
+
 
 ### 19.11.2024 Things to consider
 
