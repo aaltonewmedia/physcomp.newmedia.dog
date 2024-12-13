@@ -45,6 +45,10 @@ Our installation consists of a main body and 7 stone-shaped controllers. The mai
 
 ![](screenshot-2024-12-12-at-12.03.35-pm.png)
 
+### Previous Experiments on Ice
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h2c7ZpcjlCg?si=tJH-G707IM8tvOnv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Interaction Design
 
 * The behavior of humans does not control the process of ice;  
