@@ -70,17 +70,7 @@ In terms of visual design, we used snowflakes to represent the process of glacie
 
 ### Snowflake
 
- **p5.js** 
-
-Create a basic linear model to draw the changing structure of a snowflake crystal
-
-**Touch Designer** 
-
-Add a particle effect background
-
-Overlay particle effects onto the snowflake's transformation
-
-Implement audio-visual interaction
+In p5.js, we create a basic linear model to visualize the evolving structure of a snowflake crystal, showcasing its transformation dynamically over time. Then, we integrate this with TouchDesigner by adding a particle effect background. We then overlay these particle effects onto the transforming snowflake structure. Finally, we implement audio-visual interaction to synchronize the visual transformations and particle effects with sound, creating an engaging and interactive experience.
 
 ![](screenshot-2024-12-12-at-5.07.25-pm.png)
 
