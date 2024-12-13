@@ -55,9 +55,7 @@ The sensor detects multiple touches, the location and the size of the touch. The
 
 ![](plotterdatatrillring-web.png)
 
-**HOW TO TRANSFER THE SLIDER DATA TO p5.js?**
-
-Here's a code from our course website:* [https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/](<>)*
+**HOW TO TRANSFER THE SLIDER DATA TO p5.js?**[](<>)
 
 This connects the arduino data to p5.js in order to draw a circle. Remember to add the following line inside the **head** tags in the **index.html**:
 
@@ -233,7 +231,6 @@ void loop() {
     delay(10);
   } 
 }
-
 ```
 
 ## The finished work:
