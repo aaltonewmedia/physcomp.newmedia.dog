@@ -110,7 +110,7 @@ In the process of making the installation, I kept thinking about how to design i
 
 This collaboration with Xinchen has yielded unexpectedly remarkable results. I feel that our professional backgrounds have achieved a perfect complementarity. I've always aspired to create sound sculptures, and as someone oriented toward auditory experiences, I can envision the form of the installation but struggle to integrate it with more complex physical structures. Xinchen's expertise in installation and visual design is truly impressive, seamlessly blending sound and visual experiences.
 
-I feel that the hardware system of the installation might need an upgrade to make it more robust. Moving forward, I also want to continue working on...
+During the exhibition, the randomness of audience interactions made me realize that the hardware system of the installation might need an upgrade to make it more robust. Additionally, wiring and arranging the cables poses a significant challenge. Moving forward, I want to find a smarter solution to enhance the hardware system.
 
 ## Acknowledgments
 
