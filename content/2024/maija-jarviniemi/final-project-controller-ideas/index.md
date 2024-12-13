@@ -42,13 +42,15 @@ My initial inspiration was the sensation of drawing with finger on sand. Hence, 
 
 ### The Trill Ring sensor
 
-For the sensor to work, it needed two pull-up resistors between SCL + 5 v and SDA + 5v. Prior the custom spiral sensor, I am going to use a Trill ring sensor with the same slider capacities.
+Prior making my own custom spiral slider, I did a test with connecting a ring shaped Trill sensor to my computer to understand how Trill sliders work and what kind of data they provide in Arduino.
+
+For the sensor to work, it needed two pull-up resistors between SCL + 5 v and SDA + 5v. 
 
 [Here's a link to the instructions from Matti](https://learn.adafruit.com/working-with-i2c-devices/pull-up-resistors)
 
 ![](trill-ring-resistors.jpg)
 
-The working palette with sensor, resistors etc. 
+The working palette with sensor, pull-up resistors etc. 
 
 ![](trill-ring.jpg)
 
