@@ -106,11 +106,15 @@ My initial idea was to record the sound of ice melting naturally and compare it 
 
 When trying to record the sound of ice, I experimented with various methods, including using XY recording, embedding contact microphones in ice cubes, and using funnels as amplification devices. But in the end, I decided to focus on recording the sound of dripping water as the ice melted. This natural and gradual process just reflects the rhythm of nature.
 
+In the process of making the installation, I kept thinking about how to design it "more cleverly" and tried to give a reason for every decision I made, but I found that I tried to combine too many things together in the process, and sometimes I lost the focus, but I have to say that this made the work more logical. I think I should learn how to better balance intuition and logic in the future.
 
+This collaboration with Xinchen has yielded unexpectedly remarkable results. I feel that our professional backgrounds have achieved a perfect complementarity. I've always aspired to create sound sculptures, and as someone oriented toward auditory experiences, I can envision the form of the installation but struggle to integrate it with more complex physical structures. Xinchen's expertise in installation and visual design is truly impressive, seamlessly blending sound and visual experiences.
+
+I feel that the hardware system of the installation might need an upgrade to make it more robust. Moving forward, I also want to continue working on...
 
 ## Acknowledgments
 
-Special thanks to Matti for all the help throughout the process, Xiaoqi Wang for help with video shooting and exhibition setup, and Ron from the metal workshop for the support during the installation construction.
+Special thanks to Matti for all the help throughout the process, Xiaoqi for help with video shooting and exhibition setup, and Ron from the metal workshop for the support during the installation construction.
 
 ## References
 
