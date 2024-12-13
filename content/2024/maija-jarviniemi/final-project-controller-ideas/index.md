@@ -166,6 +166,8 @@ What happened:
 
 ## The finished work:
 
+I took some a bit nicer product photos :) Below you will find the project documentation video to see the actual interaction and artwork.
+
 ![](pirouetteplotter-web_small_131224-13.jpg)
 
 ![](pirouetteplotter-web_small_131224-7.jpg)
