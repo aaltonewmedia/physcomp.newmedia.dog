@@ -18,7 +18,7 @@ My initial inspiration was the sensation of drawing with finger on sand. Hence, 
 
 ![](featured.jpg)
 
-### 19.11.2024 Things to consider
+### 19.11.2024: Things to consider
 
 * Here's a sensor that might work with this kind of spiral slider: [https://learn.bela.io/products/trill/about-trill/](<>)
 * Matti told that the spiral could be cut from copper sticker in Fablab -> they have a suitable material for the vinyl cutter. Other option is to cut it by hand or use conductive ink.
@@ -164,13 +164,17 @@ What happened:
 
 ![](physcomp_process-web_041224-5.jpg)
 
-### ATTACH IMAGES + FINAL CODE VIA ARDUINO?
+### The finished work
+
+![](pirouetteplotter-web_small_131224-13.jpg)
+
+![](pirouetteplotter-web_small_131224-7.jpg)
 
 {{<vimeo 1038666082>}}
 
-### The final piece (shown in 5.12.2024)
 
-### Some reflections on the work and future improvements
+
+## Reflection
 
 **Possible improvements for the controller:**
 
