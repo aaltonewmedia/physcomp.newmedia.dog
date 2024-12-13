@@ -252,7 +252,7 @@ I took some nicer product photos :) Below you will find the project documentatio
 
 Music in the video: *Freezing but warm* by Meydän, Licensed under CC BY <https://freemusicarchive.org/music/Meydan/Ambient_1860>
 
-**Description (same text as in the Computation Art & Design course documentation):**
+**Description (same text as in the Computational Art & Design course documentation):**
 
 *Discovering Pirouettes: Pirouette Plotter* is a set of drawing experiments exploring spiral motives and the use of sine and cosine with p5.js. The project was inspired by the documentation of special figure skating patterns and choreography manuals of historical ballroom dances. 
 
