@@ -122,7 +122,7 @@ Okay! So after testing how the sliders work I continued with figuring out the ac
 
 As the size and measurements were decided, it was time to start figuring out the final design and how the controlled was built. I had decided to use 20 individual capacitive sensors on the slider + 2 extra for the buttons. These were to be soldered to the Trill Craft sensor: [https://learn.bela.io/tutorials/trill-sensors/working-with-trill-craft/](<>)
 
-I found some inspiration for the individual sensors for the slider stickers from here: [https://www.kobakant.at/DIY/?p=6607](<>) . I was pondering between arrow and arch sticker but decided to start with the arrows. The basic idea with that shape is that the capacitive sensors are able to read the finger's position either from one or two sensors at the same time providing more detailed data. Along the week I was:
+I found some inspiration for the individual slider sensors from here: [https://www.kobakant.at/DIY/?p=6607](<>) . I was pondering between arrow and arch sticker but decided to start with the arrows. The basic idea with that shape is that the capacitive sensors are able to read the finger's position either from one or two sensors at the same time providing more detailed data. Along the week I was:
 
 * Drawing and fixing vector files for the copper tape. Somehow the 20 sensors on the spiral turned into 19 pieces.
 * Made the laser cut files for the inner structure, which were cut from acrylic. The structure is sort of a sandwich, where the spiral slider and buttons are embedded in-between the cover and a bottom layer! No need for glue!
