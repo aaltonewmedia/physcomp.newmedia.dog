@@ -174,7 +174,7 @@ I took some a bit nicer product photos :) Below you will find the project docume
 
 {{<vimeo 1038666082>}}
 
-
+Music in the video: *Freezing but warm* by Meydän, Licensed under CC BY <https://freemusicarchive.org/music/Meydan/Ambient_1860>
 
 ## Reflection
 
