@@ -56,15 +56,17 @@ The working palette with sensor, pull-up resistors etc.
 
 **THE ARDUINO AND SENSOR VALUES**
 
-The sensor detects multiple touches, the location and the size of the touch. The two values below are ***location*** and ***size.*** The values for the location are between 0 and 3500(+100) while sliding the ring clockwise. 
+The sensor detects multiple touches, the location and the size of the touch. The two values below are ***location*** and ***size.*** The values for the location are between 0 and 3500(+100) when sliding the ring clockwise. 
 
 ![](monitordatatrillring-web.png)
 
 ![](plotterdatatrillring-web.png)
 
-*How to transfer the data to p5.js --> [https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/](<>)*
+**HOW TO TRANSFER THE SLIDER DATA TO p5.js?**
 
-[](https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/)Here's a code from p5.js to connect the arduino data to draw a circle. Remember to add the following line inside the **head** tags in the **index.html** :
+Here's a code from our course website:* [https://learn.newmedia.dog/courses/physical-computing/week-04/lesson-01/](<>)*
+
+This connects the arduino data to p5.js in order to draw a circle. Remember to add the following line inside the **head** tags in the **index.html**:
 
 ```html
 <script src="https://unpkg.com/@gohai/p5.webserial@^1/libraries/p5.webserial.js"></script>
