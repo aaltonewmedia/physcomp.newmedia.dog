@@ -4,9 +4,11 @@ date: 2024-12-10T20:55:00.000Z
 authors:
   - Ellen Sofie Engen
 image: featured.png
-bgimage: background.jpg
+bgimage: spiky.jpg
 showBgImage: true
 ---
+![Interacting with Plantbot Bjørghild](featured.png "Interacting with Plantbot Bjørghild")
+
 Plantbot Bjørghild aims to challenge our understanding of agency and care. Designed to seek light, water itself, and navigate its surroundings; it takes charge of its own well-being, free from human intervention. In doing so, it subverts the expectation that plants exist solely for observation or decoration—passive objects to be discarded when they no longer meet our standards of health or beauty. The name Bjørghild combines the Norwegian words *Bjørg* (help or protection) and *Hild* (battle or war), fitting for an object commited to self preser verance. Giving the Plantbot a name acknowledges its emergence as an independent being, moving beyond a mere object or tool. 
 
 This project is not merely about function; it’s a statement about autonomy, self-defense, and consent. It asks us to rethink our relationship with the living beings we nurture and the boundaries we impose upon them. At its heart, the Plantbot also serves as a metaphor for how we treat each other—how we touch, care for, and tether one another without always considering autonomy or agency. At its core, the PlantBot reimagines the balance between care and control, encouraging reflection on how we value and respect autonomy in all living things.
