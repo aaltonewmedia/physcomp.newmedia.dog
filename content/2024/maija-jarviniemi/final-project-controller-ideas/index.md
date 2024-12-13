@@ -160,8 +160,6 @@ What happened:
 * Connected Arduino on my computer and run an example code from the Trill library with the help of Matti. IT WORKS! I also succeeded in connecting the slider to my p5.j sketches. The artwork still required some adjusting with lerping and the all the visuals to get a calm and smooth animation that would correspond the slow tracing of the spiral with finger.
 * 3d printed a bottom piece for the controller to protect the wiring. Arduino and breadboard are still separate from the controller so the this solution was not the most ideal, but works for now. Thanks Miro again for help!
 
-
-
 ![](physcomp_process-web_041224-4.jpg)
 
 ![](physcomp_process-web_041224-5.jpg)
