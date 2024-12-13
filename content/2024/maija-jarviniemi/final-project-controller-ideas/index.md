@@ -120,7 +120,7 @@ Okay! So after testing how the sliders work I continued with figuring out the ac
 
 ### Mon 25.11. - Sun 1.12.2024: The design challenge
 
-As the size and measurements were decided, it was time to start figuring out final design and how the controlled was built. I had decided to use 20 individual capacitive sensors on the slider + 2 extra for the buttons. These were to be soldered to the Trill Craft sensor: [https://learn.bela.io/tutorials/trill-sensors/working-with-trill-craft/](<>)
+As the size and measurements were decided, it was time to start figuring out the final design and how the controlled was built. I had decided to use 20 individual capacitive sensors on the slider + 2 extra for the buttons. These were to be soldered to the Trill Craft sensor: [https://learn.bela.io/tutorials/trill-sensors/working-with-trill-craft/](<>)
 
 I found some inspiration for the individual sensors for the slider stickers from here: [https://www.kobakant.at/DIY/?p=6607](<>) . I was pondering between arrow and arch sticker but decided to start with the arrows. The basic idea with that shape is that the capacitive sensors are able to read the finger's position either from one or two sensors at the same time providing more detailed data. Along the week I was:
 
