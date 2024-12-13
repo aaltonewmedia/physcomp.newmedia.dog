@@ -205,7 +205,6 @@ void setup() {
   // We recommend a prescaler value of 4
   trillSensor.setPrescaler(4);
   // Experiment with this value to avoid corss talk between sliders if they are position close together
-  //trillSensor.setNoiseThreshold(200);
   trillSensor.setNoiseThreshold(200);
 }
 
