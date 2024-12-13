@@ -18,8 +18,6 @@ My initial inspiration was the sensation of drawing with finger on sand. Hence, 
 
 ![](featured.jpg)
 
-
-
 ### 19.11.2024 Things to consider
 
 * Here's a sensor that might work with this kind of spiral slider: [https://learn.bela.io/products/trill/about-trill/](<>)
@@ -38,7 +36,6 @@ My initial inspiration was the sensation of drawing with finger on sand. Hence, 
 * How to fit the spiral perfectly with the 3d printed top part? 
 * For now I think the controller will be connected to the computer with usb-c cable where it will also get power from -> in the future version it would need batteries
 * Figure out how to connect the data from the sensor with p5.js
-
 
 ### The Trill Ring sensor
 
@@ -123,7 +120,6 @@ Okay! So after testing how the sliders work I continued with figuring out the ac
 * To get the right kind of spiral, I coded it with p5.js and turned into SVG vector. Before this I had drawn by hand a spiral shape on a millimeter paper to figure out what is the most pleasing length and size for the spiral.
 * Last part was to print an actual size spiral and see how it feels when touched. All this was done with the help of Miro and his 3d printer!
 
-
 ![](img_2019web.jpg)
 
 ### Mon 25.11. - Sun 1.12.2024
@@ -141,7 +137,7 @@ I found some inspiration for the individual sensors for the slider stickers from
 
 ![](physcomp_process-web_041224-2.jpg)
 
-### Here are all the pieces for the controller (minus wiring)!
+Here are all the pieces for the controller (minus wiring) ready to be attached!
 
 ### Mon 2. - Tue 3.12.2024
 
