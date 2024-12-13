@@ -150,13 +150,17 @@ Now that all the bits and pieces were ready, it was time to learn how to solder 
 
 ![](physcomp_process-web_041224-3.jpg)
 
-### Wed 4.12.2024
+### Wed 4.12.2024: It works!
 
-* Final soldering of the button wires, pin 25 for the left button sensor and pin 29 for the right button sensor -> soldering to the other edge of the Trill Craft while the first 15 wires were attached was quite tricky due to very limited space!
-* To prevent glue on the Trill Craft, I attached it to a piece of EVA foam with few stitches and that to the acrylic with 2-sided tape
-* Attached the SCL, SDA, power (5V), grounding via breadboard and 2 resistors to Arduino board
-* Tested with Matti and it works! Also succeeded in connecting the slider to my p5.j sketches -> still needs some adjusting with lerping and the visuals to get the calm and smooth animation I want
-* 3d printed a bottom piece for the controller to protect the wiring -> not the best solution but works for now. Arduino and breadboard are still separate from the controller. Miro made the 3d model for the bottom cover with my instructions
+What happened:
+
+* I soldered the last two button, pin 25 for the left button sensor and pin 29 for the right button sensor.
+* To prevent glue on the Trill Craft, I attached it to a piece of EVA foam with few stitches and that to the acrylic layer with 2-sided tape.
+* Attached the SCL, SDA, power (5V), grounding and 2 resistors via breadboard to the Arduino UNO board.
+* Connected Arduino on my computer and run an example code from the Trill library with the help of Matti. IT WORKS! I also succeeded in connecting the slider to my p5.j sketches. The artwork still required some adjusting with lerping and the all the visuals to get a calm and smooth animation that would correspond the slow tracing of the spiral with finger.
+* 3d printed a bottom piece for the controller to protect the wiring. Arduino and breadboard are still separate from the controller so the this solution was not the most ideal, but works for now. Thanks Miro again for help!
+
+
 
 ![](physcomp_process-web_041224-4.jpg)
 
