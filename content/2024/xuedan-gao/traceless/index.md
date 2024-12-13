@@ -98,6 +98,16 @@ This installation system combines hardware and software modules to achieve artis
 
 ## Reflection
 
+The idea for this project began in March this year, when I began to think about how to work with ice in sound. The initial inspiration came from Annea Lockwood's work A Sound Map of the Danube. In her work, she used sounds from nature and used an equalizer to highlight only the frequencies she liked. This inspired me to create a work with ice as the theme, which would arouse thoughts on the relationship between nature and humans by amplifying the ignored sounds in our daily lives. Therefore, my initial idea was to record the sound of ice and try to keep the sound original without too much processing.
+
+Later, I read an article about the anthropology of ice. The article explored the multiple meanings of ice: it was once an awe-inspiring natural force in history, but now it has become fragile and rapidly receding due to climate change. This prompted me to think: how to use art to contrast the slow process of ice formation with its current rapid melting, thereby showing the disruption of natural rhythms by human activities.
+
+My initial idea was to record the sound of ice melting naturally and compare it with the sound of artificial accelerated melting (such as adding hot water) to reflect this conflict of rhythms. After discussing my idea with Xinchen, she suggested a more expressive approach: conveying the slow evolution of ice in time through the formation process of snowflakes, ice cubes, and glacial ice.
+
+When trying to record the sound of ice, I experimented with various methods, including using XY recording, embedding contact microphones in ice cubes, and using funnels as amplification devices. But in the end, I decided to focus on recording the sound of dripping water as the ice melted. This natural and gradual process just reflects the rhythm of nature.
+
+
+
 ## Acknowledgments
 
 Special thanks to Matti for all the help throughout the process, Xiaoqi Wang for help with video shooting and exhibition setup, and Ron from the metal workshop for the support during the installation construction.
