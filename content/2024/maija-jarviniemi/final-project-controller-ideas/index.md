@@ -8,13 +8,11 @@ showBgImage: false
 ---
 ## [](<>)Basic concept + recap :
 
-I am expanding my project I am working with in the Computational Art & Design course: I am planning to do drawing exercises on spirals and other circular paths with p5.js They are inspired by old s[pecial figure skating figures](http://www.skatingaheadofthecurve.com/SpecialFigures.html) as well as beautifully illustrated [choreographical manuals for old ballroom dances](https://publicdomainreview.org/collection/dances-in-beauchamp-feuillet-notation/) called Beauchamp-Feuillet notation
+I am expanding my project I am working with in the Computational Art & Design course: I am planning to do drawing exercises on spirals and other circular paths with p5.js They are inspired by old s[pecial figure skating figures](http://www.skatingaheadofthecurve.com/SpecialFigures.html) as well as beautifully illustrated [choreographical manuals for old ballroom dances](https://publicdomainreview.org/collection/dances-in-beauchamp-feuillet-notation/) called Beauchamp-Feuillet notation.
 
 In Physical Computing I aim to focus on creating a user interface that enables interaction with the drawing exercises
 
 My initial inspiration was the sensation of drawing with finger on sand. Hence, I wanted to focus on the touch and how it feels on one's finger to trace slowly a spiral. The optimal controller would have a soft to touch ”furrow” without any sharp edges. An important factor for me is also the aesthetics and materials: I’d like it to be beautiful so that it would invite one to use it. 
-
-[Link to the Miro board](<>)
 
 ![](featured.jpg)
 
@@ -27,13 +25,11 @@ My initial inspiration was the sensation of drawing with finger on sand. Hence, 
 
 * Rounded edge for the spiral for soft touch
 * What's the size of the controller and the thickness/depth of the "furrow"?
-* Is there some kind of structure inside for the wiring? How are the top and bottom part attached? 
-* A 3d printed bottom layer for the copper sticker to put on, is it just a square/circle or a spiral as well?
+* Is there some kind of structure inside for the wiring? How are the top and bottom part attached? A 3d printed bottom layer for the copper sticker to put on, is it just a square/circle or a spiral as well? How to fit the spiral perfectly with the 3d printed top part? 
 
 **For the spiral:**
 
-* In how many sections should the spiral be cut? 30 was the number in one the Bela sensors
-* How to fit the spiral perfectly with the 3d printed top part? 
+* In how many sections should the spiral be cut? 30 was the number in one of the Bela Trill sensors
 * For now I think the controller will be connected to the computer with usb-c cable where it will also get power from -> in the future version it would need batteries
 * Figure out how to connect the data from the sensor with p5.js
 
