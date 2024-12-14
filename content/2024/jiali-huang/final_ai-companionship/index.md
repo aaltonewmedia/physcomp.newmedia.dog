@@ -21,7 +21,7 @@ Equipped with motion and language interaction capabilities, such as responding w
 
 Includes touch interaction, voice interaction, and more. For example, the plush toy responds with motions when hugged and reacts differently based on various conversational styles during communication with users.
 
-![](ba36dcfed6763429cd0381d2277f859.png)
+![](623527d91209537f1001af945204c3e.png)
 
 ![](造型-关节设置.png)
 
@@ -30,10 +30,6 @@ Includes touch interaction, voice interaction, and more. For example, the plush 
 **Video:**[](https://1drv.ms/v/c/314ba15a9b23cde5/EcA3ic__0GdFkI_IoiJ5GswBYOJthC_gI6eUWoHF2UEoaQ?e=LZU4Bo)
 [38d9ce9b1ea93a1b5fff530987db03d7_raw.mp4](https://1drv.ms/v/c/314ba15a9b23cde5/EcA3ic__0GdFkI_IoiJ5GswBYOJthC_gI6eUWoHF2UEoaQ?e=tY3vvY)
 [](https://1drv.ms/v/c/314ba15a9b23cde5/EcA3ic__0GdFkI_IoiJ5GswBYOJthC_gI6eUWoHF2UEoaQ?e=LZU4Bo)
-
-
-
-
 
 **Trail**
 
