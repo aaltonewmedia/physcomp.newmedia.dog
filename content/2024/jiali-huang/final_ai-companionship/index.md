@@ -8,11 +8,9 @@ showBgImage: true
 ---
 **Introduction**
 
-
 This is an AI companion plush pet designed for young, high-end consumers.
 
 **Product Features**
-
 
 Emotional Interaction, Motion Interaction, and Language Interaction
   (Includes emotional nurturing, habit formation, and conversational development)
@@ -21,10 +19,9 @@ Equipped with motion and language interaction capabilities, such as responding w
 
 **Interaction Design**
 
-
 Includes touch interaction, voice interaction, and more. For example, the plush toy responds with motions when hugged and reacts differently based on various conversational styles during communication with users.
 
-![](ce8d5e92e8c885b6027439bfbadb0e3.png)
+![](ba36dcfed6763429cd0381d2277f859.png)
 
 ![](造型-关节设置.png)
 
