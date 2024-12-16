@@ -27,6 +27,26 @@ Includes touch interaction, voice interaction, and more. For example, the plush 
 
 ![](应用场景.png)
 
+**production process**
+
+Collaborating with different factories：
+
+Mold factory
+
+![](68f29c22867f9e83e51339541a7dbec.png)
+
+![](4cf1a6f6bfd28a0eb56449b6ad20719.png)
+
+![](a6d7784e6e95613e732e139c53a95dc.png)
+
+Chip factory
+
+
+![](f9aab586b9c94da9bb1cbdded852a02.png)
+
+![](b630595ec4f7bae801defc1d07deb48.png)
+
+
 **Video:**[](https://1drv.ms/v/c/314ba15a9b23cde5/EcA3ic__0GdFkI_IoiJ5GswBYOJthC_gI6eUWoHF2UEoaQ?e=LZU4Bo)
 [38d9ce9b1ea93a1b5fff530987db03d7_raw.mp4](https://1drv.ms/v/c/314ba15a9b23cde5/EcA3ic__0GdFkI_IoiJ5GswBYOJthC_gI6eUWoHF2UEoaQ?e=tY3vvY)
 [](https://1drv.ms/v/c/314ba15a9b23cde5/EcA3ic__0GdFkI_IoiJ5GswBYOJthC_gI6eUWoHF2UEoaQ?e=LZU4Bo)
