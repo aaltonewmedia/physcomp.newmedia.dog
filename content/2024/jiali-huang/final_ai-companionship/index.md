@@ -46,6 +46,8 @@ Chip factory
 
 ![](b630595ec4f7bae801defc1d07deb48.png)
 
+![](61cca450c180c15d6c195940d4509d6.png)
+
 
 **Video:**[](https://1drv.ms/v/c/314ba15a9b23cde5/EcA3ic__0GdFkI_IoiJ5GswBYOJthC_gI6eUWoHF2UEoaQ?e=LZU4Bo)
 [38d9ce9b1ea93a1b5fff530987db03d7_raw.mp4](https://1drv.ms/v/c/314ba15a9b23cde5/EcA3ic__0GdFkI_IoiJ5GswBYOJthC_gI6eUWoHF2UEoaQ?e=tY3vvY)
