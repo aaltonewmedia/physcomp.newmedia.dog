@@ -15,6 +15,8 @@ This is an AI companion plush pet designed for young, high-end consumers.
 Emotional Interaction, Motion Interaction, and Language Interaction
   (Includes emotional nurturing, habit formation, and conversational development)
 
+全本地部署，无数据隐私泄露风险。
+
 Equipped with motion and language interaction capabilities, such as responding with movements and feedback when touched. It can be taught to speak through organized unit models, adapt its language to different user groups and scenarios, and offer emotional value by using algorithms to assess emotions and provide companionship.
 
 **Interaction Design**
@@ -41,13 +43,11 @@ Mold factory
 
 Chip factory
 
-
 ![](f9aab586b9c94da9bb1cbdded852a02.png)
 
 ![](b630595ec4f7bae801defc1d07deb48.png)
 
 ![](61cca450c180c15d6c195940d4509d6.png)
-
 
 **Video:**[](https://1drv.ms/v/c/314ba15a9b23cde5/EcA3ic__0GdFkI_IoiJ5GswBYOJthC_gI6eUWoHF2UEoaQ?e=LZU4Bo)
 [38d9ce9b1ea93a1b5fff530987db03d7_raw.mp4](https://1drv.ms/v/c/314ba15a9b23cde5/EcA3ic__0GdFkI_IoiJ5GswBYOJthC_gI6eUWoHF2UEoaQ?e=tY3vvY)
