@@ -104,7 +104,7 @@ I had a bunch of issues with the installation that I shall keep in mind next tim
 #### Final Thoughts
 Even with all the installation issues, I learnt a lot while making and installing this project and will definitely improve on it in the future. This was the first time I made something with so many different parts and I feel like I can streamline my process much better in my next iteration.
 
-<u>[Link to all Code](https://drive.google.com/drive/folders/1hT5bIIZHs4BjF2R0SENvjzLc9m-YSxYj?usp=drive_link)</u> 
+<u>[Link to all Code & Video of Installation](https://drive.google.com/drive/folders/1hT5bIIZHs4BjF2R0SENvjzLc9m-YSxYj?usp=drive_link)</u> 
 
 --- 
 
