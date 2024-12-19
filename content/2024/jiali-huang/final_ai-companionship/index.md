@@ -32,6 +32,8 @@ It integrates a camera, microphone, LED screen, and various sensors. Through AI 
   : Collects data using the camera, microphone, and tactile sensors to analyze user movements, speech, and environmental information, enabling adaptive and context-aware outputs.
 
 \-
+
+
 **Main Objectives**
 
 * Provide human-like emotional expressions and multimodal interactive experiences.
