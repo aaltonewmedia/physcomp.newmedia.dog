@@ -9,6 +9,7 @@ showBgImage: true
 **Introduction**
 This AI Companion Toy is an AI-powered nurturing pet designed for young, high-end consumers. It caters specifically to young adults living independently in big cities who lack emotional interaction, offering emotional comfort and interactive support. By integrating technologies such as voice interaction, motion interaction, and emotional simulation, the product leverages hardware sensors and local AI capabilities to deliver personalized, multidimensional emotional companionship. It is suitable for scenarios such as leisure and entertainment, fitness assistance, household chores, and daily commuting.
 
+\-
 
 **Product Features**
 
@@ -30,8 +31,7 @@ It integrates a camera, microphone, LED screen, and various sensors. Through AI 
 
   : Collects data using the camera, microphone, and tactile sensors to analyze user movements, speech, and environmental information, enabling adaptive and context-aware outputs.
 
-
-
+\-
 **Main Objectives**
 
 * Provide human-like emotional expressions and multimodal interactive experiences.
@@ -42,10 +42,7 @@ It integrates a camera, microphone, LED screen, and various sensors. Through AI 
 
 * Ensure high stability and simple, user-friendly interactive behavior.
 
-
-
-
-
+\-
 
 **Interaction Design**
 
@@ -60,6 +57,8 @@ It integrates a camera, microphone, LED screen, and various sensors. Through AI 
 ![](e3b4411ed1c995b565434f0a092b40c.png)
 
 ![](c6650d3effb910e3a07edc7c118ba4c.png)
+
+\-
 
 **production process**
 
@@ -84,6 +83,8 @@ Chip factory
 **Video:**[](https://1drv.ms/v/c/314ba15a9b23cde5/EcA3ic__0GdFkI_IoiJ5GswBYOJthC_gI6eUWoHF2UEoaQ?e=LZU4Bo)
 [38d9ce9b1ea93a1b5fff530987db03d7_raw.mp4](https://1drv.ms/v/c/314ba15a9b23cde5/EcA3ic__0GdFkI_IoiJ5GswBYOJthC_gI6eUWoHF2UEoaQ?e=tY3vvY)
 [](https://1drv.ms/v/c/314ba15a9b23cde5/EcA3ic__0GdFkI_IoiJ5GswBYOJthC_gI6eUWoHF2UEoaQ?e=LZU4Bo)
+
+\-
 
 **Trail**
 
