@@ -10,21 +10,6 @@ showBgImage: true
 This AI Companion Toy is an AI-powered nurturing pet designed for young, high-end consumers. It caters specifically to young adults living independently in big cities who lack emotional interaction, offering emotional comfort and interactive support. By integrating technologies such as voice interaction, motion interaction, and emotional simulation, the product leverages hardware sensors and local AI capabilities to deliver personalized, multidimensional emotional companionship. It is suitable for scenarios such as leisure and entertainment, fitness assistance, household chores, and daily commuting.
 
 
-
-**Main objectives**
-
-* Provide human-like emotional expressions and multimodal interactive experiences.
-
-* Gradually adapt to the user’s personality and behavior through continuous learning.
-
-* Enhance the toy’s intelligence and entertainment value using sensors and AI technology.
-
-* Ensure high stability and simple, user-friendly interactive behavior.
-
-
-
-
-
 **Product Features**
 
 It integrates a camera, microphone, LED screen, and various sensors. Through AI language models, multimodal perception technology, and hardware interaction, the product delivers the following core features:
