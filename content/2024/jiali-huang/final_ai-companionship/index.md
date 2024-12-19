@@ -101,3 +101,5 @@ At first I did this.
 ![](48030cda105ab168e81ef8dd61660bd.png)
 
 I want to develop this product into a commercialized offering.
+
+So, I began collaborating with a startup company.
