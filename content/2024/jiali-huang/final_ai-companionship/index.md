@@ -29,7 +29,11 @@ Includes touch interaction, voice interaction, and more. For example, the plush 
 
 ![](应用场景.png)
 
+**Appearance**
 
+![](e3b4411ed1c995b565434f0a092b40c.png)
+
+![](c6650d3effb910e3a07edc7c118ba4c.png)
 
 **production process**
 
