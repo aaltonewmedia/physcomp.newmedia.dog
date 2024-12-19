@@ -11,6 +11,20 @@ This AI Companion Toy is an AI-powered nurturing pet designed for young, high-en
 
 
 
+**Main objectives**
+
+* Provide human-like emotional expressions and multimodal interactive experiences.
+
+* Gradually adapt to the user’s personality and behavior through continuous learning.
+
+* Enhance the toy’s intelligence and entertainment value using sensors and AI technology.
+
+* Ensure high stability and simple, user-friendly interactive behavior.
+
+
+
+
+
 **Product Features**
 
 It integrates a camera, microphone, LED screen, and various sensors. Through AI language models, multimodal perception technology, and hardware interaction, the product delivers the following core features:
