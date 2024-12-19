@@ -42,7 +42,7 @@ It integrates a camera, microphone, LED screen, and various sensors. Through AI 
 
 * Ensure high stability and simple, user-friendly interactive behavior.
 
-\-
+  -
 
 **Interaction Design**
 
