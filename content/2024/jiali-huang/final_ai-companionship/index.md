@@ -52,6 +52,8 @@ Cultivation + Companionship. This product develops a real-time evolving personal
 
 **Appearance**
 
+Inspired by the idiom "parrot what others say" due to the AI pet's focus on voice, action, and emotional interactions, we have designed the product to take the form of a parrot.
+
 ![](e3b4411ed1c995b565434f0a092b40c.png)
 
 ![](c6650d3effb910e3a07edc7c118ba4c.png)
