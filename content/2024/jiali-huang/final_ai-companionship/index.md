@@ -56,7 +56,7 @@ Inspired by the idiom "parrot what others say" due to the AI pet's focus on voic
 
 ![](28907b6e8a5d7715eaf4a8cf7ce5969.png)
 
-![](c921eea4498215cd1070b4710c32bc1.png)
+![](b3190b1e42fef7d8a11d0fdd032c71c.png)
 
 \-
 
