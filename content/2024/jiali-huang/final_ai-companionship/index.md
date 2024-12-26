@@ -1,5 +1,5 @@
 ---
-title: FINAL_AI COMPANIONSHIP
+title: FINAL_AI COMPANIONSHIP_Hoki
 date: 2024-12-12T22:12:00.000Z
 authors:
   - Jiali Huang
