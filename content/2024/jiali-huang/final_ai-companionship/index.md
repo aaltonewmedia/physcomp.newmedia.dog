@@ -8,7 +8,7 @@ showBgImage: true
 ---
 **Introduction**
 
-This AI Companion Toy is an AI-powered nurturing pet designed for young, high-end consumers. It caters specifically to young adults living independently in big cities who lack emotional interaction, offering emotional comfort and interactive support. By integrating technologies such as voice interaction, motion interaction, and emotional simulation, the product leverages hardware sensors and local AI capabilities to deliver personalized, multidimensional emotional companionship. It is suitable for scenarios such as leisure and entertainment, fitness assistance, household chores, and daily commuting.
+Hoki is an AI-powered nurturing pet designed for young, high-end consumers. It caters specifically to young adults living independently in big cities who lack emotional interaction, offering emotional comfort and interactive support. By integrating technologies such as voice interaction, motion interaction, and emotional simulation, the product leverages hardware sensors and local AI capabilities to deliver personalized, multidimensional emotional companionship. It is suitable for scenarios such as leisure and entertainment, fitness assistance, household chores, and daily commuting.
 
 \-
 
@@ -18,16 +18,16 @@ It integrates a camera, microphone, LED screen, and various sensors. Through AI 
 
 * **Motion Interaction**
 
-  : Mimics user movements and interacts with people and the environment.
+  Mimics user movements and interacts with people and the environment.
 * **Voice Interaction**
 
-  : Supports command recognition, emotional simulation, and gradual learning of the user’s language expressions.
+  Supports command recognition, emotional simulation, and gradual learning of the user’s language expressions.
 * **Personality Space**
 
-  : Dynamically adjusts personality traits based on real-time data, providing personalized responses to the user’s emotions and behaviors.
+  Dynamically adjusts personality traits based on real-time data, providing personalized responses to the user’s emotions and behaviors.
 * **Environment Understanding**
 
-  : Collects data using the camera, microphone, and tactile sensors to analyze user movements, speech, and environmental information, enabling adaptive and context-aware outputs.
+  Collects data using the camera, microphone, and tactile sensors to analyze user movements, speech, and environmental information, enabling adaptive and context-aware outputs.
 
 \-
 
@@ -54,7 +54,7 @@ Cultivation + Companionship. This product develops a real-time evolving personal
 
 Inspired by the idiom "parrot what others say" due to the AI pet's focus on voice, action, and emotional interactions, we have designed the product to take the form of a parrot.
 
-![](28907b6e8a5d7715eaf4a8cf7ce5969.png)
+![](554e64def7e01b4244c6706db522c8c.png)
 
 ![](b3190b1e42fef7d8a11d0fdd032c71c.png)
 
