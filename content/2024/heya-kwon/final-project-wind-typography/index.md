@@ -8,6 +8,12 @@ showBgImage: false
 ---
 ![](featured.png)
 
+# Live Demo
+
+https://heya.world/wind_typography/
+
+
+
 # Description
 
 If wind could write, what would its words look like? 
@@ -72,8 +78,6 @@ Installed the wind meter on the Varë balcony. Hands frozen but the meter works.
 
 ![](wind-direction.png)
 
-
-
 ![](kakaotalk_photo_2024-12-05-12-55-19-002.jpeg)
 
 Sent the data via Arduino to Adafruit IO where I could view and export the data as CSVs (feat. Alepa gloves)
@@ -85,8 +89,6 @@ Converted the exported data into shapes on p5.js.
 ![](p5_final3.png)
 
 Polished the codes/rules on p5.js.
-
- 
 
 ![](download.png)
 
