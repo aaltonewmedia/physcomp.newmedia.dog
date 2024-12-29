@@ -60,7 +60,7 @@ concept
 
 3d model
 
-![](df0652f44c1f297663370bd78ac686c.png)
+![](3d6dd1e0905bbe31c2286b85d1c47bf.png)
 
 \-
 
