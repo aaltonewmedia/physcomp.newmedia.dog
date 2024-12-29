@@ -54,12 +54,9 @@ Cultivation + Companionship. This product develops a real-time evolving personal
 
 Inspired by the idiom "parrot what others say" due to the AI pet's focus on voice, action, and emotional interactions, we have designed the product to take the form of a parrot.
 
-
-
 Appearance: Features a head, body, two legs, two wings, and a tail.
 
 Material: The surface is made of soft plush material, while the internal structure consists of a plastic/resin framework. Key parts (such as the wings and head) are reinforced with high-strength resin or other lightweight rigid materials for support.
-
 
 concept
 
@@ -77,9 +74,9 @@ This AI smart companion toy features a dual main control architecture core (AX63
 
 During the design and implementation process, sensor selection, camera focus capabilities, motor-driven movement and steering control, large-scale model inference, and multi-modal calculation adjustments and optimizations were required. Priority was given to improving the safety margin and redundancy mechanisms of the AI personality to ensure the toy could interact with users in a variety of scenarios in a safe, friendly, and engaging manner.
 
+![](b205163b78a829f4de22c79a5c472f8.png)
+
 \-
-
-
 
 **production process**
 
