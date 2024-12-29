@@ -71,6 +71,16 @@ concept
 
 \-
 
+**Technical Development**
+
+This AI smart companion toy features a dual main control architecture core (AX630C + STM32) and utilizes multiple sensor inputs (such as a camera, microphone, touch sensors, MPU6050, etc.) to collect user inputs. It leverages a locally running large model (qwen-2-1.5B) to achieve high-quality language and emotional interactions. Its mechanical structure includes a "three-axis gimbal head," two "wire-driven legs," and a "foot pad + tail" that support simple movements. The software layer integrates finite state machines and factorization models (FFM), allowing for real-time and long-term tracking and updates of the user's AI aspects, thereby realizing a continuously evolving and personalized companion function.
+
+During the design and implementation process, sensor selection, camera focus capabilities, motor-driven movement and steering control, large-scale model inference, and multi-modal calculation adjustments and optimizations were required. Priority was given to improving the safety margin and redundancy mechanisms of the AI personality to ensure the toy could interact with users in a variety of scenarios in a safe, friendly, and engaging manner.
+
+\-
+
+
+
 **production process**
 
 Collaborating with different factories：
