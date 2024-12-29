@@ -50,9 +50,16 @@ Cultivation + Companionship. This product develops a real-time evolving personal
 
 ![](应用场景.png)
 
-**Appearance**
+**Appearance Design**
 
 Inspired by the idiom "parrot what others say" due to the AI pet's focus on voice, action, and emotional interactions, we have designed the product to take the form of a parrot.
+
+
+
+Appearance: Features a head, body, two legs, two wings, and a tail.
+
+Material: The surface is made of soft plush material, while the internal structure consists of a plastic/resin framework. Key parts (such as the wings and head) are reinforced with high-strength resin or other lightweight rigid materials for support.
+
 
 concept
 
