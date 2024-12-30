@@ -40,6 +40,12 @@ It integrates a camera, microphone, LED screen, and various sensors. Through AI 
 
 \-
 
+
+
+
+
+\-
+
 **Interaction Design**
 
 Cultivation + Companionship. This product develops a real-time evolving personality and habits for accompanying daily life.
