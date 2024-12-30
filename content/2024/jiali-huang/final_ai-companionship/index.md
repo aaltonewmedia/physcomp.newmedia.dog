@@ -42,13 +42,13 @@ It integrates a camera, microphone, LED screen, and various sensors. Through AI 
 
 **User Segmentation**
 
-1. Young Adults Desiring Pets but Limited by Reality （MAIN）
+* Young Adults Desiring Pets but Limited by Reality （MAIN）
 
 Characteristics: Urban lifestyle, living alone or in small households, busy work schedules preventing them from owning real pets. 
 
 Needs: Products that provide a sense of companionship, stress relief, and are easy to maintain. 
 
-2. Children's Companionship and Development
+* Children's Companionship and Development
 
 Characteristics: Emphasis on interactivity, fun, and educational value. 
 
@@ -62,21 +62,17 @@ Fostering intimacy and close relationships through nurturing products.
 
 Teaching children responsibility. 
 
-3. Lonely Elderly Living Alone
+* Lonely Elderly Living Alone
 
 Characteristics: Strong need for emotional connection, simple lifestyle, requiring easy-to-use products. 
 
 Needs: Smart companion devices offering warm and emotionally interactive experiences. 
 
-4. Others: Tech Enthusiasts Interested in AI Interaction
+* Others: Tech Enthusiasts Interested in AI Interaction
 
 Characteristics: Focused on technological sophistication, seeking novel experiences. 
 
 Needs: Cutting-edge features and a sense of innovation. 
-
-
-
-
 
 \-
 
