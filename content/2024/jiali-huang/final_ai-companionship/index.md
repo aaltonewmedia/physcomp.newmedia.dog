@@ -56,11 +56,7 @@ Needs: Smart pet toys that combine education with entertainment, stimulating cur
 
 Target Audience: Parents or guardians as buyers; parents or children as product selectors. 
 
-Pain Points: Emotional companionship. 
-
-Fostering intimacy and close relationships through nurturing products. 
-
-Teaching children responsibility. 
+Pain Points: Emotional companionship. Fostering intimacy and close relationships through nurturing products. Teaching children responsibility. 
 
 * Lonely Elderly Living Alone
 
