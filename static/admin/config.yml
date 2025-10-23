@@ -4,6 +4,24 @@ backend:
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
 collections:
+  - name: "2025-matti" # Used in routes, e.g., /admin/collections/post
+    label: "2025 Matti Niinimäki" # Used in the UI
+    folder: "content/2025/matti-niinimaki" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_library:
+      config:
+        max_file_size: 1000000 # in bytes, only for default media library
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Matti Niinimäki"] }
+      - { label: "Featured Image", hint: "Name the image featured.jpg", name: "image", widget: "image" }
+      - { label: "Background Image", hint: "Name the image background.jpg", name: "bgimage", widget: "image", required: false  }
+      - { label: "Show Background", name: "showBgImage", widget: "boolean", default: false}
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "2025-ana" # Used in routes, e.g., /admin/collections/post
     label: "2025 Ana" # Used in the UI
     folder: "content/2025/ana" # The path to the folder where the documents are stored
@@ -40,4 +58,21 @@ collections:
       - { label: "Background Image", hint: "Name the image background.jpg", name: "bgimage", widget: "image", required: false  }
       - { label: "Show Background", name: "showBgImage", widget: "boolean", default: false}
       - { label: "Body", name: "body", widget: "markdown" }
-  
+  - name: "2025-elias" # Used in routes, e.g., /admin/collections/post
+    label: "2025 Elias" # Used in the UI
+    folder: "content/2025/elias" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_library:
+      config:
+        max_file_size: 1000000 # in bytes, only for default media library
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Authors", name: "authors", widget: "list", default: ["Your Name"] }
+      - { label: "Featured Image", hint: "Name the image featured.jpg", name: "image", widget: "image" }
+      - { label: "Background Image", hint: "Name the image background.jpg", name: "bgimage", widget: "image", required: false  }
+      - { label: "Show Background", name: "showBgImage", widget: "boolean", default: false}
+      - { label: "Body", name: "body", widget: "markdown" }
