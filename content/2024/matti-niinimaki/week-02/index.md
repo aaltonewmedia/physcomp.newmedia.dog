@@ -1,5 +1,5 @@
 ---
-title: Week 02 | Red Light, Green Light
+title: Week 02 | Sensors
 date: 2024-10-21T01:13:00.000Z
 authors:
   - Matti Niinimäki
