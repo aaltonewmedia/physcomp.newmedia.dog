@@ -3,10 +3,10 @@ title: Week 02 | Sensors
 date: 2024-10-21T01:13:00.000Z
 authors:
   - Matti Niinimäki
-image: featured.jpg
+image: VL53L1X.jpg
 bgimage: background.jpg
+showBgImage: true
 ---
-
 ## Interesting ALT+CTRL Game
 
 Line Wobbler by Robin Baumgarten
@@ -39,7 +39,7 @@ id is the ID of the video in the URL. For example, for [this video](https://www.
 {{</*youtube UZ_5ol_kyL4*/>}}
 ```
 
----
+- - -
 
 ## Sensor: VL53L1X Distance Sensor
 
@@ -47,8 +47,8 @@ id is the ID of the video in the URL. For example, for [this video](https://www.
 
 ### What kind of data can I get out of it?
 
-- Distance measurement (0–4000 mm)
-- Status of the signal (is it a valid reading or not). Status of 0 means that it is a valid reading.
+* Distance measurement (0–4000 mm)
+* Status of the signal (is it a valid reading or not). Status of 0 means that it is a valid reading.
 
 ![Status](status.png)
 
@@ -64,12 +64,12 @@ We can limit this cone to a smaller area by using the ROI setting of the sensor.
 
 ![ROI](roi.png)
 
-- Using the ROI seems to be a little complicated at first but it is actually quite simple. There are two steps to define the ROI
-- Set the center of the Region of Interest
-- Set the width and height of the ROI
-- Minimum 4x4
-- Maximum 16x16
-- Note that you have to take into account where the center is, you cannot go beyond the edges of the grid.
+* Using the ROI seems to be a little complicated at first but it is actually quite simple. There are two steps to define the ROI
+* Set the center of the Region of Interest
+* Set the width and height of the ROI
+* Minimum 4x4
+* Maximum 16x16
+* Note that you have to take into account where the center is, you cannot go beyond the edges of the grid.
 
 The photon detector is made up of a 16 x 16 array of SPADs (single photon avalanche diode). Each SPAD is identified by a number as shown in the table below.
 
@@ -93,33 +93,34 @@ We must choose the closest value that is to the right and up of the actual cente
 ### Code Libraries
 
 Multiple people/companies have created libraries for this specific sensor. You can find all of these and more from the Arduino Library Manager.
-- Sparkfun
-- Adafruit
-- Pololu
+
+* Sparkfun
+* Adafruit
+* Pololu
 
 The Sparkfun library seemed to have some issues freezing so I tested some of the others. My current recommendation is to use the Pololu library.
 
----
+- - -
 
 ## Game Idea
 
 ### What kind of interactions are possible with the data?
 
-- You can know how far away a person (or any object) is from a static place
-- Make a sound sculpture that gets louder (or quieter) when you go closer to it.
-- A very nervous object that starts shaking and vibrating more the closer to it you get.
-- A moving object is able to tell how close it is to any objects in front of the sensor
-- Make a robot that is able to detect and avoid obstacles
-- Make a wearable device for a person with limited sight. The data from the sensor can be converted to vibrations or sound pulses that let the person now if there are any obstacles in front of them.
-- Put it in the ceiling pointing down and you can detect if someone is underneath it (or even measure how tall they are)
-- Using the ROI feature, you could do simple gesture detection (is the object moving to left or right)
+* You can know how far away a person (or any object) is from a static place
+* Make a sound sculpture that gets louder (or quieter) when you go closer to it.
+* A very nervous object that starts shaking and vibrating more the closer to it you get.
+* A moving object is able to tell how close it is to any objects in front of the sensor
+* Make a robot that is able to detect and avoid obstacles
+* Make a wearable device for a person with limited sight. The data from the sensor can be converted to vibrations or sound pulses that let the person now if there are any obstacles in front of them.
+* Put it in the ceiling pointing down and you can detect if someone is underneath it (or even measure how tall they are)
+* Using the ROI feature, you could do simple gesture detection (is the object moving to left or right)
 
 ### How to use this as a game?
 
 My idea is...
 
----
+- - -
 
 ## Resources
 
-- [Tutorial for this sensor](https://learn.newmedia.dog/tutorials/arduino-and-electronics/sensors/distance-vl53l1x/)
+* [Tutorial for this sensor](https://learn.newmedia.dog/tutorials/arduino-and-electronics/sensors/distance-vl53l1x/)
