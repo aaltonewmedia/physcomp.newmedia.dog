@@ -6,6 +6,7 @@ authors:
 heroStyle: background
 image: featured.jpg
 showBgImage: false
+draft: true
 ---
 
 **Replace the text below with your own**

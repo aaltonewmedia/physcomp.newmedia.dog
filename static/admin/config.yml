@@ -257,7 +257,7 @@ collections:
       - { label: "Show Background", name: "showBgImage", widget: "boolean", default: false}
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "2025-xinyi-peng" # Used in routes, e.g., /admin/collections/post
-    label: "2025 Veronika Valtonen" # Used in the UI
+    label: "2025 Xinyi Peng" # Used in the UI
     folder: "content/2025/xinyi-peng" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
     media_library:
