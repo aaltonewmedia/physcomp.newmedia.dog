@@ -1,8 +1,8 @@
 ---
-title: Your Name
+title: Elias Ruokanen
 date: 2025-10-20T23:08:00.000Z
 authors:
-  - First Last
+  - Elias Ruokanen
 heroStyle: background
 image: featured.jpg
 showBgImage: false

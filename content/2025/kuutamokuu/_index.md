@@ -1,8 +1,8 @@
 ---
-title: Your Name
+title: Kuutamokuu
 date: 2025-10-20T23:08:00.000Z
 authors:
-  - First Last
+  - Kuutamokuu
 heroStyle: background
 image: featured.jpg
 showBgImage: false
