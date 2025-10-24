@@ -23,3 +23,11 @@ void loop(){
 
 }
 ```
+
+---
+
+## Solutions and Issues
+
+Some of the problems I noticed in the solutions created by the students:
+
+- Using digitalRead() on a pin that has been defined as an OUTPUT

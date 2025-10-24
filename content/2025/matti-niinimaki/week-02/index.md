@@ -3,7 +3,7 @@ title: Week 02 | Sensors
 date: 2024-10-21T01:13:00.000Z
 authors:
   - Matti Niinimäki
-image: VL53L1X.jpg
+image: table.jpg
 bgimage: background.jpg
 showBgImage: true
 ---
