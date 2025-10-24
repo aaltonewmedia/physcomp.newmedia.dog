@@ -1,8 +1,8 @@
 ---
-title: Your Name
+title: Xinyi Peng
 date: 2025-10-20T23:08:00.000Z
 authors:
-  - First Last
+  - Xinyi Peng
 heroStyle: background
 image: featured.jpg
 showBgImage: false

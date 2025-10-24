@@ -1,8 +1,8 @@
 ---
-title: Your Name
+title: Tomona Hashida
 date: 2025-10-20T23:08:00.000Z
 authors:
-  - First Last
+  - Tomona Hashida
 heroStyle: background
 image: featured.jpg
 showBgImage: false

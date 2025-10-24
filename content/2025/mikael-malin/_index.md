@@ -1,8 +1,8 @@
 ---
-title: Your Name
+title: Mikael Malin
 date: 2025-10-20T23:08:00.000Z
 authors:
-  - First Last
+  - Mikael Malin
 heroStyle: background
 image: featured.jpg
 showBgImage: false

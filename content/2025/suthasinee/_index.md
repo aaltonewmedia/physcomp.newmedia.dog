@@ -1,8 +1,8 @@
 ---
-title: Your Name
+title: Suthasinee
 date: 2025-10-20T23:08:00.000Z
 authors:
-  - First Last
+  - Suthasinee
 heroStyle: background
 image: featured.jpg
 showBgImage: false

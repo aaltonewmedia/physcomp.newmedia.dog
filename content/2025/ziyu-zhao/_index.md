@@ -1,8 +1,8 @@
 ---
-title: Your Name
+title: Ziyu Zhao
 date: 2025-10-20T23:08:00.000Z
 authors:
-  - First Last
+  - Ziyu Zhao
 heroStyle: background
 image: featured.jpg
 showBgImage: false

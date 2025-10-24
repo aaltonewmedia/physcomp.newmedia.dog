@@ -1,8 +1,8 @@
 ---
-title: Your Name
+title: Veronika Valtonen
 date: 2025-10-20T23:08:00.000Z
 authors:
-  - First Last
+  - Veronika Valtonen
 heroStyle: background
 image: featured.jpg
 showBgImage: false
