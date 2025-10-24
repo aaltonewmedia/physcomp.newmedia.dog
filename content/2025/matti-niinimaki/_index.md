@@ -1,6 +1,6 @@
 ---
 title: Matti Niinimäki
-date: 2024-10-20T23:08:00.000Z
+date: 2025-10-21T02:08:00.000+03:00
 authors:
   - Matti Niinimäki
 heroStyle: background
