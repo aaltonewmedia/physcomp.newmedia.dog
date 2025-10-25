@@ -6,6 +6,6 @@ authors:
 heroStyle: background
 image: featured.jpg
 bgimage: background.jpg
-showBgImage: false
+showBgImage: true
 ---
 Send dank cat memes @ okavisuals (IG).
