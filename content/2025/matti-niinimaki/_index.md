@@ -5,6 +5,7 @@ authors:
   - Matti Niinimäki
 heroStyle: background
 image: me.jpg
+bgImage: bg.jpg
 showBgImage: true
 ---
 This is my course documentation example site! You can find tips on how to format your projects and images correctly.

@@ -6,6 +6,13 @@
 {{- if not $featured }}{{ $featured = $images.GetMatch "*feature*" }}{{ end -}}
 {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
 
+{{- if not $featured -}}
+  {{- if .Params.bgimage -}}
+    {{- $featured = $.Resources.Get (.Params.bgimage) -}}
+  {{- end -}}
+{{- end -}}
+
+
 {{ if and .Params.featureimage (not $featured) }}
 {{- $url:= .Params.featureimage -}}
 {{ $featured = resources.GetRemote $url }}
