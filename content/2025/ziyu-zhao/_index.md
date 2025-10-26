@@ -4,15 +4,10 @@ date: 2025-10-20T23:08:00.000Z
 authors:
   - Ziyu Zhao
 heroStyle: background
-image: featured.jpg
-showBgImage: false
+image: dogman-final-low.jpg
+bgimage: 442992800_790629229715911_1055472213924091361_n.webp
+showBgImage: true
 ---
+**Paperino**
 
-**Replace the text below with your own**
-
-This is my course documentation example site! You can find tips on how to format your projects and images correctly.
-
-Keep your images to this specification:
-
-* Resolution: maximum 1920 pixels for the longer side
-* Filesize: maximum 2MB
+Paperino is an African grey parrot.
