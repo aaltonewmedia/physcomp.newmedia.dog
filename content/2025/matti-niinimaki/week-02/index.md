@@ -3,7 +3,7 @@ title: Week 02 | Sensors
 date: 2024-10-21T01:13:00.000Z
 authors:
   - Matti Niinimäki
-image: table.jpg
+image: featured.jpg
 bgimage: background.jpg
 showBgImage: true
 ---
@@ -43,7 +43,7 @@ id is the ID of the video in the URL. For example, for [this video](https://www.
 
 ## Sensor: VL53L1X Distance Sensor
 
-![VL53L1X](VL53L1X.jpg)
+![VL53L1X](featured.jpg)
 
 ### What kind of data can I get out of it?
 
