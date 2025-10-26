@@ -4,7 +4,7 @@ backend:
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
 collections:
-  - name: "2025-matti" # Used in routes, e.g., /admin/collections/post
+  - name: "2025-matti-niinimaki" # Used in routes, e.g., /admin/collections/post
     label: "2025 Matti Niinimäki" # Used in the UI
     folder: "content/2025/matti-niinimaki" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
