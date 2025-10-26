@@ -4,7 +4,7 @@ date: 2025-10-21T02:08:00.000+03:00
 authors:
   - Matti Niinimäki
 heroStyle: background
-image: featured.jpg
+image: me.jpg
 showBgImage: true
 ---
 This is my course documentation example site! You can find tips on how to format your projects and images correctly.
