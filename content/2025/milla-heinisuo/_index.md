@@ -1,6 +1,6 @@
 ---
 title: Milla
-date: 2025-10-20T23:08:00.000Z
+date: 2025-10-27T10:45:00.000+02:00
 authors:
   - Milla Heinisuo
 heroStyle: background
