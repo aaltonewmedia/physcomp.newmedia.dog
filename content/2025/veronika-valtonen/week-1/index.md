@@ -8,6 +8,7 @@ showBgImage: false
 ---
 #### Assignment
 
+\
 Circuit
 
 * Connect two LEDs to your Arduino using a breadboard
@@ -22,7 +23,8 @@ Code
 * When the switch is pressed the third time, both LEDs turn off
 * Repeat this same cycle of LEDs turning on and off in sequence (off, one LED, two LEDs, off…)
 
-#### Process
+#### \
+Process
 
 I started off using the circuit we built during the first week as my base, and drew it as a technical drawing to understand the structure better.
 
