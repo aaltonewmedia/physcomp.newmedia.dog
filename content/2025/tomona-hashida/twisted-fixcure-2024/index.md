@@ -6,7 +6,11 @@ authors:
 image: _dsc2329-のコピー.jpg
 showBgImage: false
 ---
-Graduation Project\
+testing...
+
+
+
+Graduation Project
 Duration: Duration: Sep 7, 2023 – Jan 10, 2024
 
 ![  ](_dsc2329-のコピー.jpg)
