@@ -8,10 +8,10 @@ image: img_2448-2.jpg
 showBgImage: false
 ---
 ```
-<B>Interior Product Designer</B>
+
 ```
 
-Interior Product Designer\
+Interior Product Designe\
 \
 Tokyo University of the Arts Graduate School of Fine Arts
 
