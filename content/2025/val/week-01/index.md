@@ -44,10 +44,6 @@ void loop() {
 }
 ```
 
-
-
-
-
 **Pictures of my circuit**
 
 ![Pictures of my circuit without light](no-light.jpeg)
