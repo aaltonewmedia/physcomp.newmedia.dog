@@ -7,12 +7,20 @@ heroStyle: background
 image: img_5739.jpg
 showBgImage: false
 ---
+TOMONA HASHIDA 
 
-**Replace the text below with your own**
+Tokyo University of the Arts
 
-This is my course documentation example site! You can find tips on how to format your projects and images correctly.
+Graduate School of Fine Arts
 
-Keep your images to this specification:
+Department of Design, 2nd-year Master's student
 
-* Resolution: maximum 1920 pixels for the longer side
-* Filesize: maximum 2MB
+Creative Theme
+
+Growing up surrounded by the rich natural environment of the Shikoku Karst in Japan, I developed a strong interest in the relationship between nature and human life.
+
+My work explores themes of material aging and changes caused by human behavior, aiming to 
+
+shift the perception from "deterioration" to "transformation" through product and interior design.
+
+* ![](img_98282.jpg)
