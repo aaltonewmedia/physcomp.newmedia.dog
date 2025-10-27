@@ -21,4 +21,4 @@ My work explores themes of material aging and changes caused by human behavior, 
 
 shift the perception from "deterioration" to "transformation" through product and interior design.
 
-* ![](img_98282.jpg)
+* ![]()
