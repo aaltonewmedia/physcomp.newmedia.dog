@@ -5,14 +5,11 @@ authors:
   - Klara Bloch-Norup
 heroStyle: background
 image: featured.jpg
-showBgImage: false
+bgimage: background.jpg
+showBgImage: true
 ---
+**K**
 
-**Replace the text below with your own**
+This is my course documentation! I keep the images small.
 
-This is my course documentation example site! You can find tips on how to format your projects and images correctly.
-
-Keep your images to this specification:
-
-* Resolution: maximum 1920 pixels for the longer side
-* Filesize: maximum 2MB
+I think I am going to work with light, maybe in the setting of a concert and maybe something with tables. Let's see! Follow the process here
