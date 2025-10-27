@@ -7,7 +7,6 @@ heroStyle: background
 image: featured.jpg
 showBgImage: false
 ---
-
 **Replace the text below with your own**
 
 This is my course documentation example site! You can find tips on how to format your projects and images correctly.
