@@ -4,7 +4,7 @@ date: 2025-10-20T23:08:00.000Z
 authors:
   - Tomona Hashida
 heroStyle: background
-image: img_5739.jpg
+image: img_2448-2.jpg
 showBgImage: false
 ---
 TOMONA HASHIDA 
