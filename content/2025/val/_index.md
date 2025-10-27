@@ -7,4 +7,4 @@ heroStyle: background
 image: featured.jpg
 showBgImage: false
 ---
-**Hi I'm Valerie Jeyeon Yong**
+**Hi I'm Valerie Jeyeon Yong from New Media**
