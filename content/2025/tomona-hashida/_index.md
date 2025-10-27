@@ -9,9 +9,7 @@ showBgImage: false
 ---
 TOMONA HASHIDA 
 
-Tokyo University of the Arts
-
-Graduate School of Fine Arts
+Tokyo University of the Arts Graduate School of Fine Arts
 
 Department of Design, 2nd-year Master's student
 
