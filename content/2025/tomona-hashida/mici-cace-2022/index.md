@@ -6,15 +6,12 @@ authors:
 image: 49ea45e5-be4e-4f47-9969-093a99505377.jpg
 showBgImage: false
 ---
-
-
-![](49ea45e5-be4e-4f47-9969-093a99505377.jpg)
-
 Independent production
 
 Duration: Apr 11, 2022 – May 27, 2022
 
-\
+![](49ea45e5-be4e-4f47-9969-093a99505377.jpg)
+
 **The ebb and ﬂow of life through the ratio of reading**
 
 mici : cace is a product designed to hold books that are in the middle of being read.  
