@@ -11,7 +11,7 @@ showBgImage: false
 
 ```
 
-Interior Product Designe\
+Interior Product Designer\
 \
 Tokyo University of the Arts Graduate School of Fine Arts
 
