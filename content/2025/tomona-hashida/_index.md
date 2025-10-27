@@ -8,7 +8,7 @@ image: img_2448-2.jpg
 showBgImage: false
 ---
 ```
-
+<B>Interior Product Designer</B>
 ```
 
 Interior Product Designer\
