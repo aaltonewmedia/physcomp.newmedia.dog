@@ -7,3 +7,5 @@ image: _dsc2329-のコピー.jpg
 showBgImage: false
 ---
 Twisted Fixcure(2024)
+
+Independent production
