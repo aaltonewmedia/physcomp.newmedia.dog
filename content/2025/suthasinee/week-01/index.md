@@ -1,10 +1,11 @@
 ---
-title: Week 01
+title: Week 01 - Beep Boop
 date: 2025-10-28T20:20:00.000+02:00
 authors:
   - Suthasinee
 image: week01.jpg
-showBgImage: false
+bgimage: week01.jpg
+showBgImage: true
 ---
 **MY CODE:**
 
