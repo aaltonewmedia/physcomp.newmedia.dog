@@ -6,6 +6,8 @@ authors:
 heroStyle: background
 image: img_2874.jpeg
 bgimage: week01.jpg
-showBgImage: false
+showBgImage: true
 ---
 This is Sine's documentation site!
+
+Don't follow me, I'm lost too.
