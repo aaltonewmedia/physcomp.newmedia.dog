@@ -5,7 +5,7 @@ authors:
   - Suthasinee
 heroStyle: background
 image: img_2874.jpeg
-bgimage: red.png
+bgimage: color_one_light_blue_305c_2.jpg
 showBgImage: false
 ---
 This is Sine's documentation site! 
