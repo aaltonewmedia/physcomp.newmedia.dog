@@ -4,15 +4,13 @@ date: 2025-10-20T23:08:00.000Z
 authors:
   - Mikael Malin
 heroStyle: background
-image: featured.jpg
+image: omakuva.png
 showBgImage: false
 ---
+Hi, I'm Mikael. This is my New Media cave.
 
-**Replace the text below with your own**
+You can also check out my other stuff:
 
-This is my course documentation example site! You can find tips on how to format your projects and images correctly.
+[Portfolio](https://www.mitjamikael.fi/)
 
-Keep your images to this specification:
-
-* Resolution: maximum 1920 pixels for the longer side
-* Filesize: maximum 2MB
+[Instagram](https://www.instagram.com/mitjamikael)[](https://www.mitjamikael.fi/)
