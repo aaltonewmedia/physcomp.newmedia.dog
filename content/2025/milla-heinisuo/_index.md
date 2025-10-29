@@ -6,7 +6,7 @@ authors:
 heroStyle: background
 image: featured.jpeg
 bgimage: background.jpeg
-showBgImage: false
+showBgImage: true
 ---
 Hey! I'm Milla :)
 
