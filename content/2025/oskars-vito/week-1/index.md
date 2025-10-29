@@ -30,4 +30,10 @@ I got to the point of turning the lights on and off, but in the wrong sequence. 
 
 ![](screenshot-2025-10-29-at-23.48.22.png)
 
+![](screenshot-2025-10-29-at-23.23.32.png)
+
+![](screenshot-2025-10-29-at-23.23.46.png)
+
+![](screenshot-2025-10-29-at-23.23.39.png)
+
 I had a LOT of trouble with figuring out how could I read the button press in a way that isn't constantly changing my variables.
