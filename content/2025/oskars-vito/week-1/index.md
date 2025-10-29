@@ -26,7 +26,7 @@ showBgImage: false
 
 I got to the point of turning the lights on and off, but in the wrong sequence. Going from both off, to both on, to one on and then looping again.
 
-![](screenshot-2025-10-29-at-23.48.11.png "Code")
+![](screenshot-2025-10-29-at-23.48.11.png)
 
 ![](screenshot-2025-10-29-at-23.48.22.png)
 
