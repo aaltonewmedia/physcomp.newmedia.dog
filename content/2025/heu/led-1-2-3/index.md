@@ -13,7 +13,7 @@ It took hours and hours (+ a few hints) to figure out. I misunderstood button st
 After a tiny break from coding, I need to clarify when to use the following: 
 
 \- digitalWrite and analogWrite\
-- difference between else and else if 
+- difference between else and else if
 
 Apologies for my simple language, after consecutive days of coding, I do not have the brain power to write properly... 
 
