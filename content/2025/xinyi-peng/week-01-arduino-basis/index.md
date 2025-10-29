@@ -3,7 +3,7 @@ title: Week 01 | Arduino Basis
 date: 2025-10-29T18:42:00.000+02:00
 authors:
   - Xinyi Peng
-image: featured.jpg
+image: featured1.jpg
 showBgImage: false
 ---
 ### Code
