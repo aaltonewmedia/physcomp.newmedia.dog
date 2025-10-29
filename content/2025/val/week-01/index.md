@@ -26,7 +26,6 @@ Create a circuit and Arduino code that does the following
 
 
 
-
 ## **Pictures of my circuit**
 
 ![Pictures of my circuit without light](no-light.jpeg)
@@ -36,9 +35,12 @@ Create a circuit and Arduino code that does the following
 ![Pictures of my circuit with two light](two-light.jpeg)
 
 
+This circuit part was simple to make, because I had to add just one LED to another GP (in my case, GP 13).
 
 
-## **My Code**
+## **My Code** 
+
+**Version 1** (with small issue)
 
 ```java
 int button;
@@ -77,10 +79,50 @@ void loop() {
 
 
 
+The coding part was easy, so I wrote it quickly. But at first, I set the delay to 10, and that made the button’s info (0 and 1) update too fast. Because of that, pressing the button once produced too many 1. As a result, unless I pressed and released the button extremely quickly, both LEDs stayed on all the time. I didn’t realize it was a delay issue at first, but once I figured it out and changed the delay to 100, it worked fine. 
+
+**However, if I keep holding the button, I can see the stages changing continuously**. So to prevent this, I add one line to my code to detect only when the button state change.
 
 
-## **Short description/reflection on my process**
+**Version 2** (solved)
 
-The coding part was easy, so I wrote it quickly. But at first, I set the delay to 10, and that made the button’s info (0 and 1) update too fast. Because of that, pressing the button once produced too many 1. As a result, unless I pressed and released the button extremely quickly, both LEDs stayed on all the time. I didn’t realize it was a delay issue at first, but once I figured it out and changed the delay to 100, it worked fine. (However, if I keep holding the button, I can see the stages changing continuously.) 
+```java
+int button;
+int previousButton = 0;
+int i=0;
 
-Otherwise, the circuit part was simple to make, because I had to add just one LED to another GP (in my case, GP 13).
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(15,OUTPUT); // LED n°1
+  pinMode(13,OUTPUT); // LED n°2
+  pinMode(16,INPUT); // Button
+  Serial.begin(9600); // Sending speed from Pico
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  button = digitalRead(16);
+  Serial.println(button);
+
+  if(button != previousButton){ // Detect only when the button state changes (prevents multiple counts while holding)
+    if(button == 1){
+      i++; 
+    }
+  }
+  previousButton = button;
+
+  switch(i){
+    case 1: digitalWrite(15,HIGH); break; // Turn on LED n°1 when button is pressed once
+    case 2: digitalWrite(13,HIGH); break; // Turn on LED n°2 when button is pressed the second time
+    case 3: i = 0; break;                 // Turn off all when button is pressed the third time
+  }
+
+  if(i == 0){
+    digitalWrite(15,LOW); // Turn off LED n°1
+    digitalWrite(13,LOW); // Turn off LED n°2
+  }
+
+  delay(10);
+}
+  
+```
