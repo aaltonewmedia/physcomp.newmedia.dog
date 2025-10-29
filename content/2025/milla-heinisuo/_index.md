@@ -5,6 +5,7 @@ authors:
   - Milla Heinisuo
 heroStyle: background
 image: featured.jpeg
+bgimage: featured.jpeg
 showBgImage: false
 ---
 Hey! I'm Milla :)
