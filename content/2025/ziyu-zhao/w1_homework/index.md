@@ -13,7 +13,7 @@ Hi This is my first week's homework.
 
 I studied the use of ***Botton*** is for utilizing the voltage difference to give signal through input pin, to control whether other pin ports output voltage.  And I also try to figure out the principle of ***Pull_up resistors*** and ***Pull_down resistors***.
 
-When I start to write code after connecting circult, I only count when button is High, then I found the LED light keep shinning after the first-time I pressed the button. After searching some materials, I know need to
+When I start to write code after connecting circult, I only count when button is High, then I found the LED light keep shinning after the first-time I pressed the button. After searching some materials, I know need to set up another value shows the condition aftering press the button. It turn to normal after I add the value "LastButtonState", it will equal to Button's value after each loop.
 
 ![](img_4449_compressed.jpg "My circuit")
 
