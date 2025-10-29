@@ -15,7 +15,44 @@ I studied the use of ***Botton*** is for utilizing the voltage difference to giv
 
 When I start to write code after connecting circult, I only count when button is High, then I found the LED light keep shinning after the first-time I pressed the button. After searching some materials, I know need to
 
-
-
-
 ![](img_4449_compressed.jpg "My circuit")
+
+##### **My code**
+
+```
+int button;
+int light;
+int lastButtonState;
+int i=0;
+
+void setup(){
+pinMode(16,INPUT);//button
+pinMode(15,OUTPUT);//yellow led
+pinMode(21,OUTPUT);//green led
+}
+
+void loop(){
+  button = digitalRead(16);
+  
+  if(button == HIGH && lastButtonState == LOW){
+    i++;
+    if(i>2) {
+    i=0;}
+    delay(200);
+  }
+  lastButtonState = button;
+
+  if(i == 0){
+    digitalWrite(15,HIGH);
+    digitalWrite(21,LOW);
+  }
+  else if(i == 1){
+    digitalWrite(15,HIGH);
+    digitalWrite(21,HIGH);
+  }
+  else if(i == 2){
+    digitalWrite(15,LOW);
+    digitalWrite(21,LOW);
+  }
+}
+```
