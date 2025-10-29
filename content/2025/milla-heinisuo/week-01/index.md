@@ -8,7 +8,7 @@ showBgImage: false
 ---
 ## Circuit
 
-![](whatsapp-image-2025-10-29-at-20.59.38.jpeg)
+![](featured.jpeg)
 
 ## Code
 
