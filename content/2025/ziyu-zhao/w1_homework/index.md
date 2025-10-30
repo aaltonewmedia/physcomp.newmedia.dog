@@ -9,11 +9,11 @@ showBgImage: true
 ---
 Hi This is my first week's homework.
 
-🤔 At begnnig I faced some problems for logic understanding, I thought buttons in Arduino/Rasperry circuit are similliar with buttons in physical circuit, they should control whether the circuit is closed. If I used the same logic for homework, then I realized it doesn't work. So I search online to understand the principle of how button be used in Arduino.
+🤔 At the beginning, I faced some problems with logic understanding, I initially thought that buttons in Arduino/Rasperry Pi circuits worked the same way as buttons in physical circuits- that they should control whether the circuit is closed. However, when I applied the same logic to the homework, I realized it didn't work. So I search online to understand how buttons are actually used in Arduino.
 
-I studied the use of ***Botton*** is for utilizing the voltage difference to give signal through input pin, to control whether other pin ports output voltage.  And I also try to figure out the principle of ***Pull_up resistors*** and ***Pull_down resistors***.
+I learned that the ***Button*** is used to detect the voltage differences through the input pin, which then controls whether other pins output voltage. I also tried to understand the principle of ***Pull_up resistors*** and ***Pull_down resistors***.
 
-When I start to write code after connecting circult, I only count when button is High, then I found the LED light keep shinning after the first-time I pressed the button. After searching some materials, I know need to set up another value shows the condition aftering press the button. It turn to normal after I add the value "LastButtonState", it will equal to Button's value after each loop.
+When I start coding after connecting the circult, I first count only when the button was High, then I noticed that the LED light kept shinning after I pressed the button for the first-time. After reading some materials, I learned that I need to set another variable to record the state aftering the button is pressed. It worked normally after I added the variable "LastButtonState", which equals the Button's value after each loop.
 
 ![](img_4449_compressed.jpg "My circuit")
 
