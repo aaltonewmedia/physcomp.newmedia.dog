@@ -44,146 +44,77 @@ The problem was putting the //lastState = currentState;    //currentState = butt
 
 ### Code:
 
+```
 int button;
-
 int lastState;
-
 int currentState;
-
 int count;
 
-
-
 void setup() {
-
   pinMode(15, OUTPUT);  // orange LED
-
   pinMode(13, OUTPUT);  // red LED
-
   pinMode(16, INPUT);  // button
-
   
-
   digitalWrite(15, LOW);  // start with LEDs off
-
   digitalWrite(13, LOW);
-
   
-
   Serial.begin(9600);
-
   lastState = 0;
-
   count = 0;
-
   currentState = 0;
-
 }
-
-
 
 void loop() {
-
   button = digitalRead(16);
-
   Serial.println(button);
-
   
-
   
-
   currentState = button;
 
-
-
   if(currentState == 1 && lastState == 0){
-
-\    // button was pressed
-
-\    
-
-\    //digitalWrite(15, HIGH);
-
-\    count = count+1;
-
-\    if(count>2){
-
-\    count = 0;
-
-\    }
-
-\    
-
-\    delay(120);
-
-\    //lastState = currentState;
-
-\    //currentState = button;
-
+    // button was pressed
+    
+    //digitalWrite(15, HIGH);
+    count = count+1;
+    if(count>2){
+      count = 0;
+    }
+    
+    delay(120);
+    //lastState = currentState;
+    //currentState = button;
   }
-
   lastState = currentState;
 
-
-
   /*if(currentState == 1 && lastState == 1){
-
-\    // button was pressed
-
-\    
-
-\    //digitalWrite(15, HIGH);
-
-\    count = count+1;
-
-\    if(count>2){
-
-\    count = 0;
-
-\    }
-
-\    
-
-\    delay(120);
-
-\    lastState = currentState;
-
-\    currentState = button;
-
+    // button was pressed
+    
+    //digitalWrite(15, HIGH);
+    count = count+1;
+    if(count>2){
+      count = 0;
+    }
+    
+    delay(120);
+    lastState = currentState;
+    currentState = button;
   }*/
-
   
-
   //The three different states
-
   if(count == 0){
-
-\    // both lights off
-
-\    digitalWrite(13, LOW);
-
-\    digitalWrite(15, LOW);
-
+    // both lights off
+    digitalWrite(13, LOW);
+    digitalWrite(15, LOW);
   }
-
   if(count == 1){
-
-\    // one light on
-
-\    digitalWrite(13, LOW);
-
-\    digitalWrite(15, HIGH);
-
+    // one light on
+    digitalWrite(13, LOW);
+    digitalWrite(15, HIGH);
   }
-
   if(count == 2){
-
-\    // both lights off
-
-\    digitalWrite(13, HIGH);
-
-\    digitalWrite(15, HIGH);
-
+    // both lights off
+    digitalWrite(13, HIGH);
+    digitalWrite(15, HIGH);
   }
-
 }
+```
