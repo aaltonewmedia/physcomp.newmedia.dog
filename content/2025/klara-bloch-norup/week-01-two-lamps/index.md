@@ -3,7 +3,7 @@ title: "week 01: two lamps"
 date: 2025-10-29T14:02:00.000+02:00
 authors:
   - Klara Bloch-Norup
-image: 01.jpg
+image: 1.2.jpg
 showBgImage: false
 ---
 ```
