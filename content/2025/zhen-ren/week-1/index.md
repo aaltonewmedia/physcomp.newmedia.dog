@@ -1,5 +1,5 @@
 ---
-title: Week 1
+title: Week 01
 date: 2025-10-29T13:22:00.000+02:00
 authors:
   - Zhen Ren
@@ -24,11 +24,9 @@ showBgImage: false
 
 4. When the switch is pressed the third time, both LEDs turn off
 
-
-
 ## **My Code**
 
-```
+```cpp
 int button;
 int pressNum;
 int lastB;
