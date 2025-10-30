@@ -7,11 +7,17 @@ image: week01.jpg
 bgimage: week01.jpg
 showBgImage: true
 ---
+![](week01.jpg)
+
 **MY CODE:**
 
 int btnState = 0;
 int prevBtnState = 0;
 int counter = 0;
+
+![](screenshot-2025-10-30-at-13.27.41.png)
+
+![](screenshot-2025-10-30-at-13.27.35.png)
 
 void setup() {
   // Open the serial port
