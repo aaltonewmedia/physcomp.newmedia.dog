@@ -11,15 +11,17 @@ showBgImage: true
 
 **MY CODE:**
 
-int btnState = 0;
-int prevBtnState = 0;
-int counter = 0;
+
 
 ![]()
 
 ![]()
 
 ```
+int btnState = 0;
+int prevBtnState = 0;
+int counter = 0;
+
 void setup() {
   // Open the serial port
   Serial.begin(9600);
