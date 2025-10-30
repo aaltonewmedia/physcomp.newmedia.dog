@@ -17,6 +17,8 @@ int counter = 0;
 
 ![](screenshot-2025-10-30-at-13.27.41.png)
 
+![](screenshot-2025-10-30-at-13.27.35.png)
+
 **REFLECTION ON MY PROCESS:**
 
 **Hardware part:**
