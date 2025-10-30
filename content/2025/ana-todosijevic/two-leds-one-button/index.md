@@ -4,8 +4,8 @@ date: 2025-10-30T12:00:00.000+02:00
 authors:
   - Ana Todosijevic
 image: photo_2025-10-30_12-03-08.jpg
-bgimage: photo_2025-10-30_12-03-12.jpg
-showBgImage: true
+bgimage: ""
+showBgImage: false
 ---
 I didn't solve it completely on my own, I had to peek at the solution. The main reason I was struggling was that I didn't really think through how the button works - I thought I needed to reset it to 0, and I spent too much time trying to do that. The other reason was that I kept LED instructions (which one is on and which one is off) in the same loop as the counter, which just ended up keeping both LEDs on.
 
