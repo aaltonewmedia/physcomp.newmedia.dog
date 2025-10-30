@@ -24,8 +24,6 @@ Create a circuit and Arduino code that does the following
 5. When the switch is pressed the third time, both LEDs turn off
 6. Repeat this same cycle of LEDs turning on and off in sequence (off, one LED, two LEDs, off…)
 
-
-
 ## **Pictures of my circuit**
 
 ![Pictures of my circuit without light](no-light.jpeg)
@@ -34,15 +32,13 @@ Create a circuit and Arduino code that does the following
 
 ![Pictures of my circuit with two light](two-light.jpeg)
 
-
 This circuit part was simple to make, because I had to add just one LED to another GP (in my case, GP 13).
 
-
-## **My Code** 
+## **My Code**
 
 **Version 1** (with small issue)
 
-```java
+```cpp
 int button;
 int i=0;
 
@@ -77,16 +73,13 @@ void loop() {
   
 ```
 
-
-
 The coding part was easy, so I wrote it quickly. But at first, I set the delay to 10, and that made the button’s info (0 and 1) update too fast. Because of that, pressing the button once produced too many 1. As a result, unless I pressed and released the button extremely quickly, both LEDs stayed on all the time. I didn’t realize it was a delay issue at first, but once I figured it out and changed the delay to 100, it worked fine. 
 
 **However, if I keep holding the button, I can see the stages changing continuously**. So to prevent this, I add one line to my code to detect only when the button state change.
 
-
 **Version 2** (solved)
 
-```java
+```cpp
 int button;
 int previousButton = 0;
 int i=0;
