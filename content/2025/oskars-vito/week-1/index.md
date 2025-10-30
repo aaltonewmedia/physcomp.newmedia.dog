@@ -44,7 +44,7 @@ The problem was putting the //lastState = currentState;    //currentState = butt
 
 ### Code:
 
-```
+```cpp
 int button;
 int lastState;
 int currentState;
