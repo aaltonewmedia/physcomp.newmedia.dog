@@ -48,7 +48,7 @@ void loop() {
     secondLedOn = false;
   }
   
-  delay(10); //10 milliseconds of delay for slowing down the printing of the data to not overwhelm the serial monitor (without delay it'll try printing it millions of times a seconds)
+  delay(10);
 }
 ```
 
