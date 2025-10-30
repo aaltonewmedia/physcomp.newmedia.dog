@@ -80,25 +80,10 @@ void loop() {
       count = 0;
     }
     
-    delay(120);
     //lastState = currentState;
     //currentState = button;
   }
   lastState = currentState;
-
-  /*if(currentState == 1 && lastState == 1){
-    // button was pressed
-    
-    //digitalWrite(15, HIGH);
-    count = count+1;
-    if(count>2){
-      count = 0;
-    }
-    
-    delay(120);
-    lastState = currentState;
-    currentState = button;
-  }*/
   
   //The three different states
   if(count == 0){
@@ -116,5 +101,6 @@ void loop() {
     digitalWrite(13, HIGH);
     digitalWrite(15, HIGH);
   }
+  delay(120); //delay for lazily debouncing the button
 }
 ```
