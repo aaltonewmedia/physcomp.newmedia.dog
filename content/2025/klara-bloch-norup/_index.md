@@ -10,6 +10,4 @@ showBgImage: true
 ---
 **K**
 
-This is my course documentation! I keep the images small.
-
-I think I am going to work with light, maybe in the setting of a concert and maybe something with tables. Let's see! Follow the process here
+This is my course documentation ...
