@@ -8,19 +8,19 @@ showBgImage: false
 ---
 #### Assignment
 
-Circuit
+*Circuit*
 
-* Connect two LEDs to your Arduino using a breadboard
-* Connect one switch to your Arduino using a breadboard
+* *Connect two LEDs to your Arduino using a breadboard*
+* *Connect one switch to your Arduino using a breadboard*
 
-Code
+*Code*
 
-* Read a momentary switch being pressed
-* When the program starts, both LEDs are off
-* When the switch is pressed once, the first LED turns on
-* When the switch is pressed the second time, the second LED turns on (the first one should also still be on)
-* When the switch is pressed the third time, both LEDs turn off
-* Repeat this same cycle of LEDs turning on and off in sequence (off, one LED, two LEDs, off…)
+* *Read a momentary switch being pressed*
+* *When the program starts, both LEDs are off*
+* *When the switch is pressed once, the first LED turns on*
+* *When the switch is pressed the second time, the second LED turns on (the first one should also still be on)*
+* *When the switch is pressed the third time, both LEDs turn off*
+* *Repeat this same cycle of LEDs turning on and off in sequence (off, one LED, two LEDs, off…)*
 
 #### Process
 
@@ -36,8 +36,6 @@ I started off using the circuit we built during the first week as my base, and d
 Considering the intention was just to add one more LED, I researched the structure in which the first LED was connected to the board. 
 
 ![](02.jpg)
-
-
 
 ```
 int button;
