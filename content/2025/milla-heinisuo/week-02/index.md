@@ -3,14 +3,14 @@ title: Week 02
 date: 2025-11-03T20:15:00.000+02:00
 authors:
   - Milla Heinisuo
-image: furbtroller-1024x857.jpg
+image: featured_furbtroller.jpg
 showBgImage: false
 ---
 ## 1. Find an interesting alt+ctrl interface
 
 ### Furbtroller
 
-![](furbtroller-1024x857.jpg)
+![](featured_furbtroller.jpg)
 
 <https://shakethatbutton.com/furbtroller/>
 
@@ -24,13 +24,12 @@ I quite like that the controller itself has not been modified that much, and is 
 
 ## 2. Come up with a concept for your own alt+ctrl interface
 
-![](umbrella.png)
+![](umbrella.jpg)
 
 ### Super Mario Galaxy played with an umbrella
 
-*  Opening/closing the umbrella causes Mario to jump
-
-  * Magnetometer
+* Opening/closing the umbrella causes Mario to jump
+* Magnetometer
 * Tilting the umbrella to move Mario
 
   * Accelerometer
