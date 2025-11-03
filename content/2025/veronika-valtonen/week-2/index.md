@@ -14,7 +14,11 @@ TIC TAC TOE THING (TTTT) by Shuang Cai
 
 https://www.youtube.com/watch?v=qRp8oorWgjg&t=51s
 
-This project is an elegant take on a classic (archaic, even) game with new game tactics. As much as the beauty of this game may lie on its simple mechanism, I think half of the enjoyment is also due to its refined design and choice of materials. Almost architectural in its form, I think Cai’s project is particularly interesting through its sculptural approach to electronics, which is something I may also wish to explore in my final project during this course.
+This project is a futuristic take on a classic (archaic, even) game of tic tac toe with new tactics. In this game, two players complete against eachother by toggling switches to trigger LEDs, aiming to win by connecting three lights in a row. In Cai’s version, a new rule is introduced, as a player can also spend their turn by undoing the previous move of their opponent (made possible by the switch). 
+
+As much as the beauty of this game may lie on the simplicity of its idea, I think half of the enjoyment is also due to its refined design and choice of materials. Adorned by a sleek metal cover, rounded casing and pastel-hued LEDs, the retro-futurist design of the object evokes a feeling of a lost future artefact.
+
+Henceforth, I think Cai’s project is particularly succesful from the point of view of its narrative, which is why I was drawn to study it further. It engages a storyworld through the gameplay and the visual aesthetics of the controller itself, intelligently interpreting material cues and cultural affordances, which is something I may also wish to explore in my final project during this course.
 
 #### Assignment 2
 
