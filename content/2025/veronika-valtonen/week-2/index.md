@@ -10,11 +10,9 @@ showBgImage: false
 
 *Find one interesting project/controller and write a short description of the project. Include a link to it and even embed a video to your site if it is available. Why did you choose this? What caught your attention?*
 
+{{<youtube qRp8oorWgjg&t>}}
+
 TIC TAC TOE THING (TTTT) by Shuang Cai
-
-![](tictactoething.jpg)
-
-https://www.youtube.com/watch?v=qRp8oorWgjg&t=51s
 
 This project is a futuristic take on a classic (archaic, even) game of tic tac toe with new tactics. In this game, two players complete against eachother by toggling switches to trigger LEDs, aiming to win by connecting three lights in a row. In Cai’s version, a new rule is introduced, as a player can also spend their turn by undoing the previous move of their opponent (made possible by the switch). 
 
