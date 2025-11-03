@@ -12,6 +12,8 @@ showBgImage: false
 
 TIC TAC TOE THING (TTTT) by Shuang Cai
 
+![](tictactoething.jpg)
+
 https://www.youtube.com/watch?v=qRp8oorWgjg&t=51s
 
 This project is a futuristic take on a classic (archaic, even) game of tic tac toe with new tactics. In this game, two players complete against eachother by toggling switches to trigger LEDs, aiming to win by connecting three lights in a row. In Cai’s version, a new rule is introduced, as a player can also spend their turn by undoing the previous move of their opponent (made possible by the switch). 
@@ -35,8 +37,6 @@ Henceforth, I think Cai’s project is particularly succesful from the point of 
 * *You can also make a prototype if you are able to, but I am not requiring it. It’s enough to just describe the concept.*
 * *These can be silly, experimental, ridiculous, absurd…*
 
-
-
 I begun my research at the hardware store, where I came across a set of door handles. I had been thinking of choose-your-own adventure games, where players are introduced upon a few (often text-based) choices that will later determine the course of the story for the playable protagonist. 
 
 ![](hardware-store.jpg)
@@ -45,15 +45,9 @@ For this exercise, I chose to focus on The Waiting Room (chapter I) by Mina Amir
 
 ![](waiting-room_0002_layer-1.jpg)
 
-
-
 ![](waiting-room_0001_screenshot-2025-11-03-at-10.45.08.jpg)
 
-
-
 ![](waiting-room_0000_screenshot-2025-11-03-at-10.44.37.jpg)
-
-
 
 ![](qr-wr-2.jpg)
 
