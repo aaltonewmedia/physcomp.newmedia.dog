@@ -29,10 +29,11 @@ I quite like that the controller itself has not been modified that much, and is 
 ### Super Mario Galaxy played with an umbrella
 
 * Opening/closing the umbrella causes Mario to jump
-* Magnetometer
+
+  * Magnetometer
 * Tilting the umbrella to move Mario
 
   * Accelerometer
-* Twirling the umbrella to do a spin-attack
+* Twirling the umbrella does a spin-attack
 
   * Gyroscope
