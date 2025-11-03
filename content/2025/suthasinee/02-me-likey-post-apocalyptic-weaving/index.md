@@ -6,6 +6,8 @@ authors:
 image: post-apocalyptic-weaving.jpg
 showBgImage: false
 ---
+![](post-apocalyptic-weaving.jpg)
+
 Post-apocalyptic Weaving
 
 <https://shakethatbutton.com/post-apocalyptic-weaving/>
