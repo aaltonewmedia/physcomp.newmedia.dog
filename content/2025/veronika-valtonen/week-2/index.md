@@ -45,15 +45,15 @@ For this exercise, I chose to focus on The Waiting Room (chapter I) by Mina Amir
 
 ![](waiting-room_0002_layer-1.jpg)
 
-￼
+
 
 ![](waiting-room_0001_screenshot-2025-11-03-at-10.45.08.jpg)
 
-￼
+
 
 ![](waiting-room_0000_screenshot-2025-11-03-at-10.44.37.jpg)
 
-￼
+
 
 ![](qr-wr-2.jpg)
 
@@ -61,12 +61,11 @@ For this exercise, I chose to focus on The Waiting Room (chapter I) by Mina Amir
 
 In order to make this gameplay functional, one of the following sensors could be used:
 
-1. Proximity, Light, RGB, and Gesture Sensor (APDS9960)
-
+1. Proximity, Light, RGB, and Gesture Sensor (APDS9960)\
 2. Distance (VL53L1X)
 
 ![](sketch.jpg)
 
 ￼Following the sketch above, a container could be placed in front of the desktop screen, with two (or three, depending on amount of choice required), door handles installed on the front of it. The  sensor(s) would then be installed on the inside of the box (illustrated in dashed lines), so as not to be visible to the viewer. Each time a handle would be turned down, the sensor would thus return a higher (or lower) value, resulting in a change in data that can be used to trigger an action in the game. By linking handle A to choice A, and handle B to choice B, the handles would then become the primary mode of navigation in the story.
 
-The integration of this controller would not only result in a more direct interaction with the game by lessening the time the user would need to spend with a mouse, but it could also present the player with a more immersive game experience. Mechanical resistance could also be added to the door handle (as most common door handles have a feeling of heaviness to them), to foster the sense of uncertainty in standing behind an unfamiliar door: are you sure you want to go there?
+The integration of this controller would not only result in a more direct interaction with the game by lessening the time the user would need to spend with a mouse, but it could also present the player with a more immersive game experience. Mechanical resistance could also be added to the door handle (as most common door handles have a feeling of heaviness to them), to foster the sense of uncertainty in standing behind an unfamiliar door: *are you sure you want to go there?*
