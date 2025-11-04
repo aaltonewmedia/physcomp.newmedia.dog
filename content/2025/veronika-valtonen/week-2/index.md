@@ -10,7 +10,7 @@ showBgImage: false
 
 *Find one interesting project/controller and write a short description of the project. Include a link to it and even embed a video to your site if it is available. Why did you choose this? What caught your attention?*
 
-{{<youtube qRp8oorWgjg&t>}}
+{{<youtube qRp8oorWgjg>}}
 
 TIC TAC TOE THING (TTTT) by Shuang Cai
 
