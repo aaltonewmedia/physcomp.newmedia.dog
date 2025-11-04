@@ -5,6 +5,7 @@ authors:
   - Matti Niinimäki
 image: featured.jpg
 bgimage: background.jpg
+showComments: true
 ---
 This is what I made during the first week!
 

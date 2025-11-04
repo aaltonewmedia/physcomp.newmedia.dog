@@ -6,6 +6,7 @@ authors:
 image: featured.jpg
 bgimage: background.jpg
 showBgImage: true
+showComments: true
 ---
 ## Interesting ALT+CTRL Game
 

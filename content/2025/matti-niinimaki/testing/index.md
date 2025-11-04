@@ -5,6 +5,7 @@ authors:
   - Matti Niinimäki
 image: pico2w-pinout.png
 showBgImage: false
+showComments: true
 ---
 Hi!
 
