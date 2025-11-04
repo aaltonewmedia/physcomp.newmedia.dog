@@ -19,8 +19,12 @@ because it looks related to the interest i have more or less.
 
 The sensor could be attach to anything in the whole wide world, but i plan to attach it to textile and yarns. I have my own weaving loom that i picked up from 2nd hand store and thinking of doing something with it. If it can react to every thread being weaved or the pattern being created. It would be cool to detect colors from it and have something happen according to the rgb value, but it could be tricky.... we will see.
 
-For the game, I immediately think of this one classic game (i don't remember the name by heart but i hope everyone recognise) the one when u touch each keyboard note kinda thing (picture attached) or making music from weaving loom somehow.
+**For the game**, I immediately think of this one classic game (i don't remember the name by heart but i hope everyone recognise \*edit\* magic tiles or note tiles, i supposed) the one when u touch each keyboard note according to the song rhythm (picture attached).
 
-I will come back to this.....
+I already have my weaved textile from my previous project, my idea will be treat the textile as a piano keyboard that you pressed for how lomg and in which location according to the song.
 
 ![](unnamed.webp "Game that i think of but don't know the name")
+
+![](flooddata.jpeg "My previous data visualization in textile project")
+
+![](fabric_keyboard_03.jpg "example of fabric keyboard from creativeapplication.net")
