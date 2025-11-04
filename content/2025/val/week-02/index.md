@@ -10,7 +10,9 @@ showBgImage: false
 
 > *Explore the archive from GDC, Shake That Button and beyond. Find one interesting project/controller and write a short description of the project. Include a link to it and even embed a video to your site if it is available. Why did you choose this? What caught your attention?*
 
-Candlelight Superfight
+
+
+## Candlelight Superfight
 
 ##### Description of the project: 
 
@@ -25,14 +27,19 @@ Stuff used:
 
 {{<youtube QEpU2M8wJQ>}}
 
-My thought: 
+
+
+##### My thought: 
 
 I chose *Candlelight Superfight* because the use of candles immediately caught my attention. It’s not a normal or common game controller. The project cleverly blends the physical and digital worlds, turning a simple and ancient object into an interactive input device. I found it very simple yet unique, using candlelight both as a game tool and as the game itself. Its playful use of real-world, fragile materials, candles, as controllers is fascinating. I never imagined that candles could become part of a game, but it works surprisingly well. The contrast between the calm glow of candlelight and the frantic, competitive gameplay creates a uniquely absurd and memorable experience. What makes it even more interesting is how it uses real, everyday objects with their smell, warmth, and behavior, instead of a flat 2D screen. It’s a perfect example of how alternative controllers can transform the mood and meaning of play through tactile, performative interaction.
+
+
 
 # 2. Come up with a concept for your own Alt+Ctrl Interface 
 
 > * *Explore at least one sensor in more detail. You can do this with the actual sensor or just do some research on what is available in general.*
-> * * *If you have access to the sensor, figure out how to read the values from it with your Arduino. Print out the data from the sensor to the Serial Monitor or Serial Plotter.*
+>
+>   * *If you have access to the sensor, figure out how to read the values from it with your Arduino. Print out the data from the sensor to the Serial Monitor or Serial Plotter.*
 >   * *If you are not able to actually use it, find out what type of data you can get out of it. Is it on/off signal, continuous number, some more complex data?*
 > * *Think of different interactions and/or gestures that could be detected with the sensor you picked. What kind of objects could the sensor be attached to?*
 > * *Choose an existing video game that could be controlled using the interaction/interface enabled by this sensor OR come up with a completely new game or game mechanic.*
@@ -42,7 +49,7 @@ I chose *Candlelight Superfight* because the use of candles immediately caught m
 > * *You can also make a prototype if you are able to, but I am not requiring it. It’s enough to just describe the concept.*
 > * *These can be silly, experimental, ridiculous, absurd…*
 
-Inspiration:
+#### Inspiration:
 
 ![](inspiration.jpg)
 
@@ -58,7 +65,7 @@ Infrared (IR) sensor is a device commonly found in remote-controlled electronics
 
 The IR receiver converts these light pulses into binary electrical signals that a microcontroller can interpret.
 
-Type of Output:
+##### Type of Output:
 
 Digital signal: alternating HIGH / LOW pulses representing binary code.
 
@@ -91,7 +98,9 @@ Digital signal: alternating HIGH / LOW pulses representing binary code.
 * Remote control
 * Phone (IR blaster)
 
-### My Idea: 
+
+
+### My Idea:
 
 Inspired by my lazy self who never wants to get out of bed to turn off the light. I always wish I could do it without moving. It also comes from the frustration of trying to find the perfect angle to make a TV remote work.
 
