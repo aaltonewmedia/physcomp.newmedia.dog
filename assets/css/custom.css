@@ -1,0 +1,88 @@
+/* Cusdis Comments iframe scaling fix */
+#cusdis_thread {
+  width: 100% !important;
+  overflow: visible !important;
+  position: relative !important;
+  max-height: none !important;
+  height: auto !important;
+}
+
+/* Ensure the iframe created by Cusdis scales properly */
+#cusdis_thread iframe {
+  width: 100% !important;
+  min-height: 400px !important;
+  border: none !important;
+  overflow: hidden !important;
+  display: block !important;
+  max-height: none !important;
+  padding: 0 2rem;
+  /* Height will be set dynamically by JavaScript/postMessage */
+}
+
+/* Fix for Cusdis widget container - prevents scrollbars */
+#cusdis_thread > div {
+  width: 100% !important;
+  overflow: visible !important;
+  position: relative !important;
+  max-height: none !important;
+  height: auto !important;
+}
+
+/* Ensure parent containers don't restrict height */
+.pt-3 > #cusdis_thread,
+footer > div > #cusdis_thread,
+footer > div > div > #cusdis_thread {
+  width: 100% !important;
+  overflow: visible !important;
+  max-width: none !important;
+  max-height: none !important;
+  height: auto !important;
+}
+
+/* Remove any max-height restrictions from article containers */
+article footer #cusdis_thread,
+article footer div #cusdis_thread {
+  max-height: none !important;
+  height: auto !important;
+}
+
+/* Cusdis Comments - Improve Readability */
+/* Style the container to match site theme better */
+#cusdis_thread {
+  background: transparent;
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+}
+
+/* Improve contrast and readability for the iframe container */
+#cusdis_thread iframe {
+  background: transparent;
+  color-scheme: light dark;
+}
+
+/* Light mode - ensure good contrast with subtle background */
+:root:not(.dark) #cusdis_thread {
+  background: rgba(19, 23, 24, 0.5);
+}
+
+/* Dark mode - ensure good contrast */
+:root.dark #cusdis_thread {
+  background: rgba(19, 23, 24, 0.5);
+}
+
+/* Ensure the comment section has proper spacing */
+footer > div > div > #cusdis_thread {
+  margin-top: 1rem;
+  padding: 1.5rem 0;
+}
+
+/* Add subtle border in light mode for better definition */
+:root:not(.dark) footer #cusdis_thread {
+  border-top: 1px solid rgba(226, 232, 240, 1);
+}
+
+/* Dark mode border */
+:root.dark footer #cusdis_thread {
+  border-top: 1px solid rgba(56, 65, 70, 1);
+}
+

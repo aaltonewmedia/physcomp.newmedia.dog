@@ -5,5 +5,105 @@
   data-page-id="{{ .File.UniqueID }}"
   data-page-url="{{ .Permalink }}"
   data-page-title="{{ .Title }}"
+  data-theme="auto"
+  style="width: 100%; overflow: visible;"
 ></div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+<script async defer src="/cusdis.es.js"></script>
+<script>
+  // Enhanced Cusdis iframe height scaling
+  (function() {
+    function ensureCusdisScaling() {
+      const cusdisThread = document.getElementById('cusdis_thread');
+      if (!cusdisThread) return;
+      
+      const iframe = cusdisThread.querySelector('iframe');
+      if (!iframe) return;
+      
+      // Ensure iframe can scale
+      iframe.style.width = '100%';
+      iframe.style.border = 'none';
+      iframe.style.overflow = 'hidden';
+      
+      // Listen for resize messages from Cusdis iframe
+      function handleResize(event) {
+        try {
+          const data = JSON.parse(event.data);
+          if (data.from === 'cusdis' && data.event === 'resize') {
+            iframe.style.height = data.data + 'px';
+            iframe.style.minHeight = '400px';
+          }
+        } catch (e) {
+          // Not a JSON message, ignore
+        }
+      }
+      
+      // Enhanced message listener for resize events
+      window.addEventListener('message', handleResize, false);
+      
+      // Fallback: Check iframe height periodically
+      let lastHeight = 0;
+      const checkHeight = setInterval(function() {
+        try {
+          if (iframe.contentWindow && iframe.contentDocument) {
+            const height = iframe.contentDocument.body.scrollHeight;
+            if (height !== lastHeight && height > 100) {
+              iframe.style.height = height + 'px';
+              lastHeight = height;
+            }
+          }
+        } catch (e) {
+          // Cross-origin restrictions, rely on postMessage
+        }
+      }, 500);
+      
+      // Clean up interval after 30 seconds
+      setTimeout(function() {
+        clearInterval(checkHeight);
+      }, 30000);
+      
+      // Ensure container doesn't restrict height
+      cusdisThread.style.overflow = 'visible';
+      cusdisThread.style.position = 'relative';
+      
+      // Sync theme with site appearance
+      function syncTheme() {
+        const isDark = document.documentElement.classList.contains('dark') || 
+                      window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (window.CUSDIS && window.CUSDIS.setTheme) {
+          window.CUSDIS.setTheme(isDark ? 'dark' : 'light');
+        }
+        // Also try to set via postMessage
+        if (iframe.contentWindow) {
+          iframe.contentWindow.postMessage(JSON.stringify({
+            from: 'cusdis',
+            event: 'setTheme',
+            data: isDark ? 'dark' : 'light'
+          }), '*');
+        }
+      }
+      
+      // Listen for theme changes
+      const observer = new MutationObserver(syncTheme);
+      observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class']
+      });
+      
+      // Sync theme on load and after delays
+      syncTheme();
+      setTimeout(syncTheme, 1500);
+      setTimeout(syncTheme, 2500);
+    }
+    
+    // Run when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', ensureCusdisScaling);
+    } else {
+      ensureCusdisScaling();
+    }
+    
+    // Also run after Cusdis script loads (with a delay)
+    setTimeout(ensureCusdisScaling, 1000);
+    setTimeout(ensureCusdisScaling, 2000);
+  })();
+</script>
