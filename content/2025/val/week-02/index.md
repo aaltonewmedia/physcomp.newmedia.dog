@@ -23,7 +23,7 @@ Stuff used:
 * candles
 * light sensors
 
-{{<video QEpU2M8wJQ>}}
+{{<youtube QEpU2M8wJQ>}}
 
 My thought: 
 
