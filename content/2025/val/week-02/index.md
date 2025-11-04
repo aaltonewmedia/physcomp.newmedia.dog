@@ -10,8 +10,6 @@ showBgImage: false
 
 > *Explore the archive from GDC, Shake That Button and beyond. Find one interesting project/controller and write a short description of the project. Include a link to it and even embed a video to your site if it is available. Why did you choose this? What caught your attention?*
 
-
-
 ## Candlelight Superfight
 
 ##### Description of the project: 
@@ -27,13 +25,9 @@ Stuff used:
 
 {{<youtube QEpU2M8wJQ>}}
 
-
-
-##### My thought: 
+##### My thought:
 
 I chose *Candlelight Superfight* because the use of candles immediately caught my attention. It’s not a normal or common game controller. The project cleverly blends the physical and digital worlds, turning a simple and ancient object into an interactive input device. I found it very simple yet unique, using candlelight both as a game tool and as the game itself. Its playful use of real-world, fragile materials, candles, as controllers is fascinating. I never imagined that candles could become part of a game, but it works surprisingly well. The contrast between the calm glow of candlelight and the frantic, competitive gameplay creates a uniquely absurd and memorable experience. What makes it even more interesting is how it uses real, everyday objects with their smell, warmth, and behavior, instead of a flat 2D screen. It’s a perfect example of how alternative controllers can transform the mood and meaning of play through tactile, performative interaction.
-
-
 
 # 2. Come up with a concept for your own Alt+Ctrl Interface 
 
@@ -97,8 +91,6 @@ Digital signal: alternating HIGH / LOW pulses representing binary code.
 
 * Remote control
 * Phone (IR blaster)
-
-
 
 ### My Idea:
 
