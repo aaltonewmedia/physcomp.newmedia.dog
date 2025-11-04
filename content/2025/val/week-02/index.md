@@ -29,6 +29,9 @@ Stuff used:
 
 I chose *Candlelight Superfight* because the use of candles immediately caught my attention. It’s not a normal or common game controller. The project cleverly blends the physical and digital worlds, turning a simple and ancient object into an interactive input device. I found it very simple yet unique, using candlelight both as a game tool and as the game itself. Its playful use of real-world, fragile materials, candles, as controllers is fascinating. I never imagined that candles could become part of a game, but it works surprisingly well. The contrast between the calm glow of candlelight and the frantic, competitive gameplay creates a uniquely absurd and memorable experience. What makes it even more interesting is how it uses real, everyday objects with their smell, warmth, and behavior, instead of a flat 2D screen. It’s a perfect example of how alternative controllers can transform the mood and meaning of play through tactile, performative interaction.
 
+<hr>
+
+
 # 2. Come up with a concept for your own Alt+Ctrl Interface 
 
 > * *Explore at least one sensor in more detail. You can do this with the actual sensor or just do some research on what is available in general.*
@@ -91,6 +94,8 @@ Digital signal: alternating HIGH / LOW pulses representing binary code.
 
 * Remote control
 * Phone (IR blaster)
+
+<hr>
 
 ### My Idea:
 
