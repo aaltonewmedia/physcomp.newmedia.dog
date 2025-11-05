@@ -7,6 +7,7 @@ image: cover2.jpg
 showBgImage: false
 ---
 The Zeppelin Game
+https://finefin.itch.io/the-zeppelin-game
 
 This is a cockpit controller to play a Zeppelin game. You navigate through the game by using an air pump. I thought it was a more natural and logical way to navigate when it comes to flying. You pump to go up - which just make sense more than pressing a button. There's a additional control for left and right, which makes it fun for more than one person to play (especially this little girl who's helping her brother).
 
