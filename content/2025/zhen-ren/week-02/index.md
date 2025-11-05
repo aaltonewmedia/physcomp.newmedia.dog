@@ -47,3 +47,13 @@ I created a responsive sofa that reacts to a handshake. When a user holds its ar
 I chose furniture as the medium, embedding pressure sensors in the armrest, to introduce the idea of touch in a subtle way. Rather than a medical device, I wanted it to appear as nothing more than an ordinary sofa(something that belongs to daily life), so people can naturally lean on.
 
 This approach also follows a kind of unconscious design. I didn’t want patients to be constantly reminded of their condition, instead, I wanted them to reconnect with their own bodies through everyday action.
+
+![](snipaste_2025-11-05_18-48-59.png)
+
+The current version remains in a theoretical and technical stage, feels quiet and rational, more like a therapeutic tool. My next step is to give it more vitality and playfulness, turning tactile learning into an engaging, interactive experience rather than mere rehabilitation.
+
+
+
+### How Furniture Guides Human Sensing
+
+![](snipaste_2025-11-05_18-11-17.png)
