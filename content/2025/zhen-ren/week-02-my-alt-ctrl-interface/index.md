@@ -18,13 +18,9 @@ This approach also follows a kind of unconscious design. I didn’t want patient
 
 The current version remains in a theoretical and technical stage, feels quiet and rational, more like a therapeutic tool. My next step is to give it more vitality and playfulness, turning tactile learning into an engaging, interactive experience rather than mere rehabilitation.
 
-
-
 ## How Furniture Guides Human Sensing
 
 ![](snipaste_2025-11-05_18-11-17.png)
-
-
 
 ## Prototype
 
@@ -46,25 +42,21 @@ lifting rod - seat height
 
 sliding track - seat depth
 
-
-
 ## Exploded View
 
 ![](snipaste_2025-11-05_19-00-57.png)
 
-
-
 ## User Journey
 
 ![](snipaste_2025-11-05_19-03-04.png)
-
-
 
 ### **Future Iterations**
 
 **Inspiration**：https://shakethatbutton.com/yogaie/
 
 To bring more emotional resonance into the experience, I want to introduce a projection system: A fireplace, the state of the firelight is controlled by the force of the handshake.
+
+![](cozy-nights-by-the-fire.jpeg)
 
 **1. Initial State** 
 
