@@ -18,6 +18,8 @@ showBgImage: false
 
 ![](snipaste_2025-11-05_16-36-52.png)
 
+![](snipaste_2025-11-05_15-41-25.png)
+
 ### Description
 
 Background: by 2050, the global population will approach 10 billion, rapidly consuming finite resources and causing irreversible environmental damage.
@@ -34,4 +36,10 @@ My core reason for choosing "LIVING SPACE" is its perfect unity of controller de
 
 For standard Alt+Ctrl games, player's interaction is typically "conscious", however, in "LIVING SPACE", the interaction is "unconscious", participants are driven by habit and instinct to operate the controller. This design brilliantly echoes the work's theme, allowing the participant to unconsciously become the perpetrator.
 
-Therefore, the controller is no longer a game tool, but a "psychological probe" revealing our inner blind spots. And this design, which transforms interaction into unconscious behavior, is what I love most about the project and is also a direction I am very interested in.[](https://www.youtube.com/watch?v=1aULkE1tMDQ)
+Therefore, the controller is no longer a game tool, but a "psychological probe" revealing our inner blind spots. And this design, which transforms interaction into unconscious behavior, is what I love most about the project and is also a direction I am very interested in.
+
+\---------------------------------------------------------------------------------------------
+
+
+
+[](https://www.youtube.com/watch?v=1aULkE1tMDQ)
