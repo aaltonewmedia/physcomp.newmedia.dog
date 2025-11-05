@@ -56,7 +56,7 @@ sliding track - seat depth
 
 To bring more emotional resonance into the experience, I want to introduce a projection system: A fireplace, the state of the firelight is controlled by the force of the handshake.
 
-![](cozy-nights-by-the-fire.jpeg)
+![](fire.jpg)
 
 **1. Initial State** 
 
