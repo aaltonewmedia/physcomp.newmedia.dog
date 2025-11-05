@@ -64,7 +64,7 @@ The core is to map physical behaviors such as "paper folding" with digital feedb
   > Physical action: for instance, fold one paper from 180° to 90°;
   > AnalogRead: value may change from 800 to 300;
   > Scene mapping: a plate fold from 180° to 90°
-  > Question: the bending angle can be detected by data, but how does the software knows at which point of the plate it stars to bend? The scene mapping logic I come up with may not work in complex folding situcation.
+  > Question: the bending angle can be detected by data, but how does the software knows at which point of the plate it stars to bend? The scene mapping logic I come up with may not work in complex folding situcation. Do I need some fabrication steps to make this kind of paper or it is quite common in the market?
 * Simple game sketch:
 
   ![](sketch_1.jpg)
