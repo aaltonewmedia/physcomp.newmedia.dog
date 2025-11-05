@@ -57,3 +57,37 @@ The current version remains in a theoretical and technical stage, feels quiet an
 ### How Furniture Guides Human Sensing
 
 ![](snipaste_2025-11-05_18-11-17.png)
+
+
+
+### Prototype
+
+![](snipaste_2025-11-05_18-13-33.png)
+
+![](snipaste_2025-11-05_18-12-53.png)
+
+**Input:**
+
+pressure sensor - the strength of handshake
+
+**Output:**
+
+air pump - cushion hardness
+
+rotating module - backrest angle
+
+lifting rod - seat height
+
+sliding track - seat depth
+
+
+
+### **Exploded View**
+
+![](snipaste_2025-11-05_19-00-57.png)
+
+
+
+### User Journey
+
+![](snipaste_2025-11-05_19-03-04.png)
