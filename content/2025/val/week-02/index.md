@@ -25,7 +25,7 @@ Stuff used:
 
 {{<youtube QEpU2M8wJQ>}}
 
-##### My thought:
+#### My thought:
 
 I chose *Candlelight Superfight* because the use of candles immediately caught my attention. It’s not a normal or common game controller. The project cleverly blends the physical and digital worlds, turning a simple and ancient object into an interactive input device. I found it very simple yet unique, using candlelight both as a game tool and as the game itself. Its playful use of real-world, fragile materials, candles, as controllers is fascinating. I never imagined that candles could become part of a game, but it works surprisingly well. The contrast between the calm glow of candlelight and the frantic, competitive gameplay creates a uniquely absurd and memorable experience. What makes it even more interesting is how it uses real, everyday objects with their smell, warmth, and behavior, instead of a flat 2D screen. It’s a perfect example of how alternative controllers can transform the mood and meaning of play through tactile, performative interaction.
 
@@ -53,7 +53,7 @@ This is an artwork that I saw in Orléans, France. Many remote controls were pla
 
 ## Sensor Exploration: Infrared (IR) Receiver
 
-##### About the Sensor:
+#### About the Sensor:
 
 <https://www.circuitbasics.com/arduino-ir-remote-receiver-tutorial/>
 
@@ -61,13 +61,13 @@ Infrared (IR) sensor is a device commonly found in remote-controlled electronics
 
 The IR receiver converts these light pulses into binary electrical signals that a microcontroller can interpret.
 
-##### Type of Output:
+#### Type of Output:
 
 Digital signal: alternating HIGH / LOW pulses representing binary code.
 
 ![](ir-receiver.jpg)
 
-##### Interactions and/or gestures that could be detected with the IR Receiver:
+#### Interactions and/or gestures that could be detected with the IR Receiver:
 
 * Trigger different responses depending on where it’s pointed
 * Each button press can correspond to a specific command or event (sound, visual effect, etc)
@@ -76,7 +76,7 @@ Digital signal: alternating HIGH / LOW pulses representing binary code.
 * When multiple remotes are used simultaneously, create collaborative outcomes
 * Instead of printing the key values to the serial monitor, display the information on an LCD screen 
 
-##### The sensor can be attached to: 
+#### The sensor can be attached to: 
 
 * Lamps 
 * TV
@@ -89,7 +89,7 @@ Digital signal: alternating HIGH / LOW pulses representing binary code.
 * Wall
 * Wearable pieces
 
-##### Controlled by:
+#### Controlled by:
 
 * Remote control
 * Phone (IR blaster)
