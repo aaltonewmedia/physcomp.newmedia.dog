@@ -91,3 +91,43 @@ sliding track - seat depth
 ### User Journey
 
 ![](snipaste_2025-11-05_19-03-04.png)
+
+
+
+### **Future Iterations**
+
+**Inspiration**：https://shakethatbutton.com/yogaie/
+
+To bring more emotional resonance into the experience, I want to introduce a projection system: A fireplace, the state of the firelight is controlled by the force of the handshake.
+
+**1. Initial State** 
+
+Sofa: Neutral form. 
+
+Fireplace: The screen is dim, with faint embers flickering in the dark. 
+
+Sound: A cool, distant wind fills the silence.
+
+**2. Grip Too Weak** 
+
+Sofa: Slightly rigid, unresponsive. 
+
+Fireplace: Embers remain dull, with almost no change. 
+
+Sound: The cold wind continues.
+
+**3. Grip Too Strong** 
+
+Sofa: Compressed shape, creating gentle resistance. 
+
+Fireplace: Embers flare up suddenly, then *“puff”* out, leaving a trace of smoke. 
+
+Sound: A brief burst of flame followed by silence.
+
+**4. “Just Right” Grip** 
+
+Sofa: Soft, balanced, responsive. 
+
+Fireplace: The embers awaken, flames rise slowly, and the space fills with warm light. 
+
+Sound: The soft “crackle” of fire.
