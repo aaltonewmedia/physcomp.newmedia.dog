@@ -31,7 +31,6 @@ I chose *Candlelight Superfight* because the use of candles immediately caught m
 
 <hr>
 
-
 # 2. Come up with a concept for your own Alt+Ctrl Interface 
 
 > * *Explore at least one sensor in more detail. You can do this with the actual sensor or just do some research on what is available in general.*
