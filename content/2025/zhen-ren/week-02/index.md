@@ -10,7 +10,13 @@ showBgImage: false
 
 ### interactive art installation
 
-<https://www.youtube.com/watch?v=1aULkE1tMDQ>
+<https://www.youtube.com/watch?v=1aULkE1tMDQ>[](https://www.youtube.com/watch?v=1aULkE1tMDQ)
+
+![](snipaste_2025-11-05_16-37-17.png)
+
+
+
+![](snipaste_2025-11-05_16-36-52.png)
 
 ### Description
 
@@ -21,8 +27,6 @@ Through the "unconscious design", the work reveals the massive chasm between hum
 Its core interactive mechanism functions as an ingenious "trap", it utilizes habitual, everyday objects. This design induces subconscious, instinctive responses from the participant. However, within the installation's feedback loop, these seemingly natural and harmless behaviors are revealed to be incredibly destructive, for example, relentlessly consuming resources and encroaching on others' living space merely for the sake of "continuation."
 
 "LIVING SPACE" is a deeply impactful, reflective work. It forces us to pause and interrogate the behavioral patterns we accept without thinking, and to reflect on their collective consequences.
-
-
 
 ### Why I choose
 
