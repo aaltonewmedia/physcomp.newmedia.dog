@@ -1,5 +1,5 @@
 ---
-title: Week 02
+title: Week 02 - Interesting Project
 date: 2025-11-05T16:34:00.000+02:00
 authors:
   - Zhen Ren
