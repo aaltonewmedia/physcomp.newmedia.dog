@@ -15,9 +15,13 @@ showBgImage: true
 
 **Inspo:**
 
+{{<youtube rYDgAu3f8kk>}}
+
 https://www.youtube.com/watch?v=rYDgAu3f8kk
 
 **Gyroscope:**
+
+{{<youtube _Wk_h3svVxb0fldb&t=145>}}
 
 https://youtu.be/ty9QSiVC2g0?si=_Wk_h3svVxb0fldb&t=145
 
