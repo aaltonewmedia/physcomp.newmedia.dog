@@ -38,6 +38,8 @@ Possible problem: The cord attached to the sensors will get tangled when the whe
 
 Possible solution: Either some wireless solution, or attaching the sensor on the wooden peg connecting the pedal to the wheel (liipotin in Finnish), so that the sensor will retain its position when it moves in a circle. I’m unsure if I can still get data to read if the sensor doesn’t change its pivot, only position. To be tested.
 
+![](rukki2.png)
+
 For safety reasons the spool with the sharp spikes will be removed, to save the player from the fate of Sleeping Beauty forever parallel parking in her dreams.
 
 It’s notably difficult to spin a spinning wheel slowly, especially for a beginner (which I am). Getting into the parking space requires a lot of finesse. This game is not for those with weak patience, but after you succeed, parallel parking with a car will no longer be an issue!
