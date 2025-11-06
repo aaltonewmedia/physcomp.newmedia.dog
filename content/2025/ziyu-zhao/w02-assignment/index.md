@@ -16,4 +16,4 @@ showBgImage: false
 
 ![](截屏2025-11-06-10.18.35.png)
 
-Dance of Sky Carver is a game mix accessories in reality and the game in computer.
+Dance of Sky Carver is a hybrid game that combines a physical controller with a digital game. Players change the way the spaceship moves in the game by manipulating a paper-craft spaceship. The spaceship‘s movement and altitude directly responds to the player's physical gestures.
