@@ -16,4 +16,4 @@ showBgImage: false
 
 ![](截屏2025-11-06-10.18.35.png)
 
-Dance of Sky Carver is
+Dance of Sky Carver is a game mix accessories in reality and the game in computer.
