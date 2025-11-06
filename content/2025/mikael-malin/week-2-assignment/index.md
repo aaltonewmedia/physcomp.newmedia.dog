@@ -8,6 +8,8 @@ showBgImage: false
 ---
 **1. Find an interesting existing Alt+Ctrl Interface** 
 
+ {{<youtube 1znPs5sDTlo>}}
+
 <https://www.youtube.com/watch?v=1znPs5sDTlo>
 
 Immortal Funk Games’ Kneedle Drop is a rhythm game, where the player ”knits” with special alt-controls that resemble knitting needles. The game is one of the 2025 alt.ctrl.GDC finalists.
