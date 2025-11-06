@@ -21,5 +21,5 @@ Dance of Sky Carver is a hybrid game that combines a physical controller with a 
 **2. Come up with a concept for your own Alt+Ctrl Interface**
 
 I want to make a robotic parrot that can perform some basic interactions.
-For example, when someone passes by, it says “Ciao bella,” which I think will require an infrared motion sensor.
+For example, when someone passes by, it says “Ciao bella,” which I think will require an infrared motion sensor(PIR sensor).
 I also want it to move around under human control, but stop automatically when it reaches the edge of a table , this might need a distance sensor or a proximity sensor.
