@@ -4,7 +4,8 @@ date: 2025-11-06T13:49:00.000+02:00
 authors:
   - Oskars Vito
 image: finnns-sword.jpeg
-showBgImage: false
+bgimage: finnns-sword.jpeg
+showBgImage: true
 ---
 # **THE EPIC SWORD CONTROLLER**
 
