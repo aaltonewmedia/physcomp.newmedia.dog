@@ -12,3 +12,9 @@ showBgImage: true
 ![](photo_2025-11-06-13.55.03.jpeg)
 
 ![](photo_2025-11-06-13.55.01.jpeg)
+
+
+
+https://youtu.be/ty9QSiVC2g0?si=_Wk_h3svVxb0fldb&t=145
+
+https://www.youtube.com/watch?v=rYDgAu3f8kk
