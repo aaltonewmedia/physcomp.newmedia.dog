@@ -3,7 +3,7 @@ title: Week 2
 date: 2025-11-02T23:28:00.000+02:00
 authors:
   - Veronika Valtonen
-image: week2.jpg
+image: week-2.jpg
 showBgImage: false
 ---
 #### Assignment 1
