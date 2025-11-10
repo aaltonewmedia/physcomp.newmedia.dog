@@ -40,9 +40,7 @@ Digital display showing live emotional status (ex. Tense – 82% Confidence)
 
 **Inspiration**
 
-I’m interested in this kind of simple and humoristic interaction work based on everyday life experiences. (Chindogu)
-
-My little piece of privacy 
+I’m interested in the kind of simple and humorous interactive works that Matti showed us, which echo the spirit of Chindogu, a playful useless invention inventions born from everyday inconveniences.
 
 {{<youtube -rKhbUjVyKIc>}}
 
