@@ -1,5 +1,5 @@
 ---
-title: Alt + Ctrl
+title: Week 2 - Alt + Ctrl
 date: 2025-11-06T13:49:00.000+02:00
 authors:
   - Oskars Vito
