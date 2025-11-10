@@ -3,7 +3,7 @@ title: Final Project
 date: 2025-11-10T13:38:00.000+02:00
 authors:
   - Valerie Jeyeon YONG
-image: featured.png
+image: featured.jpg
 showBgImage: false
 ---
 # Final Project Ideas
@@ -59,6 +59,8 @@ The project explores the automation of social etiquette and the absurd extension
 
 When the wearer bumps into someone, the embedded sensor detects the collision’s intensity. According to the force, the AI system generates and plays an apology with different tone and repetition. From a calm “Sorry” to an anxious stream of “I’m so sorry! Sorry! Sorry!”.
 
+![](sketch.jpg)
+
 <hr>
 
-*After reviewing and organizing my ideas, I find the use of an electric nose interesting, but I’m not very satisfied with the concept itself. So for now, I’m considering either simply running the **electric nose experiment** or moving forward with the **Apology Machine.***
+\*After reviewing and organizing my ideas, I find the use of an electric nose interesting, but I’m not very satisfied with the concept itself. So for now, I’m considering either simply running the **electric nose experiment** or moving forward with the **Apology Machine.***
