@@ -41,11 +41,11 @@ Digital display showing live emotional status (ex. Tense – 82% Confidence)
 
 **Inspiration**
 
+I’m interested in this kind of simple and humoristic interaction work based on everyday life experiences. (Chindogu)
+
 My little piece of privacy 
 
 {{<youtube -rKhbUjVyKIc>}}
-
-I’m interested in this kind of simple and humoristic interaction work based on everyday life experiences. (Chindogu)
 
 **Concept**
 
