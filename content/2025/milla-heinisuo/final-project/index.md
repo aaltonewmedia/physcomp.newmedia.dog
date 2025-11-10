@@ -3,7 +3,7 @@ title: Final Project
 date: 2025-11-10T23:15:00.000+02:00
 authors:
   - Milla Heinisuo
-image: squab.jpeg
+image: featured_automaton.jpg
 showBgImage: false
 ---
 ## Idea
