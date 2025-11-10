@@ -10,3 +10,11 @@ showBgImage: true
 # Idea:
 
 I think that I want to create a electro-mechanic instrument using a combo of motors, resonant chambers as well as re-used items such as bottles and other things I can get my hands on.
+
+
+
+## Functionality:
+
+* I want to control motors to create either rhythmic or melodic sounds
+* Ability to control the instrument with a midi keyboard
+* Being able to send midi info to the instrument to play premade compositions
