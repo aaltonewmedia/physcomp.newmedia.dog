@@ -8,7 +8,7 @@ showBgImage: false
 ---
 #### Introduction
 
-Imagine a future society, where technology has advanced to a point where writing is no longer necessary. Writing itself has become a novel artefact of the past, and the only texts being produced in the world remain illegible, mechanical scribblings made by machines.
+*Imagine a future society, where technology has advanced to a point where writing is no longer necessary. Writing itself has become a novel artefact of the past, and the only texts being produced in the world remain illegible, mechanical scribblings made by machines.*
 
 #### Background
 
