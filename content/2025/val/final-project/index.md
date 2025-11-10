@@ -41,6 +41,7 @@ Digital display showing live emotional status (ex. Tense – 82% Confidence)
 
 **Inspiration**
 
+
 I’m interested in this kind of simple and humoristic interaction work based on everyday life experiences. (Chindogu)
 
 My little piece of privacy 
@@ -51,7 +52,9 @@ My little piece of privacy
 
 This project originates from an experience that everyone has: in crowded places, I often bump into people’s shoulders but can’t possibly apologize to everyone.
 
-*Apology Machine* is a wearable device, embedded in the shoulder of a jacket, that automatically apologizes whenever it detects physical contact. using AI TTS
+*Apology Machine* is a wearable device, embedded in the shoulder of a jacket, that automatically apologizes whenever it detects physical contact. 
+→ using AI TTS ?
+
 
 The project explores the automation of social etiquette and the absurd extension of AI assistance into even the smallest human gestures of politeness. We become more and more reliant on machines and AI, and now even to apologize. *Apology Machine* exaggerates this dependency by outsourcing an intimate human behavior to an AI that reacts faster and more obediently than we ever could. The result is both comical and unsettling: an endlessly polite jacket, apologizing to the world.
 
