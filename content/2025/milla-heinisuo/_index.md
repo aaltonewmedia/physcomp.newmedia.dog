@@ -11,5 +11,3 @@ showBgImage: true
 Hey! I'm Milla :)
 
 I <3 Birds
-
-![squab](squab.jpeg)
