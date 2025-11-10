@@ -3,7 +3,7 @@ title: Final Project
 date: 2025-11-10T13:38:00.000+02:00
 authors:
   - Valerie Jeyeon YONG
-image: featured.jpg
+image: featured.png
 showBgImage: false
 ---
 # Final Project Ideas
