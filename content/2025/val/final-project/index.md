@@ -8,8 +8,6 @@ showBgImage: false
 ---
 # Final Project Ideas
 
-
-
 ## 1. Scentient Machine
 
 **Concept**
@@ -23,7 +21,6 @@ ex) When the air feels heavy and warm, it displays: “The air smells tense.”
 **Reference**
 
 [Building an Electronic Nose with MEMS Gas Detection Sensor](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269) [](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)[](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)
-
 
 **Emotion Labels and Training Conditions Examples**
 
@@ -39,16 +36,13 @@ Digital display showing live emotional status (ex. Tense – 82% Confidence)
 
 ![](ref.png)
 
-## 
-
-
 **2. Apology Machine**
 
 **Inspiration**
 
 My little piece of privacy 
 
-{{<youtube rKhbUjVyKIc>}}
+{{<youtube -rKhbUjVyKIc>}}
 
 I’m interested in this kind of simple and humoristic interaction work based on everyday life experiences. (Chindogu)
 
@@ -66,4 +60,4 @@ When the wearer bumps into someone, the embedded sensor detects the collision’
 
 <hr>
 
-*After reviewing and organizing my ideas, I find the use of an electric nose interesting, but I’m not very satisfied with the concept itself. So for now, I’m considering either simply running the **electric nose experiment** or moving forward with the **Apology Machine.***
+\*After reviewing and organizing my ideas, I find the use of an electric nose interesting, but I’m not very satisfied with the concept itself. So for now, I’m considering either simply running the **electric nose experiment** or moving forward with the **Apology Machine.***
