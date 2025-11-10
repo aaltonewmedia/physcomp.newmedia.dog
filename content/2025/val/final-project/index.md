@@ -20,7 +20,8 @@ ex) When the air feels heavy and warm, it displays: “The air smells tense.”
 
 **Reference**
 
-[Building an Electronic Nose with MEMS Gas Detection Sensor](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269) [](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)[](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)
+
+→ [Building an Electronic Nose with MEMS Gas Detection Sensor](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269) [](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)[](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)
 
 **Emotion Labels and Training Conditions Examples**
 
@@ -36,7 +37,7 @@ Digital display showing live emotional status (ex. Tense – 82% Confidence)
 
 ![](ref.png)
 
-**2. Apology Machine**
+## **2. Apology Machine**
 
 **Inspiration**
 
