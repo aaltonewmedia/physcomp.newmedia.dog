@@ -20,7 +20,6 @@ ex) When the air feels heavy and warm, it displays: “The air smells tense.”
 
 **Reference**
 
-
 → [Building an Electronic Nose with MEMS Gas Detection Sensor](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269) [](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)[](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)
 
 **Emotion Labels and Training Conditions Examples**
@@ -41,7 +40,6 @@ Digital display showing live emotional status (ex. Tense – 82% Confidence)
 
 **Inspiration**
 
-
 I’m interested in this kind of simple and humoristic interaction work based on everyday life experiences. (Chindogu)
 
 My little piece of privacy 
@@ -55,7 +53,6 @@ This project originates from an experience that everyone has: in crowded places,
 *Apology Machine* is a wearable device, embedded in the shoulder of a jacket, that automatically apologizes whenever it detects physical contact. 
 → using AI TTS ?
 
-
 The project explores the automation of social etiquette and the absurd extension of AI assistance into even the smallest human gestures of politeness. We become more and more reliant on machines and AI, and now even to apologize. *Apology Machine* exaggerates this dependency by outsourcing an intimate human behavior to an AI that reacts faster and more obediently than we ever could. The result is both comical and unsettling: an endlessly polite jacket, apologizing to the world.
 
 **How it works**
@@ -64,4 +61,4 @@ When the wearer bumps into someone, the embedded sensor detects the collision’
 
 <hr>
 
-<i>After reviewing and organizing my ideas, I find the use of an electric nose interesting, but I’m not very satisfied with the concept itself. So for now, I’m considering either simply running the **electric nose experiment** or moving forward with the **Apology Machine.**</i>
+*After reviewing and organizing my ideas, I find the use of an electric nose interesting, but I’m not very satisfied with the concept itself. So for now, I’m considering either simply running the **electric nose experiment** or moving forward with the **Apology Machine.***
