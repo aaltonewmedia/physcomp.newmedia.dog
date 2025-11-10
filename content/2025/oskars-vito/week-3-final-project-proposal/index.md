@@ -11,6 +11,16 @@ showBgImage: true
 
 I think that I want to create a electro-mechanic instrument using a combo of motors, resonant chambers as well as re-used items such as bottles and other things I can get my hands on.
 
+# Inspirations:
+
+**Koka's beat machine Nr 1:**
+
+*https://www.youtube.com/watch?v=nCIGQpPOdPg*
+
+*https://youtu.be/4Dk6UG7ZSY4?si=ZpfH3RoaSon28LL7*
+
+
+
 
 
 ## Functionality:
