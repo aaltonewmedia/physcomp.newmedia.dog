@@ -8,22 +8,32 @@ showBgImage: false
 ---
 KNITTED SURFACES
 
-in collaboration with knit designer, Lila Monin, I will work with knitted fabrics as the interface
+in collaboration with textile designer, Lila , I will work with knitted fabrics as the interface
 
-we are working with conductive yarn and wool as the main materials and we will combine machine knit with hand knit
+we are working with conductive yarn and wool as the main materials and we might combine machine knit with hand knit
 
 CREATING SOUND
 
-we are interested in sound the feedback of the interaction
+we are interested in sound as the feedback of the interaction with a knitted textile 
 
-and we are at the moment questioning how to implementing it and who to collaborate with
+LIGHT COULD BE ADDED TOO
 
-AND POTENTIALLY LIGHT 
+I am curious about implementing light as well
 
-I am interesting in light too
-
-it is essential for the atmosphere and I enjoy making lamps, so I might be able to include that in a way
-
-for now I have made a prototype of a knitted lamp, but how to take it further into the project is something I am questioning
+and I have made the prototype of a knitted lamp, that might be interesting to include in the setting – if it works out together with the knitted interface and in the physical setting of this project
 
 open for inputs, ideas and collaborations, please send an email to klara.bloch-norup@aalto.fi and I'll get back to you within a few business days
+
+![](physicalcomputing_a5_02-03.png)
+
+![](physicalcomputing_a5_04-05.png)
+
+![](physicalcomputing_a5_06-07.png)
+
+![](physicalcomputing_a5_08-09.png)
+
+![](physicalcomputing_a5_12-13.png)
+
+![](physicalcomputing_a5_14-15.png)
+
+![](physicalcomputing_a5_16-17.png)
