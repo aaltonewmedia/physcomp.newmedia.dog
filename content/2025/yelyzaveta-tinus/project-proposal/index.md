@@ -1,5 +1,5 @@
 ---
-title: Project Proposal
+title: Digital Board Gamr with Physical Cards (Project Proposal)
 date: 2025-11-11T13:04:00.000+02:00
 authors:
   - Yelyzaveta Tinus
