@@ -6,15 +6,17 @@ authors:
 image: img_5993.jpg
 showBgImage: false
 ---
-# The Unedited
+# Name: The Unedited
+
+A bit of a random source of inspiration: https://www.olfactoryartkeller.com/performances/adnose
+
+![](snipaste_2025-11-11_14-41-42.png)
 
 ## Concept
 
 When we're organizing our thoughts, especially when we're typing on a keyboard, that whole act is “**edited” and ”disguised“.** We always rephrase and polish things to present the version we're "supposed" to show (like always typing "I'm fine").
 
 So this installation **rejects all that editing** andinsists on outputting the **"unedited" original version** instead.
-
-
 
 ## Layout
 
@@ -23,8 +25,6 @@ So this installation **rejects all that editing** andinsists on outputting the *
 1. The "truth" button --- for the user to choose their real emotional state
 2. The "lie" keyboard --- for typing their "public, edited" language
 3. The guidance screen (in front of the keyboard) ---  set social scenario and ask questions to user, and shows what they're typing in real-time
-
-
 
 **· The Output Zone** (on the wall)**:**
 
@@ -35,8 +35,6 @@ So this installation **rejects all that editing** andinsists on outputting the *
 
     mood of the room (using filmic footages like "crying eyes")
 3. Soundscape
-
-
 
 ## The Narrative
 
