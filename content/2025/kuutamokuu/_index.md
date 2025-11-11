@@ -7,13 +7,7 @@ heroStyle: background
 image: näyttökuva-2025-10-26-213928.png
 showBgImage: false
 ---
-**Replace the text below with your own**
 
-This is my course documentation example site! You can find tips on how to format your projects and images correctly.
+Hey there! I'm a designer with a deep interest for Extended Reality, gamification and learning new things
 
-Keep your images to this specification:
-
-* Resolution: maximum 1920 pixels for the longer side
-* Filesize: maximum 2MB
-
-ENJOY CLOWNING AROUND!
+Currently freelancing on the XR field and studying at Aalto New Media MA
