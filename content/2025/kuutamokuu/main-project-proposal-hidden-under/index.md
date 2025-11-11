@@ -7,4 +7,30 @@ image: background.jpg
 bgimage: background.jpg
 showBgImage: true
 ---
-Meow
+# "Hidden under"
+
+"Hidden under" project idea is to create an interactive art piece, where the audience members can manipulate objects to make the painting move.
+
+### Painting the nature
+
+I have created paintings that explore the nature floor and its various color tones.
+
+![](kuu-alatalo-portfolio.png)
+
+### Inspiration
+
+Upon researching different "Layered Painting" examples, found the art from Peter Bynum. His work is similar to what I want to achieve from this project.
+
+<https://www.peterbynum.com/museum-exhibitions/museum-of-art-and-design>
+
+### Project idea
+
+"Hidden under" project consists of layered paintings that can be made to rotate by interactive elements.
+
+![](1.png)
+
+![](2.png)
+
+By tilting a rain tube, the layers will start rotating.
+
+![](tiltexample.png)
