@@ -31,4 +31,16 @@ a Pull-Down Resistor + Rasberry PI PICO
 ## Inspiration
 
 ![](week02_bg.jpg)
-##Simple Concept
+
+## Simple Concept
+
+I want to create music but the music making softwares like Abletion is complicated to learn, so I want to introduce a simple and physical way to make music. And I watched a very simple way of creating music, called loop. Then the motor and the shape of gramohone makes this a perfect physica way of creating loop.
+<https://youtube.com/shorts/5h5m3fB_8ZE?si=OLcgfcQB7sZwaUNg>[](https://youtube.com/shorts/5h5m3fB_8ZE?si=OLcgfcQB7sZwaUNg)
+
+![](gramaphone.jpg)
+
+
+
+![](ideaii.jpg)
+
+\# The Problem is....
