@@ -16,6 +16,10 @@ I don’t intend my course project to be ‘version 1’ of my thesis project, r
 
 ![](nauha-aarteita_1.jpg "Image from Nauha-aarteita, Maikki Karisto & Mervi Pasanen, Salakirjat 2020. https://www.salakirjat.net/product/348/nauha-aarteita---arkeologisia-lautanauhoja-suomen-rautakaudelta")
 
+![](960px-lautanauha_weaving.jpg "By Pitke - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=7962686")
+
+
+
 **Interaction**
 
 The first idea I had was to use conductive yarn to see how it works with this weaving method. I wonder If I could achieve some difference in input by touching the belt in different spots.
