@@ -18,8 +18,6 @@ Using MEMS gas sensors, the system reads the chemical composition of air, includ
 
 ex) When the air feels heavy and warm, it displays: “The air smells tense.”
 
-
-
 → Tuto: [Building an Electronic Nose with MEMS Gas Detection Sensor](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269) 
 
 [](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)[](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)
@@ -38,21 +36,16 @@ Digital display showing live emotional status (ex. Tense – 82% Confidence)
 
 ![](ref.png)
 
-#### 
 References
 
 [Adnose, *Adnan Aga*](https://adnanaga.com/Adnose) - predict the smell of any object using AI
 
 ![](nose.jpeg)
 
-
 [Smeller 2.0, *Wolfgang Georgsdorf -*](https://smeller.net/about/) deliver complex sequences of smells played in place of music notes. 
 → Maybe I can treats scent as a medium and transforms invisible chemical data into a performative art piece
 
 ![](smeller.jpg)
-
-
-
 
 ## **2. Apology Machine**
 
@@ -60,7 +53,7 @@ References
 
 I’m interested in the kind of simple and humorous interactive works that Matti showed us, which echo the spirit of Chindogu, a playful useless invention inventions born from everyday inconveniences.
 
-{{<youtube -rKhbUjVyKIc>}}
+{{<youtube rKhbUjVyKIc>}}
 
 #### Concept
 
@@ -79,4 +72,4 @@ When the wearer bumps into someone, the embedded sensor detects the collision’
 
 <hr>
 
-*After reviewing and organizing my ideas, I find the use of an electric nose interesting, but I’m not very satisfied with the concept itself. So for now, I’m considering either simply running the **electric nose experiment** or moving forward with the **Apology Machine.***
+\*After reviewing and organizing my ideas, I find the use of an electric nose interesting, but I’m not very satisfied with the concept itself. So for now, I’m considering either simply running the **electric nose experiment** or moving forward with the **Apology Machine.***
