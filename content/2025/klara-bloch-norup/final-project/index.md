@@ -22,7 +22,7 @@ I am curious about implementing light as well
 
 and I have made the prototype of a knitted lamp, that might be interesting to include in the setting – if it works out together with the knitted interface and in the physical setting of this project
 
-open for inputs, ideas and collaborations, please send an email to klara.bloch-norup@aalto.fi and I'll get back to you within a few business days
+open for inputs, ideas and collaborations, please send an email to klara.bloch-norup@aalto.fi 
 
 ![](physicalcomputing_a5_02-03.png)
 
