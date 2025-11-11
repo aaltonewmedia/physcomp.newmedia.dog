@@ -1,5 +1,5 @@
 ---
-title: Week 1
+title: "Week 1: Simple Circuit"
 date: 2025-10-27T14:32:00.000+02:00
 authors:
   - Veronika Valtonen
