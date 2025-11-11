@@ -10,7 +10,7 @@ showBgImage: false
 
 ## 1. Scentient Machine
 
-**Concept**
+#### Concept
 
 Scentient Machine is a device that “reads the atmosphere” of a room. It interprets the invisible atmosphere of a space as emotional data.
 
@@ -24,13 +24,13 @@ ex) When the air feels heavy and warm, it displays: “The air smells tense.”
 
 [](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)[](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)
 
-**Emotion Labels and Training Conditions Examples**
+#### Emotion Labels and Training Conditions Examples
 
 ![](table.png)
 
 → Edge Impulse model for smell/'feeling of the air'
 
-**Installation Design**
+#### Installation Design
 
 Like the interface of an air purifier or weather application. 
 
@@ -38,8 +38,8 @@ Digital display showing live emotional status (ex. Tense – 82% Confidence)
 
 ![](ref.png)
 
-
-**References**
+#### 
+References
 
 [Adnose, *Adnan Aga*](https://adnanaga.com/Adnose) - predict the smell of any object using AI
 
@@ -56,13 +56,13 @@ Digital display showing live emotional status (ex. Tense – 82% Confidence)
 
 ## **2. Apology Machine**
 
-**Inspiration**
+#### Inspiration
 
 I’m interested in the kind of simple and humorous interactive works that Matti showed us, which echo the spirit of Chindogu, a playful useless invention inventions born from everyday inconveniences.
 
 {{<youtube -rKhbUjVyKIc>}}
 
-**Concept**
+#### Concept
 
 This project originates from an experience that everyone has: in crowded places, I often bump into people’s shoulders but can’t possibly apologize to everyone.
 
@@ -71,7 +71,7 @@ This project originates from an experience that everyone has: in crowded places,
 
 The project explores the automation of social etiquette and the absurd extension of AI assistance into even the smallest human gestures of politeness. We become more and more reliant on machines and AI, and now even to apologize. *Apology Machine* exaggerates this dependency by outsourcing an intimate human behavior to an AI that reacts faster and more obediently than we ever could. The result is both comical and unsettling: an endlessly polite jacket, apologizing to the world.
 
-**How it works**
+#### How it works
 
 When the wearer bumps into someone, the embedded sensor detects the collision’s intensity. According to the force, the AI system generates and plays an apology with different tone and repetition. From a calm “Sorry” to an anxious stream of “I’m so sorry! Sorry! Sorry!”.
 
