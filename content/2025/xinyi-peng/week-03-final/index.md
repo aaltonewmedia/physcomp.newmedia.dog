@@ -20,6 +20,10 @@ showBgImage: false
 
 The essence of "metaphor" is to use something familiar(A) to understand and express another abstract thing(B). In this project, our A can be the way people interact with paper: folding, pressing, blowing... I want to connect them with sounds and visuals, to create my own metaphor and my own tangible interface.
 
+![](sketch2.jpg)
+
+![](blow.jpg)
+
 ## Fabrication Concept
 
 a Pull-Down Resistor + Rasberry PI PICO
@@ -39,8 +43,18 @@ I want to create music but the music making softwares like Abletion is complicat
 
 ![](gramaphone.jpg)
 
-
-
 ![](ideaii.jpg)
 
-\# The Problem is....
+## The Problem is....
+
+After I came up with it, I then find two artists have something similar:
+
+1.Cay Taylan: jamming with Orbita MIDI sequencer together with his daughter
+
+![](artist1.jpg)
+
+2.Jesse Lucas: DYSKOGRAF
+
+![](artist2.jpg)
+
+click to jump to the artist website: <https://eyehear.org/portfolio/dyskograf/>
