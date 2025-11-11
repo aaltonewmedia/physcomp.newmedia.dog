@@ -29,8 +29,8 @@ Upon researching different "Layered Painting" examples, found the art from Peter
 
 ![](1.png)
 
-![](2.png)
 
-By tilting a rain tube, the layers will start rotating.
 
 ![](tiltexample.png)
+
+Underneath the layers, I am planning on adding some "hidden" elements. What might people find if they searched through the nature floor? Something that doesn't quite belong in nature, perhaps? If I have time, I want to include a LED to turn on when you rotate something to become visible.
