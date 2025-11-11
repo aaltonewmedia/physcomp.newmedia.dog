@@ -16,7 +16,7 @@ Initially I was thinking that each stick would have an independent system to det
 
 Matti the elf had an idea: replace the numerous individual systems with a single unit that can follow one person at a time along the length of the installation, on a conveyor belt of sorts. Similar to the "my little piece of privacy" installation by Niklas Roy!
 
-{{<rKhbUjVyKIc>}}
+{{<youtube rKhbUjVyKIc>}}
 
 As the unit moves, it collides with the sticks, and sound is produced. The sticks are now hanging from the top, and as the unit passes and releases a stick from its hold, the resulting wavy swinging of the sticks might also produce sound.
 
