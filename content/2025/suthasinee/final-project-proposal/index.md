@@ -14,8 +14,6 @@ My shortlisted candidates
 
 (will post my idea pic soon)
 
-
-
 2. Flower Machina
 
 Ref: 
@@ -23,3 +21,7 @@ Ref:
 ![](screenshot-2025-11-11-at-12.04.05.png "Pattern Maker Idea Ref")
 
 ![](screenshot-2025-11-11-at-11.57.42.png "Flower Machina Idea Ref")
+
+![](naktnas1_11-11-2025_13-06-13-2.jpg "pattern maker idea")
+
+![](naktnas1_11-11-2025_13-06-13.jpg "flower machina idea")
