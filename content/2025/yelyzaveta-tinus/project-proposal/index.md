@@ -8,11 +8,9 @@ showBgImage: false
 ---
 The idea I have in my project is based on digitalization of my previous proj**ect from my bachelor, the board game called "Bargain's Alchemy"**.
 
-
+![](photo_2025-11-11_12-52-06.jpg)
 
  The game's idea is to create a loop of potion creation and selling it to earn money as the final goal. 
-
-![](photo_2025-11-11_12-52-06.jpg)
 
 My desire is to **combine physical cards from the game and create a direct connection with the digital version.**
 
