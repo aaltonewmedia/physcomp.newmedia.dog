@@ -1,5 +1,5 @@
 ---
-title: Project Proposal
+title: "Week 3: Project Proposal"
 date: 2025-11-10T13:09:00.000+02:00
 authors:
   - Veronika Valtonen
