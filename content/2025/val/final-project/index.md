@@ -47,7 +47,7 @@ References
 
 ![](smeller.jpg)
 
-## **2. Apology Machine**
+## **2. Apology Jacket**
 
 #### Inspiration
 
@@ -59,10 +59,10 @@ I’m interested in the kind of simple and humorous interactive works that Matti
 
 This project originates from an experience that everyone has: in crowded places, I often bump into people’s shoulders but can’t possibly apologize to everyone.
 
-*Apology Machine* is a wearable device, embedded in the shoulder of a jacket, that automatically apologizes whenever it detects physical contact. 
+*Apology Jacket* is a wearable device, embedded in the shoulder of a jacket, that automatically apologizes whenever it detects physical contact. 
 → using AI TTS ?
 
-The project explores the automation of social etiquette and the absurd extension of AI assistance into even the smallest human gestures of politeness. We become more and more reliant on machines and AI, and now even to apologize. *Apology Machine* exaggerates this dependency by outsourcing an intimate human behavior to an AI that reacts faster and more obediently than we ever could. The result is both comical and unsettling: an endlessly polite jacket, apologizing to the world.
+The project explores the automation of social etiquette and the absurd extension of AI assistance into even the smallest human gestures of politeness. We become more and more reliant on machines and AI, and now even to apologize. *Apology Jacket* exaggerates this dependency by outsourcing an intimate human behavior to an AI that reacts faster and more obediently than we ever could. The result is both comical and unsettling: an endlessly polite jacket, apologizing to the world.
 
 #### How it works
 
@@ -72,4 +72,4 @@ When the wearer bumps into someone, the embedded sensor detects the collision’
 
 <hr>
 
-\*After reviewing and organizing my ideas, I find the use of an electric nose interesting, but I’m not very satisfied with the concept itself. So for now, I’m considering either simply running the **electric nose experiment** or moving forward with the **Apology Machine.***
+*After reviewing and organizing my ideas, I find the use of an electric nose interesting, but I’m not very satisfied with the concept itself. So for now, I’m considering either simply running the **electric nose experiment** or moving forward with the **Apology Jacket.***
