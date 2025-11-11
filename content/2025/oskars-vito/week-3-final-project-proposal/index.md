@@ -15,7 +15,11 @@ I think that I want to create an electro-mechanic instrument using a combination
 
 **Koka's beat machine Nr 1:**
 
+{{<youtube nCIGQpPOdPg>}}
+
 *https://www.youtube.com/watch?v=nCIGQpPOdPg*
+
+{{<youtube ZpfH3RoaSon28LL7>}}
 
 *https://youtu.be/4Dk6UG7ZSY4?si=ZpfH3RoaSon28LL7*
 
