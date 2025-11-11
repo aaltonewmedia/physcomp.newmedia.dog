@@ -19,4 +19,4 @@ While most of us might have been born with a lucky set of able hands, technologi
 While putting aside the obvious issue of unbalanced opportunities for designers coming from low socioeconomic backgrounds, in a hyperconnected world where everything is seen in real-time, do we even have the option to opt-out of working with tools that are toxic to us?\
 \
 \
-  Bret Victor "A brief rant on the future of interaction design", Bret Victor (blog), November 8, 2011, accessed 26 October, 2025, https://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/
+Victor, B. (2011, November 8). A brief rant on the future of interaction design. https://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/
