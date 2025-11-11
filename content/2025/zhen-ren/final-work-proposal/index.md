@@ -23,18 +23,24 @@ So this installation **rejects all that editing** andinsists on outputting the *
 **· The Input Zone:**
 
 1. The "truth" button --- for the user to choose their real emotional state
+
+   ![](braun_.jpeg)
 2. The "lie" keyboard --- for typing their "public, edited" language
+
+   ![](keyboard.jpg)
 3. The guidance screen (in front of the keyboard) ---  set social scenario and ask questions to user, and shows what they're typing in real-time
 
 **· The Output Zone** (on the wall)**:**
 
 1. The printer --- acting as the final "truth" speaker
-2. Mapping --- sets the 
 
-   *true*
+   ![](printer.jpg)
+2. Mapping --- sets the *true* mood of the room (using filmic footages like "crying eyes")
 
-    mood of the room (using filmic footages like "crying eyes")
+   ![](img_6113.jpg)
 3. Soundscape
+
+
 
 ## The Narrative
 
@@ -66,6 +72,10 @@ Audience use the keyboard to type their "social disguise" :
 * The printer on the wall prints the "unedited" truth: 
 
 > the opposite words: "I'm falling apart!" & glitch patterns
+>
+> ![](1.jpg)
+
+![](img_5992.jpg)
 
 **Step 6: Takeaway**
 
