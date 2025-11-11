@@ -4,7 +4,7 @@ date: 2025-10-20T23:08:00.000Z
 authors:
   - Yelyzaveta Tinus
 heroStyle: background
-image: 2147483648_-228291.jpg
+image: tg_image_424109727-2-.jpeg
 showBgImage: false
 draft: false
 ---
