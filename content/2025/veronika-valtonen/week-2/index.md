@@ -1,5 +1,5 @@
 ---
-title: Week 2
+title: "Week 2: Alt+Ctrl"
 date: 2025-11-02T23:28:00.000+02:00
 authors:
   - Veronika Valtonen
