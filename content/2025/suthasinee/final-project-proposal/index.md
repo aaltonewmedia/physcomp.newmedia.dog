@@ -18,10 +18,10 @@ My shortlisted candidates
 
 Ref: 
 
-![](screenshot-2025-11-11-at-12.04.05.png "Pattern Maker Idea Ref")
+![](naktnas1_11-11-2025_13-06-13-2.jpg "Pattern Maker Idea Ref")
 
-![](screenshot-2025-11-11-at-11.57.42.png "Flower Machina Idea Ref")
+![](screenshot-2025-11-11-at-12.04.05.png "Flower Machina Idea Ref")
 
-![](naktnas1_11-11-2025_13-06-13-2.jpg "pattern maker idea")
+![](naktnas1_11-11-2025_13-06-13.jpg "pattern maker idea")
 
-![](naktnas1_11-11-2025_13-06-13.jpg "flower machina idea")
+![](screenshot-2025-11-11-at-11.57.42.png "flower machina idea")
