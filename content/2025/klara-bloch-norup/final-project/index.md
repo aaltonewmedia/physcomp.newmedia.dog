@@ -37,3 +37,5 @@ open for inputs, ideas and collaborations, please send an email to klara.bloch-n
 ![](physicalcomputing_a5_14-15.png)
 
 ![](physicalcomputing_a5_16-17.png)
+
+![](physicalcomputing_a5_18-19.png)
