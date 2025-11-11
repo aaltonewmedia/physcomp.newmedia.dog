@@ -29,3 +29,5 @@ I think that I want to create an electro-mechanic instrument using a combination
 ### Components:
 
 * Motors - stepper, servo, push and pull solenoid and perhaps a fan for the bottles
+* Microcontroller/s?
+* Power delivery (dc plug?)
