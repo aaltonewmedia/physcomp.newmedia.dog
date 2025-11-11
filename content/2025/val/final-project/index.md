@@ -53,7 +53,7 @@ References
 
 I’m interested in the kind of simple and humorous interactive works that Matti showed us, which echo the spirit of Chindogu, a playful useless invention inventions born from everyday inconveniences.
 
-{{<youtube -rKhbUjVyKIc>}}
+{{<youtube rKhbUjVyKIc>}}
 
 #### Concept
 
