@@ -6,7 +6,7 @@ authors:
 image: screenshot-2025-11-11-130418.png
 showBgImage: false
 ---
-The idea I have in my project is based on digitalization of my previous proj**ect from my bachelor, the board game called "Bargain's Alchemy"**.
+The idea I have in my project is based on digitalization of my previous project from my bachelor, the board game called **"Bargain's Alchemy"**.
 
 ![](screenshot-2025-11-11-133615.png)
 
