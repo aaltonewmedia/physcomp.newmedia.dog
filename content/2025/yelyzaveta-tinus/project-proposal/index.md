@@ -1,5 +1,5 @@
 ---
-title: Digital Board Gamr with Physical Cards (Project Proposal)
+title: Week 3 || Digital Board Gamr with Physical Cards || Final Project Idea
 date: 2025-11-11T13:04:00.000+02:00
 authors:
   - Yelyzaveta Tinus
