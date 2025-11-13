@@ -17,3 +17,15 @@ showBgImage: false
 ![](截屏2025-11-13-10.21.14.png "Mechanical Robot VS A bird with warmth")
 
 I want to explore the boundary between a robot and a bird with warmth.
+
+
+
+## ***What should it looks like?***
+
+***A round and smooth bird shape? 2 legs and 2 wings?***
+
+![](截屏2025-11-13-10.54.55.png "moodboard")
+
+## ***What functions does it have?***
+
+* *Is love control？*
