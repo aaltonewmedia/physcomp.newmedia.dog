@@ -42,4 +42,20 @@ I want to explore the boundary between a robot and a bird with warmth.
 
 
 
+1.Use gesture recognition to control Robot‘s actions
+
 {{<youtube fec-XFwayz8>}}
+
+2. When no one is around, it preens the feathers on its neck.
+
+Distance sensor/ infrared sensor
+
+3.Talk
+
+Voice Sensor
+
+I have sevaral fixed questions, but also can insert Chatgpt AGI.
+
+4.It will avoid you when you get close.
+
+Distance sensor and Motor.
