@@ -3,7 +3,8 @@ title: Final Project
 date: 2025-11-10T17:32:00.000+02:00
 authors:
   - Ziyu Zhao
-image: african-grey-parrot-thumb.png
+image: zupreem-gray-bird.webp
+bgimage: 839c471bfed3399541112d3eaedac888.jpg
 showBgImage: false
 ---
 * Some short thoughts on what you would like to explore and work with conceptually and technically. What is it that you want to make? How does it look like? What does it do?
