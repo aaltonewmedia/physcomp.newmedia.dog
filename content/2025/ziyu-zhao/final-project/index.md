@@ -46,6 +46,8 @@ I want to explore the boundary between a robot and a bird with warmth.
 
 {{<youtube fec-XFwayz8>}}
 
+{{<youtube j49aA8wwWxY>}}
+
 2. When no one is around, it preens the feathers on its neck.
 
 Distance sensor/ infrared sensor
