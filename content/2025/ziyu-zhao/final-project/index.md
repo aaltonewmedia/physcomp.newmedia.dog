@@ -10,4 +10,10 @@ showBgImage: false
 * Some references (artworks/projects that are similar to what you would like to do)
 * Initial list of parts and components you think you will need
 
-I want to make a parrot Robot.
+## ***What I want to make?***
+
+*I want to make a Parrot Robot to commemorate an Africa gray Parrot that once accompanied me for a period of time.* 
+
+![](截屏2025-11-13-10.21.14.png "Mechanical Robot VS A bird with warmth")
+
+I want to explore the boundary between a robot and a bird with warmth.
