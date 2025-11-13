@@ -19,8 +19,6 @@ showBgImage: false
 
 I want to explore the boundary between a robot and a bird with warmth.
 
-
-
 ## ***What should it looks like?***
 
 ***A round and smooth bird shape? 2 legs and 2 wings?***
@@ -32,12 +30,16 @@ I want to explore the boundary between a robot and a bird with warmth.
 * *Is love control？*
 
   ***Use gesture recognition to control Robot‘s actions***
-*  *Parrot‘s mood problem*
+* *Parrot‘s mood problem*
 
   ***When no one is around, it preens the feathers on its neck.***
-*  *Parrot can has simple consversations*
+* *Parrot can has simple consversations*
 
   ***Talk.***
-*  *Parrot doesn’t trust you*
+* *Parrot doesn’t trust you*
 
   ***It will avoid you when you get close.***
+
+
+
+{{<youtube fec-XFwayz8>}}
