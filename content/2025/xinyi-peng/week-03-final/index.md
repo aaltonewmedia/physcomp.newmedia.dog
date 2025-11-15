@@ -1,9 +1,10 @@
 ---
-title: WEEK 03 | Final
+title: Week 03 | Final
 date: 2025-11-11T11:02:00.000+02:00
 authors:
   - Xinyi Peng
 image: papertouch.jpg
+bgimage: gramaphone.jpg
 showBgImage: false
 ---
 # Idea I: Metaphor
