@@ -137,7 +137,7 @@ void loop() {
 ```
 
 ### 
-Connecting ChatGPT to Pico 2W
+
 
 
 [](https://www.hackster.io/giung-kim/how-to-use-openai-api-with-wizfi360-evb-pico-in-arduino-d10d5d)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
