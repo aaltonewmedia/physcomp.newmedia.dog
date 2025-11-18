@@ -140,4 +140,6 @@ void loop() {
 Connecting ChatGPT to Pico 2W
 
 
-Tutorial[ How to set up ChatGPT on a Raspberry Pi Pico W](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
+Tutorial [How to use OpenAI API with WizFi360-EVB-Pico in Arduino](https://www.hackster.io/giung-kim/how-to-use-openai-api-with-wizfi360-evb-pico-in-arduino-d10d5d)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
+
+[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
