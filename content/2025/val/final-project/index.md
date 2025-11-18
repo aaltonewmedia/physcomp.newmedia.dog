@@ -93,8 +93,10 @@ I decided to choose Apology Jacket because I’m more confident in it (and it re
 ```
 
 int pressureValue;
-int thresholdValue;
-int thresholdValue2;
+int thresholdValue = 600;
+int thresholdValue2 = 900;
+
+bool hasApologized = false;
 
 void setup() {
   Serial.begin(9600);
@@ -103,20 +105,32 @@ void setup() {
 void loop() {
 
   // Read pressure sensor (FSR or force sensor)
-  pressureValue = analogRead(26);  
-  thresholdValue = 600;  
-  thresholdValue2 = 900;   
+  pressureValue = analogRead(26);    
 
-  // Compare pressure to threshold
-  if ( pressureValue > thresholdValue && pressureValue < thresholdValue2) {
-    Serial.println("Sorry");
-  } else if (pressureValue > thresholdValue2){
-    Serial.println("Sorry Sorry");
+  // Collision detected 
+  if (pressureValue > thresholdValue) {
+
+    if (!hasApologized) { // only say sorry once per bump
+
+      if (pressureValue < thresholdValue2) {
+        Serial.println("Sorry");
+      } 
+      else if (pressureValue >= thresholdValue2) {
+        Serial.println("SORRY SORRY!");
+      }
+
+      hasApologized = true;  // prevent repeating
+    }
+  }
+
+  // RESET when pressure goes back to normal 
+  else {
+    hasApologized = false;
   }
 
   // Print readings
-  Serial.print("Pressure: ");
-  Serial.println(pressureValue);
+  // Serial.print("Pressure: ");
+  // Serial.println(pressureValue);
 
   delay(10);
 }
