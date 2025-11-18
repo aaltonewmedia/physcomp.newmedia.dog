@@ -85,3 +85,39 @@ I decided to choose Apology Jacket because I’m more confident in it (and it re
 * velostat
 * conductive fabric
 * small audio player
+
+
+
+### First Test with Pressure Sensor
+
+```
+
+int pressureValue;
+int thresholdValue;
+int thresholdValue2;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  // Read pressure sensor (FSR or force sensor)
+  pressureValue = analogRead(26);  
+  thresholdValue = 600;  
+  thresholdValue2 = 900;   
+
+  // Compare pressure to threshold
+  if ( pressureValue > thresholdValue && pressureValue < thresholdValue2) {
+    Serial.println("Sorry");
+  } else if (pressureValue > thresholdValue2){
+    Serial.println("Sorry Sorry");
+  }
+
+  // Print readings
+  Serial.print("Pressure: ");
+  Serial.println(pressureValue);
+
+  delay(10);
+}
+```
