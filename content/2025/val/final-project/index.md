@@ -135,3 +135,9 @@ void loop() {
   delay(10);
 }
 ```
+
+### 
+Connecting ChatGPT to Pico 2W
+
+
+Tutorial[ How to set up ChatGPT on a Raspberry Pi Pico W](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
