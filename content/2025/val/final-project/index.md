@@ -86,7 +86,7 @@ I decided to choose Apology Jacket because I’m more confident in it (and it re
 * conductive fabric
 * small audio player
 
-**STEP 1 — Collision Detection**
+## STEP 1 — Collision Detection
 
 First Test with Pressure Sensor and Pico 2W
 
@@ -140,7 +140,7 @@ void loop() {
 
 ![](test1.jpg)
 
-**STEP 2 — Add Audio (AI text-to-speech)**
+## STEP 2 — Add Audio (AI text-to-speech)
 
 Connecting to a speaker
 
