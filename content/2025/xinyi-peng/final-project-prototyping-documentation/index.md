@@ -53,5 +53,43 @@ void draw()
 }
 ```
 But the problem is the signal look fine in the arduino serial monitor, but in processing I can't print the signal. It only shows 0. With Matti's help I know that there are several problems behind:
-> 1. The speed arduino sending the signals is faster than the processing refeshing(60FPS), so I need to add a `delay()`in arduino. This is the explaination of Gemini: set the Arduino delay to 30ms (approx. 33Hz) to maintain a safe 1:2 ratio with Processing's 60Hz read rate, ensuring the buffer clears faster than it fills to prevent data backlog.
-> 2. 
+> 1. The speed arduino sending the signals is faster than the processing refeshing(60FPS), so I need to add a `delay(30)`in arduino. This is the explaination of Gemini: set the Arduino delay to 30ms (approx. 33Hz) to maintain a safe 1:2 ratio with Processing's 60Hz read rate, ensuring the buffer clears faster than it fills to prevent data backlog.
+> 2. The code `println(val)` is not actually getting the serial data so that I need to use `str = myPort.readStringUntil('\n');`. But this only gets the `String` type of data(pure text) but I need `int` or `float`, so Matti says I need use this `val = float(str);` to force the data become a float. **But at first we want to try `int()`, but there is some unknown error, but float works fine.**
+The code I got that can actually work is this:
+```
+import processing.serial.*;
+Serial myPort;  // Create object from Serial class
+float val;     // Data received from the serial port
+String str;
+
+void setup()
+{
+  // On Windows machines, this generally opens COM1.
+  // Open whatever port is the one you're using.
+  println(Serial.list());
+  
+  String portName = Serial.list()[0];
+  myPort = new Serial(this, portName, 9600);
+  
+  //myPort.bufferUntil('\n');
+}
+
+void draw()
+{
+  background(255);
+  if ( myPort.available() > 0) {  // If data is available,
+    str = myPort.readStringUntil('\n');  // read it and store it in str
+    //
+    //println(str);
+    if(str != null){
+      //String[] splitData = split(str, ","); // I'll need this for more int
+      val = float(str); // change the text we get into real number we can do calculation
+     // y = float(splitData[1]);
+     // z = float(splitData[2]);
+    }
+  }
+  
+  println(val);
+  text(val,20,20);
+}
+```
