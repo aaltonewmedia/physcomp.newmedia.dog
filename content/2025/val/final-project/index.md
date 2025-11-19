@@ -86,9 +86,6 @@ I decided to choose Apology Jacket because I’m more confident in it (and it re
 * conductive fabric
 * small audio player
 
-
-
-### 
 **STEP 1 — Collision Detection**
 
 First Test with Pressure Sensor and Pico 2W
@@ -97,7 +94,6 @@ First Test with Pressure Sensor and Pico 2W
 * Strong collision = 800–1000
 
 ```
-
 int pressureValue;
 int thresholdValue = 600;
 int thresholdValue2 = 900;
@@ -142,15 +138,15 @@ void loop() {
 }
 ```
 
-### 
+![](test1.jpg)
+
 **STEP 2 — Add Audio (AI text-to-speech)**
 
 BackgroundAudio Library 
 
 <https://www.arduinolibraries.info/libraries/background-audio> <https://github.com/earlephilhower/BackgroundAudio> 
 
-
-```
+```csharp
 // StreamMP3 - Earle F. Philhower, III <earlephilhower@yahoo.com>
 // Released to the public domain, December 2024
 //
@@ -451,14 +447,7 @@ void loop() {
     }
   }
 }
-
 ```
-
-
-
-
-
-
 
 [](https://www.hackster.io/giung-kim/how-to-use-openai-api-with-wizfi360-evb-pico-in-arduino-d10d5d)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
 
