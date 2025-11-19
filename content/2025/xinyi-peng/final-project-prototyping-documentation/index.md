@@ -1,0 +1,57 @@
+---
+title: Final Project Prototyping Documentation
+date: 2025-11-19T10:13:00.000+02:00
+authors:
+  - Xinyi Peng
+image: connection.jpg
+showBgImage: false
+---
+# 11/18 Initial Miiimum Viable Test
+## Blow Structure Test
+At first the circuit counldn't give the correct HIGH/LOW signal as I expected. From Matti I know there is two problems:
+
+> 1. **The glue on the back of the conductive tape is not conductive**, so you can't make it discontinuous;
+> 2. Matti suggest for testing I should use bread board to connect the components to prevent the unstable serial transformation.
+
+![](connection.jpg)
+
+![](back-of-the-circuit.jpg)
+## Arduino & Processing Connection
+This is my initial Arduino code:
+```
+int i;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  pinMode(21,INPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  i = digitalRead(21);
+  Serial.println(i);
+}
+```
+and here is the Processing code:
+```
+import processing.serial.*;
+Serial myPort;  // Create object from Serial class
+int val;     // Data received from the serial port
+
+void setup()
+{
+  // On Windows machines, this generally opens COM1.
+  // Open whatever port is the one you're using.
+  String portName = Serial.list()[2]; //change the 0 to a 1 or 2 etc. to match your port
+  myPort = new Serial(this, portName, 9600);
+}
+
+void draw()
+{
+  println(val);
+}
+```
+But the problem is the signal look fine in the arduino serial monitor, but in processing I can't print the signal. It only shows 0. With Matti's help I know that there are several problems behind:
+> 1. The speed arduino sending the signals is faster than the processing refeshing(60FPS), so I need to add a `delay()`in arduino. This is the explaination of Gemini: set the Arduino delay to 30ms (approx. 33Hz) to maintain a safe 1:2 ratio with Processing's 60Hz read rate, ensuring the buffer clears faster than it fills to prevent data backlog.
+> 2. 
