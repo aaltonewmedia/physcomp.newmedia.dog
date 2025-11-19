@@ -93,7 +93,7 @@ First Test with Pressure Sensor and Pico 2W
 * Light collision = 400–700
 * Strong collision = 800–1000
 
-```
+```cpp
 int pressureValue;
 int thresholdValue = 600;
 int thresholdValue2 = 900;
@@ -150,7 +150,7 @@ Install BackgroundAudio Library
 
 <https://www.arduinolibraries.info/libraries/background-audio> <https://github.com/earlephilhower/BackgroundAudio> 
 
-```csharp
+```cpp
 // StreamMP3 - Earle F. Philhower, III <earlephilhower@yahoo.com>
 // Released to the public domain, December 2024
 //
