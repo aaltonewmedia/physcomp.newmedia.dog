@@ -142,7 +142,11 @@ void loop() {
 
 **STEP 2 — Add Audio (AI text-to-speech)**
 
-BackgroundAudio Library 
+Connecting to a speaker
+
+![](sound.jpg)
+
+Install BackgroundAudio Library 
 
 <https://www.arduinolibraries.info/libraries/background-audio> <https://github.com/earlephilhower/BackgroundAudio> 
 
@@ -449,6 +453,7 @@ void loop() {
 }
 ```
 
-[](https://www.hackster.io/giung-kim/how-to-use-openai-api-with-wizfi360-evb-pico-in-arduino-d10d5d)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
 
-[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
+→ Playing an MP3 web radio using HTTPS connectivity. Includes a serial and HTTP WebServer interface to allow the user to change URLs, volumes, and see the ICY metadata.
+
+[](https://www.hackster.io/giung-kim/how-to-use-openai-api-with-wizfi360-evb-pico-in-arduino-d10d5d)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
