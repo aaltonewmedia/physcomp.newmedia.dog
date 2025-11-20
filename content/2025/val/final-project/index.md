@@ -146,7 +146,6 @@ Connecting to a speaker
 
 ![](sound.jpg)
 
-
 **Add audio**
 
 * Install BackgroundAudio Library 
@@ -458,8 +457,6 @@ void loop() {
 }
 ```
 
-
-
 **Text-to-Speech**
 
 * Used SerialSpeak example model which uses speech API to talk when I type to Serial Monitor. → I changed to speak words that are inside the code and combined with the pressure sensors.
@@ -551,15 +548,13 @@ void loop() {
 }
 ```
 
-
-
 ### STEP 3 — AI Apology Generation
 
 * Run ChatGPT with openai API
 
 <https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf> 
 
-<https://www.youtube.com/watch?v=EAwh4ul-K0g> 
+<https://www.youtube.com/watch?v=EAwh4ul-K0g>  
 
 ```
 #include <WiFi.h>
@@ -665,11 +660,5 @@ void sendPrompt(String prompt) {
 ![](ai-result.png)
 
 Prompt: *Give one short, apology sentence to someone who bumped into your shoulder. No introduction, no explanation, no quotes. Output only the sentence.*
-
-
-
-
-
-
 
 [](https://www.hackster.io/giung-kim/how-to-use-openai-api-with-wizfi360-evb-pico-in-arduino-d10d5d)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
