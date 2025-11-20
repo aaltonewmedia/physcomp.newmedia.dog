@@ -663,6 +663,6 @@ void sendPrompt(String prompt) {
 
 Prompt: *Give one short, apology sentence to someone who bumped into your shoulder. No introduction, no explanation, no quotes. Output only the sentence.*
 
-**Problem:** It takes 6 secs to run.
+**Problem:** It takes 6 secs to run. (too long)
 
 [](https://www.hackster.io/giung-kim/how-to-use-openai-api-with-wizfi360-evb-pico-in-arduino-d10d5d)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
