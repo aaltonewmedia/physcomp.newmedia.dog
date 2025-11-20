@@ -665,4 +665,6 @@ Prompt: *Give one short, apology sentence to someone who bumped into your should
 
 **Problem:** It takes 6 secs to run. (too long)
 
+**Solution:** During this 6 sec → I’m calculating blablabla
+
 [](https://www.hackster.io/giung-kim/how-to-use-openai-api-with-wizfi360-evb-pico-in-arduino-d10d5d)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
