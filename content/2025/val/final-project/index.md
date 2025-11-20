@@ -72,7 +72,7 @@ When the wearer bumps into someone, the embedded sensor detects the collision’
 
 <hr>
 
-*After reviewing and organizing my ideas, I find the use of an electric nose interesting, but I’m not very satisfied with the concept itself. So for now, I’m considering either simply running the **electric nose experiment** or moving forward with the **Apology Jacket.***
+\*After reviewing and organizing my ideas, I find the use of an electric nose interesting, but I’m not very satisfied with the concept itself. So for now, I’m considering either simply running the **electric nose experiment** or moving forward with the **Apology Jacket.***
 
 <hr>
 
@@ -146,9 +146,14 @@ Connecting to a speaker
 
 ![](sound.jpg)
 
-Install BackgroundAudio Library 
+
+**Add audio**
+
+* Install BackgroundAudio Library 
 
 <https://www.arduinolibraries.info/libraries/background-audio> <https://github.com/earlephilhower/BackgroundAudio> 
+
+* Used WebradioMP3PlusWebUI example model which plays an MP3 web radio using HTTPS connectivity. Includes a serial and HTTP WebServer interface to allow the user to change URLs, volumes, and see the ICY metadata.
 
 ```cpp
 // StreamMP3 - Earle F. Philhower, III <earlephilhower@yahoo.com>
@@ -454,6 +459,15 @@ void loop() {
 ```
 
 
-→ Playing an MP3 web radio using HTTPS connectivity. Includes a serial and HTTP WebServer interface to allow the user to change URLs, volumes, and see the ICY metadata.
+
+**Text-to-Speech**
+
+* Used SerialSpeak example model which uses speech API to talk when I type to Serial Monitor. → I changed to speak words that are inside the code. 
+
+
+
+
+
+
 
 [](https://www.hackster.io/giung-kim/how-to-use-openai-api-with-wizfi360-evb-pico-in-arduino-d10d5d)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
