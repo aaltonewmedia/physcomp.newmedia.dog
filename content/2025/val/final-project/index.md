@@ -459,7 +459,9 @@ void loop() {
 
 **Text-to-Speech**
 
-* Used SerialSpeak example model which uses speech API to talk when I type to Serial Monitor. → I changed to speak words that are inside the code and combined with the pressure sensors.
+* Used SerialSpeak example model which uses speech API to talk when I type to Serial Monitor. 
+
+  → I changed to speak words that are inside the code and combined with the pressure sensors.
 
 ```cpp
 // SerialSpeak - Earle F. Philhower, III <earlephilhower@yahoo.com>
