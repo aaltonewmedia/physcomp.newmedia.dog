@@ -553,6 +553,121 @@ void loop() {
 
 
 
+### STEP 3 — AI Apology Generation
+
+* Run ChatGPT with openai API
+
+<https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf> 
+
+<https://www.youtube.com/watch?v=EAwh4ul-K0g> 
+
+```
+#include <WiFi.h>
+#include <WiFiClientSecure.h>
+
+const char* ssid = "aalto open";
+const char* password = "";
+
+const char* apiKey = "my keycode";
+
+// New 2025 API endpoint
+const char* host = "api.openai.com";
+const int httpsPort = 443;
+
+// Secure client
+WiFiClientSecure client;
+
+void setup() {
+  Serial.begin(115200);
+  delay(1000);
+
+  Serial.println("Connecting to WiFi...");
+  WiFi.begin(ssid);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("\nConnected!");
+
+  // Required for SSL
+  client.setInsecure();
+
+  sendPrompt("Give one short, apology sentence to someone who bumped into your shoulder. No introduction, no explanation, no quotes. Output only the sentence.");
+}
+
+void loop() {
+  // Nothing
+}
+
+void sendPrompt(String prompt) {
+  Serial.println("\nConnecting to OpenAI...");
+
+  if (!client.connect(host, httpsPort)) {
+    Serial.println("Connection failed!");
+    return;
+  }
+
+  Serial.println("Connected to OpenAI!");
+
+  // JSON for new "responses" endpoint
+  String requestBody = "{";
+  requestBody += "\"model\": \"gpt-4.1-mini\",";
+  requestBody += "\"input\": \"" + prompt + "\"";
+  requestBody += "}";
+
+  // Construct HTTP request
+  String request = String("POST /v1/responses HTTP/1.1\r\n") + "Host: api.openai.com\r\n" + "Content-Type: application/json\r\n" + "Authorization: Bearer " + String(apiKey) + "\r\n" + "Content-Length: " + requestBody.length() + "\r\n\r\n" + requestBody;
+
+  client.print(request);
+
+  Serial.println("Request sent. Waiting for response...\n");
+
+  String response = "";
+
+  // Wait for the full response
+  unsigned long timeout = millis();
+  while (millis() - timeout < 5000) {  // wait up to 5 seconds
+    while (client.available()) {
+      char c = client.read();
+      response += c;
+      timeout = millis();  // extend timeout while data is still coming
+    }
+  }
+
+  // Print the whole response for debugging
+  Serial.println("===== RAW RESPONSE =====");
+  Serial.println(response);
+  Serial.println("========================");
+
+  // Extract "text": "...."
+  int pos = response.indexOf("\"text\":");
+  if (pos != -1) {
+    int start = response.indexOf("\"", pos + 7) + 1;
+    int end = response.indexOf("\"", start);
+
+    if (start > 0 && end > start) {
+      String text = response.substring(start, end);
+
+      Serial.println("\n===== AI MESSAGE =====");
+      Serial.println(text);
+      Serial.println("======================\n");
+    } else {
+      Serial.println("ERROR: Could not extract text.");
+    }
+  } else {
+    Serial.println("ERROR: No 'text' field found.");
+  }
+}
+```
+
+![](ai-result.png)
+
+Prompt: *Give one short, apology sentence to someone who bumped into your shoulder. No introduction, no explanation, no quotes. Output only the sentence.*
+
+
+
 
 
 
