@@ -659,8 +659,6 @@ void sendPrompt(String prompt) {
 }
 ```
 
-
-
 ![](ai-result.png)
 
 Prompt: *Give one short, apology sentence to someone who bumped into your shoulder. No introduction, no explanation, no quotes. Output only the sentence.*
