@@ -462,7 +462,94 @@ void loop() {
 
 **Text-to-Speech**
 
-* Used SerialSpeak example model which uses speech API to talk when I type to Serial Monitor. → I changed to speak words that are inside the code. 
+* Used SerialSpeak example model which uses speech API to talk when I type to Serial Monitor. → I changed to speak words that are inside the code and combined with the pressure sensors.
+
+```
+// SerialSpeak - Earle F. Philhower, III <earlephilhower@yahoo.com>
+// Released to the public domain January 2025
+
+// Reads from the serial port and plays what's typed over the output
+// asynchronously.  Can queue up work while still speaking.
+// Demonstrates dictionary and voice usage
+
+#include <BackgroundAudioSpeech.h>
+
+// Choose the voice you want
+#include <libespeak-ng/voice/en_029.h>
+#include <libespeak-ng/voice/en_gb_scotland.h>
+#include <libespeak-ng/voice/en_gb_x_gbclan.h>
+#include <libespeak-ng/voice/en_gb_x_gbcwmd.h>
+#include <libespeak-ng/voice/en_gb_x_rp.h>
+#include <libespeak-ng/voice/en.h>
+#include <libespeak-ng/voice/en_shaw.h>
+#include <libespeak-ng/voice/en_us.h>
+#include <libespeak-ng/voice/en_us_nyc.h>
+BackgroundAudioVoice v[] = {
+  voice_en_029, // 0
+  voice_en_gb_scotland, //1
+  voice_en_gb_x_gbclan, //2
+  voice_en_gb_x_gbcwmd, //3
+  voice_en, //4
+  voice_en_shaw, //5
+  voice_en_us, //6
+  voice_en_us_nyc //7
+};
+
+#include <PWMAudio.h>
+PWMAudio audio(0);
+BackgroundAudioSpeech BMP(audio);
+
+int pressureValue;
+int thresholdValue = 600;
+int thresholdValue2 = 900;
+
+bool hasApologized = false;
+
+void setup() {
+  Serial.begin(115200);
+
+  // We need to set up a voice before any output
+  BMP.setVoice(v[4]);
+  BMP.begin();
+
+  delay(10);
+
+  BMP.speak("Hello. I am your Apology Jacket.");
+  delay(2000);
+}
+
+void loop() {
+   // Read pressure sensor (FSR or force sensor)
+  pressureValue = analogRead(26);    
+
+  // Collision detected 
+  if (pressureValue > thresholdValue) {
+
+    if (!hasApologized) { // only say sorry once per bump
+
+      if (pressureValue < thresholdValue2) {
+        BMP.speak("Sorry");
+      } 
+      else if (pressureValue >= thresholdValue2) {
+        BMP.speak("Sorry Sorry Sorry");
+      }
+
+      hasApologized = true;  // prevent repeating
+    }
+  }
+
+  // RESET when pressure goes back to normal 
+  else {
+    hasApologized = false;
+  }
+
+  // Print readings
+  // Serial.print("Pressure: ");
+  // Serial.println(pressureValue);
+
+  delay(10);
+}
+```
 
 
 
