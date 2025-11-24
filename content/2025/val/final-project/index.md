@@ -676,4 +676,208 @@ Prompt: *Give one short, apology sentence to someone who bumped into your should
 
 **Solution:** During this 6 sec → I’m calculating blablabla
 
+* Combined the ai generating text and speaking pressure sensor
+
+```
+#include <WiFi.h>
+#include <WiFiClientSecure.h>
+
+// -----------Wifi setup
+const char* ssid = "aalto open";
+const char* password = "";
+
+const char* apiKey = "api keycode";
+
+// New 2025 API endpoint
+const char* host = "api.openai.com";
+const int httpsPort = 443;
+
+// Secure client
+WiFiClientSecure client;
+
+// -----------Speech setup
+#include <BackgroundAudioSpeech.h>
+
+// Choose the voice you want
+#include <libespeak-ng/voice/en_029.h>
+#include <libespeak-ng/voice/en_gb_scotland.h>
+#include <libespeak-ng/voice/en_gb_x_gbclan.h>
+#include <libespeak-ng/voice/en_gb_x_gbcwmd.h>
+#include <libespeak-ng/voice/en_gb_x_rp.h>
+#include <libespeak-ng/voice/en.h>
+#include <libespeak-ng/voice/en_shaw.h>
+#include <libespeak-ng/voice/en_us.h>
+#include <libespeak-ng/voice/en_us_nyc.h>
+BackgroundAudioVoice v[] = {
+  voice_en_029, // 0
+  voice_en_gb_scotland, //1
+  voice_en_gb_x_gbclan, //2
+  voice_en_gb_x_gbcwmd, //3
+  voice_en, //4
+  voice_en_shaw, //5
+  voice_en_us, //6
+  voice_en_us_nyc //7
+};
+
+#include <PWMAudio.h>
+PWMAudio audio(0); // PWM on GP0 --> amplifier imput
+BackgroundAudioSpeech BMP(audio);
+
+// ---------Pressure sensor
+int pressureValue;
+int thresholdValue = 600;
+int thresholdValue2 = 900;
+
+bool hasApologized = false;
+
+
+void setup() {
+  Serial.begin(115200);
+  delay(1000);
+
+  Serial.println("Connecting to WiFi...");
+  WiFi.begin(ssid);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("\nConnected!");
+
+  // We need to set up a voice before any output
+  BMP.setVoice(v[4]);
+  BMP.begin();
+  delay(10);
+
+  BMP.speak("Hello. I am your Apology Jacket.");
+  delay(1000);
+
+  // Required for SSL
+  client.setInsecure();
+}
+
+void loop() {
+  // Read pressure sensor (FSR or force sensor)
+  pressureValue = analogRead(26);    
+
+  // Collision detected 
+  if (pressureValue > thresholdValue) {
+
+    if (!hasApologized) { // only say sorry once per bump
+
+      if (pressureValue < thresholdValue2) {
+        //BMP.speak("Sorry");
+        sendPrompt("Give one short, apology sentence to someone who bumped into your shoulder. No introduction, no explanation, no quotes. Output only the sentence.");
+      } 
+      else if (pressureValue >= thresholdValue2) {
+        //BMP.speak("Sorry Sorry Sorry");
+        sendPrompt("Give a stronger apology sentence to someone who bumped into your shoulder very hard. No introduction, no explanation, no quotes. Output only the sentence.");
+      }
+
+      hasApologized = true;  // prevent repeating
+    }
+  }
+
+  // RESET when pressure goes back to normal 
+  else {
+    hasApologized = false;
+  }
+
+  // Print readings
+  // Serial.print("Pressure: ");
+  // Serial.println(pressureValue);
+
+  delay(10);
+}
+
+void sendPrompt(String prompt) {
+  Serial.println("\nConnecting to OpenAI...");
+
+  if (!client.connect(host, httpsPort)) {
+    Serial.println("Connection failed!");
+    return;
+  }
+
+  Serial.println("Connected to OpenAI!");
+
+  // JSON for new "responses" endpoint
+  String requestBody = "{";
+  requestBody += "\"model\": \"gpt-4.1-mini\",";
+  requestBody += "\"input\": \"" + prompt + "\"";
+  requestBody += "}";
+
+  // Construct HTTP request
+  String request = String("POST /v1/responses HTTP/1.1\r\n") + "Host: api.openai.com\r\n" + "Content-Type: application/json\r\n" + "Authorization: Bearer " + String(apiKey) + "\r\n" + "Content-Length: " + requestBody.length() + "\r\n\r\n" + requestBody;
+
+  client.print(request);
+
+  Serial.println("Request sent. Waiting for response...\n");
+
+  String response = "";
+
+  // Speak thinking message 
+  BMP.speak("One moment please, I’m thinking about the best way to apologize properly for what just happened.");
+
+  // Wait for the full response
+  unsigned long timeout = millis();
+  while (millis() - timeout < 3000) {  // wait up to 3 seconds
+    while (client.available()) {
+      char c = client.read();
+      response += c;
+      timeout = millis();  // extend timeout while data is still coming
+    }
+  }
+
+  // Print the whole response for debugging
+  Serial.println("===== RAW RESPONSE =====");
+  Serial.println(response);
+  Serial.println("========================");
+
+  // Extract "text": "...."
+  int pos = response.indexOf("\"text\":");
+  if (pos != -1) {
+    int start = response.indexOf("\"", pos + 7) + 1;
+    int end = response.indexOf("\"", start);
+
+    if (start > 0 && end > start) {
+      String text = response.substring(start, end);
+
+      Serial.println("\n===== AI MESSAGE =====");
+      Serial.println(text);
+      Serial.println("======================\n");
+
+      // Speak the result
+      //BMP.speak(text);
+      BMP.speak(cleanUnicode(text));
+      return;
+
+    } else {
+      Serial.println("ERROR: Could not extract text.");
+    }
+  } else {
+    Serial.println("ERROR: No 'text' field found.");
+  }
+}
+
+// Convert Unicode escapes into normal ASCII before speaking
+String cleanUnicode(String s) {
+  s.replace("\\u2019", "'");   // apostrophe
+  s.replace("\\u2018", "'");   // left quote
+  s.replace("\\u201C", "\"");  // left double quote
+  s.replace("\\u201D", "\"");  // right double quote
+  s.replace("\\u2026", "..."); // ellipsis
+  s.replace("\\u2014", "-");   // em dash
+
+  // Remove any unknown \uXXXX patterns
+  int index;
+  while ((index = s.indexOf("\\u")) != -1) {
+    s.remove(index, 6); // remove \uXXXX (6 chars)
+  }
+
+  return s;
+}
+
+```
+
 [](https://www.hackster.io/giung-kim/how-to-use-openai-api-with-wizfi360-evb-pico-in-arduino-d10d5d)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
