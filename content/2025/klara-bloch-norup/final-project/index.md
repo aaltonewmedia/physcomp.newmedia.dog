@@ -167,18 +167,7 @@ void loop() {
 VS Code – drawing 3 dynamic shapes on canvas:
 
 ```
-//TASKS DONE
-//PLAY SOUNDS WITH KEYS
-//LOOP THE WHITE NOICE
-//CONTROL SEA VOLUME WITH MOUSEY
-
-//TASKS TO BE DONE
-//ADD LERP TO THE SHAPE, SO IT MOVES SMOOTHER: https://p5js.org/reference/p5/lerp/
-//MAKE TOP / BUTTOM MORE SKINNY
-//MAKE MULTIBLE SHAPES
-//CONNECT TO ARDUINO
-
-//GLOBAL VARIABLES
+//Global variables
 let x;
 let xa;
 let xb;
@@ -192,7 +181,6 @@ let lowMid;
 let bass;
 let bird, sea, glass05, glass06, branches, moreBranches, drum, wind, underWater, ceramic, piano, reeds, whiteNoise, synth, Synth_4, Synth_9;
 let audioFilter; //low pass filter for sound
-//let port; // to receive numbers from Arduino 
 
 function preload() {
   bird = loadSound("data/bird.m4a");
@@ -223,18 +211,7 @@ function setup() {
   whiteNoise.setLoop(true);
   whiteNoise.setVolume(0.8);
   audioFilter = new p5.LowPass(); // not really used yet
-  // port = createSerial(); //TO RESIEVE NUMBERS FROM ARDUINO
 }
-
-
-/*
-//TO RECEIVE NUMBERS FROM ARDUINO
-function mousePressed(){
-  if (!port.opened()) {
-    port.open(115200);
-  }
-}
-*/
 
 
 //Function to play sounds with key 0-9
@@ -291,18 +268,6 @@ function draw() {
   let v = map(mouseY, height, 0, 0, 1);
   sea.setVolume(v);
 
-  //RECEIVING NUMBERS FROM ARDUINO
-  /*
-  if(port.available()>0){
-    let knit = port.readUntil("\n");
-    //console.log(str);
-    let splitData = split(knit, ',');
-    x = splitData[0];
-    y = splitData[1];
-    z = splitData[2];
-    port.clear();
-  }
-  */
 
   //SHAPE A-B-01, CENTER
   //TRANSLATE – to position center the shape
@@ -489,7 +454,7 @@ function draw() {
 
   //SHAPE A-B-02, LEFT
   //TRANSLATE – to position center the shape
-  shapeX = 300;
+  shapeX = width/4;
   shapeY = 0;
   push();
   fill(0, 0, 0);
@@ -668,7 +633,7 @@ function draw() {
 
    //SHAPE A-B-03, RIGHT
    push();
-   shapeX = width-300;
+   shapeX = width/4*3;
    shapeY = 0;
   
    fill(0, 0, 0);
@@ -841,4 +806,5 @@ function draw() {
    endShape(CLOSE);
    pop();
 }
+
 ```
