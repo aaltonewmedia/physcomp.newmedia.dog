@@ -148,7 +148,7 @@ void loop() {
 
 
 
-* Add Max98306 Stereo Amplifier (fix the low-volume problem)
+* Add [Max98306 Stereo Amplifier](https://cdn-learn.adafruit.com/downloads/pdf/stereo-3-7w-class-d-audio-amplifier.pdf) (fix the low-volume problem)
 
 ![](amplifier.jpg)
 
