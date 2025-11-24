@@ -142,9 +142,18 @@ void loop() {
 
 ## STEP 2 — Add Audio (AI text-to-speech)
 
-Connecting to a speaker
+* Connecting to a speaker
 
 ![](sound.jpg)
+
+
+
+* Add Max98306 Stereo Amplifier (fix the low-volume problem)
+
+![](amplifier.jpg)
+
+
+
 
 **Add audio**
 
