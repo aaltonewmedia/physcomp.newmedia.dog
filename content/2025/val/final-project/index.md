@@ -676,7 +676,7 @@ Prompt: *Give one short, apology sentence to someone who bumped into your should
 
 **Solution:** During this 6 sec → I’m calculating blablabla
 
-* Combined the ai generating text and speaking pressure sensor
+* Combined the AI generating text code and speaking pressure sensor code
 
 ```
 #include <WiFi.h>
