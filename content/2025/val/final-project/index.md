@@ -369,6 +369,7 @@ Prompt: *Give one short, apology sentence to someone who bumped into your should
 **Solution:** During this 6 sec → "I’m calculating blablabla"
 
 * Combined the AI generating text code and speaking pressure sensor code
+* Add one more sensor for left and right shoulder
 
 ```cpp
 #include <WiFi.h>
@@ -378,7 +379,7 @@ Prompt: *Give one short, apology sentence to someone who bumped into your should
 const char* ssid = "aalto open";
 const char* password = "";
 
-const char* apiKey = "api keycode";
+const char* apiKey = "my keycode";
 
 // New 2025 API endpoint
 const char* host = "api.openai.com";
@@ -401,26 +402,31 @@ WiFiClientSecure client;
 #include <libespeak-ng/voice/en_us.h>
 #include <libespeak-ng/voice/en_us_nyc.h>
 BackgroundAudioVoice v[] = {
-  voice_en_029, // 0
-  voice_en_gb_scotland, //1
-  voice_en_gb_x_gbclan, //2
-  voice_en_gb_x_gbcwmd, //3
-  voice_en, //4
-  voice_en_shaw, //5
-  voice_en_us, //6
-  voice_en_us_nyc //7
+  voice_en_029,          // 0
+  voice_en_gb_scotland,  //1
+  voice_en_gb_x_gbclan,  //2
+  voice_en_gb_x_gbcwmd,  //3
+  voice_en,              //4
+  voice_en_shaw,         //5
+  voice_en_us,           //6
+  voice_en_us_nyc        //7
 };
 
 #include <PWMAudio.h>
-PWMAudio audio(0); // PWM on GP0 --> amplifier imput
+PWMAudio audio(0);  // PWM on GP0 --> amplifier imput
 BackgroundAudioSpeech BMP(audio);
 
 // ---------Pressure sensor
-int pressureValue;
-int thresholdValue = 600;
-int thresholdValue2 = 900;
+int pressureValueLeft;   // For the left shoulder
+int pressureValueRight;  // For the right shoulder
 
-bool hasApologized = false;
+int threshold1 = 600;
+int threshold2 = 900;
+
+// bool hasApologized = false;
+
+bool apologizedLeft = false;
+bool apologizedRight = false;
 
 
 void setup() {
@@ -451,29 +457,40 @@ void setup() {
 
 void loop() {
   // Read pressure sensor (FSR or force sensor)
-  pressureValue = analogRead(26);    
+  //pressureValue = analogRead(26);
+  pressureValueLeft = analogRead(26);
+  pressureValueRight = analogRead(27);
 
-  // Collision detected 
-  if (pressureValue > thresholdValue) {
 
-    if (!hasApologized) { // only say sorry once per bump
-
-      if (pressureValue < thresholdValue2) {
-        //BMP.speak("Sorry");
-        sendPrompt("Give one short, apology sentence to someone who bumped into your shoulder. No introduction, no explanation, no quotes. Output only the sentence.");
-      } 
-      else if (pressureValue >= thresholdValue2) {
-        //BMP.speak("Sorry Sorry Sorry");
+  // Collision detected
+  // left shoulder
+  if (pressureValueLeft > threshold1) {
+    if (!apologizedLeft) {
+      if (pressureValueLeft < threshold2) {
+        sendPrompt("Give one short apology sentence for a light shoulder bump. No introduction, no explanation, no quotes. Output only the sentence.");
+      } else {
         sendPrompt("Give a stronger apology sentence to someone who bumped into your shoulder very hard. No introduction, no explanation, no quotes. Output only the sentence.");
       }
-
-      hasApologized = true;  // prevent repeating
+      apologizedLeft = true;
     }
+    // RESET when pressure goes back to normal
+  } else {
+    apologizedLeft = false;
   }
 
-  // RESET when pressure goes back to normal 
-  else {
-    hasApologized = false;
+  // right shoulder
+  if (pressureValueRight > threshold1) {
+    if (!apologizedRight) {
+      if (pressureValueRight < threshold2) {
+        sendPrompt("Give one short apology sentence for a light shoulder bump. No introduction, no explanation, no quotes. Output only the sentence.");
+      } else {
+        sendPrompt("Give a stronger apology sentence to someone who bumped into your shoulder very hard. No introduction, no explanation, no quotes. Output only the sentence.");
+      }
+      apologizedRight = true;
+    }
+    // RESET when pressure goes back to normal
+  } else {
+    apologizedRight = false;
   }
 
   // Print readings
@@ -508,7 +525,7 @@ void sendPrompt(String prompt) {
 
   String response = "";
 
-  // Speak thinking message 
+  // Speak thinking message
   BMP.speak("One moment please, I’m thinking about the best way to apologize properly.");
 
   // Wait for the full response
@@ -540,6 +557,9 @@ void sendPrompt(String prompt) {
       Serial.println("======================\n");
 
       // Speak the result
+      while (!BMP.done()) {
+        delay(10);
+      }
       //BMP.speak(text);
       BMP.speak(cleanUnicode(text));
       return;
@@ -554,17 +574,17 @@ void sendPrompt(String prompt) {
 
 // Convert Unicode escapes into normal ASCII before speaking
 String cleanUnicode(String s) {
-  s.replace("\\u2019", "'");   // apostrophe
-  s.replace("\\u2018", "'");   // left quote
-  s.replace("\\u201C", "\"");  // left double quote
-  s.replace("\\u201D", "\"");  // right double quote
-  s.replace("\\u2026", "..."); // ellipsis
-  s.replace("\\u2014", "-");   // em dash
+  s.replace("\\u2019", "'");    // apostrophe
+  s.replace("\\u2018", "'");    // left quote
+  s.replace("\\u201C", "\"");   // left double quote
+  s.replace("\\u201D", "\"");   // right double quote
+  s.replace("\\u2026", "...");  // ellipsis
+  s.replace("\\u2014", "-");    // em dash
 
   // Remove any unknown \uXXXX patterns
   int index;
   while ((index = s.indexOf("\\u")) != -1) {
-    s.remove(index, 6); // remove \uXXXX (6 chars)
+    s.remove(index, 6);  // remove \uXXXX (6 chars)
   }
 
   return s;
