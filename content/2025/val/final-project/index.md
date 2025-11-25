@@ -370,7 +370,7 @@ Prompt: *Give one short, apology sentence to someone who bumped into your should
 
 * Combined the AI generating text code and speaking pressure sensor code
 
-```
+```cpp
 #include <WiFi.h>
 #include <WiFiClientSecure.h>
 
