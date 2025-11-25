@@ -13,6 +13,8 @@ The junkbox is a 4x stepper motor MIDI to analog vibration box inspired by Koka 
 
 As a bonus thing to play with, for the Computational Art & Design part, I created a P5js sketch that is inspired by the Omnichord instrument.
 
+![](physical-computing-_-computational-art-final-project.jpg)
+
 
 
 ## This is version 8 of the code.
