@@ -40,8 +40,6 @@ open for inputs, ideas and collaborations, please send an email to klara.bloch-n
 
 ![](physicalcomputing_a5_18-19.png)
 
-
-
 The Arduino code:
 
 ```
@@ -161,8 +159,6 @@ void loop() {
   lasttouched = currtouched;
 }
 ```
-
-
 
 VS Code – drawing 3 dynamic shapes on canvas:
 
@@ -806,5 +802,108 @@ function draw() {
    endShape(CLOSE);
    pop();
 }
+```
 
+
+
+The Arduino code for the light:
+
+```
+#include <Adafruit_NeoPixel.h>
+
+// Which pin on the Arduino is connected to the NeoPixels?
+#define LED_PIN 2
+
+// How many NeoPixels are attached to the Arduino?
+#define LED_COUNT 105
+
+// NeoPixel brightness, 0 (min) to 255 (max)
+#define BRIGHTNESS 100  // set BRIGHTNESS to about 1/5 (max = 255)
+
+// Declare our NeoPixel strip object:
+Adafruit_NeoPixel pixels(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
+// Argument 1 = Number of pixels in NeoPixel strip
+// Argument 2 = Arduino pin number (most are valid)
+// Argument 3 = Pixel type flags, add together as needed:
+//   NEO_KHZ800  800 KHz bitstream (most NeoPixel products w/WS2812 LEDs)
+//   NEO_KHZ400  400 KHz (classic 'v1' (not v2) FLORA pixels, WS2811 drivers)
+//   NEO_GRB     Pixels are wired for GRB bitstream (most NeoPixel products)
+//   NEO_RGB     Pixels are wired for RGB bitstream (v1 FLORA pixels, not v2)
+//   NEO_RGBW    Pixels are wired for RGBW bitstream (NeoPixel RGBW products)
+
+
+/*
+//TEST
+//SOUND VARIABLES
+int treble = 255;
+int highMid = 200;
+int mid = 150;
+int lowMid = 100;
+int bass = 50;
+*/
+
+
+void setup() {
+  pixels.begin();  // INITIALIZE NeoPixel strip object (REQUIRED)
+  pixels.show();   // Turn OFF all pixels ASAP
+  pixels.setBrightness(BRIGHTNESS);
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  // if there's any serial available, read it:
+  while (Serial.available() > 0) {
+
+    // look for the next valid integer in the incoming serial stream:
+    int treble = Serial.parseInt();
+    // do it again:
+    int highMid = Serial.parseInt();
+    // do it again:
+    int mid = Serial.parseInt();
+    // do it again:
+    int lowMid = Serial.parseInt();
+    // do it again:
+    int bass = Serial.parseInt();
+
+
+    // look for the new line. That's the end of your sentence:
+    if (Serial.read() == '\n') {
+
+      //SET PIXEL COLORS IN LED STRIP
+      for (int i = 0; i < 21; i++) {
+        pixels.setPixelColor(i, pixels.Color(treble, treble, treble));
+      }
+
+      for (int i = 21; i < 42; i++) {
+        pixels.setPixelColor(i, pixels.Color(highMid, highMid, highMid));
+      }
+
+      for (int i = 42; i < 63; i++) {
+        pixels.setPixelColor(i, pixels.Color(mid, mid, mid));
+      }
+
+      for (int i = 63; i < 84; i++) {
+        pixels.setPixelColor(i, pixels.Color(lowMid, lowMid, lowMid));
+      }
+
+      for (int i = 84; i < 105; i++) {
+        pixels.setPixelColor(i, pixels.Color(bass, bass, bass));
+      }
+
+      pixels.show();
+      delay(1);
+
+      Serial.print(treble);
+      Serial.print(",");
+      Serial.print(highMid);
+      Serial.print(",");
+      Serial.print(mid);
+      Serial.print(",");
+      Serial.print(lowMid);
+      Serial.print(",");
+      Serial.println(bass);
+    }
+  }
+}
 ```
