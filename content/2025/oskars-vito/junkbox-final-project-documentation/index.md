@@ -11,12 +11,13 @@ showBgImage: true
 
 The junkbox is a 4x stepper motor MIDI to analog vibration box inspired by Koka Nikoladze.
 
+As a bonus thing to play with, for the Computational Art & Design part, I created a P5js sketch that is inspired by the Omnichord instrument.
+
 
 
 ## This is version 8 of the code.
 
 ```
-
 //including the MIDI libraries
 #include <Arduino.h>
 #include <Adafruit_TinyUSB.h>
@@ -406,5 +407,4 @@ void handleNoteOff(byte channel, byte pitch, byte velocity) {
   }
 
 }
-
 ```
