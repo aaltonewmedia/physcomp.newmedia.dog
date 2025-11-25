@@ -15,7 +15,7 @@ As a bonus thing to play with, for the Computational Art & Design part, I create
 
 ![](physical-computing-_-computational-art-final-project.jpg)
 
-
+{{<youtube PXiHB2uNEgs>}}
 
 ## This is version 8 of the code.
 
