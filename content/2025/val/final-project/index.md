@@ -257,7 +257,7 @@ void loop() {
 
 <https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf> 
 
-<https://www.youtube.com/watch?v=EAwh4ul-K0g>  
+<https://www.youtube.com/watch?v=EAwh4ul-K0g>   
 
 ```
 #include <WiFi.h>
