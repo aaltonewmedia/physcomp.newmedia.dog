@@ -580,6 +580,14 @@ Tuto <https://www.instructables.com/Flexible-Fabric-Pressure-Sensor/> 
 * velostat
 * conductive fabric
 
-[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
 
-[](https://www.hackster.io/Shilleh/how-to-set-up-chatgpt-on-a-raspberry-pi-pico-w-5977bf)
+
+
+**STEP 5 — Integration Into Jacket**
+
+* Wiring inside fabric channels
+* Protect electronics
+* * 3D printed small case?
+
+  * Sew a fabric pocket inside shoulder
+* Battery
