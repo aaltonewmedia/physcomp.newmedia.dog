@@ -366,7 +366,7 @@ Prompt: *Give one short, apology sentence to someone who bumped into your should
 
 **Problem:** It takes 6 secs to run. (too long)
 
-**Solution:** During this 6 sec → I’m calculating blablabla
+**Solution:** During this 6 sec → "I’m calculating blablabla"
 
 * Combined the AI generating text code and speaking pressure sensor code
 
