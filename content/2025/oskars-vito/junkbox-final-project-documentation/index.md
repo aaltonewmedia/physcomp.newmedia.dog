@@ -61,12 +61,6 @@ int speed;
 #define STEP_PIN_4 3
 #define DIR_PIN_4 2
 
-uint32_t motorSpeed_1; //motor one speed
-uint32_t motorSpeed_2; // motor two speed
-bool gate_1; //making the motor spin and stop TRUE = NOTE IS ON
-bool gate_2; //making the motor spin and stop TRUE = NOTE IS ON
-bool gate_3; //making the motor spin and stop TRUE = NOTE IS ON
-bool gate_4; //making the motor spin and stop TRUE = NOTE IS ON
 const bool motorDirection = LOW; //you can use this to change the motor direction, comment out if you aren't using it.
 
 // THE MILLIS STUFF
@@ -75,170 +69,8 @@ unsigned long motorSpeeds[] = {0, 0, 0, 0, 0}; //holds the speed value of the mo
 unsigned long prevStepMicros[] = {0, 0, 0, 0, 0}; //last time
 unsigned long startMicros;
 
-unsigned long lastEvent; //Will store the time that the last event occured.
-int notMoving = 0;
-
-
-// MIDI note to motor delay (microseconds) lookup table
-// Based on measurements: C1 (MIDI 24) ≈ 29500µs, C3 (MIDI 48) ≈ 6500µs, C5 (MIDI 72) ≈ 879µs
-// MORE delay = LOWER pitch
-//                          MOTOR SPEED VALUE ARRAYS
-const uint32_t motorSpeedPitch_1[128] = {
-  // Octave -1 (C-1 to B-1, MIDI 0-11) - extrapolated
-  476800, 449824, 424320, 400224, 377472, 356032, 335840, 316864, 299040, 282336, 266720, 251648,
-  
-  // Octave 0 (C0 to B0, MIDI 12-23) - extrapolated
-  238400, 224912, 212160, 200112, 188736, 178016, 167920, 158432, 149520, 141168, 133360, 125824,
-  
-  // Octave 1 (C1 to B1, MIDI 24-35)
-  // C1=29800, G#1=18600, E1=23800, G1=19100, A#1=15800
-  29800, 28131, 26546, 25042, 23800, 22456, 21185, 19993, 18600, 17564, 16580, 15646,
-  
-  // Octave 2 (C2 to B2, MIDI 36-47)
-  // D2=12700, E2=10800, F2=10250, A2=8050
-  14900, 14065, 12700, 11990, 10800, 10250, 9673, 9128, 8613, 8050, 7594, 7168,
-  
-  // Octave 3 (C3 to B3, MIDI 48-59)
-  // C3=6500, D3=5250, D#3=5300, F#3=4354, B3=2903
-  6500, 6137, 5250, 5300, 5011, 4728, 4354, 4108, 3877, 3661, 3249, 3066,
-  
-  // Octave 4 (C4 to B4, MIDI 60-71)
-  // E4=1879
-  2903, 2740, 2586, 2440, 1879, 1773, 1673, 1579, 1490, 1407, 1328, 1254,
-  
-  // Octave 5 (C5 to B5, MIDI 72-83)
-  // C5=929, E5=483, G5=300
-  929, 877, 828, 781, 483, 455, 430, 300, 283, 267, 252, 238,
-  
-  // Octave 6 (C6 to B6, MIDI 84-95)
-  224, 211, 199, 188, 178, 168, 158, 149, 141, 133, 126, 119,
-  
-  // Octave 7 (C7 to B7, MIDI 96-107)
-  112, 105, 99, 94, 89, 84, 79, 75, 70, 66, 63, 59,
-  
-  // Octave 8 (C8 to B8, MIDI 108-119)
-  56, 53, 50, 47, 44, 42, 39, 37, 35, 33, 31, 29,
-  
-  // Octave 9-10 (C9 to G10, MIDI 120-127)
-  28, 26, 25, 23, 22, 21, 19, 18
-};
-const uint32_t motorSpeedPitch_2[128] = {
-  // Octave -1 (C-1 to B-1, MIDI 0-11) - extrapolated
-  476800, 449824, 424320, 400224, 377472, 356032, 335840, 316864, 299040, 282336, 266720, 251648,
-  
-  // Octave 0 (C0 to B0, MIDI 12-23) - extrapolated
-  238400, 224912, 212160, 200112, 188736, 178016, 167920, 158432, 149520, 141168, 133360, 125824,
-  
-  // Octave 1 (C1 to B1, MIDI 24-35)
-  // C1=29800, G#1=18600, E1=23800, G1=19100, A#1=15800
-  29800, 28131, 26546, 25042, 23800, 22456, 21185, 19993, 18600, 17564, 16580, 15646,
-  
-  // Octave 2 (C2 to B2, MIDI 36-47)
-  // D2=12700, E2=10800, F2=10250, A2=8050
-  14900, 14065, 12700, 11990, 10800, 10250, 9673, 9128, 8613, 8050, 7594, 7168,
-  
-  // Octave 3 (C3 to B3, MIDI 48-59)
-  // C3=6500, D3=5250, D#3=5300, F#3=4354, B3=2903
-  6500, 6137, 5250, 5300, 5011, 4728, 4354, 4108, 3877, 3661, 3249, 3066,
-  
-  // Octave 4 (C4 to B4, MIDI 60-71)
-  // E4=1879
-  2903, 2740, 2586, 2440, 1879, 1773, 1673, 1579, 1490, 1407, 1328, 1254,
-  
-  // Octave 5 (C5 to B5, MIDI 72-83)
-  // C5=929, E5=483, G5=300
-  929, 877, 828, 781, 483, 455, 430, 300, 283, 267, 252, 238,
-  
-  // Octave 6 (C6 to B6, MIDI 84-95)
-  224, 211, 199, 188, 178, 168, 158, 149, 141, 133, 126, 119,
-  
-  // Octave 7 (C7 to B7, MIDI 96-107)
-  112, 105, 99, 94, 89, 84, 79, 75, 70, 66, 63, 59,
-  
-  // Octave 8 (C8 to B8, MIDI 108-119)
-  56, 53, 50, 47, 44, 42, 39, 37, 35, 33, 31, 29,
-  
-  // Octave 9-10 (C9 to G10, MIDI 120-127)
-  28, 26, 25, 23, 22, 21, 19, 18
-};
-const uint32_t motorSpeedPitch_3[128] = {
-  // Octave -1 (C-1 to B-1, MIDI 0-11) - extrapolated
-  476800, 449824, 424320, 400224, 377472, 356032, 335840, 316864, 299040, 282336, 266720, 251648,
-  
-  // Octave 0 (C0 to B0, MIDI 12-23) - extrapolated
-  238400, 224912, 212160, 200112, 188736, 178016, 167920, 158432, 149520, 141168, 133360, 125824,
-  
-  // Octave 1 (C1 to B1, MIDI 24-35)
-  // C1=29800, G#1=18600, E1=23800, G1=19100, A#1=15800
-  29800, 28131, 26546, 25042, 23800, 22456, 21185, 19993, 18600, 17564, 16580, 15646,
-  
-  // Octave 2 (C2 to B2, MIDI 36-47)
-  // D2=12700, E2=10800, F2=10250, A2=8050
-  14900, 14065, 12700, 11990, 10800, 10250, 9673, 9128, 8613, 8050, 7594, 7168,
-  
-  // Octave 3 (C3 to B3, MIDI 48-59)
-  // C3=6500, D3=5250, D#3=5300, F#3=4354, B3=2903
-  6500, 6137, 5250, 5300, 5011, 4728, 4354, 4108, 3877, 3661, 3249, 3066,
-  
-  // Octave 4 (C4 to B4, MIDI 60-71)
-  // E4=1879
-  2903, 2740, 2586, 2440, 1879, 1773, 1673, 1579, 1490, 1407, 1328, 1254,
-  
-  // Octave 5 (C5 to B5, MIDI 72-83)
-  // C5=929, E5=483, G5=300
-  929, 877, 828, 781, 483, 455, 430, 300, 283, 267, 252, 238,
-  
-  // Octave 6 (C6 to B6, MIDI 84-95)
-  224, 211, 199, 188, 178, 168, 158, 149, 141, 133, 126, 119,
-  
-  // Octave 7 (C7 to B7, MIDI 96-107)
-  112, 105, 99, 94, 89, 84, 79, 75, 70, 66, 63, 59,
-  
-  // Octave 8 (C8 to B8, MIDI 108-119)
-  56, 53, 50, 47, 44, 42, 39, 37, 35, 33, 31, 29,
-  
-  // Octave 9-10 (C9 to G10, MIDI 120-127)
-  28, 26, 25, 23, 22, 21, 19, 18
-};
-const uint32_t motorSpeedPitch_4[128] = {
-  // Octave -1 (C-1 to B-1, MIDI 0-11) - extrapolated
-  476800, 449824, 424320, 400224, 377472, 356032, 335840, 316864, 299040, 282336, 266720, 251648,
-  
-  // Octave 0 (C0 to B0, MIDI 12-23) - extrapolated
-  238400, 224912, 212160, 200112, 188736, 178016, 167920, 158432, 149520, 141168, 133360, 125824,
-  
-  // Octave 1 (C1 to B1, MIDI 24-35)
-  // C1=29800, G#1=18600, E1=23800, G1=19100, A#1=15800
-  29800, 28131, 26546, 25042, 23800, 22456, 21185, 19993, 18600, 17564, 16580, 15646,
-  
-  // Octave 2 (C2 to B2, MIDI 36-47)
-  // D2=12700, E2=10800, F2=10250, A2=8050
-  14900, 14065, 12700, 11990, 10800, 10250, 9673, 9128, 8613, 8050, 7594, 7168,
-  
-  // Octave 3 (C3 to B3, MIDI 48-59)
-  // C3=6500, D3=5250, D#3=5300, F#3=4354, B3=2903
-  6500, 6137, 5250, 5300, 5011, 4728, 4354, 4108, 3877, 3661, 3249, 3066,
-  
-  // Octave 4 (C4 to B4, MIDI 60-71)
-  // E4=1879
-  2903, 2740, 2586, 2440, 1879, 1773, 1673, 1579, 1490, 1407, 1328, 1254,
-  
-  // Octave 5 (C5 to B5, MIDI 72-83)
-  // C5=929, E5=483, G5=300
-  929, 877, 828, 781, 483, 455, 430, 300, 283, 267, 252, 238,
-  
-  // Octave 6 (C6 to B6, MIDI 84-95)
-  224, 211, 199, 188, 178, 168, 158, 149, 141, 133, 126, 119,
-  
-  // Octave 7 (C7 to B7, MIDI 96-107)
-  112, 105, 99, 94, 89, 84, 79, 75, 70, 66, 63, 59,
-  
-  // Octave 8 (C8 to B8, MIDI 108-119)
-  56, 53, 50, 47, 44, 42, 39, 37, 35, 33, 31, 29,
-  
-  // Octave 9-10 (C9 to G10, MIDI 120-127)
-  28, 26, 25, 23, 22, 21, 19, 18
-};
+unsigned long lastTime; //Will store the time that the last event occured.
+int TIME = 1000; // Number of milliseconds for millis()
 
 //SETUP
 void setup() {
@@ -247,7 +79,7 @@ void setup() {
   pinMode(4, OUTPUT);
   pinMode(1, OUTPUT);
   pinMode(0, OUTPUT);
-  lastEvent = millis(); //variable that holds the start time
+  //lastTime = millis(); //variable that holds the start time
    // put your setup code here, to run once:
   Serial.begin(9600);
   // Manual begin() is required on core without built-in support e.g. mbed rp2040
@@ -318,6 +150,7 @@ void setup() {
 
   //reading from the potentiometer
   pinMode(26,INPUT);
+  lastTime = millis(); // Initialize lastTime
 
 }
 
@@ -337,27 +170,32 @@ void loop() {
 
   
   // calling the one step function for each stepper motor
-  oneStep(1, STEP_PIN_1);
-  oneStep(2, STEP_PIN_2);
-  oneStep(3, STEP_PIN_3);
-  oneStep(4, STEP_PIN_4);
+    oneStep(1, STEP_PIN_1);
+    oneStep(2, STEP_PIN_2);
+    oneStep(3, STEP_PIN_3);
+    oneStep(4, STEP_PIN_4);
+
 
   potentiometer = analogRead(26);
-  speed = map(potentiometer, 0, 4095, 0, 45000);
-  if(){
+  speed = map(potentiometer, 0, 4095, 10, 15000);
+  if(millis() - lastTime >= TIME){
     Serial.println(speed);
+    lastTime = millis(); // Add this line to update lastTime
   }
   
 }
 
 //MOTOR STEP FUNCTION
-void oneStep() {
-  
+
+void oneStep(byte motorNumber, byte stepPin) {
+  if ((micros() - prevStepMicros[motorNumber] >= motorSpeeds[motorNumber]) && (motorSpeeds[motorNumber] != 0))  //test whether the period has elapsed and don't use index 0
+  {
+    prevStepMicros[motorNumber] += motorSpeeds[motorNumber];
     digitalWrite(stepPin, HIGH);
     digitalWrite(stepPin, LOW);
   
+  }
 }
-
 
 
 
