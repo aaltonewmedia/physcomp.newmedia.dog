@@ -251,7 +251,7 @@ void loop() {
 }
 ```
 
-### STEP 3 — AI Apology Generation
+## STEP 3 — AI Apology Generation
 
 * Run ChatGPT with openai API
 
@@ -593,7 +593,7 @@ String cleanUnicode(String s) {
 
 [](https://www.hackster.io/giung-kim/how-to-use-openai-api-with-wizfi360-evb-pico-in-arduino-d10d5d)
 
-**STEP 4 —  Making Conductive Fabric Pressure Sensor**
+## STEP 4 —  Making Conductive Fabric Pressure Sensor
 
 Tuto <https://www.instructables.com/Flexible-Fabric-Pressure-Sensor/> 
 
@@ -657,7 +657,7 @@ void loop() {
 
 
 
-**STEP 5 — Integration Into Jacket**
+## STEP 5 — Integration Into Jacket
 
 * Sew the pressure sensors inside shoulder
 
