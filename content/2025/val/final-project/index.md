@@ -620,7 +620,12 @@ Making my own pressure sensor:
 
 ![](sew3.jpg)
 
-**Problem:** Detect collision even if I move my arm
+**Problem1:** The initial pressure value is too hight (before: 100, now: 800) 
+
+**Solution:** Change the resistor to 120 Ω. Remove the thread from the conductive fabric because it was pressing the sensor against the fabric.
+
+
+**Problem 2:** Detect collision even if I move my arm
 
 **Solution:** Detect the difference between current and previous readings, not just the raw value. (sudden fast increase in pressure):
 
