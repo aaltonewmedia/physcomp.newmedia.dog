@@ -610,7 +610,49 @@ Tuto <https://www.instructables.com/Flexible-Fabric-Pressure-Sensor/> 
 
 **Problem:** Detect collision even if I move my arm
 
+**Solved**: Detect the difference between current and previous readings, not just the raw value. (sudden fast increase in pressure)
 
+```
+int pressureValue;
+int lastPressureValue = 0;
+
+int thresholdValue = 800;      // base threshold
+int spikeThreshold = 100;      // how fast the value rises
+
+bool hasApologized = false;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int raw = analogRead(27);
+  int delta = raw - lastPressureValue;   // detect sudden spikes
+ 
+  // TRUE collision = pressure + fast spike
+  if (raw > thresholdValue && delta > spikeThreshold) {
+
+    if (!hasApologized) {
+      //Serial.println("REAL COLLISION DETECTED!");
+      if (raw < 900) Serial.println("Sorry");
+      else Serial.println("SORRY SORRY!");
+      hasApologized = true;
+    }
+
+  } else if (raw < thresholdValue - 50) {
+    // Reset only when pressure fully drops
+    hasApologized = false;
+  }
+
+  // Print readings
+  // Serial.print("Pressure: ");
+  // Serial.println(lastPressureValue);
+
+  lastPressureValue = raw;
+  delay(10);
+}
+
+```
 
 
 
