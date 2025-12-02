@@ -85,6 +85,11 @@ I decided to choose Apology Jacket because I’m more confident in it (and it re
 * velostat
 * conductive fabric
 * small audio player
+* amplifier
+* pico 2W
+* jacket
+
+
 
 ## STEP 1 — Collision Detection
 
@@ -160,7 +165,7 @@ void loop() {
 
 **Text-to-Speech**
 
-* Used SerialSpeak example model which uses speech API to talk when I type to Serial Monitor. 
+* Used **SerialSpeak** example model which uses speech API to talk when I type to Serial Monitor. 
 
   → I changed to speak words that are inside the code and combined with the pressure sensors.
 
@@ -599,8 +604,13 @@ Tuto <https://www.instructables.com/Flexible-Fabric-Pressure-Sensor/> 
 
 * velostat
 * conductive fabric
+* fabric
+
+Testing:
 
 ![](test2.jpg)
+
+Making my own pressure sensor:
 
 ![](sew0.jpg)
 
@@ -612,12 +622,13 @@ Tuto <https://www.instructables.com/Flexible-Fabric-Pressure-Sensor/> 
 
 **Problem:** Detect collision even if I move my arm
 
-**Solved:** Detect the difference between current and previous readings, not just the raw value. (sudden fast increase in pressure)
+**Solution:** Detect the difference between current and previous readings, not just the raw value. (sudden fast increase in pressure):
 
 ```
 int lastPressureValue = 0;
 
-int thresholdValue = 800;      // base threshold
+int thresholdValue = 800; 
+int thresholdValue2 = 900;     // base threshold
 int spikeThreshold = 100;      // how fast the value rises
 
 bool hasApologized = false;
@@ -627,7 +638,7 @@ void setup() {
 }
 
 void loop() {
-  int raw = analogRead(27);
+  int raw = analogRead(26);
   int delta = raw - lastPressureValue;   // detect sudden spikes
  
   // TRUE collision = pressure + fast spike
@@ -635,7 +646,7 @@ void loop() {
 
     if (!hasApologized) {
       //Serial.println("REAL COLLISION DETECTED!");
-      if (raw < 900) Serial.println("Sorry");
+      if (raw < thresholdValue2) Serial.println("Sorry");
       else Serial.println("SORRY SORRY!");
       hasApologized = true;
     }
@@ -652,7 +663,6 @@ void loop() {
   lastPressureValue = raw;
   delay(10);
 }
-
 ```
 
 
