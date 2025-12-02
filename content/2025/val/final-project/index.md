@@ -600,14 +600,24 @@ Tuto <https://www.instructables.com/Flexible-Fabric-Pressure-Sensor/> 
 * velostat
 * conductive fabric
 
+![](test2.jpg)
+
+![](sew1.jpg)
+
+![](sew2.jpg)
+
+![](sew3.jpg)
 
 
 
 **STEP 5 — Integration Into Jacket**
 
-* Wiring inside fabric channels
-* Protect electronics
-* * 3D printed small case?
+* Sew the pressure sensors inside shoulder
 
-  * Sew a fabric pocket inside shoulder
-* Battery
+![](sew4.jpg)
+
+![](sew5.jpg)
+
+* Wiring inside fabric 
+* Make my own breadboard
+* Battery → power bank
