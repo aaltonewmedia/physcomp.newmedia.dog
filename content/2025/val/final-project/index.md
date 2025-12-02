@@ -610,7 +610,7 @@ Tuto <https://www.instructables.com/Flexible-Fabric-Pressure-Sensor/> 
 
 **Problem:** Detect collision even if I move my arm
 
-**Solved**: Detect the difference between current and previous readings, not just the raw value. (sudden fast increase in pressure)
+**Solved:** Detect the difference between current and previous readings, not just the raw value. (sudden fast increase in pressure)
 
 ```
 int pressureValue;
