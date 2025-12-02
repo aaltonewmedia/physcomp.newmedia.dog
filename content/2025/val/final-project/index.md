@@ -608,6 +608,10 @@ Tuto <https://www.instructables.com/Flexible-Fabric-Pressure-Sensor/> 
 
 ![](sew3.jpg)
 
+**Problem:** Detect collision even if I move my arm
+
+
+
 
 
 **STEP 5 — Integration Into Jacket**
