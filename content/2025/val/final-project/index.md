@@ -659,12 +659,12 @@ void loop() {
 
 ## STEP 5 — Integration Into Jacket
 
-* Sew the pressure sensors inside shoulder
+* Sew the pressure sensors on the shoulder
 
 ![](sew4.jpg)
 
 ![](sew5.jpg)
 
+* Make my own breadboard 
 * Wiring inside fabric 
-* Make my own breadboard
 * Battery → power bank
