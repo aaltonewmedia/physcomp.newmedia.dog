@@ -613,7 +613,6 @@ Tuto <https://www.instructables.com/Flexible-Fabric-Pressure-Sensor/> 
 **Solved:** Detect the difference between current and previous readings, not just the raw value. (sudden fast increase in pressure)
 
 ```
-int pressureValue;
 int lastPressureValue = 0;
 
 int thresholdValue = 800;      // base threshold
