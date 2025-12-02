@@ -602,6 +602,8 @@ Tuto <https://www.instructables.com/Flexible-Fabric-Pressure-Sensor/> 
 
 ![](test2.jpg)
 
+![](sew0.jpg)
+
 ![](sew1.jpg)
 
 ![](sew2.jpg)
