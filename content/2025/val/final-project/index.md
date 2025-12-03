@@ -703,7 +703,7 @@ Speaker inside a pocket
 
 ![](final2.jpg)
 
-Final code
+## Final code
 
 ```
 #include <WiFi.h>
