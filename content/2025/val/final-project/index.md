@@ -72,7 +72,7 @@ When the wearer bumps into someone, the embedded sensor detects the collision’
 
 <hr>
 
-*After reviewing and organizing my ideas, I find the use of an electric nose interesting, but I’m not very satisfied with the concept itself. So for now, I’m considering either simply running the **electric nose experiment** or moving forward with the **Apology Jacket.***
+\*After reviewing and organizing my ideas, I find the use of an electric nose interesting, but I’m not very satisfied with the concept itself. So for now, I’m considering either simply running the **electric nose experiment** or moving forward with the **Apology Jacket.***
 
 <hr>
 
@@ -88,8 +88,6 @@ I decided to choose Apology Jacket because I’m more confident in it (and it re
 * amplifier
 * pico 2W
 * jacket
-
-
 
 ## STEP 1 — Collision Detection
 
@@ -624,6 +622,7 @@ Making my own pressure sensor:
 
 **Solution:** Change the resistor to 120 Ω. Remove the thread from the conductive fabric because it was pressing the sensor against the fabric.
 
+ 
 
 **Problem 2:** Detect collision even if I move my arm
 
@@ -670,8 +669,6 @@ void loop() {
 }
 ```
 
-
-
 ## STEP 5 — Integration Into Jacket
 
 * Sew the pressure sensors on the shoulder
@@ -681,5 +678,23 @@ void loop() {
 ![](sew5.jpg)
 
 * Make my own breadboard 
+
+![](sketch1.jpg)
+
+![](breadboard.jpg)
+
 * Wiring inside fabric 
+
+![](wires.jpg)
+
+Speaker inside a pocket
+
+![](speaker1.jpg)
+
 * Battery → power bank
+
+![](sketch2.jpg)
+
+![](final1.jpg)
+
+![](final2.jpg)
