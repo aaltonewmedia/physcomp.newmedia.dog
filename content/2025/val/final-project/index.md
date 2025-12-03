@@ -1,5 +1,5 @@
 ---
-title: Final Project
+title: Final Project - Working Progress
 date: 2025-11-10T13:38:00.000+02:00
 authors:
   - Valerie Jeyeon YONG
