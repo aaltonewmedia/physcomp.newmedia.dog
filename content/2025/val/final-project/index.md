@@ -76,7 +76,7 @@ When the wearer bumps into someone, the embedded sensor detects the collision’
 
 <hr>
 
-# Apology Jacket Working Progress
+# Apology Jacket Working Process
 
 I decided to choose Apology Jacket because I’m more confident in it (and it received more reactions from my classmates).
 
