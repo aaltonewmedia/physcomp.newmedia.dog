@@ -1,5 +1,5 @@
 ---
-title: Final Project - Working Progress
+title: Final Project - Working Process
 date: 2025-11-10T13:38:00.000+02:00
 authors:
   - Valerie Jeyeon YONG
@@ -18,7 +18,7 @@ Using MEMS gas sensors, the system reads the chemical composition of air, includ
 
 ex) When the air feels heavy and warm, it displays: “The air smells tense.”
 
-→ Tuto: [Building an Electronic Nose with MEMS Gas Detection Sensor](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269) 
+→ Tuto: [Building an Electronic Nose with MEMS Gas Detection Sensor](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)  
 
 [](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)[](https://www.hackster.io/DFRobotOfficial/building-an-electronic-nose-with-mems-gas-detection-sensor-de5269)
 
@@ -622,8 +622,6 @@ Making my own pressure sensor:
 
 **Solution:** Change the resistor to 120 Ω. Remove the thread from the conductive fabric because it was pressing the sensor against the fabric.
 
- 
-
 **Problem 2:** Detect collision even if I move my arm
 
 **Solution:** Detect the difference between current and previous readings, not just the raw value. (sudden fast increase in pressure):
@@ -692,8 +690,6 @@ Speaker inside a pocket
 ![](speaker1.jpg)
 
 * Battery → power bank
-
-
 
 ## Final Result
 
@@ -937,5 +933,4 @@ String cleanUnicode(String s) {
 
   return s;
 }
-
 ```
