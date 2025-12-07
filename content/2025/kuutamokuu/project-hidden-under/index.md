@@ -77,8 +77,6 @@ Since the sensor couldn’t fit inside the rainstick with the additional wooden 
 
 ![](sensoritasku.jpg "The rainstick was sealed and painted")
 
-
-
 #### **Electrical setup**
 
 Before the painting process, different setups were tested and planned for the sensors. The first idea was to use one RaspberryPi minicomputer to control the two sensors that could read data from tilting. This idea was scrapped due to the need for additional parts. There were many RaspberryPi’s to use, so instead of one, two were used.
@@ -99,16 +97,255 @@ To explain the illustration simply:
 
 (7.5V) Power source has a part that distributes energy ( + & - ). To each Motor Driver board, a + and - wire is attached to give the RaspberryPi and the accelerometer power. The Motor is connected to the Motor Driver board directly. The Prototyping PiCowbell has an accelerometer attached which give out tilting data. The RaspberryPi controls the logic of the received accelerometer data and powers the motor speed according to the logic.
 
-
 #### **Programming**
 
-\-Explain code aspects that were needed-
+The code includes libraries needed to read the sensor value. The accelerometer sensors are Adafruit_MSA311 and Adafruit_MSA301. 
 
-Show code 1
+The variables that are included at the beginning are the float values of the accelerometer data. The Accelerometer gives data on x, y and z axis. This project uses only the y axis values, which is the axis that is tilted with the rainstick.
 
-Show code 2
+The variable integer values are M1_C1 and M1_C2, which are the pin holes in the Motor Driver board.
 
-The codes are generally different for each RaspberryPi due to the sensors being both different model. Accelerometers were used as the sensor to read tilting. The code only uses the (?) coordinate reading. This reading is mapped to the speed of the motor depending on how much the sensor is tilted.
+The integer speed is the variable that controls the motor speed according to the tilting values.
+
+In the setup, there is code that is used to help fix bugs that might be encountered from the accelerometer. Then, the motor pins are assigned to be outputs.
+
+In the loop of the code, the accelerometer reads the data values that it is gathering from the tilting. Then, the data from the y axis is mapped so that the accelerometer values can be translated to the motor speed value.
+
+Then, to put it simple, the accelerometer mapped value rotates the motor in different speed depending on the threshold. If the accelerometer tilting value is not enough (not enough tilted), the motor does not move.
+
+At the end, there are three functions. These ones tell the motor what way they are supposed to rotate or if they are supposed to stay still if they are called during the earlier step.
+
+Basically, what this code does is rotate the two canvases to two different direction depending on what way the rainstick is tilted.
+
+```
+// add all necessary libraries
+#include <Wire.h>
+#include <Adafruit_MSA301.h>
+#include <Adafruit_Sensor.h>
+
+//Initial speed of the motor, map later to float of the X axis of accelometer1
+// int speed = 200;
+
+// Comment/Uncomment as needed for specific MSA being used:
+Adafruit_MSA311 msa;
+//Adafruit_MSA301 msa;
+
+//--------------------ACCELOMETER------------------
+
+float x,y,z; //Accelometer axis
+
+//----------------------MOTOR-----------------------
+
+// pins for MOTOR 1
+int M1_C1 = 2;
+int M1_C2 = 3;
+
+// speed of the motors 0-255 Note: Unsure if this motor also uses this range, I couldnt find from the internet
+int speed;
 
 
-\---Rest of this documentation is still in process---
+void setup() {
+
+  // put your setup code here, to run once:
+
+  //------------ACCELOMETER-----------
+
+  Serial.begin(115200);
+  if (! msa.begin()) {
+        Serial.println("Failed to find MSA301/311 chip");
+        while (1) { delay(10); }
+    }
+  Serial.println("MSA301/311 Found!");
+
+
+  //------------MOTOR 1 PIN SETUP-----------
+
+  // change the pins to outputs
+  pinMode(M1_C1, OUTPUT);
+  pinMode(M1_C2, OUTPUT);
+
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+    // get X Y and Z data at once
+    msa.read(); 
+    
+    x = msa.x;
+    y = msa.y;
+    z = msa.z;
+
+    // print the values
+    Serial.print(x);
+    Serial.print(",");
+    Serial.print(y);
+    Serial.print(",");
+    Serial.println(z);
+    delay(50);
+
+    //----------MAPPING ACCELOMETER TO MOTOR-----
+
+    // Mapping the accelometer value to the range of the motor = accelometer range 0-2000 -> motor goes from 0 speed to 255
+    speed = map(abs(y), 500, 2000, 100, 150);
+
+      //If x shows positive values, go forward
+
+      if (y >= 500)
+      {
+        motorOneForward();
+      }
+
+      //If x shows negative values, go backward
+
+      if (y <= -700)
+      {
+        motorOneBackward();
+      }
+
+      //If the motor is at "resting" stage (not tilted), stop motor
+
+      if (y >= -700 && y <= 500){
+        motorStop();
+      }
+
+  }
+  
+
+//---------------------MOTOR CONTROLS-------------------
+
+void motorOneForward() {
+  analogWrite(M1_C1, speed);
+  analogWrite(M1_C2, 0);
+}
+
+void motorOneBackward(){
+  analogWrite(M1_C1, 0);
+  analogWrite(M1_C2, speed);
+}
+
+
+void motorStop(){
+  analogWrite(M1_C1, 0);
+  analogWrite(M1_C2, 0);
+}
+```
+
+```
+// add all necessary libraries
+#include <Wire.h>
+#include <Adafruit_MSA301.h>
+#include <Adafruit_Sensor.h>
+
+// Comment/Uncomment as needed for specific MSA being used:
+Adafruit_MSA311 msa;
+//Adafruit_MSA301 msa;
+
+//--------------------ACCELOMETER------------------
+
+float x,y,z; //Accelometer axis
+
+//----------------------MOTOR-----------------------
+
+// pins for MOTOR 1
+int M1_C1 = 2;
+int M1_C2 = 3;
+
+// speed of the motors 0-255 Note: Idk if this motor also uses this range, I couldnt find from the internet
+int speed;
+
+
+void setup() {
+
+  // put your setup code here, to run once:
+
+  //------------ACCELOMETER-----------
+
+  Serial.begin(115200);
+  if (! msa.begin()) {
+        Serial.println("Failed to find MSA301/311 chip");
+        while (1) { delay(10); }
+    }
+  Serial.println("MSA301/311 Found!");
+
+
+  //------------MOTOR 1 PIN SETUP-----------
+
+  // change the pins to outputs
+  pinMode(M1_C1, OUTPUT);
+  pinMode(M1_C2, OUTPUT);
+
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+    // get X Y and Z data at once
+    msa.read(); 
+    
+    x = msa.x;
+    y = msa.y;
+    z = msa.z;
+
+    // print the values
+    Serial.print(x);
+    Serial.print(",");
+    Serial.print(y);
+    Serial.print(",");
+    Serial.println(z);
+    delay(50);
+
+    //----------MAPPING ACCELOMETER TO MOTOR-----
+
+    // Mapping the accelometer value to the range of the motor = accelometer range 0-2000 -> motor goes from 0 speed to 255 etc
+    speed = map(abs(y), 500, 2000, 100, 150);
+
+      //If x shows positive values, go forward
+
+      if (y >= 500)
+      {
+        motorOneForward();
+      }
+
+      //If x shows negative values, go backward
+
+      if (y <= -700)
+      {
+        motorOneBackward();
+      }
+
+      //The treshold to stop motor
+
+      if (y >= -700 && y <= 500){
+        motorStop();
+      }
+
+  }
+  
+
+
+
+//---------------------MOTOR CONTROLS-------------------
+
+void motorOneForward() {
+  analogWrite(M1_C1, speed);
+  analogWrite(M1_C2, 0);
+}
+
+void motorOneBackward(){
+  analogWrite(M1_C1, 0);
+  analogWrite(M1_C2, speed);
+}
+
+
+void motorStop(){
+  analogWrite(M1_C1, 0);
+  analogWrite(M1_C2, 0);
+}
+```
+
+The codes are generally different for each RaspberryPi due to the sensors being both different model. One of the sensor gave out some odd values, so they were mapped according to the values that were given. (Typically one of these accelerometers give values from +2000 to -2000, but one of the sensors were giving something like +2200 to -1800)
+
+#### Final project video:
+
+\-Inserting the final video here once I've taken footage of it setup at the demoday-
