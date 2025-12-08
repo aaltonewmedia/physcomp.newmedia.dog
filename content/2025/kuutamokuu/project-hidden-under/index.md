@@ -346,6 +346,11 @@ void motorStop(){
 
 The codes are generally different for each RaspberryPi due to the sensors being both different model. One of the sensor gave out some odd values, so they were mapped according to the values that were given. (Typically one of these accelerometers give values from +2000 to -2000, but one of the sensors were giving something like +2200 to -1800)
 
-#### Final project video:
+#### Final installation:
 
-\-Inserting the final video here once I've taken footage of it setup at the demoday-
+![](pxl_20251208_140915294.jpg "Hidden under installation setup for demoday")
+
+##### Final video:
+
+
+ {{<youtube tdc5WGjdZOk>}}
