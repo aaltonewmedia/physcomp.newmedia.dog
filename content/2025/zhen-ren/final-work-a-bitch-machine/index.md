@@ -12,7 +12,9 @@ showBgImage: false
 
 This project is officially called When Language Warps, but I usually just call it the Bitch Machine.
 
-### Introduction
+
+
+## Introduction
 
 It is an interactive installation that reveals how environments response to what we say.
 
@@ -20,7 +22,9 @@ The system shifts its persona between three “bitch modes”, according to ambi
 
 It reflects a growing reality: we are becoming accustomed to a world that answers us with prejudice—and increasingly numb to that prejudice itself. Over time, we get used to hostile or twisted responses, We start to go quiet, and only say things that feel “safe enough” for the environment.
 
-### How It works
+
+
+## How It works
 
 The whole system runs as a loop:
 
@@ -30,7 +34,7 @@ After each interaction, the system prints a backend log based on the current env
 
 ![](dsc03223.jpg)
 
-* ##### Device components
+* #### **Device components**
 
 > Light Dependent Resistor
 >
@@ -42,9 +46,7 @@ After each interaction, the system prints a backend log based on the current env
 >
 > Spotlight
 
-
-
-* ##### Environmental Intensity Score (EIS)
+* #### **Environmental Intensity Score (EIS)**
 
 The light sensor (LDR) and microphone together form the Environmental Intensity Score (EIS) — a parameter that measures the level of hostility the environment exerts on the system.
 
@@ -56,7 +58,7 @@ The light sensor (LDR) and microphone together form the Environmental Intensity 
 
 
 
-* ##### Behavioral Logic
+* #### **Behavioral Logic**
 
 **Exposure / Surveillance**
 
@@ -64,10 +66,18 @@ Light increases → EIS decreases →
 
 Language becomes more academic, performative, and over-explanatory.
 
- 
-
 **Noise / Opinion Density**
 
 Sound increases → EIS increases →
 
 Language becomes sharper, more hostile, and overtly aggressive.
+
+
+
+## Bitch Mode Analysis
+
+Low EIS (0–0.3): The Over-Intellectualized Bitch
+
+Calm on the surface, overly rational, pretending to be objective while hiding emotion behind academic superiority.
+
+Traits: long sentences, abstract language, lecturing tone, intellectual arrogance, emotional deflection through logic.
