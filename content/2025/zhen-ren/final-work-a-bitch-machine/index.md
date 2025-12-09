@@ -8,9 +8,9 @@ showBgImage: false
 ---
 ## When Language Warps / A Bitch Machine
 
-![](img_6425.jpg)
-
 This project is officially called When Language Warps, but I usually just call it the Bitch Machine.
+
+<https://youtu.be/XYDl_Lyar7w>
 
 ## Introduction
 
