@@ -30,7 +30,7 @@ After each interaction, the system prints a backend log based on the current env
 
 ![](dsc03223.jpg)
 
-**Device components**
+* ##### Device components
 
 > Light Dependent Resistor
 >
@@ -41,3 +41,33 @@ After each interaction, the system prints a backend log based on the current env
 > Keyboard
 >
 > Spotlight
+
+
+
+* ##### Environmental Intensity Score (EIS)
+
+The light sensor (LDR) and microphone together form the Environmental Intensity Score (EIS) — a parameter that measures the level of hostility the environment exerts on the system.
+
+**Conceptual Mapping**
+
+> Light = surveillance, exposure, public visibility
+>
+> Sound = disturbance, opinion density, information pollution
+
+
+
+* ##### Behavioral Logic
+
+**Exposure / Surveillance**
+
+Light increases → EIS decreases →
+
+Language becomes more academic, performative, and over-explanatory.
+
+ 
+
+**Noise / Opinion Density**
+
+Sound increases → EIS increases →
+
+Language becomes sharper, more hostile, and overtly aggressive.
