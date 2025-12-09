@@ -12,8 +12,6 @@ showBgImage: false
 
 This project is officially called When Language Warps, but I usually just call it the Bitch Machine.
 
-
-
 ### Introduction:
 
 It is an interactive installation that reveals how environments response to what we say.
@@ -25,6 +23,12 @@ It reflects a growing reality: we are becoming accustomed to a world that answer
 
 
 ### How It works:
+
+The whole system runs as a loop:
+
+the environment pushes → you get irritated → you respond → the environment magnify  the hostility → you react again → and everything keeps escalating.
+
+After each interaction, the system prints a backend log based on the current environmental state. The receipt allows the audience to see details such as the Bitch Mode, Bias Style, and Pressure Tone.
 
 ![](dsc03223.jpg)
 
