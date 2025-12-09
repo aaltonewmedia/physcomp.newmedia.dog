@@ -12,7 +12,7 @@ showBgImage: false
 
 This project is officially called When Language Warps, but I usually just call it the Bitch Machine.
 
-### Introduction:
+### Introduction
 
 It is an interactive installation that reveals how environments response to what we say.
 
@@ -20,9 +20,7 @@ The system shifts its persona between three “bitch modes”, according to ambi
 
 It reflects a growing reality: we are becoming accustomed to a world that answers us with prejudice—and increasingly numb to that prejudice itself. Over time, we get used to hostile or twisted responses, We start to go quiet, and only say things that feel “safe enough” for the environment.
 
-
-
-### How It works:
+### How It works
 
 The whole system runs as a loop:
 
