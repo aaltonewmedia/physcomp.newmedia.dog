@@ -10,7 +10,7 @@ showBgImage: false
 
 This project is officially called When Language Warps, but I usually just call it the Bitch Machine.
 
-<https://youtu.be/XYDl_Lyar7w>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XYDl_Lyar7w?si=UKyl3ZDORh59cmz5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Introduction
 
