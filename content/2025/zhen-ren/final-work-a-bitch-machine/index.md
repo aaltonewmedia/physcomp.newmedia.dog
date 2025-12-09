@@ -12,8 +12,6 @@ showBgImage: false
 
 This project is officially called When Language Warps, but I usually just call it the Bitch Machine.
 
-
-
 ## Introduction
 
 It is an interactive installation that reveals how environments response to what we say.
@@ -21,8 +19,6 @@ It is an interactive installation that reveals how environments response to what
 The system shifts its persona between three “bitch modes”, according to ambient light and sound, responding to the user’s input with intentional malice and bias. It works like an environment translator—once a sentence leaves us, it gets reshaped by the environment’s emotions, biases, and attitudes.
 
 It reflects a growing reality: we are becoming accustomed to a world that answers us with prejudice—and increasingly numb to that prejudice itself. Over time, we get used to hostile or twisted responses, We start to go quiet, and only say things that feel “safe enough” for the environment.
-
-
 
 ## How It works
 
@@ -34,7 +30,7 @@ After each interaction, the system prints a backend log based on the current env
 
 ![](dsc03223.jpg)
 
-* #### **Device components**
+#### Device components
 
 > Light Dependent Resistor
 >
@@ -46,9 +42,9 @@ After each interaction, the system prints a backend log based on the current env
 >
 > Spotlight
 
-* #### **Environmental Intensity Score (EIS)**
+#### Environmental Intensity Score (EIS)
 
-The light sensor (LDR) and microphone together form the Environmental Intensity Score (EIS) — a parameter that measures the level of hostility the environment exerts on the system.
+> The light sensor (LDR) and microphone together form the Environmental Intensity Score (EIS) — a parameter that measures the level of hostility the environment exerts on the system.
 
 **Conceptual Mapping**
 
@@ -56,28 +52,56 @@ The light sensor (LDR) and microphone together form the Environmental Intensity 
 >
 > Sound = disturbance, opinion density, information pollution
 
+#### Behavioral Logic
 
-
-* #### **Behavioral Logic**
-
-**Exposure / Surveillance**
-
-Light increases → EIS decreases →
-
-Language becomes more academic, performative, and over-explanatory.
-
-**Noise / Opinion Density**
-
-Sound increases → EIS increases →
-
-Language becomes sharper, more hostile, and overtly aggressive.
-
-
+> **Exposure / Surveillance**
+>
+> Light increases → EIS decreases →
+>
+> Language becomes more academic, performative, and over-explanatory.
+>
+> **Noise / Opinion Density**
+>
+> Sound increases → EIS increases →
+>
+> Language becomes sharper, more hostile, and overtly aggressive.
 
 ## Bitch Mode Analysis
 
-Low EIS (0–0.3): The Over-Intellectualized Bitch
+![](img_6431.jpg)
 
-Calm on the surface, overly rational, pretending to be objective while hiding emotion behind academic superiority.
+**Low EIS (0–0.3): The Over-Intellectualized Bitch**
+
+> Calm on the surface, overly rational, pretending to be objective while hiding emotion behind academic superiority.
 
 Traits: long sentences, abstract language, lecturing tone, intellectual arrogance, emotional deflection through logic.
+
+
+
+**Medium EIS (0.3–0.6): The Passive-Aggressive Bitch**
+
+> Polite on the surface, but every sentence has a sting. Fake concern, real shade.
+
+Traits: subtle digs, passive-aggressive phrasing, sweet-but-cutting language, masked hostility.
+
+
+
+**High EIS (0.6–1.0): Pure Bitch**
+
+> No pretense, no restraint, just raw hostility—like an anonymous internet reply box.
+
+Traits: short, blunt, confrontational, emotional, unapologetically harsh.
+
+
+
+## About Receipts
+
+![](dsc03212.jpg)
+
+To give the receipt an archival feel, I chose one icon for each Bitch Mode：
+
+The low-bitch mode uses a trash bag — it sounds fancy, but everything it says is basically rubbish.
+
+The mid-bitch mode is a rotten apple — it pretends to care, but it’s actually mean, like someone handing you a bad apple with a smile.
+
+The high-bitch mode is represented by a flame, because direct and unapologetic hostility is often the quickest to provoke others. Once ignited, this hostility spreads rapidly — like fire — moving beyond the original trigger.
