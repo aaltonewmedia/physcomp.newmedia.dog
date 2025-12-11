@@ -24,6 +24,30 @@ Then incoming the physical computing part. Software will betray you once a say b
 
 ![Please hold it for me, while I check something real quick](img_3885.png)
 
+**The workflow is**
+
+\- Choose a city (where my friends live) to see and feel the weather.
+
+\- The loom will rotate the pattern (yellow side up if the sun still up (day time), blue side up if the sun has set (night time))
+
+\- the fan will blow the wind according to the real time wind speed at the moment at that specific city
+
+\- feel as if you are with that friend in that city right now.....
+
+**In the end, the equipment is comprise of** 
+
+1. arduino pico 2w
+
+2. SparkFun_Qwiic_OLED
+
+3. capacitive sensor
+
+4. fan motor
+
+5. dc motor
+
+6. API key to openweathermap
+
 
 
 Here is the Final Arduino code
@@ -366,4 +390,4 @@ void oscEvent(OscMessage theOscMessage) {
 }
 ```
 
-VDO will be in a ree that i planned to make and share the process as well
+VDO will be in a reel format that i planned to make and share the process as well
