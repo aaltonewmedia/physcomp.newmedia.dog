@@ -28,7 +28,7 @@ The switch and what to click with and when is also a challenge. in the end i mad
 
 ![](img_3913.jpg "Soldering is actually so fun, i plan to do more detaily stuff~")
 
-The next question is how would the interface be? I don't want it to be so craft-inspired looking but hey! here are the buttons, knobs, and keyboard for you to tangle with, go nut kids! I want it to be the same look and narrative. so I made a textile keyboard (?) which comprised of capacities sensor to 12 possible pins and conductive yarn that I sewed it to the fabric. Each 12 pins will connect to each 12 cities that my friends live and it will use the designated string and use it as an inquiry through API key.
+The next question is how would the interface be? I don't want it to be so craft-inspired looking but hey! here are the buttons, knobs, and keyboard for you to tangle with, go nut kids! I want it to be the same look and narrative. so I made a textile keyboard (?) which comprised of Capacitive Touch Sensor to 12 possible pins and conductive yarn that I sewed it to the fabric. Each 12 pins will connect to each 12 cities that my friends live and it will use the designated string and use it as an inquiry through API key.
 
 ![](img_4070.jpg "This look easier than it actually was")
 
@@ -53,11 +53,13 @@ I couldn't live with this visual and it will forever kept me up at night so I ch
 **In the end, the equipment is comprised of** 
 
 1. arduino pico 2w
-2. SparkFun Qwiic OLED (did not use in the end, actually)
-3. capacitive sensor
+2. SparkFun Qwiic OLED (did not use in the endactually)
+3. Adafruit MPR121 12-Key Capacitive Touch Sensor
 4. fan motor
 5. dc motor
 6. API key to openweathermap
+7. Conductive yarn
+8. LED, wire, yarns, mini switches, little electric arts here and there
 
 Here is the Final Arduino code
 
