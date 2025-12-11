@@ -14,46 +14,46 @@ Drumroll please........... incoming, "The Weather Loom"!
 
 So I still maintain the idea of the missing of places and friends and connecting with them through weather but by a textile and craftsmanship approach.
 
-My initial idea was to build a new mechanical tool that allow the weaving textile to move according to the weather API, The physicality of it is challenging because this world have gravity, friction, force and what not, something that doesn't come naturally to me when sketching the prototype. I almost gave up but later realized that I purchase an old weaving loom from recycling center in summer and I can 'hack' it in a way that serve my purpose.
+My initial idea was to build a new mechanical tool that allow the weaving textile to move according to the weather API. The physicality of it is challenging because apparently this world have gravity, friction, force and what not, something that doesn't come naturally to me when sketching the prototype. I almost gave up but later realized that I purchase an old weaving loom from recycling center in summer and I can 'hack' it in a way that serve my purpose.
 
 ![](img_3436.jpg "Me prototyping and realise physics exist*")
 
 ![](img_3448.jpg "Me hacking my weaving loom")
 
-Then incoming the physical computing part. Software will betray you once a say but Hardware will betray you every 5 minutes or so (or that is probably because I just learn everything about it this class) so debugging sensor, port, connection, wifi, osc, etc. was a tug of war game but I actually enjoy doing it and I'm actually proud that I tried to debug and do most of the thing by myself first and if it's too hard to solve then I'll blink twice for Matti to help. Here is the picture of Matti holding mini switch for me, we called this Matti's tortured machine.
+Then incoming the physical computing part. Software will betray you once in a while but Hardware will betray you every 5 minutes or so (that is probably because I just learn everything this class) so debugging sensor, port, connection, wifi, osc, etc. was a tug of war game. But I actually enjoy doing it in the end and I'm actually proud that I tried to debug and do most of the thing myself first and if it's too hard to solve then I'll blink twice for Matti to help. Here is the picture of Matti holding mini switch for me, we called this Matti's tortured machine.
 
-![](img_3885.jpg "Please hold it for me, while I check something real quick")
+![](img_3885.jpg "Please hold it for me while I go check something real quick")
 
 The switch and what to click with and when is also a challenge. in the end i made a clicker from LED lights and soldered them together.
 
-![](img_3913.jpg)
+![](img_3913.jpg "Soldering is actually so fun, i plan to do more detaily stuff~")
 
-The next question is how would the interface be? I don't want it to be so crafts looking but hey here are the buttons, knobs, and keyboard for you, go nut kid! I want it to be the same look and narrative so I make a textile keyboard which comprised of capacities sensor to 12 possible pin and conductive yarn that I sewed it to the fabric.
+The next question is how would the interface be? I don't want it to be so craft-inspired looking but hey! here are the buttons, knobs, and keyboard for you to tangle with, go nut kids! I want it to be the same look and narrative. so I made a textile keyboard (?) which comprised of capacities sensor to 12 possible pins and conductive yarn that I sewed it to the fabric. Each 12 pins will connect to each 12 cities that my friends live and it will use the designated string and use it as an inquiry through API key.
 
-![](img_4070.jpg)
+![](img_4070.jpg "This look easier than it actually was")
 
-And then everyone have those moment where they thinkn they are genius and proud of themselve for a day and realised it was all a dream the next day. This was me when and idea of a wind come up. Imagine feel the same wind blow as your friends right now, ooh cool! let's get the fluffiest yarn ever to catch the wind from the fan, what a visual, I should make a business (blah blah blah). Then when i finished it all together with those fluffy yarn..........NOPE, I hated the look of it
+And then everyone have those moment where they think they are a genius and proud of themselves for a day to only realized it was all a dream the next day. This was me when an idea of a wind come up. WIND! Imagine feeling the same wind blow as your friends might experience right now, ooh cool! let's get the fluffiest yarn ever to catch the wind from the fan, oh what a visual, Aren't I the greatest ever (blah blah blah). Then when I wrapped it all together with those fluffy yarn..........NOPE, I hated it. 
 
-![](img_4034.jpg)
+![](img_4034.jpg "I cut it in the last hours")
 
-I couldn't live with this visual and it will for sure keep me up at night so I changed the whole thing to cotton yarn in the last hours before exhibition. Risky move, but a mandatory one!
+I couldn't live with this visual and it will forever kept me up at night so I changed the whole thing to cotton yarn in the last hours before exhibition. Risky move, but a mandatory one!
 
-![](img_4142.jpg "ziyu playing with the weather loom <3")
+![](img_4142.jpg "Ziyu playing with the final version of the weather loom <3")
 
-**The workflow is**
+**In short, the workflow is as follow**
 
-\- Choose a city (where my friends live) to see and feel the weather.
+1. Choose a city (where my friends live) to see and feel the weather.{"Amsterdam", "Atlanta", "Bangkok", "Berlin", "Hanoi", "Helsinki", "Michigan", "Milan", "Sydney", "Taipei", "Tallinn", "Tokyo"};
 
-\- The loom will rotate the pattern (yellow side up if the sun still up (day time), blue side up if the sun has set (night time))
+2. The loom will rotate the pattern (yellow side up if the sun still up (day time), blue side up if the sun has set (night time))
 
-\- the fan will blow the wind according to the real time wind speed at the moment at that specific city
+3. the fan will blow the wind according to the real time wind speed at the moment at that specific city
 
-\- feel as if you are with that friend in that city right now.....
+4. feel as if you are with that friend in that city right now.....
 
-**In the end, the equipment is comprise of** 
+**In the end, the equipment is comprised of** 
 
 1. arduino pico 2w
-2. SparkFun_Qwiic_OLED
+2. SparkFun Qwiic OLED (did not use in the end, actually)
 3. capacitive sensor
 4. fan motor
 5. dc motor
