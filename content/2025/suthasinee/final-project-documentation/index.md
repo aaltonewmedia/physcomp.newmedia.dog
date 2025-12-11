@@ -53,7 +53,7 @@ I couldn't live with this visual and it will forever kept me up at night so I ch
 **In the end, the equipment is comprised of** 
 
 1. arduino pico 2w
-2. SparkFun Qwiic OLED (did not use in the endactually)
+2. SparkFun Qwiic OLED (did not use in the end actually)
 3. Adafruit MPR121 12-Key Capacitive Touch Sensor
 4. fan motor
 5. dc motor
