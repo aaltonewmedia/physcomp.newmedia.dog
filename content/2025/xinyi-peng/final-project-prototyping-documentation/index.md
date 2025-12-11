@@ -6,8 +6,13 @@ authors:
 image: connection.jpg
 showBgImage: false
 ---
-# 11/18 Initial Miiimum Viable Test
+# Initial Minimum Viable Test
+
 ## Blow Structure Test
+
+![](img_8951.jpeg)
+
+\
 At first the circuit counldn't give the correct HIGH/LOW signal as I expected. From Matti I know there is two problems:
 
 > 1. **The glue on the back of the conductive tape is not conductive**, so you can't make it discontinuous;
@@ -16,8 +21,11 @@ At first the circuit counldn't give the correct HIGH/LOW signal as I expected. F
 ![](connection.jpg)
 
 ![](back-of-the-circuit.jpg)
+
 ## Arduino & Processing Connection
+
 This is my initial Arduino code:
+
 ```
 int i;
 
@@ -33,7 +41,9 @@ void loop() {
   Serial.println(i);
 }
 ```
+
 and here is the Processing code:
+
 ```
 import processing.serial.*;
 Serial myPort;  // Create object from Serial class
@@ -52,10 +62,13 @@ void draw()
   println(val);
 }
 ```
+
 But the problem is the signal look fine in the arduino serial monitor, but in processing I can't print the signal. It only shows 0. With Matti's help I know that there are several problems behind:
+
 > 1. The speed arduino sending the signals is faster than the processing refeshing(60FPS), so I need to add a `delay(30)`in arduino. This is the explaination of Gemini: set the Arduino delay to 30ms (approx. 33Hz) to maintain a safe 1:2 ratio with Processing's 60Hz read rate, ensuring the buffer clears faster than it fills to prevent data backlog.
 > 2. The code `println(val)` is not actually getting the serial data so that I need to use `str = myPort.readStringUntil('\n');`. But this only gets the `String` type of data(pure text) but I need `int` or `float`, so Matti says I need use this `val = float(str);` to force the data become a float. **But at first we want to try `int()`, but there is some unknown error, but float works fine.**
-The code I got that can actually work is this:
+>    The code I got that can actually work is this:
+
 ```
 import processing.serial.*;
 Serial myPort;  // Create object from Serial class
@@ -93,3 +106,16 @@ void draw()
   text(val,20,20);
 }
 ```
+
+## Ball-Slide Sensor Structure Test
+
+![](img_8950.jpeg)
+
+\
+The first version works if I use conductive tap to be the bridge of every pair of interrupts, but I failed to reach my goal of using the ball as trigger. There are several reasons I concluded from this:
+
+* The width of the conductive tap areas now is 5mm, is should be bigger for the ball to touch and stay;
+* The diameter of ball I use now is 6mm, I should use bigger ball to increase the conductive area;
+* Also for increasing the conductive region, instead to the current flat structure, I should use a “U valley” shape as the ball-rolling zone.
+
+  ![](fullsizerender.jpeg)
