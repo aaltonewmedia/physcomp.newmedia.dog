@@ -20,7 +20,7 @@ My initial idea was to build a new mechanical tool that allow the weaving textil
 
 ![](img_3448.jpg "Me hacking my weaving loom")
 
-Then incoming the physical computing part. Software will betray you once in a while but Hardware will betray you every 5 minutes or so (that is probably because I just learn everything this class) so debugging sensor, port, connection, wifi, osc, etc. was a tug of war game. But I actually enjoy doing it in the end and I'm actually proud that I tried to debug and do most of the thing myself first and if it's too hard to solve then I'll blink twice for Matti to help. Here is the picture of Matti holding mini switch for me, we called this Matti's tortured machine.
+Then incoming the physical computing part. Software will betray you once in a while but Hardware will betray you every 5 minutes or so (that is probably because I just learn everything this class) so debugging sensor, port, connection, wifi, osc, etc. was a tug of war game. But I actually enjoy doing it in the end and I'm actually proud that I tried to debug and do most of the thing myself first and if it's too hard to solve then I'll blink twice for Matti to help. Here is the picture of Matti holding mini switch for me, we called this Matti's torture machine.
 
 ![](img_3885.jpg "Please hold it for me while I go check something real quick")
 
