@@ -292,18 +292,6 @@ String city = "";
 String prevcity = "";
 JSONObject weather;
 boolean day;
-String Chihiro = "Tokyo";
-String Kat = "Tallinn";
-String MyGang = "Bangkok";
-String Family = "Paris";
-String Hana = "Durham";
-String Lola = "Atlanta";
-String Kelly = "Boston";
-String Matti = "Helsinki";
-String Sine = "Kyoto";
-String Sini = "Kyoto";
-String Soili = "Kyoto";
-String Susie = "Kyoto";
 
 //String [] citysine_friend = {Chihiro, MyGang, Family, Kat, Hana, Lola, Matti, Kelly};
 String [] cities = {"Amsterdam", "Atlanta", "Bangkok", "Berlin", "Hanoi", "Helsinki", "Michigan", "Milan", "Sydney", "Taipei", "Tallinn", "Tokyo"};
