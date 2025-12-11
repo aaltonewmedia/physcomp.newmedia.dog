@@ -59,7 +59,7 @@ I couldn't live with this visual and it will forever kept me up at night so I ch
 5. dc motor
 6. API key to openweathermap
 7. Conductive yarn
-8. LED, wire, yarns, mini switches, little electric arts here and there
+8. LED, wire, yarns, mini switches, little electric parts here and there
 
 Here is the Final Arduino code
 
