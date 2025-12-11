@@ -6,7 +6,7 @@ authors:
 image: final-project_header.jpg
 showBgImage: false
 ---
-https://vimeo.com/1145737562
+<https://vimeo.com/1145737562>
 
 #### asemic writing robot (mary magdalene)
 
@@ -14,4 +14,6 @@ It’s 2090, and intelligent technologies have advanced to a point where the pra
 
 As originally proposed by media theorist Marshall McLuhan in 1962, the theory of post-literacy stands eerily true in present-day context as attention spans decrease steadily and texts circulate within algorithm-driven echo chambers. While mainstream media continues to shift to the cloud, the typographic condition is undergoing a transformative shift. 
 
-mary magdalene is a prototype for an asemic writing robot situated in such a world. As part of an ongoing thesis work, the research takes on a media archaeological approach to visual communication design. Through a speculative reframing of the archaic tradition of writing against a rapidly developing technological landscape, mary magdalene offers a glimpse into the study of what a future textual practice might look like.
+mary magdalene is a prototype for an asemic writing robot situated in such a world. As part of an ongoing thesis work, the research takes on a media archaeological approach to visual communication design. Through a speculative reframing of the archaic tradition of writing against a rapidly developing technological landscape, mary magdalene offers a glimpse into the study of what a future textual practice might look like.\
+\
+Music: [Aforethought Preference](https://soundcloud.com/user-113090090/aforethought-preference?in=user-113090090%2Fsets%2Fwavenet777-1) by sevnet7
