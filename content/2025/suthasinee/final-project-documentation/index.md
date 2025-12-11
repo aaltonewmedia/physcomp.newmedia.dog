@@ -14,7 +14,7 @@ Drumroll please........... incoming, "The Weather Loom"!
 
 So I still maintain the idea of the missing of places and friends and connecting with them through weather but by a textile and craftsmanship approach.
 
-My initial idea was to build a new mechanical tool that allow the weaving textile to move according to the weather API. The physicality of it is challenging because apparently this world have gravity, friction, force and what not, something that doesn't come naturally to me when sketching the prototype. I almost gave up but later realized that I purchase an old weaving loom from recycling center in summer and I can 'hack' it in a way that serve my purpose.
+My initial idea was to build a new mechanical tool that allow the weaving textile to move according to the weather API. The physicality of it is challenging because apparently this world have gravity, friction, force and what not, something that doesn't come naturally to me when sketching the prototype. I almost gave up but later realized that I purchased an old weaving loom from recycling center in summer and I can 'hack' it in a way that serve my purpose.
 
 ![](img_3436.jpg "Me prototyping and realise physics exist*")
 
