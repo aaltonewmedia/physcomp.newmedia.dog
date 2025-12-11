@@ -6,7 +6,7 @@ authors:
 image: final-project_header.jpg
 showBgImage: false
 ---
-<https://vimeo.com/1145737562>
+{{<vimeo 1145737562>}}
 
 #### asemic writing robot (mary magdalene)
 
