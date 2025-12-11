@@ -24,7 +24,7 @@ Then incoming the physical computing part. Software will betray you once in a wh
 
 ![](img_3885.jpg "Please hold it for me while I go check something real quick")
 
-The switch and what to click with and when is also a challenge. in the end i made a clicker from LED lights and soldered them together.
+What's with the switch? so when I fetched the data and know if it's day or night and the wheel starting to rotate, something gotta stop it and say that's enough cowboy! when it arrive at the right spot. I put the switches at the bottom, when it clicked, the wheel will stop spinning and if it's the opposite time of the day then it will tell the wheel to spin to another direction. The switch and what to click with + when is also a challenge. In the end i made a clicker from LED lights that I soldered them together.
 
 ![](img_3913.jpg "Soldering is actually so fun, i plan to do more detaily stuff~")
 
