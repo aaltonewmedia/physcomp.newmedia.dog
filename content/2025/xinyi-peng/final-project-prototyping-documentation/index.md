@@ -1,5 +1,5 @@
 ---
-title: Final Project Prototyping Documentation
+title: Final Project Documentation
 date: 2025-11-19T10:13:00.000+02:00
 authors:
   - Xinyi Peng
