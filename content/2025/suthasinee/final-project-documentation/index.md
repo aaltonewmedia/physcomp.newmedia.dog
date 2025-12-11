@@ -1,6 +1,6 @@
 ---
 title: Final Project Documentation
-date: 2025-12-11T15:23:00.000+02:00
+date: 2025-12-11T23:55:00.000+02:00
 authors:
   - Suthasinee
 image: weatherloom2.jpg
@@ -16,29 +16,29 @@ So I still maintain the idea of the missing of places and friends and connecting
 
 My initial idea was to build a new mechanical tool that allow the weaving textile to move according to the weather API, The physicality of it is challenging because this world have gravity, friction, force and what not, something that doesn't come naturally to me when sketching the prototype. I almost gave up but later realized that I purchase an old weaving loom from recycling center in summer and I can 'hack' it in a way that serve my purpose.
 
-![](img_3436.png "Me prototyping and realise physics exist*")
+![](img_3436.jpg "Me prototyping and realise physics exist*")
 
-![]( "Me hacking my weaving loom")
+![](img_3448.jpg "Me hacking my weaving loom")
 
 Then incoming the physical computing part. Software will betray you once a say but Hardware will betray you every 5 minutes or so (or that is probably because I just learn everything about it this class) so debugging sensor, port, connection, wifi, osc, etc. was a tug of war game but I actually enjoy doing it and I'm actually proud that I tried to debug and do most of the thing by myself first and if it's too hard to solve then I'll blink twice for Matti to help. Here is the picture of Matti holding mini switch for me, we called this Matti's tortured machine.
 
-![](img_3885.png "Please hold it for me, while I check something real quick")
+![](img_3885.jpg "Please hold it for me, while I check something real quick")
 
 The switch and what to click with and when is also a challenge. in the end i made a clicker from LED lights and soldered them together.
 
-![](img_3913.png)
+![](img_3913.jpg)
 
 The next question is how would the interface be? I don't want it to be so crafts looking but hey here are the buttons, knobs, and keyboard for you, go nut kid! I want it to be the same look and narrative so I make a textile keyboard which comprised of capacities sensor to 12 possible pin and conductive yarn that I sewed it to the fabric.
 
-![](img_4070.png)
+![](img_4070.jpg)
 
 And then everyone have those moment where they thinkn they are genius and proud of themselve for a day and realised it was all a dream the next day. This was me when and idea of a wind come up. Imagine feel the same wind blow as your friends right now, ooh cool! let's get the fluffiest yarn ever to catch the wind from the fan, what a visual, I should make a business (blah blah blah). Then when i finished it all together with those fluffy yarn..........NOPE, I hated the look of it
 
-![](img_4034.png)
+![](img_4034.jpg)
 
-So i changed to cotton yarn in the last hour before exhibition. Risky move, but a mandatory one!
+I couldn't live with this visual and it will for sure keep me up at night so I changed the whole thing to cotton yarn in the last hours before exhibition. Risky move, but a mandatory one!
 
-![](img_4142.png "ziyu playing with the weather loom <3")
+![](img_4142.jpg "ziyu playing with the weather loom <3")
 
 **The workflow is**
 
@@ -397,4 +397,8 @@ void oscEvent(OscMessage theOscMessage) {
 }
 ```
 
-VDO will be in a reel format that i planned to make and share the process as well
+Then these will come later as well, stay tuned
+
+\- A short description of my project and reflection on the things I learned.
+
+\- A guide/tutorial on how to build your project from the technical side.
