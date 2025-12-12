@@ -17,3 +17,7 @@ The project highlights how instinctive and mechanical apologies can be in everyd
 Making the pressure sensors by hand—cutting velostat, layering conductive fabric, and sewing them into the jacket—created a meaningful tension between slow, physical craft and rapid algorithmic automation. The irregularity of the handmade sensors directly influenced how the jacket behaved. Even small stitching decisions affected sensitivity and detection. The final outcome felt like a collaboration between the textile materiality and the digital logic.
 
 Ultimately, *Apology Jacket* imagines a future where AI infiltrates even the smallest acts of etiquette. If our apologies can be automated, what other parts of human interaction might follow? The project playfully questions what we gain and what we lose when machines begin to speak for us.
+
+![](final-img.jpg)
+
+![](shoot.jpg)
