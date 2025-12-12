@@ -10,7 +10,9 @@ showBgImage: false
 
 This project is officially called When Language Warps, but I usually just call it the Bitch Machine.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XYDl_Lyar7w?si=UKyl3ZDORh59cmz5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%">
+	<iframe src="https://aalto.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=5888a28b-c28b-4af1-8926-b3b000ff5bff&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" style="border: 1px solid #464646; position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Bitch Machine"></iframe>
+</div>
 
 ## Introduction
 
