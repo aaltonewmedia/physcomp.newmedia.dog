@@ -6,7 +6,10 @@ authors:
 image: final-project_header.jpg
 showBgImage: false
 ---
-{{<vimeo 1145737562>}}
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%">
+	<iframe src="https://aalto.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=482c96ba-b1ff-45d7-943c-b3b00151b0f9&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646; position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="mary-magdalene"></iframe>
+</div>
 
 #### asemic writing robot (mary magdalene)
 
