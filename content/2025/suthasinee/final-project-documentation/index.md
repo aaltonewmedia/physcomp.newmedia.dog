@@ -47,11 +47,8 @@ I couldn't live with this visual and it will forever kept me up at night so I ch
 **In short, the workflow is as follow**
 
 1. Choose a city (where my friends live) to see and feel the weather.{"Amsterdam", "Atlanta", "Bangkok", "Berlin", "Hanoi", "Helsinki", "Michigan", "Milan", "Sydney", "Taipei", "Tallinn", "Tokyo"};
-
 2. The loom will rotate the pattern (yellow side up if the sun still up (day time), blue side up if the sun has set (night time))
-
 3. the fan will blow the wind according to the real time wind speed at the moment at that specific city
-
 4. feel as if you are with that friend in that city right now.....
 
 **In the end, the equipment is comprised of** 
@@ -391,8 +388,37 @@ void oscEvent(OscMessage theOscMessage) {
 }
 ```
 
-Then these will come later as well, stay tuned
+My description:
 
-\- A short description of my project and reflection on the things I learned.
+Weather Loom is a medium I keep connected to my friends from around the world. Derived from ‘ผ้าขาวม้า’ or ‘pa-kow-ma’, a common textile pattern for Thai people daily life. Having physical data made it easier for me to visualize what the weather that my friends live in right now and perhaps experience more than digital data visualization but a tangible, interpretable through a craftsmanship and culturally embedded approach.
 
-\- A guide/tutorial on how to build your project from the technical side.
+
+
+Reflection on the things I learned.
+
+This turns out to be one of the class that i learnt most. Although my work was not so technically advanced, it was rather basic and simple, but I really take time to understand and solve things on my own. I would like to say I appreciate Matti of making things simple, easy, and fun to learn, i couldn’t imagine myself doing it on my own initiative, it look too intimidating to even start from afar. Then i would also want to mention our classmates as well. Everyone really taking the effort to learn and raise the bar, and that really push me to higher the standard of my work as well. It was also really important to struggle in the same pace as others, so it feels like im not stupid or alone, we just kinda help each other. I remember I talked to Oskar about his challenges at the time, something that could be instantly asked Chatgpt but he said he doesn’t want to do that, he want to try solving on his own to which i really get inspired and started to do that myself as well. It took me 2 whole day to debug the wifi connection between arduino and processing, which in the class when following matti, it was no more than 10 minutes. I was really committed in trying to make it work and understand it to some extent on my own. It felt like a waste of time but i ended up remember how to do it and can do it myself next time (or at least less struggle?) and i admittedly seek a lot of help from matti in the earlier classes from my first year, and i wanted to change my approach this time. To see that he is also searching things up and learn on the go not just some wizard that know everything by heart encourage me to do the same as well. I like the excercise when he just gave us many sensors to tangle with and an instruction online and let us figure out on our own. It felt like an icebreaker, because all of those components look intimidating but once you actually try it it was much more fun and simpler than it look and it lay a good practice of you having to try things around and let the possibilities of what can we creatively use come to you as well.
+
+This was an unexpected outcome, I weirdly now like soldering, arduino, sensor stuff but ok maybe not the mechanical stuff that require precision like cutting wood/ attached motors, drilling etc. my spontaneous and wing-it nature haven’t grow a fond of it just yet. (Maybe in the future) that is another challenge i experienced, the physics and mechanical stuff. Because things work perfectly in my head but in reality there are a lot of things that can go wrong, the hardware can be hard to know what was wrong with it sometimes (you have to unplug, plug again, change port, change the battery, change some details that it so minor but cause everything to go down) then you also have to take in account of all the forces in the world (gravity, friction, frequency, angle, durability (ok the last 2 were not forces) and what not) working digitally and physically require different approaches and things you have to consider. But all in all, this was a surprise finding for me and i want to do more of physical computing in the future (i have so many ideas already xD)
+
+
+My most common mistake and how to fix them + my learning lesson
+
+* exit status 1 error (change port, reset button, hold another button and change port again then also change port digitally in arduino as well)
+
+* Wifi not connected (the wifi name gotta have no weird symbol like ‘, “ and sometimes changing the password is kinda a reset button and help sometime)
+
+* Details matter (so annoying) the different voltage or the one line of code that you need to change matters, but theres no how to fix it on this one. U just got to f around and find out
+
+* Hammer things neatly, the screw can bent and ruin the whole mechanical movement 
+
+* Wear gloves and use proper tool, dont be scared by the look of the drill, machine and such. It was actually much faster and safer than u do it with a wacky hammer (i learned it the hard way)
+
+* Plan your circuit design before sewing it! A wing-it nature bite me on this one, the textile keyboard could have looked better, nicer, and less glitchy only if i plan it through first
+
+* Things will go wrong and that’s ok. If you really cant fix it and on a time crunch you just got to kill your baby (initial idea) and adapt along the way. My wing-it nature finally has its pros
+
+* Learning slowly will kill your patience and make you self doubt but its much more rewarding in the end (this learning point is only apply in this context, its not always true, this is case by case😂)
+
+* Everyone is their own biggest critics and we can help each other, everyone is so talented and create good work but we all in the is it actually good? State. Its so nice to see how we all try to help each other and giving nice ideas 💡 
+
+Lastly, i got this reminder word for me (note* for ME and me only) that i picked up from this class ‘do i wanna excel in class or do i wanna learn’ sure, i can do so much more by using every chatgpt output or ask matti to help solve every challenge i face but am i learning? What then, am i actually here for.
