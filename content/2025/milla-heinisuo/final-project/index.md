@@ -16,7 +16,27 @@ Toaster is made from the robot made on the course, with different behavior, and 
 
 ![](featured-pigeon.jpg)
 
-## Process
+## Construction process
+
+Starting with the robot made during the course, I modified it's driving behavior to be more lifelike. The next step was to start trying out how the touch sensor worked and could be used, and modifying the code to work with this. The next part was to figure out how the robot would behave when being pet. I decided on wiggling, to reflect the real-life wing-flapping/shaking movement pigeons do when they are excited.
+
+Next, I wanted to add sound. First using only a speaker, and then adding an amplifier as well. I used the library BackgroundAudio, that allowed me to stream audio from a website to the Pico. To play the pigeon mp3 that I had found on xeno-canto, I had to upload it to Dropbox, create a share-link, modify it so that it became a download link, and then use that as the "web radio" for the library. Getting the sound to work with everything else was probably the hardest part of this project code-wise. Parsing the important and not-important parts of the library-included example took quite a while, and after combining the essential parts with my original robot code, the program kept crashing randomly after about 10-15 seconds. This eventually just kind of  stopped happening, so I'm still not quite sure what caused it.
+
+After all of the components were working, I turned my attention to making the cover for the robot. I made the shape of a pigeon out of wire, then covered it in paper and tape. After that I cut this open, separating the head/neck from the body, and into multiple flat pieces. Then I traced these pieces onto felt fabric, cut them, and sewed them together. After this, I realized that I had both made the neck way too short, and the body just a little bit too small.
+
+![](wire.jpeg)
+
+![](bird-mould.jpeg)
+
+![](pattern-parts.jpeg)
+
+I was running out of time, so I had a small breakdown. I decided to forgo the pecking motion, and focus my efforts on making a slightly larger body for the pigeon. Attaching the head to the body also proved a bit difficult, as they were now different sizes, and I didn't have time to remake the head as well. But, I worked out a decent-enough solution, but I would've wanted it to be a lot prettier. Next I attached the eyes, beak, wings and tail.
+
+After the cover was finally done, and close-enough to the right size, I had to attach it to the robot. Attaching all of the different components to the robot base was something I definitely didn't plan out enough, and since I was really running out of time, I just duct-taped everything together. It's a mess...
+
+![](tape-mess.jpeg "All components \"attached\"")
+
+Now, after everything had been (not-so-securely) attached, I began testing out the touch-functionality. I realized that the fabric was too thick to get the capacitive touch sensor to recognize it was being touched. As I was testing out the petting with some tinfoil / wire, the sensor broke. This was the night before the presentations, which meant I wasn't able to test it at all before the morning of the presentations. Just in case I wouldn't be able to get a new sensor, and have a working version, I also made an alternative version of the code with no touch functionality, as a backup. Thankfully I didn't have to use it! The sensor had started working again, but even in the final product, the area where it worked was quite small, and even when touching the right spot, the sensor worked pretty inconsistently.
 
 ## Reflection
 
@@ -32,6 +52,7 @@ All in all, I'm quite happy with what I accomplished with the short amount of ti
 
 * Better construction under the cover (not just taped together, like it is now)
 * A nicer-looking attachment of the cover to the cart below
+* Make the touching/petting work more consistently
 * Using something more stable for the audio (and something that doesn't need me to write out the wi-fi name and password every time Toast is in a different place)
 * Quieter motors, so the audio is clearer
 
