@@ -52,6 +52,7 @@ All in all, I'm quite happy with what I accomplished with the short amount of ti
 
 * Better construction under the cover (not just taped together, like it is now)
 * A nicer-looking attachment of the cover to the cart below
+* Make it peck!
 * Make the touching/petting work more consistently
 * Using something more stable for the audio (and something that doesn't need me to write out the wi-fi name and password every time Toast is in a different place)
 * Quieter motors, so the audio is clearer
