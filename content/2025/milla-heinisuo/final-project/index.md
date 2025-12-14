@@ -10,11 +10,33 @@ showBgImage: false
 
 ## Description
 
+Toaster (or Toast, for short) is a cute, soft and approachable robot, who looks and acts like a pigeon begging for pets.
+
+Toaster is made from the robot made on the course, with different behavior, and added touch and sound functionality, all covered in fleece. Toast mostly drives around aimlessly, making cooing noises. But when he detects something close ahead, he does a begging-motion (moving back and forth). If Toast doesn't get any pets in a short while, he turns around and goes back to aimless wandering. If he *does* get pets though, he wiggles in place, while cooing.
+
 ![](featured-pigeon.jpg)
+
+## Process
 
 ## Reflection
 
-### Process
+As I have now been studying computer science for over three years, the coding part was usually kind of trivial (though I have to admit that I did write some pretty terrible code, even for the final project). Most parts were very easy to get working on their own, but I did struggle with combining different parts together, particularly trying to add the audio streaming into my, otherwise complete and working, robot code. It was really fun to finally use code to make something actually creative, and not just websites or coding assignments. Seeing the effects of my code on something that is actually in the physical space was also very rewarding.
+
+Though, debugging and adjusting the behavior of the pigeon turned out to be pretty annoying, and I wish there would've been some way to test the movements of the robot without having to disconnect it from the computer first, and then moving it into a suitably large space to see how it was moving now.
+
+Unlike working with code, I had not touched electronics since 7th grade (when I made a flashlight). I did remember more than I thought I did, and I picked (back) up how these things worked pretty quickly. I would've wanted to explore more different types of sensors and motors, but this course did kind of inspire me to maybe pick up a microcontroller for myself, so well see if I end up doing that by myself later...
+
+All in all, I'm quite happy with what I accomplished with the short amount of time I had. I would've wanted to polish up some things, and add more features (mainly the pecking, I think I'm the most upset about not finishing that). But Toast did turn out a lot cuter than I imagined, and lots of people seemed to like him as well!
+
+### Future improvements
+
+* Better construction under the cover (not just taped together, like it is now)
+* A nicer-looking attachment of the cover to the cart below
+* Using something more stable for the audio (and something that doesn't need me to write out the wi-fi name and password every time Toast is in a different place)
+* Quieter motors, so the audio is clearer
+
+  * Also better audio quality in general, maybe using a better quality speaker & amplifier? And/or cleaning up the background noise from the audio file
+* Figure out why it crashes sometimes and fix that :D
 
 ## Code
 
@@ -460,10 +482,9 @@ void loop() {
   // small delay to slow down the loop
   delay(1);
 }
-
 ```
 
-## Original Idea
+## Original Idea / proposal
 
 A pigeon robot that hops towards people to peck at them. The bird calms down when it is touched. When no people are near, it pecks at the ground. The robot would also make bird-like coos.
 
