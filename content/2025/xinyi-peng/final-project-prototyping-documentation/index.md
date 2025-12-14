@@ -114,8 +114,11 @@ void draw()
 \
 The first version works if I use conductive tap to be the bridge of every pair of interrupts, but I failed to reach my goal of using the ball as trigger. There are several reasons I concluded from this:
 
-* The width of the conductive tap areas now is 5mm, is should be bigger for the ball to touch and stay;
-* The diameter of ball I use now is 6mm, I should use bigger ball to increase the conductive area;
-* Also for increasing the conductive region, instead to the current flat structure, I should use a “U valley” shape as the ball-rolling zone.
+> 1. The width of the conductive tap areas now is 5mm, is should be bigger for the ball to touch and stay;
+> 2. The diameter of ball I use now is 6mm, I should use bigger ball to increase the conductive area(so I got myself some 1.2mm large ones);
+> 3. Also for increasing the conductive region, instead to the current flat structure, I should use a “U valley” shape as the ball-rolling zone.
 
-  ![](fullsizerender.jpeg)
+![](fullsizerender.jpeg)
+
+The second prototype version can give me a signal when I pivoted the box up side down! But to make this stable, I must **squeeze this box a little bit** to provide more contact area between the ball and the surface, which means that I should design a structure that bends to fit the ball shape.
+
