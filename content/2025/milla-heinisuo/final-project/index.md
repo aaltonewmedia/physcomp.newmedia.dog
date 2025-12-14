@@ -24,11 +24,11 @@ Next, I wanted to add sound. First using only a speaker, and then adding an ampl
 
 After all of the components were working, I turned my attention to making the cover for the robot. I made the shape of a pigeon out of wire, then covered it in paper and tape. After that I cut this open, separating the head/neck from the body, and into multiple flat pieces. Then I traced these pieces onto felt fabric, cut them, and sewed them together. After this, I realized that I had both made the neck way too short, and the body just a little bit too small.
 
-![](wire.jpeg)
+![](wire.jpeg "Wireframe")
 
-![](bird-mould.jpeg)
+![](bird-mould.jpeg "Wireframe covered in tape and paper")
 
-![](pattern-parts.jpeg)
+![](pattern-parts.jpeg "Pattern pieces")
 
 I was running out of time, so I had a small breakdown. I decided to forgo the pecking motion, and focus my efforts on making a slightly larger body for the pigeon. Attaching the head to the body also proved a bit difficult, as they were now different sizes, and I didn't have time to remake the head as well. But, I worked out a decent-enough solution, but I would've wanted it to be a lot prettier. Next I attached the eyes, beak, wings and tail.
 
