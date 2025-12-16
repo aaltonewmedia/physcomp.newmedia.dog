@@ -164,3 +164,4 @@ The final prototype works like this:
     allowfullscreen>
   </iframe>
 </div>
+Although in concern of time, I don’t have enough effort to use this sensor as a trigger of something, but I think in the future I can do some with this. Also, I have summarized some after prototyping:
