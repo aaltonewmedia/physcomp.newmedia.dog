@@ -690,8 +690,6 @@ void turn()
 
 ### Collision
 ```
-Collision:
-
 void beginContact(Contact cp) 
 {
   Fixture f1 = cp.getFixtureA();
@@ -741,7 +739,6 @@ void groundParticle(WordParticles p)
 
 ### Dandelion
 ```
-Dandelion:
 class Dandelion 
 {
   float x, y;                         //the center of the dandelion             
