@@ -174,3 +174,98 @@ Although in concern of time, I don’t have enough effort to use this sensor as 
 
 > 1. The electric wires should use the soft ones with more flexibility;
 > 2. The plus and minus side soldering should be carefully avoided touching when pressing two side together.
+
+# Coding Part
+## Ball OSC_codeToProcessing
+```
+#include <WiFi.h>
+#include <ArduinoOSCWiFi.h>
+
+// WiFi stuff
+const char* ssid = "mainframe";
+const char* pwd = "12345678";
+
+// OSC setting
+// computer ip address
+const char* host = "192.168.50.231"; 
+const int recv_port = 12345;    // Arduino recieve com
+const int publish_port = 54321; // Arduino send com
+
+float ballA,ballB,ballC,ballD,ballE;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+
+  // WiFi ------------------>
+  // WiFi stuff (no timeout setting for WiFi)
+    WiFi.mode(WIFI_STA);
+
+    // Connect to the WiFi network
+    WiFi.begin(ssid,pwd);
+    while (WiFi.status() != WL_CONNECTED) {
+        Serial.print(".");
+        delay(500);
+    }
+
+    Serial.print("WiFi connected, IP = ");
+    Serial.println(WiFi.localIP()); // print arduino's own IP
+
+    // subscribe to receive osc messages that control the robot
+    OscWiFi.subscribe(recv_port, "/control",
+        [](const OscMessage& m) {
+            Serial.print(m.remoteIP());
+            Serial.print(" ");
+            Serial.print(m.remotePort());
+            Serial.print(" ");
+            Serial.print(m.size());
+            Serial.print(" ");
+            Serial.print(m.address());
+            Serial.print(" ");
+            Serial.print("Value: ");
+            float val = m.arg<float>(0);
+            Serial.println(val);
+        });
+
+  //ball pin
+  pinMode(D0,INPUT_PULLUP);
+  pinMode(D1,INPUT_PULLUP);
+  pinMode(D2,INPUT_PULLUP);
+  pinMode(D3,INPUT_PULLUP);
+  pinMode(D4,INPUT_PULLUP);
+}
+
+void loop() {
+  // update the OSC sending and receiving
+  OscWiFi.update();
+
+  // put your main code here, to run repeatedly:
+  //ball serial define
+  ballA=digitalRead(D0);
+  ballB=digitalRead(D1);
+  ballC=digitalRead(D2);
+  ballD=digitalRead(D3);
+  ballE=digitalRead(D4);
+
+  OscWiFi.send(host, publish_port, "/sensors", 
+      ballA,    // index 1
+      ballB,    // index 2
+      ballC,    // index 3
+      ballD,    // index 4
+      ballE     // index 5
+  );
+
+  Serial.print("A: ");
+  Serial.print(ballA);
+  Serial.print("B: ");
+  Serial.print(ballB);
+  Serial.print("C: ");
+  Serial.print(ballC);
+  Serial.print("D: ");
+  Serial.print(ballD);
+  Serial.print("E: ");
+  Serial.println(ballE);
+
+  delay(30);
+}
+```
