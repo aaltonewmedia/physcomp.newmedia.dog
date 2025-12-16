@@ -106,7 +106,9 @@ void draw()
   text(val,20,20);
 }
 ```
+
 Here is the final prototype that works with simple visual in processing:
+
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
   <iframe
     src="https://www.youtube.com/embed/Lz-LvIUfI_E"
@@ -117,13 +119,13 @@ Here is the final prototype that works with simple visual in processing:
   </iframe>
 </div>
 
-
 ## Ball-Slide Sensor Structure Test
 
 ![](img_8950.jpeg)
 
 \
 The first version works if I use conductive tap to be the bridge of every pair of interrupts, but I failed to reach my goal of using the ball as trigger. Here is the initial version that failed:
+
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
   <iframe
     src="https://www.youtube.com/embed/oxbjrm6M4dY"
@@ -135,6 +137,7 @@ The first version works if I use conductive tap to be the bridge of every pair o
 </div>
 
 There are several reasons I concluded from this:
+
 > 1. The width of the conductive tap areas now is 5mm, is should be bigger for the ball to touch and stay;
 > 2. The diameter of ball I use now is 6mm, I should use bigger ball to increase the conductive area(so I got myself some 1.2mm large ones);
 > 3. Also for increasing the conductive region, instead to the current flat structure, I should use a “U valley” shape as the ball-rolling zone.
@@ -142,6 +145,7 @@ There are several reasons I concluded from this:
 ![](fullsizerender.jpeg)
 
 The second prototype version can give me a signal when I pivoted the box up side down! But to make this stable, I must **squeeze this box a little bit** to provide more contact area between the ball and the surface, which means that I should design a structure that bends to fit the ball shape.
+
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
   <iframe
     src="https://www.youtube.com/embed/8D2EjkFu-sE"
@@ -153,8 +157,10 @@ The second prototype version can give me a signal when I pivoted the box up side
 </div>
 
 ## Paper Folding Sensor Structure Test
+
 When I was introducing this idea to everyone in our class, it is really interesting to find that people all played this before, so I guess this interaction must be a fun experience as a connection of their childhood memories and familiar gestures.
 The final prototype works like this:
+
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
   <iframe
     src="https://www.youtube.com/embed/S-RRjogM4I4"
@@ -165,3 +171,6 @@ The final prototype works like this:
   </iframe>
 </div>
 Although in concern of time, I don’t have enough effort to use this sensor as a trigger of something, but I think in the future I can do some with this. Also, I have summarized some after prototyping:
+
+1. The electric wires should use the soft ones with more flexibility;
+2.
