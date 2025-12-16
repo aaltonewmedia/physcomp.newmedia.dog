@@ -738,3 +738,139 @@ void groundParticle(WordParticles p)
   }
 }
 ```
+
+### Dandelion
+```
+Dandelion:
+class Dandelion 
+{
+  float x, y;                         //the center of the dandelion             
+  ArrayList<WordParticles> particles; //list of the seed
+  ArrayList<Joint> joints;            //list of the joints
+  Body centerAnchor;                  //list of the anchors
+  boolean isBlown = false;            
+  float stemAlpha = 255;              
+  String[] dict;    
+  float radius;
+  float cx1, cy1, cx2, cy2;          // the offset for drawing the stem lines
+
+  Dandelion(float x, float y, float cx1, float cy1, float cx2, float cy2, float r, String[] dict) 
+  {
+    this.x = x;
+    this.y = y;
+    this.dict = dict;
+    this.radius = r;
+    this.cx1 = cx1;
+    this.cy1 = cy1;
+    this.cx2 = cx2;
+    this.cy2 = cy2;
+    
+    particles = new ArrayList<WordParticles>();
+    joints = new ArrayList<Joint>();
+    createBody(); 
+  }
+
+  void createBody() 
+  { 
+    //create the body
+    BodyDef bd = new BodyDef();
+    bd.position.set(box2d.coordPixelsToWorld(x, y));//send boundary position to libray
+    bd.type = BodyType.STATIC;
+    centerAnchor = box2d.createBody(bd);
+
+    //create the seeds
+    int totalSeeds = max(20,dict.length);
+    
+    for (int i = 0; i < totalSeeds; i++) 
+    {
+      float angle = map(i, 0, totalSeeds, 0, TWO_PI);
+      float px = x + this.radius * cos(angle);
+      float py = y + this.radius * sin(angle);
+      
+      String txt = dict[i % dict.length]; 
+      WordParticles p = new WordParticles(px, py, txt);
+      particles.add(p);
+      
+      DistanceJointDef djd = new DistanceJointDef();
+      djd.bodyA = centerAnchor;
+      djd.bodyB = p.body;
+      djd.length = box2d.scalarPixelsToWorld(this.radius);
+      djd.frequencyHz = 3.0;
+      djd.dampingRatio = 0.1;
+      
+      Joint j = box2d.world.createJoint(djd);
+      joints.add(j);
+    }
+  }
+
+  //start blowing
+  void blow() 
+  {
+    if (!isBlown) 
+    {
+      for (Joint j : joints) 
+      {
+        box2d.world.destroyJoint(j);
+      }
+      joints.clear(); 
+      isBlown = true; 
+    }
+  }
+
+  void applyWind(Vec2 windForce) 
+  {
+    if (isBlown) 
+    {
+      for (WordParticles p : particles) 
+      {
+        p.body.applyForce(windForce, p.body.getWorldCenter());
+      }
+      //if isBlown, let stem disapear
+      if (stemAlpha > 0) stemAlpha = stemAlpha - 2;
+    }
+  }
+
+  void display() 
+  {
+    noFill();
+    stroke(250, 255, 255, stemAlpha);
+    strokeWeight(2);
+    bezier(x, y, x + cx1, y + cy1, x + cx2, height - cy2, x, height);
+
+    for (WordParticles p : particles) 
+    {
+      p.updateSound(); // use for detect delay sound play
+      p.display();
+    }
+  }
+  
+  void reset() 
+  {
+    isBlown = false;
+    stemAlpha = 255; 
+
+    int totalSeeds = particles.size();
+    
+    for (int i = 0; i < totalSeeds; i++) 
+    {
+      float angle = map(i, 0, totalSeeds, 0, TWO_PI);
+      float px = x + this.radius * cos(angle);
+      float py = y + this.radius * sin(angle);
+
+      WordParticles p = particles.get(i);
+      p.resetPos(px, py);
+
+      // the same with createBody
+      DistanceJointDef djd = new DistanceJointDef();
+      djd.bodyA = centerAnchor;
+      djd.bodyB = p.body;
+      djd.length = box2d.scalarPixelsToWorld(this.radius);
+      djd.frequencyHz = 3.0;
+      djd.dampingRatio = 0.1;
+      
+      Joint j = box2d.world.createJoint(djd);
+      joints.add(j);
+    }
+  }
+}
+```
