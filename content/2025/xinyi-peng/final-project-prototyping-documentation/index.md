@@ -106,6 +106,17 @@ void draw()
   text(val,20,20);
 }
 ```
+Here is the final prototype that works with simple visual in processing:
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+  <iframe
+    src="https://www.youtube.com/embed/Lz-LvIUfI_E"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
 
 ## Ball-Slide Sensor Structure Test
 
