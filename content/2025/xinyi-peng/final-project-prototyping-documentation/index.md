@@ -871,3 +871,160 @@ class Dandelion
   }
 }
 ```
+
+### Text Particles Object
+```
+class WordParticles 
+{
+  float w;
+  float h;
+  String content;  
+  Body body;
+  color col;
+  boolean hasHitGround = false;
+  
+  //sound play variable
+  boolean hasPlayed = false;
+  boolean isScheduled = false;
+  long triggerTime = 0;
+  //every textParticle has its own sound
+  AudioSample mySound;
+  
+  WordParticles(float x, float y, String c) 
+  {
+    this.content = c;
+    //col = color(random(50), random(100, 200), random(200, 255));//random blue
+    col = 255;
+    
+    //load audio files according to text content
+    try 
+    {
+      //go to file data to find the name of its audio
+      mySound = minim.loadSample(content + ".mp3", 512);
+    } 
+    catch (Exception e) 
+    {
+      println("Could not load sound for: " + content);
+    }
+    
+    //set the physical box accodingt to the text size
+    textSize(30); 
+    w = textWidth(content); 
+    h = textAscent() + textDescent(); 
+    
+    //padding
+    float padding = 2;
+    w = w + padding;
+    h = h + padding;
+    
+    //create a object with w&h at the pos of (x,y)
+    makeBody(new Vec2(x, y), w, h);
+  }
+  
+  void display() 
+  {
+    //invisible physical body part
+    //get the position ofbody on screen
+    Vec2 pos = box2d.getBodyPixelCoord(body);
+    //get the rotate angle of body, save into a
+    float a = body.getAngle();
+
+    //draw this object on window according to the pos&rotate of the body
+    pushMatrix();
+    translate(pos.x, pos.y);
+    rotate(-a);
+    
+    fill(col);
+    noStroke();
+    textAlign(CENTER, CENTER);
+    textSize(28);
+    text(content, 0, 0);
+    popMatrix();
+  }
+  
+  //create a body with physical attributes in Box2D world
+  void makeBody(Vec2 center, float w, float h) 
+  {
+    this.w= w;
+    this.h = h;
+    
+    //body define
+    BodyDef bd = new BodyDef();
+    bd.type = BodyType.DYNAMIC;
+    bd.position.set(box2d.coordPixelsToWorld(center));//screen to world coordinates switch
+    
+    //high damping makes it float like a seed/feather
+    bd.linearDamping = 8;
+    bd.angularDamping = 1.0;
+    
+    //the birth of this body
+    body = box2d.createBody(bd);
+    //let the object change physical state accorfing to boundary twist
+    body.setSleepingAllowed(false);
+
+    //Figure out the box2d coordinates
+    PolygonShape sd = new PolygonShape();
+    float box2dW = box2d.scalarPixelsToWorld(w/2);
+    float box2dH = box2d.scalarPixelsToWorld(h/2);
+    sd.setAsBox(box2dW, box2dH);
+
+    //defien fixture(texture)
+    FixtureDef fd = new FixtureDef();
+    fd.shape = sd;
+    //low density so wind affects it easily
+    fd.density = 0.5;
+    fd.friction = 0.3;
+    fd.restitution = 0.2; 
+
+    //attach the fixture to body
+    body.createFixture(fd);
+    body.setUserData(this);
+    body.setAngularVelocity(random(-1, 1));
+  }
+  
+  void resetPos(float x, float y) 
+  {
+    Vec2 pos = box2d.coordPixelsToWorld(x, y);
+    body.setTransform(pos, 0);       //return to previous position
+    body.setLinearVelocity(new Vec2(0,0));  
+    body.setAngularVelocity(0);      
+    body.setLinearDamping(8.0);
+    
+    hasHitGround = false;
+    hasPlayed = false;      
+    isScheduled = false;
+  }
+  
+  void scheduleSound() 
+  {
+    if (isScheduled || hasPlayed) return;
+    
+    isScheduled = true;
+    int delay = (int)random(100, 11000); 
+    triggerTime = millis() + delay;
+  }
+  
+  void updateSound() 
+  {
+    if (isScheduled && !hasPlayed) 
+    {
+      if (millis() >= triggerTime) 
+      {
+        playSound();
+        hasPlayed = true; 
+      }
+    }
+  }
+  
+  void playSound() 
+  {
+     if (mySound != null) 
+     {
+       float randomGain = random(-20.0, -80.0); 
+       mySound.setGain(randomGain);
+       mySound.trigger(); 
+     }
+  }
+}
+```
+
