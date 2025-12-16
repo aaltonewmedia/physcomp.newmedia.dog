@@ -668,7 +668,6 @@ class Boundary
 
 ## Boundary Twist
 ```
-Boundary Twist:
 void turn()
 {
   int currentIndex = -1;
