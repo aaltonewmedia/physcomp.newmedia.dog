@@ -153,4 +153,4 @@ The second prototype version can give me a signal when I pivoted the box up side
 </div>
 
 ## Paper Folding Sensor Structure Test
-It is really
+When I was introducing this idea to everyone in our class, it is really interesting to find that 
