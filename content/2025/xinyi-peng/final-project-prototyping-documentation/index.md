@@ -176,7 +176,8 @@ Although in concern of time, I don’t have enough effort to use this sensor as 
 > 2. The plus and minus side soldering should be carefully avoided touching when pressing two side together.
 
 # Coding Part
-## Ball OSC_codeToProcessing
+## Arduino Code
+### Ball OSC_codeToProcessing
 ```
 #include <WiFi.h>
 #include <ArduinoOSCWiFi.h>
@@ -269,4 +270,5 @@ void loop() {
   delay(30);
 }
 ```
-## 
+### 
+
