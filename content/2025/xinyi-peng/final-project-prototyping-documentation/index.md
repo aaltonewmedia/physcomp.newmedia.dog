@@ -348,4 +348,250 @@ void loop() {
 ```
 
 ## Processing Code
+```
+// connect arduino with processing
+import oscP5.*;
+import netP5.*;
+OscP5 oscP5;
+NetAddress myRemoteLocation;
+
+float valBlow, prevBlow=0, blowCount=0; // reserve sata received from the serial port
+float valBallA,valBallB,valBallC,valBallD,valBallE;
+
+//Box2D library
+import shiffman.box2d.*;
+import org.jbox2d.common.*;
+import org.jbox2d.dynamics.joints.*;
+import org.jbox2d.collision.shapes.*;
+import org.jbox2d.collision.shapes.Shape;
+import org.jbox2d.common.*;
+import org.jbox2d.dynamics.*;
+import org.jbox2d.dynamics.contacts.*;
+Box2DProcessing box2d;
+Boundary mainFloor; // save the floor
+
+//Boundary part
+ArrayList<Boundary> walls; //save the walls
+//the variable need for boundary transformation
+float ang, smoothFactor=0.1, activeAng; // the angle for the boundary twist
+float BallPins[] = {valBallA,valBallB,valBallC,valBallD,valBallE};
+float targetAngles[] = {radians(30), radians(14.5), radians(0), radians(-14.5), radians(-30)};
+float smoothingFactor = 0.1;
+float finalTarget = 0;
+boolean isSoundActive;
+
+//Object part
+String[] dictA = {"but", "time", "is", "a", "wind", "that", "never", "stops", "blowing", "from", "dust", "we", "rise", "and", "to", "dust", "we", "shall", "return", "breaking", "apart", "into", "atoms", "into", "memories", "into", "light"};
+String[] dictB = {"we", "are", "made", "of", "starstuff", "we", "are", "a", "way", "for"};
+String[] dictC = {"a", "fleeting", "moment", "of", "being","in", "the", "vast", "design", "gravity", "holds", "us", "for", "a", "while"};
+String[] dictD = {"the", "cosmos", "to", "know", "itself"};
+
+Dandelion[] dandelions = new Dandelion[4];
+Body centerAnchor;
+//delay the trigger
+boolean isWaiting = false;
+int startTime = 0;
+int targetIndex = -1;
+
+//the center coordinates
+float ori_X;
+float ori_Y;
+boolean isBlown = false;
+
+//the sound part
+import ddf.minim.*;
+Minim minim;
+AudioPlayer windPlayer;
+AudioPlayer bgMusic;
+float targetPan, currentPan = 0.5;
+
+//reset the dandelion
+int resetStartTime = 0;
+boolean isResetting = false;
+
+
+void setup()
+{
+  size(1920,1080);
+  
+  //OSC setting
+  frameRate(60);
+  //XIAO send ---> processing
+  oscP5 = new OscP5(this, 54321);
+  //processing gives order to ---> XIAO //maybe I dont need but keep it
+  myRemoteLocation = new NetAddress("192.168.50.172", 12345);
+  
+  minim = new Minim(this);
+  windPlayer = minim.loadFile("soft_wind.mp3"); //load the widn sound effect
+  windPlayer.setGain(10.0);
+  bgMusic = minim.loadFile("bg_forest.mp3");
+  bgMusic.loop();
+  bgMusic.setGain(5.0);
+  
+  //give value to the center of the dandelion
+  ori_X = width/2;
+  ori_Y = 200;
+  
+  //Box2D part
+  box2d = new Box2DProcessing(this);
+  box2d.createWorld();
+  box2d.setGravity(0, -50);
+  mainFloor = new Boundary(width/2, height + 100, width+300, 300, radians(ang));
+  walls = new ArrayList<Boundary>();
+  walls.add(new Boundary(0, height/2, 20, height, 0)); //left wall
+  walls.add(new Boundary(width, height/2, 20, height, 0));
+  
+  //Object dandelions
+  float spacing = width / 5.0; 
+  dandelions[0] = new Dandelion(width/2-350, height*0.65, 90, 90, 90, 20, 90, dictB); 
+  dandelions[1] = new Dandelion(width/2+450, height*0.72, -90, 40, -90, 40, 90, dictD);
+  dandelions[2] = new Dandelion(width/2+150, height*0.55, -90, 90, -20, -20, 110, dictC);
+  dandelions[3] = new Dandelion(width/2-220, height*0.35, 160, 160, 160, 90, 120, dictA);
+
+  box2d.listenForCollisions();
+}
+
+void draw()
+{
+  //refresh the BallPins value
+  BallPins = new float[]{valBallA, valBallB, valBallC, valBallD, valBallE};
+  
+  background(0);
+  
+  //serials shows on the window
+  fill(255);
+  textSize(15);
+  text("Blow"+valBlow,40,100); 
+  text("valBallA"+valBallA,40,140);
+  text("valBallB"+valBallB,40,160);
+  text("valBallC"+valBallC,40,180);
+  text("valBallD"+valBallD,40,200);
+  text("valBallE"+valBallE,40,220);
+  
+  //sound panning part
+  if(valBallA == 1)      targetPan = 0.0;   
+  else if(valBallB == 1) targetPan = 0.25;  
+  else if(valBallC == 1) targetPan = 0.5;   
+  else if(valBallD == 1) targetPan = 0.75;  
+  else if(valBallE == 1) targetPan = 1.0;  
+  //println(targetPan);
+
+  currentPan=currentPan+(targetPan-currentPan)*smoothFactor;
+  float minimPan = map(currentPan,0,1,-1,1);
+  windPlayer.setPan(minimPan);
+  
+  //detect blow
+  if (valBlow == 1 && prevBlow == 0) 
+  {
+    if (!isWaiting) 
+    {
+      int foundIndex = -1;
+
+      //go through all the dandelions, find the first !isBlown
+      for (int i = 0; i < dandelions.length; i++) 
+      {
+        if (dandelions[i].isBlown == false) 
+        {
+          foundIndex = i;
+          windPlayer.rewind();
+          windPlayer.play();
+          break; //if find, stop loop
+        }
+      }
+
+      //if find a dandelion that is not blown
+      if (foundIndex != -1) 
+      {
+        targetIndex = foundIndex;
+        startTime = millis(); // recored time
+        isWaiting = true;     // start to break mode
+      }
+    }
+  }
+
+  if (isWaiting) 
+  {
+    if (millis() - startTime >= 800) 
+    {
+      if(targetIndex != -1 && targetIndex < dandelions.length)
+      {
+         dandelions[targetIndex].blow();
+      }
+      isWaiting = false; 
+    }
+  }
+  prevBlow = valBlow; //refresh last state
+  
+  Vec2 wind = new Vec2(50, random(-10, 10)); 
+  //Dandelion display
+  for (Dandelion d : dandelions) 
+  {
+    d.display();      
+    d.applyWind(wind); 
+  }
+  
+  //Box2D part
+  box2d.step();
+  mainFloor.display();
+  //boundary display
+  for (Boundary wall: walls)
+  {
+    wall.display();
+  }
+  turn(); // execute boundary transformation
+  
+  //reset dandelion
+  boolean allBlown = true;
+  //detect whether all of them has bee blown
+  for (Dandelion d : dandelions) 
+  {
+    if (!d.isBlown) 
+    {
+      allBlown = false;
+      break;
+    }
+  }
+
+  if (allBlown && !isResetting) 
+  {
+    resetStartTime = millis();
+    isResetting = true;
+  }
+
+  //if in resetMode, check time, execute reset after 5s
+  if (isResetting) 
+  {
+    if (millis() - resetStartTime > 15000) 
+    {
+      for (Dandelion d : dandelions) //execute reset
+      {
+        d.reset();
+      }
+      isResetting = false;
+      blowCount = 0;  
+      targetIndex = -1;
+      isWaiting = false; 
+    }
+  }
+}
+
+//get the signal from arduino
+void oscEvent(OscMessage theOscMessage) 
+{
+  if (theOscMessage.checkAddrPattern("/sensors") == true) 
+  {
+    valBallA = 1-theOscMessage.get(0).floatValue(); 
+    valBallB = 1-theOscMessage.get(1).floatValue(); 
+    valBallC = 1-theOscMessage.get(2).floatValue(); 
+    valBallD = 1-theOscMessage.get(3).floatValue();
+    valBallE = 1-theOscMessage.get(4).floatValue();
+    println("matti_1");
+  }
+  if (theOscMessage.checkAddrPattern("/sensors_2") == true) 
+  {
+    valBlow  = 1-theOscMessage.get(0).floatValue(); 
+    println("matti_2");
+  }
+}
+```
 
