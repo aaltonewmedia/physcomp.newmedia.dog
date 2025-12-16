@@ -665,3 +665,26 @@ class Boundary
   }
 }
 ```
+
+## Boundary Twist
+```
+Boundary Twist:
+void turn()
+{
+  int currentIndex = -1;
+  for(int i=0; i<BallPins.length; i++)
+  {
+    if(BallPins[i]==1.0)
+    {
+      currentIndex = i;
+    }
+  }
+  if(currentIndex != -1)
+  {
+    activeAng = targetAngles[currentIndex];
+  }
+  ang=ang+(activeAng-ang)*smoothFactor;
+  mainFloor.updateAngle(ang);
+  //println(ang);
+}
+```
