@@ -690,5 +690,51 @@ void turn()
 
 ### Collision
 ```
+Collision:
 
+void beginContact(Contact cp) 
+{
+  Fixture f1 = cp.getFixtureA();
+  Fixture f2 = cp.getFixtureB();
+  Body b1 = f1.getBody();
+  Body b2 = f2.getBody();
+  Object o1 = b1.getUserData();
+  Object o2 = b2.getUserData();
+
+  if (o1 == null || o2 == null) return;
+
+  if (o1.getClass() == WordParticles.class && o2.getClass() == Boundary.class) 
+  {
+    groundParticle((WordParticles) o1);
+  }
+  else if (o2.getClass() == WordParticles.class && o1.getClass() == Boundary.class) 
+  {
+    groundParticle((WordParticles) o2);
+  }
+
+  else if (o1.getClass() == WordParticles.class && o2.getClass() == WordParticles.class) 
+  {
+    WordParticles p1 = (WordParticles) o1;
+    WordParticles p2 = (WordParticles) o2;
+
+    if (p1.hasHitGround && !p2.hasHitGround) 
+    {
+       groundParticle(p2); 
+    }
+    else if (!p1.hasHitGround && p2.hasHitGround) 
+    {
+       groundParticle(p1); 
+    }
+  }
+}
+
+void groundParticle(WordParticles p) 
+{
+  if (!p.hasHitGround) 
+  {
+    p.hasHitGround = true;        
+    p.body.setLinearDamping(0.5); 
+    p.scheduleSound(); //trigger text particle sound      
+  }
+}
 ```
