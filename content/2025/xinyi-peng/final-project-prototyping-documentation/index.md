@@ -595,3 +595,73 @@ void oscEvent(OscMessage theOscMessage)
 }
 ```
 
+### Boundary
+```
+class Boundary
+{
+  // A boundary is a simple rectangle with x,y,width,and height
+  float x,y,w,h,angle;
+  
+  // But we also have to make a body for box2d to know about it
+  Body b;
+  
+  Boundary(float x,float y, float w, float h, float angle) 
+  {
+    this.x = x;
+    this.y = y;
+    this.w = w;
+    this.h = h;
+    this.angle = angle;
+  
+    PolygonShape sd = new PolygonShape();
+    // Figure out the box2d coordinates
+    float box2dW = box2d.scalarPixelsToWorld(w/2);
+    float box2dH = box2d.scalarPixelsToWorld(h/2);
+    // We're just a box
+    sd.setAsBox(box2dW, box2dH);
+    
+    // Create the body
+    BodyDef bd = new BodyDef();
+    bd.type = BodyType.KINEMATIC;
+    bd.position.set(box2d.coordPixelsToWorld(x,y)); //send boundary position to libray
+    //processing is clockwise, Box2D is anticlockwise
+    bd.angle = -angle; // send angle
+    b = box2d.createBody(bd); // create object
+    
+    // Attached the shape to the body using a Fixture, name of this Fixture is fd
+    FixtureDef fd = new FixtureDef();
+    fd.shape = sd;
+    fd.density = 1;
+    // Friction: 0(like ice), 1(sticky like glue)
+    fd.friction = 0.1;  
+    fd.restitution = 0.5;
+    // create this Fixture fd
+    b.createFixture(fd);
+    b.setUserData(this);
+    b.setUserData(this);
+  }
+  
+  void display() 
+  {
+    fill(0);
+    stroke(0);
+    rectMode(CENTER);
+    
+    pushMatrix();
+    translate(x,y);
+    rotate(angle);
+    rect(0,0,w,h);
+    popMatrix();
+  }
+  
+  void updateAngle(float newAngle) {
+    this.angle = newAngle; 
+  
+    // get the new position of boundary in Box2D world
+    Vec2 currentPos = b.getPosition();
+  
+    //let the position fit possessing clockwise direction
+    b.setTransform(currentPos, -newAngle); 
+  }
+}
+```
