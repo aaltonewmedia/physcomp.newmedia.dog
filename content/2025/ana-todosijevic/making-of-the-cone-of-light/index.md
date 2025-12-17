@@ -6,7 +6,7 @@ authors:
 image: making-of-cover.jpg
 showBgImage: false
 ---
-**The Cone of Light: Making of**
+
 
 Julia Lohmann
 
