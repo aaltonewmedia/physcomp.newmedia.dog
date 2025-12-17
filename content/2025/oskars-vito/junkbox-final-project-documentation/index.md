@@ -13,6 +13,20 @@ The junkbox is a 4x stepper motor MIDI to analog vibration box inspired by Koka 
 
 As a bonus thing to play with, for the Computational Art & Design part, I created a P5js sketch that is inspired by the Omnichord instrument.
 
+
+
+### Links to the project deliverables:
+
+Computational Art and Design:
+
+https://www.dropbox.com/scl/fo/xqhn2izlfye7ei80j64xj/AHm7kx0BKKnESYaUEB7pV00?rlkey=dhxt2x76qdi7vtee0xkzqh8pk&st=zyhnfjod&dl=0
+
+Physical Computing:
+
+https://www.dropbox.com/scl/fo/bd007ub9x9nxbs58ckr7n/AFvD2hyr7uq1clMtTXHshm4?rlkey=k95fyvhv91okjrcd43md3sg42&st=5dmhspp2&dl=0
+
+
+
 ![](physical-computing-_-computational-art-final-project.jpg)
 
 {{<youtube PXiHB2uNEgs>}}
@@ -20,7 +34,6 @@ As a bonus thing to play with, for the Computational Art & Design part, I create
 ## Motor tuning code
 
 ```
-
 //including the MIDI libraries
 #include <Arduino.h>
 #include <Adafruit_TinyUSB.h>
@@ -38,19 +51,19 @@ int potentiometer;
 int speed;
 
 //  MOTOR 1
-#define EN_PIN_1 5
+#define EN_PIN_1 16  // UPDATED from 5
 
 #define STEP_PIN_1 21
 #define DIR_PIN_1 20
 
 //  MOTOR 2
-#define EN_PIN_2 4
+#define EN_PIN_2 22  // UPDATED from 4
 
 #define STEP_PIN_2 19
 #define DIR_PIN_2 18
 
 //  MOTOR 3
-#define EN_PIN_3 1
+#define EN_PIN_3 15  // UPDATED from 1
 
 #define STEP_PIN_3 12
 #define DIR_PIN_3 13
@@ -75,12 +88,15 @@ int TIME = 1000; // Number of milliseconds for millis()
 //SETUP
 void setup() {
   analogReadResolution(12);
-  pinMode(5, OUTPUT);
-  pinMode(4, OUTPUT);
-  pinMode(1, OUTPUT);
-  pinMode(0, OUTPUT);
-  //lastTime = millis(); //variable that holds the start time
-   // put your setup code here, to run once:
+  
+  // Initialize enable pins UPDATED
+  pinMode(16, OUTPUT);  // EN_PIN_1
+  pinMode(22, OUTPUT);  // EN_PIN_2
+  pinMode(15, OUTPUT);  // EN_PIN_3
+  pinMode(0, OUTPUT);   // EN_PIN_4
+  
+  lastTime = millis(); //variable that holds the start time
+  
   Serial.begin(9600);
   // Manual begin() is required on core without built-in support e.g. mbed rp2040
   if (!TinyUSBDevice.isInitialized()) {
@@ -111,46 +127,45 @@ void setup() {
   // Do the same for MIDI Note Off messages.
   MIDI.setHandleNoteOff(handleNoteOff);
 
-      //MOTOR NR 1.
-  //enable pin
-  pinMode(5, OUTPUT);
+  //MOTOR NR 1.
+  //enable pin UPDATED
+  pinMode(16, OUTPUT);
   //step pin
   pinMode(21, OUTPUT);
   //direction pin
   pinMode(20, OUTPUT);
 
-      //MOTOR NR 2.
-  //enable pin
-  pinMode(4, OUTPUT);
+  //MOTOR NR 2.
+  //enable pin UPDATED
+  pinMode(22, OUTPUT);
   //step pin
   pinMode(19, OUTPUT);
   //direction pin
   pinMode(18, OUTPUT);
 
-      //MOTOR NR 3.
-  //enable pin
-  pinMode(1, OUTPUT);
+  //MOTOR NR 3.
+  //enable pin UPDATED
+  pinMode(15, OUTPUT);
   //step pin
   pinMode(12, OUTPUT);
   //direction pin
   pinMode(13, OUTPUT);
 
-      //MOTOR NR 4.
+  //MOTOR NR 4.
   //enable pin
   pinMode(0, OUTPUT);
   //step pin
   pinMode(3, OUTPUT);
-  //direction pin
-  pinMode(4, OUTPUT);
+  //direction pin UPDATED
+  pinMode(2, OUTPUT);  // Changed from 4 to 2 to match DIR_PIN_4
 
   digitalWrite(DIR_PIN_1, motorDirection);
   digitalWrite(DIR_PIN_2, motorDirection);
   digitalWrite(DIR_PIN_3, motorDirection);
-  digitalWrite(DIR_PIN_4, motorDirection); //and this one too. */
+  digitalWrite(DIR_PIN_4, motorDirection);
 
   //reading from the potentiometer
-  pinMode(26,INPUT);
-  lastTime = millis(); // Initialize lastTime
+  pinMode(26, INPUT);
 
 }
 
@@ -162,38 +177,41 @@ void loop() {
   // read any new MIDI messages
   MIDI.read();
 
-    //updating the MIDI
-      #ifdef TINYUSB_NEED_POLLING_TASK
-      // Manual call tud_task since it isn't called by Core's background
-      TinyUSBDevice.task();
-      #endif
+  //updating the MIDI
+  #ifdef TINYUSB_NEED_POLLING_TASK
+  // Manual call tud_task since it isn't called by Core's background
+  TinyUSBDevice.task();
+  #endif
 
   
   // calling the one step function for each stepper motor
-    oneStep(1, STEP_PIN_1);
-    oneStep(2, STEP_PIN_2);
-    oneStep(3, STEP_PIN_3);
-    oneStep(4, STEP_PIN_4);
+  oneStep(1, STEP_PIN_1);
+  oneStep(2, STEP_PIN_2);
+  oneStep(3, STEP_PIN_3);
+  oneStep(4, STEP_PIN_4);
 
 
   potentiometer = analogRead(26);
-  speed = map(potentiometer, 0, 4095, 10, 15000);
-  if(millis() - lastTime >= TIME){
-    Serial.println(speed);
-    lastTime = millis(); // Add this line to update lastTime
-  }
+  speed = map(potentiometer, 0, 4095, 16, 500);
+  
   
 }
 
 //MOTOR STEP FUNCTION
 
 void oneStep(byte motorNumber, byte stepPin) {
-  if ((micros() - prevStepMicros[motorNumber] >= motorSpeeds[motorNumber]) && (motorSpeeds[motorNumber] != 0))  //test whether the period has elapsed and don't use index 0
-  {
-    prevStepMicros[motorNumber] += motorSpeeds[motorNumber];
-    digitalWrite(stepPin, HIGH);
-    digitalWrite(stepPin, LOW);
+  if (motorSpeeds[motorNumber] == 0) return; // Exit early if motor should be stopped
   
+  unsigned long currentMicros = micros();
+  
+  // Check if enough time has elapsed (handles overflow correctly)
+  if (currentMicros - prevStepMicros[motorNumber] >= motorSpeeds[motorNumber])
+  {
+    prevStepMicros[motorNumber] = currentMicros; // Use current time instead of adding
+    digitalWrite(stepPin, HIGH);
+    delayMicroseconds(2); // Small delay to ensure the driver registers the pulse
+    digitalWrite(stepPin, LOW);
+    
   }
 }
 
@@ -205,53 +223,55 @@ void handleNoteOn(byte channel, byte pitch, byte velocity) {
     //gate_1 = true; //we have signal
     //update motor speed
     motorSpeeds[1] = speed;
+    Serial.println(speed);
   }
-    if(channel == 2){
+  if(channel == 2){
     digitalWrite(EN_PIN_2, 0);
     //gate_2 = true; //we have signal
     //update motor speed
     motorSpeeds[2] = speed;
+    Serial.println(speed);
   }
-   if(channel == 3){
+  if(channel == 3){
     digitalWrite(EN_PIN_3, 0);
     //gate_3 = true; //we have signal
     //update motor speed
     motorSpeeds[3] = speed;
+    Serial.println(speed);
   }
-   if(channel == 4){
+  if(channel == 4){
     digitalWrite(EN_PIN_4, 0);
     //gate_4 = true; //we have signal
     //update motor speed
     motorSpeeds[4] = speed;
+    Serial.println(speed);
   }
-
 }
 
 void handleNoteOff(byte channel, byte pitch, byte velocity) {
  
-  if(channel == 1 ){
+  if(channel == 1){
     //gate_1  = false;
     //motorSpeeds[1] = motorSpeedPitch_1[0];
     digitalWrite(EN_PIN_1, 1);
   }
-  if(channel == 2 ){
+  if(channel == 2){
     digitalWrite(EN_PIN_2, 1);
     //gate_2  = false;
     //motorSpeeds[2] = motorSpeedPitch_2[0];
   }
-  if(channel == 3 ){
+  if(channel == 3){
     digitalWrite(EN_PIN_3, 1);
     //gate_3  = false;
     //motorSpeeds[3] = motorSpeedPitch_3[0];
   }
-  if(channel == 4 ){
+  if(channel == 4){
     digitalWrite(EN_PIN_4, 1);
     //gate_4  = false;
     //motorSpeeds[4] = motorSpeedPitch_4[0];
   }
 
 }
-
 ```
 
 ## This is version 8 of the code.
