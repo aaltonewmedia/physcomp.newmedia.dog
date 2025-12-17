@@ -175,6 +175,9 @@ Although in concern of time, I don’t have enough effort to use this sensor as 
 > 1. The electric wires should use the soft ones with more flexibility;
 > 2. The plus and minus side soldering should be carefully avoided touching when pressing two side together.
 
+# Final Prototype Structure
+
+
 # Coding Part
 
 ## Arduino Code
