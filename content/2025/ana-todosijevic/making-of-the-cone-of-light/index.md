@@ -18,7 +18,7 @@ Matti Niinimäki
 
 Ana Todosijević
 
-{{<youtube SXcLUnRzVww>}}
+{{<youtube -qrcwp9X6Rs>}}
 
 Making The Cone of Light covered a wide range of operations, from developing the artistic content to working with electronics and motors, building the installation, programing, and sourcing and integrating the equipment. 
 
