@@ -176,13 +176,15 @@ Although in concern of time, I don’t have enough effort to use this sensor as 
 > 2. The plus and minus side soldering should be carefully avoided touching when pressing two side together.
 
 # \
+
 Final Prototype Structure
 
 ![](img_4290.jpeg)
 
+![](img_4304.jpeg)
 
-
-# Coding Part
+# \
+Coding Part
 
 ## Arduino Code
 
