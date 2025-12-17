@@ -141,7 +141,7 @@ function mousePressed(){ //click on the canvas to connect to Arduino
 </html>
 ```
 
-Green dots track shoulders, purple ball is the midway of each person, first value in the purple ball is that person’s index (which tends to jump between persons, so it wasn’t a reliable value to track for a target person on its own), second value is ID (doesn’t jump around, and every person that enters the view gets a new unique ID value that is higher than the previous), and through the combination of tracking the lowest index and lowest ID values a target can be identified and its X coordinate specifically accessed (the white ball). Clown faces are just for fun.
+Green dots track shoulders, purple ball is the midpoint between of each person's shoulders, first value in the purple ball is that person’s index (which tends to jump between persons, so it wasn’t a reliable value to track for a target person on its own), second value is ID (doesn’t jump around, and every person that enters the view gets a new unique ID value that is higher than the previous), and through the combination of tracking the lowest index and lowest ID values a target can be identified and its X coordinate specifically accessed (the white ball). Clown faces are just for fun.
 
 The target’s X coordinate can then be fed to Arduino IDE that controls a single stepper motor. A conveyor belt wraps around the motor on one end, and on the other end around an empty spinning wheel. The collision unit is attached to the conveyor belt, and when the motor spins, the belt along with the unit move.
 
@@ -233,7 +233,6 @@ void oneStep() {
   delay(1);
 }
 ```
-
 
 The modified code below was developed with the help of a friend to tackle the previously mentioned challenges. This code was employed at the Demo Day exhibit, and can be seen in action in the earlier video. With this the unit can speed up when at further distances apart from the target X coordinate, and it can also replicate even the slightest movements.
 
@@ -363,8 +362,6 @@ void fastStep(int stepDelay) {
 }
 ```
 
-
-
 ### WHAT I LEARNT
 
 This project ended up being quite challenging for someone like me who didn’t have much experience in programming, woodworking, or let alone metalworking, but that also meant I acquired plenty new knowledge in all areas.
@@ -399,10 +396,8 @@ Another challenge was that the laptop camera could see the entire space on the b
 
 ### SOME PARTS LINKS
 
-[Raspberry Pi Pico 2 W](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)
-
-[SY42STH38-1684A Stepper Motor](https://www.pololu.com/product/2267)
-
+[Raspberry Pi Pico 2 W](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)\
+[](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)[SY42STH38-1684A Stepper Motor](https://www.pololu.com/product/2267)\
 [A4988 Stepper Motor Driver](https://www.pololu.com/product/2128)
 
 ### CLOSE-UP PHOTO DOCUMENTATION
