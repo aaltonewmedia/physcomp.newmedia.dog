@@ -183,8 +183,9 @@ Final Prototype Structure
 
 ![](img_4304.jpeg)
 
-# \
-Coding Part
+![](img_4291.jpeg)
+
+# Coding Part
 
 ## Arduino Code
 
