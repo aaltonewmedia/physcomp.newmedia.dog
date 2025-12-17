@@ -20,7 +20,7 @@ At first the circuit counldn't give the correct HIGH/LOW signal as I expected. F
 
 ![](connection.jpg)
 
-![](back-of-the-circuit.jpg)
+![](fullsizerender.jpeg)
 
 ## Arduino & Processing Connection
 
@@ -175,10 +175,12 @@ Although in concern of time, I don’t have enough effort to use this sensor as 
 > 1. The electric wires should use the soft ones with more flexibility;
 > 2. The plus and minus side soldering should be carefully avoided touching when pressing two side together.
 
-
 # Coding Part
+
 ## Arduino Code
+
 ### Ball OSC_codeToProcessing
+
 ```
 #include <WiFi.h>
 #include <ArduinoOSCWiFi.h>
@@ -273,6 +275,7 @@ void loop() {
 ```
 
 ### BLOW_OSC_codeToProcessing
+
 ```
 #include <WiFi.h>
 #include <ArduinoOSCWiFi.h>
@@ -348,6 +351,7 @@ void loop() {
 ```
 
 ## Processing Code
+
 ```
 // connect arduino with processing
 import oscP5.*;
@@ -596,6 +600,7 @@ void oscEvent(OscMessage theOscMessage)
 ```
 
 ### Boundary
+
 ```
 class Boundary
 {
@@ -667,6 +672,7 @@ class Boundary
 ```
 
 ### Boundary Twist
+
 ```
 void turn()
 {
@@ -689,6 +695,7 @@ void turn()
 ```
 
 ### Collision
+
 ```
 void beginContact(Contact cp) 
 {
@@ -738,6 +745,7 @@ void groundParticle(WordParticles p)
 ```
 
 ### Dandelion
+
 ```
 class Dandelion 
 {
@@ -873,6 +881,7 @@ class Dandelion
 ```
 
 ### Text Particles Object
+
 ```
 class WordParticles 
 {
@@ -1027,4 +1036,3 @@ class WordParticles
   }
 }
 ```
-
