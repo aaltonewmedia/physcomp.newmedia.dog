@@ -1,5 +1,5 @@
 ---
-title: Forest Lights
+title: "Project proposal: Forest Lights"
 date: 2025-11-10T18:58:00.000+02:00
 authors:
   - Ana Todosijevic
