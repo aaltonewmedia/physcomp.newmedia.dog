@@ -6,7 +6,7 @@ authors:
 image: skærmbillede-2025-12-18-kl.-15.38.01.png
 showBgImage: false
 ---
-## Reflection on the project
+## Reflection on Knitted Memories
 
 By exploring atmospheres, materials and the act of archiving memories we brought into life the work Knitted Memories. Knitted Memories is a new media art installation combining the tactile knitted surfaces with sound and light while questioning our relation to technologies and how we archive and share memories. The installation consists of three main elements: the visuals, the lamp and the interface. By touching the interface you play sound rocordings and both visuals and LED lights are based on the sound playing. The elements are exhibited in the setting of a room, including readymades from the past – the rya rug and the old TV monitor – making it a bit of an odd mix of both futuristic and retro coded aesthetics. By that we hope the viewer reflects on memories and time while they discover the sounds we are hiding in the knitted materialities. They sense the changing atmosphere and ideally think of the way we archive and revisit our memories. Is it giving that the screen of our phones are the only surface of interaction that leads os to our memories or could it be a colorful scarf instead?
 
