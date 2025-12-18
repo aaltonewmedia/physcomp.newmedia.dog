@@ -1,5 +1,5 @@
 ---
-title: final project
+title: "Final project: Knitted Memories"
 date: 2025-11-03T18:55:00.000+02:00
 authors:
   - Klara Bloch-Norup
@@ -7,9 +7,6 @@ image: website_documentation_1_01.png
 showBgImage: false
 ---
 ## Knitted Memories
-
-
-
 
 By exploring atmospheres, materials and the act of archiving memories we brought into life the work Knitted Memories. Knitted Memories is a new media art installation combining the tactile knitted surfaces with sound and light while questioning our relation to technologies and how we archive and share memories. The installation consists of three main elements: the visuals, the lamp and the interface. By touching the interface you play sound rocordings and both visuals and LED lights are based on the sound playing. The elements are exhibited in the setting of a room, including readymades from the past – the rya rug and the old TV monitor – making it a bit of an odd mix of both futuristic and retro coded aesthetics. By that we hope the viewer reflects on memories and time while they discover the sounds we are hiding in the knitted materialities. They sense the changing atmosphere and ideally think of the way we archive and revisit our memories. Is it giving that the screen of our phones are the only surface of interaction that leads os to our memories or could it be a colorful scarf instead?
 
@@ -155,24 +152,42 @@ void loop() {
 }
 ```
 
-VS Code – drawing 3 dynamic shapes on canvas:
+p5.js code:
 
 ```
-//Global variables
 let x;
 let xa;
 let xb;
-let o = 100; //opacity could be dynamic at some point
+//let o = 120; //opacity could be dynamic at some point
 let fft;
 let spectrum;
 let treble;
 let highMid;
-let mid;
+let mid;55555
 let lowMid;
 let bass;
-let bird, sea, glass05, glass06, branches, moreBranches, drum, wind, underWater, ceramic, piano, reeds, whiteNoise, synth, Synth_4, Synth_9;
-let audioFilter; //low pass filter for sound
+let bird, sea, glass05, glass06, branches, drum02, moreBranches, drum, wind, underWater, ceramic, piano, reeds, whiteNoise, synth, Synth_4, Synth_9;
+//let audioFilter; //low pass filter for sound
+let port; //serial port variable
+//BIRD POSITION WHEN BIRD SOUND IS PLAYING
+let xx;
+let yy;
+//RAINDROPS WHEN XX SOUND IS PLAYING
+let n = 2000; //number of times you wanna repeat drops
+let xxx = [];
+let yyy = [];
+let s = [];
+let sw = 3; //width of shapes
 
+//let ns = 200; //number of times you wanna repeat stars
+let nStar = 200;
+let xStar = [];
+let yStar = [];
+
+let offsetX;
+let offsetY;
+
+//Sounds recorded by Hitomi
 function preload() {
   bird = loadSound("data/bird.m4a");
   glass05 = loadSound("data/hitting_glass_05.WAV");
@@ -180,94 +195,91 @@ function preload() {
   branches = loadSound("data/branches.WAV");
   moreBranches = loadSound("data/more_branches.WAV");
   drum = loadSound("data/Steel tongue drum.m4a");
+  drum02 = loadSound("data/Steel tongue drum 2.m4a");
   wind = loadSound("data/Strong wind_ZOOM0001_MN.WAV");
-  sea = loadSound("data/suomelinna sea.m4a");
+  //sea = loadSound("data/sea.wav");
+  sea = loadSound("data/suomelinna_sea.m4a");
   underWater = loadSound("data/under_water.wav");
   ceramic = loadSound("data/Humm and beep at ceramic WS.m4a");
-  piano = loadSound("data/Piano chord.m4a");
-  reeds = loadSound("data/Reeds.WAV");
+  piano = loadSound("data/piano.m4a");
+  reeds = loadSound("data/reeds.WAV");
   whiteNoise = loadSound("data/White noise_ZOOM0002_MN.WAV");
   synth = loadSound("data/synth audio_eg.wav");
-  Synth_4 = loadSound("data/cmaj4_synth.wav");
-  Synth_9 = loadSound("data/Cmaj9_synth.wav");
+  synth_4 = loadSound("data/cmaj4_synth.wav");
+  synth_9 = loadSound("data/Cmaj9_synth.wav");
+  imgBird = loadImage("data/bird.png");
 }
-
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   //smoothing value and how many bins added in the parantheses
   //specific steps: 1024 is max: 16, 32 ...
-  fft = new p5.FFT(0.8, 32);
+  fft = new p5.FFT(0.85, 32); //smooth highter number smoother shapes
   whiteNoise.play(); 
   whiteNoise.setLoop(true);
-  whiteNoise.setVolume(0.8);
-  audioFilter = new p5.LowPass(); // not really used yet
+  //whiteNoise.setVolume(0.8);
+  outputVolume(0.8);
+  //audioFilter = new p5.LowPass(); // not really used yet
+  port = createSerial(); //TO SEND VALUES TO ARDUINO
+  //FOR THE BIRD
+  xx = random(50, width/2);
+  yy = random(50, height/4*3);
 }
-
-
-//Function to play sounds with key 0-9
-//CLICK ON THE SCREEN TO MAKE IT WORK
-function keyPressed() {
-    if (key === "1") {
-      bird.play();
-    } else if (key === "2") {
-      glass05.play();
-    } else if (key === "3") {
-      glass06.play();
-    } else if (key === "4") {
-      branches.play();
-    } else if (key === "5") {
-      ceramic.play();
-    } else if (key === "6") {
-      sea.play();
-    } else if (key === "7") {
-      wind.play();
-    } else if (key === "8") {
-      synth.play();
-    } else if (key === "9") {
-      piano.play();
-    } else if (key === "0") {
-      drum.play();
-    }
-    
-    //PRESS SPACE TO STOP ALL SOUNDS
-    if (keyCode === 32){
-      bird.stop();
-      glass05.stop();
-      glass06.stop();
-      branches.stop();
-      //moreBranches.stop();
-      drum.stop();
-      wind.stop();
-      sea.stop();
-      //underWater.stop();
-      ceramic.stop();
-      piano.stop();
-      //reeds.stop();
-      //whiteNoise.stop();
-      synth.stop();
-      //Synth_4.stop();
-      //Synth_9.stop();
-    }
-}
-
 
 function draw() {
-  background(200, 220, 240);
+  background(200, 210, 200);
+  //let c2= color(120,110, 100);
+  let c2= color(180,140, 80);
+  let c1= color(0,0, 20);
   noStroke();
   spectrum = fft.analyze();
-  let v = map(mouseY, height, 0, 0, 1);
-  sea.setVolume(v);
+
+  /* let v = map(mouseY, height, 0, 0, 1);
+  //outputVolume(v); */
+
+  treble = fft.getEnergy("treble");
+  highMid = fft.getEnergy("highMid");
+  mid = fft.getEnergy("mid");
+  lowMid = fft.getEnergy("lowMid");
+  bass = fft.getEnergy("bass");
+  
+  /* MAP VALUES 
+  treble = map(treble, 0, 255, 50, 255);
+  highMid = map(highMid, 0, 255, 50, 255);
+  mid = map(mid, 0, 255, 50, 255);
+  lowMid = map(lowMid, 0, 255, 50, 255);
+  bass = map(bass, 0, 255, 50, 255);
+  */
+  
+  //SEND VALUES TO ARDUINO: knit_light
+    port.write(int(treble) + ","+ int(highMid) + ","+ int(mid) + ","+int(lowMid) + ","+int(bass) + "\n");
+
+  if(port.available()>0){
+    let str = port.readUntil("\n");
+    //console.log(str); //TO SEE WHAT VALUES ARE SEND TO ARDUINO
+    port.clear();
+  }
+
+  //VARIABLES FOR SHAPE A – LIGHT SHAPE
+  let sT1 = map(treble, 0, 255, 240, 800);
+  let sH1 = map(highMid, 0, 255, 200, 700);
+  let sM1 = map(mid, 0, 255, 120, 700);
+  let sL1 = map(lowMid, 0, 255, 120, 700);
+  let sB1 = map(bass, 0, 255, 120, 700);
+  //VARIABLES FOR SHAPE B – DARK SHAPE
+  let sT2 = map(treble, 0, 255, 150, 400);
+  let sH2 = map(highMid, 0, 255, 130, 400);
+  let sM2 = map(mid, 0, 255, 80, 400);
+  let sL2 = map(lowMid, 0, 255, 80, 400);
+  let sB2 = map(bass, 0, 255, 80, 400);
 
 
-  //SHAPE A-B-01, CENTER
-  //TRANSLATE – to position center the shape
-  let shapeX = width / 2;
+  //SHAPE A-B-02 ___________________________________________________________________________________________
+  fill(c2);
+  let shapeX = width/6;
   let shapeY = 0;
   push();
-  fill(0, 0, 0);
   translate(shapeX, shapeY);
-  fill(0, 0, 0, o); //opacity added
   //variables for SHAPE A
   x = 80;
   xb = x - 80;
@@ -280,41 +292,16 @@ function draw() {
   vertex(x, y);
   for (let i = 0; i < 9; i++) {
     if (i % 2 == 0) {
-      if (i == 0) {
-        treble = fft.getEnergy("treble");
-        let s = map(treble, 0, 255, 120, 600);
-        xa = x + s;
-      }
-      if (i == 2) {
-        highMid = fft.getEnergy("highMid");
-        s = map(highMid, 0, 255, 120, 600);
-        xa = x + s;
-      }
-
-      if (i == 4) {
-        mid = fft.getEnergy("mid");
-        s = map(mid, 0, 255, 120, 600);
-        xa = x + s;
-      }
-
-      if (i == 6) {
-        lowMid = fft.getEnergy("lowMid");
-        s = map(lowMid, 0, 255, 120, 600);
-        xa = x + s;
-      }
-
-      if (i == 8) {
-        bass = fft.getEnergy("bass");
-        s = map(bass, 0, 255, 120, 600);
-        xa = x + s;
-      }
-
+      if (i == 0) { xa = x + sT1; }
+      if (i == 2) { xa = x + sH1; }
+      if (i == 4) { xa = x + sM1; }
+      if (i == 6) { xa = x + sL1; }
+      if (i == 8) { xa = x + sB1; }
       bezierVertex(x, y, xa, y + ya, x, y + ya * 2);
       y = y + ya * 2;
     } else {
       bezierVertex(x, y, xb, y + yb, x, y + yb * 2);
-      y = y + yb * 2;
-    }
+      y = y + yb * 2;}
   }
   vertex(x, height);
   //updating variables so they are suitable for left side of shape
@@ -325,39 +312,22 @@ function draw() {
   vertex(x, y);
   for (let i = 0; i < 9; i++) {
     if (i % 2 == 0) {
-      if (i == 0) {
-        bass = fft.getEnergy("bass");
-        s = map(bass, 0, 255, 120, 600);
-        xa = x - s; }
-      if (i == 2) {
-        lowMid = fft.getEnergy("lowMid");
-        s = map(lowMid, 0, 255, 120, 600);
-        xa = x - s; }
-      if (i == 4) {
-        mid = fft.getEnergy("mid");
-        s = map(mid, 0, 255, 120, 600);
-        xa = x - s; }
-      if (i == 6) {
-        highMid = fft.getEnergy("highMid");
-        s = map(highMid, 0, 255, 120, 600);
-        xa = x - s; }
-      if (i == 8) {
-        treble = fft.getEnergy("treble");
-        s = map(treble, 0, 255, 120, 600);
-        xa = x - s; }
+      if (i == 0) { xa = x - sB1; }
+      if (i == 2) { xa = x - sL1; }
+      if (i == 4) { xa = x - sM1; }
+      if (i == 6) { xa = x - sH1; }
+      if (i == 8) { xa = x - sT1; }
       bezierVertex(x, y, xa, y - ya, x, y - ya * 2);
       y = y - ya * 2;
     } else {
       bezierVertex(x, y, xb, y - yb, x, y - yb * 2);
-      y = y - yb * 2;
-    }
+      y = y - yb * 2;}
   }
   vertex(x, 0);
   endShape(CLOSE);
 
-
-  //ANOTHER SAME SHAPE
-  fill(0, 0, 0);
+  //SHAPE B
+  fill(c1);
   //variables for SHAPE B
   x = 80;
   xb = x - 80;
@@ -370,26 +340,11 @@ function draw() {
   vertex(x, y);
   for (let i = 0; i < 9; i++) {
     if (i % 2 == 0) {
-      if (i == 0) {
-        treble = fft.getEnergy("treble");
-        let s = map(treble, 0, 255, 80, 400);
-        xa = x + s; }
-      if (i == 2) {
-        highMid = fft.getEnergy("highMid");
-        s = map(highMid, 0, 255, 80, 400);
-        xa = x + s; }
-      if (i == 4) {
-        mid = fft.getEnergy("mid");
-        s = map(mid, 0, 255, 80, 400);
-        xa = x + s; }
-      if (i == 6) {
-        lowMid = fft.getEnergy("lowMid");
-        s = map(lowMid, 0, 255, 80, 400);
-        xa = x + s; }
-      if (i == 8) {
-        bass = fft.getEnergy("bass");
-        s = map(bass, 0, 255, 80, 400);
-        xa = x + s; }
+      if (i == 0) { xa = x + sT2; }
+      if (i == 2) { xa = x + sH2; }
+      if (i == 4) { xa = x + sM2; }
+      if (i == 6) { xa = x + sL2; }
+      if (i == 8) { xa = x + sB2; }
       bezierVertex(x, y, xa, y + ya, x, y + ya * 2);
       y = y + ya * 2;
     } else {
@@ -406,30 +361,11 @@ function draw() {
   vertex(x, y);
   for (let i = 0; i < 9; i++) {
     if (i % 2 == 0) {
-      if (i == 0) {
-        bass = fft.getEnergy("bass");
-        s = map(bass, 0, 255, 80, 400);
-        xa = x - s; }
-      if (i == 2) {
-        lowMid = fft.getEnergy("lowMid");
-        s = map(lowMid, 0, 255, 80, 400);
-        xa = x - s;
-      }
-      if (i == 4) {
-        mid = fft.getEnergy("mid");
-        s = map(mid, 0, 255, 80, 400);
-        xa = x - s;
-      }
-      if (i == 6) {
-        highMid = fft.getEnergy("highMid");
-        s = map(highMid, 0, 255, 80, 400);
-        xa = x - s;
-      }
-      if (i == 8) {
-        treble = fft.getEnergy("treble");
-        s = map(treble, 0, 255, 80, 400);
-        xa = x - s;
-      }
+      if (i == 0) { xa = x - sB2; }
+      if (i == 2) { xa = x - sL2; }
+      if (i == 4) { xa = x - sM2; }
+      if (i == 6) { xa = x - sH2; }
+      if (i == 8) { xa = x - sT2; }
       bezierVertex(x, y, xa, y - ya, x, y - ya * 2);
       y = y - ya * 2;
     } else {
@@ -441,16 +377,13 @@ function draw() {
   pop();
 
 
-
-
-  //SHAPE A-B-02, LEFT
+  fill(c2);
+  //SHAPE A-B-03___________________________________________________________________________________________
   //TRANSLATE – to position center the shape
-  shapeX = width/4;
+  shapeX = width/6*2;
   shapeY = 0;
   push();
-  fill(0, 0, 0);
   translate(shapeX, shapeY);
-  fill(0, 0, 0, o); //opacity added
   //variables for SHAPE A
   x = 80;
   xb = x - 80;
@@ -463,31 +396,11 @@ function draw() {
   vertex(x, y);
   for (let i = 0; i < 9; i++) {
     if (i % 2 == 0) {
-      if (i == 0) {
-        treble = fft.getEnergy("treble");
-        let s = map(treble, 0, 255, 120, 600);
-        xa = x + s;
-      }
-      if (i == 2) {
-        highMid = fft.getEnergy("highMid");
-        s = map(highMid, 0, 255, 120, 600);
-        xa = x + s;
-      }
-      if (i == 4) {
-        mid = fft.getEnergy("mid");
-        s = map(mid, 0, 255, 120, 600);
-        xa = x + s;
-      }
-      if (i == 6) {
-        lowMid = fft.getEnergy("lowMid");
-        s = map(lowMid, 0, 255, 120, 600);
-        xa = x + s;
-      }
-      if (i == 8) {
-        bass = fft.getEnergy("bass");
-        s = map(bass, 0, 255, 120, 600);
-        xa = x + s;
-      }
+      if (i == 0) { xa = x + sT1; }
+      if (i == 2) { xa = x + sH1; }
+      if (i == 4) { xa = x + sM1; }
+      if (i == 6) { xa = x + sL1; }
+      if (i == 8) { xa = x + sB1; }
       bezierVertex(x, y, xa, y + ya, x, y + ya * 2);
       y = y + ya * 2;
     } else {
@@ -504,38 +417,21 @@ function draw() {
   vertex(x, y);
   for (let i = 0; i < 9; i++) {
     if (i % 2 == 0) {
-      if (i == 0) {
-        bass = fft.getEnergy("bass");
-        s = map(bass, 0, 255, 120, 600);
-        xa = x - s; }
-      if (i == 2) {
-        lowMid = fft.getEnergy("lowMid");
-        s = map(lowMid, 0, 255, 120, 600);
-        xa = x - s; }
-      if (i == 4) {
-        mid = fft.getEnergy("mid");
-        s = map(mid, 0, 255, 120, 600);
-        xa = x - s; }
-      if (i == 6) {
-        highMid = fft.getEnergy("highMid");
-        s = map(highMid, 0, 255, 120, 600);
-        xa = x - s; }
-      if (i == 8) {
-        treble = fft.getEnergy("treble");
-        s = map(treble, 0, 255, 120, 600);
-        xa = x - s; }
+      if (i == 0) { xa = x - sB1; }
+      if (i == 2) { xa = x - sL1; }
+      if (i == 4) { xa = x - sM1; }
+      if (i == 6) { xa = x - sH1; }
+      if (i == 8) { xa = x - sT1; }
       bezierVertex(x, y, xa, y - ya, x, y - ya * 2);
       y = y - ya * 2;
     } else {
       bezierVertex(x, y, xb, y - yb, x, y - yb * 2);
-      y = y - yb * 2;
-    }
-  }
+      y = y - yb * 2; }}
   vertex(x, 0);
   endShape(CLOSE);
 
   //SHAPE B
-  fill(0, 0, 0);
+  fill(c1);
   //variables for SHAPE B
   x = 80;
   xb = x - 80;
@@ -548,26 +444,11 @@ function draw() {
   vertex(x, y);
   for (let i = 0; i < 9; i++) {
     if (i % 2 == 0) {
-      if (i == 0) {
-        treble = fft.getEnergy("treble");
-        let s = map(treble, 0, 255, 80, 400);
-        xa = x + s; }
-      if (i == 2) {
-        highMid = fft.getEnergy("highMid");
-        s = map(highMid, 0, 255, 80, 400);
-        xa = x + s; }
-      if (i == 4) {
-        mid = fft.getEnergy("mid");
-        s = map(mid, 0, 255, 80, 400);
-        xa = x + s; }
-      if (i == 6) {
-        lowMid = fft.getEnergy("lowMid");
-        s = map(lowMid, 0, 255, 80, 400);
-        xa = x + s; }
-      if (i == 8) {
-        bass = fft.getEnergy("bass");
-        s = map(bass, 0, 255, 80, 400);
-        xa = x + s; }
+      if (i == 0) { xa = x + sM2; }
+      if (i == 2) { xa = x + sH2; }
+      if (i == 4) { xa = x + sM2; }
+      if (i == 6) { xa = x + sL2; }
+      if (i == 8) { xa = x + sB2; }
       bezierVertex(x, y, xa, y + ya, x, y + ya * 2);
       y = y + ya * 2;
     } else {
@@ -584,52 +465,27 @@ function draw() {
   vertex(x, y);
   for (let i = 0; i < 9; i++) {
     if (i % 2 == 0) {
-      if (i == 0) {
-        bass = fft.getEnergy("bass");
-        s = map(bass, 0, 255, 80, 400);
-        xa = x - s; }
-      if (i == 2) {
-        lowMid = fft.getEnergy("lowMid");
-        s = map(lowMid, 0, 255, 80, 400);
-        xa = x - s;
-      }
-      if (i == 4) {
-        mid = fft.getEnergy("mid");
-        s = map(mid, 0, 255, 80, 400);
-        xa = x - s;
-      }
-      if (i == 6) {
-        highMid = fft.getEnergy("highMid");
-        s = map(highMid, 0, 255, 80, 400);
-        xa = x - s;
-      }
-      if (i == 8) {
-        treble = fft.getEnergy("treble");
-        s = map(treble, 0, 255, 80, 400);
-        xa = x - s;
-      }
+      if (i == 0) { xa = x - sB2; }
+      if (i == 2) { xa = x - sL2; }
+      if (i == 4) { xa = x - sM2; }
+      if (i == 6) { xa = x - sH2; }
+      if (i == 8) { xa = x - sT2; }
       bezierVertex(x, y, xa, y - ya, x, y - ya * 2);
       y = y - ya * 2;
     } else {
       bezierVertex(x, y, xb, y - yb, x, y - yb * 2);
-      y = y - yb * 2; }
-  }
+      y = y - yb * 2; }}
   vertex(x, 0);
   endShape(CLOSE);
   pop();
 
 
-
-
-
-   //SHAPE A-B-03, RIGHT
+   //SHAPE A-B-06 ___________________________________________________________________________________________
+   fill(c2);
    push();
-   shapeX = width/4*3;
+   shapeX = width/6*5;
    shapeY = 0;
-  
-   fill(0, 0, 0);
    translate(shapeX, shapeY);
-   fill(0, 0, 0, o); //opacity added
    //variables for SHAPE A
    x = 80;
    xb = x - 80;
@@ -642,37 +498,16 @@ function draw() {
    vertex(x, y);
    for (let i = 0; i < 9; i++) {
      if (i % 2 == 0) {
-       if (i == 0) {
-         treble = fft.getEnergy("treble");
-         let s = map(treble, 0, 255, 120, 600);
-         xa = x + s;
-       }
-       if (i == 2) {
-         highMid = fft.getEnergy("highMid");
-         s = map(highMid, 0, 255, 120, 600);
-         xa = x + s;
-       }
-       if (i == 4) {
-         mid = fft.getEnergy("mid");
-         s = map(mid, 0, 255, 120, 600);
-         xa = x + s;
-       }
-       if (i == 6) {
-         lowMid = fft.getEnergy("lowMid");
-         s = map(lowMid, 0, 255, 120, 600);
-         xa = x + s;
-       }
-       if (i == 8) {
-         bass = fft.getEnergy("bass");
-         s = map(bass, 0, 255, 120, 600);
-         xa = x + s;
-       }
+       if (i == 0) { xa = x + sM1;}
+       if (i == 2) { xa = x + sH1;}
+       if (i == 4) { xa = x + sM1;}
+       if (i == 6) { xa = x + sL1;}
+       if (i == 8) { xa = x + sB1;}
        bezierVertex(x, y, xa, y + ya, x, y + ya * 2);
        y = y + ya * 2;
      } else {
        bezierVertex(x, y, xb, y + yb, x, y + yb * 2);
-       y = y + yb * 2;
-     }
+       y = y + yb * 2; }
    }
    vertex(x, height);
    //updating variables so they are suitable for left side of shape
@@ -683,38 +518,21 @@ function draw() {
    vertex(x, y);
    for (let i = 0; i < 9; i++) {
      if (i % 2 == 0) {
-       if (i == 0) {
-         bass = fft.getEnergy("bass");
-         s = map(bass, 0, 255, 120, 600);
-         xa = x - s; }
-       if (i == 2) {
-         lowMid = fft.getEnergy("lowMid");
-         s = map(lowMid, 0, 255, 120, 600);
-         xa = x - s; }
-       if (i == 4) {
-         mid = fft.getEnergy("mid");
-         s = map(mid, 0, 255, 120, 600);
-         xa = x - s; }
-       if (i == 6) {
-         highMid = fft.getEnergy("highMid");
-         s = map(highMid, 0, 255, 120, 600);
-         xa = x - s; }
-       if (i == 8) {
-         treble = fft.getEnergy("treble");
-         s = map(treble, 0, 255, 120, 600);
-         xa = x - s; }
+       if (i == 0) { xa = x - sB1; }
+       if (i == 2) { xa = x - sL1; }
+       if (i == 4) { xa = x - sM1; }
+       if (i == 6) { xa = x - sH1; }
+       if (i == 8) { xa = x - sT1; }
        bezierVertex(x, y, xa, y - ya, x, y - ya * 2);
        y = y - ya * 2;
      } else {
        bezierVertex(x, y, xb, y - yb, x, y - yb * 2);
-       y = y - yb * 2;
-     }
-   }
+       y = y - yb * 2; }}
    vertex(x, 0);
    endShape(CLOSE);
  
    //SHAPE B
-   fill(0, 0, 0);
+   fill(c1);
    //variables for SHAPE B
    x = 80;
    xb = x - 80;
@@ -727,26 +545,11 @@ function draw() {
    vertex(x, y);
    for (let i = 0; i < 9; i++) {
      if (i % 2 == 0) {
-       if (i == 0) {
-         treble = fft.getEnergy("treble");
-         let s = map(treble, 0, 255, 80, 400);
-         xa = x + s; }
-       if (i == 2) {
-         highMid = fft.getEnergy("highMid");
-         s = map(highMid, 0, 255, 80, 400);
-         xa = x + s; }
-       if (i == 4) {
-         mid = fft.getEnergy("mid");
-         s = map(mid, 0, 255, 80, 400);
-         xa = x + s; }
-       if (i == 6) {
-         lowMid = fft.getEnergy("lowMid");
-         s = map(lowMid, 0, 255, 80, 400);
-         xa = x + s; }
-       if (i == 8) {
-         bass = fft.getEnergy("bass");
-         s = map(bass, 0, 255, 80, 400);
-         xa = x + s; }
+       if (i == 0) {xa = x + sT2; }
+       if (i == 2) {xa = x + sH2; }
+       if (i == 4) {xa = x + sM2; }
+       if (i == 6) {xa = x + sL2; }
+       if (i == 8) {xa = x + sB2; }
        bezierVertex(x, y, xa, y + ya, x, y + ya * 2);
        y = y + ya * 2;
      } else {
@@ -763,30 +566,11 @@ function draw() {
    vertex(x, y);
    for (let i = 0; i < 9; i++) {
      if (i % 2 == 0) {
-       if (i == 0) {
-         bass = fft.getEnergy("bass");
-         s = map(bass, 0, 255, 80, 400);
-         xa = x - s; }
-       if (i == 2) {
-         lowMid = fft.getEnergy("lowMid");
-         s = map(lowMid, 0, 255, 80, 400);
-         xa = x - s;
-       }
-       if (i == 4) {
-         mid = fft.getEnergy("mid");
-         s = map(mid, 0, 255, 80, 400);
-         xa = x - s;
-       }
-       if (i == 6) {
-         highMid = fft.getEnergy("highMid");
-         s = map(highMid, 0, 255, 80, 400);
-         xa = x - s;
-       }
-       if (i == 8) {
-         treble = fft.getEnergy("treble");
-         s = map(treble, 0, 255, 80, 400);
-         xa = x - s;
-       }
+       if (i == 0) { xa = x - sB2; }
+       if (i == 2) { xa = x - sL2;}
+       if (i == 4) { xa = x - sM2;}
+       if (i == 6) { xa = x - sH2;}
+       if (i == 8) { xa = x - sT2;}
        bezierVertex(x, y, xa, y - ya, x, y - ya * 2);
        y = y - ya * 2;
      } else {
@@ -796,6 +580,617 @@ function draw() {
    vertex(x, 0);
    endShape(CLOSE);
    pop();
+
+
+   //SHAPE A-B-05___________________________________________________________________________________________
+   push();
+   fill(c2);
+   shapeX = width/6*4;
+   shapeY = 0;
+   translate(shapeX, shapeY);
+   //variables for SHAPE A
+   x = 80;
+   xb = x - 80;
+   ya = height / 14;
+   yb = height / 35;
+   y = (height - (10 * ya + 8 * yb)) / 2;
+   //SHAPE A
+   beginShape();
+   vertex(x, 0);
+   vertex(x, y);
+   for (let i = 0; i < 9; i++) {
+     if (i % 2 == 0) {
+       if (i == 0) {xa = x + sT1;}
+       if (i == 2) {xa = x + sH1;}
+       if (i == 4) {xa = x + sM1;}
+       if (i == 6) {xa = x + sL1;}
+       if (i == 8) {xa = x + sB1; }
+       bezierVertex(x, y, xa, y + ya, x, y + ya * 2);
+       y = y + ya * 2;
+     } else {
+       bezierVertex(x, y, xb, y + yb, x, y + yb * 2);
+       y = y + yb * 2; }
+   }
+   vertex(x, height);
+   //updating variables so they are suitable for left side of shape
+   x = x - 160;
+   xa = x - s;
+   xb = x + 80;
+   vertex(x, height);
+   vertex(x, y);
+   for (let i = 0; i < 9; i++) {
+     if (i % 2 == 0) {
+       if (i == 0) {xa = x - sB1; }
+       if (i == 2) {xa = x - sL1; }
+       if (i == 4) { xa = x - sM1; }
+       if (i == 6) {xa = x - sH1; }
+       if (i == 8) {xa = x - sT1; }
+       bezierVertex(x, y, xa, y - ya, x, y - ya * 2);
+       y = y - ya * 2;
+     } else {
+       bezierVertex(x, y, xb, y - yb, x, y - yb * 2);
+       y = y - yb * 2;
+     }}
+   vertex(x, 0);
+   endShape(CLOSE);
+ 
+   //SHAPE B
+   fill(c1);
+   //variables for SHAPE B
+   x = 80;
+   xb = x - 80;
+   ya = height / 14;
+   yb = height / 35;
+   y = (height - (10 * ya + 8 * yb)) / 2;
+   //SHAPE B
+   beginShape();
+   vertex(x, 0);
+   vertex(x, y);
+   for (let i = 0; i < 9; i++) {
+     if (i % 2 == 0) {
+       if (i == 0) {xa = x + sT2; }
+       if (i == 2) {xa = x + sH2; }
+       if (i == 4) {xa = x + sM2; }
+       if (i == 6) { xa = x + sL2;}
+       if (i == 8) {xa = x + sB2; }
+       bezierVertex(x, y, xa, y + ya, x, y + ya * 2);
+       y = y + ya * 2;
+     } else {
+       bezierVertex(x, y, xb, y + yb, x, y + yb * 2);
+       y = y + yb * 2; }
+   }
+   vertex(x, height);
+   //updating variables so they are suitable for left side of shape
+   x = x - 160;
+   xa = x - s;
+   xb = x + 80;
+   //left side of SHAPE B
+   vertex(x, height);
+   vertex(x, y);
+   for (let i = 0; i < 9; i++) {
+     if (i % 2 == 0) {
+       if (i == 0) { xa = x - sB2; }
+       if (i == 2) { xa = x - sL2; }
+       if (i == 4) { xa = x - sM2; }
+       if (i == 6) { xa = x - sH2; }
+       if (i == 8) { xa = x - sT2; }
+       bezierVertex(x, y, xa, y - ya, x, y - ya * 2);
+       y = y - ya * 2;
+     } else {
+       bezierVertex(x, y, xb, y - yb, x, y - yb * 2);
+       y = y - yb * 2; }
+   }
+   vertex(x, 0);
+   endShape(CLOSE);
+   pop();
+
+  
+   //SHAPE A-B-01 ___________________________________________________________________________________________
+   push();
+   fill(c2);
+   shapeX = 0;
+   shapeY = 0;
+   translate(shapeX, shapeY);
+   //variables for SHAPE A
+   x = 80;
+   xb = x - 80;
+   ya = height / 14;
+   yb = height / 35;
+   y = (height - (10 * ya + 8 * yb)) / 2;
+   //SHAPE A
+   beginShape();
+   vertex(x, 0);
+   vertex(x, y);
+   for (let i = 0; i < 9; i++) {
+     if (i % 2 == 0) {
+       if (i == 0) { xa = x + sT1; }
+       if (i == 2) { xa = x + sH1; }
+       if (i == 4) { xa = x + sM1; }
+       if (i == 6) { xa = x + sL1; }
+       if (i == 8) { xa = x + sB1; }
+       bezierVertex(x, y, xa, y + ya, x, y + ya * 2);
+       y = y + ya * 2;
+     } else {
+       bezierVertex(x, y, xb, y + yb, x, y + yb * 2);
+       y = y + yb * 2; }
+   }
+   vertex(x, height);
+   //updating variables so they are suitable for left side of shape
+   x = x - 160;
+   xa = x - s;
+   xb = x + 80;
+   vertex(x, height);
+   vertex(x, y);
+   for (let i = 0; i < 9; i++) {
+     if (i % 2 == 0) {
+       if (i == 0) { xa = x - sB1; }
+       if (i == 2) { xa = x - sL1; }
+       if (i == 4) { xa = x - sM1; }
+       if (i == 6) { xa = x - sH1; }
+       if (i == 8) { xa = x - sT1; }
+       bezierVertex(x, y, xa, y - ya, x, y - ya * 2);
+       y = y - ya * 2;
+     } else {
+       bezierVertex(x, y, xb, y - yb, x, y - yb * 2);
+       y = y - yb * 2;
+     }
+   }
+   vertex(x, 0);
+   endShape(CLOSE);
+ 
+
+   //SHAPE B
+   fill(c1);
+   //variables for SHAPE B
+   x = 80;
+   xb = x - 80;
+   ya = height / 14;
+   yb = height / 35;
+   y = (height - (10 * ya + 8 * yb)) / 2;
+   //SHAPE B
+   beginShape();
+   vertex(x, 0);
+   vertex(x, y);
+   for (let i = 0; i < 9; i++) {
+     if (i % 2 == 0) {
+       if (i == 0) { xa = x + sT2; }
+       if (i == 2) { xa = x + sH2; }
+       if (i == 4) { xa = x + sM2; }
+       if (i == 6) { xa = x + sL2; }
+       if (i == 8) { xa = x + sB2; }
+       bezierVertex(x, y, xa, y + ya, x, y + ya * 2);
+       y = y + ya * 2;
+     } else {
+       bezierVertex(x, y, xb, y + yb, x, y + yb * 2);
+       y = y + yb * 2; }
+   }
+   vertex(x, height);
+   //updating variables so they are suitable for left side of shape
+   x = x - 160;
+   xa = x - s;
+   xb = x + 80;
+   //left side of SHAPE B
+   vertex(x, height);
+   vertex(x, y);
+   for (let i = 0; i < 9; i++) {
+     if (i % 2 == 0) {
+       if (i == 0) { xa = x - sB2; }
+       if (i == 2) { xa = x - sL2; }
+       if (i == 4) { xa = x - sM2; }
+       if (i == 6) { xa = x - sH2; }
+       if (i == 8) { xa = x - sT2; }
+       bezierVertex(x, y, xa, y - ya, x, y - ya * 2);
+       y = y - ya * 2;
+     } else {
+       bezierVertex(x, y, xb, y - yb, x, y - yb * 2);
+       y = y - yb * 2; }
+   }
+   vertex(x, 0);
+   endShape(CLOSE);
+   pop();
+
+
+   //SHAPE A-B-07 ___________________________________________________________________________________________
+   fill(c2);
+   push();
+   shapeX = width;
+   shapeY = 0;
+   translate(shapeX, shapeY);
+   //variables for SHAPE A
+   x = 80;
+   xb = x - 80;
+   ya = height / 14;
+   yb = height / 35;
+   y = (height - (10 * ya + 8 * yb)) / 2;
+   //SHAPE A
+   beginShape();
+   vertex(x, 0);
+   vertex(x, y);
+   for (let i = 0; i < 9; i++) {
+     if (i % 2 == 0) {
+       if (i == 0) { xa = x + sT1; }
+       if (i == 2) { xa = x + sH1; }
+       if (i == 4) { xa = x + sM1; }
+       if (i == 6) { xa = x + sL1; }
+       if (i == 8) { xa = x + sB1; }
+       bezierVertex(x, y, xa, y + ya, x, y + ya * 2);
+       y = y + ya * 2;
+     } else {
+       bezierVertex(x, y, xb, y + yb, x, y + yb * 2);
+       y = y + yb * 2;
+     }
+   }
+   vertex(x, height);
+   //updating variables so they are suitable for left side of shape
+   x = x - 160;
+   xa = x - s;
+   xb = x + 80;
+   vertex(x, height);
+   vertex(x, y);
+   for (let i = 0; i < 9; i++) {
+     if (i % 2 == 0) {
+       if (i == 0) { xa = x - sB1; }
+       if (i == 2) { xa = x - sL1; }
+       if (i == 4) { xa = x - sM1; }
+       if (i == 6) { xa = x - sH1; }
+       if (i == 8) { xa = x - sT1; }
+       bezierVertex(x, y, xa, y - ya, x, y - ya * 2);
+       y = y - ya * 2;
+     } else {
+       bezierVertex(x, y, xb, y - yb, x, y - yb * 2);
+       y = y - yb * 2;
+     }}
+   vertex(x, 0);
+   endShape(CLOSE);
+ 
+   //SHAPE B
+   fill(c1);
+   //variables for SHAPE B
+   x = 80;
+   xb = x - 80;
+   ya = height / 14;
+   yb = height / 35;
+   y = (height - (10 * ya + 8 * yb)) / 2;
+   //SHAPE B
+   beginShape();
+   vertex(x, 0);
+   vertex(x, y);
+   for (let i = 0; i < 9; i++) {
+     if (i % 2 == 0) {
+       if (i == 0) { xa = x + sT2; }
+       if (i == 2) { xa = x + sH2; }
+       if (i == 4) { xa = x + sM2; }
+       if (i == 6) { xa = x + sL2; }
+       if (i == 8) { xa = x + sB2; }
+       bezierVertex(x, y, xa, y + ya, x, y + ya * 2);
+       y = y + ya * 2;
+     } else {
+       bezierVertex(x, y, xb, y + yb, x, y + yb * 2);
+       y = y + yb * 2; }
+   }
+   vertex(x, height);
+   //updating variables so they are suitable for left side of shape
+   x = x - 160;
+   xa = x - s;
+   xb = x + 80;
+   //left side of SHAPE B
+   vertex(x, height);
+   vertex(x, y);
+   for (let i = 0; i < 9; i++) {
+     if (i % 2 == 0) {
+       if (i == 0) { xa = x - sB2; }
+       if (i == 2) { xa = x - sL2; }
+       if (i == 4) { xa = x - sM2; }
+       if (i == 6) { xa = x - sH2; }
+       if (i == 8) { xa = x - sT2; }
+       bezierVertex(x, y, xa, y - ya, x, y - ya * 2);
+       y = y - ya * 2;
+     } else {
+       bezierVertex(x, y, xb, y - yb, x, y - yb * 2);
+       y = y - yb * 2; }
+   }
+   vertex(x, 0);
+   endShape(CLOSE);
+   pop();
+
+
+  //SHAPE A-B-04, CENTER __________________________________________________________________________________________
+  fill(c2);
+  shapeX = width / 2;
+  shapeY = 0;
+  push();
+  //TRANSLATE – to position center the shape
+  translate(shapeX, shapeY);
+  //variables for SHAPE A
+  x = 80;
+  xb = x - 80;
+  ya = height / 14;
+  yb = height / 35;
+  y = (height - (10 * ya + 8 * yb)) / 2;
+  //SHAPE A
+  beginShape();
+  vertex(x, 0);
+  vertex(x, y);
+  for (let i = 0; i < 9; i++) {
+    if (i % 2 == 0) {
+      if (i == 0) {
+        let s = map(treble, 0, 255, 300, 900);
+        xa = x + s; }
+      if (i == 2) {
+        s = map(highMid, 0, 255, 200, 800);
+        xa = x + s; }
+      if (i == 4) {
+        s = map(mid, 0, 255, 120, 600);
+        xa = x + s; }
+      if (i == 6) {
+        s = map(lowMid, 0, 255, 120, 600);
+        xa = x + s; }
+      if (i == 8) {
+        s = map(bass, 0, 255, 120, 600);
+        xa = x + s;}
+      bezierVertex(x, y, xa, y + ya, x, y + ya * 2);
+      y = y + ya * 2; } else {
+      bezierVertex(x, y, xb, y + yb, x, y + yb * 2);
+      y = y + yb * 2;}
+  }
+  vertex(x, height);
+  //updating variables so they are suitable for left side of shape
+  x = x - 160;
+  xa = x - s;
+  xb = x + 80;
+  vertex(x, height);
+  vertex(x, y);
+  for (let i = 0; i < 9; i++) {
+    if (i % 2 == 0) {
+      if (i == 0) {
+        s = map(bass, 0, 255, 120, 600);
+        xa = x - s; }
+      if (i == 2) {
+        s = map(lowMid, 0, 255, 120, 600);
+        xa = x - s; }
+      if (i == 4) {
+        s = map(mid, 0, 255, 120, 600);
+        xa = x - s; }
+      if (i == 6) {
+        s = map(highMid, 0, 255, 200, 800);
+        xa = x - s; }
+      if (i == 8) {
+        s = map(treble, 0, 255, 300, 900);
+        xa = x - s; }
+      bezierVertex(x, y, xa, y - ya, x, y - ya * 2);
+      y = y - ya * 2;
+    } else {
+      bezierVertex(x, y, xb, y - yb, x, y - yb * 2);
+      y = y - yb * 2;
+    }}
+  vertex(x, 0);
+  endShape(CLOSE);
+  //ANOTHER SAME SHAPE
+  fill(c1);
+  //variables for SHAPE B
+  x = 80;
+  xb = x - 80;
+  ya = height / 14;
+  yb = height / 35;
+  y = (height - (10 * ya + 8 * yb)) / 2;
+  //SHAPE B
+  beginShape();
+  vertex(x, 0);
+  vertex(x, y);
+  for (let i = 0; i < 9; i++) {
+    if (i % 2 == 0) {
+      if (i == 0) {
+        let s = map(treble, 0, 255, 210, 600);
+        xa = x + s; }
+      if (i == 2) {
+        s = map(highMid, 0, 255, 140, 500);
+        xa = x + s; }
+      if (i == 4) {
+        s = map(mid, 0, 255, 80, 400);
+        xa = x + s; }
+      if (i == 6) {
+        s = map(lowMid, 0, 255, 80, 400);
+        xa = x + s; }
+      if (i == 8) {
+        s = map(bass, 0, 255, 80, 400);
+        xa = x + s; }
+      bezierVertex(x, y, xa, y + ya, x, y + ya * 2);
+      y = y + ya * 2;
+    } else {
+      bezierVertex(x, y, xb, y + yb, x, y + yb * 2);
+      y = y + yb * 2; }
+  }
+  vertex(x, height);
+  //updating variables so they are suitable for left side of shape
+  x = x - 160;
+  xa = x - s;
+  xb = x + 80;
+  //left side of SHAPE B
+  vertex(x, height);
+  vertex(x, y);
+  for (let i = 0; i < 9; i++) {
+    if (i % 2 == 0) {
+      if (i == 0) {
+        s = map(bass, 0, 255, 80, 400);
+        xa = x - s; }
+      if (i == 2) {
+        s = map(lowMid, 0, 255, 80, 400);
+        xa = x - s;
+      }
+      if (i == 4) {
+        s = map(mid, 0, 255, 80, 400);
+        xa = x - s;
+      }
+      if (i == 6) {
+        s = map(highMid, 0, 255, 140, 500);
+        xa = x - s;
+      }
+      if (i == 8) {
+        s = map(treble, 0, 255, 210, 600);
+        xa = x - s;
+      }
+      bezierVertex(x, y, xa, y - ya, x, y - ya * 2);
+      y = y - ya * 2;
+    } else {
+      bezierVertex(x, y, xb, y - yb, x, y - yb * 2);
+      y = y - yb * 2; }
+  }
+  vertex(x, 0);
+  endShape(CLOSE);
+  pop();
+
+
+  //SOUND SPECIFIC ELEMENTS
+    //"RAINDROPS" WHEN 'CLING' IS PLAYING
+    if (synth.isPlaying()){
+      for (let i = 0; i < n; i++) {
+        xxx[i] = random(width);
+        yyy[i] = random(height);
+        s[i] = random(2, 40);}
+    }
+    for (let i = 0; i < n; i++) {
+      fill(220, 220, 220);
+      ellipse(xxx[i], yyy[i], sw, s[i]);
+      //to add movement
+      xxx[i] = xxx[i] + random(-50, 50);
+      yyy[i] = yyy[i] + random(-100, 50);
+    }
+
+
+    //NEW STARS
+    if (glass05.isPlaying() || glass06.isPlaying()){
+      fill(treble*3, treble*3, 0);
+      //noStroke();
+      for (let i = 0; i < nStar; i++) {
+        xStar[i] = random(width);
+        yStar[i] = random(height);
+      }
+      for (let i = 0; i < nStar; i++) {
+        //ellipse(xxx[i], yyy[i], sw, s[i]);
+        offsetX = random(width);
+        offsetY = random(height);
+        push();
+        translate(offsetX, offsetY);
+        beginShape();
+        vertex(0+xStar[i], 0+yStar[i]); 
+        vertex(8+xStar[i], 40+yStar[i]); 
+        vertex(80+xStar[i], 35+yStar[i]);
+        vertex(15+xStar[i], 65+yStar[i]); 
+        vertex(50+xStar[i], 120+yStar[i]);
+        vertex(0+xStar[i], 85+yStar[i]);
+        vertex(-60+xStar[i], 140+yStar[i]);
+        vertex(-25+xStar[i], 65+yStar[i]);
+        vertex(-100+xStar[i], 45+yStar[i]);
+        vertex(-20+xStar[i], 40+yStar[i]);
+        vertex(0+xStar[i], 0+yStar[i]); 
+        endShape(); 
+        pop(); 
+        
+        //to add movement
+        xxx[i] = xxx[i] + random(-1, 1);
+        yyy[i] = yyy[i] + random(-2, 5);
+    
+        if (yyy[i] >= height) {
+          yyy[i] = -yyy[i] + height - 100 - random(10, 80);
+        }
+      }
+    }
+
+    //SEA — MANGLER SMOOTH IN / OUT
+    if (sea.isPlaying()){
+      fill(10,20,255-bass);
+      //quad(x1, y1, x2, y2, x3, y3, x4, y4)
+      quad(0, height-bass, width, height-highMid, width, height, 0, height);
+    }
+
+
+  if (bird.isPlaying()){
+    xx = xx+random(-80,100);
+    yy = yy+random(-80,70);
+    image(imgBird, xx, yy, 280, 260);
+    //tint(200,200,220);
+  }
+
+
+  if (sea.isPlaying() && synth.isPlaying()){
+    sea.setVolume(0.3);
+  }
+}
+
+
+//Function to play sounds with key 0-9
+//CLICK ON THE SCREEN TO MAKE IT WORK
+function keyPressed() {
+  if (key === "1") {
+    if (!bird.isPlaying()) {
+      bird.play();
+      xx= random(width/2);
+      yy = random(height/2);
+    }
+  } else if (key === "2") {
+    if (!glass05.isPlaying()) {
+      glass05.play();
+    } else {
+      if (!glass06.isPlaying()) {
+        glass06.play();
+      }
+    }
+
+  } else if (key === "3") {
+    if (!branches.isPlaying()) {
+      branches.play();
+      branches.setVolume(1);
+    } else {
+      if (!moreBranches.isPlaying()) {
+        moreBranches.play();
+      }
+    }
+  } else if (key === "8") {
+    if (!drum.isPlaying()) {
+      drum.play();
+    } else {
+      if (!drum02.isPlaying()) {
+        drum02.play();
+      }
+    }
+  } else if (key === "5") {
+    if (!underWater.isPlaying()) {
+      underWater.play();
+      //ceramic.setVolume(0.9);
+    }
+  } else if (key === "6") {
+    if (!sea.isPlaying()) {
+      sea.play();
+      //sea.setVolume(0.5);
+    }
+  } else if (key === "7") {
+    if (!wind.isPlaying()) {
+      wind.play();
+    }
+  } else if (key === "4") {
+    if (!synth.isPlaying()) {
+      synth.play();
+    }
+    else{
+      if (!synth_4.isPlaying()) {
+        synth_4.play();
+      }
+    }
+  } else if (key === "9") {
+    if (!piano.isPlaying()) {
+      piano.play();
+    } else {
+      if (!synth_9.isPlaying()) {
+        synth_9.play();
+      }
+    }
+  } 
+
+//TO SEND VALUES TO ARDUINO
+function mousePressed(){
+if (!port.opened()) {
+  port.open(115200);
+}
 }
 ```
 
