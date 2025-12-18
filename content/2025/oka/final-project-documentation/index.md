@@ -409,7 +409,8 @@ Metal
 
 [Raspberry Pi Pico 2 W](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)\
 [](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)[SY42STH38-1684A Stepper Motor](https://www.pololu.com/product/2267)\
-[A4988 Stepper Motor Driver](https://www.pololu.com/product/2128)[](https://www.pololu.com/product/2128)
+[A4988 Stepper Motor Driver](https://www.pololu.com/product/2128)\
+[DM1 1A 125VAC Switch](https://www.google.com/search?q=DM1+1A+125VAC+Switch&sca_esv=7059b957e07c44b7&biw=1912&bih=948&sxsrf=AE3TifMd7Je9QMMxAzZx8pp9RM3ZYBTJTw%3A1766053322099&ei=ytVDad7qBZej3QOriKLpBg&ved=0ahUKEwje96un9caRAxWXUXcKHSuEKG0Q4dUDCBE&uact=5&oq=DM1+1A+125VAC+Switch&gs_lp=Egxnd3Mtd2l6LXNlcnAiFERNMSAxQSAxMjVWQUMgU3dpdGNoMgQQIxgnMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FMggQABiABBiiBDIFEAAY7wVInwpQqAZYqAZwAXgAkAEAmAFIoAFIqgEBMbgBA8gBAPgBAvgBAZgCAqACT8ICCBAAGLADGO8FwgILEAAYgAQYsAMYogSYAwCIBgGQBgWSBwEyoAfJBLIHATG4B03CBwUwLjEuMcgHBYAIAA&sclient=gws-wiz-serp)[](https://www.pololu.com/product/2128)[](https://www.pololu.com/product/2128)
 
 ### CLOSE-UP PHOTO DOCUMENTATION
 
