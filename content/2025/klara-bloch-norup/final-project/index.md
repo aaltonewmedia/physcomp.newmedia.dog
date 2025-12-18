@@ -3,7 +3,7 @@ title: "Final project: Knitted Memories"
 date: 2025-11-03T18:55:00.000+02:00
 authors:
   - Klara Bloch-Norup
-image: website_documentation_1_01.png
+image: skærmbillede-2025-12-18-kl.-15.38.01.png
 showBgImage: false
 ---
 ## Knitted Memories
@@ -15,6 +15,8 @@ Knitted Memories is made in collaboration with textile designer Lila Monin, who 
 Knitted Memories started already when I arrived to Finland, before I even knew I was going to make this project. I knitted in the metro, during the lectures and all around in Helsinki. I bought yarn in the colors of my mood and in this way I tried to archive all my new memories in the colors and textures of the wool. Already by knitting in these public spaces I was questioning our relation to technologies. Every morning in the metro, passengers were all looking at their phones. No eye contact, no small talk, no nothing, just the smell of sweat and coffee breathe and stinking red bulls in the rush hour. I challenged this by knitting and I discovered how this could shaken up the space and lead to conversations, but also how it made me feel better when arriving to my destination. 
 
 ![](final.jpg)
+
+![](website_documentation_1_01.png)
 
 ![](physicalcomputing_a5_02-03.png)
 
