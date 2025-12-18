@@ -394,11 +394,20 @@ BodyPose struggled to recognise people due to harsh above lighting and a dark ba
 
 Another challenge was that the laptop camera could see the entire space on the background, sometimes recognising people from way further behind that are not engaged with the installation. In the ideal situation the camera would be situated somewhere where it could point downward, limiting the depth at which people are detected, with better illumination on the people, and perhaps a lighter background. Many in Finland wear black clothing, and against a black background it was slightly problematic.
 
+### 
+WORKSHOPS USED
+
+(In addition to mechatronics.) If you're planning to build anything similar, do the workshop intros!\
+\
+Multi-material\
+Wood\
+Metal
+
 ### SOME PARTS LINKS
 
 [Raspberry Pi Pico 2 W](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)\
 [](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)[SY42STH38-1684A Stepper Motor](https://www.pololu.com/product/2267)\
-[A4988 Stepper Motor Driver](https://www.pololu.com/product/2128)
+[A4988 Stepper Motor Driver](https://www.pololu.com/product/2128)[](https://www.pololu.com/product/2128)
 
 ### CLOSE-UP PHOTO DOCUMENTATION
 
