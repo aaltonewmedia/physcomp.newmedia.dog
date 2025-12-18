@@ -7,6 +7,8 @@ image: oka_finished_work_1920x1080.jpg
 bgimage: oka_finished_work_1920x1080.jpg
 showBgImage: true
 ---
+![](oka_finished_work_1920x1080.jpg)
+
 ### DESCRIPTION + CODE
 
 The Actions of My Consequences is an experimental interactive prototype installation that scans for unaware passersby and seeks to latch on to a target. A row of small wooden planks hang close together, while a unit beneath them follows a singular person’s X coordinate, resulting in movement and sound as it collides with the planks on its way.
@@ -376,7 +378,7 @@ Among other things I learnt:
 * How to cut, file and clean up metal rods
 * How to use vertical drills
 * The significance of pre-drilling for screws (prevents wood splitting, guides the screws, screws bite in tighter)
-* The importance of advance planning, drawing and mapping out what materials I need (couldn’t do much in the beginning due to lack of experience, and that made advancing challenging)
+* The importance of advance planning, drawing and mapping out what materials I need (couldn’t do much in the beginning due to lack of experience, and that made advancing challenging. I could only start drawing plans towards the end)
 * Workshop etiquette in terms of requesting aid and materials (the workshops masters don’t fancy last minute requests, but if they’re small enough they might just be willing to help)
 * I quite enjoy wood and metalworking, and that I’d like to learn more to be able to build better installations independently
 * To look out for kissing alligator clips, even when I think they’re not going to kiss (I melted a power supply, oops)
@@ -441,7 +443,15 @@ Metal
 
 ### SKETCHES AND NOTES
 
-TBA
+![](sketches_and_notes5.jpg)
+
+![](sketches_and_notes4.jpg)
+
+![](sketches_and_notes3.jpg)
+
+![](sketches_and_notes2.jpg)
+
+![](sketches_and_notes1.jpg)
 
 ### RANDOM PROCESS PHOTOS
 
