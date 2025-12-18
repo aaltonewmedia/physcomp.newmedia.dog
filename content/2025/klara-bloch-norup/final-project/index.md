@@ -16,13 +16,9 @@ Knitted Memories started already when I arrived to Finland, before I even knew I
 
 ![](final.jpg)
 
-![](website_documentation_1_01.png)
-
-![](physicalcomputing_a5_02-03.png)
 
 
 
-![](physicalcomputing_a5_04-05.png)
 
 ![](physicalcomputing_a5_06-07.png)
 
@@ -57,7 +53,7 @@ By making the lamp and the interactive LED strip I learned about coding Neo Pixe
 
 
 
-
+![](website_documentation_1_01.png)
 
 
 
