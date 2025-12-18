@@ -411,7 +411,33 @@ Metal
 
 ### CLOSE-UP PHOTO DOCUMENTATION
 
-TBA
+![](close_up1.jpg)
+
+![](close_up2.jpg)
+
+![](close_up3.jpg)
+
+![](close_up4.jpg)
+
+![](close_up5.jpg)
+
+![](close_up6.jpg)
+
+![](close_up7.jpg)
+
+![](close_up8.jpg)
+
+![](close_up9.jpg)
+
+![](close_up10.jpg)
+
+![](close_up11.jpg)
+
+![](close_up12.jpg)
+
+![](close_up13.jpg)
+
+![](close_up14.jpg)
 
 ### SKETCHES AND NOTES
 
