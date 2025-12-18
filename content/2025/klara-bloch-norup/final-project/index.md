@@ -20,6 +20,8 @@ Knitted Memories started already when I arrived to Finland, before I even knew I
 
 ![](physicalcomputing_a5_02-03.png)
 
+
+
 ![](physicalcomputing_a5_04-05.png)
 
 ![](physicalcomputing_a5_06-07.png)
@@ -52,6 +54,12 @@ The interface was a collaboration with textile designer, Lila Monin. Together we
 The lamp
 
 By making the lamp and the interactive LED strip I learned about coding Neo Pixels. This was fairly simple by using the example code from the Neo Pixel library and the main challenges was sending the data from p5.js to get a smooth changing light in the lamp. Since I have not done any kinds of physical computing before it was as well a learning for me to set up the right power circuit on the breadboard.
+
+
+
+
+
+
 
 
 
