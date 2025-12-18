@@ -32,7 +32,35 @@ Knitted Memories started already when I arrived to Finland, before I even knew I
 
 ![]()
 
-The Arduino code:
+
+
+
+During the project I learned a lot in all phases of the work. And honestly I am surprised that all parts worked out successfully. I will describe some of the learnings I achieved during the project. 
+
+
+
+
+The visuals
+
+From making the visuals I learned how to work with custom shapes in p5.js, which includes getting an understanding of vertex and bézier curves. This was tricky at first, but in the result a pretty convenient way to make more complex shapes drawn directly into the code. Afterwards I could easily use translate to define the position on the canvas. Further on I learned a bit about sound, what values I could get from the playing sound and how to make the object react to this data. I used the keyPressed to control the sounds and I should later on experience that this was a smart way to structure the interaction. 
+
+
+
+
+The Interface
+
+The interface was a collaboration with textile designer, Lila Monin. Together we went trough a trial and error process, discovering how we could include conductive yarn in the knit and get some useful data to visuals and sound. In the beginning we aimed to make a stretchable textile we could use as a slider in the code, but we discovered early in the process how challenging this was. Thus we used the capacitive sensor instead and used the conductive yarn to make touchable spots in the knit and by doing this we could make the textile a keyboard and didn’t have to change anything in the main code. I was especially surprised at this points, when we made this work and we could play the sounds by the “keys” in the knitted samples. 
+
+
+
+
+The lamp
+
+By making the lamp and the interactive LED strip I learned about coding Neo Pixels. This was fairly simple by using the example code from the Neo Pixel library and the main challenges was sending the data from p5.js to get a smooth changing light in the lamp. Since I have not done any kinds of physical computing before it was as well a learning for me to set up the right power circuit on the breadboard.
+
+
+
+The Arduino code for the knitted interface:
 
 ```
 /*********************************************************
