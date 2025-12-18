@@ -6,23 +6,18 @@ authors:
 image: website_documentation_1_01.png
 showBgImage: false
 ---
-## KNITTED SURFACES
+## Knitted Memories
 
-in collaboration with textile designer, Lila , I will work with knitted fabrics as the interface
 
-we are working with conductive yarn and wool as the main materials and we might combine machine knit with hand knit
 
-CREATING SOUND
 
-we are interested in sound as the feedback of the interaction with a knitted textile 
+By exploring atmospheres, materials and the act of archiving memories we brought into life the work Knitted Memories. Knitted Memories is a new media art installation combining the tactile knitted surfaces with sound and light while questioning our relation to technologies and how we archive and share memories. The installation consists of three main elements: the visuals, the lamp and the interface. By touching the interface you play sound rocordings and both visuals and LED lights are based on the sound playing. The elements are exhibited in the setting of a room, including readymades from the past – the rya rug and the old TV monitor – making it a bit of an odd mix of both futuristic and retro coded aesthetics. By that we hope the viewer reflects on memories and time while they discover the sounds we are hiding in the knitted materialities. They sense the changing atmosphere and ideally think of the way we archive and revisit our memories. Is it giving that the screen of our phones are the only surface of interaction that leads os to our memories or could it be a colorful scarf instead?
 
-LIGHT COULD BE ADDED TOO
+Knitted Memories is made in collaboration with textile designer Lila Monin, who designed and machine knitted the interactive piece of textile using conductive yarn to activate the touch sensor. All sounds are recorded by Hitomi Asaka. They are mainly everyday sounds, supporting the visualization of memories in our work. 
 
-I am curious about implementing light as well
+Knitted Memories started already when I arrived to Finland, before I even knew I was going to make this project. I knitted in the metro, during the lectures and all around in Helsinki. I bought yarn in the colors of my mood and in this way I tried to archive all my new memories in the colors and textures of the wool. Already by knitting in these public spaces I was questioning our relation to technologies. Every morning in the metro, passengers were all looking at their phones. No eye contact, no small talk, no nothing, just the smell of sweat and coffee breathe and stinking red bulls in the rush hour. I challenged this by knitting and I discovered how this could shaken up the space and lead to conversations, but also how it made me feel better when arriving to my destination. 
 
-and I have made the prototype of a knitted lamp, that might be interesting to include in the setting – if it works out together with the knitted interface and in the physical setting of this project
 
-open for inputs, ideas and collaborations, please send an email to klara.bloch-norup@aalto.fi 
 
 ![](physicalcomputing_a5_02-03.png)
 
@@ -804,8 +799,6 @@ function draw() {
 }
 ```
 
-
-
 The Arduino code for the light:
 
 ```
@@ -832,78 +825,102 @@ Adafruit_NeoPixel pixels(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 //   NEO_RGBW    Pixels are wired for RGBW bitstream (NeoPixel RGBW products)
 
 
-/*
-//TEST
-//SOUND VARIABLES
-int treble = 255;
-int highMid = 200;
-int mid = 150;
-int lowMid = 100;
-int bass = 50;
-*/
+
+int treble = 0;
+int highMid = 0;
+int mid = 0;
+int lowMid = 0;
+int bass = 0;
+
+float sTreble = 0;
+float sHighMid = 0;
+float sMid = 0;
+float sLowMid = 0;
+float sBass = 0;
+
+float w = 0.1;
+
+float pTreble = 0;
+float pHighMid = 0;
+float pMid = 0;
+float pLowMid = 0;
+float pBass = 0;
 
 
 void setup() {
   pixels.begin();  // INITIALIZE NeoPixel strip object (REQUIRED)
   pixels.show();   // Turn OFF all pixels ASAP
   pixels.setBrightness(BRIGHTNESS);
-  Serial.begin(9600);
+  Serial.begin(115200);
+}
+
+float filter(float rawValue, float w, float prevValue) {
+  float result = w * rawValue + (1.0 - w) * prevValue;
+  return result;
 }
 
 void loop() {
 
   // if there's any serial available, read it:
-  while (Serial.available() > 0) {
+  while (Serial.available()) {
 
     // look for the next valid integer in the incoming serial stream:
-    int treble = Serial.parseInt();
+    treble = Serial.parseInt();
     // do it again:
-    int highMid = Serial.parseInt();
+    highMid = Serial.parseInt();
     // do it again:
-    int mid = Serial.parseInt();
+    mid = Serial.parseInt();
     // do it again:
-    int lowMid = Serial.parseInt();
+    lowMid = Serial.parseInt();
     // do it again:
-    int bass = Serial.parseInt();
-
+    bass = Serial.parseInt();
 
     // look for the new line. That's the end of your sentence:
     if (Serial.read() == '\n') {
-
-      //SET PIXEL COLORS IN LED STRIP
-      for (int i = 0; i < 21; i++) {
-        pixels.setPixelColor(i, pixels.Color(treble, treble, treble));
-      }
-
-      for (int i = 21; i < 42; i++) {
-        pixels.setPixelColor(i, pixels.Color(highMid, highMid, highMid));
-      }
-
-      for (int i = 42; i < 63; i++) {
-        pixels.setPixelColor(i, pixels.Color(mid, mid, mid));
-      }
-
-      for (int i = 63; i < 84; i++) {
-        pixels.setPixelColor(i, pixels.Color(lowMid, lowMid, lowMid));
-      }
-
-      for (int i = 84; i < 105; i++) {
-        pixels.setPixelColor(i, pixels.Color(bass, bass, bass));
-      }
-
-      pixels.show();
-      delay(1);
-
-      Serial.print(treble);
-      Serial.print(",");
-      Serial.print(highMid);
-      Serial.print(",");
-      Serial.print(mid);
-      Serial.print(",");
-      Serial.print(lowMid);
-      Serial.print(",");
-      Serial.println(bass);
     }
   }
+
+  sTreble = filter(treble, w, pTreble);
+  pTreble = sTreble;
+  sHighMid = filter(highMid, w, pHighMid);
+  pHighMid = sHighMid;
+  sMid = filter(mid, w, pMid);
+  pMid = sMid;
+  sLowMid = filter(lowMid, w, pLowMid);
+  pLowMid = sLowMid;
+  sBass = filter(bass, w, pBass);
+  pBass = sBass;
+
+  //SET PIXEL COLORS IN LED STRIP
+  for (int i = 0; i < 30; i++) {
+    pixels.setPixelColor(i, pixels.Color(int(sBass), int(sBass), int(sBass)));
+  }
+  for (int i = 30; i < 50; i++) {
+    pixels.setPixelColor(i, pixels.Color(int(sLowMid), int(sLowMid), int(sLowMid)));
+  }
+  for (int i = 50; i < 70; i++) {
+    pixels.setPixelColor(i, pixels.Color(int(sMid), int(sMid), int(sMid)));
+  }
+  for (int i = 70; i < 90; i++) {
+    pixels.setPixelColor(i, pixels.Color(int(sHighMid), int(sHighMid), int(sHighMid)));
+  }
+  for (int i = 90; i < 105; i++) {
+    pixels.setPixelColor(i, pixels.Color(int(sTreble), int(sTreble), int(sTreble)));
+  }
+
+  pixels.show();
+  delay(10);
+
+  Serial.print(int(sTreble));
+  Serial.print(",");
+  Serial.print(int(sHighMid));
+  Serial.print(",");
+  Serial.print(int(sMid));
+  Serial.print(",");
+  Serial.print(int(sLowMid));
+  Serial.print(",");
+  Serial.println(int(sBass));
 }
+
+//
 ```
