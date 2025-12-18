@@ -456,4 +456,50 @@ Metal
 
 ### RANDOM PROCESS PHOTOS
 
-TBA
+In chronological order:
+
+![](process1.jpg)
+
+![](process2.jpg)
+
+![](process3.jpg)
+
+![](process4.jpg)
+
+![](process5.jpg)
+
+![](process6.jpg)
+
+![](process7.jpg)
+
+![](process8.jpg)
+
+![](process9.jpg)
+
+![](process10.jpg)
+
+![](process11.jpg)
+
+![](process12.jpg)
+
+![](process13.jpg)
+
+![](process14.jpg)
+
+![](process15.jpg)
+
+![](process16.jpg)
+
+![](process17.jpg)
+
+![](process18.jpg)
+
+![](process19.jpg)
+
+![](process20.jpg)
+
+![](process21.jpg)
+
+![](process22.jpg)
+
+![](process23.jpg)
