@@ -19,8 +19,6 @@ I had ideas about micro sound, secret message, and started testing ideas immedia
 * Connected Polulu A4988 Black Edition with one motor  
 
   <https://www.pololu.com/product/2128>
-
-
 * Connected the stepper motor with MIDI via Ableton, using the Physical Pixel code example. While sending MIDI notes to step motor, I had an idea about using secret code as an interpretation of non-verbal sonic narration.
 * Reference about micro sounds Nelo Akamatsu's Chijikinkutsu - A spatial composition without using speakers, with needles inside glasses. The signals were sent through copper wires with an iPad using sequencer notes.
 * Researched about secret codes - started to use Morse code (dots and dashes).
@@ -59,10 +57,7 @@ Began experimenting with electromagnets and controlling them with Pico and Max, 
 
 * Connected electromagnet with pico following the diagram from the below website using TIP120 transistor and a button to control on/off independently (very proud)
 
-
   <https://deepbluembedded.com/arduino-electromagnet-control-circuit-code-example/>
-
-
 * Programmed "hello" in Morse code in arduino with a tediously long code...
 * Connected Max with Arduino → sending on/off using Physical Pixel (Ascii chart H-72 L-76)
   many progress in one afternoon!
@@ -158,12 +153,9 @@ Delay
 Step to the next index and start again. 
 
 * Talked about my idea with Oliver, and concluded not using Morse Code for the library project. If I am not using Morse code in the end, do I need to spend all my time on the technical and compositional side with Morse code.
-
 * Re-setting goals for the prototype
 
-
-
-**Week 3 Summary**
+**Week 3 Summary:**
 
 Progress stopped due to Computational Art...
 
@@ -173,8 +165,7 @@ Progress stopped due to Computational Art...
 
 Instead of serial port, connected to Max via MIDI.
 
-Motor → Channel 1
-
+Motor → Channel 1\
 Magnets → Channel 2
 Magnet 1 → note 60
 Magnet 2 → note 61
@@ -191,7 +182,7 @@ Array of note length \
 A note or a pause\
 Some sort of tempo and step through the notes
 
-**Week 3 Summary:**
+**Week 4 Summary:**
 
 Made a generative system with Max, and programmed within Pico, and the physical part came together.
 
@@ -200,10 +191,6 @@ Made a generative system with Max, and programmed within Pico, and the physical 
 251201
 
 * Created a generative system on Max for one motor and two magnets.
-
-
-
-
 
 Explanation of the patch:
 
@@ -450,7 +437,6 @@ void handleNoteOff(byte channel, byte pitch, byte velocity) {
     if (pitch == 62) digitalWrite(20, LOW);
   }
 }
-
 ```
 
 Using pico as a sequencer
@@ -479,11 +465,7 @@ Why does micro stepping make everything smoother and quieter?
 251213
 
 * I changed to silent driver independently!! Previously, I had help from Oskars while connecting to the motor and motor driver. This time I drew a diagram to understand each connection, ground, power, output and input, and measured the resistance with the multi-meter.
-
-
 * The silent driver micro stepping stopped working at some point. Then, I figured out the resistance was too high that the motor couldn't spin.
-
-
 * Silent driver - with the non-micro stepping code, it creates loud sounds. Then it's silent when I use the micro stepping code.
 
  \
