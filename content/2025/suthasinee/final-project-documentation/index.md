@@ -299,7 +299,7 @@ String [] cities = {"Amsterdam", "Atlanta", "Bangkok", "Berlin", "Hanoi", "Helsi
 //HashMap<String, String> friendCity = new HashMap<String, String>();
 //HashMap<int, String> currentCity = new HashMap<String, String>();
 int currentCity = 0;
-String apiKey = "6482705bbb79dfa693df68fd55f58949";
+String apiKey = ""; //add your api key
 String url = "https://api.openweathermap.org/data/2.5/weather?q=" 
                 + cities[currentCity] + "&appid=" + apiKey + "&units=metric";
 

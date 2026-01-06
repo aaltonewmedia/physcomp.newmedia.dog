@@ -9,6 +9,10 @@ showBgImage: true
 ---
 # **Hidden Under**
 
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%">
+	<iframe src="https://aalto.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=9dffde03-709f-42da-a429-b3b200f62652&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646; position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Hidden Under"></iframe>
+</div>
+
 Hidden Under is an interactive art installation made for the project course called Physical Computing. This is the documentation of the project, which was proposed [earlier during the course](https://physcomp.newmedia.dog/2025/kuutamokuu/main-project-proposal-hidden-under/). This documentation is an overview of the project phases and a retrospective of why the design was executed this way and what would be done differently if there had been the needed resources to complete this work in its original design.
 
 ### Main aspects of the project
