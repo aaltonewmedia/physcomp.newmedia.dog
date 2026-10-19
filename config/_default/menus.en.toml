@@ -21,6 +21,11 @@
   weight = 11
 
 [[main]]
+  name = "2026"
+  pageRef = "2026"
+  weight = 12
+
+[[main]]
   name = "Log In"
   url = "/admin"
   weight = 20
