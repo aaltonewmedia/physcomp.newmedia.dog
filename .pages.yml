@@ -1,62 +1,43 @@
-    - name: showBgImage
-      label: Show background image
-      type: boolean
-      default: false
-    - name: showComments
-      label: Show comments
-      type: boolean
-      default: true
-    - name: heroStyle
-      label: Hero style
-      type: select
-      default: background
-      options:
-        values:
-        - background
-        - basic
-        - big
-        - thumbAndBackground
-    - name: draft
-      label: Draft (hide from published site)
-      type: boolean
-      default: false
-    - name: body
-      label: Body
-      type: rich-text
-      description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID >}}.
-      options:
-        media: images-matti-niinimaki
-        format: markdown
-        switcher: true
-  - name: 2026-matti-niinimaki-pages
-    label: Pages / projects
-    type: collection
-    path: content/2026/matti-niinimaki
+# Pages CMS — Physical Computing 2026 — Matti-only test
+# Place this file at the repository root as .pages.yml.
+# Only Matti’s content and image collection are exposed in this test configuration.
+# All invited collaborators share access to these configured entries.
+# Pages use content/2026/<person>/<title-slug>/index.md.
+# New images use assets/images/2026/<person>/ with random filenames to avoid collisions.
+# Existing page-bundle images and content are not moved.
+# Background image is a filename field because the site's custom template only
+# resolves bgimage from page resources. Featured/inline uploads use global assets.
+# Author names inferred from folder names can be corrected in each default list.
+# Preserve extra frontmatter keys (e.g. bgImage on existing pages) with merge: true.
+
+media:
+- name: images-matti-niinimaki
+  label: Matti Niinimäki — images
+  input: assets/images/2026/matti-niinimaki
+  output: /images/2026/matti-niinimaki
+  categories:
+  - image
+  rename: random
+content:
+- name: 2026-matti-niinimaki
+  label: Matti Niinimäki
+  type: group
+  items:
+  - name: 2026-matti-niinimaki-profile
+    label: Profile / introduction
+    type: file
+    path: content/2026/matti-niinimaki/_index.md
     format: yaml-frontmatter
-    subfolders: true
-    exclude:
-    - _index.md
-    - '**/_index.md'
-    filename:
-      template: '{primary}/index.md'
-      field: create
-    view:
-      primary: title
-      fields:
-      - title
-      - date
-      - draft
-      sort:
-      - date
-      - title
-      default:
-        sort: date
-        order: desc
+    operations:
+      create: true
+      rename: false
+      delete: false
     fields:
     - name: title
       label: Title
       type: string
       required: true
+      default: Matti Niinimäki
     - name: date
       label: Publish date
       type: date
@@ -111,6 +92,5 @@
         media: images-matti-niinimaki
         format: markdown
         switcher: true
-settings:
-  content:
-    merge: true
+  - name: 2026-matti-niinimaki-pages
+    label: Pages / projects
