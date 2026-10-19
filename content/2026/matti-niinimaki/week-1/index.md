@@ -5,5 +5,7 @@ showBgImage: false
 showComments: true
 heroStyle: background
 draft: false
+authors:
+  - Matti Niinimäki
 ---
 My Week 1 docs
