@@ -18,3 +18,79 @@ media:
   categories:
   - image
   rename: random
+content:
+- name: 2026-matti-niinimaki-profile
+  label: Matti — Profile / introduction
+  type: file
+  path: content/2026/matti-niinimaki/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: Matti Niinimäki
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - Matti Niinimäki
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines, not automatic upload limits.
+    options:
+      media: images-matti-niinimaki
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file, e.g. bg.jpg. Your current background
+      template resolves this field from page resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID >}}.
+    options:
+      media: images-matti-niinimaki
+      format: markdown
+      switcher: true
+- name: 2026-matti-niinimaki-pages
+  label: Matti — Pages / projects
+  type: collection
+  path: content/2026/matti-niinimaki
+  format: yaml-frontmatter
+  subfolders: true
