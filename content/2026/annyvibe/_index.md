@@ -1,5 +1,5 @@
 ---
-title: annyvibe
+title: ·annyvibe·
 date: 2026-10-20T00:20:00Z
 authors:
   - annyvibe
@@ -12,6 +12,5 @@ bgimage: mvjar0qp-h7fo7esp.jpg
 ---
 This is the cool me deep in thoughts
 
-![](assets/images/2026/annyvibe/mvjdk7jj-jxguis9i.jpg)
-
+![](/images/2026/annyvibe/mvjdk7jj-jxguis9i.jpg)
 
