@@ -11,7 +11,7 @@ image: /images/2026/monrhea/mvjm4f6s-2b09g5i5.jpg
 ---
  -_- 
 
-\__\/__/
+
 
         
 
