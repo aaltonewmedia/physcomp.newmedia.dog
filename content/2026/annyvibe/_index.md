@@ -10,12 +10,8 @@ draft: false
 image: /images/2026/annyvibe/mvjar0qp-h7fo7esp.jpg
 bgimage: mvjar0qp-h7fo7esp.jpg
 ---
-This is my course documentation site!
+This is the cool me deep in thoughts
 
-Edit this page with some basic information about yourself.
+![](/images/2026/matti-niinimaki/mvfrddf3-573xung2.jpg)
 
-Keep your images to this specification:
-
-- Resolution: maximum 1920 pixels for the longer side
-- Filesize: maximum 2MB
 
