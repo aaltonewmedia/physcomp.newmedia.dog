@@ -8,7 +8,7 @@ showBgImage: true
 showComments: true
 draft: false
 image: /images/2026/annyvibe/mvjald67-ij2d0tio.jpg
-bgimage: assets/images/2026/annyvibe/mvjald67-ij2d0tio.jpg
+bgimage: mvjald67-ij2d0tio.jpg
 ---
 This is my course documentation site!
 
