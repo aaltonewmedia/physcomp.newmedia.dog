@@ -7,8 +7,7 @@ heroStyle: background
 showBgImage: true
 showComments: true
 draft: false
-image: /images/2026/annyvibe/mvjar0qp-h7fo7esp.jpg
-bgimage: mvje5iax-hc858iwk.jpg
+image: /images/2026/annyvibe/mvjekxcv-q80yq3jf.jpg
 ---
 ### This is the cool me deep in thoughts
 
