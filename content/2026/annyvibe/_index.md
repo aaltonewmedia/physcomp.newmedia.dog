@@ -12,6 +12,6 @@ bgimage: mvjar0qp-h7fo7esp.jpg
 ---
 This is the cool me deep in thoughts
 
-![](/images/2026/matti-niinimaki/mvfrddf3-573xung2.jpg)
+![](assets/images/2026/annyvibe/mvjdk7jj-jxguis9i.jpg)
 
 
