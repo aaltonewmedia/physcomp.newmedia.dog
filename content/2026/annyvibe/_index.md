@@ -12,5 +12,5 @@ bgimage: mvje5iax-hc858iwk.jpg
 ---
 ## This is the cool me deep in thoughts
 
-![](/images/2026/annyvibe/mvjdk7jj-jxguis9i.jpg)
+![](/images/2026/annyvibe/mvjeb30d-uaxchjcl.jpg)
 
