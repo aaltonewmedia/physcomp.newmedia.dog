@@ -5,7 +5,7 @@ heroStyle: background
 showBgImage: true
 showComments: true
 draft: false
-image: /images/2026/adrian-nirk/mvjq4lo6-1hosxomh.jpg
+image: /images/2026/adrian-nirk/mvjqf90i-0ppz61v2.jpeg
 ---
 Hiya, I'm Adrian :)
 
