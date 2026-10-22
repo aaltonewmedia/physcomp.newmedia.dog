@@ -27,7 +27,7 @@
 
 [[main]]
   name = "Log In"
-  url = "/admin"
+  url = "https://app.pagescms.org/"
   weight = 20
 
 #[[main]]
