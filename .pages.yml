@@ -11,21 +11,21 @@
 ---
 media:
 - name: images-adrian-nirk
-  label: adrian-nirk — images
+  label: Adrian Nirk — images
   input: assets/images/2026/adrian-nirk
   output: "/images/2026/adrian-nirk"
   categories:
   - image
   rename: random
 - name: images-aleksi-seppa
-  label: aleksi-seppa — images
+  label: Aleksi Seppä — images
   input: assets/images/2026/aleksi-seppa
   output: "/images/2026/aleksi-seppa"
   categories:
   - image
   rename: random
 - name: images-amanda
-  label: amanda — images
+  label: Amanda — images
   input: assets/images/2026/amanda
   output: "/images/2026/amanda"
   categories:
@@ -39,70 +39,63 @@ media:
   - image
   rename: random
 - name: images-carolina
-  label: carolina — images
+  label: Carolina — images
   input: assets/images/2026/carolina
   output: "/images/2026/carolina"
   categories:
   - image
   rename: random
 - name: images-isidora-pesce
-  label: isidora-pesce — images
+  label: Isidora Pesce — images
   input: assets/images/2026/isidora-pesce
   output: "/images/2026/isidora-pesce"
   categories:
   - image
   rename: random
 - name: images-iuliana-fadeeva
-  label: iuliana-fadeeva — images
+  label: Iuliana Fadeeva — images
   input: assets/images/2026/iuliana-fadeeva
   output: "/images/2026/iuliana-fadeeva"
   categories:
   - image
   rename: random
 - name: images-jin
-  label: jin — images
+  label: Jin — images
   input: assets/images/2026/jin
   output: "/images/2026/jin"
   categories:
   - image
   rename: random
 - name: images-lia-sapurova
-  label: lia-sapurova — images
+  label: Lia Šapurova — images
   input: assets/images/2026/lia-sapurova
   output: "/images/2026/lia-sapurova"
   categories:
   - image
   rename: random
-- name: images-mart
-  label: mart — images
-  input: assets/images/2026/mart
-  output: "/images/2026/mart"
-  categories:
-  - image
-  rename: random
 - name: images-marta
-  label: marta — images
+  label: Marta — images
   input: assets/images/2026/marta
   output: "/images/2026/marta"
   categories:
   - image
   rename: random
 - name: images-matti-niinimaki
-  label: matti-niinimaki — images
+  label: Matti Niinimäki — images
   input: assets/images/2026/matti-niinimaki
   output: "/images/2026/matti-niinimaki"
   categories:
   - image
   rename: random
 - name: images-monrhea
-  label: monrhea — images
+  label: "[MONRHEA] — images"
   input: assets/images/2026/monrhea
   output: "/images/2026/monrhea"
   categories:
   - image
   rename: random
 - name: images-oona-piippo
-  label: oona-piippo — images
+  label: Oona Piippo — images
   input: assets/images/2026/oona-piippo
   output: "/images/2026/oona-piippo"
   categories:
@@ -116,7 +109,7 @@ media:
   - image
   rename: random
 - name: images-selma-mataich
-  label: selma-mataich — images
+  label: Selma Mataich — images
   input: assets/images/2026/selma-mataich
   output: "/images/2026/selma-mataich"
   categories:
@@ -124,7 +117,7 @@ media:
   rename: random
 content:
 - name: 2026-adrian-nirk-profile
-  label: adrian-nirk — Profile / introduction
+  label: Adrian Nirk — Profile / introduction
   type: file
   path: content/2026/adrian-nirk/_index.md
   format: yaml-frontmatter
@@ -137,7 +130,7 @@ content:
     label: Title
     type: string
     required: true
-    default: adrian-nirk
+    default: Adrian Nirk
   - name: date
     label: Publish date
     type: date
@@ -150,7 +143,7 @@ content:
     type: string
     list: true
     default:
-    - adrian-nirk
+    - Adrian Nirk
   - name: image
     label: Featured image
     type: image
@@ -200,7 +193,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-adrian-nirk-pages
-  label: adrian-nirk — Pages / projects
+  label: Adrian Nirk — Pages / projects
   type: collection
   path: content/2026/adrian-nirk
   format: yaml-frontmatter
@@ -240,7 +233,7 @@ content:
     type: string
     list: true
     default:
-    - adrian-nirk
+    - Adrian Nirk
   - name: image
     label: Featured image
     type: image
@@ -290,7 +283,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-aleksi-seppa-profile
-  label: aleksi-seppa — Profile / introduction
+  label: Aleksi Seppä — Profile / introduction
   type: file
   path: content/2026/aleksi-seppa/_index.md
   format: yaml-frontmatter
@@ -303,7 +296,7 @@ content:
     label: Title
     type: string
     required: true
-    default: aleksi-seppa
+    default: Aleksi Seppä
   - name: date
     label: Publish date
     type: date
@@ -316,7 +309,7 @@ content:
     type: string
     list: true
     default:
-    - aleksi-seppa
+    - Aleksi Seppä
   - name: image
     label: Featured image
     type: image
@@ -366,7 +359,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-aleksi-seppa-pages
-  label: aleksi-seppa — Pages / projects
+  label: Aleksi Seppä — Pages / projects
   type: collection
   path: content/2026/aleksi-seppa
   format: yaml-frontmatter
@@ -406,7 +399,7 @@ content:
     type: string
     list: true
     default:
-    - aleksi-seppa
+    - Aleksi Seppä
   - name: image
     label: Featured image
     type: image
@@ -456,7 +449,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-amanda-profile
-  label: amanda — Profile / introduction
+  label: Amanda — Profile / introduction
   type: file
   path: content/2026/amanda/_index.md
   format: yaml-frontmatter
@@ -469,7 +462,7 @@ content:
     label: Title
     type: string
     required: true
-    default: amanda
+    default: Amanda
   - name: date
     label: Publish date
     type: date
@@ -482,7 +475,7 @@ content:
     type: string
     list: true
     default:
-    - amanda
+    - Amanda
   - name: image
     label: Featured image
     type: image
@@ -532,7 +525,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-amanda-pages
-  label: amanda — Pages / projects
+  label: Amanda — Pages / projects
   type: collection
   path: content/2026/amanda
   format: yaml-frontmatter
@@ -572,7 +565,7 @@ content:
     type: string
     list: true
     default:
-    - amanda
+    - Amanda
   - name: image
     label: Featured image
     type: image
@@ -788,7 +781,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-carolina-profile
-  label: carolina — Profile / introduction
+  label: Carolina — Profile / introduction
   type: file
   path: content/2026/carolina/_index.md
   format: yaml-frontmatter
@@ -801,7 +794,7 @@ content:
     label: Title
     type: string
     required: true
-    default: carolina
+    default: Carolina
   - name: date
     label: Publish date
     type: date
@@ -814,7 +807,7 @@ content:
     type: string
     list: true
     default:
-    - carolina
+    - Carolina
   - name: image
     label: Featured image
     type: image
@@ -864,7 +857,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-carolina-pages
-  label: carolina — Pages / projects
+  label: Carolina — Pages / projects
   type: collection
   path: content/2026/carolina
   format: yaml-frontmatter
@@ -904,7 +897,7 @@ content:
     type: string
     list: true
     default:
-    - carolina
+    - Carolina
   - name: image
     label: Featured image
     type: image
@@ -954,7 +947,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-isidora-pesce-profile
-  label: isidora-pesce — Profile / introduction
+  label: Isidora Pesce — Profile / introduction
   type: file
   path: content/2026/isidora-pesce/_index.md
   format: yaml-frontmatter
@@ -967,7 +960,7 @@ content:
     label: Title
     type: string
     required: true
-    default: isidora-pesce
+    default: Isidora Pesce
   - name: date
     label: Publish date
     type: date
@@ -980,7 +973,7 @@ content:
     type: string
     list: true
     default:
-    - isidora-pesce
+    - Isidora Pesce
   - name: image
     label: Featured image
     type: image
@@ -1030,7 +1023,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-isidora-pesce-pages
-  label: isidora-pesce — Pages / projects
+  label: Isidora Pesce — Pages / projects
   type: collection
   path: content/2026/isidora-pesce
   format: yaml-frontmatter
@@ -1070,7 +1063,7 @@ content:
     type: string
     list: true
     default:
-    - isidora-pesce
+    - Isidora Pesce
   - name: image
     label: Featured image
     type: image
@@ -1120,7 +1113,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-iuliana-fadeeva-profile
-  label: iuliana-fadeeva — Profile / introduction
+  label: Iuliana Fadeeva — Profile / introduction
   type: file
   path: content/2026/iuliana-fadeeva/_index.md
   format: yaml-frontmatter
@@ -1133,7 +1126,7 @@ content:
     label: Title
     type: string
     required: true
-    default: iuliana-fadeeva
+    default: Iuliana Fadeeva
   - name: date
     label: Publish date
     type: date
@@ -1146,7 +1139,7 @@ content:
     type: string
     list: true
     default:
-    - iuliana-fadeeva
+    - Iuliana Fadeeva
   - name: image
     label: Featured image
     type: image
@@ -1196,7 +1189,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-iuliana-fadeeva-pages
-  label: iuliana-fadeeva — Pages / projects
+  label: Iuliana Fadeeva — Pages / projects
   type: collection
   path: content/2026/iuliana-fadeeva
   format: yaml-frontmatter
@@ -1236,7 +1229,7 @@ content:
     type: string
     list: true
     default:
-    - iuliana-fadeeva
+    - Iuliana Fadeeva
   - name: image
     label: Featured image
     type: image
@@ -1286,7 +1279,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-jin-profile
-  label: jin — Profile / introduction
+  label: Jin — Profile / introduction
   type: file
   path: content/2026/jin/_index.md
   format: yaml-frontmatter
@@ -1299,7 +1292,7 @@ content:
     label: Title
     type: string
     required: true
-    default: jin
+    default: Jin
   - name: date
     label: Publish date
     type: date
@@ -1312,7 +1305,7 @@ content:
     type: string
     list: true
     default:
-    - jin
+    - Jin
   - name: image
     label: Featured image
     type: image
@@ -1362,7 +1355,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-jin-pages
-  label: jin — Pages / projects
+  label: Jin — Pages / projects
   type: collection
   path: content/2026/jin
   format: yaml-frontmatter
@@ -1402,7 +1395,7 @@ content:
     type: string
     list: true
     default:
-    - jin
+    - Jin
   - name: image
     label: Featured image
     type: image
@@ -1452,7 +1445,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-lia-sapurova-profile
-  label: lia-sapurova — Profile / introduction
+  label: Lia Šapurova — Profile / introduction
   type: file
   path: content/2026/lia-sapurova/_index.md
   format: yaml-frontmatter
@@ -1465,7 +1458,7 @@ content:
     label: Title
     type: string
     required: true
-    default: lia-sapurova
+    default: Lia Šapurova
   - name: date
     label: Publish date
     type: date
@@ -1478,7 +1471,7 @@ content:
     type: string
     list: true
     default:
-    - lia-sapurova
+    - Lia Šapurova
   - name: image
     label: Featured image
     type: image
@@ -1528,7 +1521,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-lia-sapurova-pages
-  label: lia-sapurova — Pages / projects
+  label: Lia Šapurova — Pages / projects
   type: collection
   path: content/2026/lia-sapurova
   format: yaml-frontmatter
@@ -1568,7 +1561,7 @@ content:
     type: string
     list: true
     default:
-    - lia-sapurova
+    - Lia Šapurova
   - name: image
     label: Featured image
     type: image
@@ -1615,176 +1608,10 @@ content:
       >}}.
     options:
       media: images-lia-sapurova
-      format: markdown
-      switcher: true
-- name: 2026-mart-profile
-  label: mart — Profile / introduction
-  type: file
-  path: content/2026/mart/_index.md
-  format: yaml-frontmatter
-  operations:
-    create: true
-    rename: false
-    delete: false
-  fields:
-  - name: title
-    label: Title
-    type: string
-    required: true
-    default: mart
-  - name: date
-    label: Publish date
-    type: date
-    required: true
-    options:
-      time: true
-      format: yyyy-MM-dd'T'HH:mm:ssXXX
-  - name: authors
-    label: Authors
-    type: string
-    list: true
-    default:
-    - mart
-  - name: image
-    label: Featured image
-    type: image
-    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
-      not automatic upload limits.
-    options:
-      media: images-mart
-  - name: bgimage
-    label: Background image (existing page-bundle filename)
-    type: string
-    description: Optional filename of an image already beside this Markdown file,
-      e.g. bg.jpg. Your current background template resolves this field from page
-      resources.
-  - name: showBgImage
-    label: Show background image
-    type: boolean
-    default: false
-  - name: showComments
-    label: Show comments
-    type: boolean
-    default: true
-  - name: heroStyle
-    label: Hero style
-    type: select
-    default: background
-    options:
-      values:
-      - background
-      - basic
-      - big
-      - thumbAndBackground
-    hidden: true
-    readonly: true
-  - name: draft
-    label: Draft (hide from published site)
-    type: boolean
-    default: false
-    hidden: true
-    readonly: true
-  - name: body
-    label: Body
-    type: rich-text
-    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
-      >}}.
-    options:
-      media: images-mart
-      format: markdown
-      switcher: true
-- name: 2026-mart-pages
-  label: mart — Pages / projects
-  type: collection
-  path: content/2026/mart
-  format: yaml-frontmatter
-  subfolders: true
-  exclude:
-  - _index.md
-  - "**/_index.md"
-  filename:
-    template: "{primary}/index.md"
-    field: false
-  view:
-    primary: title
-    fields:
-    - title
-    - date
-    - draft
-    sort:
-    - date
-    - title
-    default:
-      sort: date
-      order: desc
-  fields:
-  - name: title
-    label: Title
-    type: string
-    required: true
-  - name: date
-    label: Publish date
-    type: date
-    required: true
-    options:
-      time: true
-      format: yyyy-MM-dd'T'HH:mm:ssXXX
-  - name: authors
-    label: Authors
-    type: string
-    list: true
-    default:
-    - mart
-  - name: image
-    label: Featured image
-    type: image
-    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
-      not automatic upload limits.
-    options:
-      media: images-mart
-  - name: bgimage
-    label: Background image (existing page-bundle filename)
-    type: string
-    description: Optional filename of an image already beside this Markdown file,
-      e.g. bg.jpg. Your current background template resolves this field from page
-      resources.
-  - name: showBgImage
-    label: Show background image
-    type: boolean
-    default: false
-  - name: showComments
-    label: Show comments
-    type: boolean
-    default: true
-  - name: heroStyle
-    label: Hero style
-    type: select
-    default: background
-    options:
-      values:
-      - background
-      - basic
-      - big
-      - thumbAndBackground
-    hidden: true
-    readonly: true
-  - name: draft
-    label: Draft (hide from published site)
-    type: boolean
-    default: false
-    hidden: true
-    readonly: true
-  - name: body
-    label: Body
-    type: rich-text
-    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
-      >}}.
-    options:
-      media: images-mart
       format: markdown
       switcher: true
 - name: 2026-marta-profile
-  label: marta — Profile / introduction
+  label: Marta — Profile / introduction
   type: file
   path: content/2026/marta/_index.md
   format: yaml-frontmatter
@@ -1797,7 +1624,7 @@ content:
     label: Title
     type: string
     required: true
-    default: marta
+    default: Marta
   - name: date
     label: Publish date
     type: date
@@ -1810,7 +1637,7 @@ content:
     type: string
     list: true
     default:
-    - marta
+    - Marta
   - name: image
     label: Featured image
     type: image
@@ -1860,7 +1687,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-marta-pages
-  label: marta — Pages / projects
+  label: Marta — Pages / projects
   type: collection
   path: content/2026/marta
   format: yaml-frontmatter
@@ -1900,7 +1727,7 @@ content:
     type: string
     list: true
     default:
-    - marta
+    - Marta
   - name: image
     label: Featured image
     type: image
@@ -1950,7 +1777,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-matti-niinimaki-profile
-  label: matti-niinimaki — Profile / introduction
+  label: Matti Niinimäki — Profile / introduction
   type: file
   path: content/2026/matti-niinimaki/_index.md
   format: yaml-frontmatter
@@ -2026,7 +1853,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-matti-niinimaki-pages
-  label: matti-niinimaki — Pages / projects
+  label: Matti Niinimäki — Pages / projects
   type: collection
   path: content/2026/matti-niinimaki
   format: yaml-frontmatter
@@ -2116,7 +1943,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-monrhea-profile
-  label: monrhea — Profile / introduction
+  label: "[MONRHEA] — Profile / introduction"
   type: file
   path: content/2026/monrhea/_index.md
   format: yaml-frontmatter
@@ -2129,7 +1956,7 @@ content:
     label: Title
     type: string
     required: true
-    default: monrhea
+    default: "[MONRHEA]"
   - name: date
     label: Publish date
     type: date
@@ -2142,7 +1969,7 @@ content:
     type: string
     list: true
     default:
-    - monrhea
+    - "[MONRHEA]"
   - name: image
     label: Featured image
     type: image
@@ -2192,7 +2019,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-monrhea-pages
-  label: monrhea — Pages / projects
+  label: "[MONRHEA] — Pages / projects"
   type: collection
   path: content/2026/monrhea
   format: yaml-frontmatter
@@ -2232,7 +2059,7 @@ content:
     type: string
     list: true
     default:
-    - monrhea
+    - "[MONRHEA]"
   - name: image
     label: Featured image
     type: image
@@ -2282,7 +2109,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-oona-piippo-profile
-  label: oona-piippo — Profile / introduction
+  label: Oona Piippo — Profile / introduction
   type: file
   path: content/2026/oona-piippo/_index.md
   format: yaml-frontmatter
@@ -2295,7 +2122,7 @@ content:
     label: Title
     type: string
     required: true
-    default: oona-piippo
+    default: Oona Piippo
   - name: date
     label: Publish date
     type: date
@@ -2308,7 +2135,7 @@ content:
     type: string
     list: true
     default:
-    - oona-piippo
+    - Oona Piippo
   - name: image
     label: Featured image
     type: image
@@ -2358,7 +2185,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-oona-piippo-pages
-  label: oona-piippo — Pages / projects
+  label: Oona Piippo — Pages / projects
   type: collection
   path: content/2026/oona-piippo
   format: yaml-frontmatter
@@ -2398,7 +2225,7 @@ content:
     type: string
     list: true
     default:
-    - oona-piippo
+    - Oona Piippo
   - name: image
     label: Featured image
     type: image
@@ -2614,7 +2441,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-selma-mataich-profile
-  label: selma-mataich — Profile / introduction
+  label: Selma Mataich — Profile / introduction
   type: file
   path: content/2026/selma-mataich/_index.md
   format: yaml-frontmatter
@@ -2627,7 +2454,7 @@ content:
     label: Title
     type: string
     required: true
-    default: selma-mataich
+    default: Selma Mataich
   - name: date
     label: Publish date
     type: date
@@ -2640,7 +2467,7 @@ content:
     type: string
     list: true
     default:
-    - selma-mataich
+    - Selma Mataich
   - name: image
     label: Featured image
     type: image
@@ -2690,7 +2517,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-selma-mataich-pages
-  label: selma-mataich — Pages / projects
+  label: Selma Mataich — Pages / projects
   type: collection
   path: content/2026/selma-mataich
   format: yaml-frontmatter
@@ -2730,7 +2557,7 @@ content:
     type: string
     list: true
     default:
-    - selma-mataich
+    - Selma Mataich
   - name: image
     label: Featured image
     type: image
