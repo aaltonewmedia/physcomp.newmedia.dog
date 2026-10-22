@@ -7,6 +7,7 @@ heroStyle: background
 showBgImage: true
 showComments: true
 draft: false
+image: /images/2026/monrhea/mvjm4f6s-2b09g5i5.jpg
 ---
 This is my course documentation site!
 
@@ -16,3 +17,4 @@ Keep your images to this specification:
 
 - Resolution: maximum 1920 pixels for the longer side
 - Filesize: maximum 2MB
+
