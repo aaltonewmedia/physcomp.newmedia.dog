@@ -2,7 +2,7 @@
 title: Jin
 date: 2026-10-20T00:20:00Z
 authors:
-  - Jin
+  - J_jis
 heroStyle: background
 showBgImage: true
 showComments: true
