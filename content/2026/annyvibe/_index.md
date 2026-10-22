@@ -7,8 +7,8 @@ heroStyle: background
 showBgImage: true
 showComments: true
 draft: false
-image: /images/2026/annyvibe/mvjald67-ij2d0tio.jpg
-bgimage: mvjald67-ij2d0tio.jpg
+image: /images/2026/annyvibe/mvjar0qp-h7fo7esp.jpg
+bgimage: mvjar0qp-h7fo7esp.jpg
 ---
 This is my course documentation site!
 
