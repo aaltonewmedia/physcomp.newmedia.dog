@@ -78,3 +78,18 @@ void loop() {
 }
 ```
 
+---
+
+---
+
+---
+
+---
+
+---
+
+I found the texts on the future of interaction design and tangible interfaces quite inspiring. I agree with the "rant" on that touch interfaces are a good-enough solution for the present, but not something that we should employ absolutely everywhere; this can also be seen in the fact that physical controls for electronic devices seem to be having a minor comeback due to the lack of physicality that screens inherently bring with them. I also agree with the claim that our thinking is strongly linked to conceptions of physical space and distance, which are sorely missing in current competing systems, limiting our full potential.
+
+At the same time, it is fascinating to imagine how such tangible interfaces could look like in the future and whether they would be accepted by users. One might think of hybrid biotechnological devices as seen in Cronenberg's oeuvre, which provide a sort of visceral feedback through their biological form, or specialised computing membranes which arrange themselves into forms corresponding to the pieces of data being displayed. 
+
+There is a lot of potential here to provide information beyond the usual audiovisual feedback, but I believe that there are cultural barriers to the adoption of tangible interfaces as well (would people *accept* a computer that touches them back?). Our modern artifacts are generally seen as cold, unfeeling creations of smooth glass and metal, and shifting that perception towards pulsating, rough, soft entities will likely require a lot of work. It is, however, something that is worth working towards, even if just to expand our space of possibilities for future technologies. 
