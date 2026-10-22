@@ -6,9 +6,7 @@ showBgImage: true
 showComments: true
 draft: false
 ---
-This is my course documentation site!
-
-Edit this page with some basic information about yourself.
+Hello :)
 
 Keep your images to this specification:
 
