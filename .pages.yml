@@ -1,26 +1,1956 @@
-# Pages CMS — Physical Computing 2026 — Matti-only test
-# Place this file at the repository root as .pages.yml.
-# Only Matti’s content and image collection are exposed in this test configuration.
-# All invited collaborators share access to these configured entries.
-# Pages use content/2026/<person>/<title-slug>/index.md.
-# New images use assets/images/2026/<person>/ with random filenames to avoid collisions.
-# Existing page-bundle images and content are not moved.
-# Background image is a filename field because the site's custom template only
-# resolves bgimage from page resources. Featured/inline uploads use global assets.
-# Author names inferred from folder names can be corrected in each default list.
-# Preserve extra frontmatter keys (e.g. bgImage on existing pages) with merge: true.
+# Pages CMS — Physical Computing 2026
+# Place at the repository root as .pages.yml.
+# All invited collaborators share access to all configured content.
+# Pages: content/2026/<person>/<title-slug>/index.md.
+# Images: assets/images/2026/<person>/; output /images/2026/<person>/.
+# Existing page-bundle images are not moved.
+# bgimage accepts an existing page-bundle filename (the current theme's behavior).
+# heroStyle and draft are hidden, readonly fields with defaults for new pages.
+# Preserve additional frontmatter keys with settings.content.merge.
 
+---
 media:
+- name: images-adrian-nirk
+  label: adrian-nirk — images
+  input: assets/images/2026/adrian-nirk
+  output: "/images/2026/adrian-nirk"
+  categories:
+  - image
+  rename: random
+- name: images-aleksi-seppa
+  label: aleksi-seppa — images
+  input: assets/images/2026/aleksi-seppa
+  output: "/images/2026/aleksi-seppa"
+  categories:
+  - image
+  rename: random
+- name: images-amanda
+  label: amanda — images
+  input: assets/images/2026/amanda
+  output: "/images/2026/amanda"
+  categories:
+  - image
+  rename: random
+- name: images-annyvibe
+  label: annyvibe — images
+  input: assets/images/2026/annyvibe
+  output: "/images/2026/annyvibe"
+  categories:
+  - image
+  rename: random
+- name: images-carolina
+  label: carolina — images
+  input: assets/images/2026/carolina
+  output: "/images/2026/carolina"
+  categories:
+  - image
+  rename: random
+- name: images-isidora-pesce
+  label: isidora-pesce — images
+  input: assets/images/2026/isidora-pesce
+  output: "/images/2026/isidora-pesce"
+  categories:
+  - image
+  rename: random
+- name: images-iuliana-fadeeva
+  label: iuliana-fadeeva — images
+  input: assets/images/2026/iuliana-fadeeva
+  output: "/images/2026/iuliana-fadeeva"
+  categories:
+  - image
+  rename: random
+- name: images-jin
+  label: jin — images
+  input: assets/images/2026/jin
+  output: "/images/2026/jin"
+  categories:
+  - image
+  rename: random
+- name: images-lia-sapurova
+  label: lia-sapurova — images
+  input: assets/images/2026/lia-sapurova
+  output: "/images/2026/lia-sapurova"
+  categories:
+  - image
+  rename: random
+- name: images-mart
+  label: mart — images
+  input: assets/images/2026/mart
+  output: "/images/2026/mart"
+  categories:
+  - image
+  rename: random
+- name: images-marta
+  label: marta — images
+  input: assets/images/2026/marta
+  output: "/images/2026/marta"
+  categories:
+  - image
+  rename: random
 - name: images-matti-niinimaki
-  label: Matti Niinimäki — images
+  label: matti-niinimaki — images
   input: assets/images/2026/matti-niinimaki
-  output: /images/2026/matti-niinimaki
+  output: "/images/2026/matti-niinimaki"
+  categories:
+  - image
+  rename: random
+- name: images-monrhea
+  label: monrhea — images
+  input: assets/images/2026/monrhea
+  output: "/images/2026/monrhea"
+  categories:
+  - image
+  rename: random
+- name: images-oona-piippo
+  label: oona-piippo — images
+  input: assets/images/2026/oona-piippo
+  output: "/images/2026/oona-piippo"
+  categories:
+  - image
+  rename: random
+- name: images-peijia
+  label: peijia — images
+  input: assets/images/2026/peijia
+  output: "/images/2026/peijia"
+  categories:
+  - image
+  rename: random
+- name: images-selma-mataich
+  label: selma-mataich — images
+  input: assets/images/2026/selma-mataich
+  output: "/images/2026/selma-mataich"
   categories:
   - image
   rename: random
 content:
+- name: 2026-adrian-nirk-profile
+  label: adrian-nirk — Profile / introduction
+  type: file
+  path: content/2026/adrian-nirk/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: adrian-nirk
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - adrian-nirk
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-adrian-nirk
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-adrian-nirk
+      format: markdown
+      switcher: true
+- name: 2026-adrian-nirk-pages
+  label: adrian-nirk — Pages / projects
+  type: collection
+  path: content/2026/adrian-nirk
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - adrian-nirk
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-adrian-nirk
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-adrian-nirk
+      format: markdown
+      switcher: true
+- name: 2026-aleksi-seppa-profile
+  label: aleksi-seppa — Profile / introduction
+  type: file
+  path: content/2026/aleksi-seppa/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: aleksi-seppa
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - aleksi-seppa
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-aleksi-seppa
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-aleksi-seppa
+      format: markdown
+      switcher: true
+- name: 2026-aleksi-seppa-pages
+  label: aleksi-seppa — Pages / projects
+  type: collection
+  path: content/2026/aleksi-seppa
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - aleksi-seppa
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-aleksi-seppa
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-aleksi-seppa
+      format: markdown
+      switcher: true
+- name: 2026-amanda-profile
+  label: amanda — Profile / introduction
+  type: file
+  path: content/2026/amanda/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: amanda
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - amanda
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-amanda
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-amanda
+      format: markdown
+      switcher: true
+- name: 2026-amanda-pages
+  label: amanda — Pages / projects
+  type: collection
+  path: content/2026/amanda
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - amanda
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-amanda
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-amanda
+      format: markdown
+      switcher: true
+- name: 2026-annyvibe-profile
+  label: annyvibe — Profile / introduction
+  type: file
+  path: content/2026/annyvibe/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: annyvibe
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - annyvibe
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-annyvibe
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-annyvibe
+      format: markdown
+      switcher: true
+- name: 2026-annyvibe-pages
+  label: annyvibe — Pages / projects
+  type: collection
+  path: content/2026/annyvibe
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - annyvibe
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-annyvibe
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-annyvibe
+      format: markdown
+      switcher: true
+- name: 2026-carolina-profile
+  label: carolina — Profile / introduction
+  type: file
+  path: content/2026/carolina/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: carolina
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - carolina
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-carolina
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-carolina
+      format: markdown
+      switcher: true
+- name: 2026-carolina-pages
+  label: carolina — Pages / projects
+  type: collection
+  path: content/2026/carolina
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - carolina
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-carolina
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-carolina
+      format: markdown
+      switcher: true
+- name: 2026-isidora-pesce-profile
+  label: isidora-pesce — Profile / introduction
+  type: file
+  path: content/2026/isidora-pesce/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: isidora-pesce
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - isidora-pesce
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-isidora-pesce
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-isidora-pesce
+      format: markdown
+      switcher: true
+- name: 2026-isidora-pesce-pages
+  label: isidora-pesce — Pages / projects
+  type: collection
+  path: content/2026/isidora-pesce
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - isidora-pesce
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-isidora-pesce
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-isidora-pesce
+      format: markdown
+      switcher: true
+- name: 2026-iuliana-fadeeva-profile
+  label: iuliana-fadeeva — Profile / introduction
+  type: file
+  path: content/2026/iuliana-fadeeva/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: iuliana-fadeeva
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - iuliana-fadeeva
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-iuliana-fadeeva
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-iuliana-fadeeva
+      format: markdown
+      switcher: true
+- name: 2026-iuliana-fadeeva-pages
+  label: iuliana-fadeeva — Pages / projects
+  type: collection
+  path: content/2026/iuliana-fadeeva
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - iuliana-fadeeva
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-iuliana-fadeeva
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-iuliana-fadeeva
+      format: markdown
+      switcher: true
+- name: 2026-jin-profile
+  label: jin — Profile / introduction
+  type: file
+  path: content/2026/jin/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: jin
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - jin
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-jin
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-jin
+      format: markdown
+      switcher: true
+- name: 2026-jin-pages
+  label: jin — Pages / projects
+  type: collection
+  path: content/2026/jin
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - jin
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-jin
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-jin
+      format: markdown
+      switcher: true
+- name: 2026-lia-sapurova-profile
+  label: lia-sapurova — Profile / introduction
+  type: file
+  path: content/2026/lia-sapurova/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: lia-sapurova
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - lia-sapurova
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-lia-sapurova
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-lia-sapurova
+      format: markdown
+      switcher: true
+- name: 2026-lia-sapurova-pages
+  label: lia-sapurova — Pages / projects
+  type: collection
+  path: content/2026/lia-sapurova
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - lia-sapurova
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-lia-sapurova
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-lia-sapurova
+      format: markdown
+      switcher: true
+- name: 2026-mart-profile
+  label: mart — Profile / introduction
+  type: file
+  path: content/2026/mart/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: mart
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - mart
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-mart
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-mart
+      format: markdown
+      switcher: true
+- name: 2026-mart-pages
+  label: mart — Pages / projects
+  type: collection
+  path: content/2026/mart
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - mart
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-mart
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-mart
+      format: markdown
+      switcher: true
+- name: 2026-marta-profile
+  label: marta — Profile / introduction
+  type: file
+  path: content/2026/marta/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: marta
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - marta
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-marta
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-marta
+      format: markdown
+      switcher: true
+- name: 2026-marta-pages
+  label: marta — Pages / projects
+  type: collection
+  path: content/2026/marta
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - marta
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-marta
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-marta
+      format: markdown
+      switcher: true
 - name: 2026-matti-niinimaki-profile
-  label: Matti — Profile / introduction
+  label: matti-niinimaki — Profile / introduction
   type: file
   path: content/2026/matti-niinimaki/_index.md
   format: yaml-frontmatter
@@ -50,14 +1980,16 @@ content:
   - name: image
     label: Featured image
     type: image
-    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines, not automatic upload limits.
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
     options:
       media: images-matti-niinimaki
   - name: bgimage
     label: Background image (existing page-bundle filename)
     type: string
-    description: Optional filename of an image already beside this Markdown file, e.g. bg.jpg. Your current background
-      template resolves this field from page resources.
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
   - name: showBgImage
     label: Show background image
     type: boolean
@@ -76,29 +2008,34 @@ content:
       - basic
       - big
       - thumbAndBackground
+    hidden: true
+    readonly: true
   - name: draft
     label: Draft (hide from published site)
     type: boolean
     default: false
+    hidden: true
+    readonly: true
   - name: body
     label: Body
     type: rich-text
-    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID >}}.
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
     options:
       media: images-matti-niinimaki
       format: markdown
       switcher: true
 - name: 2026-matti-niinimaki-pages
-  label: Matti — Pages / projects
+  label: matti-niinimaki — Pages / projects
   type: collection
   path: content/2026/matti-niinimaki
   format: yaml-frontmatter
   subfolders: true
   exclude:
   - _index.md
-  - '**/_index.md'
+  - "**/_index.md"
   filename:
-    template: '{primary}/index.md'
+    template: "{primary}/index.md"
     field: false
   view:
     primary: title
@@ -133,14 +2070,16 @@ content:
   - name: image
     label: Featured image
     type: image
-    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines, not automatic upload limits.
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
     options:
       media: images-matti-niinimaki
   - name: bgimage
     label: Background image (existing page-bundle filename)
     type: string
-    description: Optional filename of an image already beside this Markdown file, e.g. bg.jpg. Your current background
-      template resolves this field from page resources.
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
   - name: showBgImage
     label: Show background image
     type: boolean
@@ -159,16 +2098,685 @@ content:
       - basic
       - big
       - thumbAndBackground
+    hidden: true
+    readonly: true
   - name: draft
     label: Draft (hide from published site)
     type: boolean
     default: false
+    hidden: true
+    readonly: true
   - name: body
     label: Body
     type: rich-text
-    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID >}}.
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
     options:
       media: images-matti-niinimaki
+      format: markdown
+      switcher: true
+- name: 2026-monrhea-profile
+  label: monrhea — Profile / introduction
+  type: file
+  path: content/2026/monrhea/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: monrhea
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - monrhea
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-monrhea
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-monrhea
+      format: markdown
+      switcher: true
+- name: 2026-monrhea-pages
+  label: monrhea — Pages / projects
+  type: collection
+  path: content/2026/monrhea
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - monrhea
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-monrhea
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-monrhea
+      format: markdown
+      switcher: true
+- name: 2026-oona-piippo-profile
+  label: oona-piippo — Profile / introduction
+  type: file
+  path: content/2026/oona-piippo/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: oona-piippo
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - oona-piippo
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-oona-piippo
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-oona-piippo
+      format: markdown
+      switcher: true
+- name: 2026-oona-piippo-pages
+  label: oona-piippo — Pages / projects
+  type: collection
+  path: content/2026/oona-piippo
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - oona-piippo
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-oona-piippo
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-oona-piippo
+      format: markdown
+      switcher: true
+- name: 2026-peijia-profile
+  label: peijia — Profile / introduction
+  type: file
+  path: content/2026/peijia/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: peijia
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - peijia
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-peijia
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-peijia
+      format: markdown
+      switcher: true
+- name: 2026-peijia-pages
+  label: peijia — Pages / projects
+  type: collection
+  path: content/2026/peijia
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - peijia
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-peijia
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-peijia
+      format: markdown
+      switcher: true
+- name: 2026-selma-mataich-profile
+  label: selma-mataich — Profile / introduction
+  type: file
+  path: content/2026/selma-mataich/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: selma-mataich
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - selma-mataich
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-selma-mataich
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-selma-mataich
+      format: markdown
+      switcher: true
+- name: 2026-selma-mataich-pages
+  label: selma-mataich — Pages / projects
+  type: collection
+  path: content/2026/selma-mataich
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - selma-mataich
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-selma-mataich
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-selma-mataich
       format: markdown
       switcher: true
 settings:
