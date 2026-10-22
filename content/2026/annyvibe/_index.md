@@ -2,7 +2,7 @@
 title: (^annyvibe^)
 date: 2026-10-20T00:20:00Z
 authors:
-  - annyvibe
+  - Anny Jiang
 heroStyle: background
 showBgImage: true
 showComments: true
