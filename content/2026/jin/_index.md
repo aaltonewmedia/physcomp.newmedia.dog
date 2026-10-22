@@ -8,6 +8,7 @@ showBgImage: true
 showComments: true
 draft: false
 image: /images/2026/jin/mvjdliq4-ytvqs50p.jpg
+bgimage: mvjdliq4-ytvqs50p.jpg
 ---
 This is my course documentation site!
 
