@@ -1,13 +1,10 @@
 ---
-title: annyvibe
+title: Adrian Nirk
 date: 2026-10-20T00:20:00Z
-authors:
-  - Anny Jiang
 heroStyle: background
 showBgImage: true
 showComments: true
 draft: false
-image: /images/2026/adrian-nirk/mvj5iafm-570640j3.jpeg
 ---
 This is my course documentation site!
 
