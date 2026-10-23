@@ -1,5 +1,5 @@
 ---
-title: Iuliana Fadeeva
+title: iuliaaada
 date: 2026-10-20T00:20:00Z
 authors:
   - Iuliana Fadeeva
