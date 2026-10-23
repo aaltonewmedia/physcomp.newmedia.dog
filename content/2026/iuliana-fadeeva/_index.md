@@ -1,8 +1,6 @@
 ---
 title: Iuliana Fadeeva
 date: 2026-10-20T00:20:00Z
-authors:
-  - iuliaaada
 heroStyle: background
 showBgImage: true
 showComments: true
