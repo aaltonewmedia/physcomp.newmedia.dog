@@ -1,5 +1,5 @@
 ---
-title: Iuliana Fadeeva
+title: iuliana
 date: 2026-10-20T00:20:00Z
 heroStyle: background
 showBgImage: true
