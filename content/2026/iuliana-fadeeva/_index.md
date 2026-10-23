@@ -7,7 +7,7 @@ heroStyle: background
 showBgImage: true
 showComments: true
 draft: false
-image: /images/2026/iuliana-fadeeva/mvl914cm-xgv34ej3.jpeg
+image: /images/2026/iuliana-fadeeva/mvl92y5a-ss3w0a2l.jpeg
 ---
 This is my course documentation site!
 
