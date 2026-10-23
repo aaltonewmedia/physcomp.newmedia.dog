@@ -6,5 +6,7 @@ showBgImage: true
 showComments: true
 draft: false
 image: /images/2026/iuliana-fadeeva/mvl9f6un-8zjzrgwe.jpeg
+authors:
+  - iuliana fadeeva
 ---
 ʎʇıɔolǝʌ lɐuosɹǝd
