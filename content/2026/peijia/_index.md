@@ -11,13 +11,5 @@ image: /images/2026/peijia/mvpbfojv-su4sdzwk.jpg
 ---
 This is my course documentation site!
 
-Edit this page with some basic information about yourself.
+let me think...what should I say...
 
-Keep your images to this specification:
-
-- Resolution: maximum 1920 pixels for the longer side
-- Filesize: maximum 2MB
-
-
-
-&nbsp;
