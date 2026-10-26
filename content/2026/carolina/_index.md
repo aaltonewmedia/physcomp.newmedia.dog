@@ -1,8 +1,8 @@
 ---
-title: Carolina
+title: carolina
 date: 2026-10-20T00:20:00Z
 authors:
-  - carolina
+  - Carolina Cardoso
 heroStyle: background
 showBgImage: true
 showComments: true
