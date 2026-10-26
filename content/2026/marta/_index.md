@@ -7,7 +7,6 @@ heroStyle: background
 showBgImage: true
 showComments: true
 draft: false
-image: /images/2026/marta/mvowx8v3-a7uh4k69.jpg
 ---
 This is my course documentation site!
 
