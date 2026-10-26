@@ -39,7 +39,7 @@ media:
   - image
   rename: random
 - name: images-arundathi-rajan
-  label: annyvibe — images
+  label: Arundathi Rajan — images
   input: assets/images/2026/arundathi-rajan
   output: "/images/2026/arundathi-rajan"
   categories:
@@ -788,7 +788,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-arundathi-rajan-profile
-  label: arundathi-rajan — Profile / introduction
+  label: Arundathi Rajan — Profile / introduction
   type: file
   path: content/2026/arundathi-rajan/_index.md
   format: yaml-frontmatter
@@ -801,7 +801,7 @@ content:
     label: Title
     type: string
     required: true
-    default: arundathi-rajan
+    default: Arundathi Rajan
   - name: date
     label: Publish date
     type: date
@@ -814,7 +814,7 @@ content:
     type: string
     list: true
     default:
-    - arundathi-rajan
+    - Arundathi Rajan
   - name: image
     label: Featured image
     type: image
