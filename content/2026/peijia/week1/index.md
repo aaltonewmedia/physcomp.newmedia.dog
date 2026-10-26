@@ -1,5 +1,5 @@
 ---
-title: week1
+title: week 01
 date: 2026-10-26T22:00:00Z
 authors:
   - peijia
@@ -44,3 +44,4 @@ lastBtn=btn;
 }
 ```
 
+((will be done on 27/10 
