@@ -18,44 +18,45 @@ The hardest part was writing the code, because even if I knew in theory how it w
 ```
 
 ```
-#include <Arduino.h>
 
-int btnPin = 16;
+
+
+```
+#include <Arduino.h>int btnPin = 16;
 int ledPinA = 15;
 int ledPinB = 14;
 int btnState = 0;
 int btnArray[2] = {0, 0};
-int prevBtnState = 0;
-
-void setup() {
+int prevBtnState = 0;void setup() {
   Serial.begin(9600);
   pinMode(btnPin, INPUT);
   pinMode(ledPinA, OUTPUT);
   pinMode(ledPinB, OUTPUT);
+}void loop() {
+  btnState = digitalRead(btnPin);  if (btnState != prevBtnState && btnState == HIGH) {
+
+if (btnArray[0] == 0) {
+  btnArray[0] = 1;
+  digitalWrite(ledPinA, HIGH);
+} 
+else if (btnArray[0] == 1) {
+  btnArray[0] = 2;
+  digitalWrite(ledPinB, HIGH); 
+  digitalWrite(ledPinA, HIGH);
+} 
+else if (btnArray[0] == 2) {
+  btnArray[0] = 0;
+  digitalWrite(ledPinB, LOW);
+  digitalWrite(ledPinA, LOW);
 }
+```
 
-void loop() {
-  btnState = digitalRead(btnPin);
-
-  if (btnState != prevBtnState && btnState == HIGH) {
-
-    if (btnArray[0] == 0) {
-      btnArray[0] = 1;
-      digitalWrite(ledPinA, HIGH);
-    } 
-    else if (btnArray[0] == 1) {
-      btnArray[0] = 2;
-      digitalWrite(ledPinB, HIGH); 
-      digitalWrite(ledPinA, HIGH);
-    } 
-    else if (btnArray[0] == 2) {
-      btnArray[0] = 0;
-      digitalWrite(ledPinB, LOW);
-      digitalWrite(ledPinA, LOW);
-    }
   }
 
   prevBtnState = btnState;
 }
+
+```
+
 ```
 
