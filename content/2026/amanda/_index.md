@@ -1,5 +1,5 @@
 ---
-title: Amanda
+title: AmandaKoodaa
 date: 2026-10-20T00:20:00Z
 authors:
   - Amanda
@@ -7,12 +7,9 @@ heroStyle: background
 showBgImage: true
 showComments: true
 draft: false
+image: /images/2026/amanda/mvpazgsq-bk65g1fc.jpg
 ---
-This is my course documentation site!
+Doing stuff, having fun, u know
 
-Edit this page with some basic information about yourself.
+![](/images/2026/amanda/mvpb55xu-12jufjzb.webp)
 
-Keep your images to this specification:
-
-- Resolution: maximum 1920 pixels for the longer side
-- Filesize: maximum 2MB
