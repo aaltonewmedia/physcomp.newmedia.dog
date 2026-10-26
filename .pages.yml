@@ -864,7 +864,7 @@ content:
       format: markdown
       switcher: true
 - name: 2026-arundathi-rajan-pages
-  label: arundathi-rajan — Pages / projects
+  label: Arundathi Rajan — Pages / projects
   type: collection
   path: content/2026/arundathi-rajan
   format: yaml-frontmatter
@@ -904,7 +904,7 @@ content:
     type: string
     list: true
     default:
-    - arundathi-rajan
+    - Arundathi Rajan
   - name: image
     label: Featured image
     type: image
