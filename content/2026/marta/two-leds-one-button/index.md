@@ -7,6 +7,7 @@ showBgImage: false
 showComments: true
 heroStyle: background
 draft: false
+bgimage: mvp8so73-asysznpv.jpg
 ---
 My assumption for completing this exercise was that I needed an array in which I could store information about which phase of the loop the circuit was in (LED 1 on, LED 2 on, LEDs off).
 
