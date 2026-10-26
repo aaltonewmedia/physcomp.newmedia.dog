@@ -52,6 +52,13 @@ media:
   categories:
   - image
   rename: random
+- name: images-emma
+  label: Emma — images
+  input: assets/images/2026/emma
+  output: "/images/2026/emma"
+  categories:
+  - image
+  rename: random
 - name: images-isidora-pesce
   label: Isidora Pesce — images
   input: assets/images/2026/isidora-pesce
@@ -1117,6 +1124,172 @@ content:
       >}}.
     options:
       media: images-carolina
+      format: markdown
+      switcher: true
+- name: 2026-emma-profile
+  label: Emma — Profile / introduction
+  type: file
+  path: content/2026/emma/_index.md
+  format: yaml-frontmatter
+  operations:
+    create: true
+    rename: false
+    delete: false
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    default: Emma
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - Emma
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-emma
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-emma
+      format: markdown
+      switcher: true
+- name: 2026-emma-pages
+  label: Emma — Pages / projects
+  type: collection
+  path: content/2026/emma
+  format: yaml-frontmatter
+  subfolders: true
+  exclude:
+  - _index.md
+  - "**/_index.md"
+  filename:
+    template: "{primary}/index.md"
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - draft
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Publish date
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm:ssXXX
+  - name: authors
+    label: Authors
+    type: string
+    list: true
+    default:
+    - Emma
+  - name: image
+    label: Featured image
+    type: image
+    description: Maximum 1920 px on the longer side and 2 MB. These are guidelines,
+      not automatic upload limits.
+    options:
+      media: images-emma
+  - name: bgimage
+    label: Background image (existing page-bundle filename)
+    type: string
+    description: Optional filename of an image already beside this Markdown file,
+      e.g. bg.jpg. Your current background template resolves this field from page
+      resources.
+  - name: showBgImage
+    label: Show background image
+    type: boolean
+    default: false
+  - name: showComments
+    label: Show comments
+    type: boolean
+    default: true
+  - name: heroStyle
+    label: Hero style
+    type: select
+    default: background
+    options:
+      values:
+      - background
+      - basic
+      - big
+      - thumbAndBackground
+    hidden: true
+    readonly: true
+  - name: draft
+    label: Draft (hide from published site)
+    type: boolean
+    default: false
+    hidden: true
+    readonly: true
+  - name: body
+    label: Body
+    type: rich-text
+    description: Use Source mode for Hugo shortcodes such as {{< youtube VIDEO_ID
+      >}}.
+    options:
+      media: images-emma
       format: markdown
       switcher: true
 - name: 2026-isidora-pesce-profile
