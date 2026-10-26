@@ -38,9 +38,6 @@ btnState = digitalRead(btnPin);
 
 if (btnState != prevBtnState && btnState == HIGH) {
 
-Serial.print("Button pressed. Current state was: ");  
-Serial.println(btnArray[0]);
-
 if (btnArray[0] == 0) {  
 btnArray[0] = 1;  
 digitalWrite(ledPinA, HIGH);  
