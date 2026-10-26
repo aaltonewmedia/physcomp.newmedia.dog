@@ -7,7 +7,7 @@ heroStyle: background
 showBgImage: true
 showComments: true
 draft: false
-image: /images/2026/peijia/mvpaovj8-51wa1zob.jpg
+image: /images/2026/peijia/mvpbfojv-su4sdzwk.jpg
 ---
 This is my course documentation site!
 
