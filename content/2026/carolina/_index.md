@@ -2,7 +2,7 @@
 title: Carolina
 date: 2026-10-20T00:20:00Z
 authors:
-  - Carolina
+  - carolina
 heroStyle: background
 showBgImage: true
 showComments: true
