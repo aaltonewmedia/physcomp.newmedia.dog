@@ -16,12 +16,6 @@ The easiest part of the exercise was connecting the physical components on the b
 The hardest part was writing the code, because even if I knew in theory how it was supposed to work, I had some trouble actually getting it to function. Specifically, I had problems connecting the btnState with the btnArray position.
 
 ```
-
-```
-
-
-
-```
 #include <Arduino.h>int btnPin = 16;
 int ledPinA = 15;
 int ledPinB = 14;
@@ -49,12 +43,11 @@ else if (btnArray[0] == 2) {
   digitalWrite(ledPinB, LOW);
   digitalWrite(ledPinA, LOW);
 }
+}  prevBtnState = btnState;
+}
 ```
 
-  }
-
-  prevBtnState = btnState;
-}
+ 
 
 ```
 
