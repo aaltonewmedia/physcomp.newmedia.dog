@@ -71,9 +71,55 @@ Checked the wiring (seemed right), then checked the code. Still nothing... well,
 
 *-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --*
 
+// update
+
 ```
 // NEW: Print the button reading
 Serial.println(nowButton);
 ```
 
-Doneeee
+```
+int state = 0;
+int lastButton = HIGH;
+int nowButton;
+
+void setup() {
+  pinMode(20, OUTPUT);
+  pinMode(21, OUTPUT);
+  pinMode(19, INPUT_PULLUP);
+  Serial.begin(9600);
+}
+
+void loop() {
+  nowButton = digitalRead(19);
+
+  if (nowButton == LOW && lastButton == HIGH) {
+    state = state + 1;
+
+    if (state == 3) {
+      state = 0;
+    }
+
+    Serial.println(state);  // NEW: print once when pressed
+    delay(50);
+  }
+
+  lastButton = nowButton;
+
+  if (state == 0) {
+    digitalWrite(20, LOW);
+    digitalWrite(21, LOW);
+  }
+
+  if (state == 1) {
+    digitalWrite(20, HIGH);
+    digitalWrite(21, LOW);
+  }
+
+  if (state == 2) {
+    digitalWrite(20, HIGH);
+    digitalWrite(21, HIGH);
+  }
+}
+```
+
