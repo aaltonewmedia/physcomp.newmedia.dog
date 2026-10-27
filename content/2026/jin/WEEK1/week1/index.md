@@ -65,7 +65,7 @@ nowButton = digitalRead(19);
 
 // And then… nothing happened
 
-Checked the wiring (seemed right), then checked the code. Still nothing... well, thanks to Anny (credit to her xddd) finally figured out what went wrong. Turns out, I’d connected the wires to the edges of the switch AGAIN (literally the SECOND time I’ve made the same stupid mistake…)
+Checked the wiring (seemed right), then checked the code. Still nothing... well, thanks to Anny (all credit to her xddd) finally figured out what went wrong. Turns out, I’d connected the wires to the edges of the switch AGAIN (literally the SECOND time I’ve made the same stupid mistake…)
 
 *// Didn’t get to the “Read a momentary switch being pressed” part yet, the whole switch situation had already drained my battery for the day.*
 
