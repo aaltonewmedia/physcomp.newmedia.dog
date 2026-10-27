@@ -9,12 +9,6 @@ heroStyle: background
 draft: false
 bgimage: mvr5kkbm-ovyq4fl2.jpg
 ---
-<<<Processssssssssss>>>
-
----
-
----
-
 // Sketch
 
 ![](/images/2026/jin/mvr5p84q-yzgtbxrh.jpg)
