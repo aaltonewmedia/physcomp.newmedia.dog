@@ -8,6 +8,7 @@ showComments: true
 heroStyle: background
 draft: false
 bgimage: mvr5kkbm-ovyq4fl2.jpg
+image: /images/2026/jin/mvr5kkbm-ovyq4fl2.jpg
 ---
 // Sketch
 
