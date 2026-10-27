@@ -70,3 +70,10 @@ Checked the wiring (seemed right), then checked the code. Still nothing... well,
 *// Didn’t get to the “Read a momentary switch being pressed” part yet, the whole switch situation had already drained my battery for the day.*
 
 *-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --*
+
+```
+// NEW: Print the button reading
+Serial.println(nowButton);
+```
+
+Doneeee
