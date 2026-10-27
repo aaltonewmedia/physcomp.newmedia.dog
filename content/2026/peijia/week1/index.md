@@ -7,6 +7,7 @@ showBgImage: false
 showComments: true
 heroStyle: background
 draft: false
+image: /images/2026/peijia/mvqtofmj-kcw3l9ty.jpg
 ---
 ```
 int btn;
@@ -44,4 +45,11 @@ lastBtn=btn;
 }
 ```
 
-((will be done on 27/10 
+The red LED worked, but the yellow one didn’t at first. I eventually realized that the two sections of the breadboard’s power rail weren’t connected, so the yellow LED wasn’t getting power. I added two jumper wires（+，-） and it lit up.
+
+![](/images/2026/peijia/mvqtqxu4-dmwduzmt.jpg)
+
+![](/images/2026/peijia/mvqtpvyw-3oyfeu01.jpg)
+
+![](/images/2026/peijia/mvqtq0y6-jmgukqx2.jpg)
+
