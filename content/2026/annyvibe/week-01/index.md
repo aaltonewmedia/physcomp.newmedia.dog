@@ -2,10 +2,11 @@
 title: WEEK 01
 date: 2026-10-27T16:48:00Z
 image: /images/2026/annyvibe/week01/mvqt7fsw-gzjr1mqq.jpg
-showBgImage: false
+showBgImage: true
 showComments: true
 heroStyle: background
 draft: false
+bgimage: mvqt7fsw-gzjr1mqq.jpg
 ---
 ## **Assignment 01: LED Counter**
 
