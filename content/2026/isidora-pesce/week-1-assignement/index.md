@@ -8,7 +8,7 @@ showComments: true
 heroStyle: background
 draft: false
 ---
-# Week 1 - 2 LEDs 1 button
+
 
 ![](/images/2026/isidora-pesce/mvs20c97-u5z0i4bn.jpg)
 
