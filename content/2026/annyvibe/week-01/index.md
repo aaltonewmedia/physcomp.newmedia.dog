@@ -16,9 +16,7 @@ The task is to connect two LEDs and one push button to an Arduino on a breadboar
 
 **Diagram**
 
-![](/images/2026/annyvibe/week01/mvqt7b1j-k463jbx8.jpg)
-
-
+![](/images/2026/annyvibe/week01/mvrs4fk9-jl8p9xzw.jpg)
 
 ### **Circuit**
 
