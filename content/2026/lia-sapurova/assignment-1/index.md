@@ -35,11 +35,13 @@ Connected the button and adjusted the code to included. Had a confusion at this 
   }
 ```
 
+![](/images/2026/lia-sapurova/mvsiiay5-g2ktb92j.jpg)
+
 Step 3. One, two, three light
 
 Tried figuring out how to do the challenge part of the exercise. It was kinda interesting because I understood the logic of how to make it work, but didn't know what is the syntax I would use for it. I gathered that I somehow need to record button click in a loop of 3, off/off-off/on-on/on, replacing (or adding to) the boolean logic of an if/else statement with something that can go 3 ways.
 
-At this point I did open the guides Matti provided, but I tried to take it small and reference them small bits at a time, making sure that I understand each step.
+At this point I did open the guides Matti provided, but I tried to take it small and reference them small bits at a time, making sure that I understand each step. I found that the syntax I was looking for was "switch", so I sketched an if/else statement and then compared it later with the reference, adjusting it to fit.
 
 Interestingly, for my code to work I needed to claim  (click != LOW)  and not (click != HIGH), because otherwise they would kind of start from one and not from zero. I am not sure why, but if it works it works :D
 
@@ -114,6 +116,5 @@ void loop() {
 
 There is light!
 
+![](/images/2026/lia-sapurova/mvsikqnz-sde3gt35.jpg)
 
-
-&nbsp;
