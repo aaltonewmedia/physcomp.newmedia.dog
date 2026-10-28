@@ -7,12 +7,7 @@ heroStyle: background
 showBgImage: true
 showComments: true
 draft: false
+image: /images/2026/isidora-pesce/mvs0h30h-zx6fvjes.jpg
 ---
-This is my course documentation site!
+Hi c:
 
-Edit this page with some basic information about yourself.
-
-Keep your images to this specification:
-
-- Resolution: maximum 1920 pixels for the longer side
-- Filesize: maximum 2MB
