@@ -8,9 +8,9 @@ showComments: false
 heroStyle: background
 draft: false
 ---
-As for me, this assignment was quite tedious since I have no background in neither programming nor coding in general. A lot of missteps and long hours trying to understand multiple youtube videos and trying to decipher the meaning of example solutions on the course page...***I got there in the end!***  
+As for me, this assignment was quite tedious since I have no background in neither programming nor coding in general. A lot of missteps and long hours trying to understand multiple youtube videos, asking for help and trying to decipher the meaning of example solutions on the course page...***I got there in the end!***  
 
-But since I used a lot of different examples to understand the assignment I decided to try out a bit more things with the buttons and LED, which you can see below. 
+But since I used a lot of different examples to understand the assignment I decided to try out a bit more things with the buttons and LEDs, which you can see below. 
 
 
 
@@ -73,7 +73,7 @@ delay(10);
 
 ++**Extra experiments:**++
 
-What if instead of two LED pins there is 4 and the light is turning on in different sequences? 
+What if instead of two LED pins there are 4 and the light is turning on in different sequences? 
 
 ```cpp
 int led1 = 14;
@@ -103,7 +103,7 @@ void loop()
 if(btnState != prevbtnState) 
 {if(btnState == HIGH) {
         counter++;
-        if(counter>7){
+        if(counter>8){
          counter = 0;
         }
         Serial.println(counter);
@@ -172,4 +172,51 @@ delay(5);
 ```
 
 What if this sequence happens without a button in a loop?
+
+```cpp
+int led1 = 14;
+int led2 = 15;
+int led3 = 13;
+int led4 = 12;
+const int N = 4;  
+int i = 0;
+
+
+void setup() {
+pinMode(12, OUTPUT);
+pinMode(13,OUTPUT);
+pinMode(14, OUTPUT);
+pinMode(15,OUTPUT);
+pinMode (16, INPUT);
+Serial.begin (9600);
+
+
+
+}
+void loop() {
+  
+for (int i= 0; i < N; i++)
+
+        digitalWrite(12,HIGH);
+        delay(500);
+        digitalWrite(13,HIGH);
+        delay(500);
+        digitalWrite(14,HIGH);
+        delay(500);
+        digitalWrite(15,HIGH);
+        delay(500);
+        digitalWrite(12,LOW);
+        delay(500);
+        digitalWrite(13,LOW);
+        delay(500);
+        digitalWrite(14,LOW);
+        delay(500);
+        digitalWrite(15,LOW);
+        delay(500);
+        
+     
+}
+
+
+```
 
