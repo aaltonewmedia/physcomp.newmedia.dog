@@ -1,5 +1,5 @@
 ---
-title: Week 1 - Assignement
+title: Week 1 - Assignment
 date: 2026-10-28T13:57:00Z
 authors:
   - Isidora Pesce
@@ -8,8 +8,6 @@ showComments: true
 heroStyle: background
 draft: false
 ---
-
-
 ![](/images/2026/isidora-pesce/mvs20c97-u5z0i4bn.jpg)
 
 This week's task was to connect LEDs to a single button. Depending on how many times you press the button is what happens with the LEDs:
