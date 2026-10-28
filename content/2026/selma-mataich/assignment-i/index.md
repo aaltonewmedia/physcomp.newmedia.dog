@@ -3,7 +3,7 @@ title: "assignment I "
 date: 2026-10-28T18:26:00Z
 authors:
   - Selma Mataich
-showBgImage: false
+showBgImage: true
 showComments: false
 heroStyle: background
 draft: false
@@ -12,7 +12,7 @@ As for me, this assignment was quite tedious since I have no background in neith
 
 But since I used a lot of different examples to understand the assignment I decided to try out a bit more things with the buttons and LEDs, which you can see below. 
 
-
+***[Documentation here](https://drive.google.com/drive/folders/1vAIgHYcM8pUaw2o0IBzKLTb0rHRN0wgP?usp=sharing)*** 
 
 ++**Code of assignment 1:**++
 
