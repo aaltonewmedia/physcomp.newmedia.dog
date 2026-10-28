@@ -5,6 +5,7 @@ showBgImage: false
 showComments: true
 heroStyle: background
 draft: false
+image: /images/2026/lia-sapurova/mvsiqtle-dyqufhew.jpg
 ---
 I broke the exercise into smaller steps, to make sure that I understand each one and only seek support for exact aspects I don't understand.
 
