@@ -3,7 +3,7 @@ title: "[week 01]"
 date: 2026-10-28T23:39:00Z
 image: /images/2026/iuliana-fadeeva/mvsn19pc-py344xtr.png
 showBgImage: true
-showComments: true
+showComments: false
 heroStyle: background
 draft: false
 ---
