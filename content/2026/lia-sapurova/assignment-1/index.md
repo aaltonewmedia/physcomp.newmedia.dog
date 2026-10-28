@@ -13,7 +13,7 @@ I broke the exercise into smaller steps, to make sure that I understand each one
 
 Step 1. Let there be light
 
-Simply connected 1 LED to the microcontroller, wrote simple simple code that just making sure that it lights up and I can control whether the light is on or off.
+Simply connected 1 LED to the microcontroller, wrote simple simple code for making sure that it lights up and I can control whether the light is on or off.
 
 Then added the second LED and made sure it was all ok and nothing exploded.
 
@@ -40,9 +40,9 @@ Connected the button and adjusted the code to included. Had a confusion at this 
 
 Step 3. One, two, three light
 
-Tried figuring out how to do the challenge part of the exercise. It was kinda interesting because I understood the logic of how to make it work, but didn't know what is the syntax I would use for it. I gathered that I somehow need to record button click in a loop of 3, off/off-off/on-on/on, replacing (or adding to) the boolean logic of an if/else statement with something that can go 3 ways.
+Tried figuring out how to do the challenge part of the exercise. It was kinda interesting because I understood the logic of how to make it work, but didn't know what is the syntax I would use for it. I gathered that I somehow need to record the button click in a loop of 3, off/off-off/on-on/on, replacing (or adding to) the boolean logic of an if/else statement with something that can go 3 ways.
 
-At this point I did open the guides Matti provided, but I tried to take it small and reference them small bits at a time, making sure that I understand each step. I found that the syntax I was looking for was "switch", so I sketched an if/else statement and then compared it later with the reference, adjusting it to fit.
+At this point I did open the guides Matti provided, but I tried to take it slow and reference them in small bits at a time, making sure that I understand each step. I found that the syntax I was looking for was "switch", so I sketched an if/else statement and then compared it later with the reference, adjusting it to fit.
 
 Interestingly, for my code to work I needed to claim  (click != LOW)  and not (click != HIGH), because otherwise they would kind of start from one and not from zero. I am not sure why, but if it works it works :D
 
