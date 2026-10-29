@@ -131,3 +131,5 @@ void loop() {
 - I was good at debugging for common errors first, clearing that up before revisiting the logic of the code.
 - I didn’t check for final code, or consult for final answers and I see this as the foundation for understanding states which is important in various use cases.
 
+![](/images/2026/monrhea/mvtghh9x-62vf73x9.jpeg)
+
