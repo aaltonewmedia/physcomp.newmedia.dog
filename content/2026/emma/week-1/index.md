@@ -3,10 +3,11 @@ title: WEEK 1
 date: 2026-10-29T13:09:00Z
 authors:
   - Emma
-image: /images/2026/emma/mvtgb92g-dcm25e69.jpg
 showBgImage: false
 showComments: true
 heroStyle: background
 draft: false
 ---
 I was able to get the LEDs to work in the specified way, but my creation did not survive debugging. The button can't be pressed continuously, else the code cycles through every state of the LEDs.  The lights work as intended with a short but careful click of the button.
+
+![](/images/2026/emma/mvtgb92g-dcm25e69.jpg)
