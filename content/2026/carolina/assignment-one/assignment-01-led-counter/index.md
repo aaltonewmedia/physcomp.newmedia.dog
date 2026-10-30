@@ -10,12 +10,12 @@ draft: false
 
 ## Assignment Details
 
-This assignment's objectives / guidelines were, ++for the circuit++:
+This assignment's objectives / guidelines were, **for the circuit**:
 
 1. Connect two LEDs to your Arduino using a breadboard
 2. Connect one switch to your Arduino using a breadboard
 
-And ++for the code++:
+And **for the code**:
 
 1. Read a momentary switch being pressed
 2. When the program starts, both LEDs are off
