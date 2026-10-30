@@ -43,7 +43,7 @@ Serial.println(button);
 
 ```
 
-This helped me realize the button signal ranged from 0 to 1:
+This helped me realise the button signal ranged from 0 to 1:
 
 - 1 meant the button was **pressed**
 - 0 meant the button was **released**
@@ -60,11 +60,11 @@ This code is made to detect a click, not a button press/button release. For that
 
 ### My main challenge
 
-As a way to exercise good coding practices, I have the habit of printing information to the console every few lines of code when I am still building it. Because of this I realized the Serial.println() commands I added in setup() weren't being printed. This confused me, and it's where I spent the longest amount of time in for this Assignment. I ended up understanding that the Serial Port simply took a few ms longer to boot up than the information took to be sent out, and the issue was solved through the addition of a simple *delay(2000)*.
+As a way to exercise good coding practices, I have the habit of printing information to the console every few lines of code when I am still building it. Because of this I realised the Serial.println() commands I added in setup() weren't being printed. This confused me, and it's where I spent the longest amount of time in for this Assignment. I ended up understanding that the Serial Port simply took a few ms longer to boot up than the information took to be sent out, and the issue was solved through the addition of a simple *delay(2000)*.
 
 ## Assignment Results
 
-This is the final code I produced for this assigment:
+This is the final code I produced for this assignment:
 
 ```
 const int buttonPin = 6;
