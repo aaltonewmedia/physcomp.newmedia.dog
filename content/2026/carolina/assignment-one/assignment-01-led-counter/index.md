@@ -5,6 +5,7 @@ showBgImage: false
 showComments: true
 heroStyle: background
 draft: false
+bgimage: "![](/images/2026/carolina/mvusp3ca-67cn5ma0.jpg)"
 ---
 ![](/images/2026/carolina/mvusp3ca-67cn5ma0.jpg)
 
