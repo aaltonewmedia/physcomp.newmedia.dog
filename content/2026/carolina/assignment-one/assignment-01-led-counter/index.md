@@ -1,7 +1,7 @@
 ---
 title: "Assignment 01: LED Counter"
 date: 2026-10-29T22:08:00Z
-showBgImage: false
+showBgImage: true
 showComments: true
 heroStyle: background
 draft: false
