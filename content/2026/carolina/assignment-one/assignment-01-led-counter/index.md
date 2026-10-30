@@ -6,7 +6,7 @@ showComments: true
 heroStyle: background
 draft: false
 ---
-
+![](/images/2026/carolina/mvusp3ca-67cn5ma0.jpg)
 
 ## Assignment Details
 
