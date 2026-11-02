@@ -7,4 +7,5 @@ heroStyle: background
 showBgImage: true
 showComments: true
 draft: false
+image: /images/2026/oona-piippo/mvzllbbh-at90cvmp.png
 ---
