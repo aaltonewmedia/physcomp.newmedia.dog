@@ -9,9 +9,9 @@ draft: false
 ### CODE.
 
 ```
-int button;
-int buttonState = 0;
-int prevbuttonState = 0;
+int btnState;
+int counter;
+int prevbtnState;
 
 void setup() {
 
@@ -19,69 +19,63 @@ void setup() {
   pinMode(16, OUTPUT);
 
   pinMode(17, INPUT);
-  Serial.begin(9600);  // similar to console.log, we create a communication channel. This sends info.
+  Serial.begin(9600);
 }
 
 void loop() {
-  button = digitalRead(17);  // read, the button: is it on and off, is it 330v or ground.
-  Serial.println(button);
 
-  //buttonState = digitalRead(17);
+  btnState = digitalRead(17);
 
-  digitalRead(17);
+  //if (btnState != prevbtnState && btnState == HIGH) {
 
-  if (buttonState == prevbuttonState != button == LOW) {
+  if (btnState != prevbtnState) {
+    if (btnState == HIGH) {
 
-    Serial.print("Button state changed to: ");
-    Serial.println(buttonState);
+      counter++;
 
-    analogWrite(15, 255);  // LED 1 OFF
-    analogWrite(16, 0);    // LED 2 OFF
-
-    buttonState = button + 1;
-  }
-   prevbuttonState = buttonState;
-
-
-  //works 
-  if (buttonState == prevbuttonState && button == HIGH) {
-    Serial.print("Button state changed to: ");
-    Serial.println(buttonState);
-    buttonState = button + 1;
-
-    analogWrite(15, 255);  // LED 1 ON
-    analogWrite(16, 0);    // LED 2 OFF
-
-    prevbuttonState = buttonState;
+      if (counter > 2) {
+        counter = 0;
+      }
+    }
   }
 
-  if (buttonState == prevbuttonState && button == HIGH) {
-    Serial.print("Button state changed to: ");
-    Serial.println(buttonState);
+  prevbtnState = btnState;
 
-    buttonState = button + 1;
+  switch (counter) {
 
-    analogWrite(15, 255);  // LED 1 ON
-    analogWrite(16, 255);  // LED 2 ON
+    case 0:
+      analogWrite(15, 0);  // LED 1 OFF
+      analogWrite(16, 0);  // LED 2 OFF
+      break;
 
-    prevbuttonState = buttonState;
+    case 1:
+      analogWrite(15, 255);  // LED 1 ON
+      analogWrite(16, 0);    // LED 2 OFF
+      break;
+
+    case 2:
+      analogWrite(15, 255);  // LED 1 ON
+      analogWrite(16, 255);  // LED 2 ON
+      break;
   }
-  if (buttonState == prevbuttonState && button == HIGH) {
-    Serial.print("Button state changed to: ");
-    Serial.println(buttonState);
-    buttonState = button + 1;
 
-    analogWrite(15, 0);  // LED 1 OFF
-    analogWrite(16, 0);  // LED 2 OFF
-
-    prevbuttonState = buttonState;
-  }
+  delay(20);
 }
+
 ```
 
-
-
 ### DOCUMENTATION
+
+**Reflection.**
+
+- The logic was simple, but yet hard at the same time.
+- I tried different solutions as mentioned in the sample examples below.
+- I was good at debugging for common errors first, clearing that up before revisiting the logic of the code.
+- I didn’t check the final code answers, or consult for final answers and I see this as the foundation for understanding states which is important in various use cases.
+- After consulting in class, I understood the differences in the section for reading the INPUT with the if statements, and controlling the OUTPUT to light up the LED with the switch cases.
+- I also understood the logic behind why we need the prevbuttonState variable and updating it after each condition check to the new buttonState.
+
+---
 
 **Session 1.**
 
@@ -124,12 +118,7 @@ void loop() {
     2. One LED on.
     3. Both LED on, but only on button click and not continuously.
 
-**Reflection.**
 
-- The logic was simple, but yet hard at the same time.
-- I tried different solutions as mentioned in the sample examples above.
-- I was good at debugging for common errors first, clearing that up before revisiting the logic of the code.
-- I didn’t check for final code, or consult for final answers and I see this as the foundation for understanding states which is important in various use cases.
 
 ![](/images/2026/monrhea/mvtghh9x-62vf73x9.jpeg)
 
