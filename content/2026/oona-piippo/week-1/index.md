@@ -1,5 +1,5 @@
 ---
-title: Week 01
+title: "Assignment 01: LED Counter"
 date: 2026-10-26T15:39:00Z
 showBgImage: false
 showComments: false
@@ -24,7 +24,6 @@ Create a circuit and Arduino code that does the following
 5. When the switch is pressed the third time, both LEDs turn off
 6. Repeat this same cycle of LEDs turning on and off in sequence (off, one LED, two LEDs, off…)
 
-I started with the breadboard assignment that we did in class earlier where there was one LED light with a switch. It was difficult for me to understand where everything connects so I drew this image of a circuit to make it more visible.
 
-![](/images/2026/oona-piippo/mvtdvv4a-yck01gux.png)
 
+&nbsp;
