@@ -20,8 +20,8 @@ This glove controller is going to be designed for VJ use but it could be mapped 
 
 - Gesture and proximity sensor
 - Accelerometer
-- Capacitive touch sensor?
-- Wireless transmitter
+- Capacitive touch sensor
+- Wireless transmitter and receiver
 - Gloves
 
 
