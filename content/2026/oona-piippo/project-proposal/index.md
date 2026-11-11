@@ -28,8 +28,6 @@ This glove controller is going to be designed for VJ use but it could be mapped 
 
 ## **References**
 
-
-
 ### Mi.Mu Gloves
 
 *The world's most advanced wearable musical instrument for expressive creation, composition, and performance.*
