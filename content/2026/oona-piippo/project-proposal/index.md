@@ -16,7 +16,7 @@ This glove controller is going to be designed for VJ use but it could be mapped 
 
 
 
-**Parts & Components**
+## **Parts & Components**
 
 - Gesture and proximity sensor
 - Accelerometer
@@ -26,11 +26,11 @@ This glove controller is going to be designed for VJ use but it could be mapped 
 
 
 
-**References**
+## **References**
 
 
 
-Mi.Mu Gloves
+### Mi.Mu Gloves
 
 *The world's most advanced wearable musical instrument for expressive creation, composition, and performance.*
 
@@ -46,18 +46,19 @@ Imogen Heap's Mi.Mu gloves will "change the way we make music"
 
 
 
-Lady’s Clove instrument by Laetitia Sonami
+### Lady’s Clove instrument by Laetitia Sonami
 
 *Sonami creates performances where her movements can shape the music and in some instances visual environments*  
 ++[https://sonami.net/portfolio/items/ladys-glove/](https://www.youtube.com/watch?v=ci-yB6EgVW4)++
 
+
+
+## Inspiration
+
 Movies that I watched recently where technology acts as a physical extension of human body:
 
-Videodrome (1983)
-
-Ghost in the Shell (1995)
-
-eXistenZ (1999)
-
-Crimes of the Future (2022)
+- Videodrome (1983)
+- Ghost in the Shell (1995)
+- eXistenZ (1999)
+- Crimes of the Future (2022)
 
