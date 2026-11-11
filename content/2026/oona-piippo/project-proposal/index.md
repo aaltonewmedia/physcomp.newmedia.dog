@@ -20,8 +20,6 @@ This glove controller is going to be designed for VJ use but it could be mapped 
 
 
 
-&nbsp;
-
 ## **Parts & Components**
 
 - Gesture and proximity sensor
