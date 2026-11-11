@@ -32,8 +32,9 @@ This glove controller is going to be designed for VJ use but it could be mapped 
 
 Mi.Mu Gloves
 
-*The world's most advanced wearable musical instrument for expressive creation, composition, and performance.*  
-++[https://mimugloves.com/](https://mimugloves.com/)++
+*The world's most advanced wearable musical instrument for expressive creation, composition, and performance.*
+
+[https://mimugloves.com/](https://mimugloves.com/)
 
 ![Imogen Heap’s Mi.Mu Ableton-Controlling Glove.png](/images/2026/oona-piippo/mwcgiwbu-gfwyz3ye.png)
 
