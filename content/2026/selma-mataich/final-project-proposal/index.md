@@ -7,7 +7,7 @@ showComments: false
 heroStyle: background
 draft: false
 ---
-### ++Final project proposal: ‘*Playing in My Closet*’++ 
+++Final project proposal: ‘*Playing in My Closet*’++
 
 For this course I wish to integrate a work I have planned for a group exhibition I’m part of in February 2027.  The work *‘Playing in My Closet’* is a five-part interactive installation that invites exhibition visitors to participate in a dress-up game. The theme of the exhibition originates from paper dolls and encourages viewers to engage in a familiar childhood activity: playing with clothes and creating outfits. 
 
@@ -21,7 +21,7 @@ The planned installation consists of five figurative blocks, but for the course 
 
 ![](/images/2026/selma-mataich/mwcbrovb-c5d33sdh.jpg)
 
- 
+
 
 ++Technical aspects *for one piece:*++
 
@@ -32,28 +32,20 @@ The planned installation consists of five figurative blocks, but for the course 
 **Components:**  
 
 - LED strip
-
 - microcontroller (Pico 2W) 
-
 - Hall effect sensors  
-
 - Magnets 
-
 - power supply 5 V 
-
 - 74AHCT125 logic level shifter (converting the voltage for the LED) 
-
 - 3-pin LED connector 
-
 - Resistor  
-
-- Wires 
+- Wires
 
 **Attachment:** Box joint for plexi, textile? 
 
 
 
-++**Questions:++** 
+++Questions:++
 
 Balance?
 
@@ -65,4 +57,4 @@ What about different output sequences for different interactions? Too complicate
 
 
 
- 
+&nbsp;
