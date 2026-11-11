@@ -28,8 +28,6 @@ This glove controller is going to be designed for VJ use but it could be mapped 
 
 ## **References**
 
-
-
 ### Mi.Mu Gloves
 
 *The world's most advanced wearable musical instrument for expressive creation, composition, and performance.*
@@ -61,4 +59,6 @@ Movies that I watched recently where technology acts as a physical extension of 
 - Ghost in the Shell (1995)
 - eXistenZ (1999)
 - Crimes of the Future (2022)
+
+![Ghost in the Shell.gif](blob:https:/app.pagescms.org/438dacd5-2d4a-4807-88d7-8b5048ff8749)
 
