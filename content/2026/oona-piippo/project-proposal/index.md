@@ -66,3 +66,5 @@ Movies that I watched recently where technology acts as a physical extension of 
 
 ![](/images/2026/oona-piippo/mwchagdq-gk5vw4v9.gif)
 
+![](/images/2026/oona-piippo/mwcgqb5o-u5gomgcf.gif)
+
