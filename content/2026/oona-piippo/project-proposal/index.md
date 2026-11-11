@@ -39,7 +39,7 @@ This glove controller is going to be designed for VJ use but it could be mapped 
 ![Imogen Heap’s Mi.Mu Ableton-Controlling Glove.png](/images/2026/oona-piippo/mwcgiwbu-gfwyz3ye.png)
 
 *Imagine, for example, that instead of turning up a fader in order to bring in a sound or add reverb, you could be raising your arms to achieve the same effect. Or to move a sound around the room, you could simply point where you want it to be*  
-++[https://djtechtools.com/2014/04/17/imogen-heaps-mi-mu-ableton-controlling-glove-project-now-on-kickstarter/](https://djtechtools.com/2014/04/17/imogen-heaps-mi-mu-ableton-controlling-glove-project-now-on-kickstarter/)++
+[https://djtechtools.com/2014/04/17/imogen-heaps-mi-mu-ableton-controlling-glove-project-now-on-kickstarter/](https://djtechtools.com/2014/04/17/imogen-heaps-mi-mu-ableton-controlling-glove-project-now-on-kickstarter/)
 
 Imogen Heap's Mi.Mu gloves will "change the way we make music"  
 [https://www.youtube.com/watch?v=ci-yB6EgVW4](https://www.youtube.com/watch?v=ci-yB6EgVW4) 
