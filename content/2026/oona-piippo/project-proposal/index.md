@@ -28,6 +28,8 @@ This glove controller is going to be designed for VJ use but it could be mapped 
 
 ## **References**
 
+
+
 ### Mi.Mu Gloves
 
 *The world's most advanced wearable musical instrument for expressive creation, composition, and performance.*
@@ -40,14 +42,16 @@ This glove controller is going to be designed for VJ use but it could be mapped 
 ++[https://djtechtools.com/2014/04/17/imogen-heaps-mi-mu-ableton-controlling-glove-project-now-on-kickstarter/](https://djtechtools.com/2014/04/17/imogen-heaps-mi-mu-ableton-controlling-glove-project-now-on-kickstarter/)++
 
 Imogen Heap's Mi.Mu gloves will "change the way we make music"  
-++[[https://www.youtube.com/watch?v=ci-yB6EgVW4](https://www.youtube.com/watch?v=ci-yB6EgVW4)++]([https://www.youtube.com/watch?v=ci-yB6EgVW4](https://www.youtube.com/watch?v=ci-yB6EgVW4))  
+[https://www.youtube.com/watch?v=ci-yB6EgVW4](https://www.youtube.com/watch?v=ci-yB6EgVW4) 
 
 
 
 ### Lady’s Clove instrument by Laetitia Sonami
 
+![LS-ladys-glove-04b.jpeg](/images/2026/oona-piippo/mwch528o-3bstx0ao.jpeg)
+
 *Sonami creates performances where her movements can shape the music and in some instances visual environments*  
-++[https://sonami.net/portfolio/items/ladys-glove/](https://www.youtube.com/watch?v=ci-yB6EgVW4)++
+[https://sonami.net/portfolio/items/ladys-glove/](https://sonami.net/portfolio/items/ladys-glove/)
 
 
 
