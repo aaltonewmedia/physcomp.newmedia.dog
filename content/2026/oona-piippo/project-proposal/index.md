@@ -6,13 +6,15 @@ showComments: true
 heroStyle: background
 draft: false
 ---
-I have been working as a VJ (Visual Jockey) for almost four years now. I have created visuals for club events, underground parties, music festivals etc. In club nights I’m mostly working behind the computer using a trackpad and my midimix controller by mapping buttons and faders to my VDMX software. VJ work is mainly looking at the screen on the computer and at the same time trying to see how the projection looks on one or multiple walls. Sometimes the projected video cannot be seen from the VJ booth. I would prefer to create visuals somewhere else than staring at the computer screen. A couple of times I have used this 8BitDo controller so I can wirelessly make changes to my visuals, for example on the dancefloor.
+I have been working as a VJ (Visual Jockey) for almost four years now. I have created visuals for club events, underground parties, music festivals etc. In club nights I’m mostly working behind the computer using a trackpad and my midimix controller by mapping buttons and faders to my VDMX software. VJ work is mainly looking at the screen on the computer and at the same time trying to see how the projection looks on one or multiple walls. Sometimes the projected video cannot be seen from the VJ booth. I would prefer to create visuals somewhere else than staring at the computer screen. A couple of times I have used this 8BitDo controller so I can wirelessly make changes to my visuals, for example on the dance floor.
 
-In my practice I have been focusing on human interactions as a part of the tool to create visual elements. In my bachelor’s thesis I created immersive visuals for the Kaiku club event at Helsinki. I used a face tracking camera to detect dancers at the dancefloor and connected the movements to VDMX. Dancers' silhouettes were drawn into the wall so dancers could be part of the visuals in real-time. I used effects that the silhouettes couldn't be recognisable but you could be part of the immersive video. Now I want to create something where VJ could be more part of the visuals.
+In my practice I have been focusing on human interactions as a part of the tool to create visual elements. In my bachelor’s thesis I created immersive visuals for the Kaiku club event at Helsinki. I used a face tracking camera to detect dancers at the dance floor and connected the movements to VDMX. Dancers' silhouettes were drawn into the wall so dancers could be part of the visuals in real-time. I used effects that the silhouettes couldn't be recognisable but you could be part of the immersive video. Now I want to create something where VJ could be more part of the visuals.
 
 In my project I’m creating wearable midi controller gloves that lets you control video projection by your hands. The gloves detect hand movements and convert physical interactions to visuals. I want to create a wearable controller to access my mappings inside the computer without using trackpad, buttons or sliders.
 
 This glove controller is going to be designed for VJ use but it could be mapped also to music software? And maybe this glove could be usable in more artistic dance performances for example than just in VJ gigs.
+
+
 
 **Parts & Components**
 
@@ -22,25 +24,31 @@ This glove controller is going to be designed for VJ use but it could be mapped 
 - Wireless transmitter
 - Gloves
 
-### **References**
 
-[Mi.Mu](http://Mi.Mu) Gloves
+
+**References**
+
+
+
+Mi.Mu Gloves
 
 *The world's most advanced wearable musical instrument for expressive creation, composition, and performance.*  
 ++[https://mimugloves.com/](https://mimugloves.com/)++
 
+![Imogen Heap’s Mi.Mu Ableton-Controlling Glove.png](/images/2026/oona-piippo/mwcgiwbu-gfwyz3ye.png)
+
 *Imagine, for example, that instead of turning up a fader in order to bring in a sound or add reverb, you could be raising your arms to achieve the same effect. Or to move a sound around the room, you could simply point where you want it to be*  
 ++[https://djtechtools.com/2014/04/17/imogen-heaps-mi-mu-ableton-controlling-glove-project-now-on-kickstarter/](https://djtechtools.com/2014/04/17/imogen-heaps-mi-mu-ableton-controlling-glove-project-now-on-kickstarter/)++
 
-Imogen Heap's [Mi.Mu](http://Mi.Mu) gloves will "change the way we make music"  
-++[https://www.youtube.com/watch?v=ci-yB6EgVW4++](https://www.youtube.com/watch?v=ci-yB6EgVW4)  
+Imogen Heap's Mi.Mu gloves will "change the way we make music"  
+++[[https://www.youtube.com/watch?v=ci-yB6EgVW4](https://www.youtube.com/watch?v=ci-yB6EgVW4)++]([https://www.youtube.com/watch?v=ci-yB6EgVW4](https://www.youtube.com/watch?v=ci-yB6EgVW4))  
+
 
 
 Lady’s Clove instrument by Laetitia Sonami
 
 *Sonami creates performances where her movements can shape the music and in some instances visual environments*  
-++[https://sonami.net/portfolio/items/ladys-glove/++](https://sonami.net/portfolio/items/ladys-glove/)  
-
+++[https://sonami.net/portfolio/items/ladys-glove/](https://www.youtube.com/watch?v=ci-yB6EgVW4)++
 
 Movies that I watched recently where technology acts as a physical extension of human body:
 
@@ -51,3 +59,4 @@ Ghost in the Shell (1995)
 eXistenZ (1999)
 
 Crimes of the Future (2022)
+
