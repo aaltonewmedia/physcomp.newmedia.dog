@@ -1,12 +1,12 @@
 ---
-title: THE [CORTEX]
+title: PROJECT PROPOSAL - THE [CORTEX]
 date: 2026-11-11T23:08:00Z
 showBgImage: false
 showComments: true
 heroStyle: background
 draft: false
 ---
-I am creating a wearable performance tool (dubbed The Cortex) to symbolize the central node of operations, designed for live manipulation of music and visuals through sensor-based interactions.
+A wearable performance tool, dubbed The Cortex (to symbolize the central node of operations), designed for live manipulation of music and visuals through sensor-based interactions.
 
 - I will incorporate an accelerometer to detect head movement and orientation, alongside capacitive touch sensors to detect touch interactions. The hat will be lined with programmable LED strips for visual enhancement.
 - The hat will also function as a controller for manipulating visuals and audio in p5.js, translating physical movements and touch into real-time responses.
