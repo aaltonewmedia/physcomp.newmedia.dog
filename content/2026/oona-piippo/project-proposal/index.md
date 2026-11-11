@@ -64,5 +64,5 @@ Movies that I watched recently where technology acts as a physical extension of 
 - eXistenZ (1999)
 - Crimes of the Future (2022)
 
-![Ghost in the Shell.gif](blob:https:/app.pagescms.org/438dacd5-2d4a-4807-88d7-8b5048ff8749)
+![](/images/2026/oona-piippo/mwchagdq-gk5vw4v9.gif)
 
