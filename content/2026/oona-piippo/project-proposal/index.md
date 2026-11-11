@@ -8,15 +8,19 @@ draft: false
 ---
 I have been working as a VJ (Visual Jockey) for almost four years now. I have created visuals for club events, underground parties, music festivals etc. In club nights I’m mostly working behind the computer using a trackpad and my midimix controller by mapping buttons and faders to my VDMX software. VJ work is mainly looking at the screen on the computer and at the same time trying to see how the projection looks on one or multiple walls. Sometimes the projected video cannot be seen from the VJ booth. I would prefer to create visuals somewhere else than staring at the computer screen. A couple of times I have used this 8BitDo controller so I can wirelessly make changes to my visuals, for example on the dance floor.
 
-In my practice I have been focusing on human interactions as a part of the tool to create visual elements. In my bachelor’s thesis *Producing site-specific visuals from an immersion perspective,* I created immersive visuals for the Kaiku club event at Helsinki. I used a face tracking camera to detect dancers at the dancefloor and connected the movements to VDMX. Dancers' silhouettes were drawn into the wall so dancers could be part of the visuals in real-time. I used effects that the silhouettes couldn't be recognisable but you could be part of the immersive video. Now I want to create something where VJ could be more part of the visuals.
-
-![](/images/2026/oona-piippo/mwcjg89h-dcqbwgux.jpg)
+In my practice I have been focusing on human interactions as a part of the tool to create visual elements. In my bachelor’s thesis *Producing site-specific visuals from an immersion perspective,* I created immersive visuals for the Kaiku club event at Helsinki. I used a face tracking camera to detect dancers at the dance floor and connected the movements to VDMX. Dancers' silhouettes were drawn into the wall so dancers could be part of the visuals in real-time. I used effects that the silhouettes couldn't be recognisable but you could be part of the immersive video. Now I want to create something where VJ could be more part of the visuals.
 
 In my project I’m creating wearable midi controller gloves that lets you control video projection by your hands. The gloves detect hand movements and convert physical interactions to visuals. I want to create a wearable controller to access my mappings inside the computer without using trackpad, buttons or sliders.
 
 This glove controller is going to be designed for VJ use but it could be mapped also to music software? And maybe this glove could be usable in more artistic dance performances for example than just in VJ gigs.
 
+![](/images/2026/oona-piippo/mwcjg89h-dcqbwgux.jpg)
 
+![](/images/2026/oona-piippo/mwcjsaof-7l6a0wmw.jpg)
+
+
+
+&nbsp;
 
 ## **Parts & Components**
 
