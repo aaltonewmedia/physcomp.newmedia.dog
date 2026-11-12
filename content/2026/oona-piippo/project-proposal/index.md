@@ -26,6 +26,12 @@ In my project I’m creating wearable midi controller gloves that lets you contr
 
 
 
+&nbsp;
+
+# Wearable midi controller gloves for VJ
+
+
+
 ## **Parts & Components**
 
 - Gesture and proximity sensor
