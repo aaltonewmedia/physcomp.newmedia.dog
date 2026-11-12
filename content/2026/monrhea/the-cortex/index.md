@@ -18,24 +18,17 @@ My inspiration was solidified by a tutorial on ADA fruits website - Build the Ha
 
 I have been ideating this from the Computational Art and Design class. 
 
-You can find the documentation page [here](https://app.notion.com/p/MONRHEA-s-Wearable-Hat-V5-40850833cf5e80f2bf55fb96d74c0c94), as well as the notes on the progress. 
+Find the documentation page [here](https://app.notion.com/p/MONRHEA-s-Wearable-Hat-V5-40850833cf5e80f2bf55fb96d74c0c94), as well as the notes on the progress. 
 
-Sensors
+**Components and software's**
 
-- Accelerometer MSA 311
+- Accelerometer MSA 311 sensor
 - MPR121 Capacitive Touch Sensor (Optional)
-
-Visuals 
-
-- p5.Js
-
-Sound
-
-- Sound in p5.Js and or Ableton
-
-Microcontroller
-
-- Raspberry Pi Pico 2W
+- Visuals in p5.Js
+- Sound in p5.Js and/or Ableton
+- Microcontroller Raspberry Pi Pico 2W
+- Rechargeable/replaceable battery?
+- Plastic or Acrylic
 
 ![](/images/2026/monrhea/mwcp1nw8-a1zqkav1.jpg)
 
