@@ -38,16 +38,18 @@ inspo:
 [https://www.instagram.com/reel/DT_eHDgibcT/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==](https://www.instagram.com/reel/DT_eHDgibcT/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==)  
 [https://www.instagram.com/reel/DeRrWUozNpt/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==](https://www.instagram.com/reel/DeRrWUozNpt/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==)  
 Maybe take some inspiration about how it looks from that  
-  
+
 And I'm obsessed with the new song the Weekend just released, so i might want just to make something for that. The song is called Hong Kong, so I might make some Hong Kong vibes visuals.
 
 ![](</images/2026/annyvibe/Project Proposal/mwdf331e-jmg2iu4x.png>)
 
 And I was in Don Toliver's concert this Tuesday, I also took som inspo from that.  
 
-
 ![](</images/2026/annyvibe/Project Proposal/mwdetoax-4yvg0xej.jpg>)
 
 ![](</images/2026/annyvibe/Project Proposal/mwdetr6e-5cd51kap.jpg>)
 
-I was thinking about use projection scrim at first, but it seems like only physical objects might also work.
+I was thinking about use projection scrim at first, but it seems like only physical objects might also work.  
+  
+Extra parts and components that I might need:  
+Small projector + HDMI cable; acrylic; scrim; Thin steel wire or fishing line
