@@ -10,8 +10,6 @@ I have been working as a VJ (Visual Jockey) for almost four years now. I have cr
 
 In my practice I have been focusing on interaction as a part of the tool to create visual elements. In my bachelor’s thesis, *Producing site-specific visuals from an immersion perspective,* I created a video installation for the Kaiku Club event at Helsinki in 2024. I used a face tracking camera to detect dancers at the dance floor and connected the movements to VDMX. Dancers' silhouettes were drawn into the wall by projector so dancers could be part of the visuals in real-time. I used effects that the silhouettes couldn't be recognisable but you could be part of the immersive video. Now I want to create something where VJ performance could be more part of the visuals.
 
-In my project I’m creating wearable midi controller gloves that lets you control video projection by physical movements of your hands. The gloves detect hand motion and convert physical interactions to visuals, changing colors, brightness and textures for example. The idea is to create a wearable controller to access video mappings inside the computer without using trackpad, buttons or sliders. This glove controller is going to be designed for VJ use but it could be mapped also to music softwares? And maybe this glove could be usable also in dance performances that have visuals, so the dancers movement would be projected in real-time at performance space.
-
 ![](/images/2026/oona-piippo/mwcjg89h-dcqbwgux.jpg)
 
 (Kaiku Club, Helsinki, 2023)
@@ -30,7 +28,7 @@ In my project I’m creating wearable midi controller gloves that lets you contr
 
 # Wearable midi controller gloves for VJ
 
-
+In my project I’m creating wearable midi controller gloves that lets you control video projection by physical movements of your hands. The gloves detect hand motion and convert physical interactions to visuals, changing colors, brightness and textures for example. The idea is to create a wearable controller to access video mappings inside the computer without using trackpad, buttons or sliders. This glove controller is going to be designed for VJ use but it could be mapped also to music softwares? And maybe this glove could be usable also in dance performances that have visuals, so the dancers movement would be projected in real-time at performance space.
 
 ## **Parts & Components**
 
