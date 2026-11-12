@@ -9,6 +9,26 @@ showComments: true
 heroStyle: background
 draft: false
 ---
+[Klifur — Play the physics climbing puzzle online](https://www.klifur.games/)
+
+![1794474233412.png](/images/2026/jin/mwdbmo45-hh8mf0lu.png)
+
+
+
+![1794474270745.png](/images/2026/jin/mwdbnl1d-pzjtugdw.png)
+
+
+
+[MPR121](https://www.adafruit.com/product/1982)  - 4 bananas 
+
+[MPU6050](https://www.adafruit.com/product/4517) or MSA311 - 
+
+**[Balance Board, Rocker Board：👇](https://www.bidfta.com/es/426816/item-detail/33289118 "Balance Board, Rocker Board Physical Therapy,Balance Boards for Adults ...")**
+
+![image.png](/images/2026/jin/mwdc6j8q-l4qv45ua.png)
+
+
+
 ```
 <!doctype html>
 <html lang="en">
