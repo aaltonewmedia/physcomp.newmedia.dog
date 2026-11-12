@@ -6,7 +6,7 @@ showComments: true
 heroStyle: background
 draft: false
 ---
-# **Project proposal: The Self-shredding Applicant**
+# **The Self-shredding Applicant**
 
 My proposed project is an installation consisting of a receipt printer and a self-built paper shredder. The receipt printer continuously prints out applications that are fed directly into the shredder. This serves as a commentary on the often demoralizing application process to jobs, grants and subsidies. 
 
