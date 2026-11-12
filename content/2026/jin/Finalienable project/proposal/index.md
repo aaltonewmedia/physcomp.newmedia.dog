@@ -11,7 +11,7 @@ draft: false
 ---
 ### Inspiration
 
-[Klifur — Play the physics climbing puzzle online](https://www.klifur.games/)
+[Klifur — Play the physics climbing puzzle online (link)](https://www.klifur.games/)
 
 ![1794474233412.png](/images/2026/jin/mwdbmo45-hh8mf0lu.png)
 
