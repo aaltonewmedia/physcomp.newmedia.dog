@@ -29,7 +29,7 @@ A transparent acrylic box, roughly 30–40 cm, holds a miniature scene and sits 
 
 - **Projection:** a projector outside the box projects TouchDesigner visuals into it, onto surfaces inside the scene.
 - **Physical scene:** 3D-printed objects with small embedded LEDs build the environment
-- **Controller:** a small separate controller in front of the box.
+- **Controller:** a small separate controller in front of the box, with knobs, buttons and sensors(distance sensor or capacitive sensor).
 
 ![](</images/2026/annyvibe/Project Proposal/mwdetkca-2k9xzy7a.jpg>)
 
@@ -57,5 +57,5 @@ And I also saw this glow-in-the-dark PLA material I think this is interesting.
 
   
 Extra parts and components that I might need:  
-Small projector + HDMI cable; acrylic; scrim; Thin steel wire or fishing line
+Small projector + HDMI cable; acrylic; scrim; Thin steel wire or fishing line; distance sensor or capacitive sensor.
 
