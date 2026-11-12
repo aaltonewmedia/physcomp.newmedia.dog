@@ -37,6 +37,8 @@ alt ctrl game
 
 ![1794476004973.png](/images/2026/jin/mwdcoopq-xv24rw48.png)
 
+
+
 ```
 <!doctype html>
 <html lang="en">
