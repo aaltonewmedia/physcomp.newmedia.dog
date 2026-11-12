@@ -23,9 +23,9 @@ alt ctrl game
 
 ### Sensors
 
-[MPR121](https://www.adafruit.com/product/1982)  - 4 bananas - limbs
+[MPR121](https://www.adafruit.com/product/1982)  - 4 bananas - select a limb
 
-[MPU6050](https://www.adafruit.com/product/4517) or MSA311 - rotation - move
+[MPU6050](https://www.adafruit.com/product/4517) or MSA311 - rotation the limb
 
 **[Balance Board, Rocker Board：👇](https://www.bidfta.com/es/426816/item-detail/33289118 "Balance Board, Rocker Board Physical Therapy,Balance Boards for Adults ...")** (maybe not stand on it - laser cutting???)
 
