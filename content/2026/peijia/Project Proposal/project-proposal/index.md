@@ -39,7 +39,7 @@ The lights will also change their brightness, colour and speed.
 
 4. Technology
 
-  lan to use:
+  plan to use:
 
 - Arduino
 - Microphone sensor
