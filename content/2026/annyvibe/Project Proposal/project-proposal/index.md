@@ -35,7 +35,7 @@ A transparent acrylic box, roughly 30–40 cm, holds a miniature scene and sits 
 
 Some options in mind:  
 inspo:  
-[https://www.instagram.com/reel/DT_eHDgibcT/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==](https://www.instagram.com/reel/DT_eHDgibcT/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==)  
+[https://www.instagram.com/reel/DT_eHDgibcT/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==](https://www.instagram.com/reel/DTtcuAwCWFB/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==)  
 [https://www.instagram.com/reel/DeRrWUozNpt/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==](https://www.instagram.com/reel/DeRrWUozNpt/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==)  
 Maybe take some inspiration about how it looks from that  
 
@@ -53,3 +53,4 @@ I was thinking about use projection scrim at first, but it seems like only physi
   
 Extra parts and components that I might need:  
 Small projector + HDMI cable; acrylic; scrim; Thin steel wire or fishing line
+
