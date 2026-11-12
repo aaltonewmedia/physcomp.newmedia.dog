@@ -5,6 +5,7 @@ showBgImage: false
 showComments: true
 heroStyle: background
 draft: false
+bgimage: /images/2026/carolina/mwdi8x1q-99aa0az4.jpg
 ---
 ### The slides shown during class
 
@@ -38,4 +39,6 @@ link: [https://drive.google.com/file/d/1VK2e7dGMmW3sXOUse-xTE3rRH4WHEpdW/view?us
 ![](/images/2026/carolina/slides/mwdhvrkv-6isnlnal.jpg)
 
 ![](/images/2026/carolina/slides/mwdhvn4y-fuwv96ud.jpg)
+
+![](/images/2026/carolina/mwdi8x1q-99aa0az4.jpg)
 
