@@ -1,5 +1,5 @@
 ---
-title: Proposal
+title: Proposal - BANANA CLIMBER GAME
 date: 2026-11-12T10:55:00Z
 authors:
   - Jin
