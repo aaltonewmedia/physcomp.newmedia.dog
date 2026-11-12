@@ -33,6 +33,7 @@ In my project I’m creating wearable midi controller gloves that lets you contr
 - Capacitive touch sensor
 - Wireless transmitter and receiver
 - Gloves
+- ...
 
 
 
