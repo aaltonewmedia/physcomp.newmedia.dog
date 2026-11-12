@@ -9,6 +9,8 @@ showComments: true
 heroStyle: background
 draft: false
 ---
+### Inspiration
+
 [Klifur — Play the physics climbing puzzle online](https://www.klifur.games/)
 
 ![1794474233412.png](/images/2026/jin/mwdbmo45-hh8mf0lu.png)
@@ -19,11 +21,13 @@ alt ctrl game
 
 
 
-[MPR121](https://www.adafruit.com/product/1982)  - 4 bananas 
+### Sensors
 
-[MPU6050](https://www.adafruit.com/product/4517) or MSA311 - rotation - 
+[MPR121](https://www.adafruit.com/product/1982)  - 4 bananas - limbs
 
-**[Balance Board, Rocker Board：👇](https://www.bidfta.com/es/426816/item-detail/33289118 "Balance Board, Rocker Board Physical Therapy,Balance Boards for Adults ...")**
+[MPU6050](https://www.adafruit.com/product/4517) or MSA311 - rotation - move
+
+**[Balance Board, Rocker Board：👇](https://www.bidfta.com/es/426816/item-detail/33289118 "Balance Board, Rocker Board Physical Therapy,Balance Boards for Adults ...")** (maybe not stand on it - laser cutting???)
 
 ![image.png](/images/2026/jin/mwdc6j8q-l4qv45ua.png)
 
