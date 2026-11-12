@@ -39,18 +39,21 @@ In my project I’m creating wearable midi controller gloves that lets you contr
 
 ## **References**
 
-### Mi.Mu Gloves
+### Mi.Mu Gloves 
 
-*The world's most advanced wearable musical instrument for expressive creation, composition, and performance.*  
 [https://mimugloves.com/](https://mimugloves.com/)
+
+> *The world's most advanced wearable musical instrument for expressive creation, composition, and performance.*
 
 ![Imogen Heap’s Mi.Mu Ableton-Controlling Glove.png](/images/2026/oona-piippo/mwcgiwbu-gfwyz3ye.png)
 
-*Imagine, for example, that instead of turning up a fader in order to bring in a sound or add reverb, you could be raising your arms to achieve the same effect. Or to move a sound around the room, you could simply point where you want it to be*  
 [https://djtechtools.com/2014/04/17/imogen-heaps-mi-mu-ableton-controlling-glove-project-now-on-kickstarter/](https://djtechtools.com/2014/04/17/imogen-heaps-mi-mu-ableton-controlling-glove-project-now-on-kickstarter/)
 
-Imogen Heap's Mi.Mu gloves will "change the way we make music"  
+> *Imagine, for example, that instead of turning up a fader in order to bring in a sound or add reverb, you could be raising your arms to achieve the same effect. Or to move a sound around the room, you could simply point where you want it to be.*
+
 [https://www.youtube.com/watch?v=ci-yB6EgVW4](https://www.youtube.com/watch?v=ci-yB6EgVW4) 
+
+> Imogen Heap's Mi.Mu gloves will "change the way we make music.
 
 
 
@@ -58,8 +61,9 @@ Imogen Heap's Mi.Mu gloves will "change the way we make music"
 
 ![LS-ladys-glove-04b.jpeg](/images/2026/oona-piippo/mwch528o-3bstx0ao.jpeg)
 
-*Sonami creates performances where her movements can shape the music and in some instances visual environments*  
 [https://sonami.net/portfolio/items/ladys-glove/](https://sonami.net/portfolio/items/ladys-glove/)
+
+> *Sonami creates performances where her movements can shape the music and in some instances visual environments*
 
 
 
