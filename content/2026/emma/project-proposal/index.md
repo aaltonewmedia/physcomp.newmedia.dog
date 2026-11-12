@@ -14,6 +14,10 @@ The applications are pre-written, possibly with some randomized elements but no 
 
 
 
+![](/images/2026/emma/mwdixyt6-ahoi8o4a.jpg)
+
+
+
 **Background**
 
 Today, many avenues of life are exhaustingly competitive for young people. The job market is perhaps the clearest example. It is common to send tens if not hundreds of applications and be faced with rejection over and over again, usually without a further explanation. I think these circumstances make it very difficult for a person, especially someone young, to protect their sense of self-worth. 
