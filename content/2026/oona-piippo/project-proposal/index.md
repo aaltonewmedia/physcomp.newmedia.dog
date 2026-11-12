@@ -18,7 +18,7 @@ In my project I’m creating wearable midi controller gloves that lets you contr
 
 ![](/images/2026/oona-piippo/mwcjsaof-7l6a0wmw.jpg)
 
-(Aavistus Festival, Valkoinen sali, Helsinki, 2024)
+(Aavistus Festival, Valkoinen Sali, Helsinki, 2024)
 
 ![](/images/2026/oona-piippo/mwdaev8u-915eziyf.gif)
 
