@@ -16,9 +16,17 @@ This glove controller is going to be designed for VJ use but it could be mapped 
 
 ![](/images/2026/oona-piippo/mwcjg89h-dcqbwgux.jpg)
 
+(Kaiku Club, Helsinki, 2023)
+
 ![](/images/2026/oona-piippo/mwcjsaof-7l6a0wmw.jpg)
 
+(Aavistus Festival, Valkoinen sali, Helsinki, 2024)
+
 ![](/images/2026/oona-piippo/mwdaev8u-915eziyf.gif)
+
+(Grotesk, Helsinki, 2025)
+
+
 
 ## **Parts & Components**
 
@@ -34,8 +42,7 @@ This glove controller is going to be designed for VJ use but it could be mapped 
 
 ### Mi.Mu Gloves
 
-*The world's most advanced wearable musical instrument for expressive creation, composition, and performance.*
-
+*The world's most advanced wearable musical instrument for expressive creation, composition, and performance.*  
 [https://mimugloves.com/](https://mimugloves.com/)
 
 ![Imogen Heap’s Mi.Mu Ableton-Controlling Glove.png](/images/2026/oona-piippo/mwcgiwbu-gfwyz3ye.png)
