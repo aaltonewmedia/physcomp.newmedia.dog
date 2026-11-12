@@ -24,7 +24,7 @@ Arduino will send the sound data to the computer. Then JavaScript will use this 
 
 I also want to connect RGB LED lights to Arduino. I will put the lights behind the computer screen. 
 
-3. Visual changes 
+3. Visual changes
 
 keep the original design of websites. don't want to change their content or layout. I only want to change how the text and images look and move.
 
@@ -37,9 +37,9 @@ For example:
 
 The lights will also change their brightness, colour and speed.
 
-4. Technology 
+4. Technology
 
- plan to use:
+  lan to use:
 
 - Arduino
 - Microphone sensor
