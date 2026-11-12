@@ -3,7 +3,7 @@ title: Proposal - BANANA CLIMBER GAME
 date: 2026-11-12T10:55:00Z
 authors:
   - Jin
-image: /images/2026/jin/mwdbco9t-h4smt8ww.png
+image: /images/2026/jin/mwdcozo9-hexamof2.png
 showBgImage: true
 showComments: true
 heroStyle: background
@@ -13,7 +13,7 @@ draft: false
 
 ![1794474233412.png](/images/2026/jin/mwdbmo45-hh8mf0lu.png)
 
-
+alt ctrl game
 
 ![1794474270745.png](/images/2026/jin/mwdbnl1d-pzjtugdw.png)
 
@@ -28,6 +28,8 @@ draft: false
 ![image.png](/images/2026/jin/mwdc6j8q-l4qv45ua.png)
 
 
+
+![1794476004973.png](/images/2026/jin/mwdcoopq-xv24rw48.png)
 
 ```
 <!doctype html>
