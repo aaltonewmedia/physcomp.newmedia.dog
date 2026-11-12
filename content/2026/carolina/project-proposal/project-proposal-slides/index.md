@@ -11,7 +11,6 @@ draft: false
 *note: these slides will be written down here in more detail after class :)*  
 link: [https://drive.google.com/file/d/1VK2e7dGMmW3sXOUse-xTE3rRH4WHEpdW/view?usp=drive_link](https://drive.google.com/file/d/1VK2e7dGMmW3sXOUse-xTE3rRH4WHEpdW/view?usp=drive_link)  
 
-
 ![](/images/2026/carolina/slides/mwdhxajl-a238mxz3.jpg)
 
 ![](/images/2026/carolina/slides/mwdhveg5-71yo4027.jpg)
@@ -40,8 +39,3 @@ link: [https://drive.google.com/file/d/1VK2e7dGMmW3sXOUse-xTE3rRH4WHEpdW/view?us
 
 ![](/images/2026/carolina/slides/mwdhvn4y-fuwv96ud.jpg)
 
-### The gifs I couldn't attach (oops)
-
-
-
-&nbsp;
