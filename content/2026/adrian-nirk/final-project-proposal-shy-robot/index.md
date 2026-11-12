@@ -11,6 +11,12 @@ Slides: [[here](https://docs.google.com/presentation/d/1l5U6gw35CSeTX-NYjF-nuxjE
 
 My project is inspired by my love for old and "dumb" technology, as well as the physical media ecosystem. Unlike a smart device, a fridge or a blender doesn't send me a notification on its own or otherwise bother me. However, when I was a kid, I was terrified of the TV turning on on its own late at night. This project brings that fear to life by creating a strange creature living inside a discarded DVD player.
 
+My idea is that a robot-like entity lives inside a discarded electronic device, similarly to a hermit crab. By giving it a kind of inner life, it reverses typical expectations about technological artifacts by acting differently depending on how people approach the DVD player. Its inner state can change to three different states (neutral, happy, scared) that the robot switches between.
+
+The robot is able to sense the distance of people in front of it, and possibly also detects loud noises and touch on its case. Initially, it is rather timid; sudden movements and loud noises scare it, while a gentle approach results in it opening itself up, literally (through the disc drive, which will also include a display with different animations) and figuratively. 
+
+Besides the movement of the DVD drive, the emotional state of the player is mainly visible through visual feedback. Gentle, warm colours reflect a happy inner state, while the lights become irregular and glitch if the person approaching the device is rather rough with it. I want to drill holes for RGB lights into the case, and possibly also add vibration (thank you Matti for the suggestion) so that the player can shake when it is scared. 
+
 ### Here's a preliminary sketch I made:
 
 ![](/images/2026/adrian-nirk/mwdh3ycj-s7c7ni6n.png)
@@ -47,5 +53,5 @@ A robotic sculpture that reacts to its environment: it is attracted by sound, bu
 - Distance sensor
 - (Sound sensor/microphone)
 - (Capacitive sensors)
-- Other discarded electronic devices, hot glue, foil, tape, paint
+- If needed: Other discarded electronic devices, hot glue, foil, tape, paint
 
