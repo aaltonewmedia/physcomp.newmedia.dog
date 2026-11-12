@@ -10,7 +10,7 @@ bgimage: /images/2026/carolina/mwdi8x1q-99aa0az4.jpg
 ### The slides shown during class
 
 *these slides will be written down here in more detail after class :)*  
-link to the slides: [https://drive.google.com/file/d/1VK2e7dGMmW3sXOUse-xTE3rRH4WHEpdW/view?usp=drive_link](https://drive.google.com/file/d/1VK2e7dGMmW3sXOUse-xTE3rRH4WHEpdW/view?usp=drive_link)  
+link to the slides: [https://drive.google.com/file/d/1Nxi8wshhnNguBiEnrWJHPnckXuM2DxLI/view?usp=drive_link](https://drive.google.com/file/d/1Nxi8wshhnNguBiEnrWJHPnckXuM2DxLI/view?usp=drive_link)  
 
 ![](/images/2026/carolina/slides/mwdhxajl-a238mxz3.jpg)
 
