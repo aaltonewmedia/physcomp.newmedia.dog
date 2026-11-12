@@ -1,11 +1,12 @@
 ---
-title: Project Proposal (slides)
+title: Project Proposal
 date: 2026-11-12T13:22:00Z
-showBgImage: false
+showBgImage: true
 showComments: true
 heroStyle: background
 draft: false
-bgimage: /images/2026/carolina/mwdi8x1q-99aa0az4.jpg
+bgimage: /images/2026/carolina/mwdj1sq1-qbpgsxch.jpg
+image: /images/2026/carolina/mwdj1sq1-qbpgsxch.jpg
 ---
 ### The slides shown during class
 
@@ -40,5 +41,5 @@ link to the slides: [https://drive.google.com/file/d/1Nxi8wshhnNguBiEnrWJHPnckXu
 
 ![](/images/2026/carolina/slides/mwdhvn4y-fuwv96ud.jpg)
 
-![](/images/2026/carolina/mwdi8x1q-99aa0az4.jpg)
+![](/images/2026/carolina/mwdj1sq1-qbpgsxch.jpg)
 
