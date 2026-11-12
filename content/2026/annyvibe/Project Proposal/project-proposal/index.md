@@ -51,6 +51,11 @@ And I was in Don Toliver's concert this Tuesday, I also took som inspo from that
 
 I was thinking about use projection scrim at first, but it seems like only physical objects might also work.  
   
+And I also saw this glow-in-the-dark PLA material I think this is interesting.
+
+![](</images/2026/annyvibe/Project Proposal/mwdgrqho-ca0wlad1.jpg>)
+
+  
 Extra parts and components that I might need:  
 Small projector + HDMI cable; acrylic; scrim; Thin steel wire or fishing line
 
