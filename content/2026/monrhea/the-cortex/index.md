@@ -6,7 +6,7 @@ showComments: true
 heroStyle: background
 draft: false
 ---
-A wearable performance hat tool, dubbed: The [CORTEX] (to symbolize the central node of operations), designed for live manipulation of sound and visuals through sensor-based interactions.
+A wearable performance instrument in the form of a hat, dubbed: The [CORTEX] (to symbolize the central node of operations), designed for live manipulation of sound and visuals through sensor-based interactions.
 
 - I will incorporate an accelerometer to detect head movement and orientation, alongside capacitive touch sensors to detect touch interactions. The hat will be lined with programmable LED strips for visual enhancement.
 - The hat will also function as a controller for manipulating visuals and audio in p5.js, translating physical movements and touch into real-time responses.
@@ -23,7 +23,7 @@ You can find the documentation page [here](https://app.notion.com/p/MONRHEA-s-We
 Sensors
 
 - Accelerometer MSA 311
-- MPR121 Capacitive Touch Sensor 
+- MPR121 Capacitive Touch Sensor (Optional)
 
 Visuals 
 
