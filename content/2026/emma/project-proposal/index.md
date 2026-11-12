@@ -20,9 +20,11 @@ The applications are pre-written, possibly with some randomized elements but no 
 
 **Background**
 
-Today, many avenues of life are exhaustingly competitive for young people. The job market is perhaps the clearest example. It is common to send tens if not hundreds of applications and be faced with rejection over and over again, usually without a further explanation. I think these circumstances make it very difficult for a person, especially someone young, to protect their sense of self-worth. 
+Today, many avenues of life are increasingly competitive for young people. The job market is perhaps the clearest example. It is common to send tens if not hundreds of applications and be faced with rejection over and over again, usually without a further explanation. I think these circumstances make it very difficult for a person, especially someone young, to protect their sense of self-worth. 
 
 Ironically, the job search can destroy what it necessitates; it is very difficult to maintain persistent effort if your self-efficacy is wavering. At its worst, this can lead to a person shooting themselves down before anyone else can. Hence, the Self-shredding Applicant.
+
+Another aspect of the installation and application processes is their wastefulness. Poorly designed application processes waste not only the applicants' but also the hiring managers' time, since many have to sift through an influx of AI-generated cover letters. In this installation, the wasted receipt paper is a deliberate choice that hopefully elicits uncomfortable feelings and conversation.
 
 
 
