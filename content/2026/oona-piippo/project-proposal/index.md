@@ -18,7 +18,7 @@ This glove controller is going to be designed for VJ use but it could be mapped 
 
 ![](/images/2026/oona-piippo/mwcjsaof-7l6a0wmw.jpg)
 
-
+![](/images/2026/oona-piippo/mwdaev8u-915eziyf.gif)
 
 ## **Parts & Components**
 
