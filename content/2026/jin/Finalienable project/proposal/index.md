@@ -21,7 +21,7 @@ alt ctrl game
 
 [MPR121](https://www.adafruit.com/product/1982)  - 4 bananas 
 
-[MPU6050](https://www.adafruit.com/product/4517) or MSA311 - 
+[MPU6050](https://www.adafruit.com/product/4517) or MSA311 - rotation - 
 
 **[Balance Board, Rocker Board：👇](https://www.bidfta.com/es/426816/item-detail/33289118 "Balance Board, Rocker Board Physical Therapy,Balance Boards for Adults ...")**
 
