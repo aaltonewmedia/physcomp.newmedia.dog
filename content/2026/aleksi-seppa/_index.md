@@ -9,12 +9,7 @@ showComments: true
 draft: false
 image: /images/2026/aleksi-seppa/mwcrrclx-eq1hvq6i.png
 ---
-This is my course documentation site!
+Hey!
 
-Edit this page with some basic information about yourself.
-
-Keep your images to this specification:
-
-- Resolution: maximum 1920 pixels for the longer side
-- Filesize: maximum 2MB
+I'm a VCD student and I'm into visual storytelling. I like so many different things when it comes to art that it would be silly to make a long list like that. I just want to keep creating, playing and exploring like a kid. Can't wait to get my hands on all this electronics stuff!
 
