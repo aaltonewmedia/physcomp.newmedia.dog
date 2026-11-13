@@ -44,6 +44,26 @@ jobs:
           tar -xzf "$tools_dir/hugo.tar.gz" -C "$tools_dir" hugo
           echo "$tools_dir" >> "$GITHUB_PATH"
 
+      - name: Identify image cache inputs
+        id: hugo-cache
+        run: |
+          fingerprint=$(
+            {
+              git ls-tree -r HEAD -- config layouts themes
+              git ls-tree -r HEAD -- assets content static |
+                awk 'tolower($0) ~ /[.](avif|bmp|gif|heic|ico|jpe?g|png|svg|tiff?|webp)"?$/'
+            } | sha256sum | cut -d ' ' -f 1
+          )
+          echo "fingerprint=$fingerprint" >> "$GITHUB_OUTPUT"
+
+      - name: Cache processed Hugo images
+        uses: actions/cache@v5
+        with:
+          path: resources/_gen
+          key: ${{ runner.os }}-${{ runner.arch }}-physcomp-hugo-${{ env.HUGO_VERSION }}-images-v1-${{ steps.hugo-cache.outputs.fingerprint }}
+          restore-keys: |
+            ${{ runner.os }}-${{ runner.arch }}-physcomp-hugo-${{ env.HUGO_VERSION }}-images-v1-
+
       - name: Build the site
         run: hugo --buildFuture --environment production --destination public
 
