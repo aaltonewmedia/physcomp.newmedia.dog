@@ -1,0 +1,65 @@
+name: Build Hugo and deploy to Netlify
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: physcomp-netlify
+  cancel-in-progress: false
+
+env:
+  HUGO_VERSION: '0.166.0'
+  NETLIFY_CLI_VERSION: '27.10.1'
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out the site and its Blowfish theme
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      - name: Install Hugo Extended
+        run: |
+          tools_dir="$RUNNER_TEMP/hugo"
+          mkdir -p "$tools_dir"
+          curl --fail --silent --show-error --location \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz" \
+            --output "$tools_dir/hugo.tar.gz"
+          tar -xzf "$tools_dir/hugo.tar.gz" -C "$tools_dir" hugo
+          echo "$tools_dir" >> "$GITHUB_PATH"
+
+      - name: Build the site
+        run: hugo --buildFuture --environment production --destination public
+
+      - name: Install the Netlify CLI
+        run: npm install --prefix "$RUNNER_TEMP/netlify-cli" --no-audit --no-fund "netlify-cli@$NETLIFY_CLI_VERSION"
+
+      - name: Upload the prebuilt site to Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}
+          NETLIFY_PUBLISH_LIVE: ${{ vars.NETLIFY_PUBLISH_LIVE }}
+        run: |
+          : "${NETLIFY_AUTH_TOKEN:?Set the NETLIFY_AUTH_TOKEN repository secret}"
+          : "${NETLIFY_SITE_ID:?Set the NETLIFY_SITE_ID repository variable}"
+          args=(deploy --no-build --dir public --site "$NETLIFY_SITE_ID" --message "GitHub Actions: $GITHUB_SHA")
+          if [[ "$NETLIFY_PUBLISH_LIVE" == "true" ]]; then
+            args+=(--prod)
+          fi
+          "$RUNNER_TEMP/netlify-cli/node_modules/.bin/netlify" "${args[@]}"
