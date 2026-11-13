@@ -21,3 +21,4 @@ This is my studio
 
 ![](/images/2026/matti-niinimaki/mvfrddf3-573xung2.jpg)
 
+Added this line to test the new build system.
